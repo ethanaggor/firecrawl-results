@@ -1,0 +1,741 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Firecrawl Agent Search Context</title>
+    <meta
+      name="description"
+      content="A product writeup and eval-backed MCP prototype for making Firecrawl Search more queryable for AI agents."
+    />
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #202020;
+        --muted: #66615c;
+        --line: #e8e4df;
+        --panel: #fffaf4;
+        --paper: #f7f3ee;
+        --white: #fff;
+        --orange: #ff4f12;
+        --orange-dark: #d93b00;
+        --green: #1b8f5a;
+        --code: #171717;
+        --code-soft: #242424;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at 50% 12rem, rgba(255, 79, 18, 0.08), transparent 22rem),
+          linear-gradient(var(--line) 1px, transparent 1px),
+          linear-gradient(90deg, var(--line) 1px, transparent 1px),
+          var(--paper);
+        background-size: auto, 6.25rem 6.25rem, 6.25rem 6.25rem, auto;
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          sans-serif;
+        line-height: 1.5;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      .topbar {
+        width: min(68rem, calc(100% - 2rem));
+        margin: 0.75rem auto 0;
+        padding: 0.7rem 1rem;
+        border-radius: 0.5rem;
+        color: #fff;
+        background: var(--orange);
+        text-align: center;
+        font-size: 0.92rem;
+      }
+
+      .nav {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        width: min(72rem, calc(100% - 2rem));
+        margin: 0.75rem auto;
+        padding: 1rem;
+        border: 1px solid var(--line);
+        border-radius: 0.5rem;
+        background: rgba(247, 243, 238, 0.88);
+        backdrop-filter: blur(16px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 0.55rem;
+        font-weight: 760;
+        letter-spacing: 0;
+      }
+
+      .flame {
+        width: 1.05rem;
+        height: 1.35rem;
+        border-radius: 70% 45% 70% 45%;
+        background: var(--orange);
+        transform: rotate(14deg);
+        position: relative;
+      }
+
+      .flame::after {
+        content: "";
+        position: absolute;
+        inset: 0.34rem 0.29rem 0.22rem 0.38rem;
+        border-radius: 80% 50% 80% 50%;
+        background: var(--paper);
+      }
+
+      .navlinks {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+
+      .button {
+        border: 1px solid var(--orange);
+        border-radius: 0.5rem;
+        padding: 0.58rem 0.85rem;
+        color: #fff;
+        background: var(--orange);
+        text-decoration: none;
+        box-shadow: 0 0.45rem 1rem rgba(255, 79, 18, 0.18);
+      }
+
+      main {
+        width: min(72rem, calc(100% - 2rem));
+        margin: 0 auto;
+      }
+
+      .hero {
+        min-height: auto;
+        display: grid;
+        align-content: center;
+        justify-items: center;
+        text-align: center;
+        padding: 3rem 0 2rem;
+        position: relative;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        gap: 0.45rem;
+        align-items: center;
+        padding: 0.35rem 0.62rem;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.74);
+        color: var(--muted);
+        font-size: 0.82rem;
+      }
+
+      .dot {
+        width: 0.44rem;
+        height: 0.44rem;
+        border-radius: 999px;
+        background: var(--orange);
+        box-shadow: 0 0 0 0.24rem rgba(255, 79, 18, 0.13);
+      }
+
+      h1 {
+        max-width: 12ch;
+        margin: 1.25rem 0 0;
+        font-size: 6.5rem;
+        line-height: 0.9;
+        letter-spacing: 0;
+      }
+
+      .orange {
+        color: var(--orange);
+      }
+
+      .lede {
+        max-width: 42rem;
+        margin: 1.4rem auto 0;
+        color: #34312f;
+        font-size: 1.24rem;
+      }
+
+      .searchbox {
+        width: min(42rem, 100%);
+        margin: 2rem auto 0;
+        border: 1px solid var(--line);
+        border-radius: 0.5rem;
+        background: rgba(255, 255, 255, 0.92);
+        box-shadow: 0 1.4rem 4rem rgba(34, 28, 20, 0.12);
+        overflow: hidden;
+        text-align: left;
+      }
+
+      .searchrow {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+        color: #8b8781;
+      }
+
+      .searchrow code {
+        color: var(--muted);
+        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .tabs {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.35rem;
+        padding: 0 1rem 1rem;
+      }
+
+      .tab {
+        padding: 0.42rem 0.72rem;
+        border-radius: 0.5rem;
+        color: var(--muted);
+        background: #eeeae4;
+        font-size: 0.9rem;
+      }
+
+      .tab.active {
+        color: var(--ink);
+        background: #fff;
+        box-shadow: inset 0 0 0 1px var(--line);
+      }
+
+      section {
+        padding: 4rem 0;
+      }
+
+      .section-head {
+        display: grid;
+        grid-template-columns: minmax(0, 0.9fr) minmax(18rem, 1.1fr);
+        gap: 2rem;
+        align-items: end;
+        margin-bottom: 1.5rem;
+      }
+
+      h2 {
+        margin: 0;
+        font-size: 3.7rem;
+        line-height: 0.98;
+        letter-spacing: 0;
+      }
+
+      .section-head p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 1.05rem;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+      }
+
+      .card {
+        border: 1px solid var(--line);
+        border-radius: 0.5rem;
+        background: rgba(255, 255, 255, 0.78);
+        padding: 1.15rem;
+      }
+
+      .card h3 {
+        margin: 0 0 0.5rem;
+        font-size: 1rem;
+      }
+
+      .card p {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      .metric {
+        display: flex;
+        flex-direction: column;
+        gap: 0.35rem;
+      }
+
+      .metric strong {
+        font-size: 2.25rem;
+        line-height: 1;
+      }
+
+      .metric span {
+        color: var(--muted);
+      }
+
+      .code-panel {
+        overflow: hidden;
+        border-radius: 0.5rem;
+        background: var(--code);
+        color: #eee;
+        border: 1px solid #2b2b2b;
+      }
+
+      .code-title {
+        display: flex;
+        gap: 0.42rem;
+        align-items: center;
+        padding: 0.8rem 0.95rem;
+        border-bottom: 1px solid #2c2c2c;
+        color: #b8b8b8;
+        background: var(--code-soft);
+        font-size: 0.86rem;
+      }
+
+      .orb {
+        width: 0.55rem;
+        height: 0.55rem;
+        border-radius: 999px;
+        background: var(--orange);
+      }
+
+      pre {
+        margin: 0;
+        padding: 1rem;
+        overflow: auto;
+        font-size: 0.86rem;
+        line-height: 1.55;
+      }
+
+      code {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      }
+
+      .two-col {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        gap: 1rem;
+        align-items: start;
+      }
+
+      .issue-list {
+        display: grid;
+        gap: 0.8rem;
+      }
+
+      .issue {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 0.95rem 1rem;
+        border: 1px solid var(--line);
+        border-radius: 0.5rem;
+        background: rgba(255, 255, 255, 0.76);
+        text-decoration: none;
+      }
+
+      .issue span {
+        color: var(--muted);
+      }
+
+      .benchmark {
+        display: grid;
+        grid-template-columns: 0.75fr 1.25fr;
+        gap: 1rem;
+      }
+
+      .bars {
+        display: grid;
+        gap: 0.8rem;
+      }
+
+      .bar {
+        display: grid;
+        grid-template-columns: 9rem 1fr auto;
+        gap: 0.8rem;
+        align-items: center;
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+
+      .track {
+        height: 0.7rem;
+        border-radius: 999px;
+        background: #ebe6df;
+        overflow: hidden;
+      }
+
+      .fill {
+        height: 100%;
+        border-radius: 999px;
+        background: var(--orange);
+      }
+
+      .callout {
+        border-left: 0.28rem solid var(--orange);
+        padding: 1rem 1.1rem;
+        border-radius: 0.5rem;
+        background: rgba(255, 255, 255, 0.8);
+        color: #3a332d;
+      }
+
+      .reference {
+        margin: 1rem 0 0;
+        border: 1px solid var(--line);
+        border-radius: 0.5rem;
+        overflow: hidden;
+        background: rgba(255, 255, 255, 0.8);
+      }
+
+      .reference img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      .reference figcaption {
+        padding: 0.75rem 0.95rem;
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+
+      footer {
+        width: min(72rem, calc(100% - 2rem));
+        margin: 0 auto;
+        padding: 3rem 0 4rem;
+        color: var(--muted);
+        border-top: 1px solid var(--line);
+      }
+
+      @media (max-width: 820px) {
+        .nav {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+
+        .navlinks {
+          width: 100%;
+          justify-content: space-between;
+          flex-wrap: wrap;
+        }
+
+        .section-head,
+        .two-col,
+        .benchmark {
+          grid-template-columns: 1fr;
+        }
+
+        .grid {
+          grid-template-columns: 1fr;
+        }
+
+        .bar {
+          grid-template-columns: 1fr;
+          gap: 0.35rem;
+        }
+
+        h1 {
+          font-size: 5rem;
+        }
+
+        h2 {
+          font-size: 3rem;
+        }
+      }
+
+      @media (max-width: 560px) {
+        .topbar {
+          width: min(68rem, calc(100% - 1rem));
+          margin-top: 0.5rem;
+          padding: 0.55rem 0.75rem;
+          font-size: 0.86rem;
+        }
+
+        .nav {
+          width: min(72rem, calc(100% - 1rem));
+          margin: 0.5rem auto;
+          padding: 0.8rem;
+        }
+
+        .hero {
+          min-height: auto;
+          padding: 2rem 0 1.25rem;
+        }
+
+        h1 {
+          font-size: 2.85rem;
+        }
+
+        h2 {
+          font-size: 2.3rem;
+        }
+
+        .lede {
+          margin-top: 1rem;
+          font-size: 1rem;
+        }
+
+        .searchbox {
+          margin-top: 1.25rem;
+        }
+
+        .searchrow {
+          padding: 0.8rem;
+        }
+
+        .tabs {
+          padding: 0 0.8rem 0.8rem;
+        }
+
+        .tab {
+          padding: 0.35rem 0.58rem;
+        }
+
+        section {
+          padding: 2.5rem 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="topbar">
+      Agent-native search context for Firecrawl MCP, with evals and upstream parity issues.
+    </div>
+    <nav class="nav">
+      <div class="brand"><span class="flame"></span> Firecrawl Search Context</div>
+      <div class="navlinks">
+        <a href="#contract">Contract</a>
+        <a href="#benchmarks">Benchmarks</a>
+        <a href="#issues">Issues</a>
+        <a class="button" href="https://github.com/ethanaggor/firecrawl-agent-search-context">View repo</a>
+      </div>
+    </nav>
+
+    <main>
+      <header class="hero">
+        <div class="eyebrow"><span class="dot"></span> MCP search upgrade prototype</div>
+        <h1>Make Search <span class="orange">queryable</span> for agents</h1>
+        <p class="lede">
+          Firecrawl already has the primitives: search, scrape, clean markdown, summaries, and source controls.
+          This prototype wraps those primitives in a bounded context contract that agents can use predictably.
+        </p>
+        <div class="searchbox" aria-label="Search context example">
+          <div class="searchrow">
+            <code>Firecrawl Search API categories country timeout ignoreInvalidURLs</code>
+            <a class="button" href="#contract" aria-label="Jump to contract">&rarr;</a>
+          </div>
+          <div class="tabs">
+            <span class="tab">results</span>
+            <span class="tab active">summary</span>
+            <span class="tab">chunks</span>
+            <span class="tab">markdown</span>
+          </div>
+        </div>
+      </header>
+
+      <section id="thesis">
+        <div class="section-head">
+          <h2>The gap is not raw capability.</h2>
+          <p>
+            The gap is the agent-facing contract. Search can already retrieve content, but the MCP surface needs
+            to make context depth, budget, freshness, source policy, and usage metadata explicit.
+          </p>
+        </div>
+        <div class="grid">
+          <div class="card">
+            <h3>Before</h3>
+            <p>Agents choose between shallow Search results or a broad Scrape-shaped options blob.</p>
+          </div>
+          <div class="card">
+            <h3>After</h3>
+            <p>Agents ask for results, summaries, chunks, or capped markdown with hard character budgets.</p>
+          </div>
+          <div class="card">
+            <h3>Why It Matters</h3>
+            <p>Firecrawl becomes easier to benchmark against agent search products on context usefulness.</p>
+          </div>
+        </div>
+        <figure class="reference">
+          <img src="assets/firecrawl-home-reference.png" alt="Firecrawl homepage reference screenshot" />
+          <figcaption>
+            The page keeps the Firecrawl cues that matter for continuity: warm grid, restrained black typography,
+            orange action color, and a search-first composition.
+          </figcaption>
+        </figure>
+      </section>
+
+      <section id="contract">
+        <div class="section-head">
+          <h2>One upgraded tool.</h2>
+          <p>
+            The prototype upgrades <code>firecrawl_search</code> in place. It does not add overlapping search tools.
+            The response stays flattened, compact, and measurable.
+          </p>
+        </div>
+        <div class="two-col">
+          <div class="code-panel">
+            <div class="code-title"><span class="orb"></span> request</div>
+            <pre><code>{
+  "query": "Firecrawl Search API response metadata",
+  "content": "chunks",
+  "focus": "request fields, response metadata, and defaults",
+  "maxResults": 5,
+  "maxCharsPerResult": 1200,
+  "maxCharsTotal": 5000,
+  "freshness": "month",
+  "sourcePolicy": {
+    "includeDomains": ["docs.firecrawl.dev"]
+  },
+  "enterprise": ["default"],
+  "advancedSearchOptions": {
+    "filter": "0"
+  }
+}</code></pre>
+          </div>
+          <div class="code-panel">
+            <div class="code-title"><span class="orb"></span> response</div>
+            <pre><code>{
+  "query": "...",
+  "executedQuery": "... site:docs.firecrawl.dev",
+  "content": "chunks",
+  "results": [
+    {
+      "title": "Search - Firecrawl Docs",
+      "url": "https://docs.firecrawl.dev/...",
+      "source": "web",
+      "chunks": [{ "text": "...", "charCount": 742 }]
+    }
+  ],
+  "searchIds": ["019dbfcc-..."],
+  "usage": {
+    "resultCount": 1,
+    "charsReturned": 742,
+    "creditsUsed": 2
+  },
+  "warnings": []
+}</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section id="benchmarks">
+        <div class="section-head">
+          <h2>Validated with live Search calls.</h2>
+          <p>
+            The first eval layer checks the upgraded MCP contract against the net-loss audit: enterprise preservation,
+            advanced search options, source/category union inputs, search IDs, credits, warnings, and scrape tuning.
+          </p>
+        </div>
+        <div class="benchmark">
+          <div class="grid" style="grid-template-columns: 1fr;">
+            <div class="card metric">
+              <strong>4 / 4</strong>
+              <span>live smoke checks passed</span>
+            </div>
+            <div class="card metric">
+              <strong>9</strong>
+              <span>credits used across live checks</span>
+            </div>
+            <div class="card metric">
+              <strong>1,498ms</strong>
+              <span>average latency across checks</span>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Smoke Results</h3>
+            <div class="bars">
+              <div class="bar">
+                <span>source/category</span>
+                <div class="track"><div class="fill" style="width: 100%"></div></div>
+                <span>passed</span>
+              </div>
+              <div class="bar">
+                <span>filter + tbs</span>
+                <div class="track"><div class="fill" style="width: 100%"></div></div>
+                <span>passed</span>
+              </div>
+              <div class="bar">
+                <span>enterprise</span>
+                <div class="track"><div class="fill" style="width: 100%"></div></div>
+                <span>passed</span>
+              </div>
+              <div class="bar">
+                <span>summary cap</span>
+                <div class="track"><div class="fill" style="width: 100%"></div></div>
+                <span>passed</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="callout">
+          Live validation found one docs/API mismatch: <code>/v2/search</code> rejects
+          <code>scrapeOptions.zeroDataRetention</code>. The prototype therefore preserves Search ZDR through
+          <code>enterprise</code> and does not forward unsupported scrape ZDR fields from Search.
+        </p>
+      </section>
+
+      <section id="issues">
+        <div class="section-head">
+          <h2>Separate parity from product.</h2>
+          <p>
+            The upstream issues are deliberately small: SDK request parity, SDK response metadata access,
+            and MCP Search API parity. The agent-native context contract remains in this prototype.
+          </p>
+        </div>
+        <div class="issue-list">
+          <a class="issue" href="https://github.com/firecrawl/firecrawl/issues/3437">
+            <strong>Node SDK v2 search request parity</strong>
+            <span>#3437</span>
+          </a>
+          <a class="issue" href="https://github.com/firecrawl/firecrawl/issues/3438">
+            <strong>Expose full /v2/search response metadata</strong>
+            <span>#3438</span>
+          </a>
+          <a class="issue" href="https://github.com/firecrawl/firecrawl-mcp-server/issues/219">
+            <strong>MCP firecrawl_search missing documented fields</strong>
+            <span>#219</span>
+          </a>
+        </div>
+      </section>
+
+      <section id="evals">
+        <div class="section-head">
+          <h2>The benchmark path.</h2>
+          <p>
+            The tracked eval runner starts with contract smoke checks and source-policy experiments. The next layer
+            compares answer quality and context size against Exa, Tavily, and Parallel on shared agent tasks.
+          </p>
+        </div>
+        <div class="grid">
+          <div class="card">
+            <h3>Layer 1</h3>
+            <p>Old MCP contract versus upgraded MCP contract on schema success, tool calls, credits, latency, and context size.</p>
+          </div>
+          <div class="card">
+            <h3>Layer 2</h3>
+            <p>Firecrawl content modes compared on downstream answer quality with fixed context budgets.</p>
+          </div>
+          <div class="card">
+            <h3>Layer 3</h3>
+            <p>Firecrawl versus Exa, Tavily, and Parallel using the same agent tasks and measurable outputs.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      Built as a static GitHub Pages writeup with tracked eval tooling and a patch artifact for the MCP implementation.
+    </footer>
+  </body>
+</html>

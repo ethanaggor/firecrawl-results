@@ -1,0 +1,46 @@
+{
+  "generatedAt": "2026-04-24T14:02:09.627Z",
+  "suite": "net-loss-audit-live-smoke",
+  "checks": [
+    {
+      "id": "object-source-category-inputs",
+      "status": "passed",
+      "latencyMs": 526,
+      "resultCount": 2,
+      "creditsUsed": 2,
+      "searchIdCount": 1
+    },
+    {
+      "id": "advanced-search-options-filter-tbs",
+      "status": "passed",
+      "latencyMs": 228,
+      "resultCount": 1,
+      "creditsUsed": 2,
+      "searchIdCount": 1
+    },
+    {
+      "id": "enterprise-default-preserved",
+      "status": "passed",
+      "latencyMs": 101,
+      "resultCount": 1,
+      "creditsUsed": 2,
+      "searchIdCount": 1
+    },
+    {
+      "id": "summary-with-store-cache-control",
+      "status": "passed",
+      "latencyMs": 5135,
+      "resultCount": 1,
+      "creditsUsed": 3,
+      "searchIdCount": 1,
+      "charsReturned": 1000
+    }
+  ],
+  "validation": {
+    "freshnessTbsConflictRejected": true,
+    "compiledEnterprise": ["default"],
+    "compiledFilter": "0",
+    "compiledTbs": "qdr:y",
+    "compiledStoreInCache": false
+  }
+}

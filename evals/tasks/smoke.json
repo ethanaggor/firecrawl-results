@@ -1,0 +1,55 @@
+[
+  {
+    "id": "results-docs",
+    "input": {
+      "query": "Firecrawl Search API categories country timeout ignoreInvalidURLs",
+      "content": "results",
+      "maxResults": 3,
+      "sourcePolicy": {
+        "includeDomains": ["docs.firecrawl.dev"]
+      }
+    },
+    "expectedTerms": ["categories", "ignoreInvalidURLs"]
+  },
+  {
+    "id": "summary-docs",
+    "input": {
+      "query": "Firecrawl Search API categories country timeout ignoreInvalidURLs",
+      "content": "summary",
+      "maxResults": 2,
+      "maxCharsPerResult": 1200,
+      "maxCharsTotal": 2400,
+      "sourcePolicy": {
+        "includeDomains": ["docs.firecrawl.dev"]
+      }
+    },
+    "expectedTerms": ["categories", "ignoreInvalidURLs"]
+  },
+  {
+    "id": "chunks-docs",
+    "input": {
+      "query": "Firecrawl Search API categories country timeout ignoreInvalidURLs",
+      "content": "chunks",
+      "focus": "request parameters, defaults, response fields, and edge cases",
+      "maxResults": 2,
+      "maxCharsPerResult": 1200,
+      "maxCharsTotal": 2400,
+      "sourcePolicy": {
+        "includeDomains": ["docs.firecrawl.dev"]
+      }
+    },
+    "expectedTerms": ["categories", "ignoreInvalidURLs"]
+  },
+  {
+    "id": "net-loss-parity",
+    "input": {
+      "query": "Firecrawl GitHub repository",
+      "content": "results",
+      "maxResults": 2,
+      "sources": [{ "type": "web" }],
+      "categories": [{ "type": "github" }],
+      "enterprise": ["default"]
+    },
+    "expectedTerms": ["firecrawl"]
+  }
+]

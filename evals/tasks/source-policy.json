@@ -1,0 +1,50 @@
+[
+  {
+    "id": "single-include-docs",
+    "input": {
+      "query": "Firecrawl Search API categories country timeout ignoreInvalidURLs",
+      "content": "results",
+      "maxResults": 5,
+      "sourcePolicy": {
+        "includeDomains": ["docs.firecrawl.dev"]
+      }
+    },
+    "expectedTerms": ["categories", "ignoreInvalidURLs"]
+  },
+  {
+    "id": "multi-include-docs-github",
+    "input": {
+      "query": "Firecrawl MCP server search tool docs source",
+      "content": "results",
+      "maxResults": 6,
+      "sourcePolicy": {
+        "includeDomains": ["docs.firecrawl.dev", "github.com"]
+      }
+    },
+    "expectedTerms": ["firecrawl", "mcp"]
+  },
+  {
+    "id": "exclude-noisy-domain",
+    "input": {
+      "query": "Firecrawl MCP server reddit discussion",
+      "content": "results",
+      "maxResults": 5,
+      "sourcePolicy": {
+        "excludeDomains": ["reddit.com"]
+      }
+    }
+  },
+  {
+    "id": "freshness-include-firecrawl",
+    "input": {
+      "query": "Firecrawl changelog search API",
+      "content": "results",
+      "maxResults": 5,
+      "freshness": "month",
+      "sourcePolicy": {
+        "includeDomains": ["firecrawl.dev", "docs.firecrawl.dev"]
+      }
+    },
+    "expectedTerms": ["firecrawl"]
+  }
+]
