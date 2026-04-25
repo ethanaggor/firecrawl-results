@@ -1,0 +1,108 @@
+[
+  {
+    "id": "docs-parity",
+    "family": "api-documentation",
+    "question": "Which public Firecrawl Search API fields are relevant to MCP search parity, especially categories, country, timeout, ignoreInvalidURLs, enterprise, and response metadata?",
+    "agentGoal": "Find primary documentation or source evidence for the Search API fields and response metadata. Prefer Firecrawl docs and official source.",
+    "expectedTerms": ["categories", "country", "timeout", "ignoreInvalidURLs"],
+    "expectedDomains": ["docs.firecrawl.dev", "github.com"],
+    "sourcePolicy": {
+      "includeDomains": ["docs.firecrawl.dev", "github.com"]
+    },
+    "notes": "This is the direct parity question behind the implementation."
+  },
+  {
+    "id": "exa-remote-mcp",
+    "family": "api-documentation",
+    "question": "What is Exa's official remote MCP endpoint, and which tools are enabled by default versus optional?",
+    "agentGoal": "Find official Exa documentation for the remote MCP URL, auth header, default tools, and advanced search tool activation.",
+    "expectedTerms": ["https://mcp.exa.ai/mcp", "web_search_exa", "web_fetch_exa", "web_search_advanced_exa"],
+    "expectedDomains": ["exa.ai", "docs.exa.ai"]
+  },
+  {
+    "id": "parallel-search-mcp",
+    "family": "api-documentation",
+    "question": "How does Parallel's Search MCP work, what endpoint does it expose, and what are its search/fetch tools and limits?",
+    "agentGoal": "Find official Parallel docs or blog evidence for Search MCP endpoint, free/no-key usage, web_search, web_fetch, basic mode, and excerpt cap.",
+    "expectedTerms": ["https://search.parallel.ai/mcp", "web_search", "web_fetch"],
+    "expectedDomains": ["parallel.ai", "docs.parallel.ai"]
+  },
+  {
+    "id": "tavily-remote-mcp",
+    "family": "api-documentation",
+    "question": "What is Tavily's remote MCP endpoint and how does its search depth affect latency, relevance, and returned content shape?",
+    "agentGoal": "Find official Tavily docs for the remote MCP and search_depth modes. Prefer docs over third-party articles.",
+    "expectedTerms": ["search_depth", "advanced", "chunks"],
+    "expectedDomains": ["docs.tavily.com", "tavily.com", "github.com"]
+  },
+  {
+    "id": "agent-search-benchmark-methodology",
+    "family": "benchmark-methodology",
+    "question": "What benchmark methodology should be used for agent web search tools, based on public Exa, Parallel, and Tavily benchmarks?",
+    "agentGoal": "Find and compare public benchmark methodology from Exa, Parallel, and Tavily. Extract metrics and task construction patterns.",
+    "expectedTerms": ["SimpleQA", "WISER", "MSMARCO", "document relevance"],
+    "expectedDomains": ["exa.ai", "parallel.ai", "github.com", "docs.tavily.com"]
+  },
+  {
+    "id": "freshness-firecrawl-mcp",
+    "family": "freshness",
+    "question": "What are the latest public Firecrawl MCP/Search changes or issues relevant to search API parity?",
+    "agentGoal": "Find recent official GitHub or docs evidence about Firecrawl MCP/Search fields, issues, or changes. Use freshness controls when available.",
+    "expectedTerms": ["firecrawl", "search"],
+    "expectedDomains": ["github.com", "docs.firecrawl.dev", "firecrawl.dev"],
+    "freshness": "month"
+  },
+  {
+    "id": "source-policy-docs-only",
+    "family": "source-policy",
+    "question": "Using only official Firecrawl docs, what does the Search API say about categories, country, timeout, and ignoreInvalidURLs?",
+    "agentGoal": "Constrain to docs.firecrawl.dev and produce evidence only from that domain.",
+    "expectedTerms": ["categories", "country", "timeout", "ignoreInvalidURLs"],
+    "expectedDomains": ["docs.firecrawl.dev"],
+    "sourcePolicy": {
+      "includeDomains": ["docs.firecrawl.dev"]
+    }
+  },
+  {
+    "id": "github-only-mcp-source",
+    "family": "source-policy",
+    "question": "Using GitHub source only, what does the Firecrawl MCP server expose for the search tool?",
+    "agentGoal": "Constrain to GitHub source evidence and inspect the MCP search tool contract.",
+    "expectedTerms": ["firecrawl_search", "scrapeOptions", "enterprise"],
+    "expectedDomains": ["github.com"],
+    "sourcePolicy": {
+      "includeDomains": ["github.com"]
+    }
+  },
+  {
+    "id": "hard-product-comparison",
+    "family": "multi-step-research",
+    "question": "For an agent trying to answer hard web questions, how do Firecrawl, Exa, Parallel, and Tavily differ in context shape, tool-call flow, and retrieval quality?",
+    "agentGoal": "Gather evidence from official docs and benchmark pages, then compare agent-facing search behavior. Multiple calls are expected.",
+    "expectedTerms": ["MCP", "search", "agent"],
+    "expectedDomains": ["docs.firecrawl.dev", "exa.ai", "parallel.ai", "docs.tavily.com"]
+  },
+  {
+    "id": "needle-technical-release",
+    "family": "hard-retrieval",
+    "question": "Find a recent TypeScript or JavaScript library release after August 2025 that introduced at least three concrete API changes and identify source-backed examples.",
+    "agentGoal": "This mirrors Exa WebCode-style coding-agent search. Prefer changelogs, release notes, and official docs.",
+    "expectedTerms": ["release", "API", "TypeScript"],
+    "freshness": "year"
+  },
+  {
+    "id": "fresh-business-fact",
+    "family": "hard-retrieval",
+    "question": "Find a recent business or product announcement involving an AI search or web data company and extract the exact product change, date, and source.",
+    "agentGoal": "This mirrors WISER-Fresh-style current web facts. Prefer company blogs or docs.",
+    "expectedTerms": ["search", "MCP", "API"],
+    "freshness": "month"
+  },
+  {
+    "id": "firecrawl-context-thesis",
+    "family": "synthesis",
+    "question": "Does the upgraded Firecrawl MCP search context contract make Firecrawl more competitive as an agent-facing search tool?",
+    "agentGoal": "Use collected evidence to judge the project thesis. Separate retrieval quality from MCP contract quality.",
+    "expectedTerms": ["Firecrawl", "MCP", "context", "search"]
+  }
+]

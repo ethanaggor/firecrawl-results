@@ -1,0 +1,14 @@
+{
+  "id": "firecrawl-original",
+  "name": "Firecrawl MCP upstream",
+  "transport": "stdio",
+  "cwd": "../firecrawl-mcp-server-upstream",
+  "command": "node",
+  "args": ["dist/index.js"],
+  "env": [
+    { "name": "FIRECRAWL_API_KEY", "required": true },
+    { "name": "FIRECRAWL_API_URL", "required": false }
+  ],
+  "searchTools": ["firecrawl_search"],
+  "fetchTools": ["firecrawl_scrape"]
+}

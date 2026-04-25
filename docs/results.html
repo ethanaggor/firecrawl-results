@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Firecrawl agent search results</title>
+    <style>
+      :root {
+        --bg: #f9f9f9;
+        --ink: #202124;
+        --muted: #6f7378;
+        --line: #e7e7e4;
+        --panel: #ffffff;
+        --orange: #ff5a1f;
+        --orange-dark: #d94a18;
+        --code: #171717;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background:
+          linear-gradient(var(--line) 1px, transparent 1px) 0 0 / 100% 7rem,
+          linear-gradient(90deg, var(--line) 1px, transparent 1px) 50% 0 / 76rem 100%,
+          var(--bg);
+        color: var(--ink);
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          sans-serif;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      .shell {
+        max-width: 76rem;
+        margin: 0 auto;
+        padding: 2rem 1.25rem 4rem;
+      }
+
+      .topbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem 0 3rem;
+        font-size: 0.92rem;
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.55rem;
+        font-weight: 700;
+      }
+
+      .flame {
+        width: 1.15rem;
+        height: 1.15rem;
+        fill: none;
+        stroke: var(--orange);
+        stroke-width: 1.9;
+      }
+
+      .nav {
+        display: flex;
+        gap: 1rem;
+        color: var(--muted);
+      }
+
+      .hero {
+        max-width: 58rem;
+        padding: 3rem 0 2.25rem;
+      }
+
+      .eyebrow {
+        color: var(--orange-dark);
+        font-size: 0.78rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+
+      h1 {
+        margin: 0.55rem 0 1rem;
+        max-width: 54rem;
+        font-size: clamp(2.4rem, 6vw, 5.6rem);
+        line-height: 0.95;
+        letter-spacing: 0;
+      }
+
+      .dek {
+        max-width: 48rem;
+        color: #4f565f;
+        font-size: 1.1rem;
+        line-height: 1.7;
+        font-weight: 400;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 1rem;
+      }
+
+      .panel {
+        background: rgba(255, 255, 255, 0.84);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.04);
+      }
+
+      .panel-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        border-bottom: 1px solid var(--line);
+        padding: 0.95rem 1rem;
+        color: var(--muted);
+        font-size: 0.82rem;
+      }
+
+      .panel-body {
+        padding: 1rem;
+      }
+
+      .metrics {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 0.75rem;
+        margin: 1.25rem 0;
+      }
+
+      .metric {
+        padding: 1rem;
+        min-height: 6rem;
+      }
+
+      .metric strong {
+        display: block;
+        font-size: 1.8rem;
+        letter-spacing: 0;
+      }
+
+      .metric span {
+        display: block;
+        margin-top: 0.35rem;
+        color: var(--muted);
+        font-size: 0.82rem;
+      }
+
+      .bar-row {
+        display: grid;
+        grid-template-columns: 9rem 1fr 4rem;
+        gap: 0.75rem;
+        align-items: center;
+        margin: 0.75rem 0;
+        font-size: 0.88rem;
+      }
+
+      .bar-track {
+        height: 0.65rem;
+        border-radius: 999px;
+        background: #ececea;
+        overflow: hidden;
+      }
+
+      .bar {
+        height: 100%;
+        width: var(--width);
+        background: var(--orange);
+      }
+
+      .timeline {
+        display: grid;
+        gap: 0.75rem;
+      }
+
+      .step {
+        border-left: 2px solid var(--orange);
+        padding: 0.2rem 0 0.2rem 0.85rem;
+      }
+
+      .step code,
+      code {
+        border: 1px solid #e4e0dc;
+        border-radius: 5px;
+        background: #f2f1ef;
+        padding: 0.1rem 0.3rem;
+        font-family: "SFMono-Regular", Consolas, monospace;
+        font-size: 0.9em;
+      }
+
+      pre {
+        overflow: auto;
+        border-radius: 8px;
+        background: var(--code);
+        color: #f8f8f2;
+        padding: 1rem;
+        font-size: 0.8rem;
+        line-height: 1.55;
+      }
+
+      .empty {
+        border: 1px dashed #d9d9d4;
+        border-radius: 8px;
+        padding: 1.25rem;
+        color: var(--muted);
+        background: rgba(255, 255, 255, 0.55);
+      }
+
+      @media (max-width: 880px) {
+        .grid,
+        .metrics {
+          grid-template-columns: 1fr;
+        }
+
+        .nav {
+          display: none;
+        }
+
+        .bar-row {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar">
+        <a class="brand" href="index.html">
+          <svg class="flame" aria-hidden="true" viewBox="0 0 24 24">
+            <path
+              d="M12 22c4.2 0 7.5-3.2 7.5-7.3 0-3.6-1.8-6.2-5.1-10.2-.4-.5-1.2-.2-1.2.5 0 2.2-.8 3.6-2.1 4.9-.8.8-1.5 1.6-1.9 2.7-.6-.8-.9-1.7-.9-2.8 0-.6-.7-.9-1.1-.5-1.8 2-2.7 3.8-2.7 5.9C4.5 19 7.8 22 12 22Z"
+            />
+          </svg>
+          Firecrawl results
+        </a>
+        <nav class="nav" aria-label="Page links">
+          <a href="index.html">Writeup</a>
+          <a href="https://github.com/ethanaggor/firecrawl-results">Repository</a>
+        </nav>
+      </header>
+
+      <section class="hero">
+        <div class="eyebrow">Agent trajectory benchmark</div>
+        <h1>Search tools, judged by the path they create.</h1>
+        <p class="dek">
+          This page renders the latest published MCP benchmark run. It is built for side-by-side
+          inspection: schema footprint, trajectory cost, raw calls, normalized evidence, and the
+          scoring notes written after the agent used the tools.
+        </p>
+      </section>
+
+      <section id="app">
+        <div class="empty">Loading benchmark data from <code>docs/data/latest.json</code>.</div>
+      </section>
+    </main>
+
+    <script>
+      const app = document.querySelector("#app");
+
+      const fmt = new Intl.NumberFormat("en-US");
+
+      function escapeHtml(value) {
+        return String(value ?? "")
+          .replaceAll("&", "&amp;")
+          .replaceAll("<", "&lt;")
+          .replaceAll(">", "&gt;")
+          .replaceAll('"', "&quot;");
+      }
+
+      function metric(label, value) {
+        return `<article class="panel metric"><strong>${escapeHtml(value ?? "-")}</strong><span>${escapeHtml(label)}</span></article>`;
+      }
+
+      function bar(label, value, max) {
+        const width = max > 0 ? Math.max(4, Math.round((value / max) * 100)) : 0;
+        return `<div class="bar-row"><span>${escapeHtml(label)}</span><div class="bar-track"><div class="bar" style="--width:${width}%"></div></div><span>${fmt.format(value ?? 0)}</span></div>`;
+      }
+
+      function renderEmpty(data) {
+        app.innerHTML = `<div class="empty">${escapeHtml(data.message || "No run has been published yet.")}</div>`;
+      }
+
+      function render(data) {
+        if (data.status !== "published") return renderEmpty(data);
+        const report = data.report;
+        const metrics = report.metrics || {};
+        const contract = metrics.contract || {};
+        const semantic = report.semanticScore || {};
+        const maxBar = Math.max(
+          contract.totalMcpFootprintTokens || 0,
+          metrics.rawOutputTokens || 0,
+          metrics.normalizedEvidenceTokens || 0,
+          1
+        );
+
+        app.innerHTML = `
+          <div class="metrics">
+            ${metric("provider", report.manifest?.provider?.id)}
+            ${metric("task", report.manifest?.task?.id)}
+            ${metric("tool calls", metrics.toolCalls)}
+            ${metric("trajectory tokens", fmt.format(metrics.totalTrajectoryTokens || 0))}
+          </div>
+
+          <div class="grid">
+            <section class="panel">
+              <div class="panel-header">
+                <span>Token footprint</span>
+                <span>${escapeHtml(data.runId)}</span>
+              </div>
+              <div class="panel-body">
+                ${bar("MCP schema", contract.totalMcpFootprintTokens || 0, maxBar)}
+                ${bar("tool args", metrics.argumentTokens || 0, maxBar)}
+                ${bar("raw output", metrics.rawOutputTokens || 0, maxBar)}
+                ${bar("evidence", metrics.normalizedEvidenceTokens || 0, maxBar)}
+              </div>
+            </section>
+
+            <section class="panel">
+              <div class="panel-header">
+                <span>Trajectory shape</span>
+                <span>${fmt.format(metrics.totalCallLatencyMs || 0)} ms calls</span>
+              </div>
+              <div class="panel-body">
+                <div class="timeline">
+                  <div class="step"><strong>${metrics.searchCalls || 0}</strong> search calls</div>
+                  <div class="step"><strong>${metrics.fetchCalls || 0}</strong> fetch/scrape calls</div>
+                  <div class="step"><strong>${metrics.failedCalls || 0}</strong> failed calls</div>
+                  <div class="step"><strong>${fmt.format(metrics.totalConnectMs || 0)}</strong> ms connection overhead</div>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <section class="panel" style="margin-top:1rem">
+            <div class="panel-header">
+              <span>Agent score</span>
+              <span>semantic rubric</span>
+            </div>
+            <div class="panel-body">
+              <pre>${escapeHtml(JSON.stringify(semantic, null, 2))}</pre>
+            </div>
+          </section>
+
+          <section class="panel" style="margin-top:1rem">
+            <div class="panel-header">
+              <span>Artifacts</span>
+              <span>raw data</span>
+            </div>
+            <div class="panel-body">
+              <p><a href="${escapeHtml(data.reportPath)}">Open report JSON</a></p>
+              <p><a href="data/runs/${escapeHtml(data.runId)}/trace.jsonl">Open trace JSONL</a></p>
+              <p><a href="data/runs/${escapeHtml(data.runId)}/schemas/tools.json">Open tool schema snapshot</a></p>
+            </div>
+          </section>
+        `;
+      }
+
+      fetch("data/latest.json", { cache: "no-store" })
+        .then((response) => response.json())
+        .then(render)
+        .catch((error) => {
+          app.innerHTML = `<div class="empty">Could not load benchmark data: ${escapeHtml(error.message)}</div>`;
+        });
+    </script>
+  </body>
+</html>

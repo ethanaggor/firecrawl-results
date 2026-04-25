@@ -5,9 +5,16 @@
   "type": "module",
   "description": "Static writeup and eval harness for an agent-native Firecrawl MCP search context prototype.",
   "scripts": {
+    "eval:agent": "node evals/agent-run.mjs",
+    "eval:providers": "node evals/agent-run.mjs smoke --all",
+    "eval:publish": "node evals/publish-results.mjs",
     "eval:smoke": "node evals/run.mjs --suite=smoke",
     "eval:source-policy": "node evals/run.mjs --suite=source-policy",
     "serve": "node -e \"require('node:http').createServer((req,res)=>{const fs=require('node:fs');const path=require('node:path');const file=path.join('docs',req.url==='/'?'index.html':req.url);fs.readFile(file,(e,b)=>{if(e){res.writeHead(404);res.end('not found')}else{res.end(b)}})}).listen(4173,()=>console.log('http://localhost:4173'))\""
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "js-tiktoken": "^1.0.21"
   },
   "engines": {
     "node": ">=20"

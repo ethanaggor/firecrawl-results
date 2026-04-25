@@ -1,4 +1,7 @@
 .env
 node_modules/
 evals/reports/
+evals/runs/*
+!evals/runs/.gitkeep
+evals/work/
 .DS_Store

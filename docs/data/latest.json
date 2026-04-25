@@ -1,0 +1,4 @@
+{
+  "status": "not-run",
+  "message": "No benchmark run has been published yet. Run `node evals/publish-results.mjs --run <run-id>` after completing agent trajectories."
+}

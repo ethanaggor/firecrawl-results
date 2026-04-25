@@ -1,0 +1,16 @@
+{
+  "id": "parallel",
+  "name": "Parallel Search remote MCP",
+  "transport": "streamable-http",
+  "url": "https://search.parallel.ai/mcp",
+  "headers": [
+    {
+      "name": "authorization",
+      "env": "PARALLEL_API_KEY",
+      "prefix": "Bearer ",
+      "required": false
+    }
+  ],
+  "searchTools": ["web_search"],
+  "fetchTools": ["web_fetch"]
+}

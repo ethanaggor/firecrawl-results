@@ -1,0 +1,11 @@
+{
+  "id": "tavily",
+  "name": "Tavily remote MCP",
+  "transport": "streamable-http",
+  "url": "https://mcp.tavily.com/mcp/",
+  "query": [
+    { "name": "tavilyApiKey", "env": "TAVILY_API_KEY", "required": true }
+  ],
+  "searchTools": ["tavily-search", "tavily_search", "search"],
+  "fetchTools": ["tavily-extract", "tavily_extract", "extract"]
+}
