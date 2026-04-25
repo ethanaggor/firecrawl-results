@@ -93,7 +93,7 @@ async function runTask(task, strategy, context) {
   const started = performance.now();
   try {
     const result = await context.searchContext(task.input, {
-      origin: 'firecrawl-agent-search-context-eval',
+      origin: 'firecrawl-results-eval',
       apiKey: process.env.FIRECRAWL_API_KEY,
       apiUrl: process.env.FIRECRAWL_API_URL,
       sourcePolicyStrategy: strategy,

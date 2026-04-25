@@ -3,24 +3,34 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Firecrawl Search Needs an Agent Context Layer</title>
+    <title>A context contract for Firecrawl Search</title>
     <meta
       name="description"
-      content="A first-person writeup on upgrading Firecrawl MCP search into an agent-native context contract."
+      content="A design note on upgrading Firecrawl MCP search so agents can request bounded web evidence directly."
     />
     <style>
       :root {
         color-scheme: light;
         --ink: #242424;
-        --body: #344054;
-        --muted: #74706b;
-        --line: #e8e3dc;
-        --paper: #f7f3ee;
+        --body: #667085;
+        --muted: #77736e;
+        --line: #e9e9e9;
+        --paper: #f9f9f9;
         --white: #ffffff;
-        --soft: #fbf8f4;
+        --soft: #f3f3f3;
         --orange: #ff4f12;
         --orange-soft: #fff0e8;
+        --green-soft: #eef8f3;
+        --green-line: #cfe8dd;
+        --red-soft: #fff5f2;
+        --red-line: #f0d6cf;
         --code: #151515;
+        --code-muted: #9ca3af;
+        --code-green: #7dd3a8;
+        --code-blue: #93c5fd;
+        --code-yellow: #fde68a;
+        --code-orange: #fdba74;
+        --code-purple: #d8b4fe;
       }
 
       * {
@@ -34,15 +44,48 @@
       body {
         margin: 0;
         color: var(--body);
-        background:
-          linear-gradient(var(--line) 1px, transparent 1px),
-          linear-gradient(90deg, var(--line) 1px, transparent 1px),
-          var(--paper);
-        background-size: 6.25rem 6.25rem;
+        background: var(--paper);
         font-family:
-          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
           sans-serif;
-        line-height: 1.65;
+        font-weight: 300;
+        font-synthesis-weight: none;
+        line-height: 1.72;
+      }
+
+      body::before,
+      body::after {
+        content: "";
+        position: fixed;
+        pointer-events: none;
+        z-index: 0;
+      }
+
+      body::before {
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        width: min(76rem, calc(100% - 2rem));
+        transform: translateX(-50%);
+        border-left: 1px solid var(--line);
+        border-right: 1px solid var(--line);
+      }
+
+      body::after {
+        inset: 0;
+        background:
+          linear-gradient(
+            to bottom,
+            transparent 0,
+            transparent 5.8rem,
+            var(--line) 5.8rem,
+            var(--line) calc(5.8rem + 1px),
+            transparent calc(5.8rem + 1px),
+            transparent 12.9rem,
+            var(--line) 12.9rem,
+            var(--line) calc(12.9rem + 1px),
+            transparent calc(12.9rem + 1px)
+          );
       }
 
       a {
@@ -51,26 +94,15 @@
         text-underline-offset: 0.18em;
       }
 
-      .notice {
-        width: min(70rem, calc(100% - 2rem));
-        margin: 0.75rem auto 0;
-        border-radius: 0.5rem;
-        background: var(--orange);
-        color: var(--white);
-        padding: 0.7rem 1rem;
-        text-align: center;
-        font-size: 0.92rem;
-      }
-
       .site-header {
         position: sticky;
         top: 0;
-        z-index: 2;
-        width: min(70rem, calc(100% - 2rem));
+        z-index: 4;
+        width: min(76rem, calc(100% - 2rem));
         margin: 0.75rem auto 0;
         border: 1px solid var(--line);
         border-radius: 0.5rem;
-        background: rgba(247, 243, 238, 0.9);
+        background: rgba(249, 249, 249, 0.94);
         backdrop-filter: blur(14px);
         display: flex;
         align-items: center;
@@ -87,12 +119,16 @@
         font-weight: 750;
       }
 
-      .flame {
-        width: 0.82rem;
-        height: 1.1rem;
-        border-radius: 70% 45% 70% 45%;
-        background: var(--orange);
-        transform: rotate(14deg);
+      .flame-icon {
+        width: 1.35rem;
+        height: 1.35rem;
+        color: var(--orange);
+        stroke: currentColor;
+        stroke-width: 1.9;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        fill: none;
+        flex: 0 0 auto;
       }
 
       .nav-links {
@@ -101,18 +137,21 @@
         align-items: center;
         color: var(--muted);
         font-size: 0.92rem;
+        font-weight: 650;
       }
 
       .article-shell {
-        width: min(70rem, calc(100% - 2rem));
+        position: relative;
+        z-index: 1;
+        width: min(76rem, calc(100% - 2rem));
         margin: 0 auto;
         border-left: 1px solid var(--line);
         border-right: 1px solid var(--line);
-        background: rgba(247, 243, 238, 0.68);
+        background: var(--paper);
       }
 
       .article-hero {
-        padding: 5.5rem 1.25rem 4.5rem;
+        padding: 5.6rem 1.25rem 4.4rem;
         text-align: center;
         border-bottom: 1px solid var(--line);
       }
@@ -120,23 +159,24 @@
       .crumb {
         color: var(--muted);
         font-size: 0.94rem;
+        font-weight: 650;
       }
 
       h1 {
         max-width: 13ch;
-        margin: 1.3rem auto 1.2rem;
+        margin: 1.15rem auto 1.25rem;
         color: var(--ink);
-        font-size: 4.6rem;
+        font-size: 4.85rem;
         line-height: 0.98;
         letter-spacing: 0;
       }
 
       .dek {
-        max-width: 46rem;
+        max-width: 52rem;
         margin: 0 auto;
         color: var(--body);
-        font-size: 1.16rem;
-        font-weight: 400;
+        font-size: 1.14rem;
+        font-weight: 300;
       }
 
       .byline {
@@ -144,7 +184,7 @@
         justify-content: center;
         align-items: center;
         gap: 0.6rem;
-        margin-top: 1.6rem;
+        margin-top: 1.65rem;
         color: var(--muted);
         font-size: 0.95rem;
       }
@@ -163,64 +203,80 @@
 
       .layout {
         display: grid;
-        grid-template-columns: minmax(10rem, 14rem) minmax(0, 44rem) minmax(10rem, 14rem);
-        gap: 2rem;
+        grid-template-columns: minmax(7.5rem, 9rem) minmax(0, 53rem) minmax(7.5rem, 9rem);
+        gap: 1.35rem;
         padding: 4rem 1.25rem 5rem;
       }
 
       .toc {
-        position: sticky;
-        top: 7rem;
-        align-self: start;
+        position: fixed;
+        top: max(9.25rem, 37vh);
+        left: max(0.45rem, calc((100vw - 76rem) / 2 - 12.5rem));
+        z-index: 3;
+        width: min(12.25rem, calc(100vw - 1.5rem));
         border: 1px solid var(--line);
-        border-radius: 0.5rem;
-        background: rgba(255, 255, 255, 0.8);
-        padding: 1rem;
-        font-size: 0.92rem;
+        border-radius: 0.85rem;
+        background: rgba(255, 255, 255, 0.94);
+        box-shadow: 0 1.25rem 2.5rem rgba(16, 24, 40, 0.13);
+        padding: 1.15rem 1.15rem;
+        font-size: 0.9rem;
+        opacity: 0;
+        transform: translateX(calc(-100% - 1rem));
+        transition:
+          opacity 180ms ease,
+          transform 240ms ease;
+        will-change: opacity, transform;
       }
 
-      .toc strong,
-      .note strong {
+      body.toc-visible .toc {
+        opacity: 1;
+        transform: translateX(0);
+      }
+
+      .toc strong {
         display: block;
         color: var(--ink);
-        margin-bottom: 0.6rem;
+        margin-bottom: 0.82rem;
       }
 
       .toc a {
         display: block;
-        margin: 0.52rem 0;
+        margin: 0.66rem 0;
         color: var(--muted);
         text-decoration: none;
+        transition:
+          color 160ms ease,
+          transform 160ms ease;
       }
 
-      .note {
-        position: sticky;
-        top: 7rem;
-        align-self: start;
-        border: 1px solid var(--line);
-        border-radius: 0.5rem;
-        background: rgba(255, 255, 255, 0.78);
-        padding: 1rem;
-        font-size: 0.92rem;
-        color: var(--muted);
+      .toc a.active {
+        color: var(--orange);
+        font-weight: 700;
+        transform: translateX(0.14rem);
       }
 
       article {
+        grid-column: 2;
         min-width: 0;
       }
 
       article p {
-        margin: 1.1rem 0;
-        font-size: 1.03rem;
-        font-weight: 400;
+        margin: 1.12rem 0;
+        color: var(--body);
+        font-size: 1.045rem;
+        font-weight: 300;
       }
 
       article p:first-child {
         margin-top: 0;
       }
 
+      strong {
+        color: var(--ink);
+      }
+
       h2 {
-        margin: 3rem 0 1rem;
+        margin: 3.1rem 0 1rem;
         color: var(--ink);
         font-size: 2rem;
         line-height: 1.15;
@@ -228,9 +284,9 @@
       }
 
       h3 {
-        margin: 2rem 0 0.6rem;
+        margin: 1.7rem 0 0.6rem;
         color: var(--ink);
-        font-size: 1.22rem;
+        font-size: 1.18rem;
         line-height: 1.25;
         letter-spacing: 0;
       }
@@ -243,15 +299,179 @@
 
       li {
         margin: 0.45rem 0;
-        font-weight: 400;
+        color: var(--body);
+        font-weight: 300;
       }
 
-      .callout {
-        margin: 1.6rem 0;
-        border-left: 0.25rem solid var(--orange);
+      .tldr {
+        display: grid;
+        gap: 0.55rem;
+        margin: 0 0 1.75rem;
+      }
+
+      .tldr div {
+        border-left: 0.22rem solid var(--orange);
         border-radius: 0.5rem;
         background: var(--white);
-        padding: 1rem 1.1rem;
+        padding: 0.82rem 0.95rem;
+        color: var(--ink);
+        font-weight: 600;
+      }
+
+      .figure {
+        margin: 1.75rem 0;
+        border: 1px solid var(--line);
+        border-radius: 0.75rem;
+        background: var(--white);
+        overflow: hidden;
+      }
+
+      .figure-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        border-bottom: 1px solid var(--line);
+        padding: 0.8rem 1rem;
+        color: var(--muted);
+        font-size: 0.82rem;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      .figure-body {
+        padding: 1rem;
+      }
+
+      .before-after {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.85rem;
+      }
+
+      .panel {
+        border: 1px solid var(--line);
+        border-radius: 0.65rem;
+        background: #fcfcfc;
+        padding: 0.95rem;
+      }
+
+      .panel.bad {
+        background: var(--red-soft);
+        border-color: var(--red-line);
+      }
+
+      .panel.good {
+        background: var(--green-soft);
+        border-color: var(--green-line);
+      }
+
+      .panel h3 {
+        margin-top: 0;
+      }
+
+      .mini-list {
+        display: grid;
+        gap: 0.48rem;
+        margin: 0.85rem 0 0;
+      }
+
+      .mini-list div {
+        border-radius: 0.5rem;
+        background: rgba(255, 255, 255, 0.7);
+        padding: 0.55rem 0.65rem;
+        color: #5f6672;
+        font-size: 0.9rem;
+      }
+
+      .contract-grid {
+        display: grid;
+        gap: 0.65rem;
+      }
+
+      .contract-row {
+        display: grid;
+        grid-template-columns: 8.5rem 1fr;
+        gap: 0.9rem;
+        border: 1px solid var(--line);
+        border-radius: 0.6rem;
+        background: #fcfcfc;
+        padding: 0.82rem 0.95rem;
+      }
+
+      .contract-row strong {
+        color: var(--orange);
+      }
+
+      .return-table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      .return-table th,
+      .return-table td {
+        border-bottom: 1px solid var(--line);
+        padding: 0.78rem 0.75rem;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      .return-table th {
+        color: var(--ink);
+        font-size: 0.9rem;
+      }
+
+      .return-table tr:last-child td {
+        border-bottom: 0;
+      }
+
+      .executor-grid {
+        display: grid;
+        grid-template-columns: 1fr minmax(9rem, 12rem) 1fr;
+        gap: 0.8rem;
+        align-items: center;
+      }
+
+      .tool-stack,
+      .executor-core {
+        display: grid;
+        gap: 0.55rem;
+      }
+
+      .tool-pill,
+      .executor-core div {
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        background: #fcfcfc;
+        padding: 0.55rem 0.75rem;
+        font-size: 0.9rem;
+        font-weight: 650;
+        text-align: center;
+      }
+
+      .executor-core div {
+        border-color: rgba(255, 79, 18, 0.3);
+        background: var(--orange-soft);
+        color: var(--ink);
+      }
+
+      .decision-list {
+        display: grid;
+        gap: 0.65rem;
+        margin: 1.25rem 0;
+      }
+
+      .decision {
+        display: grid;
+        grid-template-columns: 10.5rem 1fr;
+        gap: 0.9rem;
+        border: 1px solid var(--line);
+        border-radius: 0.6rem;
+        background: var(--white);
+        padding: 0.85rem 0.95rem;
+      }
+
+      .decision strong {
         color: var(--ink);
       }
 
@@ -302,15 +522,46 @@
         font-size: 0.9rem;
       }
 
+      .benchmark-stub {
+        display: grid;
+        gap: 0.75rem;
+        margin: 1.25rem 0;
+      }
+
+      .stub-row {
+        display: grid;
+        grid-template-columns: 10rem 1fr 7rem;
+        gap: 0.8rem;
+        align-items: center;
+        border: 1px solid var(--line);
+        border-radius: 0.55rem;
+        background: var(--white);
+        padding: 0.85rem;
+      }
+
+      .stub-row span {
+        color: var(--muted);
+      }
+
+      .status-pill {
+        justify-self: end;
+        border-radius: 999px;
+        background: var(--soft);
+        padding: 0.25rem 0.55rem;
+        color: var(--muted);
+        font-size: 0.82rem;
+        font-weight: 700;
+      }
+
       pre {
-        margin: 1.4rem 0;
-        border-radius: 0.5rem;
+        margin: 1.25rem 0;
+        border-radius: 0.55rem;
         background: var(--code);
         color: #f4f4f4;
         overflow: auto;
-        padding: 1.1rem;
-        font-size: 0.88rem;
-        line-height: 1.6;
+        padding: 1.05rem;
+        font-size: 0.86rem;
+        line-height: 1.55;
       }
 
       code {
@@ -325,36 +576,38 @@
         font-size: 0.92em;
       }
 
-      table {
-        width: 100%;
-        margin: 1.4rem 0;
-        border-collapse: collapse;
-        border: 1px solid var(--line);
-        border-radius: 0.5rem;
-        overflow: hidden;
-        background: var(--white);
-        display: table;
+      .kw {
+        color: var(--code-purple);
       }
 
-      th,
-      td {
-        border-bottom: 1px solid var(--line);
-        padding: 0.8rem;
-        text-align: left;
-        vertical-align: top;
+      .fn {
+        color: var(--code-blue);
       }
 
-      th {
-        color: var(--ink);
-        background: var(--soft);
+      .str {
+        color: var(--code-green);
       }
 
-      tr:last-child td {
-        border-bottom: 0;
+      .num {
+        color: var(--code-yellow);
+      }
+
+      .prop {
+        color: var(--code-orange);
+      }
+
+      .comment {
+        color: var(--code-muted);
+      }
+
+      .err {
+        color: #fca5a5;
       }
 
       footer {
-        width: min(70rem, calc(100% - 2rem));
+        position: relative;
+        z-index: 1;
+        width: min(76rem, calc(100% - 2rem));
         margin: 0 auto;
         border-top: 1px solid var(--line);
         color: var(--muted);
@@ -368,22 +621,42 @@
           padding-top: 3rem;
         }
 
-        .toc,
-        .note {
+        .toc {
+          display: none;
           position: static;
         }
 
-        .toc {
-          display: none;
+        article {
+          grid-column: auto;
+        }
+
+        .executor-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 760px) {
+        .before-after,
+        .metric-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .contract-row,
+        .decision,
+        .stub-row {
+          grid-template-columns: 1fr;
+        }
+
+        .status-pill {
+          justify-self: start;
         }
       }
 
       @media (max-width: 640px) {
-        .notice,
         .site-header,
         .article-shell,
         footer {
-          width: min(100% - 1rem, 70rem);
+          width: min(100% - 1rem, 76rem);
         }
 
         .site-header {
@@ -401,7 +674,7 @@
         }
 
         h1 {
-          font-size: 2.65rem;
+          font-size: 2.72rem;
         }
 
         .dek {
@@ -412,43 +685,40 @@
           padding: 2.5rem 1rem 3rem;
         }
 
-        .metric-grid {
-          grid-template-columns: 1fr;
+        .figure-body {
+          padding: 0.85rem;
         }
 
         .issue {
           flex-direction: column;
           gap: 0.25rem;
         }
-
-        table {
-          display: block;
-          overflow-x: auto;
-        }
       }
     </style>
   </head>
   <body>
-    <div class="notice">Agent-native search context for Firecrawl MCP</div>
-
     <header class="site-header">
-      <div class="brand"><span class="flame"></span> Firecrawl Search Context</div>
+      <div class="brand">
+        <svg class="flame-icon" aria-hidden="true" viewBox="0 0 24 24">
+          <path
+            d="M12 22c4.2 0 7.5-3.2 7.5-7.3 0-3.6-1.8-6.2-5.1-10.2-.4-.5-1.2-.2-1.2.5 0 2.2-.8 3.6-2.1 4.9-.8.8-1.5 1.6-1.9 2.7-.6-.8-.9-1.7-.9-2.8 0-.6-.7-.9-1.1-.5-1.8 2-2.7 3.8-2.7 5.9C4.5 19 7.8 22 12 22Z"
+          />
+        </svg>
+        Firecrawl Search Context
+      </div>
       <nav class="nav-links" aria-label="Page links">
-        <a href="#contract">Contract</a>
-        <a href="#parity">Parity</a>
-        <a href="#benchmarks">Benchmarks</a>
-        <a href="https://github.com/ethanaggor/firecrawl-agent-search-context">Repository</a>
+        <a href="#evals">Benchmarks</a>
+        <a href="https://github.com/ethanaggor/firecrawl-results">Repository</a>
       </nav>
     </header>
 
     <main class="article-shell">
       <section class="article-hero">
-        <div class="crumb">Blog</div>
-        <h1>Firecrawl Search needs an agent context layer</h1>
+        <div class="crumb">Engineering note</div>
+        <h1>A context contract for Firecrawl Search</h1>
         <p class="dek">
-          I started with the wrong framing: better search quality. The stronger framing is more specific.
-          Firecrawl already has the primitives. The missing layer is a contract that lets agents ask for
-          bounded, useful web context without learning the whole scrape surface first.
+          I upgraded <code>firecrawl_search</code> so agents can request bounded web evidence directly instead of
+          choosing between shallow results and raw scrape options.
         </p>
         <div class="byline">
           <span class="avatar">EA</span>
@@ -461,267 +731,467 @@
       <div class="layout">
         <aside class="toc" aria-label="Table of contents">
           <strong>Table of Contents</strong>
-          <a href="#gap">The actual gap</a>
-          <a href="#contract">The contract</a>
-          <a href="#implementation">What changed</a>
+          <a href="#tldr">tl;dr</a>
+          <a href="#changed">What changed</a>
+          <a href="#search">Why search owns it</a>
+          <a href="#mcp">Why MCP owns it</a>
+          <a href="#executor">Executor</a>
+          <a href="#implementation">Implementation</a>
           <a href="#parity">Parity issues</a>
-          <a href="#validation">Live validation</a>
-          <a href="#benchmarks">Benchmark path</a>
+          <a href="#evals">Eval plan</a>
         </aside>
 
         <article>
-          <p>
-            My first instinct was to improve search quality by adding a client-side quality layer. After looking at
-            Firecrawl, Exa, Tavily, and Parallel more closely, I think that was the wrong target. Firecrawl is not
-            primarily missing a reranker. It is missing an agent-native way to shape the context returned by search.
-          </p>
+          <section id="tldr">
+            <div class="tldr">
+              <div>
+                I changed <code>firecrawl_search</code> in place. The new shape adds <code>content</code>,
+                <code>focus</code>, hard character budgets, freshness, source policy, advanced options, and response
+                accounting.
+              </div>
+              <div>
+                The old MCP shape exposed the primitives, but left the agent to decide too much about scraping,
+                budgeting, and returned context.
+              </div>
+              <div>
+                The benchmark should compare the previous MCP, the upgraded MCP, Firecrawl content modes, Exa, and
+                Parallel on the same agent tasks.
+              </div>
+            </div>
+          </section>
 
-          <p>
-            That distinction matters. A reranker assumes the result order is the problem. A context layer assumes
-            the interface is the problem. For AI agents, the practical question is usually not just "which URLs did
-            search find?" It is "how much usable evidence can I get back, at what cost, with which freshness and
-            source constraints?"
-          </p>
+          <section id="changed">
+            <h2>What changed</h2>
 
-          <div class="callout">
-            The product thesis is simple: Firecrawl Search should expose its search-plus-scrape power as bounded
-            context, not only as shallow results or a broad scrape-shaped options object.
-          </div>
+            <p>
+              The old search tool had an awkward middle ground. Agents could ask for a result list, or they could pass
+              broad scrape options and hope they asked for the right thing. That is not a search contract. That is the
+              agent reaching through Search into Scrape.
+            </p>
 
-          <h2 id="gap">The actual gap</h2>
+            <section class="figure" aria-label="Before and after search contract">
+              <div class="figure-header">
+                <span>MCP search contract</span>
+                <span>old shape and upgraded shape</span>
+              </div>
+              <div class="figure-body">
+                <div class="before-after">
+                  <div class="panel bad">
+                    <h3>Before</h3>
+                    <p>The agent knew Search existed, then had to infer how much Scrape to pull into it.</p>
+                    <pre><code><span class="fn">firecrawl_search</span>({
+  <span class="prop">query</span>,
+  <span class="prop">limit</span>,
+  <span class="prop">tbs</span>,
+  <span class="prop">sources</span>,
+  <span class="prop">scrapeOptions</span>
+})</code></pre>
+                    <div class="mini-list">
+                      <div>Content depth is implicit.</div>
+                      <div>Budgets are not part of the contract.</div>
+                      <div>Search UX depends on Scrape knowledge.</div>
+                    </div>
+                  </div>
 
-          <p>
-            Firecrawl already has serious primitives. Search can discover pages. Scrape can turn pages into clean
-            markdown, summaries, screenshots, links, and structured data. Search can also scrape result pages in the
-            same call through <code>scrapeOptions</code>. That is a strong foundation.
-          </p>
+                  <div class="panel good">
+                    <h3>After</h3>
+                    <p>The agent asks Search for a bounded amount of evidence directly.</p>
+                    <pre><code><span class="fn">firecrawl_search</span>({
+  <span class="prop">query</span>,
+  <span class="prop">content</span>: <span class="str">"chunks"</span>,
+  <span class="prop">focus</span>,
+  <span class="prop">maxResults</span>,
+  <span class="prop">maxCharsPerResult</span>,
+  <span class="prop">maxCharsTotal</span>,
+  <span class="prop">freshness</span>,
+  <span class="prop">sourcePolicy</span>,
+  <span class="prop">enterprise</span>
+})</code></pre>
+                    <div class="mini-list">
+                      <div>Content mode is explicit.</div>
+                      <div>Total returned chars are capped.</div>
+                      <div>Usage and Search IDs come back with the result.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
 
-          <p>
-            The weak spot is the default MCP-facing shape. Agents either get a lightweight result list, or they need
-            to know enough about the scrape API to request content correctly. That is flexible, but it is not the
-            most queryable contract for agents.
-          </p>
+            <p>
+              I kept this as one tool. A second <code>firecrawl_search_context</code> would make the agent choose
+              between two overlapping search surfaces. That split is avoidable. Search should mean discovery with
+              optional bounded context. Scrape should stay separate for known URLs.
+            </p>
+          </section>
 
-          <p>
-            Exa, Tavily, and Parallel make the contrast obvious. Their agent-facing surfaces emphasize content
-            limits, summaries, highlights, chunks, source policy, freshness, and cost/latency tradeoffs. Firecrawl
-            has many of the underlying capabilities, but the MCP tool should package them in a way that matches how
-            agents actually ask for context.
-          </p>
+          <section id="search">
+            <h2>Why search owns this layer</h2>
 
-          <h2 id="contract">The contract I would expose</h2>
+            <p>
+              The Search API already supports search-plus-scrape. The product problem is that the MCP did not expose a
+              search-native way to ask for "some useful page content, capped, focused, and fresh enough for this task."
+            </p>
 
-          <p>
-            I would upgrade <code>firecrawl_search</code> in place. I would not add a second overlapping
-            <code>firecrawl_search_context</code> tool, because that creates split identity for agents. Search should
-            mean discovery plus optional bounded context. Scrape should stay separate for exact known URLs.
-          </p>
+            <section class="figure" aria-label="Search content contract fields">
+              <div class="figure-header">
+                <span>Search context fields</span>
+                <span>the fields that should be easy for agents</span>
+              </div>
+              <div class="figure-body">
+                <div class="contract-grid">
+                  <div class="contract-row">
+                    <strong>content</strong>
+                    <span><code>results</code>, <code>summary</code>, <code>chunks</code>, or <code>markdown</code>.</span>
+                  </div>
+                  <div class="contract-row">
+                    <strong>focus</strong>
+                    <span>The extraction target. The broad search query and the reading target are often different.</span>
+                  </div>
+                  <div class="contract-row">
+                    <strong>budget</strong>
+                    <span><code>maxCharsPerResult</code> and <code>maxCharsTotal</code> are hard caps.</span>
+                  </div>
+                  <div class="contract-row">
+                    <strong>policy</strong>
+                    <span>Freshness, source policy, sources, categories, country, and location stay explicit.</span>
+                  </div>
+                  <div class="contract-row">
+                    <strong>escape hatch</strong>
+                    <span><code>advancedSearchOptions</code> and restricted <code>advancedScrapeOptions</code>.</span>
+                  </div>
+                </div>
+              </div>
+            </section>
 
-          <pre><code>{
-  "query": "Firecrawl Search API response metadata",
-  "content": "chunks",
-  "focus": "request fields, response metadata, and defaults",
-  "maxResults": 5,
-  "maxCharsPerResult": 1200,
-  "maxCharsTotal": 5000,
-  "freshness": "month",
-  "sourcePolicy": {
-    "includeDomains": ["docs.firecrawl.dev"]
+            <pre><code>{
+  <span class="prop">"query"</span>: <span class="str">"Firecrawl Search API response metadata"</span>,
+  <span class="prop">"content"</span>: <span class="str">"chunks"</span>,
+  <span class="prop">"focus"</span>: <span class="str">"request fields, response metadata, and defaults"</span>,
+  <span class="prop">"maxResults"</span>: <span class="num">5</span>,
+  <span class="prop">"maxCharsPerResult"</span>: <span class="num">1200</span>,
+  <span class="prop">"maxCharsTotal"</span>: <span class="num">5000</span>,
+  <span class="prop">"freshness"</span>: <span class="str">"month"</span>,
+  <span class="prop">"sourcePolicy"</span>: {
+    <span class="prop">"includeDomains"</span>: [<span class="str">"docs.firecrawl.dev"</span>]
   },
-  "enterprise": ["default"],
-  "advancedSearchOptions": {
-    "filter": "0"
+  <span class="prop">"enterprise"</span>: [<span class="str">"default"</span>],
+  <span class="prop">"advancedSearchOptions"</span>: {
+    <span class="prop">"filter"</span>: <span class="str">"0"</span>
   }
 }</code></pre>
 
-          <p>
-            The important field is <code>content</code>. I prefer that to <code>depth</code> because it describes the
-            output surface directly:
-          </p>
+            <p>
+              The response stays plain: flattened results, optional content or chunks, metadata, warnings, credits
+              used, Search IDs, and character accounting. Firecrawl should return evidence. The caller should decide
+              what to do with it.
+            </p>
+          </section>
 
-          <table>
-            <thead>
-              <tr>
-                <th>Mode</th>
-                <th>Meaning</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><code>results</code></td>
-                <td>Titles, URLs, descriptions, source, category, and position only.</td>
-              </tr>
-              <tr>
-                <td><code>summary</code></td>
-                <td>Firecrawl summaries, capped by per-result and total character budgets.</td>
-              </tr>
-              <tr>
-                <td><code>chunks</code></td>
-                <td>Deterministic extractive chunks selected from markdown using the query and optional focus.</td>
-              </tr>
-              <tr>
-                <td><code>markdown</code></td>
-                <td>Markdown content, still hard-capped so agents cannot accidentally pull huge context.</td>
-              </tr>
-            </tbody>
-          </table>
+          <section id="mcp">
+            <h2>Why MCP owns this layer</h2>
 
-          <p>
-            The response should be boring on purpose: a flattened result list, optional content or chunks, source
-            metadata, hard budget accounting, warnings, credits used, and Search response IDs. No trust score. No
-            final answer. No next-action recommendation.
-          </p>
+            <p>
+              The MCP contract is part of the agent's context. A human can read the docs, remember a quirk, and work
+              around a vague field. An agent should not have to rely on training priors or stale documentation to use a
+              tool correctly.
+            </p>
 
-          <h2 id="implementation">What changed in the prototype</h2>
+            <section class="figure" aria-label="Returned shape consequences">
+              <div class="figure-header">
+                <span>Return shape</span>
+                <span>what happens to the next agent call</span>
+              </div>
+              <div class="figure-body">
+                <table class="return-table">
+                  <thead>
+                    <tr>
+                      <th>Tool returns</th>
+                      <th>Immediate result</th>
+                      <th>Next query quality</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>URLs only</td>
+                      <td>The agent knows where it might read next.</td>
+                      <td>Depends on follow-up scraping and model priors.</td>
+                    </tr>
+                    <tr>
+                      <td>Final answer only</td>
+                      <td>The current question may be answered.</td>
+                      <td>Weak if the evidence never enters caller context.</td>
+                    </tr>
+                    <tr>
+                      <td>Bounded evidence</td>
+                      <td>The agent gets enough source material to reason.</td>
+                      <td>Better, because the next query is conditioned on the web result.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </section>
 
-          <p>
-            The prototype keeps the implementation deterministic. There is no Mercury pass, no semantic compression,
-            and no client-side reranker. Chunks are selected by simple extractive scoring from returned markdown.
-            That gives a baseline we can benchmark before deciding whether an AI compression step is worth it.
-          </p>
+            <p>
+              This is the token-efficiency trap. A tool can hide all reading behind another model and return a small
+              answer. The caller's context looks clean, but the caller did not see the evidence. It cannot make the
+              next search sharper because the facts that would have sharpened it never entered the window.
+            </p>
 
-          <p>
-            It also preserves capabilities that should not have been removed. In particular, <code>enterprise</code>
-            is first-class because Search ZDR is a real Firecrawl capability and was already part of the MCP contract.
-            The implementation also keeps <code>filter</code> as <code>advancedSearchOptions.filter</code> because
-            the live Search endpoint accepts it even though the public docs do not clearly describe it.
-          </p>
+            <p>
+              I care about tokens. I care more about saving them at the right layer. Search should compress web
+              evidence into the caller's context, not remove the evidence from the caller altogether.
+            </p>
+          </section>
 
-          <pre><code>{
-  "results": [
-    {
-      "title": "Search - Firecrawl Docs",
-      "url": "https://docs.firecrawl.dev/...",
-      "source": "web",
-      "chunks": [
-        { "text": "...", "charCount": 742 }
-      ]
-    }
-  ],
-  "searchIds": ["019dbfcc-..."],
-  "usage": {
-    "resultCount": 1,
-    "charsReturned": 742,
-    "creditsUsed": 2
-  },
-  "warnings": []
-}</code></pre>
+          <section id="executor">
+            <h2>Executor is the better mental model</h2>
 
-          <h2 id="parity">What was parity, not product opinion</h2>
+            <p>
+              The CLI-versus-MCP debate is too shallow. CLIs are useful when the command surface is stable and heavily
+              memorized. MCPs are useful when schema discovery, typed arguments, auth, side effects, and result shape
+              matter. Executor pushes that a step further: one tool surface can discover, describe, and call many typed
+              tools from a code execution context.
+            </p>
 
-          <p>
-            I separated the product proposal from upstream correctness issues. That matters because a prototype can
-            be opinionated, but parity gaps should be legible on their own.
-          </p>
+            <section class="figure" aria-label="Executor-style tool composition">
+              <div class="figure-header">
+                <span>Executor-style composition</span>
+                <span>discover, describe, call, recover</span>
+              </div>
+              <div class="figure-body">
+                <div class="executor-grid">
+                  <div class="tool-stack">
+                    <div class="tool-pill">Exa MCP</div>
+                    <div class="tool-pill">GCloud MCP</div>
+                    <div class="tool-pill">Firecrawl MCP</div>
+                  </div>
+                  <div class="executor-core">
+                    <div>discover</div>
+                    <div>describe</div>
+                    <div>execute</div>
+                  </div>
+                  <div class="tool-stack">
+                    <div class="tool-pill">schemas</div>
+                    <div class="tool-pill">typed calls</div>
+                    <div class="tool-pill">structured errors</div>
+                  </div>
+                </div>
+              </div>
+            </section>
 
-          <div class="issue-list">
-            <a class="issue" href="https://github.com/firecrawl/firecrawl/issues/3437">
-              <strong>Node SDK v2 search request parity</strong>
-              <span>#3437</span>
-            </a>
-            <a class="issue" href="https://github.com/firecrawl/firecrawl/issues/3438">
-              <strong>Expose full /v2/search response metadata</strong>
-              <span>#3438</span>
-            </a>
-            <a class="issue" href="https://github.com/firecrawl/firecrawl-mcp-server/issues/219">
-              <strong>MCP firecrawl_search missing documented fields</strong>
-              <span>#219</span>
-            </a>
-            <a class="issue" href="https://github.com/firecrawl/firecrawl/issues/3441">
-              <strong>/v2/search rejects documented scrapeOptions.zeroDataRetention</strong>
-              <span>#3441</span>
-            </a>
-          </div>
+            <p>
+              This is a real example of the pattern. I can ask Executor to fetch a known web page through Exa, get
+              structured output back, and keep the whole thing inside one TypeScript execution context.
+            </p>
 
-          <p>
-            The MCP implementation currently calls <code>/v2/search</code> directly for the upgraded search path.
-            That is not meant as a philosophical rejection of the SDK. It is a compatibility decision: the current
-            SDK search path does not yet expose every documented request field or the full response envelope that
-            this MCP tool needs.
-          </p>
+            <pre><code><span class="kw">const</span> <span class="prop">page</span> = <span class="kw">await</span> <span class="prop">tools</span>[<span class="str">"mcp.exa.ai"</span>].<span class="fn">crawling_exa</span>({
+  <span class="prop">urls</span>: [<span class="str">"https://docs.firecrawl.dev/features/search"</span>],
+  <span class="prop">maxCharacters</span>: <span class="num">12000</span>,
+  <span class="prop">maxAgeHours</span>: <span class="num">0</span>
+});
 
-          <h2 id="validation">What live validation found</h2>
+<span class="kw">return</span> <span class="prop">page</span>;</code></pre>
 
-          <p>
-            The first live smoke was not a full benchmark. It was a net-loss audit: make sure the upgraded tool did
-            not accidentally remove existing Search capabilities while adding the context layer.
-          </p>
+            <p>
+              The error path is just as important. I initially called the same tool with <code>url</code> instead of
+              <code>urls</code>. The returned error named the missing schema path, which is exactly the kind of
+              feedback an agent can recover from without guessing.
+            </p>
 
-          <div class="metric-grid">
-            <div class="metric">
-              <strong>4 / 4</strong>
-              <span>live smoke checks passed</span>
+            <pre><code><span class="kw">const</span> <span class="prop">bad</span> = <span class="kw">await</span> <span class="prop">tools</span>[<span class="str">"mcp.exa.ai"</span>].<span class="fn">crawling_exa</span>({
+  <span class="prop">url</span>: <span class="str">"https://alexzhang13.github.io/blog/2025/rlm/"</span>,
+  <span class="prop">maxCharacters</span>: <span class="num">50000</span>
+});
+
+<span class="comment">// Returned error:</span>
+<span class="err">Input validation error: expected array at path ["urls"]</span></code></pre>
+
+            <p>
+              A shell command can fail too, but the recovery loop is usually less clean: parse stderr, infer which
+              flag was wrong, rerun. In Executor, the schema and the error are part of the same tool context. That is
+              the part I want Firecrawl Search to take seriously. The contract is not documentation after the fact. It
+              is what lets the agent call the tool well.
+            </p>
+          </section>
+
+          <section id="implementation">
+            <h2>Implementation choices</h2>
+
+            <div class="decision-list">
+              <div class="decision">
+                <strong>One search tool</strong>
+                <span><code>firecrawl_search</code> was upgraded in place. I avoided a second overlapping context-search tool.</span>
+              </div>
+              <div class="decision">
+                <strong><code>content</code></strong>
+                <span>The enum is <code>results</code>, <code>summary</code>, <code>chunks</code>, and <code>markdown</code>.</span>
+              </div>
+              <div class="decision">
+                <strong>Hard budgets</strong>
+                <span><code>maxCharsTotal</code> is enforced after extraction. The response cannot silently balloon.</span>
+              </div>
+              <div class="decision">
+                <strong>Parity preserved</strong>
+                <span><code>enterprise</code>, <code>filter</code>, source/category inputs, warnings, credits, and Search IDs stay available.</span>
+              </div>
+              <div class="decision">
+                <strong>Direct v2 call</strong>
+                <span>The MCP uses <code>/v2/search</code> directly while the SDK search path is missing request and response parity.</span>
+              </div>
+              <div class="decision">
+                <strong>Deterministic baseline</strong>
+                <span>No AI compression yet. Chunk selection should fail in evals before I make it more complex.</span>
+              </div>
             </div>
-            <div class="metric">
-              <strong>9</strong>
-              <span>credits used</span>
+          </section>
+
+          <section id="parity">
+            <h2>Parity issues I separated out</h2>
+
+            <p>
+              These are upstream correctness issues I found while building the prototype. I kept them separate from the
+              product proposal because they should be readable without any context from this project.
+            </p>
+
+            <div class="issue-list">
+              <a class="issue" href="https://github.com/firecrawl/firecrawl/issues/3437">
+                <strong>Node SDK v2 search request parity</strong>
+                <span>#3437</span>
+              </a>
+              <a class="issue" href="https://github.com/firecrawl/firecrawl/issues/3438">
+                <strong>Expose full /v2/search response metadata</strong>
+                <span>#3438</span>
+              </a>
+              <a class="issue" href="https://github.com/firecrawl/firecrawl-mcp-server/issues/219">
+                <strong>MCP firecrawl_search missing documented fields</strong>
+                <span>#219</span>
+              </a>
+              <a class="issue" href="https://github.com/firecrawl/firecrawl/issues/3441">
+                <strong>/v2/search rejects documented scrapeOptions.zeroDataRetention</strong>
+                <span>#3441</span>
+              </a>
             </div>
-            <div class="metric">
-              <strong>1,498ms</strong>
-              <span>average latency</span>
+          </section>
+
+          <section id="evals">
+            <h2>Eval plan</h2>
+
+            <p>
+              The first benchmark should answer a narrow question: does the upgraded contract make agents better at
+              using Firecrawl Search? Correctness matters, but so do context size, source adherence, freshness,
+              tool-call count, latency, credits, and follow-up quality.
+            </p>
+
+            <div class="metric-grid">
+              <div class="metric">
+                <strong>4 / 4</strong>
+                <span>live smoke checks passed</span>
+              </div>
+              <div class="metric">
+                <strong>9</strong>
+                <span>credits used in smoke validation</span>
+              </div>
+              <div class="metric">
+                <strong>1,498ms</strong>
+                <span>average smoke latency</span>
+              </div>
             </div>
-          </div>
 
-          <p>
-            The checks covered object-form source/category inputs, <code>advancedSearchOptions.filter</code> and
-            <code>tbs</code>, <code>enterprise: ["default"]</code>, Search response IDs, credits used, warnings, and
-            hard character caps.
-          </p>
+            <div class="benchmark-stub">
+              <div class="stub-row">
+                <strong>Previous MCP</strong>
+                <span>Baseline contract: search fields and generic scrape options.</span>
+                <span class="status-pill">to run</span>
+              </div>
+              <div class="stub-row">
+                <strong>Upgraded MCP</strong>
+                <span>Content modes, hard budgets, source policy, response accounting.</span>
+                <span class="status-pill">to run</span>
+              </div>
+              <div class="stub-row">
+                <strong>Firecrawl modes</strong>
+                <span><code>results</code>, <code>summary</code>, <code>chunks</code>, and <code>markdown</code>.</span>
+                <span class="status-pill">to run</span>
+              </div>
+              <div class="stub-row">
+                <strong>Exa</strong>
+                <span>Reference surface with summaries, highlights, and content controls.</span>
+                <span class="status-pill">to run</span>
+              </div>
+              <div class="stub-row">
+                <strong>Parallel</strong>
+                <span>Reference surface focused on LLM-optimized web context.</span>
+                <span class="status-pill">to run</span>
+              </div>
+            </div>
 
-          <p>
-            The interesting failure was ZDR. Firecrawl's Search docs describe combining top-level
-            <code>enterprise: ["zdr"]</code> with <code>scrapeOptions.zeroDataRetention</code> for end-to-end ZDR.
-            In live testing, the endpoint recognized the top-level <code>enterprise</code> field but rejected
-            <code>zeroDataRetention</code> inside Search <code>scrapeOptions</code>. I filed that as a separate
-            docs/API issue because it is independent of the MCP product work.
-          </p>
+            <p>
+              I would run this in three passes: contract checks, Firecrawl mode comparisons, then Exa and Parallel on
+              the same agent tasks. If chunks lose, improve chunks. If summaries win, make summary mode the default.
+              If the contract reduces follow-up calls without hurting answerability, that is the product signal.
+            </p>
+          </section>
 
-          <h2 id="benchmarks">The benchmark path</h2>
+          <section>
+            <h2>The point</h2>
 
-          <p>
-            I would benchmark this as an agent context problem, not as a standalone SERP ranking problem. The useful
-            questions are relative: does the upgraded MCP contract give an agent enough evidence with fewer tool
-            calls, lower context size, clearer source policy, and predictable cost?
-          </p>
+            <p>
+              Firecrawl already has the hard part: web discovery and extraction. This patch is about making those
+              primitives easier for agents to query correctly.
+            </p>
 
-          <ol>
-            <li>Compare the previous MCP search contract against the upgraded contract.</li>
-            <li>Compare Firecrawl content modes: <code>results</code>, <code>summary</code>, <code>chunks</code>, and <code>markdown</code>.</li>
-            <li>Compare Firecrawl against Exa, Tavily, and Parallel on shared agent tasks.</li>
-          </ol>
-
-          <p>
-            The metrics should include answerability, evidence hit rate, characters returned, credits, latency,
-            source-policy adherence, freshness adherence, and follow-up tool-call count. That is the category where
-            this change should win or fail.
-          </p>
-
-          <h2>Where I would take this next</h2>
-
-          <p>
-            I would keep the deterministic baseline first. Once the evals show where summaries or chunks fall short,
-            then it becomes reasonable to ask whether a lightweight model pass should compress chunks, split search
-            query from extraction focus, or choose parameters. Until then, adding AI inside the tool would mostly make
-            the system harder to reason about.
-          </p>
-
-          <p>
-            The larger product point is that Firecrawl should not be treated as outside the Exa/Tavily/Parallel
-            conversation. Firecrawl already has the raw web data machinery. The agent-facing search contract is the
-            layer that makes those primitives easy to query, easy to budget, and easy to benchmark.
-          </p>
+            <p>
+              The MCP should make the intended behavior obvious. Ask for the right context, get bounded evidence back,
+              keep the accounting visible, and make the next call from a better prior. That is the product layer I
+              wanted to add.
+            </p>
+          </section>
         </article>
-
-        <aside class="note">
-          <strong>Repository</strong>
-          This writeup is paired with a source snapshot and eval harness in
-          <a href="https://github.com/ethanaggor/firecrawl-agent-search-context">firecrawl-agent-search-context</a>.
-        </aside>
       </div>
     </main>
 
     <footer>
-      Written by Ethan Aggor. Built as a static blog page with real implementation files and tracked eval tasks.
+      Written by Ethan Aggor. Built as a static blog page with implementation source and tracked eval tasks.
     </footer>
+    <script>
+      const tocLinks = Array.from(document.querySelectorAll(".toc a[href^='#']"));
+      const sections = tocLinks
+        .map((link) => ({
+          link,
+          section: document.querySelector(link.getAttribute("href")),
+        }))
+        .filter((item) => item.section);
+      const layout = document.querySelector(".layout");
+
+      function updateToc() {
+        if (!layout) return;
+
+        const revealAt = layout.offsetTop - 180;
+        document.body.classList.toggle("toc-visible", window.scrollY >= revealAt);
+
+        const marker = window.scrollY + 180;
+        let active = sections[0];
+
+        for (const item of sections) {
+          if (item.section.offsetTop <= marker) {
+            active = item;
+          }
+        }
+
+        for (const item of sections) {
+          const isActive = item === active;
+          item.link.classList.toggle("active", isActive);
+          if (isActive) {
+            item.link.setAttribute("aria-current", "true");
+          } else {
+            item.link.removeAttribute("aria-current");
+          }
+        }
+      }
+
+      updateToc();
+      window.addEventListener("scroll", updateToc, { passive: true });
+      window.addEventListener("resize", updateToc);
+    </script>
   </body>
 </html>

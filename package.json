@@ -1,5 +1,5 @@
 {
-  "name": "firecrawl-agent-search-context",
+  "name": "firecrawl-results",
   "version": "0.1.0",
   "private": true,
   "type": "module",

@@ -1,6 +1,6 @@
-# Firecrawl Agent Search Context
+# Firecrawl Results
 
-This repo contains a product writeup, implementation source snapshot, and eval harness for upgrading Firecrawl's MCP search surface into an agent-native context tool.
+This repo contains the writeup and eval harness for upgrading Firecrawl's MCP search surface into an agent-native context tool.
 
 The core idea is narrow:
 
@@ -12,8 +12,17 @@ The core idea is narrow:
 
 - `docs/` - static GitHub Pages blog.
 - `evals/` - tracked Node-based eval runner and representative tasks.
-- `src/firecrawl-mcp-server/` - real source files copied from the local MCP implementation snapshot.
 - `issues/` - links to upstream parity/enhancement issues filed during the audit.
+
+## Implementation
+
+The runnable MCP server implementation lives in a fork of the Firecrawl MCP server:
+
+https://github.com/ethanaggor/firecrawl-mcp-server/tree/agent-search-context
+
+The server diff is reviewable against upstream here:
+
+https://github.com/firecrawl/firecrawl-mcp-server/compare/main...ethanaggor:firecrawl-mcp-server:agent-search-context
 
 ## Run Evals
 
