@@ -7,7 +7,7 @@
   "scripts": {
     "eval:smoke": "node evals/run.mjs --suite=smoke",
     "eval:source-policy": "node evals/run.mjs --suite=source-policy",
-    "serve": "node --watch-path=docs -e \"require('node:http').createServer((req,res)=>{const fs=require('node:fs');const path=require('node:path');const file=path.join('docs',req.url==='/'?'index.html':req.url);fs.readFile(file,(e,b)=>{if(e){res.writeHead(404);res.end('not found')}else{res.end(b)}})}).listen(4173,()=>console.log('http://localhost:4173'))\""
+    "serve": "node -e \"require('node:http').createServer((req,res)=>{const fs=require('node:fs');const path=require('node:path');const file=path.join('docs',req.url==='/'?'index.html':req.url);fs.readFile(file,(e,b)=>{if(e){res.writeHead(404);res.end('not found')}else{res.end(b)}})}).listen(4173,()=>console.log('http://localhost:4173'))\""
   },
   "engines": {
     "node": ">=20"
