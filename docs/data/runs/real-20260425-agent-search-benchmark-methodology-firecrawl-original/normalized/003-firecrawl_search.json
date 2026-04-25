@@ -1,0 +1,25 @@
+{
+  "provider": "firecrawl-original",
+  "tool": "firecrawl_search",
+  "isError": false,
+  "rawText": "{\n  \"web\": [\n    {\n      \"url\": \"https://exa.ai/blog/evals-at-exa\",\n      \"title\": \"Our AI Research: How We Evaluate Semantic Search Technology\",\n      \"description\": \"When we evaluate Exa search on a variety of benchmarks, we consistently perform state of the art compared to other search APIs. Using Exa ...\",\n      \"position\": 1\n    }\n  ]\n}",
+  "parsed": {
+    "web": [
+      {
+        "url": "https://exa.ai/blog/evals-at-exa",
+        "title": "Our AI Research: How We Evaluate Semantic Search Technology",
+        "description": "When we evaluate Exa search on a variety of benchmarks, we consistently perform state of the art compared to other search APIs. Using Exa ...",
+        "position": 1
+      }
+    ]
+  },
+  "results": [
+    {
+      "title": "Our AI Research: How We Evaluate Semantic Search Technology",
+      "url": "https://exa.ai/blog/evals-at-exa",
+      "domain": "exa.ai",
+      "description": "When we evaluate Exa search on a variety of benchmarks, we consistently perform state of the art compared to other search APIs. Using Exa ...",
+      "position": 1
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "urls": [
+    "https://exa.ai/blog/evals-at-exa",
+    "https://exa.ai/blog/webcode",
+    "https://parallel.ai/blog/search-api-benchmark",
+    "https://github.com/tavily-ai/tavily-search-evals",
+    "https://github.com/tavily-ai/tavily-search-evals/blob/main/run_evaluation.py",
+    "https://docs.tavily.com/documentation/best-practices/best-practices-search"
+  ],
+  "extract_depth": "basic",
+  "format": "markdown",
+  "include_images": false,
+  "query": "benchmark methodology metrics SimpleQA WISER MSMARCO document relevance task construction search_depth agent search"
+}

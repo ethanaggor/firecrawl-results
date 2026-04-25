@@ -1,0 +1,11 @@
+{
+  "query": "\"tavily-search-evals\" \"SimpleQA\" \"document relevance\"",
+  "max_results": 6,
+  "search_depth": "advanced",
+  "include_domains": [
+    "github.com",
+    "docs.tavily.com"
+  ],
+  "include_raw_content": false,
+  "exact_match": true
+}

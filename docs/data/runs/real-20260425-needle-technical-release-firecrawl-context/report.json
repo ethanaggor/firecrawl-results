@@ -1,0 +1,115 @@
+{
+  "status": "complete",
+  "runId": "real-20260425-needle-technical-release-firecrawl-context",
+  "generatedAt": "2026-04-25T05:27:55.606Z",
+  "manifest": {
+    "runId": "real-20260425-needle-technical-release-firecrawl-context",
+    "createdAt": "2026-04-25T05:24:57.184Z",
+    "provider": {
+      "id": "firecrawl-context",
+      "name": "Firecrawl MCP context fork",
+      "transport": "stdio",
+      "cwd": "../firecrawl-mcp-server",
+      "command": "node",
+      "args": [
+        "dist/index.js"
+      ],
+      "env": [
+        {
+          "name": "FIRECRAWL_API_KEY",
+          "required": true,
+          "present": true
+        },
+        {
+          "name": "FIRECRAWL_API_URL",
+          "required": false,
+          "present": false
+        }
+      ],
+      "searchTools": [
+        "firecrawl_search"
+      ],
+      "fetchTools": [
+        "firecrawl_scrape"
+      ],
+      "cwdExists": true
+    },
+    "task": {
+      "id": "needle-technical-release",
+      "family": "hard-retrieval",
+      "question": "Find a recent TypeScript or JavaScript library release after August 2025 that introduced at least three concrete API changes and identify source-backed examples.",
+      "agentGoal": "This mirrors Exa WebCode-style coding-agent search. Prefer changelogs, release notes, and official docs.",
+      "expectedTerms": [
+        "release",
+        "API",
+        "TypeScript"
+      ],
+      "freshness": "year"
+    }
+  },
+  "metrics": {
+    "provider": "firecrawl-context",
+    "taskId": "needle-technical-release",
+    "toolCalls": 5,
+    "searchCalls": 2,
+    "fetchCalls": 3,
+    "failedCalls": 0,
+    "totalConnectMs": 1154,
+    "totalCallLatencyMs": 19522,
+    "argumentTokens": 864,
+    "rawOutputTokens": 13426,
+    "normalizedEvidenceTokens": 4135,
+    "totalTrajectoryTokens": 26009,
+    "contract": {
+      "toolCount": 14,
+      "searchToolCount": 1,
+      "fetchToolCount": 2,
+      "descriptionTokens": 5356,
+      "schemaTokens": 5505,
+      "totalMcpFootprintTokens": 11719,
+      "hasFreshnessControl": true,
+      "hasSourcePolicyControl": true,
+      "hasContentBudgetControl": true,
+      "hasUsageMetadata": true
+    }
+  },
+  "semanticScore": {
+    "agentModel": "gpt-5.5 xhigh",
+    "provider": "firecrawl-context",
+    "taskId": "needle-technical-release",
+    "success": true,
+    "answerSupportedByEvidence": true,
+    "retrievalQualityScore": 4.6,
+    "agentExperienceScore": 4.2,
+    "sourcePolicyAdherent": null,
+    "freshnessAdherent": true,
+    "callRationale": [
+      "Started with a freshness-bounded GitHub-category search after 2025-09-01 to find candidate TypeScript or JavaScript library releases with API changes.",
+      "Narrowed to official React sources after the candidate search surfaced React 19.2 as an October 2025 release with new APIs.",
+      "Fetched the official React 19.2 release post with maxAge 0 for fresh exact-page evidence.",
+      "Ran structured JSON extraction on the official release post to capture release date, API names, concrete changes, and example usage shapes.",
+      "Fetched the official raw GitHub changelog with maxAge 0 to confirm the 19.2.0 date and listed APIs."
+    ],
+    "strengths": [
+      "The final answer is backed by official React release notes and the official React GitHub changelog.",
+      "Freshness was enforced with a start date of 2025-09-01 for search and maxAge 0 for exact-page scrapes.",
+      "The answer gives more than the required three API changes and includes source-derived code examples."
+    ],
+    "weaknesses": [
+      "The initial broad GitHub search returned some noisy GitHub UI chunks before narrowing to official React sources.",
+      "The harness-only shell restriction did not expose a direct way to read README and rubric files, so setup context came from the harness task/provider/start metadata instead."
+    ],
+    "notableFailures": [
+      "No provider call failed.",
+      "Initial retrieval quality was mixed on broad search; this was directly fixed by targeted official-source search and exact-page scrapes.",
+      "README/rubric file inspection was not performed because only direct agent-run.mjs commands were allowed for shell usage."
+    ],
+    "confidence": 0.93
+  },
+  "artifacts": {
+    "answer": "scoring/final-answer.md",
+    "score": "scoring/agent-score.json",
+    "trace": "trace.jsonl",
+    "tools": "schemas/tools.json"
+  }
+}

@@ -214,9 +214,163 @@
         background: rgba(255, 255, 255, 0.55);
       }
 
+      .section {
+        margin-top: 1.25rem;
+      }
+
+      .section-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        gap: 1rem;
+        margin: 2rem 0 0.75rem;
+      }
+
+      .section-title h2 {
+        margin: 0;
+        font-size: 1.5rem;
+        letter-spacing: 0;
+      }
+
+      .section-title p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 0.92rem;
+      }
+
+      .provider-grid {
+        display: grid;
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        gap: 0.75rem;
+      }
+
+      .provider-card {
+        padding: 1rem;
+      }
+
+      .provider-card h3 {
+        margin: 0 0 0.75rem;
+        font-size: 1rem;
+      }
+
+      .provider-card .score {
+        font-size: 2rem;
+        font-weight: 800;
+        line-height: 1;
+      }
+
+      .provider-card dl,
+      .mini-stats {
+        display: grid;
+        gap: 0.45rem;
+        margin: 1rem 0 0;
+        color: var(--muted);
+        font-size: 0.82rem;
+      }
+
+      .provider-card dl div,
+      .mini-stats div {
+        display: flex;
+        justify-content: space-between;
+        gap: 0.5rem;
+      }
+
+      .pill-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.35rem;
+        margin-top: 0.9rem;
+      }
+
+      .pill {
+        border: 1px solid #e3dfdb;
+        border-radius: 999px;
+        padding: 0.2rem 0.45rem;
+        background: #f4f2ef;
+        color: #595d62;
+        font-size: 0.72rem;
+      }
+
+      .table-wrap {
+        overflow: auto;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        min-width: 58rem;
+      }
+
+      th,
+      td {
+        border-bottom: 1px solid var(--line);
+        padding: 0.72rem 0.65rem;
+        text-align: left;
+        vertical-align: top;
+        font-size: 0.86rem;
+      }
+
+      th {
+        color: #555b62;
+        font-size: 0.74rem;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+      }
+
+      .cell-score {
+        display: grid;
+        gap: 0.2rem;
+      }
+
+      .cell-score strong {
+        color: var(--ink);
+      }
+
+      .cell-score span {
+        color: var(--muted);
+        font-size: 0.78rem;
+      }
+
+      .run-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.85rem;
+      }
+
+      .run-card {
+        padding: 1rem;
+      }
+
+      .run-card h3 {
+        margin: 0 0 0.45rem;
+        font-size: 1rem;
+      }
+
+      .run-card p {
+        margin: 0.75rem 0;
+        color: #555b62;
+        line-height: 1.55;
+        font-size: 0.9rem;
+      }
+
+      .links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-top: 0.85rem;
+      }
+
+      .links a {
+        color: var(--orange-dark);
+        font-size: 0.84rem;
+        font-weight: 650;
+      }
+
       @media (max-width: 880px) {
         .grid,
-        .metrics {
+        .metrics,
+        .provider-grid,
+        .run-grid {
           grid-template-columns: 1fr;
         }
 
@@ -251,9 +405,8 @@
         <div class="eyebrow">Agent trajectory benchmark</div>
         <h1>Search tools, judged by the path they create.</h1>
         <p class="dek">
-          This page renders the latest published MCP benchmark run. It is built for side-by-side
-          inspection: schema footprint, trajectory cost, raw calls, normalized evidence, and the
-          scoring notes written after the agent used the tools.
+          This page renders the real MCP trajectories: schema footprint, tool calls, token cost,
+          raw traces, normalized evidence, and the scoring notes written after each agent run.
         </p>
       </section>
 
@@ -288,7 +441,28 @@
         app.innerHTML = `<div class="empty">${escapeHtml(data.message || "No run has been published yet.")}</div>`;
       }
 
-      function render(data) {
+      function score(value) {
+        return value === null || value === undefined ? "-" : Number(value).toFixed(1);
+      }
+
+      function compact(value) {
+        if (value === null || value === undefined) return "-";
+        if (value >= 1000000) return `${(value / 1000000).toFixed(1)}M`;
+        if (value >= 1000) return `${Math.round(value / 1000)}k`;
+        return fmt.format(value);
+      }
+
+      function providerName(id) {
+        return {
+          "firecrawl-original": "Firecrawl original",
+          "firecrawl-context": "Firecrawl context",
+          exa: "Exa",
+          parallel: "Parallel",
+          tavily: "Tavily",
+        }[id] || id;
+      }
+
+      function renderSingle(data) {
         if (data.status !== "published") return renderEmpty(data);
         const report = data.report;
         const metrics = report.metrics || {};
@@ -361,6 +535,190 @@
             </div>
           </section>
         `;
+      }
+
+      function providerCard(provider) {
+        const combined = Number(
+          (((provider.avgRetrievalQuality || 0) + (provider.avgAgentExperience || 0)) / 2).toFixed(2)
+        );
+        const flags = [
+          provider.hasFreshnessControl && "freshness",
+          provider.hasSourcePolicyControl && "source policy",
+          provider.hasContentBudgetControl && "budget",
+          provider.hasUsageMetadata && "usage",
+        ].filter(Boolean);
+
+        return `
+          <article class="panel provider-card">
+            <h3>${escapeHtml(providerName(provider.provider))}</h3>
+            <div class="score">${score(combined)}</div>
+            <dl>
+              <div><dt>retrieval</dt><dd>${score(provider.avgRetrievalQuality)}</dd></div>
+              <div><dt>agent experience</dt><dd>${score(provider.avgAgentExperience)}</dd></div>
+              <div><dt>avg calls</dt><dd>${score(provider.avgToolCalls)}</dd></div>
+              <div><dt>avg tokens</dt><dd>${compact(provider.avgTrajectoryTokens)}</dd></div>
+              <div><dt>schema</dt><dd>${compact(provider.footprintTokens)}</dd></div>
+            </dl>
+            <div class="pill-row">${flags.map((flag) => `<span class="pill">${escapeHtml(flag)}</span>`).join("")}</div>
+          </article>
+        `;
+      }
+
+      function matrixCell(run) {
+        if (!run) return `<td>-</td>`;
+        return `
+          <td>
+            <div class="cell-score">
+              <strong>RQ ${score(run.semanticScore?.retrievalQualityScore)} / AX ${score(run.semanticScore?.agentExperienceScore)}</strong>
+              <span>${run.metrics?.toolCalls ?? 0} calls · ${compact(run.metrics?.totalTrajectoryTokens || 0)} tokens</span>
+              <span>${compact(run.metrics?.totalCallLatencyMs || 0)} ms</span>
+            </div>
+          </td>
+        `;
+      }
+
+      function renderMatrix(data) {
+        const providers = ["firecrawl-original", "firecrawl-context", "exa", "parallel", "tavily"];
+        const runByKey = new Map(data.runs.map((run) => [`${run.taskId}:${run.provider}`, run]));
+        return `
+          <div class="table-wrap panel">
+            <table>
+              <thead>
+                <tr>
+                  <th>Task</th>
+                  ${providers.map((provider) => `<th>${escapeHtml(providerName(provider))}</th>`).join("")}
+                </tr>
+              </thead>
+              <tbody>
+                ${data.tasks
+                  .map(
+                    (task) => `
+                      <tr>
+                        <td>
+                          <strong>${escapeHtml(task.taskId)}</strong><br />
+                          <span style="color:var(--muted)">${escapeHtml(task.family)}</span>
+                        </td>
+                        ${providers.map((provider) => matrixCell(runByKey.get(`${task.taskId}:${provider}`))).join("")}
+                      </tr>
+                    `
+                  )
+                  .join("")}
+              </tbody>
+            </table>
+          </div>
+        `;
+      }
+
+      function deltaPanel(data) {
+        const original = data.providers.find((item) => item.provider === "firecrawl-original");
+        const context = data.providers.find((item) => item.provider === "firecrawl-context");
+        if (!original || !context) return "";
+        const axDelta = (context.avgAgentExperience || 0) - (original.avgAgentExperience || 0);
+        const tokenDelta = (context.avgTrajectoryTokens || 0) - (original.avgTrajectoryTokens || 0);
+        const callDelta = (context.avgToolCalls || 0) - (original.avgToolCalls || 0);
+
+        return `
+          <section class="panel section">
+            <div class="panel-header">
+              <span>Firecrawl fork delta</span>
+              <span>context minus original</span>
+            </div>
+            <div class="panel-body">
+              <div class="metrics" style="margin:0">
+                ${metric("agent experience delta", axDelta > 0 ? `+${axDelta.toFixed(2)}` : axDelta.toFixed(2))}
+                ${metric("avg call delta", callDelta > 0 ? `+${callDelta.toFixed(2)}` : callDelta.toFixed(2))}
+                ${metric("avg token delta", tokenDelta > 0 ? `+${compact(tokenDelta)}` : compact(tokenDelta))}
+                ${metric("schema token delta", compact((context.footprintTokens || 0) - (original.footprintTokens || 0)))}
+              </div>
+            </div>
+          </section>
+        `;
+      }
+
+      function runCard(run) {
+        return `
+          <article class="panel run-card">
+            <h3>${escapeHtml(providerName(run.provider))} · ${escapeHtml(run.taskId)}</h3>
+            <div class="mini-stats">
+              <div><span>retrieval quality</span><strong>${score(run.semanticScore?.retrievalQualityScore)}</strong></div>
+              <div><span>agent experience</span><strong>${score(run.semanticScore?.agentExperienceScore)}</strong></div>
+              <div><span>calls</span><strong>${run.metrics?.toolCalls ?? 0}</strong></div>
+              <div><span>tokens</span><strong>${compact(run.metrics?.totalTrajectoryTokens || 0)}</strong></div>
+            </div>
+            <p>${escapeHtml(run.answerPreview || "No answer preview saved.")}</p>
+            <div class="links">
+              <a href="${escapeHtml(run.artifacts.report)}">report</a>
+              <a href="${escapeHtml(run.artifacts.trace)}">trace</a>
+              <a href="${escapeHtml(run.artifacts.tools)}">schema</a>
+              <a href="${escapeHtml(run.artifacts.answer)}">answer</a>
+            </div>
+          </article>
+        `;
+      }
+
+      function renderSuite(data) {
+        const ranked = [...data.providers].sort((a, b) => {
+          const aScore = (a.avgRetrievalQuality || 0) + (a.avgAgentExperience || 0);
+          const bScore = (b.avgRetrievalQuality || 0) + (b.avgAgentExperience || 0);
+          return bScore - aScore;
+        });
+        const avgTokens = Math.round(
+          data.providers.reduce((sum, provider) => sum + (provider.avgTrajectoryTokens || 0), 0) /
+            Math.max(1, data.providers.length)
+        );
+        const avgCalls = Number(
+          (
+            data.providers.reduce((sum, provider) => sum + (provider.avgToolCalls || 0), 0) /
+            Math.max(1, data.providers.length)
+          ).toFixed(1)
+        );
+
+        app.innerHTML = `
+          <div class="metrics">
+            ${metric("trajectories", data.runCount)}
+            ${metric("providers", data.providerCount)}
+            ${metric("tasks", data.taskCount)}
+            ${metric("avg trajectory tokens", compact(avgTokens))}
+          </div>
+
+          ${deltaPanel(data)}
+
+          <div class="section-title">
+            <div>
+              <h2>Provider leaderboard</h2>
+              <p>Average semantic scores and trajectory costs across the five-task run.</p>
+            </div>
+            <p>${compact(avgCalls)} average calls</p>
+          </div>
+          <div class="provider-grid">
+            ${ranked.map(providerCard).join("")}
+          </div>
+
+          <div class="section-title">
+            <div>
+              <h2>Task matrix</h2>
+              <p>Each cell shows retrieval quality, agent experience, calls, tokens, and latency.</p>
+            </div>
+            <p>${escapeHtml(data.suiteId)}</p>
+          </div>
+          ${renderMatrix(data)}
+
+          <div class="section-title">
+            <div>
+              <h2>Trajectories</h2>
+              <p>Full reports, traces, schemas, and final answers are linked for audit.</p>
+            </div>
+            <p>${escapeHtml(data.publishedAt)}</p>
+          </div>
+          <div class="run-grid">
+            ${data.runs.map(runCard).join("")}
+          </div>
+        `;
+      }
+
+      function render(data) {
+        if (data.status === "suite-published") return renderSuite(data);
+        return renderSingle(data);
       }
 
       fetch("data/latest.json", { cache: "no-store" })

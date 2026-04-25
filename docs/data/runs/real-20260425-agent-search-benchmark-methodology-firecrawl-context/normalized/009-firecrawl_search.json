@@ -1,0 +1,334 @@
+{
+  "provider": "firecrawl-context",
+  "tool": "firecrawl_search",
+  "isError": false,
+  "rawText": "{\n  \"query\": \"tavily-ai tavily-search-evals SimpleQA document relevance benchmark\",\n  \"executedQuery\": \"tavily-ai tavily-search-evals SimpleQA document relevance benchmark site:github.com\",\n  \"content\": \"chunks\",\n  \"constraints\": {\n    \"maxResults\": 6,\n    \"maxCharsPerResult\": 2400,\n    \"maxCharsTotal\": 10000,\n    \"focus\": \"Tavily search evals repository, SimpleQA, document relevance, benchmark metrics and setup\",\n    \"sourcePolicy\": {\n      \"includeDomains\": [\n        \"github.com\"\n      ]\n    }\n  },\n  \"results\": [\n    {\n      \"title\": \"GitHub - tavily-ai/tavily-search-evals: A public repository for running ...\",\n      \"url\": \"https://github.com/tavily-ai/tavily-search-evals\",\n      \"description\": \"Benchmarks: · Uses QuotientAI to assess the relevance of retrieved documents against a given query. · Involves generating a dynamic dataset using the open-source ...\",\n      \"position\": 1,\n      \"source\": \"web\",\n      \"category\": \"github\",\n      \"metadata\": {\n        \"sourceURL\": \"https://github.com/tavily-ai/tavily-search-evals\",\n        \"finalURL\": \"https://github.com/tavily-ai/tavily-search-evals\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"| Name | Name | Last commit message | Last commit date |\\n| --- | --- | --- | --- |\\n| ## Latest commit<br>[![Galhadarr](https://avatars.githubusercontent.com/u/71820033?v=4&size=40)](https://github.com/Galhadarr)[Galhadarr](https://github.com/tavily-ai/tavily-search-evals/commits?author=Galhadarr)<br>[Merge pull request](https://github.com/tavily-ai/tavily-search-evals/commit/99feb7decc9be67edb49a63d3985cf6094c873f2) [#14](https://github.com/tavily-ai/tavily-search-evals/pull/14) [from tavily-ai/feat/remove-raw-content-default](https://github.com/tavily-ai/tavily-search-evals/commit/99feb7decc9be67edb49a63d3985cf6094c873f2)<br>Open commit detailssuccess<br>3 months agoJan 29, 2026<br>[99feb7d](https://github.com/tavily-ai/tavily-search-evals/commit/99feb7decc9be67edb49a63d3985cf6094c873f2) \",\n          \"charCount\": 800\n        },\n        {\n          \"text\": \"- Runs the full SimpleQA dataset against each provider.\\n   - Retrieved documents are reformatted for an LLM (we used `gpt-4.1`) to extract a predicted answer.\\n   - The predicted answer is graded using the official SimpleQA classifier.\\n   - For providers that return direct answers, it is possible to bypass the LLM step and compare the returned answer directly with the SimpleQA ground truth (though our evaluations used the classifier route).\\n2. Document Relevance Benchmark\\n   - Uses [QuotientAI](https://docs.quotientai.co/data-collection/logs) to assess the relevance of retrieved documents against a given query.\\n   - Involves generating a dynamic dataset using the open-source [Dynamic Eval Datasets Generator](https://github.com/Eyalbenba/tavily-web-eval-generator).\\n   - You can use the provi\",\n          \"charCount\": 800\n        },\n        {\n          \"text\": \"```\\nresults/\\n├── simpleqa/\\n│   └── 2025-01-15_14-30-25/\\n│       ├── summary.csv\\n│       ├── config.json\\n│       ├── tavily_simpleqa_results.csv\\n│       ├── exa_simpleqa_results.csv\\n│       ├── serper_simpleqa_results.csv\\n│       ├── brave_simpleqa_results.csv\\n│       └── perplexity_search_simpleqa_results.csv\\n└── document_relevance/\\n    └── 2025-01-15_15-45-12/\\n        ├── summary.csv\\n        ├── config.json\\n        ├── tavily_document_relevance_results.csv\\n        ├── exa_document_relevance_results.csv\\n        └── ...\\n```\",\n          \"charCount\": 528\n        }\n      ]\n    },\n    {\n      \"title\": \"tavily-search-evals/run_evaluation.py at main · tavily-ai/tavily-search ...\",\n      \"url\": \"https://github.com/tavily-ai/tavily-search-evals/blob/main/run_evaluation.py\",\n      \"description\": \"A public repository for running search benchmarks across multiple search providers - tavily-search-evals/run_evaluation.py at main ...\",\n      \"position\": 2,\n      \"source\": \"web\",\n      \"category\": \"github\",\n      \"metadata\": {\n        \"sourceURL\": \"https://github.com/tavily-ai/tavily-search-evals/blob/main/run_evaluation.py\",\n        \"finalURL\": \"https://github.com/tavily-ai/tavily-search-evals/blob/main/run_evaluation.py\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"[Skip to content](https://github.com/tavily-ai/tavily-search-evals/blob/main/run_evaluation.py#start-of-content)\",\n          \"charCount\": 112\n        },\n        {\n          \"text\": \"You signed in with another tab or window. [Reload](https://github.com/tavily-ai/tavily-search-evals/blob/main/run_evaluation.py) to refresh your session.You signed out in another tab or window. [Reload](https://github.com/tavily-ai/tavily-search-evals/blob/main/run_evaluation.py) to refresh your session.You switched accounts on another tab or window. [Reload](https://github.com/tavily-ai/tavily-search-evals/blob/main/run_evaluation.py) to refresh your session.Dismiss alert\",\n          \"charCount\": 477\n        },\n        {\n          \"text\": \"documents, token\\\\_count, token\\\\_avg=awaitsearch\\\\_handler.post\\\\_process(search\\\\_result, evaluation\\\\_type=EvaluationType.DOCUMENT\\\\_RELEVANCE)\",\n          \"charCount\": 139\n        }\n      ]\n    },\n    {\n      \"title\": \"perplexityai/search_evals: Batteries-included eval framework for ...\",\n      \"url\": \"https://github.com/perplexityai/search_evals\",\n      \"description\": \"Each API is integrated into multiple AI agent harnesses and evaluated across various benchmarks that test accuracy, relevance, and information retrieval ...\",\n      \"position\": 3,\n      \"source\": \"web\",\n      \"category\": \"github\",\n      \"metadata\": {\n        \"sourceURL\": \"https://github.com/perplexityai/search_evals\",\n        \"finalURL\": \"https://github.com/perplexityai/search_evals\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"This repository contains a lightweight evaluation framework for web search APIs. Each API is integrated into multiple AI agent harnesses and evaluated across various benchmarks that test accuracy, relevance, and information retrieval performance.\",\n          \"charCount\": 246\n        },\n        {\n          \"text\": \"```\\n# Run SimpleQA evaluation with Perplexity search engine and GPT-4.1 model\\nuv run python search_evals/run_eval.py search_engine=perplexity model=gpt-4.1 suite=simpleqa\",\n          \"charCount\": 170\n        },\n        {\n          \"text\": \"| Benchmark | Description | Flag | AI Agent |\\n| --- | --- | --- | --- |\\n| SimpleQA | Factual question answering ( [paper](https://arxiv.org/abs/2411.04368), [dataset](https://huggingface.co/datasets/basicv8vc/SimpleQA)) | `suite=simpleqa` | Single-step search agent |\\n| BrowseComp | Complex research tasks ( [paper](https://arxiv.org/abs/2504.12516), [dataset](https://github.com/openai/simple-evals/blob/main/browsecomp_eval.py)) | `suite=browsecomp` | Deep research agent |\\n| DeepSearchQA | Complex information-seeking tasks requiring systematic search ( [paper](https://storage.googleapis.com/deepmind-media/DeepSearchQA/DeepSearchQA_benchmark_paper.pdf)) | `suite=dsqa` | Deep research agent |\\n| FRAMES | Deep research and multi-hop reasoning ( [paper](https://arxiv.org/abs/2409.12941), [dataset\",\n          \"charCount\": 800\n        }\n      ]\n    },\n    {\n      \"title\": \"edwardtay/awesome-ai: A curated list of 400+ AI APIs, tools ... - GitHub\",\n      \"url\": \"https://github.com/edwardtay/awesome-ai\",\n      \"description\": \"Semantic/neural search scoring 94.9% on SimpleQA, returning meaning-based results. Brave Search API, Independent index with no tracking and privacy-focused ...\",\n      \"position\": 4,\n      \"source\": \"web\",\n      \"category\": \"github\",\n      \"metadata\": {\n        \"sourceURL\": \"https://github.com/edwardtay/awesome-ai\",\n        \"finalURL\": \"https://github.com/edwardtay/awesome-ai\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"| Tool | Stars | Description |\\n| --- | --- | --- |\\n| [Llama 4 (Meta)](https://ai.meta.com/llama/) | - | Scout (17B active/109B experts) and Maverick variants, 128K context, strong general performance. |\\n| [Qwen 3 (Alibaba)](https://qwenlm.github.io/) | - | MoE family (up to 235B parameters) excelling in multilingual and reasoning tasks with open weights. |\\n| [DeepSeek V3](https://github.com/deepseek-ai/DeepSeek-V3) | 20k+ | 671B MoE model (MIT license) matching frontier models at a fraction of the cost. |\\n| [DeepSeek R1](https://github.com/deepseek-ai/DeepSeek-R1) | 38k+ | Reasoning model trained via large-scale RL achieving o1-level performance (MIT license). |\\n| [Mistral Large / Mixtral](https://mistral.ai/) | - | Mixtral MoE and Small 3 (24B) punching above their weight in efficiency. |\",\n          \"charCount\": 800\n        },\n        {\n          \"text\": \"| Tool | Description |\\n| --- | --- |\\n| [Perplexity Sonar API](https://docs.perplexity.ai/) | LLM-powered search providing direct answers with cited sources. |\\n| [Tavily API](https://tavily.com/) | Built for agents and RAG workflows with SOC 2 certification. |\\n| [Exa API](https://exa.ai/) | Semantic/neural search scoring 94.9% on SimpleQA, returning meaning-based results. |\\n| [Brave Search API](https://brave.com/search/api/) | Independent index with no tracking and privacy-focused results. |\\n| [SerpAPI](https://serpapi.com/) | SERP scraping across search engines for AI features, SEO, and price monitoring. |\\n| [You.com API](https://you.com/apis) | Deep Search, Express Agent, and MCP support. |\\n| [Serper API](https://serper.dev/) | Fast, affordable Google SERP API for high-volume use cases. |\",\n          \"charCount\": 800\n        },\n        {\n          \"text\": \"| Tool | Description |\\n| --- | --- |\\n| [LlamaIndex](https://www.llamaindex.ai/) | 100+ data connectors, retrieval strategies, and production-ready pipelines. |\\n| [Unstructured](https://unstructured.io/) | Converts PDFs, images, HTML, and Word docs into structured data for ingestion. |\\n| [Vectara](https://vectara.com/) | RAG-as-a-service with built-in semantic search, summarization, and hallucination detection. |\\n| [Ragas](https://docs.ragas.io/) | Reference-free evaluation of RAG pipelines with metrics for context relevance and groundedness. |\\n| [LangChain Retrievers](https://python.langchain.com/docs/modules/data_connection/) | Modular retrieval components supporting vector stores, multi-query, and contextual compression. |\\n| [Cohere Rerank](https://cohere.com/rerank) | Neural reranking t\",\n          \"charCount\": 800\n        }\n      ]\n    },\n    {\n      \"title\": \"taishi-i/awesome-ChatGPT-repositories - GitHub\",\n      \"url\": \"https://github.com/taishi-i/awesome-ChatGPT-repositories\",\n      \"description\": \"A curated list of resources dedicated to open source GitHub repositories related to ChatGPT, OpenAI API, and Codex - taishi-i/awesome-ChatGPT-repositories.\",\n      \"position\": 5,\n      \"source\": \"web\",\n      \"category\": \"github\",\n      \"metadata\": {\n        \"sourceURL\": \"https://github.com/taishi-i/awesome-ChatGPT-repositories\",\n        \"finalURL\": \"https://github.com/taishi-i/awesome-ChatGPT-repositories\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"- 💤 [gpt-repository-loader](https://github.com/mpoon/gpt-repository-loader) \\\\- ⭐ 3k / Convert code repos into an LLM prompt-friendly format. Mostly built by GPT-4.\\n- ⚠️ [myGPTReader](https://github.com/madawei2699/mygptreader) \\\\- ⭐ 4.4k / myGPTReader is a bot on Slack that can read and summarize any webpage, documents including ebooks, or even videos from YouTube. It can communicate with you through voice.\\n- 💤 [PromptCraft-Robotics](https://github.com/microsoft/promptcraft-robotics) \\\\- ⭐ 2.1k / Community for applying LLMs to robotics and a robot simulator with ChatGPT integration\\n- 💤 [chat-gpt-quine](https://github.com/fullthom/chat-gpt-quine) \\\\- ⭐ 127 / @realtimeai someone tried to make a self-improving prompt with chatgpt a few weeks back. it only took 11 generations for it to collaps\",\n          \"charCount\": 800\n        },\n        {\n          \"text\": \"- 💤 [gpt4all](https://github.com/nomic-ai/gpt4all) \\\\- ⭐ 77k / gpt4all: a chatbot trained on a massive collection of clean assistant data including code, stories and dialogue\\n- 💤 [Open-Assistant](https://github.com/laion-ai/open-assistant) \\\\- ⭐ 37k / OpenAssistant is a chat-based assistant that understands tasks, can interact with third-party systems, and retrieve information dynamically to do so.\\n- 💤 [FastChat](https://github.com/lm-sys/fastchat) \\\\- ⭐ 39k / The release repo for \\\"Vicuna: An Open Chatbot Impressing GPT-4\\\"\\n- 💤 [kubernetes-chatgpt-bot](https://github.com/robusta-dev/kubernetes-chatgpt-bot) \\\\- ⭐ 920 / A ChatGPT bot for Kubernetes issues.\\n- 💤 [chatGPT-telegram-bot](https://github.com/altryne/chatgpt-telegram-bot) \\\\- ⭐ 1.7k / This is a very early attempt at having chatGPT wo\",\n          \"charCount\": 800\n        },\n        {\n          \"text\": \"- 🔥 [langchain](https://github.com/hwchase17/langchain) \\\\- ⭐ 132k / ⚡ Building applications with LLMs through composability ⚡\\n- 🔥 [text-generation-webui](https://github.com/oobabooga/text-generation-webui) \\\\- ⭐ 46k / A gradio web UI for running Large Language Models like LLaMA, llama.cpp, GPT-J, OPT, and GALACTICA.\\n- ⚠️ [llama\\\\_index](https://github.com/jerryjliu/llama_index) \\\\- ⭐ 48k / LlamaIndex (GPT Index) is a project that provides a central interface to connect your LLM's with external data.\\n- 💤 [llama](https://github.com/facebookresearch/llama) \\\\- ⭐ 59k / Inference code for LLaMA models\\n- 💤 [GPTQ-for-LLaMa](https://github.com/qwopqwop200/gptq-for-llama) \\\\- ⭐ 3.1k / 4 bits quantization of LLaMA using GPTQ\\n- 💤 [gptuber-by-langchain](https://github.com/karakuri-ai/gptuber-by-langch\",\n          \"charCount\": 800\n        }\n      ]\n    },\n    {\n      \"title\": \"jxzzlfh/awesome-stars - GitHub\",\n      \"url\": \"https://github.com/jxzzlfh/awesome-stars\",\n      \"description\": \"... SimpleQA benchmark (tested with GPT-4.1-mini). ... meilisearch/meilisearch - A lightning-fast search engine API bringing AI-powered hybrid search ...\",\n      \"position\": 6,\n      \"source\": \"web\",\n      \"category\": \"github\",\n      \"metadata\": {\n        \"sourceURL\": \"https://github.com/jxzzlfh/awesome-stars\",\n        \"finalURL\": \"https://github.com/jxzzlfh/awesome-stars\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"- [Rancho-7/subtitle-optimizer](https://github.com/Rancho-7/subtitle-optimizer) \\\\- 🎬 An AI Agent skill for reviewing and optimizing SRT subtitles with an interactive diff panel.\\n- [zephyrwang6/pm-skills](https://github.com/zephyrwang6/pm-skills) -\\n- [ringhyacinth/Star-Office-UI](https://github.com/ringhyacinth/Star-Office-UI) \\\\- A pixel office for your OpenClaw: turn invisible work states into a cozy little space with characters, daily notes, and guest agents. Code under MIT; art assets for non-commercial learning only.\\n- [JackyST0/awesome-rsshub-routes](https://github.com/JackyST0/awesome-rsshub-routes) \\\\- 🎯 精选 RSSHub 实用路由推荐，让你的 RSS 阅读更高效！\\n- [hjyl-cheng/wechat-pcspider](https://github.com/hjyl-cheng/wechat-pcspider) \\\\- 这是一个功能完整的 微信公众号文章数据获取系统，支持自动化获取文章内容、统计数据（阅读量、点赞量、分享量、评论量）和留言区内容。\\n- [\",\n          \"charCount\": 800\n        },\n        {\n          \"text\": \"- [linkcd/hexo-skill](https://github.com/linkcd/hexo-skill) \\\\- claude skill for hexo blogging framework\\n- [zijieguo2003/blog-builder-skill](https://github.com/zijieguo2003/blog-builder-skill) \\\\- Claude Code skill: set up a personal blog from scratch (Hugo/Astro/Hexo/Next.js + GitHub Pages/Vercel/Cloudflare)\\n- [yaoleifly/wechat\",\n          \"charCount\": 328\n        }\n      ]\n    }\n  ],\n  \"searchIds\": [\n    \"019dc305-2b2f-759d-aa3e-2c215c44db44\"\n  ],\n  \"usage\": {\n    \"resultCount\": 6,\n    \"charsReturned\": 10000,\n    \"creditsUsed\": 8,\n    \"rawResultCount\": {\n      \"web\": 6,\n      \"news\": 0,\n      \"images\": 0\n    }\n  },\n  \"warnings\": [\n    \"maxCharsTotal hard cap reached at 10000 characters\"\n  ]\n}",
+  "parsed": {
+    "query": "tavily-ai tavily-search-evals SimpleQA document relevance benchmark",
+    "executedQuery": "tavily-ai tavily-search-evals SimpleQA document relevance benchmark site:github.com",
+    "content": "chunks",
+    "constraints": {
+      "maxResults": 6,
+      "maxCharsPerResult": 2400,
+      "maxCharsTotal": 10000,
+      "focus": "Tavily search evals repository, SimpleQA, document relevance, benchmark metrics and setup",
+      "sourcePolicy": {
+        "includeDomains": [
+          "github.com"
+        ]
+      }
+    },
+    "results": [
+      {
+        "title": "GitHub - tavily-ai/tavily-search-evals: A public repository for running ...",
+        "url": "https://github.com/tavily-ai/tavily-search-evals",
+        "description": "Benchmarks: · Uses QuotientAI to assess the relevance of retrieved documents against a given query. · Involves generating a dynamic dataset using the open-source ...",
+        "position": 1,
+        "source": "web",
+        "category": "github",
+        "metadata": {
+          "sourceURL": "https://github.com/tavily-ai/tavily-search-evals",
+          "finalURL": "https://github.com/tavily-ai/tavily-search-evals",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "| Name | Name | Last commit message | Last commit date |\n| --- | --- | --- | --- |\n| ## Latest commit<br>[![Galhadarr](https://avatars.githubusercontent.com/u/71820033?v=4&size=40)](https://github.com/Galhadarr)[Galhadarr](https://github.com/tavily-ai/tavily-search-evals/commits?author=Galhadarr)<br>[Merge pull request](https://github.com/tavily-ai/tavily-search-evals/commit/99feb7decc9be67edb49a63d3985cf6094c873f2) [#14](https://github.com/tavily-ai/tavily-search-evals/pull/14) [from tavily-ai/feat/remove-raw-content-default](https://github.com/tavily-ai/tavily-search-evals/commit/99feb7decc9be67edb49a63d3985cf6094c873f2)<br>Open commit detailssuccess<br>3 months agoJan 29, 2026<br>[99feb7d](https://github.com/tavily-ai/tavily-search-evals/commit/99feb7decc9be67edb49a63d3985cf6094c873f2) ",
+            "charCount": 800
+          },
+          {
+            "text": "- Runs the full SimpleQA dataset against each provider.\n   - Retrieved documents are reformatted for an LLM (we used `gpt-4.1`) to extract a predicted answer.\n   - The predicted answer is graded using the official SimpleQA classifier.\n   - For providers that return direct answers, it is possible to bypass the LLM step and compare the returned answer directly with the SimpleQA ground truth (though our evaluations used the classifier route).\n2. Document Relevance Benchmark\n   - Uses [QuotientAI](https://docs.quotientai.co/data-collection/logs) to assess the relevance of retrieved documents against a given query.\n   - Involves generating a dynamic dataset using the open-source [Dynamic Eval Datasets Generator](https://github.com/Eyalbenba/tavily-web-eval-generator).\n   - You can use the provi",
+            "charCount": 800
+          },
+          {
+            "text": "```\nresults/\n├── simpleqa/\n│   └── 2025-01-15_14-30-25/\n│       ├── summary.csv\n│       ├── config.json\n│       ├── tavily_simpleqa_results.csv\n│       ├── exa_simpleqa_results.csv\n│       ├── serper_simpleqa_results.csv\n│       ├── brave_simpleqa_results.csv\n│       └── perplexity_search_simpleqa_results.csv\n└── document_relevance/\n    └── 2025-01-15_15-45-12/\n        ├── summary.csv\n        ├── config.json\n        ├── tavily_document_relevance_results.csv\n        ├── exa_document_relevance_results.csv\n        └── ...\n```",
+            "charCount": 528
+          }
+        ]
+      },
+      {
+        "title": "tavily-search-evals/run_evaluation.py at main · tavily-ai/tavily-search ...",
+        "url": "https://github.com/tavily-ai/tavily-search-evals/blob/main/run_evaluation.py",
+        "description": "A public repository for running search benchmarks across multiple search providers - tavily-search-evals/run_evaluation.py at main ...",
+        "position": 2,
+        "source": "web",
+        "category": "github",
+        "metadata": {
+          "sourceURL": "https://github.com/tavily-ai/tavily-search-evals/blob/main/run_evaluation.py",
+          "finalURL": "https://github.com/tavily-ai/tavily-search-evals/blob/main/run_evaluation.py",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "[Skip to content](https://github.com/tavily-ai/tavily-search-evals/blob/main/run_evaluation.py#start-of-content)",
+            "charCount": 112
+          },
+          {
+            "text": "You signed in with another tab or window. [Reload](https://github.com/tavily-ai/tavily-search-evals/blob/main/run_evaluation.py) to refresh your session.You signed out in another tab or window. [Reload](https://github.com/tavily-ai/tavily-search-evals/blob/main/run_evaluation.py) to refresh your session.You switched accounts on another tab or window. [Reload](https://github.com/tavily-ai/tavily-search-evals/blob/main/run_evaluation.py) to refresh your session.Dismiss alert",
+            "charCount": 477
+          },
+          {
+            "text": "documents, token\\_count, token\\_avg=awaitsearch\\_handler.post\\_process(search\\_result, evaluation\\_type=EvaluationType.DOCUMENT\\_RELEVANCE)",
+            "charCount": 139
+          }
+        ]
+      },
+      {
+        "title": "perplexityai/search_evals: Batteries-included eval framework for ...",
+        "url": "https://github.com/perplexityai/search_evals",
+        "description": "Each API is integrated into multiple AI agent harnesses and evaluated across various benchmarks that test accuracy, relevance, and information retrieval ...",
+        "position": 3,
+        "source": "web",
+        "category": "github",
+        "metadata": {
+          "sourceURL": "https://github.com/perplexityai/search_evals",
+          "finalURL": "https://github.com/perplexityai/search_evals",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "This repository contains a lightweight evaluation framework for web search APIs. Each API is integrated into multiple AI agent harnesses and evaluated across various benchmarks that test accuracy, relevance, and information retrieval performance.",
+            "charCount": 246
+          },
+          {
+            "text": "```\n# Run SimpleQA evaluation with Perplexity search engine and GPT-4.1 model\nuv run python search_evals/run_eval.py search_engine=perplexity model=gpt-4.1 suite=simpleqa",
+            "charCount": 170
+          },
+          {
+            "text": "| Benchmark | Description | Flag | AI Agent |\n| --- | --- | --- | --- |\n| SimpleQA | Factual question answering ( [paper](https://arxiv.org/abs/2411.04368), [dataset](https://huggingface.co/datasets/basicv8vc/SimpleQA)) | `suite=simpleqa` | Single-step search agent |\n| BrowseComp | Complex research tasks ( [paper](https://arxiv.org/abs/2504.12516), [dataset](https://github.com/openai/simple-evals/blob/main/browsecomp_eval.py)) | `suite=browsecomp` | Deep research agent |\n| DeepSearchQA | Complex information-seeking tasks requiring systematic search ( [paper](https://storage.googleapis.com/deepmind-media/DeepSearchQA/DeepSearchQA_benchmark_paper.pdf)) | `suite=dsqa` | Deep research agent |\n| FRAMES | Deep research and multi-hop reasoning ( [paper](https://arxiv.org/abs/2409.12941), [dataset",
+            "charCount": 800
+          }
+        ]
+      },
+      {
+        "title": "edwardtay/awesome-ai: A curated list of 400+ AI APIs, tools ... - GitHub",
+        "url": "https://github.com/edwardtay/awesome-ai",
+        "description": "Semantic/neural search scoring 94.9% on SimpleQA, returning meaning-based results. Brave Search API, Independent index with no tracking and privacy-focused ...",
+        "position": 4,
+        "source": "web",
+        "category": "github",
+        "metadata": {
+          "sourceURL": "https://github.com/edwardtay/awesome-ai",
+          "finalURL": "https://github.com/edwardtay/awesome-ai",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "| Tool | Stars | Description |\n| --- | --- | --- |\n| [Llama 4 (Meta)](https://ai.meta.com/llama/) | - | Scout (17B active/109B experts) and Maverick variants, 128K context, strong general performance. |\n| [Qwen 3 (Alibaba)](https://qwenlm.github.io/) | - | MoE family (up to 235B parameters) excelling in multilingual and reasoning tasks with open weights. |\n| [DeepSeek V3](https://github.com/deepseek-ai/DeepSeek-V3) | 20k+ | 671B MoE model (MIT license) matching frontier models at a fraction of the cost. |\n| [DeepSeek R1](https://github.com/deepseek-ai/DeepSeek-R1) | 38k+ | Reasoning model trained via large-scale RL achieving o1-level performance (MIT license). |\n| [Mistral Large / Mixtral](https://mistral.ai/) | - | Mixtral MoE and Small 3 (24B) punching above their weight in efficiency. |",
+            "charCount": 800
+          },
+          {
+            "text": "| Tool | Description |\n| --- | --- |\n| [Perplexity Sonar API](https://docs.perplexity.ai/) | LLM-powered search providing direct answers with cited sources. |\n| [Tavily API](https://tavily.com/) | Built for agents and RAG workflows with SOC 2 certification. |\n| [Exa API](https://exa.ai/) | Semantic/neural search scoring 94.9% on SimpleQA, returning meaning-based results. |\n| [Brave Search API](https://brave.com/search/api/) | Independent index with no tracking and privacy-focused results. |\n| [SerpAPI](https://serpapi.com/) | SERP scraping across search engines for AI features, SEO, and price monitoring. |\n| [You.com API](https://you.com/apis) | Deep Search, Express Agent, and MCP support. |\n| [Serper API](https://serper.dev/) | Fast, affordable Google SERP API for high-volume use cases. |",
+            "charCount": 800
+          },
+          {
+            "text": "| Tool | Description |\n| --- | --- |\n| [LlamaIndex](https://www.llamaindex.ai/) | 100+ data connectors, retrieval strategies, and production-ready pipelines. |\n| [Unstructured](https://unstructured.io/) | Converts PDFs, images, HTML, and Word docs into structured data for ingestion. |\n| [Vectara](https://vectara.com/) | RAG-as-a-service with built-in semantic search, summarization, and hallucination detection. |\n| [Ragas](https://docs.ragas.io/) | Reference-free evaluation of RAG pipelines with metrics for context relevance and groundedness. |\n| [LangChain Retrievers](https://python.langchain.com/docs/modules/data_connection/) | Modular retrieval components supporting vector stores, multi-query, and contextual compression. |\n| [Cohere Rerank](https://cohere.com/rerank) | Neural reranking t",
+            "charCount": 800
+          }
+        ]
+      },
+      {
+        "title": "taishi-i/awesome-ChatGPT-repositories - GitHub",
+        "url": "https://github.com/taishi-i/awesome-ChatGPT-repositories",
+        "description": "A curated list of resources dedicated to open source GitHub repositories related to ChatGPT, OpenAI API, and Codex - taishi-i/awesome-ChatGPT-repositories.",
+        "position": 5,
+        "source": "web",
+        "category": "github",
+        "metadata": {
+          "sourceURL": "https://github.com/taishi-i/awesome-ChatGPT-repositories",
+          "finalURL": "https://github.com/taishi-i/awesome-ChatGPT-repositories",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "- 💤 [gpt-repository-loader](https://github.com/mpoon/gpt-repository-loader) \\- ⭐ 3k / Convert code repos into an LLM prompt-friendly format. Mostly built by GPT-4.\n- ⚠️ [myGPTReader](https://github.com/madawei2699/mygptreader) \\- ⭐ 4.4k / myGPTReader is a bot on Slack that can read and summarize any webpage, documents including ebooks, or even videos from YouTube. It can communicate with you through voice.\n- 💤 [PromptCraft-Robotics](https://github.com/microsoft/promptcraft-robotics) \\- ⭐ 2.1k / Community for applying LLMs to robotics and a robot simulator with ChatGPT integration\n- 💤 [chat-gpt-quine](https://github.com/fullthom/chat-gpt-quine) \\- ⭐ 127 / @realtimeai someone tried to make a self-improving prompt with chatgpt a few weeks back. it only took 11 generations for it to collaps",
+            "charCount": 800
+          },
+          {
+            "text": "- 💤 [gpt4all](https://github.com/nomic-ai/gpt4all) \\- ⭐ 77k / gpt4all: a chatbot trained on a massive collection of clean assistant data including code, stories and dialogue\n- 💤 [Open-Assistant](https://github.com/laion-ai/open-assistant) \\- ⭐ 37k / OpenAssistant is a chat-based assistant that understands tasks, can interact with third-party systems, and retrieve information dynamically to do so.\n- 💤 [FastChat](https://github.com/lm-sys/fastchat) \\- ⭐ 39k / The release repo for \"Vicuna: An Open Chatbot Impressing GPT-4\"\n- 💤 [kubernetes-chatgpt-bot](https://github.com/robusta-dev/kubernetes-chatgpt-bot) \\- ⭐ 920 / A ChatGPT bot for Kubernetes issues.\n- 💤 [chatGPT-telegram-bot](https://github.com/altryne/chatgpt-telegram-bot) \\- ⭐ 1.7k / This is a very early attempt at having chatGPT wo",
+            "charCount": 800
+          },
+          {
+            "text": "- 🔥 [langchain](https://github.com/hwchase17/langchain) \\- ⭐ 132k / ⚡ Building applications with LLMs through composability ⚡\n- 🔥 [text-generation-webui](https://github.com/oobabooga/text-generation-webui) \\- ⭐ 46k / A gradio web UI for running Large Language Models like LLaMA, llama.cpp, GPT-J, OPT, and GALACTICA.\n- ⚠️ [llama\\_index](https://github.com/jerryjliu/llama_index) \\- ⭐ 48k / LlamaIndex (GPT Index) is a project that provides a central interface to connect your LLM's with external data.\n- 💤 [llama](https://github.com/facebookresearch/llama) \\- ⭐ 59k / Inference code for LLaMA models\n- 💤 [GPTQ-for-LLaMa](https://github.com/qwopqwop200/gptq-for-llama) \\- ⭐ 3.1k / 4 bits quantization of LLaMA using GPTQ\n- 💤 [gptuber-by-langchain](https://github.com/karakuri-ai/gptuber-by-langch",
+            "charCount": 800
+          }
+        ]
+      },
+      {
+        "title": "jxzzlfh/awesome-stars - GitHub",
+        "url": "https://github.com/jxzzlfh/awesome-stars",
+        "description": "... SimpleQA benchmark (tested with GPT-4.1-mini). ... meilisearch/meilisearch - A lightning-fast search engine API bringing AI-powered hybrid search ...",
+        "position": 6,
+        "source": "web",
+        "category": "github",
+        "metadata": {
+          "sourceURL": "https://github.com/jxzzlfh/awesome-stars",
+          "finalURL": "https://github.com/jxzzlfh/awesome-stars",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "- [Rancho-7/subtitle-optimizer](https://github.com/Rancho-7/subtitle-optimizer) \\- 🎬 An AI Agent skill for reviewing and optimizing SRT subtitles with an interactive diff panel.\n- [zephyrwang6/pm-skills](https://github.com/zephyrwang6/pm-skills) -\n- [ringhyacinth/Star-Office-UI](https://github.com/ringhyacinth/Star-Office-UI) \\- A pixel office for your OpenClaw: turn invisible work states into a cozy little space with characters, daily notes, and guest agents. Code under MIT; art assets for non-commercial learning only.\n- [JackyST0/awesome-rsshub-routes](https://github.com/JackyST0/awesome-rsshub-routes) \\- 🎯 精选 RSSHub 实用路由推荐，让你的 RSS 阅读更高效！\n- [hjyl-cheng/wechat-pcspider](https://github.com/hjyl-cheng/wechat-pcspider) \\- 这是一个功能完整的 微信公众号文章数据获取系统，支持自动化获取文章内容、统计数据（阅读量、点赞量、分享量、评论量）和留言区内容。\n- [",
+            "charCount": 800
+          },
+          {
+            "text": "- [linkcd/hexo-skill](https://github.com/linkcd/hexo-skill) \\- claude skill for hexo blogging framework\n- [zijieguo2003/blog-builder-skill](https://github.com/zijieguo2003/blog-builder-skill) \\- Claude Code skill: set up a personal blog from scratch (Hugo/Astro/Hexo/Next.js + GitHub Pages/Vercel/Cloudflare)\n- [yaoleifly/wechat",
+            "charCount": 328
+          }
+        ]
+      }
+    ],
+    "searchIds": [
+      "019dc305-2b2f-759d-aa3e-2c215c44db44"
+    ],
+    "usage": {
+      "resultCount": 6,
+      "charsReturned": 10000,
+      "creditsUsed": 8,
+      "rawResultCount": {
+        "web": 6,
+        "news": 0,
+        "images": 0
+      }
+    },
+    "warnings": [
+      "maxCharsTotal hard cap reached at 10000 characters"
+    ]
+  },
+  "results": [
+    {
+      "title": "GitHub - tavily-ai/tavily-search-evals: A public repository for running ...",
+      "url": "https://github.com/tavily-ai/tavily-search-evals",
+      "domain": "github.com",
+      "description": "Benchmarks: · Uses QuotientAI to assess the relevance of retrieved documents against a given query. · Involves generating a dynamic dataset using the open-source ...",
+      "chunks": [
+        {
+          "text": "| Name | Name | Last commit message | Last commit date |\n| --- | --- | --- | --- |\n| ## Latest commit<br>[![Galhadarr](https://avatars.githubusercontent.com/u/71820033?v=4&size=40)](https://github.com/Galhadarr)[Galhadarr](https://github.com/tavily-ai/tavily-search-evals/commits?author=Galhadarr)<br>[Merge pull request](https://github.com/tavily-ai/tavily-search-evals/commit/99feb7decc9be67edb49a63d3985cf6094c873f2) [#14](https://github.com/tavily-ai/tavily-search-evals/pull/14) [from tavily-ai/feat/remove-raw-content-default](https://github.com/tavily-ai/tavily-search-evals/commit/99feb7decc9be67edb49a63d3985cf6094c873f2)<br>Open commit detailssuccess<br>3 months agoJan 29, 2026<br>[99feb7d](https://github.com/tavily-ai/tavily-search-evals/commit/99feb7decc9be67edb49a63d3985cf6094c873f2) ",
+          "charCount": 800
+        },
+        {
+          "text": "- Runs the full SimpleQA dataset against each provider.\n   - Retrieved documents are reformatted for an LLM (we used `gpt-4.1`) to extract a predicted answer.\n   - The predicted answer is graded using the official SimpleQA classifier.\n   - For providers that return direct answers, it is possible to bypass the LLM step and compare the returned answer directly with the SimpleQA ground truth (though our evaluations used the classifier route).\n2. Document Relevance Benchmark\n   - Uses [QuotientAI](https://docs.quotientai.co/data-collection/logs) to assess the relevance of retrieved documents against a given query.\n   - Involves generating a dynamic dataset using the open-source [Dynamic Eval Datasets Generator](https://github.com/Eyalbenba/tavily-web-eval-generator).\n   - You can use the provi",
+          "charCount": 800
+        },
+        {
+          "text": "```\nresults/\n├── simpleqa/\n│   └── 2025-01-15_14-30-25/\n│       ├── summary.csv\n│       ├── config.json\n│       ├── tavily_simpleqa_results.csv\n│       ├── exa_simpleqa_results.csv\n│       ├── serper_simpleqa_results.csv\n│       ├── brave_simpleqa_results.csv\n│       └── perplexity_search_simpleqa_results.csv\n└── document_relevance/\n    └── 2025-01-15_15-45-12/\n        ├── summary.csv\n        ├── config.json\n        ├── tavily_document_relevance_results.csv\n        ├── exa_document_relevance_results.csv\n        └── ...\n```",
+          "charCount": 528
+        }
+      ],
+      "source": "web",
+      "category": "github",
+      "position": 1
+    },
+    {
+      "title": "tavily-search-evals/run_evaluation.py at main · tavily-ai/tavily-search ...",
+      "url": "https://github.com/tavily-ai/tavily-search-evals/blob/main/run_evaluation.py",
+      "domain": "github.com",
+      "description": "A public repository for running search benchmarks across multiple search providers - tavily-search-evals/run_evaluation.py at main ...",
+      "chunks": [
+        {
+          "text": "[Skip to content](https://github.com/tavily-ai/tavily-search-evals/blob/main/run_evaluation.py#start-of-content)",
+          "charCount": 112
+        },
+        {
+          "text": "You signed in with another tab or window. [Reload](https://github.com/tavily-ai/tavily-search-evals/blob/main/run_evaluation.py) to refresh your session.You signed out in another tab or window. [Reload](https://github.com/tavily-ai/tavily-search-evals/blob/main/run_evaluation.py) to refresh your session.You switched accounts on another tab or window. [Reload](https://github.com/tavily-ai/tavily-search-evals/blob/main/run_evaluation.py) to refresh your session.Dismiss alert",
+          "charCount": 477
+        },
+        {
+          "text": "documents, token\\_count, token\\_avg=awaitsearch\\_handler.post\\_process(search\\_result, evaluation\\_type=EvaluationType.DOCUMENT\\_RELEVANCE)",
+          "charCount": 139
+        }
+      ],
+      "source": "web",
+      "category": "github",
+      "position": 2
+    },
+    {
+      "title": "perplexityai/search_evals: Batteries-included eval framework for ...",
+      "url": "https://github.com/perplexityai/search_evals",
+      "domain": "github.com",
+      "description": "Each API is integrated into multiple AI agent harnesses and evaluated across various benchmarks that test accuracy, relevance, and information retrieval ...",
+      "chunks": [
+        {
+          "text": "This repository contains a lightweight evaluation framework for web search APIs. Each API is integrated into multiple AI agent harnesses and evaluated across various benchmarks that test accuracy, relevance, and information retrieval performance.",
+          "charCount": 246
+        },
+        {
+          "text": "```\n# Run SimpleQA evaluation with Perplexity search engine and GPT-4.1 model\nuv run python search_evals/run_eval.py search_engine=perplexity model=gpt-4.1 suite=simpleqa",
+          "charCount": 170
+        },
+        {
+          "text": "| Benchmark | Description | Flag | AI Agent |\n| --- | --- | --- | --- |\n| SimpleQA | Factual question answering ( [paper](https://arxiv.org/abs/2411.04368), [dataset](https://huggingface.co/datasets/basicv8vc/SimpleQA)) | `suite=simpleqa` | Single-step search agent |\n| BrowseComp | Complex research tasks ( [paper](https://arxiv.org/abs/2504.12516), [dataset](https://github.com/openai/simple-evals/blob/main/browsecomp_eval.py)) | `suite=browsecomp` | Deep research agent |\n| DeepSearchQA | Complex information-seeking tasks requiring systematic search ( [paper](https://storage.googleapis.com/deepmind-media/DeepSearchQA/DeepSearchQA_benchmark_paper.pdf)) | `suite=dsqa` | Deep research agent |\n| FRAMES | Deep research and multi-hop reasoning ( [paper](https://arxiv.org/abs/2409.12941), [dataset",
+          "charCount": 800
+        }
+      ],
+      "source": "web",
+      "category": "github",
+      "position": 3
+    },
+    {
+      "title": "edwardtay/awesome-ai: A curated list of 400+ AI APIs, tools ... - GitHub",
+      "url": "https://github.com/edwardtay/awesome-ai",
+      "domain": "github.com",
+      "description": "Semantic/neural search scoring 94.9% on SimpleQA, returning meaning-based results. Brave Search API, Independent index with no tracking and privacy-focused ...",
+      "chunks": [
+        {
+          "text": "| Tool | Stars | Description |\n| --- | --- | --- |\n| [Llama 4 (Meta)](https://ai.meta.com/llama/) | - | Scout (17B active/109B experts) and Maverick variants, 128K context, strong general performance. |\n| [Qwen 3 (Alibaba)](https://qwenlm.github.io/) | - | MoE family (up to 235B parameters) excelling in multilingual and reasoning tasks with open weights. |\n| [DeepSeek V3](https://github.com/deepseek-ai/DeepSeek-V3) | 20k+ | 671B MoE model (MIT license) matching frontier models at a fraction of the cost. |\n| [DeepSeek R1](https://github.com/deepseek-ai/DeepSeek-R1) | 38k+ | Reasoning model trained via large-scale RL achieving o1-level performance (MIT license). |\n| [Mistral Large / Mixtral](https://mistral.ai/) | - | Mixtral MoE and Small 3 (24B) punching above their weight in efficiency. |",
+          "charCount": 800
+        },
+        {
+          "text": "| Tool | Description |\n| --- | --- |\n| [Perplexity Sonar API](https://docs.perplexity.ai/) | LLM-powered search providing direct answers with cited sources. |\n| [Tavily API](https://tavily.com/) | Built for agents and RAG workflows with SOC 2 certification. |\n| [Exa API](https://exa.ai/) | Semantic/neural search scoring 94.9% on SimpleQA, returning meaning-based results. |\n| [Brave Search API](https://brave.com/search/api/) | Independent index with no tracking and privacy-focused results. |\n| [SerpAPI](https://serpapi.com/) | SERP scraping across search engines for AI features, SEO, and price monitoring. |\n| [You.com API](https://you.com/apis) | Deep Search, Express Agent, and MCP support. |\n| [Serper API](https://serper.dev/) | Fast, affordable Google SERP API for high-volume use cases. |",
+          "charCount": 800
+        },
+        {
+          "text": "| Tool | Description |\n| --- | --- |\n| [LlamaIndex](https://www.llamaindex.ai/) | 100+ data connectors, retrieval strategies, and production-ready pipelines. |\n| [Unstructured](https://unstructured.io/) | Converts PDFs, images, HTML, and Word docs into structured data for ingestion. |\n| [Vectara](https://vectara.com/) | RAG-as-a-service with built-in semantic search, summarization, and hallucination detection. |\n| [Ragas](https://docs.ragas.io/) | Reference-free evaluation of RAG pipelines with metrics for context relevance and groundedness. |\n| [LangChain Retrievers](https://python.langchain.com/docs/modules/data_connection/) | Modular retrieval components supporting vector stores, multi-query, and contextual compression. |\n| [Cohere Rerank](https://cohere.com/rerank) | Neural reranking t",
+          "charCount": 800
+        }
+      ],
+      "source": "web",
+      "category": "github",
+      "position": 4
+    },
+    {
+      "title": "taishi-i/awesome-ChatGPT-repositories - GitHub",
+      "url": "https://github.com/taishi-i/awesome-ChatGPT-repositories",
+      "domain": "github.com",
+      "description": "A curated list of resources dedicated to open source GitHub repositories related to ChatGPT, OpenAI API, and Codex - taishi-i/awesome-ChatGPT-repositories.",
+      "chunks": [
+        {
+          "text": "- 💤 [gpt-repository-loader](https://github.com/mpoon/gpt-repository-loader) \\- ⭐ 3k / Convert code repos into an LLM prompt-friendly format. Mostly built by GPT-4.\n- ⚠️ [myGPTReader](https://github.com/madawei2699/mygptreader) \\- ⭐ 4.4k / myGPTReader is a bot on Slack that can read and summarize any webpage, documents including ebooks, or even videos from YouTube. It can communicate with you through voice.\n- 💤 [PromptCraft-Robotics](https://github.com/microsoft/promptcraft-robotics) \\- ⭐ 2.1k / Community for applying LLMs to robotics and a robot simulator with ChatGPT integration\n- 💤 [chat-gpt-quine](https://github.com/fullthom/chat-gpt-quine) \\- ⭐ 127 / @realtimeai someone tried to make a self-improving prompt with chatgpt a few weeks back. it only took 11 generations for it to collaps",
+          "charCount": 800
+        },
+        {
+          "text": "- 💤 [gpt4all](https://github.com/nomic-ai/gpt4all) \\- ⭐ 77k / gpt4all: a chatbot trained on a massive collection of clean assistant data including code, stories and dialogue\n- 💤 [Open-Assistant](https://github.com/laion-ai/open-assistant) \\- ⭐ 37k / OpenAssistant is a chat-based assistant that understands tasks, can interact with third-party systems, and retrieve information dynamically to do so.\n- 💤 [FastChat](https://github.com/lm-sys/fastchat) \\- ⭐ 39k / The release repo for \"Vicuna: An Open Chatbot Impressing GPT-4\"\n- 💤 [kubernetes-chatgpt-bot](https://github.com/robusta-dev/kubernetes-chatgpt-bot) \\- ⭐ 920 / A ChatGPT bot for Kubernetes issues.\n- 💤 [chatGPT-telegram-bot](https://github.com/altryne/chatgpt-telegram-bot) \\- ⭐ 1.7k / This is a very early attempt at having chatGPT wo",
+          "charCount": 800
+        },
+        {
+          "text": "- 🔥 [langchain](https://github.com/hwchase17/langchain) \\- ⭐ 132k / ⚡ Building applications with LLMs through composability ⚡\n- 🔥 [text-generation-webui](https://github.com/oobabooga/text-generation-webui) \\- ⭐ 46k / A gradio web UI for running Large Language Models like LLaMA, llama.cpp, GPT-J, OPT, and GALACTICA.\n- ⚠️ [llama\\_index](https://github.com/jerryjliu/llama_index) \\- ⭐ 48k / LlamaIndex (GPT Index) is a project that provides a central interface to connect your LLM's with external data.\n- 💤 [llama](https://github.com/facebookresearch/llama) \\- ⭐ 59k / Inference code for LLaMA models\n- 💤 [GPTQ-for-LLaMa](https://github.com/qwopqwop200/gptq-for-llama) \\- ⭐ 3.1k / 4 bits quantization of LLaMA using GPTQ\n- 💤 [gptuber-by-langchain](https://github.com/karakuri-ai/gptuber-by-langch",
+          "charCount": 800
+        }
+      ],
+      "source": "web",
+      "category": "github",
+      "position": 5
+    },
+    {
+      "title": "jxzzlfh/awesome-stars - GitHub",
+      "url": "https://github.com/jxzzlfh/awesome-stars",
+      "domain": "github.com",
+      "description": "... SimpleQA benchmark (tested with GPT-4.1-mini). ... meilisearch/meilisearch - A lightning-fast search engine API bringing AI-powered hybrid search ...",
+      "chunks": [
+        {
+          "text": "- [Rancho-7/subtitle-optimizer](https://github.com/Rancho-7/subtitle-optimizer) \\- 🎬 An AI Agent skill for reviewing and optimizing SRT subtitles with an interactive diff panel.\n- [zephyrwang6/pm-skills](https://github.com/zephyrwang6/pm-skills) -\n- [ringhyacinth/Star-Office-UI](https://github.com/ringhyacinth/Star-Office-UI) \\- A pixel office for your OpenClaw: turn invisible work states into a cozy little space with characters, daily notes, and guest agents. Code under MIT; art assets for non-commercial learning only.\n- [JackyST0/awesome-rsshub-routes](https://github.com/JackyST0/awesome-rsshub-routes) \\- 🎯 精选 RSSHub 实用路由推荐，让你的 RSS 阅读更高效！\n- [hjyl-cheng/wechat-pcspider](https://github.com/hjyl-cheng/wechat-pcspider) \\- 这是一个功能完整的 微信公众号文章数据获取系统，支持自动化获取文章内容、统计数据（阅读量、点赞量、分享量、评论量）和留言区内容。\n- [",
+          "charCount": 800
+        },
+        {
+          "text": "- [linkcd/hexo-skill](https://github.com/linkcd/hexo-skill) \\- claude skill for hexo blogging framework\n- [zijieguo2003/blog-builder-skill](https://github.com/zijieguo2003/blog-builder-skill) \\- Claude Code skill: set up a personal blog from scratch (Hugo/Astro/Hexo/Next.js + GitHub Pages/Vercel/Cloudflare)\n- [yaoleifly/wechat",
+          "charCount": 328
+        }
+      ],
+      "source": "web",
+      "category": "github",
+      "position": 6
+    }
+  ]
+}

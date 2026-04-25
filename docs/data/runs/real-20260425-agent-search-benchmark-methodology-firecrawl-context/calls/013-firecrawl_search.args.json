@@ -1,0 +1,19 @@
+{
+  "query": "Exa API Evals SimpleQA MSMARCO search API benchmark answer correctness result relevance",
+  "content": "chunks",
+  "maxResults": 8,
+  "maxCharsPerResult": 2600,
+  "maxCharsTotal": 14000,
+  "focus": "Exa API evals, SimpleQA, MSMARCO, document/result relevance, metrics, task construction, judge prompts",
+  "sourcePolicy": {
+    "includeDomains": [
+      "exa.ai",
+      "docs.exa.ai"
+    ]
+  },
+  "sources": [
+    "web"
+  ],
+  "ignoreInvalidURLs": true,
+  "includeRawResults": false
+}

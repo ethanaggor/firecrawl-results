@@ -1,0 +1,77 @@
+{
+  "provider": "firecrawl-original",
+  "tool": "firecrawl_search",
+  "isError": false,
+  "rawText": "{\n  \"web\": [\n    {\n      \"url\": \"https://devblogs.microsoft.com/typescript/announcing-typescript-5-9/\",\n      \"title\": \"Announcing TypeScript 5.9 - Microsoft Developer Blogs\",\n      \"description\": \"TypeScript 5.9 introduces support for ECMAScript's deferred module evaluation proposal using the new import defer syntax. This feature allows you to import a ...\",\n      \"position\": 1\n    },\n    {\n      \"url\": \"https://www.linkedin.com/pulse/typescript-59-released-key-updates-august-2025-vasily-nikiforov--nzsjf\",\n      \"title\": \"TypeScript 5.9 Released – Key Updates for August 2025 - LinkedIn\",\n      \"description\": \"TypeScript 5.9 brings many new features and improvements that make development faster, safer, and more comfortable. This update focuses on easier project ...\",\n      \"position\": 2\n    },\n    {\n      \"url\": \"https://devblogs.microsoft.com/typescript/announcing-typescript-5-9-beta/\",\n      \"title\": \"Announcing TypeScript 5.9 Beta - Microsoft Developer Blogs\",\n      \"description\": \"We are excited to announce the availability of TypeScript 5.9 Beta. To get started using the beta, you can get it through npm with the following command:\",\n      \"position\": 3\n    },\n    {\n      \"url\": \"https://thenewstack.io/typescript-5-9-brings-less-friction-more-features/\",\n      \"title\": \"TypeScript 5.9 Brings Less Friction, More Features - The New Stack\",\n      \"description\": \"Typescript 5.9 was released Aug. 1, with a slate of new features, including expandable hovers for preview, support for import defer and minimal and updated ...\",\n      \"position\": 4\n    },\n    {\n      \"url\": \"https://devnewsletter.com/p/state-of-typescript-2026/\",\n      \"title\": \"State of TypeScript 2026 | The Dev Newsletter\",\n      \"description\": \"TypeScript 5.9 released as stable, featuring Import Defer Support (Stage 3), revamped tsc --init generating minimal best-practice configuration, support for -- ...\",\n      \"position\": 5\n    }\n  ]\n}",
+  "parsed": {
+    "web": [
+      {
+        "url": "https://devblogs.microsoft.com/typescript/announcing-typescript-5-9/",
+        "title": "Announcing TypeScript 5.9 - Microsoft Developer Blogs",
+        "description": "TypeScript 5.9 introduces support for ECMAScript's deferred module evaluation proposal using the new import defer syntax. This feature allows you to import a ...",
+        "position": 1
+      },
+      {
+        "url": "https://www.linkedin.com/pulse/typescript-59-released-key-updates-august-2025-vasily-nikiforov--nzsjf",
+        "title": "TypeScript 5.9 Released – Key Updates for August 2025 - LinkedIn",
+        "description": "TypeScript 5.9 brings many new features and improvements that make development faster, safer, and more comfortable. This update focuses on easier project ...",
+        "position": 2
+      },
+      {
+        "url": "https://devblogs.microsoft.com/typescript/announcing-typescript-5-9-beta/",
+        "title": "Announcing TypeScript 5.9 Beta - Microsoft Developer Blogs",
+        "description": "We are excited to announce the availability of TypeScript 5.9 Beta. To get started using the beta, you can get it through npm with the following command:",
+        "position": 3
+      },
+      {
+        "url": "https://thenewstack.io/typescript-5-9-brings-less-friction-more-features/",
+        "title": "TypeScript 5.9 Brings Less Friction, More Features - The New Stack",
+        "description": "Typescript 5.9 was released Aug. 1, with a slate of new features, including expandable hovers for preview, support for import defer and minimal and updated ...",
+        "position": 4
+      },
+      {
+        "url": "https://devnewsletter.com/p/state-of-typescript-2026/",
+        "title": "State of TypeScript 2026 | The Dev Newsletter",
+        "description": "TypeScript 5.9 released as stable, featuring Import Defer Support (Stage 3), revamped tsc --init generating minimal best-practice configuration, support for -- ...",
+        "position": 5
+      }
+    ]
+  },
+  "results": [
+    {
+      "title": "Announcing TypeScript 5.9 - Microsoft Developer Blogs",
+      "url": "https://devblogs.microsoft.com/typescript/announcing-typescript-5-9/",
+      "domain": "devblogs.microsoft.com",
+      "description": "TypeScript 5.9 introduces support for ECMAScript's deferred module evaluation proposal using the new import defer syntax. This feature allows you to import a ...",
+      "position": 1
+    },
+    {
+      "title": "TypeScript 5.9 Released – Key Updates for August 2025 - LinkedIn",
+      "url": "https://www.linkedin.com/pulse/typescript-59-released-key-updates-august-2025-vasily-nikiforov--nzsjf",
+      "domain": "linkedin.com",
+      "description": "TypeScript 5.9 brings many new features and improvements that make development faster, safer, and more comfortable. This update focuses on easier project ...",
+      "position": 2
+    },
+    {
+      "title": "Announcing TypeScript 5.9 Beta - Microsoft Developer Blogs",
+      "url": "https://devblogs.microsoft.com/typescript/announcing-typescript-5-9-beta/",
+      "domain": "devblogs.microsoft.com",
+      "description": "We are excited to announce the availability of TypeScript 5.9 Beta. To get started using the beta, you can get it through npm with the following command:",
+      "position": 3
+    },
+    {
+      "title": "TypeScript 5.9 Brings Less Friction, More Features - The New Stack",
+      "url": "https://thenewstack.io/typescript-5-9-brings-less-friction-more-features/",
+      "domain": "thenewstack.io",
+      "description": "Typescript 5.9 was released Aug. 1, with a slate of new features, including expandable hovers for preview, support for import defer and minimal and updated ...",
+      "position": 4
+    },
+    {
+      "title": "State of TypeScript 2026 | The Dev Newsletter",
+      "url": "https://devnewsletter.com/p/state-of-typescript-2026/",
+      "domain": "devnewsletter.com",
+      "description": "TypeScript 5.9 released as stable, featuring Import Defer Support (Stage 3), revamped tsc --init generating minimal best-practice configuration, support for -- ...",
+      "position": 5
+    }
+  ]
+}

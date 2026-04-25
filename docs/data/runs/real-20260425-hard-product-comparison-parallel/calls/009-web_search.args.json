@@ -1,0 +1,10 @@
+{
+  "objective": "Find official Tavily documentation for remote MCP tools and search_depth behavior, plus official benchmark or evaluation pages relevant to agent search.",
+  "search_queries": [
+    "Tavily MCP docs search",
+    "Tavily search_depth advanced chunks",
+    "Tavily search evals"
+  ],
+  "session_id": "real20260425hardproductcomparisonparallel001",
+  "model_name": "gpt-5.5 xhigh"
+}

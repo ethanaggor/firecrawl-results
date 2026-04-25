@@ -1,0 +1,124 @@
+{
+  "status": "complete",
+  "runId": "real-20260425-source-policy-docs-only-tavily",
+  "generatedAt": "2026-04-25T05:11:03.974Z",
+  "manifest": {
+    "runId": "real-20260425-source-policy-docs-only-tavily",
+    "createdAt": "2026-04-25T05:09:25.452Z",
+    "provider": {
+      "id": "tavily",
+      "name": "Tavily remote MCP",
+      "transport": "streamable-http",
+      "url": "https://mcp.tavily.com/mcp/?tavilyApiKey=***",
+      "query": [
+        {
+          "name": "tavilyApiKey",
+          "env": "TAVILY_API_KEY",
+          "required": true
+        }
+      ],
+      "searchTools": [
+        "tavily-search",
+        "tavily_search",
+        "search"
+      ],
+      "fetchTools": [
+        "tavily-extract",
+        "tavily_extract",
+        "extract"
+      ],
+      "headers": []
+    },
+    "task": {
+      "id": "source-policy-docs-only",
+      "family": "source-policy",
+      "question": "Using only official Firecrawl docs, what does the Search API say about categories, country, timeout, and ignoreInvalidURLs?",
+      "agentGoal": "Constrain to docs.firecrawl.dev and produce evidence only from that domain.",
+      "expectedTerms": [
+        "categories",
+        "country",
+        "timeout",
+        "ignoreInvalidURLs"
+      ],
+      "expectedDomains": [
+        "docs.firecrawl.dev"
+      ],
+      "sourcePolicy": {
+        "includeDomains": [
+          "docs.firecrawl.dev"
+        ]
+      }
+    }
+  },
+  "metrics": {
+    "provider": "tavily",
+    "taskId": "source-policy-docs-only",
+    "toolCalls": 1,
+    "searchCalls": 1,
+    "fetchCalls": 0,
+    "failedCalls": 0,
+    "totalConnectMs": 146,
+    "totalCallLatencyMs": 1407,
+    "argumentTokens": 57,
+    "rawOutputTokens": 35655,
+    "normalizedEvidenceTokens": 3606,
+    "totalTrajectoryTokens": 38464,
+    "contract": {
+      "toolCount": 5,
+      "searchToolCount": 2,
+      "fetchToolCount": 1,
+      "descriptionTokens": 143,
+      "schemaTokens": 2277,
+      "totalMcpFootprintTokens": 2752,
+      "hasFreshnessControl": true,
+      "hasSourcePolicyControl": true,
+      "hasContentBudgetControl": true,
+      "hasUsageMetadata": false
+    }
+  },
+  "semanticScore": {
+    "agentModel": "gpt-5.5 xhigh",
+    "provider": "tavily",
+    "taskId": "source-policy-docs-only",
+    "success": true,
+    "answerSupportedByEvidence": true,
+    "retrievalQualityScore": 5,
+    "agentExperienceScore": 4.6,
+    "sourcePolicyAdherent": true,
+    "freshnessAdherent": null,
+    "callRationale": "Started the Tavily trajectory, inspected the schema exposed by the harness, selected tavily_search because it had native include_domains source-policy control, and searched for the four required Firecrawl Search API fields with include_domains set to docs.firecrawl.dev and include_raw_content enabled. No extraction call was needed because the first result was the official Search API endpoint and contained direct evidence for categories, country, timeout, and ignoreInvalidURLs.",
+    "retrievalQuality": {
+      "relevance": 5,
+      "sourceQuality": 5,
+      "coverage": 5,
+      "freshness": null,
+      "grounding": 5,
+      "rationale": "The top result was the official Firecrawl Search API docs page at docs.firecrawl.dev/api-reference/endpoint/search and it directly covered all expected terms. All returned URLs were from docs.firecrawl.dev, so the source policy was satisfied."
+    },
+    "agentExperience": {
+      "toolDiscovery": 5,
+      "controlExpressiveness": 5,
+      "outputInspectability": 4,
+      "followUpAffordance": 4,
+      "errorRecoverability": 5,
+      "rationale": "The Tavily schema made the search tool and include_domains control obvious. The search returned the needed answer in one call, but include_raw_content produced a large response with duplicated endpoint content and extra localized CLI pages, so the output was useful but noisier than ideal."
+    },
+    "strengths": [
+      "Native include_domains control allowed an honest docs.firecrawl.dev-only source policy.",
+      "The first result was the exact official Search API endpoint and contained all required fields.",
+      "One search call was enough; no follow-up fetch was necessary."
+    ],
+    "weaknesses": [
+      "Raw content was large and duplicated parts of the API page.",
+      "The result set included localized CLI documentation pages that were source-policy compliant but not needed for the final answer."
+    ],
+    "notableFailures": [],
+    "confidence": 0.96
+  },
+  "artifacts": {
+    "answer": "scoring/final-answer.md",
+    "score": "scoring/agent-score.json",
+    "trace": "trace.jsonl",
+    "tools": "schemas/tools.json"
+  }
+}

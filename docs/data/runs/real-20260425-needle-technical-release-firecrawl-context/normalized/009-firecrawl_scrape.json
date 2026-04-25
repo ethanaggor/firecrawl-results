@@ -1,0 +1,43 @@
+{
+  "provider": "firecrawl-context",
+  "tool": "firecrawl_scrape",
+  "isError": false,
+  "rawText": "{\n  \"metadata\": {\n    \"scrapeId\": \"019dc31a-f35f-7644-8ac7-369e43d0138f\",\n    \"sourceURL\": \"https://raw.githubusercontent.com/facebook/react/main/CHANGELOG.md\",\n    \"url\": \"https://raw.githubusercontent.com/facebook/react/main/CHANGELOG.md\",\n    \"statusCode\": 200,\n    \"contentType\": \"text/plain; charset=utf-8\",\n    \"timezone\": \"America/New_York\",\n    \"proxyUsed\": \"basic\",\n    \"indexId\": \"47e3616e-1994-4173-82e1-41b475668473\",\n    \"creditsUsed\": 5,\n    \"concurrencyLimited\": false\n  },\n  \"json\": {\n    \"version\": \"19.2.0\",\n    \"date\": \"October 1st, 2025\",\n    \"releasePostMentioned\": true,\n    \"listedApis\": [\n      \"Activity\",\n      \"useEffectEvent\",\n      \"cacheSignal\",\n      \"React Performance tracks\",\n      \"resume\",\n      \"resumeAndPrerender\",\n      \"resumeToPipeableStream\",\n      \"resumeAndPrerenderToNodeStream\",\n      \"prerender\"\n    ]\n  }\n}",
+  "parsed": {
+    "metadata": {
+      "scrapeId": "019dc31a-f35f-7644-8ac7-369e43d0138f",
+      "sourceURL": "https://raw.githubusercontent.com/facebook/react/main/CHANGELOG.md",
+      "url": "https://raw.githubusercontent.com/facebook/react/main/CHANGELOG.md",
+      "statusCode": 200,
+      "contentType": "text/plain; charset=utf-8",
+      "timezone": "America/New_York",
+      "proxyUsed": "basic",
+      "indexId": "47e3616e-1994-4173-82e1-41b475668473",
+      "creditsUsed": 5,
+      "concurrencyLimited": false
+    },
+    "json": {
+      "version": "19.2.0",
+      "date": "October 1st, 2025",
+      "releasePostMentioned": true,
+      "listedApis": [
+        "Activity",
+        "useEffectEvent",
+        "cacheSignal",
+        "React Performance tracks",
+        "resume",
+        "resumeAndPrerender",
+        "resumeToPipeableStream",
+        "resumeAndPrerenderToNodeStream",
+        "prerender"
+      ]
+    }
+  },
+  "results": [
+    {
+      "url": "https://raw.githubusercontent.com/facebook/react/main/CHANGELOG.md",
+      "domain": "raw.githubusercontent.com",
+      "position": 1
+    }
+  ]
+}

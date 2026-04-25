@@ -1,0 +1,19 @@
+{
+  "query": "Parallel Search MCP web_search web_fetch agents benchmark WISER dense excerpts free search mcp official docs",
+  "content": "chunks",
+  "focus": "Parallel Search MCP endpoint, tool-call flow, web_search/web_fetch behavior, result context shape, limits, and public benchmark methodology for agents",
+  "maxResults": 8,
+  "maxCharsPerResult": 1600,
+  "maxCharsTotal": 10000,
+  "sourcePolicy": {
+    "includeDomains": [
+      "parallel.ai",
+      "docs.parallel.ai"
+    ]
+  },
+  "sources": [
+    "web"
+  ],
+  "ignoreInvalidURLs": true,
+  "includeRawResults": false
+}

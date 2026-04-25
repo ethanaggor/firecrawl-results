@@ -1,0 +1,25 @@
+{
+  "provider": "firecrawl-original",
+  "tool": "firecrawl_search",
+  "isError": false,
+  "rawText": "{\n  \"web\": [\n    {\n      \"url\": \"https://exa.ai/docs/reference/exa-mcp\",\n      \"title\": \"Web Search MCP - Exa\",\n      \"description\": \"Complete setup guide for Exa MCP Server. Connect Claude Desktop, Cursor, VS Code, and 10+ AI assistants to Exa's web search and code search tools.\",\n      \"position\": 1\n    }\n  ]\n}",
+  "parsed": {
+    "web": [
+      {
+        "url": "https://exa.ai/docs/reference/exa-mcp",
+        "title": "Web Search MCP - Exa",
+        "description": "Complete setup guide for Exa MCP Server. Connect Claude Desktop, Cursor, VS Code, and 10+ AI assistants to Exa's web search and code search tools.",
+        "position": 1
+      }
+    ]
+  },
+  "results": [
+    {
+      "title": "Web Search MCP - Exa",
+      "url": "https://exa.ai/docs/reference/exa-mcp",
+      "domain": "exa.ai",
+      "description": "Complete setup guide for Exa MCP Server. Connect Claude Desktop, Cursor, VS Code, and 10+ AI assistants to Exa's web search and code search tools.",
+      "position": 1
+    }
+  ]
+}

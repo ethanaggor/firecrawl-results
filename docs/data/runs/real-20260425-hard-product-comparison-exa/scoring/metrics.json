@@ -1,0 +1,26 @@
+{
+  "provider": "exa",
+  "taskId": "hard-product-comparison",
+  "toolCalls": 7,
+  "searchCalls": 5,
+  "fetchCalls": 2,
+  "failedCalls": 0,
+  "totalConnectMs": 1328,
+  "totalCallLatencyMs": 56326,
+  "argumentTokens": 892,
+  "rawOutputTokens": 100576,
+  "normalizedEvidenceTokens": 24170,
+  "totalTrajectoryTokens": 103468,
+  "contract": {
+    "toolCount": 3,
+    "searchToolCount": 2,
+    "fetchToolCount": 1,
+    "descriptionTokens": 235,
+    "schemaTokens": 1509,
+    "totalMcpFootprintTokens": 2000,
+    "hasFreshnessControl": true,
+    "hasSourcePolicyControl": true,
+    "hasContentBudgetControl": true,
+    "hasUsageMetadata": false
+  }
+}

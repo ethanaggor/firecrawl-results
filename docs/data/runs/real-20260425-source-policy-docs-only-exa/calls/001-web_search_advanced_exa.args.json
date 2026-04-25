@@ -1,0 +1,13 @@
+{
+  "query": "Official Firecrawl documentation for the Search API parameters categories country timeout ignoreInvalidURLs",
+  "numResults": 5,
+  "type": "auto",
+  "includeDomains": [
+    "docs.firecrawl.dev"
+  ],
+  "textMaxCharacters": 5000,
+  "enableHighlights": true,
+  "highlightsQuery": "Search API categories country timeout ignoreInvalidURLs",
+  "highlightsMaxCharacters": 3000,
+  "maxAgeHours": 0
+}

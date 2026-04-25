@@ -1,0 +1,134 @@
+{
+  "status": "complete",
+  "runId": "real-20260425-agent-search-benchmark-methodology-firecrawl-context",
+  "generatedAt": "2026-04-25T05:06:07.691Z",
+  "manifest": {
+    "runId": "real-20260425-agent-search-benchmark-methodology-firecrawl-context",
+    "createdAt": "2026-04-25T05:01:45.946Z",
+    "provider": {
+      "id": "firecrawl-context",
+      "name": "Firecrawl MCP context fork",
+      "transport": "stdio",
+      "cwd": "../firecrawl-mcp-server",
+      "command": "node",
+      "args": [
+        "dist/index.js"
+      ],
+      "env": [
+        {
+          "name": "FIRECRAWL_API_KEY",
+          "required": true,
+          "present": true
+        },
+        {
+          "name": "FIRECRAWL_API_URL",
+          "required": false,
+          "present": false
+        }
+      ],
+      "searchTools": [
+        "firecrawl_search"
+      ],
+      "fetchTools": [
+        "firecrawl_scrape"
+      ],
+      "cwdExists": true
+    },
+    "task": {
+      "id": "agent-search-benchmark-methodology",
+      "family": "benchmark-methodology",
+      "question": "What benchmark methodology should be used for agent web search tools, based on public Exa, Parallel, and Tavily benchmarks?",
+      "agentGoal": "Find and compare public benchmark methodology from Exa, Parallel, and Tavily. Extract metrics and task construction patterns.",
+      "expectedTerms": [
+        "SimpleQA",
+        "WISER",
+        "MSMARCO",
+        "document relevance"
+      ],
+      "expectedDomains": [
+        "exa.ai",
+        "parallel.ai",
+        "github.com",
+        "docs.tavily.com"
+      ]
+    }
+  },
+  "metrics": {
+    "provider": "firecrawl-context",
+    "taskId": "agent-search-benchmark-methodology",
+    "toolCalls": 12,
+    "searchCalls": 8,
+    "fetchCalls": 4,
+    "failedCalls": 0,
+    "totalConnectMs": 2906,
+    "totalCallLatencyMs": 21282,
+    "argumentTokens": 1324,
+    "rawOutputTokens": 50966,
+    "normalizedEvidenceTokens": 8251,
+    "totalTrajectoryTokens": 64009,
+    "contract": {
+      "toolCount": 14,
+      "searchToolCount": 1,
+      "fetchToolCount": 2,
+      "descriptionTokens": 5356,
+      "schemaTokens": 5505,
+      "totalMcpFootprintTokens": 11719,
+      "hasFreshnessControl": true,
+      "hasSourcePolicyControl": true,
+      "hasContentBudgetControl": true,
+      "hasUsageMetadata": true
+    }
+  },
+  "semanticScore": {
+    "agentModel": "gpt-5.5 xhigh",
+    "provider": "firecrawl-context",
+    "taskId": "agent-search-benchmark-methodology",
+    "success": true,
+    "answerSupportedByEvidence": true,
+    "retrievalQualityScore": 4.3,
+    "agentExperienceScore": 4.1,
+    "sourcePolicyAdherent": null,
+    "freshnessAdherent": null,
+    "callRationale": [
+      "Started with the provider schema and selected firecrawl_search because the task required source discovery plus bounded agent-ready context.",
+      "The first broad source-policy-constrained search returned zero results, so subsequent calls split the task by provider/domain.",
+      "Used focused chunk searches for Exa, Parallel, Tavily GitHub, and Tavily docs to gather visible evidence around SimpleQA, WISER, MSMARCO, document relevance, and search_depth.",
+      "Used firecrawl_scrape only for known pages where follow-up was needed to capture methodology details not fully surfaced by search chunks: Exa WebCode, Exa evaluation guide, Parallel benchmark, and Tavily search-evals."
+    ],
+    "strengths": [
+      "Recovered all expected methodology terms across primary or official sources: SimpleQA, WISER, MSMARCO, and document relevance.",
+      "Covered all expected domains with useful evidence: exa.ai, parallel.ai, github.com, and docs.tavily.com.",
+      "Search chunks were generally compact and inspectable, especially for Parallel and Tavily docs.",
+      "The provider exposed useful controls for content mode, focus, character budgets, domain policy, source type, and GitHub category."
+    ],
+    "weaknesses": [
+      "Combined multi-domain sourcePolicy searches returned zero results twice, requiring split follow-up searches.",
+      "Some GitHub-category Tavily search results included unrelated GitHub repositories after the primary result, creating avoidable noise.",
+      "firecrawl_scrape responses were large and the normalized evidence for scrape calls was thin compared with the raw markdown content."
+    ],
+    "notableFailures": [
+      {
+        "category": "direct fix and needs no further changes",
+        "failure": "The initial all-provider constrained search returned zero results.",
+        "fix": "Split searches by provider/domain and used more targeted queries."
+      },
+      {
+        "category": "direct fix and needs no further changes",
+        "failure": "The broad Tavily constrained search returned zero results.",
+        "fix": "Searched GitHub and docs.tavily.com separately, then scraped the Tavily benchmark repository."
+      },
+      {
+        "category": "fixed but could benefit from cleaner/simpler implementation with an architectural change",
+        "failure": "Known-page scrapes produced very large raw responses while normalized scrape evidence retained little useful excerpt text.",
+        "fix": "Used the raw markdown evidence saved by the harness, but the benchmark normalizer could be improved to retain bounded scrape excerpts for scoring."
+      }
+    ],
+    "confidence": 0.88
+  },
+  "artifacts": {
+    "answer": "scoring/final-answer.md",
+    "score": "scoring/agent-score.json",
+    "trace": "trace.jsonl",
+    "tools": "schemas/tools.json"
+  }
+}

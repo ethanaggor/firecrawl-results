@@ -1,0 +1,155 @@
+{
+  "status": "complete",
+  "runId": "real-20260425-docs-parity-firecrawl-original",
+  "generatedAt": "2026-04-25T04:59:10.490Z",
+  "manifest": {
+    "runId": "real-20260425-docs-parity-firecrawl-original",
+    "createdAt": "2026-04-25T04:55:44.728Z",
+    "provider": {
+      "id": "firecrawl-original",
+      "name": "Firecrawl MCP upstream",
+      "transport": "stdio",
+      "cwd": "../firecrawl-mcp-server-upstream",
+      "command": "node",
+      "args": [
+        "dist/index.js"
+      ],
+      "env": [
+        {
+          "name": "FIRECRAWL_API_KEY",
+          "required": true,
+          "present": true
+        },
+        {
+          "name": "FIRECRAWL_API_URL",
+          "required": false,
+          "present": false
+        }
+      ],
+      "searchTools": [
+        "firecrawl_search"
+      ],
+      "fetchTools": [
+        "firecrawl_scrape"
+      ],
+      "cwdExists": true
+    },
+    "task": {
+      "id": "docs-parity",
+      "family": "api-documentation",
+      "question": "Which public Firecrawl Search API fields are relevant to MCP search parity, especially categories, country, timeout, ignoreInvalidURLs, enterprise, and response metadata?",
+      "agentGoal": "Find primary documentation or source evidence for the Search API fields and response metadata. Prefer Firecrawl docs and official source.",
+      "expectedTerms": [
+        "categories",
+        "country",
+        "timeout",
+        "ignoreInvalidURLs"
+      ],
+      "expectedDomains": [
+        "docs.firecrawl.dev",
+        "github.com"
+      ],
+      "sourcePolicy": {
+        "includeDomains": [
+          "docs.firecrawl.dev",
+          "github.com"
+        ]
+      },
+      "notes": "This is the direct parity question behind the implementation."
+    }
+  },
+  "metrics": {
+    "provider": "firecrawl-original",
+    "taskId": "docs-parity",
+    "toolCalls": 5,
+    "searchCalls": 3,
+    "fetchCalls": 2,
+    "failedCalls": 0,
+    "totalConnectMs": 1745,
+    "totalCallLatencyMs": 30158,
+    "argumentTokens": 240,
+    "rawOutputTokens": 21307,
+    "normalizedEvidenceTokens": 670,
+    "totalTrajectoryTokens": 32768,
+    "contract": {
+      "toolCount": 14,
+      "searchToolCount": 1,
+      "fetchToolCount": 2,
+      "descriptionTokens": 5082,
+      "schemaTokens": 5296,
+      "totalMcpFootprintTokens": 11221,
+      "hasFreshnessControl": true,
+      "hasSourcePolicyControl": true,
+      "hasContentBudgetControl": true,
+      "hasUsageMetadata": true
+    }
+  },
+  "semanticScore": {
+    "agentModel": "gpt-5.5 xhigh",
+    "provider": "firecrawl-original",
+    "taskId": "docs-parity",
+    "success": true,
+    "answerSupportedByEvidence": true,
+    "retrievalQualityScore": 4.6,
+    "agentExperienceScore": 3.6,
+    "sourcePolicyAdherent": true,
+    "freshnessAdherent": null,
+    "callRationale": [
+      {
+        "step": "001",
+        "tool": "firecrawl_search",
+        "rationale": "Searched official Firecrawl docs for the Search API fields named in the task before scraping any pages."
+      },
+      {
+        "step": "003",
+        "tool": "firecrawl_scrape",
+        "rationale": "Scraped the official Search API docs page to ground field definitions and response metadata in primary documentation."
+      },
+      {
+        "step": "005",
+        "tool": "firecrawl_search",
+        "rationale": "Tried a constrained GitHub source search for the upstream MCP search contract."
+      },
+      {
+        "step": "007",
+        "tool": "firecrawl_search",
+        "rationale": "Broadened the GitHub query after the narrower repository-specific search returned no results."
+      },
+      {
+        "step": "009",
+        "tool": "firecrawl_scrape",
+        "rationale": "Scraped the official Firecrawl docs source file on GitHub to confirm the MCP Search Tool options."
+      }
+    ],
+    "strengths": [
+      "Found the exact official Firecrawl Search API reference page on the first provider search call.",
+      "Recovered all expected task terms from primary docs: categories, country, timeout, and ignoreInvalidURLs.",
+      "Collected official GitHub evidence for the MCP server docs and compared it with the live MCP tool schema captured by the harness.",
+      "Kept final claims tied to docs.firecrawl.dev, github.com/firecrawl, and the run's captured MCP schema."
+    ],
+    "weaknesses": [
+      "The official docs scrape was large and included substantial navigation/content duplication, increasing raw context cost.",
+      "The normalized evidence for scrape calls was too thin, so useful evidence required inspecting raw saved responses.",
+      "The GitHub scrape included page chrome and repository UI noise before the file content."
+    ],
+    "notableFailures": [
+      {
+        "category": "direct fix and needs no further changes",
+        "failure": "The first GitHub search constrained to the old mendableai repository path returned zero results.",
+        "fix": "Broadened the GitHub search to the current Firecrawl GitHub organization and recovered official repository and docs-source results."
+      },
+      {
+        "category": "fixed but could benefit from cleaner/simpler implementation with an architectural change",
+        "failure": "The original MCP search contract does not expose public API fields categories, top-level country, top-level timeout, or ignoreInvalidURLs, and the schema forbids additional properties.",
+        "fix": "Documented these as parity gaps in the final answer rather than trying to pass unsupported fields."
+      }
+    ],
+    "confidence": 0.9
+  },
+  "artifacts": {
+    "answer": "scoring/final-answer.md",
+    "score": "scoring/agent-score.json",
+    "trace": "trace.jsonl",
+    "tools": "schemas/tools.json"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"query\":\"\\\"tavily-search-evals\\\" \\\"SimpleQA\\\" \\\"document relevance\\\"\",\"follow_up_questions\":null,\"answer\":null,\"images\":[],\"results\":[{\"url\":\"https://github.com/tavily-ai/tavily-search-evals\",\"title\":\"GitHub - tavily-ai/tavily-search-evals: A public repository for running ...\",\"content\":\"... SimpleQA ground truth (though our evaluations used the classifier route). Document Relevance Benchmark. Uses QuotientAI to assess the relevance of retrieved\",\"score\":0.83225065,\"raw_content\":null},{\"url\":\"https://github.com/tavily-ai/tavily-search-evals/blob/main/run_evaluation.py\",\"title\":\"tavily-search-evals/run_evaluation.py at main · tavily-ai/tavily-search ...\",\"content\":\"A public repository for running search benchmarks across multiple search providers - tavily-search-evals ... SIMPLEQA: return \\\"datasets/simple_qa_test_set.csv\",\"score\":0.604703,\"raw_content\":null}],\"response_time\":3.03,\"request_id\":\"536fde33-e0a4-420f-a019-5b95d16f03ee\"}"
+    }
+  ],
+  "structuredContent": {
+    "query": "\"tavily-search-evals\" \"SimpleQA\" \"document relevance\"",
+    "follow_up_questions": null,
+    "answer": null,
+    "images": [],
+    "results": [
+      {
+        "url": "https://github.com/tavily-ai/tavily-search-evals",
+        "title": "GitHub - tavily-ai/tavily-search-evals: A public repository for running ...",
+        "content": "... SimpleQA ground truth (though our evaluations used the classifier route). Document Relevance Benchmark. Uses QuotientAI to assess the relevance of retrieved",
+        "score": 0.83225065,
+        "raw_content": null
+      },
+      {
+        "url": "https://github.com/tavily-ai/tavily-search-evals/blob/main/run_evaluation.py",
+        "title": "tavily-search-evals/run_evaluation.py at main · tavily-ai/tavily-search ...",
+        "content": "A public repository for running search benchmarks across multiple search providers - tavily-search-evals ... SIMPLEQA: return \"datasets/simple_qa_test_set.csv",
+        "score": 0.604703,
+        "raw_content": null
+      }
+    ],
+    "response_time": 3.03,
+    "request_id": "536fde33-e0a4-420f-a019-5b95d16f03ee"
+  },
+  "isError": false
+}

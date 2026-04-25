@@ -1,0 +1,9 @@
+{
+  "query": "site:docs.firecrawl.dev Firecrawl Search API categories country timeout ignoreInvalidURLs metadata",
+  "limit": 5,
+  "sources": [
+    {
+      "type": "web"
+    }
+  ]
+}

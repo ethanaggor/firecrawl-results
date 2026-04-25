@@ -1,0 +1,20 @@
+{
+  "urls": [
+    "https://docs.firecrawl.dev/mcp-server",
+    "https://docs.firecrawl.dev/features/search",
+    "https://exa.ai/docs/reference/exa-mcp",
+    "https://exa.ai/blog/api-evals",
+    "https://exa.ai/blog/webcode",
+    "https://docs.exa.ai/reference/evaluating-exa-search",
+    "https://docs.parallel.ai/integrations/mcp/search-mcp",
+    "https://parallel.ai/blog/search-api-benchmark",
+    "https://parallel.ai/blog/free-web-search-mcp",
+    "https://docs.tavily.com/documentation/api-reference/endpoint/search",
+    "https://docs.tavily.com/documentation/best-practices/best-practices-search",
+    "https://github.com/tavily-ai/tavily-search-evals"
+  ],
+  "extract_depth": "basic",
+  "format": "markdown",
+  "include_images": false,
+  "query": "MCP search agent context shape tool-call flow retrieval quality benchmarks"
+}

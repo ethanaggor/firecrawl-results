@@ -1,0 +1,20 @@
+{
+  "query": "Tavily search evals SimpleQA document relevance benchmark methodology GitHub docs search_depth",
+  "content": "chunks",
+  "maxResults": 8,
+  "maxCharsPerResult": 2200,
+  "maxCharsTotal": 12000,
+  "focus": "SimpleQA document relevance benchmark methodology evaluation metrics search_depth quality latency returned content",
+  "sourcePolicy": {
+    "includeDomains": [
+      "github.com",
+      "docs.tavily.com",
+      "tavily.com"
+    ]
+  },
+  "sources": [
+    "web"
+  ],
+  "ignoreInvalidURLs": true,
+  "includeRawResults": false
+}

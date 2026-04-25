@@ -1,0 +1,8 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\n  \"query\": \"Tavily search evals SimpleQA document relevance benchmark methodology GitHub docs search_depth\",\n  \"executedQuery\": \"Tavily search evals SimpleQA document relevance benchmark methodology GitHub docs search_depth (site:github.com OR site:docs.tavily.com OR site:tavily.com)\",\n  \"content\": \"chunks\",\n  \"constraints\": {\n    \"maxResults\": 8,\n    \"maxCharsPerResult\": 2200,\n    \"maxCharsTotal\": 12000,\n    \"focus\": \"SimpleQA document relevance benchmark methodology evaluation metrics search_depth quality latency returned content\",\n    \"sourcePolicy\": {\n      \"includeDomains\": [\n        \"github.com\",\n        \"docs.tavily.com\",\n        \"tavily.com\"\n      ]\n    }\n  },\n  \"results\": [],\n  \"searchIds\": [\n    \"019dc304-e7a2-74dc-ab46-bd4631e67850\"\n  ],\n  \"usage\": {\n    \"resultCount\": 0,\n    \"charsReturned\": 0,\n    \"creditsUsed\": 0,\n    \"rawResultCount\": {\n      \"web\": 0,\n      \"news\": 0,\n      \"images\": 0\n    }\n  }\n}"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "status": "complete",
+  "runId": "real-20260425-source-policy-docs-only-exa",
+  "generatedAt": "2026-04-25T05:11:09.643Z",
+  "manifest": {
+    "runId": "real-20260425-source-policy-docs-only-exa",
+    "createdAt": "2026-04-25T05:09:25.518Z",
+    "provider": {
+      "id": "exa",
+      "name": "Exa remote MCP",
+      "transport": "streamable-http",
+      "url": "https://mcp.exa.ai/mcp?tools=web_search_exa,web_fetch_exa,web_search_advanced_exa",
+      "headers": [
+        {
+          "name": "x-api-key",
+          "required": true,
+          "present": true
+        }
+      ],
+      "searchTools": [
+        "web_search_exa",
+        "web_search_advanced_exa"
+      ],
+      "fetchTools": [
+        "web_fetch_exa"
+      ]
+    },
+    "task": {
+      "id": "source-policy-docs-only",
+      "family": "source-policy",
+      "question": "Using only official Firecrawl docs, what does the Search API say about categories, country, timeout, and ignoreInvalidURLs?",
+      "agentGoal": "Constrain to docs.firecrawl.dev and produce evidence only from that domain.",
+      "expectedTerms": [
+        "categories",
+        "country",
+        "timeout",
+        "ignoreInvalidURLs"
+      ],
+      "expectedDomains": [
+        "docs.firecrawl.dev"
+      ],
+      "sourcePolicy": {
+        "includeDomains": [
+          "docs.firecrawl.dev"
+        ]
+      }
+    }
+  },
+  "metrics": {
+    "provider": "exa",
+    "taskId": "source-policy-docs-only",
+    "toolCalls": 1,
+    "searchCalls": 1,
+    "fetchCalls": 0,
+    "failedCalls": 0,
+    "totalConnectMs": 184,
+    "totalCallLatencyMs": 11063,
+    "argumentTokens": 106,
+    "rawOutputTokens": 10724,
+    "normalizedEvidenceTokens": 5609,
+    "totalTrajectoryTokens": 12830,
+    "contract": {
+      "toolCount": 3,
+      "searchToolCount": 2,
+      "fetchToolCount": 1,
+      "descriptionTokens": 235,
+      "schemaTokens": 1509,
+      "totalMcpFootprintTokens": 2000,
+      "hasFreshnessControl": true,
+      "hasSourcePolicyControl": true,
+      "hasContentBudgetControl": true,
+      "hasUsageMetadata": false
+    }
+  },
+  "semanticScore": {
+    "agentModel": "gpt-5.5 xhigh",
+    "provider": "exa",
+    "taskId": "source-policy-docs-only",
+    "success": true,
+    "answerSupportedByEvidence": true,
+    "retrievalQualityScore": 5,
+    "agentExperienceScore": 4.4,
+    "sourcePolicyAdherent": true,
+    "freshnessAdherent": null,
+    "callRationale": [
+      "Started the run with the direct harness command, which listed Exa's tool schemas and showed source-policy controls.",
+      "Selected `web_search_advanced_exa` because it exposed native `includeDomains`, content budget, highlight, and cache freshness controls.",
+      "Used `includeDomains: [\"docs.firecrawl.dev\"]`, `maxAgeHours: 0`, and highlight/text extraction focused on `categories`, `country`, `timeout`, and `ignoreInvalidURLs`.",
+      "Did not make a fetch follow-up because the first Search API reference result visibly contained all four requested fields and the Search feature page reinforced the categories details."
+    ],
+    "strengths": [
+      "Native domain allowlisting made the docs-only source policy straightforward.",
+      "The top result was the current Firecrawl Search API reference and included direct evidence for all requested terms.",
+      "Harness metrics reported `uniqueDomainCount: 1`, `expectedDomainHit: true`, and `expectedTermHit: true`.",
+      "One provider call was enough to answer the task with official docs evidence."
+    ],
+    "weaknesses": [
+      "The response was large for a narrow task: 10724 raw response tokens and 5609 normalized evidence tokens.",
+      "The five results included some lower-value same-domain pages, including a Spanish duplicate, the v1 endpoint, and the Extract endpoint; these were ignored for the final answer."
+    ],
+    "notableFailures": [],
+    "confidence": 0.95
+  },
+  "artifacts": {
+    "answer": "scoring/final-answer.md",
+    "score": "scoring/agent-score.json",
+    "trace": "trace.jsonl",
+    "tools": "schemas/tools.json"
+  }
+}

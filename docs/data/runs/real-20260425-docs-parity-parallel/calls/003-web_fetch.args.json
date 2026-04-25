@@ -1,0 +1,16 @@
+{
+  "urls": [
+    "https://docs.firecrawl.dev/api-reference/endpoint/search",
+    "https://docs.firecrawl.dev/api-reference/v1-endpoint/search",
+    "https://github.com/firecrawl/firecrawl"
+  ],
+  "objective": "Extract Search API fields categories, country, timeout, ignoreInvalidURLs, enterprise, and response metadata.",
+  "search_queries": [
+    "Firecrawl Search categories country timeout",
+    "Firecrawl ignoreInvalidURLs metadata",
+    "firecrawl_search enterprise metadata"
+  ],
+  "full_content": false,
+  "session_id": "real20260425docsparityparallel000001",
+  "model_name": "gpt-5.5 xhigh"
+}

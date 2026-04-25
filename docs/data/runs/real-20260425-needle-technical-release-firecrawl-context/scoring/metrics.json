@@ -1,0 +1,26 @@
+{
+  "provider": "firecrawl-context",
+  "taskId": "needle-technical-release",
+  "toolCalls": 5,
+  "searchCalls": 2,
+  "fetchCalls": 3,
+  "failedCalls": 0,
+  "totalConnectMs": 1154,
+  "totalCallLatencyMs": 19522,
+  "argumentTokens": 864,
+  "rawOutputTokens": 13426,
+  "normalizedEvidenceTokens": 4135,
+  "totalTrajectoryTokens": 26009,
+  "contract": {
+    "toolCount": 14,
+    "searchToolCount": 1,
+    "fetchToolCount": 2,
+    "descriptionTokens": 5356,
+    "schemaTokens": 5505,
+    "totalMcpFootprintTokens": 11719,
+    "hasFreshnessControl": true,
+    "hasSourcePolicyControl": true,
+    "hasContentBudgetControl": true,
+    "hasUsageMetadata": true
+  }
+}

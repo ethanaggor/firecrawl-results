@@ -1,0 +1,12 @@
+{
+  "id": "needle-technical-release",
+  "family": "hard-retrieval",
+  "question": "Find a recent TypeScript or JavaScript library release after August 2025 that introduced at least three concrete API changes and identify source-backed examples.",
+  "agentGoal": "This mirrors Exa WebCode-style coding-agent search. Prefer changelogs, release notes, and official docs.",
+  "expectedTerms": [
+    "release",
+    "API",
+    "TypeScript"
+  ],
+  "freshness": "year"
+}

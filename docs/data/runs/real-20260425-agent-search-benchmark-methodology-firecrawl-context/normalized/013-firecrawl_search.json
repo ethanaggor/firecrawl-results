@@ -1,0 +1,136 @@
+{
+  "provider": "firecrawl-context",
+  "tool": "firecrawl_search",
+  "isError": false,
+  "rawText": "{\n  \"query\": \"Exa API Evals SimpleQA MSMARCO search API benchmark answer correctness result relevance\",\n  \"executedQuery\": \"Exa API Evals SimpleQA MSMARCO search API benchmark answer correctness result relevance (site:exa.ai OR site:docs.exa.ai)\",\n  \"content\": \"chunks\",\n  \"constraints\": {\n    \"maxResults\": 8,\n    \"maxCharsPerResult\": 2600,\n    \"maxCharsTotal\": 14000,\n    \"focus\": \"Exa API evals, SimpleQA, MSMARCO, document/result relevance, metrics, task construction, judge prompts\",\n    \"sourcePolicy\": {\n      \"includeDomains\": [\n        \"exa.ai\",\n        \"docs.exa.ai\"\n      ]\n    }\n  },\n  \"results\": [\n    {\n      \"title\": \"Web Search API Evals - Exa\",\n      \"url\": \"https://exa.ai/blog/api-evals\",\n      \"description\": \"SimpleQA is a recent benchmark from OpenAI that measures how well LLMs answer short factual questions. Each question was designed to elicit ...\",\n      \"position\": 1,\n      \"source\": \"web\",\n      \"metadata\": {\n        \"sourceURL\": \"https://exa.ai/blog/api-evals\",\n        \"finalURL\": \"https://exa.ai/blog/api-evals\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"![State-of-the-art web search API](https://exa.imgix.net/simpleqa-eval-7.png?fm=avif&q=50)\",\n          \"charCount\": 90\n        },\n        {\n          \"text\": \"- For **Exa**, we use simple, prompted off-the-shelf LLMs -- gemini-1.5-flash to generate the search query, and 4o-mini to generate the answer from the results.\\n- For **Bing**, we pass the SimpleQA query and use 4o-mini with the same prompt to summarize.\\n- For **Perplexity**, we use Sonar-Pro, their flagship API for web RAG. We pass the SimpleQA query directly to Perplexity.\\n- We use **GPT-4o** as a baseline without web access, scoring the output given the prompt as in the original SimpleQA benchmark.\",\n          \"charCount\": 506\n        },\n        {\n          \"text\": \"[MSMARCO](https://microsoft.github.io/msmarco/) is a canonical query and labelled document dataset in information retrieval (IR) based on Bing searches. Typically, MSMARCO is used to benchmark IR system retrieval over the MSMARCO document index. However, in order to compare to public providers with varying indexes, we couldn't rely on the labelled documents, and instead use an LLM-as-Judge to evaluate the results returned from each search engine directly. While this approach is necessarily approximate, LLM grades in IR are [found to](https://arxiv.org/html/2405.04727v1) have high correlation with human grades.\",\n          \"charCount\": 617\n        }\n      ]\n    },\n    {\n      \"title\": \"Our AI Research: How We Evaluate Semantic Search Technology\",\n      \"url\": \"https://exa.ai/blog/evals-at-exa\",\n      \"description\": \"We can use SimpleQA, where an LLM agent must answer factual questions using search results. We pass each question to an LLM, which calls the ...\",\n      \"position\": 2,\n      \"source\": \"web\",\n      \"metadata\": {\n        \"sourceURL\": \"https://exa.ai/blog/evals-at-exa\",\n        \"finalURL\": \"https://exa.ai/blog/evals-at-exa\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"When we evaluate Exa search on a variety of benchmarks, we consistently perform state of the art compared to other search APIs. Using Exa retrieval in your application should improve performance on downstream tasks.\",\n          \"charCount\": 215\n        },\n        {\n          \"text\": \"`1You are a helpful assistant that grades the relevance of search results for given queries.\\n2Your task is to assign a relevance score between 0.0 and 1.0 to each result, where:\\n3\\n41.0: Perfect match - The result provides exactly what was asked for with high quality and authority\\n50.8-0.9: Excellent match - Very relevant and high quality, with minor imperfections\\n60.6-0.7: Good match - Clearly relevant but may be missing some aspects or quality issues\\n70.4-0.5: Fair match - Partially relevant but significant gaps or quality concerns\\n80.2-0.3: Poor match - Only tangentially related or major quality issues\\n90.0-0.1: Irrelevant - Does not meaningfully address the query\\n10\\n11Key scoring principles:\\n12- We want exact matches to the user's query - if they ask for a specific entity or type of information, that's what we need\\n13- Lists or general articles about a\",\n          \"charCount\": 867\n        },\n        {\n          \"text\": \"1. **Real-world optimization**: By evaluating on actual query distributions over full web-scale indexes, we ensure Exa performs well on the searches that matter to users.\\n2. **Rapid iteration**: Open evaluations let us rapidly test improvements without waiting for human labeling or being constrained by fixed corpora.\\n3. **Comprehensive measurement**: By evaluating both result quality and downstream task performance, we ensure Exa works well both for direct search and as a tool for LLMs.\\n4. **Current relevance**: Our evaluation approach naturally handles emerging topics and current events that fixed benchmarks miss.\",\n          \"charCount\": 622\n        }\n      ]\n    }\n  ],\n  \"searchIds\": [\n    \"019dc305-925c-737a-8211-8b347a5aff1b\"\n  ],\n  \"usage\": {\n    \"resultCount\": 2,\n    \"charsReturned\": 2917,\n    \"creditsUsed\": 4,\n    \"rawResultCount\": {\n      \"web\": 2,\n      \"news\": 0,\n      \"images\": 0\n    }\n  }\n}",
+  "parsed": {
+    "query": "Exa API Evals SimpleQA MSMARCO search API benchmark answer correctness result relevance",
+    "executedQuery": "Exa API Evals SimpleQA MSMARCO search API benchmark answer correctness result relevance (site:exa.ai OR site:docs.exa.ai)",
+    "content": "chunks",
+    "constraints": {
+      "maxResults": 8,
+      "maxCharsPerResult": 2600,
+      "maxCharsTotal": 14000,
+      "focus": "Exa API evals, SimpleQA, MSMARCO, document/result relevance, metrics, task construction, judge prompts",
+      "sourcePolicy": {
+        "includeDomains": [
+          "exa.ai",
+          "docs.exa.ai"
+        ]
+      }
+    },
+    "results": [
+      {
+        "title": "Web Search API Evals - Exa",
+        "url": "https://exa.ai/blog/api-evals",
+        "description": "SimpleQA is a recent benchmark from OpenAI that measures how well LLMs answer short factual questions. Each question was designed to elicit ...",
+        "position": 1,
+        "source": "web",
+        "metadata": {
+          "sourceURL": "https://exa.ai/blog/api-evals",
+          "finalURL": "https://exa.ai/blog/api-evals",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "![State-of-the-art web search API](https://exa.imgix.net/simpleqa-eval-7.png?fm=avif&q=50)",
+            "charCount": 90
+          },
+          {
+            "text": "- For **Exa**, we use simple, prompted off-the-shelf LLMs -- gemini-1.5-flash to generate the search query, and 4o-mini to generate the answer from the results.\n- For **Bing**, we pass the SimpleQA query and use 4o-mini with the same prompt to summarize.\n- For **Perplexity**, we use Sonar-Pro, their flagship API for web RAG. We pass the SimpleQA query directly to Perplexity.\n- We use **GPT-4o** as a baseline without web access, scoring the output given the prompt as in the original SimpleQA benchmark.",
+            "charCount": 506
+          },
+          {
+            "text": "[MSMARCO](https://microsoft.github.io/msmarco/) is a canonical query and labelled document dataset in information retrieval (IR) based on Bing searches. Typically, MSMARCO is used to benchmark IR system retrieval over the MSMARCO document index. However, in order to compare to public providers with varying indexes, we couldn't rely on the labelled documents, and instead use an LLM-as-Judge to evaluate the results returned from each search engine directly. While this approach is necessarily approximate, LLM grades in IR are [found to](https://arxiv.org/html/2405.04727v1) have high correlation with human grades.",
+            "charCount": 617
+          }
+        ]
+      },
+      {
+        "title": "Our AI Research: How We Evaluate Semantic Search Technology",
+        "url": "https://exa.ai/blog/evals-at-exa",
+        "description": "We can use SimpleQA, where an LLM agent must answer factual questions using search results. We pass each question to an LLM, which calls the ...",
+        "position": 2,
+        "source": "web",
+        "metadata": {
+          "sourceURL": "https://exa.ai/blog/evals-at-exa",
+          "finalURL": "https://exa.ai/blog/evals-at-exa",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "When we evaluate Exa search on a variety of benchmarks, we consistently perform state of the art compared to other search APIs. Using Exa retrieval in your application should improve performance on downstream tasks.",
+            "charCount": 215
+          },
+          {
+            "text": "`1You are a helpful assistant that grades the relevance of search results for given queries.\n2Your task is to assign a relevance score between 0.0 and 1.0 to each result, where:\n3\n41.0: Perfect match - The result provides exactly what was asked for with high quality and authority\n50.8-0.9: Excellent match - Very relevant and high quality, with minor imperfections\n60.6-0.7: Good match - Clearly relevant but may be missing some aspects or quality issues\n70.4-0.5: Fair match - Partially relevant but significant gaps or quality concerns\n80.2-0.3: Poor match - Only tangentially related or major quality issues\n90.0-0.1: Irrelevant - Does not meaningfully address the query\n10\n11Key scoring principles:\n12- We want exact matches to the user's query - if they ask for a specific entity or type of information, that's what we need\n13- Lists or general articles about a",
+            "charCount": 867
+          },
+          {
+            "text": "1. **Real-world optimization**: By evaluating on actual query distributions over full web-scale indexes, we ensure Exa performs well on the searches that matter to users.\n2. **Rapid iteration**: Open evaluations let us rapidly test improvements without waiting for human labeling or being constrained by fixed corpora.\n3. **Comprehensive measurement**: By evaluating both result quality and downstream task performance, we ensure Exa works well both for direct search and as a tool for LLMs.\n4. **Current relevance**: Our evaluation approach naturally handles emerging topics and current events that fixed benchmarks miss.",
+            "charCount": 622
+          }
+        ]
+      }
+    ],
+    "searchIds": [
+      "019dc305-925c-737a-8211-8b347a5aff1b"
+    ],
+    "usage": {
+      "resultCount": 2,
+      "charsReturned": 2917,
+      "creditsUsed": 4,
+      "rawResultCount": {
+        "web": 2,
+        "news": 0,
+        "images": 0
+      }
+    }
+  },
+  "results": [
+    {
+      "title": "Web Search API Evals - Exa",
+      "url": "https://exa.ai/blog/api-evals",
+      "domain": "exa.ai",
+      "description": "SimpleQA is a recent benchmark from OpenAI that measures how well LLMs answer short factual questions. Each question was designed to elicit ...",
+      "chunks": [
+        {
+          "text": "![State-of-the-art web search API](https://exa.imgix.net/simpleqa-eval-7.png?fm=avif&q=50)",
+          "charCount": 90
+        },
+        {
+          "text": "- For **Exa**, we use simple, prompted off-the-shelf LLMs -- gemini-1.5-flash to generate the search query, and 4o-mini to generate the answer from the results.\n- For **Bing**, we pass the SimpleQA query and use 4o-mini with the same prompt to summarize.\n- For **Perplexity**, we use Sonar-Pro, their flagship API for web RAG. We pass the SimpleQA query directly to Perplexity.\n- We use **GPT-4o** as a baseline without web access, scoring the output given the prompt as in the original SimpleQA benchmark.",
+          "charCount": 506
+        },
+        {
+          "text": "[MSMARCO](https://microsoft.github.io/msmarco/) is a canonical query and labelled document dataset in information retrieval (IR) based on Bing searches. Typically, MSMARCO is used to benchmark IR system retrieval over the MSMARCO document index. However, in order to compare to public providers with varying indexes, we couldn't rely on the labelled documents, and instead use an LLM-as-Judge to evaluate the results returned from each search engine directly. While this approach is necessarily approximate, LLM grades in IR are [found to](https://arxiv.org/html/2405.04727v1) have high correlation with human grades.",
+          "charCount": 617
+        }
+      ],
+      "source": "web",
+      "position": 1
+    },
+    {
+      "title": "Our AI Research: How We Evaluate Semantic Search Technology",
+      "url": "https://exa.ai/blog/evals-at-exa",
+      "domain": "exa.ai",
+      "description": "We can use SimpleQA, where an LLM agent must answer factual questions using search results. We pass each question to an LLM, which calls the ...",
+      "chunks": [
+        {
+          "text": "When we evaluate Exa search on a variety of benchmarks, we consistently perform state of the art compared to other search APIs. Using Exa retrieval in your application should improve performance on downstream tasks.",
+          "charCount": 215
+        },
+        {
+          "text": "`1You are a helpful assistant that grades the relevance of search results for given queries.\n2Your task is to assign a relevance score between 0.0 and 1.0 to each result, where:\n3\n41.0: Perfect match - The result provides exactly what was asked for with high quality and authority\n50.8-0.9: Excellent match - Very relevant and high quality, with minor imperfections\n60.6-0.7: Good match - Clearly relevant but may be missing some aspects or quality issues\n70.4-0.5: Fair match - Partially relevant but significant gaps or quality concerns\n80.2-0.3: Poor match - Only tangentially related or major quality issues\n90.0-0.1: Irrelevant - Does not meaningfully address the query\n10\n11Key scoring principles:\n12- We want exact matches to the user's query - if they ask for a specific entity or type of information, that's what we need\n13- Lists or general articles about a",
+          "charCount": 867
+        },
+        {
+          "text": "1. **Real-world optimization**: By evaluating on actual query distributions over full web-scale indexes, we ensure Exa performs well on the searches that matter to users.\n2. **Rapid iteration**: Open evaluations let us rapidly test improvements without waiting for human labeling or being constrained by fixed corpora.\n3. **Comprehensive measurement**: By evaluating both result quality and downstream task performance, we ensure Exa works well both for direct search and as a tool for LLMs.\n4. **Current relevance**: Our evaluation approach naturally handles emerging topics and current events that fixed benchmarks miss.",
+          "charCount": 622
+        }
+      ],
+      "source": "web",
+      "position": 2
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "query": "Exa official MCP documentation and benchmark evaluation pages for web search agents, WebCode, API evals, evaluating Exa search, highlights summaries fetch",
+  "numResults": 10,
+  "type": "auto",
+  "includeDomains": [
+    "exa.ai",
+    "docs.exa.ai"
+  ],
+  "enableHighlights": true,
+  "highlightsMaxCharacters": 1200,
+  "highlightsQuery": "MCP web_search_exa web_fetch_exa advanced search evaluating Exa search WebCode API evals agents retrieval quality",
+  "textMaxCharacters": 2500,
+  "maxAgeHours": 0
+}

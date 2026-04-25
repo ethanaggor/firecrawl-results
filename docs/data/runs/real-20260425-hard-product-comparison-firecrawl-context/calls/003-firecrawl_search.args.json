@@ -1,0 +1,18 @@
+{
+  "query": "Firecrawl Search API MCP firecrawl_search agent context summary chunks markdown docs",
+  "content": "chunks",
+  "focus": "Firecrawl search API and MCP search behavior, returned context shape, search parameters, scrape follow-up, and agent-facing metadata",
+  "maxResults": 6,
+  "maxCharsPerResult": 1600,
+  "maxCharsTotal": 7000,
+  "sourcePolicy": {
+    "includeDomains": [
+      "docs.firecrawl.dev"
+    ]
+  },
+  "sources": [
+    "web"
+  ],
+  "ignoreInvalidURLs": true,
+  "includeRawResults": false
+}

@@ -1,0 +1,36 @@
+{
+  "agentModel": "gpt-5.5 xhigh",
+  "provider": "firecrawl-original",
+  "taskId": "source-policy-docs-only",
+  "success": true,
+  "answerSupportedByEvidence": true,
+  "retrievalQualityScore": 4.8,
+  "agentExperienceScore": 4,
+  "sourcePolicyAdherent": true,
+  "freshnessAdherent": null,
+  "callRationale": [
+    "Inspected the recorded MCP tool schema and selected firecrawl_search because the task required search over official docs and the search tool documents query operators including site:.",
+    "Used query-level source policy constraint site:docs.firecrawl.dev because firecrawl_search did not expose a direct includeDomains/source allowlist field.",
+    "Searched first without scrapeOptions, following the tool guidance, then scraped only the canonical Search endpoint docs page because the first result was the relevant API reference and more field detail was needed."
+  ],
+  "strengths": [
+    "All provider evidence came from docs.firecrawl.dev.",
+    "The first search result was the canonical Search API endpoint page.",
+    "The scraped endpoint page directly covered categories and country, and the endpoint example plus search snippet covered timeout and ignoreInvalidURLs."
+  ],
+  "weaknesses": [
+    "Source policy control was indirect through the site: query operator rather than a first-class includeDomains argument.",
+    "The scrape response included a large amount of navigation and duplicated endpoint content, and the normalized scrape evidence did not retain the useful markdown details."
+  ],
+  "notableFailures": [
+    "One harness call failed before provider execution because the argument JSON was initially written under the wrong repository path; the misplaced artifact was removed with trash and the file was recreated under /Users/ethanaggor/firecrawl-results/evals/work/real-20260425-source-policy-docs-only-firecrawl-original/."
+  ],
+  "confidence": 0.9,
+  "toolsUsed": [
+    "firecrawl_search",
+    "firecrawl_scrape"
+  ],
+  "keyUrls": [
+    "https://docs.firecrawl.dev/api-reference/endpoint/search"
+  ]
+}

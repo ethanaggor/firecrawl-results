@@ -1,0 +1,9 @@
+{
+  "url": "https://exa.ai/docs/reference/search",
+  "formats": [
+    "markdown"
+  ],
+  "onlyMainContent": true,
+  "removeBase64Images": true,
+  "maxAge": 0
+}

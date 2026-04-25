@@ -1,0 +1,26 @@
+{
+  "provider": "tavily",
+  "taskId": "needle-technical-release",
+  "toolCalls": 3,
+  "searchCalls": 2,
+  "fetchCalls": 1,
+  "failedCalls": 0,
+  "totalConnectMs": 426,
+  "totalCallLatencyMs": 6782,
+  "argumentTokens": 279,
+  "rawOutputTokens": 7324,
+  "normalizedEvidenceTokens": 4112,
+  "totalTrajectoryTokens": 10355,
+  "contract": {
+    "toolCount": 5,
+    "searchToolCount": 2,
+    "fetchToolCount": 1,
+    "descriptionTokens": 143,
+    "schemaTokens": 2277,
+    "totalMcpFootprintTokens": 2752,
+    "hasFreshnessControl": true,
+    "hasSourcePolicyControl": true,
+    "hasContentBudgetControl": true,
+    "hasUsageMetadata": false
+  }
+}

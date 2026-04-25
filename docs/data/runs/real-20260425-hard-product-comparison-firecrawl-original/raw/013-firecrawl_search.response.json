@@ -1,0 +1,8 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\n  \"web\": [\n    {\n      \"url\": \"https://docs.parallel.ai/llms-full.txt\",\n      \"title\": \"llms-full.txt - Parallel Documentation\",\n      \"description\": \"This endpoint performs a best-effort search optimised for low latency. For comprehensive match evaluation and enrichment, use the [FindAll API](https://docs.\",\n      \"position\": 1\n    }\n  ]\n}"
+    }
+  ]
+}

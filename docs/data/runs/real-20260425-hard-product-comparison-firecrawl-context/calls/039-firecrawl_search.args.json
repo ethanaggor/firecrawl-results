@@ -1,0 +1,20 @@
+{
+  "query": "Tavily remote MCP search_depth advanced chunks agent search docs benchmark search evals",
+  "content": "chunks",
+  "focus": "Tavily MCP endpoint, tool-call flow, search_depth basic advanced behavior, chunks/content shape, and public benchmark or search evals evidence",
+  "maxResults": 8,
+  "maxCharsPerResult": 1600,
+  "maxCharsTotal": 10000,
+  "sourcePolicy": {
+    "includeDomains": [
+      "docs.tavily.com",
+      "tavily.com",
+      "github.com"
+    ]
+  },
+  "sources": [
+    "web"
+  ],
+  "ignoreInvalidURLs": true,
+  "includeRawResults": false
+}

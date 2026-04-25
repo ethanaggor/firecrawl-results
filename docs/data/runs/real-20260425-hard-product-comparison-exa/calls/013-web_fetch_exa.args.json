@@ -1,0 +1,12 @@
+{
+  "urls": [
+    "https://docs.firecrawl.dev/api-reference/endpoint/search",
+    "https://docs.exa.ai/reference/evaluating-exa-search",
+    "https://exa.ai/blog/api-evals",
+    "https://exa.ai/blog/webcode",
+    "https://parallel.ai/blog/search-api-benchmark",
+    "https://docs.tavily.com/documentation/best-practices/best-practices-search",
+    "https://docs.tavily.com/documentation/api-reference/endpoint/search"
+  ],
+  "maxCharacters": 5000
+}

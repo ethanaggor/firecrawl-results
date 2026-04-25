@@ -1,0 +1,56 @@
+{
+  "url": "https://react.dev/blog/2025/10/01/react-19-2",
+  "formats": [
+    "json"
+  ],
+  "onlyMainContent": true,
+  "maxAge": 0,
+  "jsonOptions": {
+    "prompt": "Extract the React 19.2 release date and at least four concrete API or API-behavior changes introduced in the release. For each change include the API name, what changed, and any example code or usage shape shown on the page.",
+    "schema": {
+      "type": "object",
+      "properties": {
+        "release": {
+          "type": "object",
+          "properties": {
+            "library": {
+              "type": "string"
+            },
+            "version": {
+              "type": "string"
+            },
+            "date": {
+              "type": "string"
+            },
+            "summary": {
+              "type": "string"
+            }
+          }
+        },
+        "apiChanges": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "apiName": {
+                "type": "string"
+              },
+              "category": {
+                "type": "string"
+              },
+              "whatChanged": {
+                "type": "string"
+              },
+              "example": {
+                "type": "string"
+              },
+              "sourceSection": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

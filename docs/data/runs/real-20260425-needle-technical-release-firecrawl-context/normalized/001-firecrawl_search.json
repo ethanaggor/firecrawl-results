@@ -1,0 +1,438 @@
+{
+  "provider": "firecrawl-context",
+  "tool": "firecrawl_search",
+  "isError": false,
+  "rawText": "{\n  \"query\": \"site:github.com release notes TypeScript API changes September 2025 JavaScript library\",\n  \"executedQuery\": \"site:github.com release notes TypeScript API changes September 2025 JavaScript library\",\n  \"content\": \"chunks\",\n  \"constraints\": {\n    \"maxResults\": 8,\n    \"maxCharsPerResult\": 1800,\n    \"maxCharsTotal\": 9000,\n    \"focus\": \"release notes or changelog for a TypeScript or JavaScript library after August 2025, concrete API changes, examples\",\n    \"freshness\": {\n      \"startDate\": \"2025-09-01\",\n      \"sortByDate\": true\n    }\n  },\n  \"results\": [\n    {\n      \"title\": \"core/CHANGELOG.md at main · stenciljs/core\",\n      \"url\": \"https://github.com/stenciljs/core/blob/main/CHANGELOG.md\",\n      \"description\": \"A toolchain for building scalable, enterprise-ready component systems on top of TypeScript and Web Component standards. Stencil components can be ...\",\n      \"position\": 1,\n      \"source\": \"web\",\n      \"category\": \"github\",\n      \"metadata\": {\n        \"sourceURL\": \"https://github.com/stenciljs/core/blob/main/CHANGELOG.md\",\n        \"finalURL\": \"https://github.com/stenciljs/core/blob/main/CHANGELOG.md\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"[Skip to content](https://github.com/stenciljs/core/blob/main/CHANGELOG.md#start-of-content)\",\n          \"charCount\": 92\n        },\n        {\n          \"text\": \"You signed in with another tab or window. [Reload](https://github.com/stenciljs/core/blob/main/CHANGELOG.md) to refresh your session.You signed out in another tab or window. [Reload](https://github.com/stenciljs/core/blob/main/CHANGELOG.md) to refresh your session.You switched accounts on another tab or window. [Reload](https://github.com/stenciljs/core/blob/main/CHANGELOG.md) to refresh your session.Dismiss alert\",\n          \"charCount\": 417\n        },\n        {\n          \"text\": \"[View commit history for this file.](https://github.com/stenciljs/core/commits/main/CHANGELOG.md) History\",\n          \"charCount\": 105\n        }\n      ]\n    },\n    {\n      \"title\": \"node/doc/changelogs/CHANGELOG_V22.md at main\",\n      \"url\": \"https://github.com/nodejs/node/blob/main/doc/changelogs/CHANGELOG_V22.md\",\n      \"description\": \"This release introduces a \\\"module-sync\\\" exports condition that's enabled when require(esm) is enabled, so packages can supply a synchronous ES module to the ...\",\n      \"position\": 2,\n      \"source\": \"web\",\n      \"category\": \"github\",\n      \"metadata\": {\n        \"sourceURL\": \"https://github.com/nodejs/node/blob/main/doc/changelogs/CHANGELOG_V22.md\",\n        \"finalURL\": \"https://github.com/nodejs/node/blob/main/doc/changelogs/CHANGELOG_V22.md\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"[Skip to content](https://github.com/nodejs/node/blob/main/doc/changelogs/CHANGELOG_V22.md#start-of-content)\",\n          \"charCount\": 108\n        },\n        {\n          \"text\": \"You signed in with another tab or window. [Reload](https://github.com/nodejs/node/blob/main/doc/changelogs/CHANGELOG_V22.md) to refresh your session.You signed out in another tab or window. [Reload](https://github.com/nodejs/node/blob/main/doc/changelogs/CHANGELOG_V22.md) to refresh your session.You switched accounts on another tab or window. [Reload](https://github.com/nodejs/node/blob/main/doc/changelogs/CHANGELOG_V22.md) to refresh your session.Dismiss alert\",\n          \"charCount\": 465\n        },\n        {\n          \"text\": \"[View commit history for this file.](https://github.com/nodejs/node/commits/main/doc/changelogs/CHANGELOG_V22.md) History\",\n          \"charCount\": 121\n        }\n      ]\n    },\n    {\n      \"title\": \"CHANGELOG.md - mochajs/mocha\",\n      \"url\": \"https://github.com/mochajs/mocha/blob/master/CHANGELOG.md\",\n      \"description\": \"This is a prerelease version to test our ability to release. Other than removing or updating dependencies, it contains no intended user-facing changes. Other.\",\n      \"position\": 3,\n      \"source\": \"web\",\n      \"category\": \"github\",\n      \"metadata\": {\n        \"sourceURL\": \"https://github.com/mochajs/mocha/blob/master/CHANGELOG.md\",\n        \"finalURL\": \"https://github.com/mochajs/mocha/blob/main/CHANGELOG.md\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"[Skip to content](https://github.com/mochajs/mocha/blob/main/CHANGELOG.md#start-of-content)\",\n          \"charCount\": 91\n        },\n        {\n          \"text\": \"You signed in with another tab or window. [Reload](https://github.com/mochajs/mocha/blob/main/CHANGELOG.md) to refresh your session.You signed out in another tab or window. [Reload](https://github.com/mochajs/mocha/blob/main/CHANGELOG.md) to refresh your session.You switched accounts on another tab or window. [Reload](https://github.com/mochajs/mocha/blob/main/CHANGELOG.md) to refresh your session.Dismiss alert\",\n          \"charCount\": 414\n        },\n        {\n          \"text\": \"[View commit history for this file.](https://github.com/mochajs/mocha/commits/main/CHANGELOG.md) History\",\n          \"charCount\": 104\n        }\n      ]\n    },\n    {\n      \"title\": \"react/CHANGELOG.md at main · facebook/react\",\n      \"url\": \"https://github.com/facebook/react/blob/main/CHANGELOG.md\",\n      \"description\": \"19.2.0 (October 1st, 2025). Below is a list of all new features, APIs, and bug fixes.\",\n      \"position\": 4,\n      \"source\": \"web\",\n      \"category\": \"github\",\n      \"metadata\": {\n        \"sourceURL\": \"https://github.com/facebook/react/blob/main/CHANGELOG.md\",\n        \"finalURL\": \"https://github.com/facebook/react/blob/main/CHANGELOG.md\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"- New JSX Transform is now required: We introduced [a new JSX transform](https://legacy.reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html) in 2020 to improve bundle size and use JSX without importing React. In React 19, we’re adding additional improvements like using ref as a prop and JSX speed improvements that require the new transform.\\n- Errors in render are not re-thrown: Errors that are not caught by an Error Boundary are now reported to window.reportError. Errors that are caught by an Error Boundary are reported to console.error. We’ve introduced `onUncaughtError` and `o\",\n          \"charCount\": 600\n        },\n        {\n          \"text\": \"- Add support for async Actions ( [#26621](https://github.com/facebook/react/pull/26621), [#26726](https://github.com/facebook/react/pull/26726), [#28078](https://github.com/facebook/react/pull/28078), [#28097](https://github.com/facebook/react/pull/28097), [#29226](https://github.com/facebook/react/pull/29226), [#29618](https://github.com/facebook/react/pull/29618), [#29670](https://github.com/facebook/react/pull/29670), [#26716](https://github.com/facebook/react/pull/26716) by [@acdlite](https://github.com/acdlite) and [@sebmarkbage](https://github.com/sebmarkbage))\\n- Add `useActionState()` \",\n          \"charCount\": 600\n        },\n        {\n          \"text\": \"- [#25060](https://github.com/facebook/react/pull/25060), [#25243](https://github.com/facebook/react/pull/25243), [#25388](https://github.com/facebook/react/pull/25388), [#25432](https://github.com/facebook/react/pull/25432), [#25436](https://github.com/facebook/react/pull/25436), [#25426](https://github.com/facebook/react/pull/25426), [#25500](https://github.com/facebook/react/pull/25500), [#25480](https://github.com/facebook/react/pull/25480), [#25508](https://github.com/facebook/react/pull/25508), [#25515](https://github.com/facebook/react/pull/25515), [#25514](https://github.com/facebook/r\",\n          \"charCount\": 600\n        }\n      ]\n    },\n    {\n      \"title\": \"Releases · reduxjs/redux-toolkit\",\n      \"url\": \"https://github.com/reduxjs/redux-toolkit/releases\",\n      \"description\": \"This bugfix release updates the AbortSignal handling to fall back if DOMException isn't available (such as RN environments), and updates the ...\",\n      \"position\": 5,\n      \"source\": \"web\",\n      \"category\": \"github\",\n      \"metadata\": {\n        \"sourceURL\": \"https://github.com/reduxjs/redux-toolkit/releases\",\n        \"finalURL\": \"https://github.com/reduxjs/redux-toolkit/releases\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"As described in the release notes for [v2.10.0](https://github.com/reduxjs/redux-toolkit/releases/tag/v2.10.0), we recently put significant effort into profiling Immer, and contributed several PRs that aimed to optimize its update performance.\",\n          \"charCount\": 243\n        },\n        {\n          \"text\": \"We had a report that a Redux SSR app had internal subscription data showing up across different requests. After investigation, this was a bug introduced by the recent [RTKQ perf optimizations](https://github.com/reduxjs/redux-toolkit/pull/5064), where the internal subscription fields were hoisted outside of the middleware setup and into `createApi` itself. This meant they existed outside of the per-store-instance lifecycle. We've reworked the logic to ensure the data is per-store again. We also fixed another issue that miscalculated when there was an active request while checking for cache ent\",\n          \"charCount\": 600\n        },\n        {\n          \"text\": \"We had reports that [RTK Query could get very slow when there were thousands of subscriptions to the same cache entry](https://github.com/reduxjs/redux-toolkit/issues/5052). After investigation, we found that the internal polling logic was attempting to recalculate the minimum polling time after every new subscription was added. This was highly inefficient, as most subscriptions don't change polling settings, and it required repeated O(n) iteration over the growing list of subscriptions. We've rewritten that logic to debounce the update check and ensure a max of one polling value update per ti\",\n          \"charCount\": 600\n        }\n      ]\n    },\n    {\n      \"title\": \"htmx/CHANGELOG.md at master · bigskysoftware/ ...\",\n      \"url\": \"https://github.com/bigskysoftware/htmx/blob/master/CHANGELOG.md\",\n      \"description\": \"Improvements & Bug fixes · Improved handling of precedence of input values to favor the enclosing form (see here) · Moved event filtering logic after ...\",\n      \"position\": 6,\n      \"source\": \"web\",\n      \"category\": \"github\",\n      \"metadata\": {\n        \"sourceURL\": \"https://github.com/bigskysoftware/htmx/blob/master/CHANGELOG.md\",\n        \"finalURL\": \"https://github.com/bigskysoftware/htmx/blob/master/CHANGELOG.md\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"- [Updated](https://github.com/bigskysoftware/htmx/commit/b9336a96fbdcf28550699971dc2218a90c7a4e01)`parseHTML` to use the (unfortunately named) [`Document.parseHTMLUnsafe()`](https://developer.mozilla.org/en-US/docs/Web/API/Document/parseHTMLUnsafe_static)\\nmethod for better Web Components support\\n- [Added](https://github.com/bigskysoftware/htmx/commit/83a1449a89b1fcd1c1655039ede02d74d61e4800)`pushURL` option to the `htmx.ajax()` API\\n- [Fixed](https://github.com/bigskysoftware/htmx/commit/cd045c3e0eb31776a80e3a4b4c74e37d0631c1f1)`hx-sync` and `htmx:abort` within the Shadow Dom [Issue 3419](http\",\n          \"charCount\": 600\n        },\n        {\n          \"text\": \"- Removed extensions and moved to their own repos linked off of [https://extensions.htmx.org](https://extensions.htmx.org/)\\n- The website now supports dark mode! (Thanks [@pokonski](https://github.com/pokonski)!)\\n- The older, deprecated [SSE & WS](https://v1.htmx.org/docs/#websockets-and-sse) attributes were removed\\n- Better support for [Web Components & Shadow DOM](https://htmx.org/examples/web-components/)\\n- HTTP `DELETE` requests now use parameters, rather than form encoded bodies, for their payload (This is in accordance w/ the spec.)\\n- Module support was split into different files:\\n- We n\",\n          \"charCount\": 600\n        },\n        {\n          \"text\": \"- Support for generalized inline event handling via the new [`hx-on`](https://github.com/bigskysoftware/htmx/blob/master/attributes/hx-on) attribute, which addresses\\nthe shortcoming of limited [`onevent` properties](https://developer.mozilla.org/en-US/docs/Web/Events/Event_handlers#using_onevent_properties) attributes in HTML.\\n- Support for [view transitions](https://github.com/bigskysoftware/htmx/blob/master/docs#view-transitions), based on the experimental [View Transitions API](https://developer.mozilla.org/en-US/docs/Web/API/View_Transitions_API)\\ncurrently available in Chrome 111+ and comi\",\n          \"charCount\": 600\n        }\n      ]\n    },\n    {\n      \"title\": \"Releases · Adyen/adyen-node-api-library\",\n      \"url\": \"https://github.com/Adyen/adyen-node-api-library/releases\",\n      \"description\": \"This release introduces major improvements, including support for LEM v4, OpenAPI Banking and many other changes across all APIs. Make sure to review the ...\",\n      \"position\": 7,\n      \"source\": \"web\",\n      \"category\": \"github\",\n      \"metadata\": {\n        \"sourceURL\": \"https://github.com/Adyen/adyen-node-api-library/releases\",\n        \"finalURL\": \"https://github.com/Adyen/adyen-node-api-library/releases\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"- Terminal API: option to disable 308 redirect logic by [@gcatanese](https://github.com/gcatanese) in [#1558](https://github.com/Adyen/adyen-node-api-library/pull/1558)\\n- Export EnvironmentEnum and RegionEnum by [@gcatanese](https://github.com/gcatanese) in [#1567](https://github.com/Adyen/adyen-node-api-library/pull/1567)\\n- Move NPM badge in README by [@gcatanese](https://github.com/gcatanese) in [#1563](https://github.com/Adyen/adyen-node-api-library/pull/1563)\\n- Remove unused Mustache templates by [@gcatanese](https://github.com/gcatanese) in [#1566](https://github.com/Adyen/adyen-node-api-\",\n          \"charCount\": 600\n        },\n        {\n          \"text\": \"For **Terminal API** users please make sure to upgrade directly to [v29.1.0](https://github.com/Adyen/adyen-node-api-library/releases/tag/v29.1.0), which contains a critical fix for the Terminal API `live` endpoints.\",\n          \"charCount\": 216\n        },\n        {\n          \"text\": \"- OpenAPI Generator v7: Webhooks by [@gcatanese](https://github.com/gcatanese) in [#1512](https://github.com/Adyen/adyen-node-api-library/pull/1512)\\n- WIP Typescript OpenAPI Generator v7 by [@gcatanese](https://github.com/gcatanese) in [#1505](https://github.com/Adyen/adyen-node-api-library/pull/1505)\\n- ApiError: Improving error handling by [@gcatanese](https://github.com/gcatanese) in [#1509](https://github.com/Adyen/adyen-node-api-library/pull/1509)\\n- OpenAPI v7 Generation: Classic Payments, BalanceControl, Disputes, StoredValue by [@gcatanese](https://github.com/gcatanese) in [#1510](https:\",\n          \"charCount\": 600\n        }\n      ]\n    },\n    {\n      \"title\": \"CHANGELOG.md - amannn/next-intl\",\n      \"url\": \"https://github.com/amannn/next-intl/blob/main/CHANGELOG.md\",\n      \"description\": \"4.9.0 (2026-04-01) · Support transitionTypes on Link (#2302) ; 4.8.4 (2026-03-31) · Remove TypeScript peer dependency and update examples to TypeScript v6 (#2293) ...\",\n      \"position\": 8,\n      \"source\": \"web\",\n      \"category\": \"github\",\n      \"metadata\": {\n        \"sourceURL\": \"https://github.com/amannn/next-intl/blob/main/CHANGELOG.md\",\n        \"finalURL\": \"https://github.com/amannn/next-intl/blob/main/CHANGELOG.md\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"[View commit history for this file.](https://github.com/amannn/next-intl/commits/main/CHANGELOG.md) History\",\n          \"charCount\": 107\n        },\n        {\n          \"text\": \"- Repair package publishing workflow (this release doesn't include any library changes) ( [ceba9ae](https://github.com/amannn/next-intl/commit/ceba9ae92e863d7185c40054e8218e76a483f6a8)) – by @amannn\",\n          \"charCount\": 198\n        },\n        {\n          \"text\": \"- feat!: Use a separate API for rich text formatting to avoid type casting in TypeScript #54 ( [4c13a64](https://github.com/amannn/next-intl/commit/4c13a644ce99992d9e57887afe35a09b8e3d6572)), closes [#54](https://github.com/amannn/next-intl/issues/54)\",\n          \"charCount\": 251\n        }\n      ]\n    }\n  ],\n  \"searchIds\": [\n    \"019dc319-8f56-77fe-a3bf-738a917a8d64\"\n  ],\n  \"usage\": {\n    \"resultCount\": 8,\n    \"charsReturned\": 8932,\n    \"creditsUsed\": 10,\n    \"rawResultCount\": {\n      \"web\": 8,\n      \"news\": 0,\n      \"images\": 0\n    }\n  }\n}",
+  "parsed": {
+    "query": "site:github.com release notes TypeScript API changes September 2025 JavaScript library",
+    "executedQuery": "site:github.com release notes TypeScript API changes September 2025 JavaScript library",
+    "content": "chunks",
+    "constraints": {
+      "maxResults": 8,
+      "maxCharsPerResult": 1800,
+      "maxCharsTotal": 9000,
+      "focus": "release notes or changelog for a TypeScript or JavaScript library after August 2025, concrete API changes, examples",
+      "freshness": {
+        "startDate": "2025-09-01",
+        "sortByDate": true
+      }
+    },
+    "results": [
+      {
+        "title": "core/CHANGELOG.md at main · stenciljs/core",
+        "url": "https://github.com/stenciljs/core/blob/main/CHANGELOG.md",
+        "description": "A toolchain for building scalable, enterprise-ready component systems on top of TypeScript and Web Component standards. Stencil components can be ...",
+        "position": 1,
+        "source": "web",
+        "category": "github",
+        "metadata": {
+          "sourceURL": "https://github.com/stenciljs/core/blob/main/CHANGELOG.md",
+          "finalURL": "https://github.com/stenciljs/core/blob/main/CHANGELOG.md",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "[Skip to content](https://github.com/stenciljs/core/blob/main/CHANGELOG.md#start-of-content)",
+            "charCount": 92
+          },
+          {
+            "text": "You signed in with another tab or window. [Reload](https://github.com/stenciljs/core/blob/main/CHANGELOG.md) to refresh your session.You signed out in another tab or window. [Reload](https://github.com/stenciljs/core/blob/main/CHANGELOG.md) to refresh your session.You switched accounts on another tab or window. [Reload](https://github.com/stenciljs/core/blob/main/CHANGELOG.md) to refresh your session.Dismiss alert",
+            "charCount": 417
+          },
+          {
+            "text": "[View commit history for this file.](https://github.com/stenciljs/core/commits/main/CHANGELOG.md) History",
+            "charCount": 105
+          }
+        ]
+      },
+      {
+        "title": "node/doc/changelogs/CHANGELOG_V22.md at main",
+        "url": "https://github.com/nodejs/node/blob/main/doc/changelogs/CHANGELOG_V22.md",
+        "description": "This release introduces a \"module-sync\" exports condition that's enabled when require(esm) is enabled, so packages can supply a synchronous ES module to the ...",
+        "position": 2,
+        "source": "web",
+        "category": "github",
+        "metadata": {
+          "sourceURL": "https://github.com/nodejs/node/blob/main/doc/changelogs/CHANGELOG_V22.md",
+          "finalURL": "https://github.com/nodejs/node/blob/main/doc/changelogs/CHANGELOG_V22.md",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "[Skip to content](https://github.com/nodejs/node/blob/main/doc/changelogs/CHANGELOG_V22.md#start-of-content)",
+            "charCount": 108
+          },
+          {
+            "text": "You signed in with another tab or window. [Reload](https://github.com/nodejs/node/blob/main/doc/changelogs/CHANGELOG_V22.md) to refresh your session.You signed out in another tab or window. [Reload](https://github.com/nodejs/node/blob/main/doc/changelogs/CHANGELOG_V22.md) to refresh your session.You switched accounts on another tab or window. [Reload](https://github.com/nodejs/node/blob/main/doc/changelogs/CHANGELOG_V22.md) to refresh your session.Dismiss alert",
+            "charCount": 465
+          },
+          {
+            "text": "[View commit history for this file.](https://github.com/nodejs/node/commits/main/doc/changelogs/CHANGELOG_V22.md) History",
+            "charCount": 121
+          }
+        ]
+      },
+      {
+        "title": "CHANGELOG.md - mochajs/mocha",
+        "url": "https://github.com/mochajs/mocha/blob/master/CHANGELOG.md",
+        "description": "This is a prerelease version to test our ability to release. Other than removing or updating dependencies, it contains no intended user-facing changes. Other.",
+        "position": 3,
+        "source": "web",
+        "category": "github",
+        "metadata": {
+          "sourceURL": "https://github.com/mochajs/mocha/blob/master/CHANGELOG.md",
+          "finalURL": "https://github.com/mochajs/mocha/blob/main/CHANGELOG.md",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "[Skip to content](https://github.com/mochajs/mocha/blob/main/CHANGELOG.md#start-of-content)",
+            "charCount": 91
+          },
+          {
+            "text": "You signed in with another tab or window. [Reload](https://github.com/mochajs/mocha/blob/main/CHANGELOG.md) to refresh your session.You signed out in another tab or window. [Reload](https://github.com/mochajs/mocha/blob/main/CHANGELOG.md) to refresh your session.You switched accounts on another tab or window. [Reload](https://github.com/mochajs/mocha/blob/main/CHANGELOG.md) to refresh your session.Dismiss alert",
+            "charCount": 414
+          },
+          {
+            "text": "[View commit history for this file.](https://github.com/mochajs/mocha/commits/main/CHANGELOG.md) History",
+            "charCount": 104
+          }
+        ]
+      },
+      {
+        "title": "react/CHANGELOG.md at main · facebook/react",
+        "url": "https://github.com/facebook/react/blob/main/CHANGELOG.md",
+        "description": "19.2.0 (October 1st, 2025). Below is a list of all new features, APIs, and bug fixes.",
+        "position": 4,
+        "source": "web",
+        "category": "github",
+        "metadata": {
+          "sourceURL": "https://github.com/facebook/react/blob/main/CHANGELOG.md",
+          "finalURL": "https://github.com/facebook/react/blob/main/CHANGELOG.md",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "- New JSX Transform is now required: We introduced [a new JSX transform](https://legacy.reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html) in 2020 to improve bundle size and use JSX without importing React. In React 19, we’re adding additional improvements like using ref as a prop and JSX speed improvements that require the new transform.\n- Errors in render are not re-thrown: Errors that are not caught by an Error Boundary are now reported to window.reportError. Errors that are caught by an Error Boundary are reported to console.error. We’ve introduced `onUncaughtError` and `o",
+            "charCount": 600
+          },
+          {
+            "text": "- Add support for async Actions ( [#26621](https://github.com/facebook/react/pull/26621), [#26726](https://github.com/facebook/react/pull/26726), [#28078](https://github.com/facebook/react/pull/28078), [#28097](https://github.com/facebook/react/pull/28097), [#29226](https://github.com/facebook/react/pull/29226), [#29618](https://github.com/facebook/react/pull/29618), [#29670](https://github.com/facebook/react/pull/29670), [#26716](https://github.com/facebook/react/pull/26716) by [@acdlite](https://github.com/acdlite) and [@sebmarkbage](https://github.com/sebmarkbage))\n- Add `useActionState()` ",
+            "charCount": 600
+          },
+          {
+            "text": "- [#25060](https://github.com/facebook/react/pull/25060), [#25243](https://github.com/facebook/react/pull/25243), [#25388](https://github.com/facebook/react/pull/25388), [#25432](https://github.com/facebook/react/pull/25432), [#25436](https://github.com/facebook/react/pull/25436), [#25426](https://github.com/facebook/react/pull/25426), [#25500](https://github.com/facebook/react/pull/25500), [#25480](https://github.com/facebook/react/pull/25480), [#25508](https://github.com/facebook/react/pull/25508), [#25515](https://github.com/facebook/react/pull/25515), [#25514](https://github.com/facebook/r",
+            "charCount": 600
+          }
+        ]
+      },
+      {
+        "title": "Releases · reduxjs/redux-toolkit",
+        "url": "https://github.com/reduxjs/redux-toolkit/releases",
+        "description": "This bugfix release updates the AbortSignal handling to fall back if DOMException isn't available (such as RN environments), and updates the ...",
+        "position": 5,
+        "source": "web",
+        "category": "github",
+        "metadata": {
+          "sourceURL": "https://github.com/reduxjs/redux-toolkit/releases",
+          "finalURL": "https://github.com/reduxjs/redux-toolkit/releases",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "As described in the release notes for [v2.10.0](https://github.com/reduxjs/redux-toolkit/releases/tag/v2.10.0), we recently put significant effort into profiling Immer, and contributed several PRs that aimed to optimize its update performance.",
+            "charCount": 243
+          },
+          {
+            "text": "We had a report that a Redux SSR app had internal subscription data showing up across different requests. After investigation, this was a bug introduced by the recent [RTKQ perf optimizations](https://github.com/reduxjs/redux-toolkit/pull/5064), where the internal subscription fields were hoisted outside of the middleware setup and into `createApi` itself. This meant they existed outside of the per-store-instance lifecycle. We've reworked the logic to ensure the data is per-store again. We also fixed another issue that miscalculated when there was an active request while checking for cache ent",
+            "charCount": 600
+          },
+          {
+            "text": "We had reports that [RTK Query could get very slow when there were thousands of subscriptions to the same cache entry](https://github.com/reduxjs/redux-toolkit/issues/5052). After investigation, we found that the internal polling logic was attempting to recalculate the minimum polling time after every new subscription was added. This was highly inefficient, as most subscriptions don't change polling settings, and it required repeated O(n) iteration over the growing list of subscriptions. We've rewritten that logic to debounce the update check and ensure a max of one polling value update per ti",
+            "charCount": 600
+          }
+        ]
+      },
+      {
+        "title": "htmx/CHANGELOG.md at master · bigskysoftware/ ...",
+        "url": "https://github.com/bigskysoftware/htmx/blob/master/CHANGELOG.md",
+        "description": "Improvements & Bug fixes · Improved handling of precedence of input values to favor the enclosing form (see here) · Moved event filtering logic after ...",
+        "position": 6,
+        "source": "web",
+        "category": "github",
+        "metadata": {
+          "sourceURL": "https://github.com/bigskysoftware/htmx/blob/master/CHANGELOG.md",
+          "finalURL": "https://github.com/bigskysoftware/htmx/blob/master/CHANGELOG.md",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "- [Updated](https://github.com/bigskysoftware/htmx/commit/b9336a96fbdcf28550699971dc2218a90c7a4e01)`parseHTML` to use the (unfortunately named) [`Document.parseHTMLUnsafe()`](https://developer.mozilla.org/en-US/docs/Web/API/Document/parseHTMLUnsafe_static)\nmethod for better Web Components support\n- [Added](https://github.com/bigskysoftware/htmx/commit/83a1449a89b1fcd1c1655039ede02d74d61e4800)`pushURL` option to the `htmx.ajax()` API\n- [Fixed](https://github.com/bigskysoftware/htmx/commit/cd045c3e0eb31776a80e3a4b4c74e37d0631c1f1)`hx-sync` and `htmx:abort` within the Shadow Dom [Issue 3419](http",
+            "charCount": 600
+          },
+          {
+            "text": "- Removed extensions and moved to their own repos linked off of [https://extensions.htmx.org](https://extensions.htmx.org/)\n- The website now supports dark mode! (Thanks [@pokonski](https://github.com/pokonski)!)\n- The older, deprecated [SSE & WS](https://v1.htmx.org/docs/#websockets-and-sse) attributes were removed\n- Better support for [Web Components & Shadow DOM](https://htmx.org/examples/web-components/)\n- HTTP `DELETE` requests now use parameters, rather than form encoded bodies, for their payload (This is in accordance w/ the spec.)\n- Module support was split into different files:\n- We n",
+            "charCount": 600
+          },
+          {
+            "text": "- Support for generalized inline event handling via the new [`hx-on`](https://github.com/bigskysoftware/htmx/blob/master/attributes/hx-on) attribute, which addresses\nthe shortcoming of limited [`onevent` properties](https://developer.mozilla.org/en-US/docs/Web/Events/Event_handlers#using_onevent_properties) attributes in HTML.\n- Support for [view transitions](https://github.com/bigskysoftware/htmx/blob/master/docs#view-transitions), based on the experimental [View Transitions API](https://developer.mozilla.org/en-US/docs/Web/API/View_Transitions_API)\ncurrently available in Chrome 111+ and comi",
+            "charCount": 600
+          }
+        ]
+      },
+      {
+        "title": "Releases · Adyen/adyen-node-api-library",
+        "url": "https://github.com/Adyen/adyen-node-api-library/releases",
+        "description": "This release introduces major improvements, including support for LEM v4, OpenAPI Banking and many other changes across all APIs. Make sure to review the ...",
+        "position": 7,
+        "source": "web",
+        "category": "github",
+        "metadata": {
+          "sourceURL": "https://github.com/Adyen/adyen-node-api-library/releases",
+          "finalURL": "https://github.com/Adyen/adyen-node-api-library/releases",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "- Terminal API: option to disable 308 redirect logic by [@gcatanese](https://github.com/gcatanese) in [#1558](https://github.com/Adyen/adyen-node-api-library/pull/1558)\n- Export EnvironmentEnum and RegionEnum by [@gcatanese](https://github.com/gcatanese) in [#1567](https://github.com/Adyen/adyen-node-api-library/pull/1567)\n- Move NPM badge in README by [@gcatanese](https://github.com/gcatanese) in [#1563](https://github.com/Adyen/adyen-node-api-library/pull/1563)\n- Remove unused Mustache templates by [@gcatanese](https://github.com/gcatanese) in [#1566](https://github.com/Adyen/adyen-node-api-",
+            "charCount": 600
+          },
+          {
+            "text": "For **Terminal API** users please make sure to upgrade directly to [v29.1.0](https://github.com/Adyen/adyen-node-api-library/releases/tag/v29.1.0), which contains a critical fix for the Terminal API `live` endpoints.",
+            "charCount": 216
+          },
+          {
+            "text": "- OpenAPI Generator v7: Webhooks by [@gcatanese](https://github.com/gcatanese) in [#1512](https://github.com/Adyen/adyen-node-api-library/pull/1512)\n- WIP Typescript OpenAPI Generator v7 by [@gcatanese](https://github.com/gcatanese) in [#1505](https://github.com/Adyen/adyen-node-api-library/pull/1505)\n- ApiError: Improving error handling by [@gcatanese](https://github.com/gcatanese) in [#1509](https://github.com/Adyen/adyen-node-api-library/pull/1509)\n- OpenAPI v7 Generation: Classic Payments, BalanceControl, Disputes, StoredValue by [@gcatanese](https://github.com/gcatanese) in [#1510](https:",
+            "charCount": 600
+          }
+        ]
+      },
+      {
+        "title": "CHANGELOG.md - amannn/next-intl",
+        "url": "https://github.com/amannn/next-intl/blob/main/CHANGELOG.md",
+        "description": "4.9.0 (2026-04-01) · Support transitionTypes on Link (#2302) ; 4.8.4 (2026-03-31) · Remove TypeScript peer dependency and update examples to TypeScript v6 (#2293) ...",
+        "position": 8,
+        "source": "web",
+        "category": "github",
+        "metadata": {
+          "sourceURL": "https://github.com/amannn/next-intl/blob/main/CHANGELOG.md",
+          "finalURL": "https://github.com/amannn/next-intl/blob/main/CHANGELOG.md",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "[View commit history for this file.](https://github.com/amannn/next-intl/commits/main/CHANGELOG.md) History",
+            "charCount": 107
+          },
+          {
+            "text": "- Repair package publishing workflow (this release doesn't include any library changes) ( [ceba9ae](https://github.com/amannn/next-intl/commit/ceba9ae92e863d7185c40054e8218e76a483f6a8)) – by @amannn",
+            "charCount": 198
+          },
+          {
+            "text": "- feat!: Use a separate API for rich text formatting to avoid type casting in TypeScript #54 ( [4c13a64](https://github.com/amannn/next-intl/commit/4c13a644ce99992d9e57887afe35a09b8e3d6572)), closes [#54](https://github.com/amannn/next-intl/issues/54)",
+            "charCount": 251
+          }
+        ]
+      }
+    ],
+    "searchIds": [
+      "019dc319-8f56-77fe-a3bf-738a917a8d64"
+    ],
+    "usage": {
+      "resultCount": 8,
+      "charsReturned": 8932,
+      "creditsUsed": 10,
+      "rawResultCount": {
+        "web": 8,
+        "news": 0,
+        "images": 0
+      }
+    }
+  },
+  "results": [
+    {
+      "title": "core/CHANGELOG.md at main · stenciljs/core",
+      "url": "https://github.com/stenciljs/core/blob/main/CHANGELOG.md",
+      "domain": "github.com",
+      "description": "A toolchain for building scalable, enterprise-ready component systems on top of TypeScript and Web Component standards. Stencil components can be ...",
+      "chunks": [
+        {
+          "text": "[Skip to content](https://github.com/stenciljs/core/blob/main/CHANGELOG.md#start-of-content)",
+          "charCount": 92
+        },
+        {
+          "text": "You signed in with another tab or window. [Reload](https://github.com/stenciljs/core/blob/main/CHANGELOG.md) to refresh your session.You signed out in another tab or window. [Reload](https://github.com/stenciljs/core/blob/main/CHANGELOG.md) to refresh your session.You switched accounts on another tab or window. [Reload](https://github.com/stenciljs/core/blob/main/CHANGELOG.md) to refresh your session.Dismiss alert",
+          "charCount": 417
+        },
+        {
+          "text": "[View commit history for this file.](https://github.com/stenciljs/core/commits/main/CHANGELOG.md) History",
+          "charCount": 105
+        }
+      ],
+      "source": "web",
+      "category": "github",
+      "position": 1
+    },
+    {
+      "title": "node/doc/changelogs/CHANGELOG_V22.md at main",
+      "url": "https://github.com/nodejs/node/blob/main/doc/changelogs/CHANGELOG_V22.md",
+      "domain": "github.com",
+      "description": "This release introduces a \"module-sync\" exports condition that's enabled when require(esm) is enabled, so packages can supply a synchronous ES module to the ...",
+      "chunks": [
+        {
+          "text": "[Skip to content](https://github.com/nodejs/node/blob/main/doc/changelogs/CHANGELOG_V22.md#start-of-content)",
+          "charCount": 108
+        },
+        {
+          "text": "You signed in with another tab or window. [Reload](https://github.com/nodejs/node/blob/main/doc/changelogs/CHANGELOG_V22.md) to refresh your session.You signed out in another tab or window. [Reload](https://github.com/nodejs/node/blob/main/doc/changelogs/CHANGELOG_V22.md) to refresh your session.You switched accounts on another tab or window. [Reload](https://github.com/nodejs/node/blob/main/doc/changelogs/CHANGELOG_V22.md) to refresh your session.Dismiss alert",
+          "charCount": 465
+        },
+        {
+          "text": "[View commit history for this file.](https://github.com/nodejs/node/commits/main/doc/changelogs/CHANGELOG_V22.md) History",
+          "charCount": 121
+        }
+      ],
+      "source": "web",
+      "category": "github",
+      "position": 2
+    },
+    {
+      "title": "CHANGELOG.md - mochajs/mocha",
+      "url": "https://github.com/mochajs/mocha/blob/master/CHANGELOG.md",
+      "domain": "github.com",
+      "description": "This is a prerelease version to test our ability to release. Other than removing or updating dependencies, it contains no intended user-facing changes. Other.",
+      "chunks": [
+        {
+          "text": "[Skip to content](https://github.com/mochajs/mocha/blob/main/CHANGELOG.md#start-of-content)",
+          "charCount": 91
+        },
+        {
+          "text": "You signed in with another tab or window. [Reload](https://github.com/mochajs/mocha/blob/main/CHANGELOG.md) to refresh your session.You signed out in another tab or window. [Reload](https://github.com/mochajs/mocha/blob/main/CHANGELOG.md) to refresh your session.You switched accounts on another tab or window. [Reload](https://github.com/mochajs/mocha/blob/main/CHANGELOG.md) to refresh your session.Dismiss alert",
+          "charCount": 414
+        },
+        {
+          "text": "[View commit history for this file.](https://github.com/mochajs/mocha/commits/main/CHANGELOG.md) History",
+          "charCount": 104
+        }
+      ],
+      "source": "web",
+      "category": "github",
+      "position": 3
+    },
+    {
+      "title": "react/CHANGELOG.md at main · facebook/react",
+      "url": "https://github.com/facebook/react/blob/main/CHANGELOG.md",
+      "domain": "github.com",
+      "description": "19.2.0 (October 1st, 2025). Below is a list of all new features, APIs, and bug fixes.",
+      "chunks": [
+        {
+          "text": "- New JSX Transform is now required: We introduced [a new JSX transform](https://legacy.reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html) in 2020 to improve bundle size and use JSX without importing React. In React 19, we’re adding additional improvements like using ref as a prop and JSX speed improvements that require the new transform.\n- Errors in render are not re-thrown: Errors that are not caught by an Error Boundary are now reported to window.reportError. Errors that are caught by an Error Boundary are reported to console.error. We’ve introduced `onUncaughtError` and `o",
+          "charCount": 600
+        },
+        {
+          "text": "- Add support for async Actions ( [#26621](https://github.com/facebook/react/pull/26621), [#26726](https://github.com/facebook/react/pull/26726), [#28078](https://github.com/facebook/react/pull/28078), [#28097](https://github.com/facebook/react/pull/28097), [#29226](https://github.com/facebook/react/pull/29226), [#29618](https://github.com/facebook/react/pull/29618), [#29670](https://github.com/facebook/react/pull/29670), [#26716](https://github.com/facebook/react/pull/26716) by [@acdlite](https://github.com/acdlite) and [@sebmarkbage](https://github.com/sebmarkbage))\n- Add `useActionState()` ",
+          "charCount": 600
+        },
+        {
+          "text": "- [#25060](https://github.com/facebook/react/pull/25060), [#25243](https://github.com/facebook/react/pull/25243), [#25388](https://github.com/facebook/react/pull/25388), [#25432](https://github.com/facebook/react/pull/25432), [#25436](https://github.com/facebook/react/pull/25436), [#25426](https://github.com/facebook/react/pull/25426), [#25500](https://github.com/facebook/react/pull/25500), [#25480](https://github.com/facebook/react/pull/25480), [#25508](https://github.com/facebook/react/pull/25508), [#25515](https://github.com/facebook/react/pull/25515), [#25514](https://github.com/facebook/r",
+          "charCount": 600
+        }
+      ],
+      "source": "web",
+      "category": "github",
+      "position": 4
+    },
+    {
+      "title": "Releases · reduxjs/redux-toolkit",
+      "url": "https://github.com/reduxjs/redux-toolkit/releases",
+      "domain": "github.com",
+      "description": "This bugfix release updates the AbortSignal handling to fall back if DOMException isn't available (such as RN environments), and updates the ...",
+      "chunks": [
+        {
+          "text": "As described in the release notes for [v2.10.0](https://github.com/reduxjs/redux-toolkit/releases/tag/v2.10.0), we recently put significant effort into profiling Immer, and contributed several PRs that aimed to optimize its update performance.",
+          "charCount": 243
+        },
+        {
+          "text": "We had a report that a Redux SSR app had internal subscription data showing up across different requests. After investigation, this was a bug introduced by the recent [RTKQ perf optimizations](https://github.com/reduxjs/redux-toolkit/pull/5064), where the internal subscription fields were hoisted outside of the middleware setup and into `createApi` itself. This meant they existed outside of the per-store-instance lifecycle. We've reworked the logic to ensure the data is per-store again. We also fixed another issue that miscalculated when there was an active request while checking for cache ent",
+          "charCount": 600
+        },
+        {
+          "text": "We had reports that [RTK Query could get very slow when there were thousands of subscriptions to the same cache entry](https://github.com/reduxjs/redux-toolkit/issues/5052). After investigation, we found that the internal polling logic was attempting to recalculate the minimum polling time after every new subscription was added. This was highly inefficient, as most subscriptions don't change polling settings, and it required repeated O(n) iteration over the growing list of subscriptions. We've rewritten that logic to debounce the update check and ensure a max of one polling value update per ti",
+          "charCount": 600
+        }
+      ],
+      "source": "web",
+      "category": "github",
+      "position": 5
+    },
+    {
+      "title": "htmx/CHANGELOG.md at master · bigskysoftware/ ...",
+      "url": "https://github.com/bigskysoftware/htmx/blob/master/CHANGELOG.md",
+      "domain": "github.com",
+      "description": "Improvements & Bug fixes · Improved handling of precedence of input values to favor the enclosing form (see here) · Moved event filtering logic after ...",
+      "chunks": [
+        {
+          "text": "- [Updated](https://github.com/bigskysoftware/htmx/commit/b9336a96fbdcf28550699971dc2218a90c7a4e01)`parseHTML` to use the (unfortunately named) [`Document.parseHTMLUnsafe()`](https://developer.mozilla.org/en-US/docs/Web/API/Document/parseHTMLUnsafe_static)\nmethod for better Web Components support\n- [Added](https://github.com/bigskysoftware/htmx/commit/83a1449a89b1fcd1c1655039ede02d74d61e4800)`pushURL` option to the `htmx.ajax()` API\n- [Fixed](https://github.com/bigskysoftware/htmx/commit/cd045c3e0eb31776a80e3a4b4c74e37d0631c1f1)`hx-sync` and `htmx:abort` within the Shadow Dom [Issue 3419](http",
+          "charCount": 600
+        },
+        {
+          "text": "- Removed extensions and moved to their own repos linked off of [https://extensions.htmx.org](https://extensions.htmx.org/)\n- The website now supports dark mode! (Thanks [@pokonski](https://github.com/pokonski)!)\n- The older, deprecated [SSE & WS](https://v1.htmx.org/docs/#websockets-and-sse) attributes were removed\n- Better support for [Web Components & Shadow DOM](https://htmx.org/examples/web-components/)\n- HTTP `DELETE` requests now use parameters, rather than form encoded bodies, for their payload (This is in accordance w/ the spec.)\n- Module support was split into different files:\n- We n",
+          "charCount": 600
+        },
+        {
+          "text": "- Support for generalized inline event handling via the new [`hx-on`](https://github.com/bigskysoftware/htmx/blob/master/attributes/hx-on) attribute, which addresses\nthe shortcoming of limited [`onevent` properties](https://developer.mozilla.org/en-US/docs/Web/Events/Event_handlers#using_onevent_properties) attributes in HTML.\n- Support for [view transitions](https://github.com/bigskysoftware/htmx/blob/master/docs#view-transitions), based on the experimental [View Transitions API](https://developer.mozilla.org/en-US/docs/Web/API/View_Transitions_API)\ncurrently available in Chrome 111+ and comi",
+          "charCount": 600
+        }
+      ],
+      "source": "web",
+      "category": "github",
+      "position": 6
+    },
+    {
+      "title": "Releases · Adyen/adyen-node-api-library",
+      "url": "https://github.com/Adyen/adyen-node-api-library/releases",
+      "domain": "github.com",
+      "description": "This release introduces major improvements, including support for LEM v4, OpenAPI Banking and many other changes across all APIs. Make sure to review the ...",
+      "chunks": [
+        {
+          "text": "- Terminal API: option to disable 308 redirect logic by [@gcatanese](https://github.com/gcatanese) in [#1558](https://github.com/Adyen/adyen-node-api-library/pull/1558)\n- Export EnvironmentEnum and RegionEnum by [@gcatanese](https://github.com/gcatanese) in [#1567](https://github.com/Adyen/adyen-node-api-library/pull/1567)\n- Move NPM badge in README by [@gcatanese](https://github.com/gcatanese) in [#1563](https://github.com/Adyen/adyen-node-api-library/pull/1563)\n- Remove unused Mustache templates by [@gcatanese](https://github.com/gcatanese) in [#1566](https://github.com/Adyen/adyen-node-api-",
+          "charCount": 600
+        },
+        {
+          "text": "For **Terminal API** users please make sure to upgrade directly to [v29.1.0](https://github.com/Adyen/adyen-node-api-library/releases/tag/v29.1.0), which contains a critical fix for the Terminal API `live` endpoints.",
+          "charCount": 216
+        },
+        {
+          "text": "- OpenAPI Generator v7: Webhooks by [@gcatanese](https://github.com/gcatanese) in [#1512](https://github.com/Adyen/adyen-node-api-library/pull/1512)\n- WIP Typescript OpenAPI Generator v7 by [@gcatanese](https://github.com/gcatanese) in [#1505](https://github.com/Adyen/adyen-node-api-library/pull/1505)\n- ApiError: Improving error handling by [@gcatanese](https://github.com/gcatanese) in [#1509](https://github.com/Adyen/adyen-node-api-library/pull/1509)\n- OpenAPI v7 Generation: Classic Payments, BalanceControl, Disputes, StoredValue by [@gcatanese](https://github.com/gcatanese) in [#1510](https:",
+          "charCount": 600
+        }
+      ],
+      "source": "web",
+      "category": "github",
+      "position": 7
+    },
+    {
+      "title": "CHANGELOG.md - amannn/next-intl",
+      "url": "https://github.com/amannn/next-intl/blob/main/CHANGELOG.md",
+      "domain": "github.com",
+      "description": "4.9.0 (2026-04-01) · Support transitionTypes on Link (#2302) ; 4.8.4 (2026-03-31) · Remove TypeScript peer dependency and update examples to TypeScript v6 (#2293) ...",
+      "chunks": [
+        {
+          "text": "[View commit history for this file.](https://github.com/amannn/next-intl/commits/main/CHANGELOG.md) History",
+          "charCount": 107
+        },
+        {
+          "text": "- Repair package publishing workflow (this release doesn't include any library changes) ( [ceba9ae](https://github.com/amannn/next-intl/commit/ceba9ae92e863d7185c40054e8218e76a483f6a8)) – by @amannn",
+          "charCount": 198
+        },
+        {
+          "text": "- feat!: Use a separate API for rich text formatting to avoid type casting in TypeScript #54 ( [4c13a64](https://github.com/amannn/next-intl/commit/4c13a644ce99992d9e57887afe35a09b8e3d6572)), closes [#54](https://github.com/amannn/next-intl/issues/54)",
+          "charCount": 251
+        }
+      ],
+      "source": "web",
+      "category": "github",
+      "position": 8
+    }
+  ]
+}

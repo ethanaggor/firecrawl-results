@@ -1,0 +1,10 @@
+{
+  "query": "Parallel Search MCP docs web_search web_fetch agent search benchmark WISER official",
+  "max_results": 8,
+  "search_depth": "advanced",
+  "include_domains": [
+    "parallel.ai",
+    "docs.parallel.ai"
+  ],
+  "include_raw_content": false
+}

@@ -1,0 +1,46 @@
+{
+  "runId": "real-20260425-agent-search-benchmark-methodology-tavily",
+  "createdAt": "2026-04-25T05:01:52.281Z",
+  "provider": {
+    "id": "tavily",
+    "name": "Tavily remote MCP",
+    "transport": "streamable-http",
+    "url": "https://mcp.tavily.com/mcp/?tavilyApiKey=***",
+    "query": [
+      {
+        "name": "tavilyApiKey",
+        "env": "TAVILY_API_KEY",
+        "required": true
+      }
+    ],
+    "searchTools": [
+      "tavily-search",
+      "tavily_search",
+      "search"
+    ],
+    "fetchTools": [
+      "tavily-extract",
+      "tavily_extract",
+      "extract"
+    ],
+    "headers": []
+  },
+  "task": {
+    "id": "agent-search-benchmark-methodology",
+    "family": "benchmark-methodology",
+    "question": "What benchmark methodology should be used for agent web search tools, based on public Exa, Parallel, and Tavily benchmarks?",
+    "agentGoal": "Find and compare public benchmark methodology from Exa, Parallel, and Tavily. Extract metrics and task construction patterns.",
+    "expectedTerms": [
+      "SimpleQA",
+      "WISER",
+      "MSMARCO",
+      "document relevance"
+    ],
+    "expectedDomains": [
+      "exa.ai",
+      "parallel.ai",
+      "github.com",
+      "docs.tavily.com"
+    ]
+  }
+}

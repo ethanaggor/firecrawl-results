@@ -1,0 +1,9 @@
+{
+  "query": "site:docs.tavily.com Tavily remote MCP endpoint tavily-search tavily-extract search_depth",
+  "limit": 8,
+  "sources": [
+    {
+      "type": "web"
+    }
+  ]
+}

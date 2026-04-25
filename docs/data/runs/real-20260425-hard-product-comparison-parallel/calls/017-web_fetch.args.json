@@ -1,0 +1,16 @@
+{
+  "urls": [
+    "https://docs.firecrawl.dev/features/search",
+    "https://docs.tavily.com/documentation/mcp",
+    "https://github.com/tavily-ai/tavily-mcp",
+    "https://docs.tavily.com/documentation/api-reference/endpoint/search"
+  ],
+  "objective": "Extract Firecrawl search response/content shape and Tavily MCP/search tool capabilities for agent comparison.",
+  "search_queries": [
+    "search response content MCP",
+    "Tavily MCP search extract",
+    "Firecrawl scrapeOptions"
+  ],
+  "session_id": "real20260425hardproductcomparisonparallel001",
+  "model_name": "gpt-5.5 xhigh"
+}

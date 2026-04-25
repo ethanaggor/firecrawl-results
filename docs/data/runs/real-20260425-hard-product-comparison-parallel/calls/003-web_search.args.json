@@ -1,0 +1,10 @@
+{
+  "objective": "Find official Firecrawl documentation for MCP server and Search API fields, especially search tool flow, scrape options, and returned context shape.",
+  "search_queries": [
+    "site:docs.firecrawl.dev MCP search",
+    "Firecrawl Search API docs",
+    "Firecrawl MCP server docs"
+  ],
+  "session_id": "real20260425hardproductcomparisonparallel001",
+  "model_name": "gpt-5.5 xhigh"
+}

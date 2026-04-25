@@ -1,0 +1,29 @@
+{
+  "agentModel": "gpt-5.5 xhigh",
+  "provider": "exa",
+  "taskId": "source-policy-docs-only",
+  "success": true,
+  "answerSupportedByEvidence": true,
+  "retrievalQualityScore": 5,
+  "agentExperienceScore": 4.4,
+  "sourcePolicyAdherent": true,
+  "freshnessAdherent": null,
+  "callRationale": [
+    "Started the run with the direct harness command, which listed Exa's tool schemas and showed source-policy controls.",
+    "Selected `web_search_advanced_exa` because it exposed native `includeDomains`, content budget, highlight, and cache freshness controls.",
+    "Used `includeDomains: [\"docs.firecrawl.dev\"]`, `maxAgeHours: 0`, and highlight/text extraction focused on `categories`, `country`, `timeout`, and `ignoreInvalidURLs`.",
+    "Did not make a fetch follow-up because the first Search API reference result visibly contained all four requested fields and the Search feature page reinforced the categories details."
+  ],
+  "strengths": [
+    "Native domain allowlisting made the docs-only source policy straightforward.",
+    "The top result was the current Firecrawl Search API reference and included direct evidence for all requested terms.",
+    "Harness metrics reported `uniqueDomainCount: 1`, `expectedDomainHit: true`, and `expectedTermHit: true`.",
+    "One provider call was enough to answer the task with official docs evidence."
+  ],
+  "weaknesses": [
+    "The response was large for a narrow task: 10724 raw response tokens and 5609 normalized evidence tokens.",
+    "The five results included some lower-value same-domain pages, including a Spanish duplicate, the v1 endpoint, and the Extract endpoint; these were ignored for the final answer."
+  ],
+  "notableFailures": [],
+  "confidence": 0.95
+}

@@ -1,0 +1,9 @@
+{
+  "query": "public benchmarks agent web search tools Exa Parallel Tavily SimpleQA WISER MSMARCO document relevance methodology",
+  "limit": 8,
+  "sources": [
+    {
+      "type": "web"
+    }
+  ]
+}

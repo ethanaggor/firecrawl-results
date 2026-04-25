@@ -1,0 +1,40 @@
+{
+  "provider": "firecrawl-context",
+  "tool": "firecrawl_search",
+  "isError": false,
+  "rawText": "{\n  \"query\": \"Exa Parallel Tavily public search benchmark methodology SimpleQA WISER MSMARCO document relevance\",\n  \"executedQuery\": \"Exa Parallel Tavily public search benchmark methodology SimpleQA WISER MSMARCO document relevance (site:exa.ai OR site:parallel.ai OR site:github.com OR site:docs.tavily.com)\",\n  \"content\": \"chunks\",\n  \"constraints\": {\n    \"maxResults\": 10,\n    \"maxCharsPerResult\": 1800,\n    \"maxCharsTotal\": 14000,\n    \"focus\": \"benchmark methodology, evaluation datasets, metrics, task construction patterns, agent search workflows\",\n    \"sourcePolicy\": {\n      \"includeDomains\": [\n        \"exa.ai\",\n        \"parallel.ai\",\n        \"github.com\",\n        \"docs.tavily.com\"\n      ]\n    }\n  },\n  \"results\": [],\n  \"searchIds\": [\n    \"019dc304-35b5-712f-aaa8-2f51b03ca34b\"\n  ],\n  \"usage\": {\n    \"resultCount\": 0,\n    \"charsReturned\": 0,\n    \"creditsUsed\": 0,\n    \"rawResultCount\": {\n      \"web\": 0,\n      \"news\": 0,\n      \"images\": 0\n    }\n  }\n}",
+  "parsed": {
+    "query": "Exa Parallel Tavily public search benchmark methodology SimpleQA WISER MSMARCO document relevance",
+    "executedQuery": "Exa Parallel Tavily public search benchmark methodology SimpleQA WISER MSMARCO document relevance (site:exa.ai OR site:parallel.ai OR site:github.com OR site:docs.tavily.com)",
+    "content": "chunks",
+    "constraints": {
+      "maxResults": 10,
+      "maxCharsPerResult": 1800,
+      "maxCharsTotal": 14000,
+      "focus": "benchmark methodology, evaluation datasets, metrics, task construction patterns, agent search workflows",
+      "sourcePolicy": {
+        "includeDomains": [
+          "exa.ai",
+          "parallel.ai",
+          "github.com",
+          "docs.tavily.com"
+        ]
+      }
+    },
+    "results": [],
+    "searchIds": [
+      "019dc304-35b5-712f-aaa8-2f51b03ca34b"
+    ],
+    "usage": {
+      "resultCount": 0,
+      "charsReturned": 0,
+      "creditsUsed": 0,
+      "rawResultCount": {
+        "web": 0,
+        "news": 0,
+        "images": 0
+      }
+    }
+  },
+  "results": []
+}

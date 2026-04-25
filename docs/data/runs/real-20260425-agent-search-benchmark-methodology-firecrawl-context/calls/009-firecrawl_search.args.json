@@ -1,0 +1,21 @@
+{
+  "query": "tavily-ai tavily-search-evals SimpleQA document relevance benchmark",
+  "content": "chunks",
+  "maxResults": 6,
+  "maxCharsPerResult": 2400,
+  "maxCharsTotal": 10000,
+  "focus": "Tavily search evals repository, SimpleQA, document relevance, benchmark metrics and setup",
+  "sourcePolicy": {
+    "includeDomains": [
+      "github.com"
+    ]
+  },
+  "sources": [
+    "web"
+  ],
+  "categories": [
+    "github"
+  ],
+  "ignoreInvalidURLs": true,
+  "includeRawResults": false
+}

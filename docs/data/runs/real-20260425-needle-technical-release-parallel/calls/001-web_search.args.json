@@ -1,0 +1,10 @@
+{
+  "objective": "Find official release notes or changelogs for a TypeScript or JavaScript library release after August 2025 with at least three concrete API changes. Prefer official docs, changelogs, GitHub releases, and sources mentioning TypeScript.",
+  "search_queries": [
+    "TypeScript release API changes 2025",
+    "JavaScript library changelog API September 2025",
+    "TypeScript v2025 release API"
+  ],
+  "session_id": "real20260425needleparallel000000000001",
+  "model_name": "gpt-5.5 xhigh"
+}

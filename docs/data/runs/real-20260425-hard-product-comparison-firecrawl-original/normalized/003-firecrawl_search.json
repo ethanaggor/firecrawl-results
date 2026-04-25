@@ -1,0 +1,90 @@
+{
+  "provider": "firecrawl-original",
+  "tool": "firecrawl_search",
+  "isError": false,
+  "rawText": "{\n  \"web\": [\n    {\n      \"url\": \"https://docs.firecrawl.dev/mcp-server\",\n      \"title\": \"Firecrawl MCP Server\",\n      \"description\": \"​. Available Tools · ​. 1. Scrape Tool ( firecrawl_scrape ) · ​. 2. Map Tool ( firecrawl_map ) · ​. 3. Search Tool ( firecrawl_search ) · ​. 4. Crawl Tool ( ...\",\n      \"position\": 1\n    },\n    {\n      \"url\": \"https://docs.firecrawl.dev/introduction\",\n      \"title\": \"Firecrawl Docs\",\n      \"description\": \"See Skill + CLI for the full setup. Or use the MCP Server to connect Firecrawl directly to Claude, Cursor, Windsurf, VS Code, and other AI tools.\",\n      \"position\": 2\n    },\n    {\n      \"url\": \"https://docs.firecrawl.dev/features/scrape\",\n      \"title\": \"Scrape - Firecrawl Docs\",\n      \"description\": \"MCP Server · Advanced ... This is useful for design system analysis, brand monitoring, or building tools that need to understand a website's visual identity.\",\n      \"position\": 3\n    },\n    {\n      \"url\": \"https://docs.firecrawl.dev/developer-guides/mcp-setup-guides/claude-code\",\n      \"title\": \"MCP Web Search & Scrape in Claude Code - Firecrawl Docs\",\n      \"description\": \"Add Firecrawl MCP Server. Option A: Remote hosted URL ... Claude will automatically use Firecrawl's search and scrape tools to get the information.\",\n      \"position\": 4\n    },\n    {\n      \"url\": \"https://docs.firecrawl.dev/developer-guides/mcp-setup-guides/chatgpt\",\n      \"title\": \"MCP Web Search & Scrape in ChatGPT - Firecrawl Docs\",\n      \"description\": \"When ChatGPT uses the Firecrawl MCP tools, you may see a confirmation prompt asking for your approval. Some ChatGPT Desktop versions auto-approve tool calls ...\",\n      \"position\": 5\n    },\n    {\n      \"url\": \"https://docs.firecrawl.dev/features/search\",\n      \"title\": \"Search - Firecrawl Docs\",\n      \"description\": \"MCP Server · Advanced Scraping Guide. Plans & Billing. Core Endpoints. Search ... tools\\\", limit=5, location=\\\"Germany\\\" ) # Process the results for result in ...\",\n      \"position\": 6\n    }\n  ]\n}",
+  "parsed": {
+    "web": [
+      {
+        "url": "https://docs.firecrawl.dev/mcp-server",
+        "title": "Firecrawl MCP Server",
+        "description": "​. Available Tools · ​. 1. Scrape Tool ( firecrawl_scrape ) · ​. 2. Map Tool ( firecrawl_map ) · ​. 3. Search Tool ( firecrawl_search ) · ​. 4. Crawl Tool ( ...",
+        "position": 1
+      },
+      {
+        "url": "https://docs.firecrawl.dev/introduction",
+        "title": "Firecrawl Docs",
+        "description": "See Skill + CLI for the full setup. Or use the MCP Server to connect Firecrawl directly to Claude, Cursor, Windsurf, VS Code, and other AI tools.",
+        "position": 2
+      },
+      {
+        "url": "https://docs.firecrawl.dev/features/scrape",
+        "title": "Scrape - Firecrawl Docs",
+        "description": "MCP Server · Advanced ... This is useful for design system analysis, brand monitoring, or building tools that need to understand a website's visual identity.",
+        "position": 3
+      },
+      {
+        "url": "https://docs.firecrawl.dev/developer-guides/mcp-setup-guides/claude-code",
+        "title": "MCP Web Search & Scrape in Claude Code - Firecrawl Docs",
+        "description": "Add Firecrawl MCP Server. Option A: Remote hosted URL ... Claude will automatically use Firecrawl's search and scrape tools to get the information.",
+        "position": 4
+      },
+      {
+        "url": "https://docs.firecrawl.dev/developer-guides/mcp-setup-guides/chatgpt",
+        "title": "MCP Web Search & Scrape in ChatGPT - Firecrawl Docs",
+        "description": "When ChatGPT uses the Firecrawl MCP tools, you may see a confirmation prompt asking for your approval. Some ChatGPT Desktop versions auto-approve tool calls ...",
+        "position": 5
+      },
+      {
+        "url": "https://docs.firecrawl.dev/features/search",
+        "title": "Search - Firecrawl Docs",
+        "description": "MCP Server · Advanced Scraping Guide. Plans & Billing. Core Endpoints. Search ... tools\", limit=5, location=\"Germany\" ) # Process the results for result in ...",
+        "position": 6
+      }
+    ]
+  },
+  "results": [
+    {
+      "title": "Firecrawl MCP Server",
+      "url": "https://docs.firecrawl.dev/mcp-server",
+      "domain": "docs.firecrawl.dev",
+      "description": "​. Available Tools · ​. 1. Scrape Tool ( firecrawl_scrape ) · ​. 2. Map Tool ( firecrawl_map ) · ​. 3. Search Tool ( firecrawl_search ) · ​. 4. Crawl Tool ( ...",
+      "position": 1
+    },
+    {
+      "title": "Firecrawl Docs",
+      "url": "https://docs.firecrawl.dev/introduction",
+      "domain": "docs.firecrawl.dev",
+      "description": "See Skill + CLI for the full setup. Or use the MCP Server to connect Firecrawl directly to Claude, Cursor, Windsurf, VS Code, and other AI tools.",
+      "position": 2
+    },
+    {
+      "title": "Scrape - Firecrawl Docs",
+      "url": "https://docs.firecrawl.dev/features/scrape",
+      "domain": "docs.firecrawl.dev",
+      "description": "MCP Server · Advanced ... This is useful for design system analysis, brand monitoring, or building tools that need to understand a website's visual identity.",
+      "position": 3
+    },
+    {
+      "title": "MCP Web Search & Scrape in Claude Code - Firecrawl Docs",
+      "url": "https://docs.firecrawl.dev/developer-guides/mcp-setup-guides/claude-code",
+      "domain": "docs.firecrawl.dev",
+      "description": "Add Firecrawl MCP Server. Option A: Remote hosted URL ... Claude will automatically use Firecrawl's search and scrape tools to get the information.",
+      "position": 4
+    },
+    {
+      "title": "MCP Web Search & Scrape in ChatGPT - Firecrawl Docs",
+      "url": "https://docs.firecrawl.dev/developer-guides/mcp-setup-guides/chatgpt",
+      "domain": "docs.firecrawl.dev",
+      "description": "When ChatGPT uses the Firecrawl MCP tools, you may see a confirmation prompt asking for your approval. Some ChatGPT Desktop versions auto-approve tool calls ...",
+      "position": 5
+    },
+    {
+      "title": "Search - Firecrawl Docs",
+      "url": "https://docs.firecrawl.dev/features/search",
+      "domain": "docs.firecrawl.dev",
+      "description": "MCP Server · Advanced Scraping Guide. Plans & Billing. Core Endpoints. Search ... tools\", limit=5, location=\"Germany\" ) # Process the results for result in ...",
+      "position": 6
+    }
+  ]
+}

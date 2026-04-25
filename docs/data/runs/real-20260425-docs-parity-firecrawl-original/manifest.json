@@ -1,0 +1,56 @@
+{
+  "runId": "real-20260425-docs-parity-firecrawl-original",
+  "createdAt": "2026-04-25T04:55:44.728Z",
+  "provider": {
+    "id": "firecrawl-original",
+    "name": "Firecrawl MCP upstream",
+    "transport": "stdio",
+    "cwd": "../firecrawl-mcp-server-upstream",
+    "command": "node",
+    "args": [
+      "dist/index.js"
+    ],
+    "env": [
+      {
+        "name": "FIRECRAWL_API_KEY",
+        "required": true,
+        "present": true
+      },
+      {
+        "name": "FIRECRAWL_API_URL",
+        "required": false,
+        "present": false
+      }
+    ],
+    "searchTools": [
+      "firecrawl_search"
+    ],
+    "fetchTools": [
+      "firecrawl_scrape"
+    ],
+    "cwdExists": true
+  },
+  "task": {
+    "id": "docs-parity",
+    "family": "api-documentation",
+    "question": "Which public Firecrawl Search API fields are relevant to MCP search parity, especially categories, country, timeout, ignoreInvalidURLs, enterprise, and response metadata?",
+    "agentGoal": "Find primary documentation or source evidence for the Search API fields and response metadata. Prefer Firecrawl docs and official source.",
+    "expectedTerms": [
+      "categories",
+      "country",
+      "timeout",
+      "ignoreInvalidURLs"
+    ],
+    "expectedDomains": [
+      "docs.firecrawl.dev",
+      "github.com"
+    ],
+    "sourcePolicy": {
+      "includeDomains": [
+        "docs.firecrawl.dev",
+        "github.com"
+      ]
+    },
+    "notes": "This is the direct parity question behind the implementation."
+  }
+}

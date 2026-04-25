@@ -1,0 +1,14 @@
+{
+  "urls": [
+    "https://docs.firecrawl.dev/api-reference/endpoint/search",
+    "https://docs.firecrawl.dev/features/search"
+  ],
+  "objective": "Find Search API docs text for categories, country, timeout, ignoreInvalidURLs.",
+  "search_queries": [
+    "categories country timeout",
+    "ignoreInvalidURLs Search API"
+  ],
+  "full_content": false,
+  "session_id": "real20260425sourcepolicydocsonlyparallel0001",
+  "model_name": "gpt-5.5 xhigh"
+}

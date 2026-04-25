@@ -1,0 +1,88 @@
+{
+  "provider": "firecrawl-context",
+  "tool": "firecrawl_search",
+  "isError": false,
+  "rawText": "{\n  \"query\": \"Exa official MCP web_search_exa web_fetch_exa contents highlights summary search agent benchmark API evals WebCode\",\n  \"executedQuery\": \"Exa official MCP web_search_exa web_fetch_exa contents highlights summary search agent benchmark API evals WebCode (site:exa.ai OR site:docs.exa.ai)\",\n  \"content\": \"chunks\",\n  \"constraints\": {\n    \"maxResults\": 8,\n    \"maxCharsPerResult\": 1600,\n    \"maxCharsTotal\": 10000,\n    \"focus\": \"Exa MCP endpoint and tools, search result content shape, highlights/text/summary behavior, and Exa benchmark methodology or retrieval quality claims\",\n    \"sourcePolicy\": {\n      \"includeDomains\": [\n        \"exa.ai\",\n        \"docs.exa.ai\"\n      ]\n    }\n  },\n  \"results\": [\n    {\n      \"title\": \"llms-full.txt - Exa\",\n      \"url\": \"https://exa.ai/docs/llms-full.txt\",\n      \"description\": \"* Search with contents: \\\\$7 per 1000 requests with 10 results. ... [Exa](https://exa.ai) is the perfect web search API that finds exactly what you're looking for ...\",\n      \"position\": 1,\n      \"source\": \"web\",\n      \"metadata\": {\n        \"sourceURL\": \"https://exa.ai/docs/llms-full.txt\",\n        \"finalURL\": \"https://exa.ai/docs/llms-full.txt\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"\\\\`\\\\`\\\\`json theme={null}\\n{\\n \\\"requestId\\\": \\\"975a6ff95c69a0bdc558f01c99ede801\\\",\\n \\\"context\\\": \\\"Title: AI News \\\\| Latest AI News, Analysis & Events\\\\\\\\nPublished Date: 2025-11-19T10:22:05.000Z\\\\\\\\nURL: https://www.artificialintelligence-news.com/\\\\\\\\nSummary: This page is a collection of recent news, analysis, and resources related to Artificial Intelligence (AI). It features various blog posts and articles covering topics such as:\\\\\\\\n\\\\\\\\n\\\\* \\\\*\\\\*Workforce & HR:\\\\*\\\\* Using ChatGPT for team planning and the Royal Navy's use of AI in recruitment.\\\\\",\n          \"charCount\": 534\n        },\n        {\n          \"text\": \"Exa's search endpoint previously charged separately for search results and their webpage contents. Now, contents for 10 search results per request are included for free, and as a result API usage is cheaper for the majority of users.\",\n          \"charCount\": 233\n        },\n        {\n          \"text\": \"\\\\`\\\\`\\\\`\\n Workflow executed successfully\\n Final state:\\n Messages:\\n SystemMessage: You are a helpful assistant....\\n HumanMessage: Check this text for hallucinations: The Eiffel Tower, an iconic iron lattice structure located in Pa...\\n AIMessage: Use hallucination\\\\_check tool...\\n AIMessage: {'claims': \\\\[{'claim': 'The Eiffel Tower is an iconic iron lattice structure', 'assessment': 'support...\\\\\\n\\\\\\n Analysis Result:\\\\\\n Claim: The Eiffel Tower is an iconic iron lattice structure\\\\\\n Assessment: supported\\\\\\n Confidence Score: 1\\\\\\n Supporting\",\n          \"charCount\": 534\n        }\n      ]\n    }\n  ],\n  \"searchIds\": [\n    \"019dc311-0ab8-763c-bc1d-b3e674d9939b\"\n  ],\n  \"usage\": {\n    \"resultCount\": 1,\n    \"charsReturned\": 1301,\n    \"creditsUsed\": 3,\n    \"rawResultCount\": {\n      \"web\": 1,\n      \"news\": 0,\n      \"images\": 0\n    }\n  }\n}",
+  "parsed": {
+    "query": "Exa official MCP web_search_exa web_fetch_exa contents highlights summary search agent benchmark API evals WebCode",
+    "executedQuery": "Exa official MCP web_search_exa web_fetch_exa contents highlights summary search agent benchmark API evals WebCode (site:exa.ai OR site:docs.exa.ai)",
+    "content": "chunks",
+    "constraints": {
+      "maxResults": 8,
+      "maxCharsPerResult": 1600,
+      "maxCharsTotal": 10000,
+      "focus": "Exa MCP endpoint and tools, search result content shape, highlights/text/summary behavior, and Exa benchmark methodology or retrieval quality claims",
+      "sourcePolicy": {
+        "includeDomains": [
+          "exa.ai",
+          "docs.exa.ai"
+        ]
+      }
+    },
+    "results": [
+      {
+        "title": "llms-full.txt - Exa",
+        "url": "https://exa.ai/docs/llms-full.txt",
+        "description": "* Search with contents: \\$7 per 1000 requests with 10 results. ... [Exa](https://exa.ai) is the perfect web search API that finds exactly what you're looking for ...",
+        "position": 1,
+        "source": "web",
+        "metadata": {
+          "sourceURL": "https://exa.ai/docs/llms-full.txt",
+          "finalURL": "https://exa.ai/docs/llms-full.txt",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "\\`\\`\\`json theme={null}\n{\n \"requestId\": \"975a6ff95c69a0bdc558f01c99ede801\",\n \"context\": \"Title: AI News \\| Latest AI News, Analysis & Events\\\\nPublished Date: 2025-11-19T10:22:05.000Z\\\\nURL: https://www.artificialintelligence-news.com/\\\\nSummary: This page is a collection of recent news, analysis, and resources related to Artificial Intelligence (AI). It features various blog posts and articles covering topics such as:\\\\n\\\\n\\* \\*\\*Workforce & HR:\\*\\* Using ChatGPT for team planning and the Royal Navy's use of AI in recruitment.\\",
+            "charCount": 534
+          },
+          {
+            "text": "Exa's search endpoint previously charged separately for search results and their webpage contents. Now, contents for 10 search results per request are included for free, and as a result API usage is cheaper for the majority of users.",
+            "charCount": 233
+          },
+          {
+            "text": "\\`\\`\\`\n Workflow executed successfully\n Final state:\n Messages:\n SystemMessage: You are a helpful assistant....\n HumanMessage: Check this text for hallucinations: The Eiffel Tower, an iconic iron lattice structure located in Pa...\n AIMessage: Use hallucination\\_check tool...\n AIMessage: {'claims': \\[{'claim': 'The Eiffel Tower is an iconic iron lattice structure', 'assessment': 'support...\\\n\\\n Analysis Result:\\\n Claim: The Eiffel Tower is an iconic iron lattice structure\\\n Assessment: supported\\\n Confidence Score: 1\\\n Supporting",
+            "charCount": 534
+          }
+        ]
+      }
+    ],
+    "searchIds": [
+      "019dc311-0ab8-763c-bc1d-b3e674d9939b"
+    ],
+    "usage": {
+      "resultCount": 1,
+      "charsReturned": 1301,
+      "creditsUsed": 3,
+      "rawResultCount": {
+        "web": 1,
+        "news": 0,
+        "images": 0
+      }
+    }
+  },
+  "results": [
+    {
+      "title": "llms-full.txt - Exa",
+      "url": "https://exa.ai/docs/llms-full.txt",
+      "domain": "exa.ai",
+      "description": "* Search with contents: \\$7 per 1000 requests with 10 results. ... [Exa](https://exa.ai) is the perfect web search API that finds exactly what you're looking for ...",
+      "chunks": [
+        {
+          "text": "\\`\\`\\`json theme={null}\n{\n \"requestId\": \"975a6ff95c69a0bdc558f01c99ede801\",\n \"context\": \"Title: AI News \\| Latest AI News, Analysis & Events\\\\nPublished Date: 2025-11-19T10:22:05.000Z\\\\nURL: https://www.artificialintelligence-news.com/\\\\nSummary: This page is a collection of recent news, analysis, and resources related to Artificial Intelligence (AI). It features various blog posts and articles covering topics such as:\\\\n\\\\n\\* \\*\\*Workforce & HR:\\*\\* Using ChatGPT for team planning and the Royal Navy's use of AI in recruitment.\\",
+          "charCount": 534
+        },
+        {
+          "text": "Exa's search endpoint previously charged separately for search results and their webpage contents. Now, contents for 10 search results per request are included for free, and as a result API usage is cheaper for the majority of users.",
+          "charCount": 233
+        },
+        {
+          "text": "\\`\\`\\`\n Workflow executed successfully\n Final state:\n Messages:\n SystemMessage: You are a helpful assistant....\n HumanMessage: Check this text for hallucinations: The Eiffel Tower, an iconic iron lattice structure located in Pa...\n AIMessage: Use hallucination\\_check tool...\n AIMessage: {'claims': \\[{'claim': 'The Eiffel Tower is an iconic iron lattice structure', 'assessment': 'support...\\\n\\\n Analysis Result:\\\n Claim: The Eiffel Tower is an iconic iron lattice structure\\\n Assessment: supported\\\n Confidence Score: 1\\\n Supporting",
+          "charCount": 534
+        }
+      ],
+      "source": "web",
+      "position": 1
+    }
+  ]
+}

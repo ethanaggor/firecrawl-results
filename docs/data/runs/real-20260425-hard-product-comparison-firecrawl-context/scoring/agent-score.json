@@ -1,0 +1,67 @@
+{
+  "agentModel": "gpt-5.5 xhigh",
+  "provider": "firecrawl-context",
+  "taskId": "hard-product-comparison",
+  "success": true,
+  "answerSupportedByEvidence": true,
+  "retrievalQualityScore": 4.4,
+  "agentExperienceScore": 4,
+  "sourcePolicyAdherent": null,
+  "freshnessAdherent": null,
+  "callRationale": [
+    "Started by reading the benchmark README, task definition, retrieval-quality rubric, and agent-experience rubric.",
+    "Started the requested run and inspected the firecrawl-context tool surface before research.",
+    "Used one broad search to test product-comparison discovery across official domains.",
+    "When the broad search was noisy, switched to per-vendor official-domain searches.",
+    "When official-domain searches returned zero results, used firecrawl_map on the official docs sites to discover exact pages.",
+    "Used firecrawl_scrape on exact official docs and benchmark pages to ground the final comparison.",
+    "Avoided direct web search, browser automation, curl, external MCP providers, tracked-file edits, and commits."
+  ],
+  "strengths": [
+    "The final answer is grounded in official docs or official/provider-owned benchmark pages for all four products.",
+    "The trajectory exercised search, map, and exact scrape, which exposed realistic agent recovery behavior.",
+    "Firecrawl-context's schema exposed useful agent controls: content modes, source policy, freshness, source categories, and character budgets.",
+    "Map and scrape were reliable recovery paths after search returned zero or noisy results.",
+    "The run captured both product evidence and provider-under-test experience failures."
+  ],
+  "weaknesses": [
+    "Initial broad search returned GitHub directory noise rather than the expected official product pages.",
+    "Several source-constrained official-domain searches returned zero results and required map plus exact scrape recovery.",
+    "Exact scrape responses were large, increasing trajectory context cost.",
+    "Scrape normalization recorded mostly URL-level evidence, so the high-value page content remained in raw artifacts rather than compact normalized evidence.",
+    "One pair of concurrent harness calls collided on a step number, requiring a sequential re-run for a clean trace."
+  ],
+  "notableFailures": [
+    {
+      "category": "direct fix and needs no further changes",
+      "failure": "Broad product-comparison search returned only GitHub directory-style results and missed expected official domains.",
+      "resolution": "Used per-vendor official-domain searches, maps, and exact scrapes."
+    },
+    {
+      "category": "direct fix and needs no further changes",
+      "failure": "Firecrawl official-docs search returned zero results.",
+      "resolution": "Mapped docs.firecrawl.dev and scraped /features/search and /mcp-server."
+    },
+    {
+      "category": "direct fix and needs no further changes",
+      "failure": "Parallel official-domain search returned zero results.",
+      "resolution": "Mapped docs.parallel.ai and parallel.ai, then scraped the Search MCP, benchmark, and free MCP pages."
+    },
+    {
+      "category": "direct fix and needs no further changes",
+      "failure": "Tavily official-domain search returned zero results.",
+      "resolution": "Mapped docs.tavily.com and scraped the MCP, Search API, search best practices, and official search-evals repository pages."
+    },
+    {
+      "category": "direct fix and needs no further changes",
+      "failure": "Two scrape calls were launched concurrently and the harness reported a duplicate step number.",
+      "resolution": "Stopped parallel harness calls and re-ran the affected scrape sequentially."
+    },
+    {
+      "category": "fixed but could benefit from cleaner/simpler implementation with an architectural change",
+      "failure": "Exact scrapes produced large raw responses, and normalized evidence for scrapes was too sparse.",
+      "resolution": "Kept the evidence in raw artifacts for this run; a future harness improvement should preserve compact page excerpts in normalized evidence."
+    }
+  ],
+  "confidence": 0.86
+}

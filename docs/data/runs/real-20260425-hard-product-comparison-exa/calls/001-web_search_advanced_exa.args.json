@@ -1,0 +1,18 @@
+{
+  "query": "official docs and benchmark pages explaining MCP and web search tools for agents: Firecrawl search MCP docs, Exa MCP and search evals, Parallel Search MCP benchmark, Tavily MCP and search depth",
+  "numResults": 12,
+  "type": "auto",
+  "includeDomains": [
+    "docs.firecrawl.dev",
+    "exa.ai",
+    "docs.exa.ai",
+    "parallel.ai",
+    "docs.parallel.ai",
+    "docs.tavily.com"
+  ],
+  "enableHighlights": true,
+  "highlightsMaxCharacters": 800,
+  "highlightsQuery": "MCP search agent context tool calls retrieval quality benchmark search depth web_fetch web_search",
+  "textMaxCharacters": 1500,
+  "maxAgeHours": 0
+}

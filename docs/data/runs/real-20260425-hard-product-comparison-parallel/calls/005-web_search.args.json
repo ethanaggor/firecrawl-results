@@ -1,0 +1,10 @@
+{
+  "objective": "Find official Exa documentation and benchmark pages for remote MCP, web search tools, WebCode, API evaluations, and agent search quality methodology.",
+  "search_queries": [
+    "Exa MCP docs search",
+    "Exa API evals search benchmark",
+    "Exa WebCode eval"
+  ],
+  "session_id": "real20260425hardproductcomparisonparallel001",
+  "model_name": "gpt-5.5 xhigh"
+}

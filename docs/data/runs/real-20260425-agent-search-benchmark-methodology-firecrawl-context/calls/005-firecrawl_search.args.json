@@ -1,0 +1,19 @@
+{
+  "query": "Parallel AI search API benchmark WISER Search methodology agent search metrics cost accuracy tool calls excerpts",
+  "content": "chunks",
+  "maxResults": 6,
+  "maxCharsPerResult": 2400,
+  "maxCharsTotal": 10000,
+  "focus": "WISER-Search benchmark methodology, WISER-Fresh, WISER-Atomic, metrics, task construction, agent workflow",
+  "sourcePolicy": {
+    "includeDomains": [
+      "parallel.ai",
+      "docs.parallel.ai"
+    ]
+  },
+  "sources": [
+    "web"
+  ],
+  "ignoreInvalidURLs": true,
+  "includeRawResults": false
+}

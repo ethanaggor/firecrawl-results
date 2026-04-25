@@ -1,0 +1,90 @@
+{
+  "provider": "firecrawl-context",
+  "tool": "firecrawl_scrape",
+  "isError": false,
+  "rawText": "{\n  \"metadata\": {\n    \"og:image\": \"https://react.dev/images/og-blog.png\",\n    \"ogTitle\": \"React 19.2 – React\",\n    \"ogUrl\": \"https://react.dev/blog/2025/10/01/react-19-2\",\n    \"twitter:creator\": \"@reactjs\",\n    \"ogDescription\": \"The library for web and native user interfaces\",\n    \"twitter:title\": \"React 19.2 – React\",\n    \"twitter:image\": \"https://react.dev/images/og-blog.png\",\n    \"fb:app_id\": \"623268441017527\",\n    \"google-site-verification\": \"sIlAGs48RulR4DdP95YSWNKZIEtCqQmRjzn-Zq-CcD0\",\n    \"twitter:description\": \"The library for web and native user interfaces\",\n    \"algolia-search-order\": \"10\",\n    \"viewport\": \"width=device-width, initial-scale=1\",\n    \"twitter:card\": \"summary_large_image\",\n    \"language\": \"en\",\n    \"og:title\": \"React 19.2 – React\",\n    \"msapplication-TileColor\": \"#2b5797\",\n    \"og:type\": \"website\",\n    \"og:url\": \"https://react.dev/blog/2025/10/01/react-19-2\",\n    \"og:description\": \"The library for web and native user interfaces\",\n    \"twitter:site\": \"@reactjs\",\n    \"ogImage\": \"https://react.dev/images/og-blog.png\",\n    \"theme-color\": \"#23272f\",\n    \"title\": \"React 19.2 – React\",\n    \"favicon\": \"https://react.dev/favicon-32x32.png\",\n    \"scrapeId\": \"019dc31a-9203-7664-8eac-a8c45aa25d6d\",\n    \"sourceURL\": \"https://react.dev/blog/2025/10/01/react-19-2\",\n    \"url\": \"https://react.dev/blog/2025/10/01/react-19-2\",\n    \"statusCode\": 200,\n    \"contentType\": \"text/html; charset=utf-8\",\n    \"timezone\": \"America/New_York\",\n    \"proxyUsed\": \"basic\",\n    \"indexId\": \"0a1a951a-f5d2-4e50-9ee2-b75b9369e52b\",\n    \"creditsUsed\": 5,\n    \"concurrencyLimited\": false\n  },\n  \"json\": {\n    \"release\": {\n      \"library\": \"React\",\n      \"version\": \"19.2\",\n      \"date\": \"October 1, 2025\",\n      \"summary\": \"React 19.2 introduces new features such as `<Activity />`, `useEffectEvent`, `cacheSignal`, and performance improvements, along with enhancements for server-side rendering and notable behavioral changes.\"\n    },\n    \"apiChanges\": [\n      {\n        \"apiName\": \"<Activity />\",\n        \"category\": \"New Feature\",\n        \"whatChanged\": \"Introduces a new component that allows prioritization and control over sections of the app based on visibility.\",\n        \"example\": \"<Activity mode={isVisible ? 'visible' : 'hidden'}><Page /></Activity>\",\n        \"sourceSection\": \"New React Features\"\n      },\n      {\n        \"apiName\": \"useEffectEvent\",\n        \"category\": \"New Hook\",\n        \"whatChanged\": \"Allows separating event logic from `useEffect`, avoiding unnecessary re-executions when non-related dependencies change.\",\n        \"example\": \"const onConnected = useEffectEvent(() => { showNotification('Connected!', theme); });\",\n        \"sourceSection\": \"New React Features\"\n      },\n      {\n        \"apiName\": \"cacheSignal\",\n        \"category\": \"New API\",\n        \"whatChanged\": \"Introduces a signaling mechanism for cache lifetime management within React Server Components.\",\n        \"example\": \"await dedupedFetch(url, { signal: cacheSignal() });\",\n        \"sourceSection\": \"New React Features\"\n      },\n      {\n        \"apiName\": \"Partial Pre-rendering\",\n        \"category\": \"New React DOM Feature\",\n        \"whatChanged\": \"Adds capability to pre-render parts of the app ahead of time, improving load times while enabling later resumption of rendering.\",\n        \"example\": \"const { prelude, postponed } = await prerender(<App />, { signal: controller.signal });\",\n        \"sourceSection\": \"New React DOM Features\"\n      }\n    ]\n  }\n}",
+  "parsed": {
+    "metadata": {
+      "og:image": "https://react.dev/images/og-blog.png",
+      "ogTitle": "React 19.2 – React",
+      "ogUrl": "https://react.dev/blog/2025/10/01/react-19-2",
+      "twitter:creator": "@reactjs",
+      "ogDescription": "The library for web and native user interfaces",
+      "twitter:title": "React 19.2 – React",
+      "twitter:image": "https://react.dev/images/og-blog.png",
+      "fb:app_id": "623268441017527",
+      "google-site-verification": "sIlAGs48RulR4DdP95YSWNKZIEtCqQmRjzn-Zq-CcD0",
+      "twitter:description": "The library for web and native user interfaces",
+      "algolia-search-order": "10",
+      "viewport": "width=device-width, initial-scale=1",
+      "twitter:card": "summary_large_image",
+      "language": "en",
+      "og:title": "React 19.2 – React",
+      "msapplication-TileColor": "#2b5797",
+      "og:type": "website",
+      "og:url": "https://react.dev/blog/2025/10/01/react-19-2",
+      "og:description": "The library for web and native user interfaces",
+      "twitter:site": "@reactjs",
+      "ogImage": "https://react.dev/images/og-blog.png",
+      "theme-color": "#23272f",
+      "title": "React 19.2 – React",
+      "favicon": "https://react.dev/favicon-32x32.png",
+      "scrapeId": "019dc31a-9203-7664-8eac-a8c45aa25d6d",
+      "sourceURL": "https://react.dev/blog/2025/10/01/react-19-2",
+      "url": "https://react.dev/blog/2025/10/01/react-19-2",
+      "statusCode": 200,
+      "contentType": "text/html; charset=utf-8",
+      "timezone": "America/New_York",
+      "proxyUsed": "basic",
+      "indexId": "0a1a951a-f5d2-4e50-9ee2-b75b9369e52b",
+      "creditsUsed": 5,
+      "concurrencyLimited": false
+    },
+    "json": {
+      "release": {
+        "library": "React",
+        "version": "19.2",
+        "date": "October 1, 2025",
+        "summary": "React 19.2 introduces new features such as `<Activity />`, `useEffectEvent`, `cacheSignal`, and performance improvements, along with enhancements for server-side rendering and notable behavioral changes."
+      },
+      "apiChanges": [
+        {
+          "apiName": "<Activity />",
+          "category": "New Feature",
+          "whatChanged": "Introduces a new component that allows prioritization and control over sections of the app based on visibility.",
+          "example": "<Activity mode={isVisible ? 'visible' : 'hidden'}><Page /></Activity>",
+          "sourceSection": "New React Features"
+        },
+        {
+          "apiName": "useEffectEvent",
+          "category": "New Hook",
+          "whatChanged": "Allows separating event logic from `useEffect`, avoiding unnecessary re-executions when non-related dependencies change.",
+          "example": "const onConnected = useEffectEvent(() => { showNotification('Connected!', theme); });",
+          "sourceSection": "New React Features"
+        },
+        {
+          "apiName": "cacheSignal",
+          "category": "New API",
+          "whatChanged": "Introduces a signaling mechanism for cache lifetime management within React Server Components.",
+          "example": "await dedupedFetch(url, { signal: cacheSignal() });",
+          "sourceSection": "New React Features"
+        },
+        {
+          "apiName": "Partial Pre-rendering",
+          "category": "New React DOM Feature",
+          "whatChanged": "Adds capability to pre-render parts of the app ahead of time, improving load times while enabling later resumption of rendering.",
+          "example": "const { prelude, postponed } = await prerender(<App />, { signal: controller.signal });",
+          "sourceSection": "New React DOM Features"
+        }
+      ]
+    }
+  },
+  "results": [
+    {
+      "title": "React 19.2 – React",
+      "url": "https://react.dev/blog/2025/10/01/react-19-2",
+      "domain": "react.dev",
+      "position": 1
+    }
+  ]
+}

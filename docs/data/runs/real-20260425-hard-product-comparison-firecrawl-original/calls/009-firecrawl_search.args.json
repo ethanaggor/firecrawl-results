@@ -1,0 +1,9 @@
+{
+  "query": "site:docs.tavily.com Tavily MCP search_depth advanced basic chunks agent search docs",
+  "limit": 8,
+  "sources": [
+    {
+      "type": "web"
+    }
+  ]
+}

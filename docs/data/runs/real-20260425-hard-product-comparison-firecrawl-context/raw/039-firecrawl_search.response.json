@@ -1,0 +1,8 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\n  \"query\": \"Tavily remote MCP search_depth advanced chunks agent search docs benchmark search evals\",\n  \"executedQuery\": \"Tavily remote MCP search_depth advanced chunks agent search docs benchmark search evals (site:docs.tavily.com OR site:tavily.com OR site:github.com)\",\n  \"content\": \"chunks\",\n  \"constraints\": {\n    \"maxResults\": 8,\n    \"maxCharsPerResult\": 1600,\n    \"maxCharsTotal\": 10000,\n    \"focus\": \"Tavily MCP endpoint, tool-call flow, search_depth basic advanced behavior, chunks/content shape, and public benchmark or search evals evidence\",\n    \"sourcePolicy\": {\n      \"includeDomains\": [\n        \"docs.tavily.com\",\n        \"tavily.com\",\n        \"github.com\"\n      ]\n    }\n  },\n  \"results\": [],\n  \"searchIds\": [\n    \"019dc312-ec89-7643-b5f6-e6c46220856d\"\n  ],\n  \"usage\": {\n    \"resultCount\": 0,\n    \"charsReturned\": 0,\n    \"creditsUsed\": 0,\n    \"rawResultCount\": {\n      \"web\": 0,\n      \"news\": 0,\n      \"images\": 0\n    }\n  }\n}"
+    }
+  ]
+}

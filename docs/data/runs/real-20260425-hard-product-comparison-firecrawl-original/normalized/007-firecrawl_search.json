@@ -1,0 +1,25 @@
+{
+  "provider": "firecrawl-original",
+  "tool": "firecrawl_search",
+  "isError": false,
+  "rawText": "{\n  \"web\": [\n    {\n      \"url\": \"https://docs.parallel.ai/llms-full.txt\",\n      \"title\": \"llms-full.txt - Parallel Documentation\",\n      \"description\": \"The Search MCP comprises two tools: * **`web_search`** — General-purpose web search inside an agent's reasoning loop. Use when the agent needs current ...\",\n      \"position\": 1\n    }\n  ]\n}",
+  "parsed": {
+    "web": [
+      {
+        "url": "https://docs.parallel.ai/llms-full.txt",
+        "title": "llms-full.txt - Parallel Documentation",
+        "description": "The Search MCP comprises two tools: * **`web_search`** — General-purpose web search inside an agent's reasoning loop. Use when the agent needs current ...",
+        "position": 1
+      }
+    ]
+  },
+  "results": [
+    {
+      "title": "llms-full.txt - Parallel Documentation",
+      "url": "https://docs.parallel.ai/llms-full.txt",
+      "domain": "docs.parallel.ai",
+      "description": "The Search MCP comprises two tools: * **`web_search`** — General-purpose web search inside an agent's reasoning loop. Use when the agent needs current ...",
+      "position": 1
+    }
+  ]
+}

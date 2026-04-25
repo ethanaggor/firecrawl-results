@@ -1,0 +1,14 @@
+{
+  "query": "Parallel official Search MCP documentation and search benchmark for agents WISER dense excerpts tool calls cost web_fetch web_search",
+  "numResults": 10,
+  "type": "auto",
+  "includeDomains": [
+    "parallel.ai",
+    "docs.parallel.ai"
+  ],
+  "enableHighlights": true,
+  "highlightsMaxCharacters": 1200,
+  "highlightsQuery": "Search MCP web_search web_fetch agent benchmark WISER dense excerpts low latency cost retrieval quality tool calls",
+  "textMaxCharacters": 2500,
+  "maxAgeHours": 0
+}

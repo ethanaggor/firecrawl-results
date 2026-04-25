@@ -1,0 +1,144 @@
+{
+  "provider": "firecrawl-context",
+  "tool": "firecrawl_map",
+  "isError": false,
+  "rawText": "{\n  \"links\": [\n    {\n      \"url\": \"https://parallel.ai/blog/deep-research-reports\",\n      \"title\": \"Parallel Deep Research Reports | Parallel Web Systems | I...\",\n      \"description\": \"The Parallel Task API now supports comprehensive markdown Deep Research report generation with in-line citations and relevant excerpts.\"\n    },\n    {\n      \"url\": \"https://parallel.ai/blog/free-CLI-agent\",\n      \"title\": \"Building a free CLI agent with Pi, Ollama, Gemma 4, and Parallel\",\n      \"description\": \"You should see `parallel-search` connected with `web_search` and `web_fetch` available. ### Pointing Pi at Ollama. Pi resolves providers ...\"\n    },\n    {\n      \"url\": \"https://docs.parallel.ai/llms-full.txt\",\n      \"title\": \"llms-full.txt - Parallel Documentation\",\n      \"description\": \"With both tools available, the agent can search first, pick the most relevant results, and extract full detail only where needed, keeping total token usage low ...\"\n    },\n    {\n      \"url\": \"https://docs.parallel.ai/task-api/group-api\",\n      \"title\": \"Task Group - Parallel\",\n      \"description\": \"Batch process Tasks at scale with the Parallel Task Group API\"\n    },\n    {\n      \"url\": \"https://docs.parallel.ai/api-reference/tasks/stream-task-run-events\",\n      \"title\": \"Stream Task Run Events - Parallel\",\n      \"description\": \"Streams events for a task run. Returns a stream of events showing progress updates and state changes for the task run. For task runs that did not have enable...\"\n    },\n    {\n      \"url\": \"https://docs.parallel.ai/task-api/webhooks\",\n      \"title\": \"Webhooks - Parallel\",\n      \"description\": \"Webhook events for task run completions\"\n    },\n    {\n      \"url\": \"https://docs.parallel.ai/findall-api/findall-quickstart\",\n      \"title\": \"FindAll API Quickstart - Parallel\",\n      \"description\": \"Discover and enrich entities from the web using natural language queries with the FindAll API\"\n    },\n    {\n      \"url\": \"https://parallel.ai/blog/cookbook-sse-task-manager-with-parallel\",\n      \"title\": \"Building a real-time streaming task manager with Parallel...\",\n      \"description\": \"This cookbook details how to build a task streaming playground that showcases Parallel's Task API with real-time Server-Sent Events (SSE).\"\n    },\n    {\n      \"url\": \"https://parallel.ai/articles/how-to-build-ai-powered-market-intelligence-tools-with-apis\",\n      \"title\": \"How to Build AI-Powered Market Intelligence Tools with AP...\",\n      \"description\": \"Learn how to build AI-powered market intelligence tools with APIs for search, extraction, monitoring, and competitive research automation.\"\n    },\n    {\n      \"url\": \"https://parallel.ai/blog/LLMTEXT-for-llmstxt\",\n      \"title\": \"Parallel Web Systems | Infrastructure for intelligence on...\",\n      \"description\": \"Introducing a new set of tools for llms.txt that help you create and check llms.txt, or transform llms.txt files into MCP servers\"\n    },\n    {\n      \"url\": \"https://docs.parallel.ai/api-reference/legacy/tasks/stream-task-run-events\",\n      \"title\": \"Stream Task Run Events - Parallel\",\n      \"description\": \"Streams events for a task run. Returns a stream of events showing progress updates and state changes for the task run. For task runs that did not have enable...\"\n    }\n  ]\n}",
+  "parsed": {
+    "links": [
+      {
+        "url": "https://parallel.ai/blog/deep-research-reports",
+        "title": "Parallel Deep Research Reports | Parallel Web Systems | I...",
+        "description": "The Parallel Task API now supports comprehensive markdown Deep Research report generation with in-line citations and relevant excerpts."
+      },
+      {
+        "url": "https://parallel.ai/blog/free-CLI-agent",
+        "title": "Building a free CLI agent with Pi, Ollama, Gemma 4, and Parallel",
+        "description": "You should see `parallel-search` connected with `web_search` and `web_fetch` available. ### Pointing Pi at Ollama. Pi resolves providers ..."
+      },
+      {
+        "url": "https://docs.parallel.ai/llms-full.txt",
+        "title": "llms-full.txt - Parallel Documentation",
+        "description": "With both tools available, the agent can search first, pick the most relevant results, and extract full detail only where needed, keeping total token usage low ..."
+      },
+      {
+        "url": "https://docs.parallel.ai/task-api/group-api",
+        "title": "Task Group - Parallel",
+        "description": "Batch process Tasks at scale with the Parallel Task Group API"
+      },
+      {
+        "url": "https://docs.parallel.ai/api-reference/tasks/stream-task-run-events",
+        "title": "Stream Task Run Events - Parallel",
+        "description": "Streams events for a task run. Returns a stream of events showing progress updates and state changes for the task run. For task runs that did not have enable..."
+      },
+      {
+        "url": "https://docs.parallel.ai/task-api/webhooks",
+        "title": "Webhooks - Parallel",
+        "description": "Webhook events for task run completions"
+      },
+      {
+        "url": "https://docs.parallel.ai/findall-api/findall-quickstart",
+        "title": "FindAll API Quickstart - Parallel",
+        "description": "Discover and enrich entities from the web using natural language queries with the FindAll API"
+      },
+      {
+        "url": "https://parallel.ai/blog/cookbook-sse-task-manager-with-parallel",
+        "title": "Building a real-time streaming task manager with Parallel...",
+        "description": "This cookbook details how to build a task streaming playground that showcases Parallel's Task API with real-time Server-Sent Events (SSE)."
+      },
+      {
+        "url": "https://parallel.ai/articles/how-to-build-ai-powered-market-intelligence-tools-with-apis",
+        "title": "How to Build AI-Powered Market Intelligence Tools with AP...",
+        "description": "Learn how to build AI-powered market intelligence tools with APIs for search, extraction, monitoring, and competitive research automation."
+      },
+      {
+        "url": "https://parallel.ai/blog/LLMTEXT-for-llmstxt",
+        "title": "Parallel Web Systems | Infrastructure for intelligence on...",
+        "description": "Introducing a new set of tools for llms.txt that help you create and check llms.txt, or transform llms.txt files into MCP servers"
+      },
+      {
+        "url": "https://docs.parallel.ai/api-reference/legacy/tasks/stream-task-run-events",
+        "title": "Stream Task Run Events - Parallel",
+        "description": "Streams events for a task run. Returns a stream of events showing progress updates and state changes for the task run. For task runs that did not have enable..."
+      }
+    ]
+  },
+  "results": [
+    {
+      "title": "Parallel Deep Research Reports | Parallel Web Systems | I...",
+      "url": "https://parallel.ai/blog/deep-research-reports",
+      "domain": "parallel.ai",
+      "description": "The Parallel Task API now supports comprehensive markdown Deep Research report generation with in-line citations and relevant excerpts.",
+      "position": 1
+    },
+    {
+      "title": "Building a free CLI agent with Pi, Ollama, Gemma 4, and Parallel",
+      "url": "https://parallel.ai/blog/free-CLI-agent",
+      "domain": "parallel.ai",
+      "description": "You should see `parallel-search` connected with `web_search` and `web_fetch` available. ### Pointing Pi at Ollama. Pi resolves providers ...",
+      "position": 2
+    },
+    {
+      "title": "llms-full.txt - Parallel Documentation",
+      "url": "https://docs.parallel.ai/llms-full.txt",
+      "domain": "docs.parallel.ai",
+      "description": "With both tools available, the agent can search first, pick the most relevant results, and extract full detail only where needed, keeping total token usage low ...",
+      "position": 3
+    },
+    {
+      "title": "Task Group - Parallel",
+      "url": "https://docs.parallel.ai/task-api/group-api",
+      "domain": "docs.parallel.ai",
+      "description": "Batch process Tasks at scale with the Parallel Task Group API",
+      "position": 4
+    },
+    {
+      "title": "Stream Task Run Events - Parallel",
+      "url": "https://docs.parallel.ai/api-reference/tasks/stream-task-run-events",
+      "domain": "docs.parallel.ai",
+      "description": "Streams events for a task run. Returns a stream of events showing progress updates and state changes for the task run. For task runs that did not have enable...",
+      "position": 5
+    },
+    {
+      "title": "Webhooks - Parallel",
+      "url": "https://docs.parallel.ai/task-api/webhooks",
+      "domain": "docs.parallel.ai",
+      "description": "Webhook events for task run completions",
+      "position": 6
+    },
+    {
+      "title": "FindAll API Quickstart - Parallel",
+      "url": "https://docs.parallel.ai/findall-api/findall-quickstart",
+      "domain": "docs.parallel.ai",
+      "description": "Discover and enrich entities from the web using natural language queries with the FindAll API",
+      "position": 7
+    },
+    {
+      "title": "Building a real-time streaming task manager with Parallel...",
+      "url": "https://parallel.ai/blog/cookbook-sse-task-manager-with-parallel",
+      "domain": "parallel.ai",
+      "description": "This cookbook details how to build a task streaming playground that showcases Parallel's Task API with real-time Server-Sent Events (SSE).",
+      "position": 8
+    },
+    {
+      "title": "How to Build AI-Powered Market Intelligence Tools with AP...",
+      "url": "https://parallel.ai/articles/how-to-build-ai-powered-market-intelligence-tools-with-apis",
+      "domain": "parallel.ai",
+      "description": "Learn how to build AI-powered market intelligence tools with APIs for search, extraction, monitoring, and competitive research automation.",
+      "position": 9
+    },
+    {
+      "title": "Parallel Web Systems | Infrastructure for intelligence on...",
+      "url": "https://parallel.ai/blog/LLMTEXT-for-llmstxt",
+      "domain": "parallel.ai",
+      "description": "Introducing a new set of tools for llms.txt that help you create and check llms.txt, or transform llms.txt files into MCP servers",
+      "position": 10
+    },
+    {
+      "title": "Stream Task Run Events - Parallel",
+      "url": "https://docs.parallel.ai/api-reference/legacy/tasks/stream-task-run-events",
+      "domain": "docs.parallel.ai",
+      "description": "Streams events for a task run. Returns a stream of events showing progress updates and state changes for the task run. For task runs that did not have enable...",
+      "position": 11
+    }
+  ]
+}

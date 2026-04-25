@@ -1,0 +1,10 @@
+{
+  "objective": "Find official Parallel Search MCP documentation and benchmark pages describing web_search web_fetch flow, context excerpts, limits, and retrieval quality.",
+  "search_queries": [
+    "Parallel Search MCP docs",
+    "Parallel web_search web_fetch",
+    "Parallel search API benchmark"
+  ],
+  "session_id": "real20260425hardproductcomparisonparallel001",
+  "model_name": "gpt-5.5 xhigh"
+}

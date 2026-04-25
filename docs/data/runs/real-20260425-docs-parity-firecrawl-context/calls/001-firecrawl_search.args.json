@@ -1,0 +1,19 @@
+{
+  "query": "Firecrawl Search API categories country timeout ignoreInvalidURLs enterprise response metadata",
+  "content": "chunks",
+  "maxResults": 6,
+  "maxCharsPerResult": 2200,
+  "maxCharsTotal": 10000,
+  "focus": "public Search API request fields categories country timeout ignoreInvalidURLs enterprise and response metadata fields relevant to MCP search parity",
+  "sourcePolicy": {
+    "includeDomains": [
+      "docs.firecrawl.dev",
+      "github.com"
+    ]
+  },
+  "sources": [
+    "web"
+  ],
+  "ignoreInvalidURLs": true,
+  "includeRawResults": false
+}

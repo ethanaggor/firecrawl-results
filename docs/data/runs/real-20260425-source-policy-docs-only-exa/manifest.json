@@ -1,0 +1,44 @@
+{
+  "runId": "real-20260425-source-policy-docs-only-exa",
+  "createdAt": "2026-04-25T05:09:25.518Z",
+  "provider": {
+    "id": "exa",
+    "name": "Exa remote MCP",
+    "transport": "streamable-http",
+    "url": "https://mcp.exa.ai/mcp?tools=web_search_exa,web_fetch_exa,web_search_advanced_exa",
+    "headers": [
+      {
+        "name": "x-api-key",
+        "required": true,
+        "present": true
+      }
+    ],
+    "searchTools": [
+      "web_search_exa",
+      "web_search_advanced_exa"
+    ],
+    "fetchTools": [
+      "web_fetch_exa"
+    ]
+  },
+  "task": {
+    "id": "source-policy-docs-only",
+    "family": "source-policy",
+    "question": "Using only official Firecrawl docs, what does the Search API say about categories, country, timeout, and ignoreInvalidURLs?",
+    "agentGoal": "Constrain to docs.firecrawl.dev and produce evidence only from that domain.",
+    "expectedTerms": [
+      "categories",
+      "country",
+      "timeout",
+      "ignoreInvalidURLs"
+    ],
+    "expectedDomains": [
+      "docs.firecrawl.dev"
+    ],
+    "sourcePolicy": {
+      "includeDomains": [
+        "docs.firecrawl.dev"
+      ]
+    }
+  }
+}

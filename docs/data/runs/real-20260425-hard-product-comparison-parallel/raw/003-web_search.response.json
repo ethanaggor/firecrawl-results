@@ -1,0 +1,102 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\n  \"search_id\": \"search_36a81f2656b04f119470d7b15e33dc6f\",\n  \"results\": [\n    {\n      \"url\": \"https://docs.firecrawl.dev/api-reference/introduction\",\n      \"title\": \"Introduction - Firecrawl Docs\",\n      \"publish_date\": null,\n      \"excerpts\": [\n        \"The Firecrawl API has a rate limit to ensure the stability and reliability of the service. The rate limit is applied to all endpoints and is based on the number\"\n      ]\n    },\n    {\n      \"url\": \"https://docs.firecrawl.dev/api-reference/v2-introduction\",\n      \"title\": \"Introduction - Firecrawl Docs\",\n      \"publish_date\": null,\n      \"excerpts\": [\n        \"The Firecrawl API gives you programmatic access to web data. All endpoints share a common base URL, authentication scheme, and response format described on\"\n      ]\n    },\n    {\n      \"url\": \"https://docs.firecrawl.dev/api-reference/v1-endpoint/search\",\n      \"title\": \"Search - Firecrawl Docs\",\n      \"publish_date\": null,\n      \"excerpts\": [\n        \"The search endpoint combines web search with Firecrawl's scraping capabilities to return full page content for any query. Include scrapeOptions with formats: [\\\"\"\n      ]\n    },\n    {\n      \"url\": \"https://www.firecrawl.dev/\",\n      \"title\": \"Firecrawl - The Web Data API for AI\",\n      \"publish_date\": null,\n      \"excerpts\": [\n        \"Firecrawl - The Web Data API for AI\\nThe web crawling, scraping, and search API for AI. Built for scale. Firecrawl delivers the entire internet to AI agents and builders.\"\n      ]\n    },\n    {\n      \"url\": \"https://docs.firecrawl.dev/api-reference/endpoint/search\",\n      \"title\": \"Search - Firecrawl Docs\",\n      \"publish_date\": null,\n      \"excerpts\": [\n        \"Search - Firecrawl Docs\\nThe search endpoint combines web search with Firecrawl's scraping capabilities to return full page content for any query.\"\n      ]\n    },\n    {\n      \"url\": \"https://docs.firecrawl.dev/mcp-server\",\n      \"title\": \"Firecrawl MCP Server\",\n      \"publish_date\": null,\n      \"excerpts\": [\n        \"Firecrawl MCP Server\\nA Model Context Protocol (MCP) server implementation that integrates Firecrawl for web scraping capabilities. Our MCP server is open-source and available on\"\n      ]\n    },\n    {\n      \"url\": \"https://docs.firecrawl.dev/introduction\",\n      \"title\": \"Introduction | Firecrawl\",\n      \"publish_date\": null,\n      \"excerpts\": [\n        \"Introduction | Firecrawl\\nSearch, scrape, and interact: Three APIs that cover every step of gathering web data reliably. LLM-ready output: Clean markdown, structured JSON, screenshots,\"\n      ]\n    },\n    {\n      \"url\": \"https://docs.firecrawl.dev/v1-welcome\",\n      \"title\": \"Welcome to V1\",\n      \"publish_date\": null,\n      \"excerpts\": [\n        \"Welcome to V1\\nFirecrawl V1 is here! With that we introduce a more reliable and developer friendly API. Here is what's new: Output Formats for /scrape .\"\n      ]\n    },\n    {\n      \"url\": \"https://github.com/firecrawl/firecrawl-mcp-server\",\n      \"title\": \"Official Firecrawl MCP Server - Adds powerful web ...\",\n      \"publish_date\": null,\n      \"excerpts\": [\n        \"Official Firecrawl MCP Server - Adds powerful web ...\\nA Model Context Protocol (MCP) server implementation that integrates with Firecrawl for web scraping capabilities. Big thanks to @vrknetha, @knacklabs for the\"\n      ]\n    },\n    {\n      \"url\": \"https://docs.firecrawl.dev/features/crawl\",\n      \"title\": \"Crawl\",\n      \"publish_date\": null,\n      \"excerpts\": [\n        \"Crawl\\nCrawl submits a URL to Firecrawl and recursively discovers and scrapes every reachable subpage. It handles sitemaps, JavaScript rendering, and rate limits\"\n      ]\n    }\n  ],\n  \"warnings\": null,\n  \"usage\": [\n    {\n      \"name\": \"sku_search\",\n      \"count\": 1\n    }\n  ],\n  \"session_id\": \"real20260425hardproductcomparisonparallel001\"\n}"
+    }
+  ],
+  "structuredContent": {
+    "search_id": "search_36a81f2656b04f119470d7b15e33dc6f",
+    "results": [
+      {
+        "url": "https://docs.firecrawl.dev/api-reference/introduction",
+        "title": "Introduction - Firecrawl Docs",
+        "publish_date": null,
+        "excerpts": [
+          "The Firecrawl API has a rate limit to ensure the stability and reliability of the service. The rate limit is applied to all endpoints and is based on the number"
+        ]
+      },
+      {
+        "url": "https://docs.firecrawl.dev/api-reference/v2-introduction",
+        "title": "Introduction - Firecrawl Docs",
+        "publish_date": null,
+        "excerpts": [
+          "The Firecrawl API gives you programmatic access to web data. All endpoints share a common base URL, authentication scheme, and response format described on"
+        ]
+      },
+      {
+        "url": "https://docs.firecrawl.dev/api-reference/v1-endpoint/search",
+        "title": "Search - Firecrawl Docs",
+        "publish_date": null,
+        "excerpts": [
+          "The search endpoint combines web search with Firecrawl's scraping capabilities to return full page content for any query. Include scrapeOptions with formats: [\""
+        ]
+      },
+      {
+        "url": "https://www.firecrawl.dev/",
+        "title": "Firecrawl - The Web Data API for AI",
+        "publish_date": null,
+        "excerpts": [
+          "Firecrawl - The Web Data API for AI\nThe web crawling, scraping, and search API for AI. Built for scale. Firecrawl delivers the entire internet to AI agents and builders."
+        ]
+      },
+      {
+        "url": "https://docs.firecrawl.dev/api-reference/endpoint/search",
+        "title": "Search - Firecrawl Docs",
+        "publish_date": null,
+        "excerpts": [
+          "Search - Firecrawl Docs\nThe search endpoint combines web search with Firecrawl's scraping capabilities to return full page content for any query."
+        ]
+      },
+      {
+        "url": "https://docs.firecrawl.dev/mcp-server",
+        "title": "Firecrawl MCP Server",
+        "publish_date": null,
+        "excerpts": [
+          "Firecrawl MCP Server\nA Model Context Protocol (MCP) server implementation that integrates Firecrawl for web scraping capabilities. Our MCP server is open-source and available on"
+        ]
+      },
+      {
+        "url": "https://docs.firecrawl.dev/introduction",
+        "title": "Introduction | Firecrawl",
+        "publish_date": null,
+        "excerpts": [
+          "Introduction | Firecrawl\nSearch, scrape, and interact: Three APIs that cover every step of gathering web data reliably. LLM-ready output: Clean markdown, structured JSON, screenshots,"
+        ]
+      },
+      {
+        "url": "https://docs.firecrawl.dev/v1-welcome",
+        "title": "Welcome to V1",
+        "publish_date": null,
+        "excerpts": [
+          "Welcome to V1\nFirecrawl V1 is here! With that we introduce a more reliable and developer friendly API. Here is what's new: Output Formats for /scrape ."
+        ]
+      },
+      {
+        "url": "https://github.com/firecrawl/firecrawl-mcp-server",
+        "title": "Official Firecrawl MCP Server - Adds powerful web ...",
+        "publish_date": null,
+        "excerpts": [
+          "Official Firecrawl MCP Server - Adds powerful web ...\nA Model Context Protocol (MCP) server implementation that integrates with Firecrawl for web scraping capabilities. Big thanks to @vrknetha, @knacklabs for the"
+        ]
+      },
+      {
+        "url": "https://docs.firecrawl.dev/features/crawl",
+        "title": "Crawl",
+        "publish_date": null,
+        "excerpts": [
+          "Crawl\nCrawl submits a URL to Firecrawl and recursively discovers and scrapes every reachable subpage. It handles sitemaps, JavaScript rendering, and rate limits"
+        ]
+      }
+    ],
+    "warnings": null,
+    "usage": [
+      {
+        "name": "sku_search",
+        "count": 1
+      }
+    ],
+    "session_id": "real20260425hardproductcomparisonparallel001"
+  },
+  "isError": false
+}

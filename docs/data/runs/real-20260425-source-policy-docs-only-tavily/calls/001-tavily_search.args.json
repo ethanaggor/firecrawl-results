@@ -1,0 +1,9 @@
+{
+  "query": "Firecrawl Search API categories country timeout ignoreInvalidURLs",
+  "max_results": 5,
+  "search_depth": "advanced",
+  "include_raw_content": true,
+  "include_domains": [
+    "docs.firecrawl.dev"
+  ]
+}

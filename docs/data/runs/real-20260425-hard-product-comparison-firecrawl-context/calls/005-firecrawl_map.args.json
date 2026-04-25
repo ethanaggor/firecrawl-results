@@ -1,0 +1,6 @@
+{
+  "url": "https://docs.firecrawl.dev",
+  "search": "Search API MCP firecrawl_search search",
+  "limit": 10,
+  "ignoreQueryParameters": true
+}

@@ -1,0 +1,10 @@
+{
+  "objective": "Find official Tavily docs about search_depth or search modes that affect relevance, latency, returned content shape, chunks, and benchmark interpretation. Prefer docs.tavily.com.",
+  "search_queries": [
+    "site:docs.tavily.com search_depth chunks",
+    "Tavily search depth latency relevance",
+    "Tavily best practices search_depth"
+  ],
+  "session_id": "7d4b2e9f0c3a45b68e1f9a2d6c0b7e4a",
+  "model_name": "gpt-5.5 xhigh"
+}

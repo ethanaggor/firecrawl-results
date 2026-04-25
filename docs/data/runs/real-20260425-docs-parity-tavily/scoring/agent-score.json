@@ -1,0 +1,48 @@
+{
+  "agentModel": "gpt-5.5 xhigh",
+  "provider": "tavily",
+  "taskId": "docs-parity",
+  "success": true,
+  "answerSupportedByEvidence": true,
+  "retrievalQualityScore": 4.2,
+  "agentExperienceScore": 4.2,
+  "sourcePolicyAdherent": true,
+  "freshnessAdherent": null,
+  "callRationale": [
+    {
+      "step": "001",
+      "tool": "tavily_search",
+      "rationale": "Started with a constrained search over docs.firecrawl.dev and github.com for the public Search API fields and metadata named by the task."
+    },
+    {
+      "step": "003",
+      "tool": "tavily_extract",
+      "rationale": "Extracted the primary Search API docs page and the initially discovered GitHub types file to ground exact fields beyond search snippets."
+    },
+    {
+      "step": "005",
+      "tool": "tavily_search",
+      "rationale": "Ran a narrower GitHub-only search after the first GitHub extract did not cleanly expose the search-specific source contract."
+    },
+    {
+      "step": "007",
+      "tool": "tavily_extract",
+      "rationale": "Extracted the Firecrawl MCP docs source to compare documented MCP search options with public Search API fields."
+    }
+  ],
+  "strengths": [
+    "The first search found the primary Firecrawl Search API docs page as the top result and included the expected domains.",
+    "The retrieved docs evidence directly covered categories, country, timeout, ignoreInvalidURLs, enterprise, scrapeOptions, and response metadata.",
+    "The GitHub MCP docs source exposed the documented MCP search options, making parity gaps visible without leaving the source policy."
+  ],
+  "weaknesses": [
+    "Tavily search snippets for the docs page were duplicated and truncated around response metadata, so response metadata details were only partially visible.",
+    "The extract result for the GitHub types.ts URL returned nearby but not search-specific schema snippets, which reduced source-code confidence.",
+    "The GitHub-only search included some irrelevant third-party GitHub repositories even with the github.com domain constraint."
+  ],
+  "notableFailures": [
+    "Step 003 extracted ignoreInvalidURLs from unrelated extract/batch scrape schema context in types.ts; this was corrected by a targeted GitHub-only search and MCP docs source extraction.",
+    "No provider/tool error occurred."
+  ],
+  "confidence": 0.86
+}

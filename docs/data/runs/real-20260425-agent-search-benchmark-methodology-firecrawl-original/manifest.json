@@ -1,0 +1,51 @@
+{
+  "runId": "real-20260425-agent-search-benchmark-methodology-firecrawl-original",
+  "createdAt": "2026-04-25T05:01:47.020Z",
+  "provider": {
+    "id": "firecrawl-original",
+    "name": "Firecrawl MCP upstream",
+    "transport": "stdio",
+    "cwd": "../firecrawl-mcp-server-upstream",
+    "command": "node",
+    "args": [
+      "dist/index.js"
+    ],
+    "env": [
+      {
+        "name": "FIRECRAWL_API_KEY",
+        "required": true,
+        "present": true
+      },
+      {
+        "name": "FIRECRAWL_API_URL",
+        "required": false,
+        "present": false
+      }
+    ],
+    "searchTools": [
+      "firecrawl_search"
+    ],
+    "fetchTools": [
+      "firecrawl_scrape"
+    ],
+    "cwdExists": true
+  },
+  "task": {
+    "id": "agent-search-benchmark-methodology",
+    "family": "benchmark-methodology",
+    "question": "What benchmark methodology should be used for agent web search tools, based on public Exa, Parallel, and Tavily benchmarks?",
+    "agentGoal": "Find and compare public benchmark methodology from Exa, Parallel, and Tavily. Extract metrics and task construction patterns.",
+    "expectedTerms": [
+      "SimpleQA",
+      "WISER",
+      "MSMARCO",
+      "document relevance"
+    ],
+    "expectedDomains": [
+      "exa.ai",
+      "parallel.ai",
+      "github.com",
+      "docs.tavily.com"
+    ]
+  }
+}

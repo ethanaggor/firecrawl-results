@@ -1,0 +1,11 @@
+{
+  "query": "React 19.2 release notes Activity useEffectEvent cacheSignal API October 2025",
+  "max_results": 5,
+  "search_depth": "advanced",
+  "time_range": "year",
+  "start_date": "2025-09-01",
+  "include_raw_content": false,
+  "include_domains": [
+    "react.dev"
+  ]
+}

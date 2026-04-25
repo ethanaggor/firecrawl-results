@@ -1,0 +1,115 @@
+{
+  "status": "complete",
+  "runId": "real-20260425-hard-product-comparison-tavily",
+  "generatedAt": "2026-04-25T05:18:10.545Z",
+  "manifest": {
+    "runId": "real-20260425-hard-product-comparison-tavily",
+    "createdAt": "2026-04-25T05:14:03.241Z",
+    "provider": {
+      "id": "tavily",
+      "name": "Tavily remote MCP",
+      "transport": "streamable-http",
+      "url": "https://mcp.tavily.com/mcp/?tavilyApiKey=***",
+      "query": [
+        {
+          "name": "tavilyApiKey",
+          "env": "TAVILY_API_KEY",
+          "required": true
+        }
+      ],
+      "searchTools": [
+        "tavily-search",
+        "tavily_search",
+        "search"
+      ],
+      "fetchTools": [
+        "tavily-extract",
+        "tavily_extract",
+        "extract"
+      ],
+      "headers": []
+    },
+    "task": {
+      "id": "hard-product-comparison",
+      "family": "multi-step-research",
+      "question": "For an agent trying to answer hard web questions, how do Firecrawl, Exa, Parallel, and Tavily differ in context shape, tool-call flow, and retrieval quality?",
+      "agentGoal": "Gather evidence from official docs and benchmark pages, then compare agent-facing search behavior. Multiple calls are expected.",
+      "expectedTerms": [
+        "MCP",
+        "search",
+        "agent"
+      ],
+      "expectedDomains": [
+        "docs.firecrawl.dev",
+        "exa.ai",
+        "parallel.ai",
+        "docs.tavily.com"
+      ]
+    }
+  },
+  "metrics": {
+    "provider": "tavily",
+    "taskId": "hard-product-comparison",
+    "toolCalls": 5,
+    "searchCalls": 4,
+    "fetchCalls": 1,
+    "failedCalls": 0,
+    "totalConnectMs": 786,
+    "totalCallLatencyMs": 7214,
+    "argumentTokens": 501,
+    "rawOutputTokens": 19530,
+    "normalizedEvidenceTokens": 11108,
+    "totalTrajectoryTokens": 22783,
+    "contract": {
+      "toolCount": 5,
+      "searchToolCount": 2,
+      "fetchToolCount": 1,
+      "descriptionTokens": 143,
+      "schemaTokens": 2277,
+      "totalMcpFootprintTokens": 2752,
+      "hasFreshnessControl": true,
+      "hasSourcePolicyControl": true,
+      "hasContentBudgetControl": true,
+      "hasUsageMetadata": false
+    }
+  },
+  "semanticScore": {
+    "agentModel": "gpt-5.5 xhigh",
+    "provider": "tavily",
+    "taskId": "hard-product-comparison",
+    "success": true,
+    "answerSupportedByEvidence": true,
+    "retrievalQualityScore": 4.2,
+    "agentExperienceScore": 4,
+    "sourcePolicyAdherent": null,
+    "freshnessAdherent": null,
+    "callRationale": [
+      "Started with a Firecrawl-focused official-domain Tavily search to establish Firecrawl's MCP and Search context shape.",
+      "Ran focused official-domain searches for Exa, Parallel, and Tavily to discover MCP docs and benchmark pages without using outside search tools.",
+      "Used Tavily extract on 12 known or discovered official URLs from docs, product blogs, and the Tavily evals repository to get source-backed details for synthesis."
+    ],
+    "strengths": [
+      "Tavily exposed useful agent controls: search_depth, max_results, include/exclude domains, time/date filters, raw content, and a separate extract tool.",
+      "The trajectory hit every expected domain: docs.firecrawl.dev, exa.ai, parallel.ai, and docs.tavily.com.",
+      "Parallel and Tavily evidence was discovered cleanly through search, including MCP docs, search-depth docs, and benchmark pages.",
+      "The batch extract succeeded for all 12 selected official URLs with no MCP-level failures."
+    ],
+    "weaknesses": [
+      "Direct Tavily search for Exa was under-complete, returning only Exa's homepage and aggregated docs text; known-URL extraction was needed for the Exa MCP and benchmark pages.",
+      "The extract result for Tavily's API reference over-focused on country-list text, so the better search_depth evidence came from the search snippet and best-practices page.",
+      "The provider's MCP surface has no usage metadata, and the 5-tool schema footprint was 2752 tokens before any search.",
+      "Search and extract outputs were useful but verbose: 19530 raw output tokens across five provider calls."
+    ],
+    "notableFailures": [
+      "One local harness invocation failed before reaching the MCP provider because the first args file was accidentally written relative to the original conversation repo rather than /Users/ethanaggor/firecrawl-results. It was removed with trash and did not appear as a failed MCP tool call.",
+      "No provider-side tool call failed; harness score reports failedCalls: 0."
+    ],
+    "confidence": 0.82
+  },
+  "artifacts": {
+    "answer": "scoring/final-answer.md",
+    "score": "scoring/agent-score.json",
+    "trace": "trace.jsonl",
+    "tools": "schemas/tools.json"
+  }
+}

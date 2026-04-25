@@ -1,0 +1,9 @@
+{
+  "query": "Parallel Search MCP benchmark WISER web_search web_fetch endpoint excerpts site:parallel.ai OR site:docs.parallel.ai",
+  "limit": 8,
+  "sources": [
+    {
+      "type": "web"
+    }
+  ]
+}

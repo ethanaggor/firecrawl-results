@@ -1,0 +1,8 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\n  \"web\": [\n    {\n      \"url\": \"https://nextjs.org/blog/next-16\",\n      \"title\": \"Next.js 16\",\n      \"description\": \"Ahead of our upcoming Next.js Conf 2025 , Next.js 16 is now available. This release provides the latest improvements to Turbopack, caching, and the Next.js ...\",\n      \"position\": 1\n    },\n    {\n      \"url\": \"https://nextjs.org/blog\",\n      \"title\": \"Next.js by Vercel - The React Framework\",\n      \"description\": \"Next.js 16 is now available with major improvements to developer experience, routing, and caching. Highlights include: Cache Components: A new programming model ...\",\n      \"position\": 2\n    }\n  ]\n}"
+    }
+  ]
+}

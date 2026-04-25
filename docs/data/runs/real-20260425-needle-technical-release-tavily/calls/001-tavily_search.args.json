@@ -1,0 +1,12 @@
+{
+  "query": "official release notes JavaScript TypeScript library API changes after August 2025 React 19.2",
+  "max_results": 6,
+  "search_depth": "advanced",
+  "time_range": "year",
+  "start_date": "2025-09-01",
+  "include_raw_content": false,
+  "include_domains": [
+    "react.dev",
+    "github.com"
+  ]
+}

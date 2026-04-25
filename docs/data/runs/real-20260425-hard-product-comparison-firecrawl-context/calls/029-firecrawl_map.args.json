@@ -1,0 +1,6 @@
+{
+  "url": "https://docs.parallel.ai",
+  "search": "Search MCP web_search web_fetch benchmark WISER agent excerpts",
+  "limit": 12,
+  "ignoreQueryParameters": true
+}

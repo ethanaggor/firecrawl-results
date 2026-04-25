@@ -1,0 +1,94 @@
+{
+  "agentModel": "gpt-5.5 xhigh",
+  "provider": "parallel",
+  "taskId": "hard-product-comparison",
+  "success": true,
+  "answerSupportedByEvidence": true,
+  "retrievalQualityScore": 4.5,
+  "agentExperienceScore": 4.3,
+  "sourcePolicyAdherent": null,
+  "freshnessAdherent": null,
+  "callRationale": [
+    {
+      "step": "start",
+      "tool": "start",
+      "rationale": "Started the named isolated run and inspected the Parallel MCP schema. The provider exposed one search tool and one fetch tool, matching the required multi-step search/fetch trajectory."
+    },
+    {
+      "step": "001-web_search",
+      "tool": "web_search",
+      "rationale": "Ran a broad product-comparison search to discover benchmark pages and likely official sources across Firecrawl, Exa, Parallel, and Tavily."
+    },
+    {
+      "step": "003-web_search",
+      "tool": "web_search",
+      "rationale": "Targeted Firecrawl official docs for Search API and MCP behavior after the broad search did not provide enough docs.firecrawl.dev evidence."
+    },
+    {
+      "step": "005-web_search",
+      "tool": "web_search",
+      "rationale": "Targeted Exa official docs and benchmark pages for MCP tools, evaluation methodology, and agent/coding-search quality evidence."
+    },
+    {
+      "step": "007-web_search",
+      "tool": "web_search",
+      "rationale": "Targeted Parallel official docs and benchmark pages for Search MCP, web_search/web_fetch flow, excerpt shape, and benchmark claims."
+    },
+    {
+      "step": "009-web_search",
+      "tool": "web_search",
+      "rationale": "Targeted Tavily official docs for MCP, search_depth, content/chunk behavior, and public search evaluations."
+    },
+    {
+      "step": "011-web_fetch",
+      "tool": "web_fetch",
+      "rationale": "Fetched official docs pages across all four providers to extract agent-facing tool flow, context shape, controls, and quality tradeoffs."
+    },
+    {
+      "step": "013-web_fetch",
+      "tool": "web_fetch",
+      "rationale": "Fetched benchmark and evaluation pages from Parallel, Exa, Tavily, and Firecrawl to ground retrieval-quality comparisons."
+    },
+    {
+      "step": "015-web_search",
+      "tool": "web_search",
+      "rationale": "Ran a targeted gap search for Tavily MCP documentation and Firecrawl search response shape because the first fetch pass under-supported those details."
+    },
+    {
+      "step": "017-web_fetch",
+      "tool": "web_fetch",
+      "rationale": "Fetched Firecrawl's Search feature page and Tavily's MCP docs to close evidence gaps before synthesis."
+    }
+  ],
+  "strengths": [
+    "The Parallel MCP schema made the intended workflow obvious: web_search to find sources, web_fetch to inspect selected URLs.",
+    "Targeted searches found all expected domains: docs.firecrawl.dev, exa.ai, parallel.ai, and docs.tavily.com.",
+    "Fetch excerpts provided strong official evidence for context shape and tool-call flow across all four providers.",
+    "The trajectory collected benchmark/evaluation evidence from Exa, Parallel, and Tavily rather than relying only on product docs.",
+    "Parallel's dense excerpts were usually enough for synthesis without enabling full_content, keeping the trajectory bounded."
+  ],
+  "weaknesses": [
+    "Parallel has no hard source-policy/domain allowlist parameter in this MCP schema, so official-source targeting depended on objective/query wording.",
+    "The first broad search returned useful pages but also unrelated or third-party results, including aggregator pages and social/GitHub noise.",
+    "One Firecrawl API-reference fetch returned schema-heavy excerpts that did not clearly explain response shape, requiring a follow-up fetch of the Search feature page.",
+    "Tavily MCP docs were not surfaced clearly in the first Tavily-targeted search and required an additional targeted search."
+  ],
+  "notableFailures": [
+    {
+      "category": "direct fix and needs no further changes",
+      "failure": "The broad product-comparison search mixed official results with noisy third-party pages.",
+      "fix": "Performed provider-specific official-doc searches and used fetched official pages for the final synthesis."
+    },
+    {
+      "category": "direct fix and needs no further changes",
+      "failure": "The initial Firecrawl fetch emphasized OpenAPI schema fragments rather than the search response/context shape.",
+      "fix": "Fetched https://docs.firecrawl.dev/features/search, which provided the response shape and scrapeOptions behavior."
+    },
+    {
+      "category": "direct fix and needs no further changes",
+      "failure": "The first Tavily search did not produce enough MCP-specific official documentation.",
+      "fix": "Ran a focused Tavily MCP search and fetched https://docs.tavily.com/documentation/mcp."
+    }
+  ],
+  "confidence": 0.88
+}

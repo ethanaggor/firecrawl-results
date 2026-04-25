@@ -1,0 +1,21 @@
+{
+  "query": "Firecrawl MCP search tool categories country timeout ignoreInvalidURLs enterprise scrapeOptions",
+  "content": "chunks",
+  "maxResults": 5,
+  "maxCharsPerResult": 2000,
+  "maxCharsTotal": 8000,
+  "focus": "GitHub source or official repository evidence for Firecrawl MCP search request fields and response metadata",
+  "sourcePolicy": {
+    "includeDomains": [
+      "github.com"
+    ]
+  },
+  "sources": [
+    "web"
+  ],
+  "categories": [
+    "github"
+  ],
+  "ignoreInvalidURLs": true,
+  "includeRawResults": false
+}

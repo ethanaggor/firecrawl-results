@@ -1,0 +1,30 @@
+{
+  "url": "https://raw.githubusercontent.com/facebook/react/main/CHANGELOG.md",
+  "formats": [
+    "json"
+  ],
+  "maxAge": 0,
+  "jsonOptions": {
+    "prompt": "Extract the React 19.2.0 changelog entry date, whether it points to the React 19.2 release post, and the named new React or React DOM APIs listed under that entry.",
+    "schema": {
+      "type": "object",
+      "properties": {
+        "version": {
+          "type": "string"
+        },
+        "date": {
+          "type": "string"
+        },
+        "releasePostMentioned": {
+          "type": "boolean"
+        },
+        "listedApis": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

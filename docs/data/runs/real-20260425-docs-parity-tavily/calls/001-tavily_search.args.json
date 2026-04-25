@@ -1,0 +1,11 @@
+{
+  "query": "Firecrawl Search API categories country timeout ignoreInvalidURLs enterprise response metadata",
+  "max_results": 8,
+  "search_depth": "advanced",
+  "topic": "general",
+  "include_domains": [
+    "docs.firecrawl.dev",
+    "github.com"
+  ],
+  "include_raw_content": false
+}

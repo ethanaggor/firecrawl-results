@@ -1,0 +1,105 @@
+{
+  "status": "complete",
+  "runId": "real-20260425-needle-technical-release-parallel",
+  "generatedAt": "2026-04-25T05:27:38.000Z",
+  "manifest": {
+    "runId": "real-20260425-needle-technical-release-parallel",
+    "createdAt": "2026-04-25T05:24:49.054Z",
+    "provider": {
+      "id": "parallel",
+      "name": "Parallel Search remote MCP",
+      "transport": "streamable-http",
+      "url": "https://search.parallel.ai/mcp",
+      "headers": [
+        {
+          "name": "authorization",
+          "required": false,
+          "present": false
+        }
+      ],
+      "searchTools": [
+        "web_search"
+      ],
+      "fetchTools": [
+        "web_fetch"
+      ]
+    },
+    "task": {
+      "id": "needle-technical-release",
+      "family": "hard-retrieval",
+      "question": "Find a recent TypeScript or JavaScript library release after August 2025 that introduced at least three concrete API changes and identify source-backed examples.",
+      "agentGoal": "This mirrors Exa WebCode-style coding-agent search. Prefer changelogs, release notes, and official docs.",
+      "expectedTerms": [
+        "release",
+        "API",
+        "TypeScript"
+      ],
+      "freshness": "year"
+    }
+  },
+  "metrics": {
+    "provider": "parallel",
+    "taskId": "needle-technical-release",
+    "toolCalls": 5,
+    "searchCalls": 2,
+    "fetchCalls": 3,
+    "failedCalls": 0,
+    "totalConnectMs": 846,
+    "totalCallLatencyMs": 9476,
+    "argumentTokens": 718,
+    "rawOutputTokens": 25312,
+    "normalizedEvidenceTokens": 805,
+    "totalTrajectoryTokens": 29830,
+    "contract": {
+      "toolCount": 2,
+      "searchToolCount": 1,
+      "fetchToolCount": 1,
+      "descriptionTokens": 63,
+      "schemaTokens": 1034,
+      "totalMcpFootprintTokens": 3800,
+      "hasFreshnessControl": true,
+      "hasSourcePolicyControl": false,
+      "hasContentBudgetControl": true,
+      "hasUsageMetadata": true
+    }
+  },
+  "semanticScore": {
+    "agentModel": "gpt-5.5 xhigh",
+    "provider": "parallel",
+    "taskId": "needle-technical-release",
+    "success": true,
+    "answerSupportedByEvidence": true,
+    "retrievalQualityScore": 4.5,
+    "agentExperienceScore": 4,
+    "sourcePolicyAdherent": null,
+    "freshnessAdherent": true,
+    "callRationale": [
+      "Started with a broad freshness-year search for official TypeScript or JavaScript release notes after August 2025.",
+      "Fetched the official TypeScript 6.0 announcement as an initial fresh candidate, but treated it as weaker because the source says it remains API compatible with TypeScript 5.9.",
+      "Ran a targeted search for release notes with explicit API changes and found official LangChain JavaScript v1 and Next.js 16 sources.",
+      "Fetched official LangChain, Next.js 16 release, and Next.js upgrade pages to compare candidates.",
+      "Fetched focused Next.js 16 release, upgrade, and caching documentation because it contained the strongest dated official evidence and concrete TypeScript/JavaScript API examples."
+    ],
+    "strengths": [
+      "Used only the Parallel MCP provider through the benchmark harness.",
+      "Verified freshness against an official Next.js release date after August 2025.",
+      "Grounded the answer in official release notes and official upgrade documentation.",
+      "Identified more than three concrete API changes with source-backed code shapes."
+    ],
+    "weaknesses": [
+      "Parallel's exposed schema did not provide an explicit date-range parameter, so freshness was expressed in objectives and queries and then verified from official source content.",
+      "The first official TypeScript candidate was fresh but less ideal for the task because its announcement emphasizes API compatibility with TypeScript 5.9."
+    ],
+    "notableFailures": [
+      "Direct fix and needs no further changes: the initial broad search returned third-party and less-targeted sources, so follow-up calls narrowed to official release and upgrade pages.",
+      "Direct fix and needs no further changes: the TypeScript 6.0 candidate had weaker API-change fit, so the final answer used Next.js 16 instead."
+    ],
+    "confidence": 0.92
+  },
+  "artifacts": {
+    "answer": "scoring/final-answer.md",
+    "score": "scoring/agent-score.json",
+    "trace": "trace.jsonl",
+    "tools": "schemas/tools.json"
+  }
+}

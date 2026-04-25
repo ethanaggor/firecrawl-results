@@ -1,0 +1,26 @@
+{
+  "provider": "firecrawl-original",
+  "taskId": "hard-product-comparison",
+  "toolCalls": 20,
+  "searchCalls": 8,
+  "fetchCalls": 12,
+  "failedCalls": 0,
+  "totalConnectMs": 3805,
+  "totalCallLatencyMs": 16200,
+  "argumentTokens": 883,
+  "rawOutputTokens": 105075,
+  "normalizedEvidenceTokens": 2247,
+  "totalTrajectoryTokens": 117179,
+  "contract": {
+    "toolCount": 14,
+    "searchToolCount": 1,
+    "fetchToolCount": 2,
+    "descriptionTokens": 5082,
+    "schemaTokens": 5296,
+    "totalMcpFootprintTokens": 11221,
+    "hasFreshnessControl": true,
+    "hasSourcePolicyControl": true,
+    "hasContentBudgetControl": true,
+    "hasUsageMetadata": true
+  }
+}

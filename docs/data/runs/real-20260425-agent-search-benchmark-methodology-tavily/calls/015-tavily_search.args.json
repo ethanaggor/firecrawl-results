@@ -1,0 +1,10 @@
+{
+  "query": "Exa docs evaluating Exa search metrics retrieval quality latency freshness cost efficiency agentic suitability",
+  "max_results": 4,
+  "search_depth": "advanced",
+  "include_domains": [
+    "docs.exa.ai",
+    "exa.ai"
+  ],
+  "include_raw_content": false
+}

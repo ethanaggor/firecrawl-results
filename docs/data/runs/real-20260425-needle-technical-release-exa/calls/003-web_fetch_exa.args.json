@@ -1,0 +1,8 @@
+{
+  "urls": [
+    "https://github.com/sindresorhus/got/releases/tag/v15.0.0",
+    "https://github.com/sindresorhus/got/blob/main/documentation/2-options.md#signal",
+    "https://github.com/sindresorhus/got/blob/main/documentation/3-streams.md"
+  ],
+  "maxCharacters": 12000
+}

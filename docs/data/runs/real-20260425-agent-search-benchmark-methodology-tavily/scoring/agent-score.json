@@ -1,0 +1,29 @@
+{
+  "agentModel": "gpt-5.5 xhigh",
+  "provider": "tavily",
+  "taskId": "agent-search-benchmark-methodology",
+  "success": true,
+  "answerSupportedByEvidence": true,
+  "retrievalQualityScore": 4.4,
+  "agentExperienceScore": 4.2,
+  "sourcePolicyAdherent": null,
+  "freshnessAdherent": null,
+  "callRationale": "Started by inspecting Tavily's MCP schema and selected tavily_search for source discovery plus tavily_extract for primary-page follow-up. Used focused domain-filtered searches for Exa, Parallel, and Tavily/GitHub, then narrowed Tavily's benchmark repository and docs because the first Tavily-specific query returned unrelated GitHub noise. Extracted primary pages once the key URLs were identified and added one bounded Exa evaluation-guide lookup for explicit benchmark/latency guidance.",
+  "strengths": [
+    "Recovered all expected benchmark terms: SimpleQA, WISER, MS Marco/MSMARCO, and document relevance.",
+    "Hit the expected source domains: exa.ai, parallel.ai, github.com, and docs.tavily.com.",
+    "Collected primary/public evidence from Exa benchmark pages, Parallel WISER/Search MCP benchmark pages, Tavily's public search-evals repository, and Tavily search-depth docs.",
+    "Tavily's domain filters, search_depth control, raw-content option, and extract tool made source targeting and follow-up possible through the MCP provider alone."
+  ],
+  "weaknesses": [
+    "The first Tavily benchmark search returned unrelated GitHub repositories and required an exact follow-up for tavily-ai/tavily-search-evals.",
+    "The broad GitHub raw-content follow-up produced a very large raw response, which hurt context efficiency even though the normalized evidence was useful.",
+    "The extract normalization for the multi-URL extraction was sparse, so some useful supporting details came from raw search snippets rather than compact normalized evidence."
+  ],
+  "notableFailures": [
+    "Direct fix and needs no further changes: the first harness call used an args path before the JSON files were present in the requested workdir, so it failed locally before contacting Tavily. I moved the args files to the correct evals/work run directory and continued.",
+    "Direct fix and needs no further changes: the initial Tavily-specific search missed the expected tavily-ai repository; an exact follow-up query found the repository and run_evaluation.py.",
+    "Fixed but could benefit from cleaner/simpler implementation with an architectural change: using include_raw_content=true on a GitHub search produced a 36k-token raw response. A better harness pattern would cap raw content or prefer extract with a query on known primary URLs."
+  ],
+  "confidence": 0.88
+}

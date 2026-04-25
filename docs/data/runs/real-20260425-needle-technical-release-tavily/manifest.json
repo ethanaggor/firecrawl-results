@@ -1,0 +1,40 @@
+{
+  "runId": "real-20260425-needle-technical-release-tavily",
+  "createdAt": "2026-04-25T05:25:04.578Z",
+  "provider": {
+    "id": "tavily",
+    "name": "Tavily remote MCP",
+    "transport": "streamable-http",
+    "url": "https://mcp.tavily.com/mcp/?tavilyApiKey=***",
+    "query": [
+      {
+        "name": "tavilyApiKey",
+        "env": "TAVILY_API_KEY",
+        "required": true
+      }
+    ],
+    "searchTools": [
+      "tavily-search",
+      "tavily_search",
+      "search"
+    ],
+    "fetchTools": [
+      "tavily-extract",
+      "tavily_extract",
+      "extract"
+    ],
+    "headers": []
+  },
+  "task": {
+    "id": "needle-technical-release",
+    "family": "hard-retrieval",
+    "question": "Find a recent TypeScript or JavaScript library release after August 2025 that introduced at least three concrete API changes and identify source-backed examples.",
+    "agentGoal": "This mirrors Exa WebCode-style coding-agent search. Prefer changelogs, release notes, and official docs.",
+    "expectedTerms": [
+      "release",
+      "API",
+      "TypeScript"
+    ],
+    "freshness": "year"
+  }
+}

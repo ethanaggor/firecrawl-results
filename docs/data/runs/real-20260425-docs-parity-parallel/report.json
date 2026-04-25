@@ -1,0 +1,132 @@
+{
+  "status": "complete",
+  "runId": "real-20260425-docs-parity-parallel",
+  "generatedAt": "2026-04-25T04:59:27.373Z",
+  "manifest": {
+    "runId": "real-20260425-docs-parity-parallel",
+    "createdAt": "2026-04-25T04:55:47.533Z",
+    "provider": {
+      "id": "parallel",
+      "name": "Parallel Search remote MCP",
+      "transport": "streamable-http",
+      "url": "https://search.parallel.ai/mcp",
+      "headers": [
+        {
+          "name": "authorization",
+          "required": false,
+          "present": false
+        }
+      ],
+      "searchTools": [
+        "web_search"
+      ],
+      "fetchTools": [
+        "web_fetch"
+      ]
+    },
+    "task": {
+      "id": "docs-parity",
+      "family": "api-documentation",
+      "question": "Which public Firecrawl Search API fields are relevant to MCP search parity, especially categories, country, timeout, ignoreInvalidURLs, enterprise, and response metadata?",
+      "agentGoal": "Find primary documentation or source evidence for the Search API fields and response metadata. Prefer Firecrawl docs and official source.",
+      "expectedTerms": [
+        "categories",
+        "country",
+        "timeout",
+        "ignoreInvalidURLs"
+      ],
+      "expectedDomains": [
+        "docs.firecrawl.dev",
+        "github.com"
+      ],
+      "sourcePolicy": {
+        "includeDomains": [
+          "docs.firecrawl.dev",
+          "github.com"
+        ]
+      },
+      "notes": "This is the direct parity question behind the implementation."
+    }
+  },
+  "metrics": {
+    "provider": "parallel",
+    "taskId": "docs-parity",
+    "toolCalls": 4,
+    "searchCalls": 2,
+    "fetchCalls": 2,
+    "failedCalls": 0,
+    "totalConnectMs": 768,
+    "totalCallLatencyMs": 6998,
+    "argumentTokens": 509,
+    "rawOutputTokens": 23689,
+    "normalizedEvidenceTokens": 564,
+    "totalTrajectoryTokens": 27998,
+    "contract": {
+      "toolCount": 2,
+      "searchToolCount": 1,
+      "fetchToolCount": 1,
+      "descriptionTokens": 63,
+      "schemaTokens": 1034,
+      "totalMcpFootprintTokens": 3800,
+      "hasFreshnessControl": true,
+      "hasSourcePolicyControl": false,
+      "hasContentBudgetControl": true,
+      "hasUsageMetadata": true
+    }
+  },
+  "semanticScore": {
+    "agentModel": "gpt-5.5 xhigh",
+    "provider": "parallel",
+    "taskId": "docs-parity",
+    "success": true,
+    "answerSupportedByEvidence": true,
+    "retrievalQualityScore": 4.6,
+    "agentExperienceScore": 4.1,
+    "sourcePolicyAdherent": false,
+    "freshnessAdherent": null,
+    "callRationale": [
+      {
+        "step": "001",
+        "tool": "web_search",
+        "rationale": "Initial official-source search for Firecrawl Search API docs, GitHub source, and the named parity fields."
+      },
+      {
+        "step": "003",
+        "tool": "web_fetch",
+        "rationale": "Fetched the current v2 docs, v1 docs, and main Firecrawl repo because the search excerpts only partially covered categories, country, and enterprise."
+      },
+      {
+        "step": "005",
+        "tool": "web_search",
+        "rationale": "Targeted GitHub search for the official MCP server and firecrawl_search contract after the first GitHub result was README-level Firecrawl API evidence."
+      },
+      {
+        "step": "007",
+        "tool": "web_fetch",
+        "rationale": "Fetched the official Firecrawl MCP server page to ground current MCP-facing search exposure and response description."
+      }
+    ],
+    "strengths": [
+      "The provider schema made the search-then-fetch workflow clear: one search tool and one fetch tool.",
+      "Search quickly found the current v2 Search docs, v1 Search docs, the main Firecrawl repo, and the official Firecrawl MCP server repo.",
+      "Fetch excerpts from the v2 docs directly covered categories, country, timeout, ignoreInvalidURLs, enterprise, and category response behavior.",
+      "Fetch excerpts from the MCP server README grounded the current firecrawl_search example and its returned result shape."
+    ],
+    "weaknesses": [
+      "Parallel did not expose a hard source-policy/domain allowlist parameter, so the first search returned some out-of-policy domains even though the final answer used only official docs and GitHub evidence.",
+      "Normalized evidence metrics reported expectedTermHit as false even when the raw excerpts contained the expected terms, so the normalized summary understated retrieval success.",
+      "The GitHub MCP server fetch returned README documentation rather than precise source-code schema, so the MCP parity conclusion relies on docs plus README-level contract evidence."
+    ],
+    "notableFailures": [
+      "One local harness invocation failed before reaching the provider because the args file was initially written relative to the wrong workspace; the misplaced artifact was trashed and the args were recreated under evals/work/real-20260425-docs-parity-parallel.",
+      "No provider MCP calls failed."
+    ],
+    "confidence": 0.88
+  },
+  "artifacts": {
+    "answer": "scoring/final-answer.md",
+    "score": "scoring/agent-score.json",
+    "trace": "trace.jsonl",
+    "tools": "schemas/tools.json"
+  }
+}

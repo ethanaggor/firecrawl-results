@@ -1,0 +1,38 @@
+{
+  "provider": "firecrawl-original",
+  "tool": "firecrawl_search",
+  "isError": false,
+  "rawText": "{\n  \"web\": [\n    {\n      \"url\": \"https://docs.tavily.com/documentation/mcp\",\n      \"title\": \"Tavily MCP Server\",\n      \"description\": \"Developed by Anthropic, the Model Context Protocol (MCP) enables AI assistants like Claude to seamlessly integrate with Tavily's advanced search and data ...\",\n      \"position\": 1\n    },\n    {\n      \"url\": \"https://docs.tavily.com/documentation/integrations/anthropic\",\n      \"title\": \"Anthropic - Tavily Docs\",\n      \"description\": \"Integrate Tavily with Anthropic Claude to enhance your AI applications with real-time web search capabilities.\",\n      \"position\": 2\n    }\n  ]\n}",
+  "parsed": {
+    "web": [
+      {
+        "url": "https://docs.tavily.com/documentation/mcp",
+        "title": "Tavily MCP Server",
+        "description": "Developed by Anthropic, the Model Context Protocol (MCP) enables AI assistants like Claude to seamlessly integrate with Tavily's advanced search and data ...",
+        "position": 1
+      },
+      {
+        "url": "https://docs.tavily.com/documentation/integrations/anthropic",
+        "title": "Anthropic - Tavily Docs",
+        "description": "Integrate Tavily with Anthropic Claude to enhance your AI applications with real-time web search capabilities.",
+        "position": 2
+      }
+    ]
+  },
+  "results": [
+    {
+      "title": "Tavily MCP Server",
+      "url": "https://docs.tavily.com/documentation/mcp",
+      "domain": "docs.tavily.com",
+      "description": "Developed by Anthropic, the Model Context Protocol (MCP) enables AI assistants like Claude to seamlessly integrate with Tavily's advanced search and data ...",
+      "position": 1
+    },
+    {
+      "title": "Anthropic - Tavily Docs",
+      "url": "https://docs.tavily.com/documentation/integrations/anthropic",
+      "domain": "docs.tavily.com",
+      "description": "Integrate Tavily with Anthropic Claude to enhance your AI applications with real-time web search capabilities.",
+      "position": 2
+    }
+  ]
+}

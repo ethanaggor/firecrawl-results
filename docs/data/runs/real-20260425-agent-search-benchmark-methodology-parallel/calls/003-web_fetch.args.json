@@ -1,0 +1,20 @@
+{
+  "urls": [
+    "https://exa.ai/blog/api-evals",
+    "https://exa.ai/docs/reference/evaluating-exa-search",
+    "https://github.com/exa-labs/benchmarks",
+    "https://parallel.ai/blog/search-api-benchmark",
+    "https://parallel.ai/benchmarks",
+    "https://github.com/tavily-ai/tavily-search-evals",
+    "https://tavily.com/blog/tavily-evaluation-part-1-tavily-achieves-sota-on-simpleqa-benchmark/"
+  ],
+  "objective": "Extract benchmark methods, metrics, datasets, task patterns, scoring, and agent-search evaluation lessons.",
+  "search_queries": [
+    "benchmark methodology metrics datasets",
+    "SimpleQA WISER MSMARCO relevance",
+    "agent search evaluation"
+  ],
+  "full_content": false,
+  "session_id": "7d4b2e9f0c3a45b68e1f9a2d6c0b7e4a",
+  "model_name": "gpt-5.5 xhigh"
+}

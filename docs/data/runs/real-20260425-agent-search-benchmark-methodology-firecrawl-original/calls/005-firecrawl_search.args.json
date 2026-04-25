@@ -1,0 +1,9 @@
+{
+  "query": "site:parallel.ai Parallel search API benchmark WISER Search MCP methodology accuracy cost excerpts tool calls",
+  "limit": 6,
+  "sources": [
+    {
+      "type": "web"
+    }
+  ]
+}

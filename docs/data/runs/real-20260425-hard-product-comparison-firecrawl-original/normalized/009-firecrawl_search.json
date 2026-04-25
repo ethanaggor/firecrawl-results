@@ -1,0 +1,116 @@
+{
+  "provider": "firecrawl-original",
+  "tool": "firecrawl_search",
+  "isError": false,
+  "rawText": "{\n  \"web\": [\n    {\n      \"url\": \"https://docs.tavily.com/documentation/best-practices/best-practices-search\",\n      \"title\": \"Best Practices for Search - Tavily Docs\",\n      \"description\": \"Learn how to optimize your queries, refine search filters, and leverage advanced parameters for better performance.\",\n      \"position\": 1\n    },\n    {\n      \"url\": \"https://docs.tavily.com/documentation/api-reference/endpoint/search\",\n      \"title\": \"Tavily Search - Tavily Docs\",\n      \"description\": \"Note: search_depth may be automatically set to advanced when it's likely to improve results. ... To avoid the extra cost, you can explicitly set search_depth to ...\",\n      \"position\": 2\n    },\n    {\n      \"url\": \"https://docs.tavily.com/documentation/tavily-cli\",\n      \"title\": \"Tavily CLI - Tavily Docs\",\n      \"description\": \"The Tavily CLI ( tvly ) brings the full Tavily API to your command line. Run web searches, extract content from URLs, crawl websites, discover sitemaps, ...\",\n      \"position\": 3\n    },\n    {\n      \"url\": \"https://docs.tavily.com/documentation/best-practices/best-practices-extract\",\n      \"title\": \"Best Practices for Extract - Tavily Docs\",\n      \"description\": \"Learn how to optimize content extraction, choose the right approach, and configure parameters for better performance.\",\n      \"position\": 4\n    },\n    {\n      \"url\": \"https://docs.tavily.com/documentation/integrations/openai\",\n      \"title\": \"OpenAI - Tavily Docs\",\n      \"description\": \"This guide shows you how to integrate Tavily with OpenAI to create more powerful and informed AI applications. By combining OpenAI's language models with ...\",\n      \"position\": 5\n    },\n    {\n      \"url\": \"https://docs.tavily.com/documentation/integrations/openclaw\",\n      \"title\": \"OpenClaw - Tavily Docs\",\n      \"description\": \"Integrate Tavily with OpenClaw to give your AI agents real-time web search and content extraction across WhatsApp, Telegram, Discord, iMessage, and more.\",\n      \"position\": 6\n    },\n    {\n      \"url\": \"https://docs.tavily.com/documentation/api-reference/endpoint/crawl\",\n      \"title\": \"Tavily Crawl\",\n      \"description\": \"Tavily Crawl is a graph-based website traversal tool that can explore hundreds of paths in parallel with built-in extraction and intelligent discovery.\",\n      \"position\": 7\n    },\n    {\n      \"url\": \"https://docs.tavily.com/documentation/integrations/anthropic\",\n      \"title\": \"Anthropic - Tavily Docs\",\n      \"description\": \"Integrate Tavily with Anthropic Claude to enhance your AI applications with real-time web search capabilities.\",\n      \"position\": 8\n    }\n  ]\n}",
+  "parsed": {
+    "web": [
+      {
+        "url": "https://docs.tavily.com/documentation/best-practices/best-practices-search",
+        "title": "Best Practices for Search - Tavily Docs",
+        "description": "Learn how to optimize your queries, refine search filters, and leverage advanced parameters for better performance.",
+        "position": 1
+      },
+      {
+        "url": "https://docs.tavily.com/documentation/api-reference/endpoint/search",
+        "title": "Tavily Search - Tavily Docs",
+        "description": "Note: search_depth may be automatically set to advanced when it's likely to improve results. ... To avoid the extra cost, you can explicitly set search_depth to ...",
+        "position": 2
+      },
+      {
+        "url": "https://docs.tavily.com/documentation/tavily-cli",
+        "title": "Tavily CLI - Tavily Docs",
+        "description": "The Tavily CLI ( tvly ) brings the full Tavily API to your command line. Run web searches, extract content from URLs, crawl websites, discover sitemaps, ...",
+        "position": 3
+      },
+      {
+        "url": "https://docs.tavily.com/documentation/best-practices/best-practices-extract",
+        "title": "Best Practices for Extract - Tavily Docs",
+        "description": "Learn how to optimize content extraction, choose the right approach, and configure parameters for better performance.",
+        "position": 4
+      },
+      {
+        "url": "https://docs.tavily.com/documentation/integrations/openai",
+        "title": "OpenAI - Tavily Docs",
+        "description": "This guide shows you how to integrate Tavily with OpenAI to create more powerful and informed AI applications. By combining OpenAI's language models with ...",
+        "position": 5
+      },
+      {
+        "url": "https://docs.tavily.com/documentation/integrations/openclaw",
+        "title": "OpenClaw - Tavily Docs",
+        "description": "Integrate Tavily with OpenClaw to give your AI agents real-time web search and content extraction across WhatsApp, Telegram, Discord, iMessage, and more.",
+        "position": 6
+      },
+      {
+        "url": "https://docs.tavily.com/documentation/api-reference/endpoint/crawl",
+        "title": "Tavily Crawl",
+        "description": "Tavily Crawl is a graph-based website traversal tool that can explore hundreds of paths in parallel with built-in extraction and intelligent discovery.",
+        "position": 7
+      },
+      {
+        "url": "https://docs.tavily.com/documentation/integrations/anthropic",
+        "title": "Anthropic - Tavily Docs",
+        "description": "Integrate Tavily with Anthropic Claude to enhance your AI applications with real-time web search capabilities.",
+        "position": 8
+      }
+    ]
+  },
+  "results": [
+    {
+      "title": "Best Practices for Search - Tavily Docs",
+      "url": "https://docs.tavily.com/documentation/best-practices/best-practices-search",
+      "domain": "docs.tavily.com",
+      "description": "Learn how to optimize your queries, refine search filters, and leverage advanced parameters for better performance.",
+      "position": 1
+    },
+    {
+      "title": "Tavily Search - Tavily Docs",
+      "url": "https://docs.tavily.com/documentation/api-reference/endpoint/search",
+      "domain": "docs.tavily.com",
+      "description": "Note: search_depth may be automatically set to advanced when it's likely to improve results. ... To avoid the extra cost, you can explicitly set search_depth to ...",
+      "position": 2
+    },
+    {
+      "title": "Tavily CLI - Tavily Docs",
+      "url": "https://docs.tavily.com/documentation/tavily-cli",
+      "domain": "docs.tavily.com",
+      "description": "The Tavily CLI ( tvly ) brings the full Tavily API to your command line. Run web searches, extract content from URLs, crawl websites, discover sitemaps, ...",
+      "position": 3
+    },
+    {
+      "title": "Best Practices for Extract - Tavily Docs",
+      "url": "https://docs.tavily.com/documentation/best-practices/best-practices-extract",
+      "domain": "docs.tavily.com",
+      "description": "Learn how to optimize content extraction, choose the right approach, and configure parameters for better performance.",
+      "position": 4
+    },
+    {
+      "title": "OpenAI - Tavily Docs",
+      "url": "https://docs.tavily.com/documentation/integrations/openai",
+      "domain": "docs.tavily.com",
+      "description": "This guide shows you how to integrate Tavily with OpenAI to create more powerful and informed AI applications. By combining OpenAI's language models with ...",
+      "position": 5
+    },
+    {
+      "title": "OpenClaw - Tavily Docs",
+      "url": "https://docs.tavily.com/documentation/integrations/openclaw",
+      "domain": "docs.tavily.com",
+      "description": "Integrate Tavily with OpenClaw to give your AI agents real-time web search and content extraction across WhatsApp, Telegram, Discord, iMessage, and more.",
+      "position": 6
+    },
+    {
+      "title": "Tavily Crawl",
+      "url": "https://docs.tavily.com/documentation/api-reference/endpoint/crawl",
+      "domain": "docs.tavily.com",
+      "description": "Tavily Crawl is a graph-based website traversal tool that can explore hundreds of paths in parallel with built-in extraction and intelligent discovery.",
+      "position": 7
+    },
+    {
+      "title": "Anthropic - Tavily Docs",
+      "url": "https://docs.tavily.com/documentation/integrations/anthropic",
+      "domain": "docs.tavily.com",
+      "description": "Integrate Tavily with Anthropic Claude to enhance your AI applications with real-time web search capabilities.",
+      "position": 8
+    }
+  ]
+}

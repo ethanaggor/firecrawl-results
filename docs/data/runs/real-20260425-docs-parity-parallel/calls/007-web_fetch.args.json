@@ -1,0 +1,14 @@
+{
+  "urls": [
+    "https://github.com/firecrawl/firecrawl-mcp-server"
+  ],
+  "objective": "Extract the firecrawl_search MCP tool contract and examples, including fields and response shape.",
+  "search_queries": [
+    "firecrawl_search query country scrapeOptions",
+    "firecrawl_search categories timeout enterprise",
+    "firecrawl_search response metadata"
+  ],
+  "full_content": false,
+  "session_id": "real20260425docsparityparallel000001",
+  "model_name": "gpt-5.5 xhigh"
+}

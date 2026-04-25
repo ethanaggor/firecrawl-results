@@ -1,0 +1,9 @@
+{
+  "query": "site:exa.ai/docs/reference/exa-mcp Exa remote MCP web_search_exa web_fetch_exa web_search_advanced_exa",
+  "limit": 5,
+  "sources": [
+    {
+      "type": "web"
+    }
+  ]
+}

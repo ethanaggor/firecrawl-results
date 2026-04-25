@@ -1,0 +1,15 @@
+{
+  "query": "Official Firecrawl Search API documentation and source code showing search request fields categories country timeout ignoreInvalidURLs enterprise and response metadata",
+  "numResults": 6,
+  "type": "auto",
+  "includeDomains": [
+    "docs.firecrawl.dev",
+    "github.com"
+  ],
+  "textMaxCharacters": 4000,
+  "enableHighlights": true,
+  "highlightsMaxCharacters": 1400,
+  "highlightsQuery": "Firecrawl Search API categories country timeout ignoreInvalidURLs enterprise metadata",
+  "maxAgeHours": 0,
+  "livecrawlTimeout": 10000
+}

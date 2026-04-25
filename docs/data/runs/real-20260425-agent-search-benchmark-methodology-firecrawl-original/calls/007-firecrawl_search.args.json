@@ -1,0 +1,9 @@
+{
+  "query": "Tavily search evals SimpleQA document relevance benchmark methodology github docs.tavily.com",
+  "limit": 8,
+  "sources": [
+    {
+      "type": "web"
+    }
+  ]
+}

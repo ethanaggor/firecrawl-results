@@ -1,0 +1,446 @@
+{
+  "provider": "firecrawl-context",
+  "tool": "firecrawl_search",
+  "isError": false,
+  "rawText": "{\n  \"query\": \"Firecrawl Exa Parallel Tavily MCP search agent benchmark context shape tool call flow retrieval quality\",\n  \"executedQuery\": \"Firecrawl Exa Parallel Tavily MCP search agent benchmark context shape tool call flow retrieval quality (site:docs.firecrawl.dev OR site:exa.ai OR site:docs.exa.ai OR site:parallel.ai OR site:docs.parallel.ai OR site:docs.tavily.com OR site:tavily.com OR site:github.com)\",\n  \"content\": \"chunks\",\n  \"constraints\": {\n    \"maxResults\": 8,\n    \"maxCharsPerResult\": 1200,\n    \"maxCharsTotal\": 9000,\n    \"focus\": \"official docs or benchmark pages describing MCP search tools, agent-facing context shape, tool-call flow, returned content, and retrieval quality benchmarks\",\n    \"sourcePolicy\": {\n      \"includeDomains\": [\n        \"docs.firecrawl.dev\",\n        \"exa.ai\",\n        \"docs.exa.ai\",\n        \"parallel.ai\",\n        \"docs.parallel.ai\",\n        \"docs.tavily.com\",\n        \"tavily.com\",\n        \"github.com\"\n      ]\n    }\n  },\n  \"results\": [\n    {\n      \"title\": \"punkpeye/awesome-mcp-servers - GitHub\",\n      \"url\": \"https://github.com/punkpeye/awesome-mcp-servers\",\n      \"description\": \"MCP is an open protocol that enables AI models to securely interact with local and remote resources through standardized server implementations.\",\n      \"position\": 1,\n      \"source\": \"web\",\n      \"category\": \"github\",\n      \"metadata\": {\n        \"sourceURL\": \"https://github.com/punkpeye/awesome-mcp-servers\",\n        \"finalURL\": \"https://github.com/punkpeye/awesome-mcp-servers\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"- [EtienneChollet/ontomics](https://github.com/EtienneChollet/ontomics) [![EtienneChollet/ontomics MCP server](https://camo.githubusercontent.com/1d36ae687d1118fd81d6bf9fa6e724a562f6e3dfcc88dd856e4e255485ebb686/68747470733a2f2f676c616d612e61692f6d63702f736572766572732f457469656e6e6543686f6c6c65742f6f6e746f6d6963732f6261646765732f73636f72652e737667)](https://glama.ai/mcp/servers/EtienneChollet/onto\",\n          \"charCount\": 400\n        },\n        {\n          \"text\": \"- [mrslbt/xendit-mcp](https://github.com/mrslbt/xendit-mcp) [![mrslbt/xendit-mcp MCP server](https://camo.githubusercontent.com/eb1ed0b028a1cb9eba5dc99d7f9dd77ac86966e888484516f0f406f608ca8101/68747470733a2f2f676c616d612e61692f6d63702f736572766572732f6d72736c62742f78656e6469742d6d63702f6261646765732f73636f72652e737667)](https://glama.ai/mcp/servers/mrslbt/xendit-mcp) 📇 ☁️ \\\\- Xendit payment gatewa\",\n          \"charCount\": 400\n        },\n        {\n          \"text\": \"- [andreas-roennestad/openhive-mcp](https://github.com/andreas-roennestad/openhive-mcp) [![openhive-mcp MCP server](https://camo.githubusercontent.com/e737532a5e2a2881e28bbc6a8b14c566a6f7c41ecb3a0df504f14914e0e3ccfc/68747470733a2f2f676c616d612e61692f6d63702f736572766572732f616e64726561732d726f656e6e65737461642f6f70656e686976652d6d63702f6261646765732f73636f72652e737667)](https://glama.ai/mcp/server\",\n          \"charCount\": 400\n        }\n      ]\n    },\n    {\n      \"title\": \"awesome-mcp-servers/README.md at main - GitHub\",\n      \"url\": \"https://github.com/punkpeye/awesome-mcp-servers/blob/main/README.md\",\n      \"description\": \"MCP is an open protocol that enables AI models to securely interact with local and remote resources through standardized server implementations.\",\n      \"position\": 2,\n      \"source\": \"web\",\n      \"category\": \"github\",\n      \"metadata\": {\n        \"sourceURL\": \"https://github.com/punkpeye/awesome-mcp-servers/blob/main/README.md\",\n        \"finalURL\": \"https://github.com/punkpeye/awesome-mcp-servers/blob/main/README.md\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"- [EtienneChollet/ontomics](https://github.com/EtienneChollet/ontomics) [![EtienneChollet/ontomics MCP server](https://camo.githubusercontent.com/1d36ae687d1118fd81d6bf9fa6e724a562f6e3dfcc88dd856e4e255485ebb686/68747470733a2f2f676c616d612e61692f6d63702f736572766572732f457469656e6e6543686f6c6c65742f6f6e746f6d6963732f6261646765732f73636f72652e737667)](https://glama.ai/mcp/servers/EtienneChollet/onto\",\n          \"charCount\": 400\n        },\n        {\n          \"text\": \"- [mrslbt/xendit-mcp](https://github.com/mrslbt/xendit-mcp) [![mrslbt/xendit-mcp MCP server](https://camo.githubusercontent.com/eb1ed0b028a1cb9eba5dc99d7f9dd77ac86966e888484516f0f406f608ca8101/68747470733a2f2f676c616d612e61692f6d63702f736572766572732f6d72736c62742f78656e6469742d6d63702f6261646765732f73636f72652e737667)](https://glama.ai/mcp/servers/mrslbt/xendit-mcp) 📇 ☁️ \\\\- Xendit payment gatewa\",\n          \"charCount\": 400\n        },\n        {\n          \"text\": \"- [mrslbt/rippr](https://github.com/mrslbt/rippr) [![mrslbt/rippr MCP server](https://camo.githubusercontent.com/72f227bf18011f79ed2f706a4e84e44ab422f1e916a780d804dec4d912747c7c/68747470733a2f2f676c616d612e61692f6d63702f736572766572732f6d72736c62742f72697070722f6261646765732f73636f72652e737667)](https://glama.ai/mcp/servers/mrslbt/rippr) 📇 🏠 \\\\- YouTube transcript extraction for AI agents. Clean \",\n          \"charCount\": 400\n        }\n      ]\n    },\n    {\n      \"title\": \"rylena/awesome-openclaw - GitHub\",\n      \"url\": \"https://github.com/rylena/awesome-openclaw\",\n      \"description\": \"OpenClaw (formerly Moltbot, originally Clawdbot) is a free and open-source autonomous AI agent created by Peter Steinberger. It runs locally, connects to ...\",\n      \"position\": 3,\n      \"source\": \"web\",\n      \"category\": \"github\",\n      \"metadata\": {\n        \"sourceURL\": \"https://github.com/rylena/awesome-openclaw\",\n        \"finalURL\": \"https://github.com/rylena/awesome-openclaw\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"[Skip to content](https://github.com/rylena/awesome-openclaw#start-of-content)\",\n          \"charCount\": 78\n        },\n        {\n          \"text\": \"[Report repository](https://github.com/contact/report-content?content_url=https%3A%2F%2Fgithub.com%2Frylena%2Fawesome-openclaw&report=rylena+%28user%29)\",\n          \"charCount\": 152\n        },\n        {\n          \"text\": \"- [![@rylena](https://avatars.githubusercontent.com/u/47320423?s=64&v=4)](https://github.com/rylena)[**rylena** Rylen Anil](https://github.com/rylena)\",\n          \"charCount\": 150\n        }\n      ]\n    },\n    {\n      \"title\": \"antigravity-awesome-skills/CATALOG.md at main - GitHub\",\n      \"url\": \"https://github.com/sickn33/antigravity-awesome-skills/blob/main/CATALOG.md\",\n      \"description\": \"Discover and search 18K+ MCP servers and AI agents across 6+ registries using Global Chat's cross-protocol directory and MCP server. mcp, ai- ...\",\n      \"position\": 4,\n      \"source\": \"web\",\n      \"category\": \"github\",\n      \"metadata\": {\n        \"sourceURL\": \"https://github.com/sickn33/antigravity-awesome-skills/blob/main/CATALOG.md\",\n        \"finalURL\": \"https://github.com/sickn33/antigravity-awesome-skills/blob/main/CATALOG.md\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"| Skill | Description | Tags | Triggers |\\n| --- | --- | --- | --- |\\n| `3d-web-experience` | Expert in building 3D experiences for the web - Three.js, React Three Fiber, Spline, WebGL, and interactive 3D scenes. Covers product configurators, 3D portf... | 3d, web, experience | 3d, web, experience, building, experiences, three, js, react, fiber, spline, webgl, interactive |\\n| `algolia-search` | Expe\",\n          \"charCount\": 400\n        },\n        {\n          \"text\": \"| Skill | Description | Tags | Triggers |\\n| --- | --- | --- | --- |\\n| `00-andruia-consultant` | Arquitecto de Soluciones Principal y Consultor Tecnológico de Andru.ia. Diagnostica y traza la hoja de ruta óptima para proyectos de IA en español. | 00, andruia, consultant | 00, andruia, consultant, arquitecto, de, soluciones, principal, consultor, tecnol, gico, andru, ia |\\n| `10-andruia-skill-smith` \",\n          \"charCount\": 400\n        },\n        {\n          \"text\": \"| Skill | Description | Tags | Triggers |\\n| --- | --- | --- | --- |\\n| `007` | Security audit, hardening, threat modeling (STRIDE/PASTA), Red/Blue Team, OWASP checks, code review, incident response, and infrastructure security for any p... | security, audit, owasp, threat-modeling, hardening, pentest | security, audit, owasp, threat-modeling, hardening, pentest, 007, threat, modeling, stride, pasta\",\n          \"charCount\": 400\n        }\n      ]\n    },\n    {\n      \"title\": \"dcostenco/prism-mcp: The Mind Palace for AI Agents - GitHub\",\n      \"url\": \"https://github.com/dcostenco/prism-mcp\",\n      \"description\": \"Instead of wasting tokens on \\\"search\\\" tool calls, Prism uses MCP Prompts ( /resume_session ) to inject context before the LLM thinks, and MCP ...\",\n      \"position\": 5,\n      \"source\": \"web\",\n      \"category\": \"github\",\n      \"metadata\": {\n        \"sourceURL\": \"https://github.com/dcostenco/prism-mcp\",\n        \"finalURL\": \"https://github.com/dcostenco/prism-mcp\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"| Name | Name | Last commit message | Last commit date |\\n| --- | --- | --- | --- |\\n| ## Latest commit<br>[![dcostenco](https://avatars.githubusercontent.com/u/64438937?v=4&size=40)](https://github.com/dcostenco)[dcostenco](https://github.com/dcostenco/prism-mcp/commits?author=dcostenco)<br>[fix: rename JPEG images from .png to .jpg for correct GitHub rendering](https://github.com/dcostenco/prism-m\",\n          \"charCount\": 400\n        },\n        {\n          \"text\": \"Prism scores coding tasks across **6 weighted heuristic signals** (keyword analysis, file count, file-type complexity, scope, length, multi-step detection) and recommends whether to keep execution on the host cloud model or delegate to a **local Claw agent** (powered by deepseek-r1 / qwen2.5-coder via Ollama). File-type awareness routes config/docs edits locally while reserving systems-programming\",\n          \"charCount\": 400\n        },\n        {\n          \"text\": \"| Phase | Feature | Inspired By | Status |\\n| --- | --- | --- | --- |\\n| **v5.0** | TurboQuant 10× Compression — 4-bit quantized 768-dim vectors in <500 bytes | Vector quantization (product/residual PQ) | ✅ Shipped |\\n| **v5.0** | Three-Tier Search — native → TurboQuant → FTS5 keyword fallback | Cascaded retrieval architectures | ✅ Shipped |\\n| **v5.2** | Smart Consolidation — extract principles, not \",\n          \"charCount\": 400\n        }\n      ]\n    },\n    {\n      \"title\": \"antigravity-awesome-skills/CHANGELOG.md at main - GitHub\",\n      \"url\": \"https://github.com/sickn33/antigravity-awesome-skills/blob/main/CHANGELOG.md\",\n      \"description\": \"Key Feature 2: Collect concrete examples and benchmarks for agent capabilities. Try it: Use AgentFolio to find 3 autonomous AI agents focused on code review.\",\n      \"position\": 6,\n      \"source\": \"web\",\n      \"category\": \"github\",\n      \"metadata\": {\n        \"sourceURL\": \"https://github.com/sickn33/antigravity-awesome-skills/blob/main/CHANGELOG.md\",\n        \"finalURL\": \"https://github.com/sickn33/antigravity-awesome-skills/blob/main/CHANGELOG.md\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"- **Contributor docs formatting** \\\\- merged PR #418 to correct nested fenced-code examples in `docs/contributors/skill-anatomy.md`, making the markdown examples render correctly for contributors.\\n- **Community discovery** \\\\- current `main` includes the `SoulPass` Community Contributed Skills listing requested in issue #421, keeping Solana wallet, trading, and agent-identity workflows easy to disco\",\n          \"charCount\": 400\n        },\n        {\n          \"text\": \"- **Official (27)**: Sentry (commit, create-pr, find-bugs, iterate-pr), Trail of Bits (culture-index, fix-review, sharp-edges), Expo (expo-deployment, upgrading-expo), Hugging Face (hugging-face-cli, hugging-face-jobs), Vercel, Google Stitch (design-md), Neon (using-neon), n8n (n8n-code-python, n8n-mcp-tools-expert, n8n-node-configuration), SwiftUI, fal.ai (fal-audio, fal-generate, fal-image-edit,\",\n          \"charCount\": 400\n        },\n        {\n          \"text\": \"- `context7-auto-research`: Auto-research capability for Claude Code.\\n  - `codex-review`: Professional code review with AI integration.\\n  - `exa-search`: Semantic search and discovery using Exa API.\\n  - `firecrawl-scraper`: Deep web scraping and PDF parsing.\\n  - `tavily-web`: Content extraction and research using Tavily.\\n  - `busybox-on-windows`: UNIX tool suite for Windows environments.\",\n          \"charCount\": 390\n        }\n      ]\n    },\n    {\n      \"title\": \"GitHub - leogopal/free-dev-resources: A list of free services ...\",\n      \"url\": \"https://github.com/leogopal/free-dev-resources\",\n      \"description\": \"Developers and Open Source authors now have many services offering free tiers, but finding them all takes time to make informed decisions.\",\n      \"position\": 7,\n      \"source\": \"web\",\n      \"category\": \"github\",\n      \"metadata\": {\n        \"sourceURL\": \"https://github.com/leogopal/free-dev-resources\",\n        \"finalURL\": \"https://github.com/leogopal/free-dev-resources\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"- [Google Cloud Platform](https://cloud.google.com/)\\n  - App Engine - 28 frontend instance hours per day, nine backend instance hours per day\\n  - Cloud Firestore - 1GB storage, 50,000 reads, 20,000 writes, 20,000 deletes per day\\n  - Compute Engine - 1 non-preemptible e2-micro, 30GB HDD, 5GB snapshot storage (restricted to certain regions), 1 GB network egress from North America to all region desti\",\n          \"charCount\": 400\n        },\n        {\n          \"text\": \"- [JSONGrid](https://jsongrid.com/) \\\\- Free tool to Visualize, Edit, Filter complex JSON data into beautiful tabular Grid. Save and Share JSON data over link link.\\n- [Zerosheets](https://zerosheets.com/) \\\\- Turn your Google Sheets spreadsheets into powerful API\\\\`s to rapidly develop prototypes, websites, apps and more. 500 requests per month available for free.\\n- [IP.City](https://ip.city/) — 100 \",\n          \"charCount\": 400\n        },\n        {\n          \"text\": \"- [3Cols](https://3cols.com/) \\\\- A free cloud-based code snippet manager for personal and collaborative code.\\n- [Bitwarden](https://bitwarden.com/) — The easiest and safest way for individuals, teams, and business organizations to store, share, and sync sensitive data.\\n- [Braid](https://www.braidchat.com/) — Chat app designed for teams. Free for public access group, unlimited users, history, and i\",\n          \"charCount\": 400\n        }\n      ]\n    },\n    {\n      \"title\": \"tribixbite/awesome - GitHub\",\n      \"url\": \"https://github.com/tribixbite/awesome\",\n      \"description\": \"alizdavoodi/MCPDocSearch - This project provides a toolset to crawl websites wikis, tool/library documentions and generate Markdown documentation, and make that ...\",\n      \"position\": 8,\n      \"source\": \"web\",\n      \"category\": \"github\",\n      \"metadata\": {\n        \"sourceURL\": \"https://github.com/tribixbite/awesome\",\n        \"finalURL\": \"https://github.com/tribixbite/awesome\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"- [CVSRohit/claude-3d-print](https://github.com/CVSRohit/claude-3d-print) \\\\- Prompt -> Claude -> STL -> sliced .3mf -> Bambu P1S. Working stack with all the firmware quirks documented.\\n- [Kikobuf/3d-file-toolkit](https://github.com/Kikobuf/3d-file-toolkit) \\\\- Pure-Python toolkit for inspecting, editing, converting, and analyzing 3D print files, supports 3MF, STL, OBJ, PLY, and GLB. Detects source \",\n          \"charCount\": 400\n        },\n        {\n          \"text\": \"- [DMontgomery40/bambu-printer-mcp](https://github.com/DMontgomery40/bambu-printer-mcp) \\\\- MCP server for Bambu Lab 3D printers — STL manipulation, BambuStudio slicing, and direct printer control\\n- [DMontgomery40/mcp-3D-printer-server](https://github.com/DMontgomery40/mcp-3D-printer-server) \\\\- Connects MCP to major 3D printer APIs (Orca, Bambu, OctoPrint, Klipper, Duet, Repetier, Prusa, Creality).\",\n          \"charCount\": 400\n        },\n        {\n          \"text\": \"- [pbakaus/impeccable](https://github.com/pbakaus/impeccable) \\\\- The design language that makes your AI harness better at design.\\n- [hamedafarag/claudeck](https://github.com/hamedafarag/claudeck) \\\\- A browser-based UI for Claude Code — chat, run workflows, manage MCP servers, track costs, and orchestrate autonomous agents from a local web interface. Installable as a PWA.\\n- [tribixbite/termux-tools\",\n          \"charCount\": 400\n        }\n      ]\n    }\n  ],\n  \"searchIds\": [\n    \"019dc30f-ea72-72ce-afd7-724a7e74382d\"\n  ],\n  \"usage\": {\n    \"resultCount\": 8,\n    \"charsReturned\": 8770,\n    \"creditsUsed\": 10,\n    \"rawResultCount\": {\n      \"web\": 8,\n      \"news\": 0,\n      \"images\": 0\n    }\n  }\n}",
+  "parsed": {
+    "query": "Firecrawl Exa Parallel Tavily MCP search agent benchmark context shape tool call flow retrieval quality",
+    "executedQuery": "Firecrawl Exa Parallel Tavily MCP search agent benchmark context shape tool call flow retrieval quality (site:docs.firecrawl.dev OR site:exa.ai OR site:docs.exa.ai OR site:parallel.ai OR site:docs.parallel.ai OR site:docs.tavily.com OR site:tavily.com OR site:github.com)",
+    "content": "chunks",
+    "constraints": {
+      "maxResults": 8,
+      "maxCharsPerResult": 1200,
+      "maxCharsTotal": 9000,
+      "focus": "official docs or benchmark pages describing MCP search tools, agent-facing context shape, tool-call flow, returned content, and retrieval quality benchmarks",
+      "sourcePolicy": {
+        "includeDomains": [
+          "docs.firecrawl.dev",
+          "exa.ai",
+          "docs.exa.ai",
+          "parallel.ai",
+          "docs.parallel.ai",
+          "docs.tavily.com",
+          "tavily.com",
+          "github.com"
+        ]
+      }
+    },
+    "results": [
+      {
+        "title": "punkpeye/awesome-mcp-servers - GitHub",
+        "url": "https://github.com/punkpeye/awesome-mcp-servers",
+        "description": "MCP is an open protocol that enables AI models to securely interact with local and remote resources through standardized server implementations.",
+        "position": 1,
+        "source": "web",
+        "category": "github",
+        "metadata": {
+          "sourceURL": "https://github.com/punkpeye/awesome-mcp-servers",
+          "finalURL": "https://github.com/punkpeye/awesome-mcp-servers",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "- [EtienneChollet/ontomics](https://github.com/EtienneChollet/ontomics) [![EtienneChollet/ontomics MCP server](https://camo.githubusercontent.com/1d36ae687d1118fd81d6bf9fa6e724a562f6e3dfcc88dd856e4e255485ebb686/68747470733a2f2f676c616d612e61692f6d63702f736572766572732f457469656e6e6543686f6c6c65742f6f6e746f6d6963732f6261646765732f73636f72652e737667)](https://glama.ai/mcp/servers/EtienneChollet/onto",
+            "charCount": 400
+          },
+          {
+            "text": "- [mrslbt/xendit-mcp](https://github.com/mrslbt/xendit-mcp) [![mrslbt/xendit-mcp MCP server](https://camo.githubusercontent.com/eb1ed0b028a1cb9eba5dc99d7f9dd77ac86966e888484516f0f406f608ca8101/68747470733a2f2f676c616d612e61692f6d63702f736572766572732f6d72736c62742f78656e6469742d6d63702f6261646765732f73636f72652e737667)](https://glama.ai/mcp/servers/mrslbt/xendit-mcp) 📇 ☁️ \\- Xendit payment gatewa",
+            "charCount": 400
+          },
+          {
+            "text": "- [andreas-roennestad/openhive-mcp](https://github.com/andreas-roennestad/openhive-mcp) [![openhive-mcp MCP server](https://camo.githubusercontent.com/e737532a5e2a2881e28bbc6a8b14c566a6f7c41ecb3a0df504f14914e0e3ccfc/68747470733a2f2f676c616d612e61692f6d63702f736572766572732f616e64726561732d726f656e6e65737461642f6f70656e686976652d6d63702f6261646765732f73636f72652e737667)](https://glama.ai/mcp/server",
+            "charCount": 400
+          }
+        ]
+      },
+      {
+        "title": "awesome-mcp-servers/README.md at main - GitHub",
+        "url": "https://github.com/punkpeye/awesome-mcp-servers/blob/main/README.md",
+        "description": "MCP is an open protocol that enables AI models to securely interact with local and remote resources through standardized server implementations.",
+        "position": 2,
+        "source": "web",
+        "category": "github",
+        "metadata": {
+          "sourceURL": "https://github.com/punkpeye/awesome-mcp-servers/blob/main/README.md",
+          "finalURL": "https://github.com/punkpeye/awesome-mcp-servers/blob/main/README.md",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "- [EtienneChollet/ontomics](https://github.com/EtienneChollet/ontomics) [![EtienneChollet/ontomics MCP server](https://camo.githubusercontent.com/1d36ae687d1118fd81d6bf9fa6e724a562f6e3dfcc88dd856e4e255485ebb686/68747470733a2f2f676c616d612e61692f6d63702f736572766572732f457469656e6e6543686f6c6c65742f6f6e746f6d6963732f6261646765732f73636f72652e737667)](https://glama.ai/mcp/servers/EtienneChollet/onto",
+            "charCount": 400
+          },
+          {
+            "text": "- [mrslbt/xendit-mcp](https://github.com/mrslbt/xendit-mcp) [![mrslbt/xendit-mcp MCP server](https://camo.githubusercontent.com/eb1ed0b028a1cb9eba5dc99d7f9dd77ac86966e888484516f0f406f608ca8101/68747470733a2f2f676c616d612e61692f6d63702f736572766572732f6d72736c62742f78656e6469742d6d63702f6261646765732f73636f72652e737667)](https://glama.ai/mcp/servers/mrslbt/xendit-mcp) 📇 ☁️ \\- Xendit payment gatewa",
+            "charCount": 400
+          },
+          {
+            "text": "- [mrslbt/rippr](https://github.com/mrslbt/rippr) [![mrslbt/rippr MCP server](https://camo.githubusercontent.com/72f227bf18011f79ed2f706a4e84e44ab422f1e916a780d804dec4d912747c7c/68747470733a2f2f676c616d612e61692f6d63702f736572766572732f6d72736c62742f72697070722f6261646765732f73636f72652e737667)](https://glama.ai/mcp/servers/mrslbt/rippr) 📇 🏠 \\- YouTube transcript extraction for AI agents. Clean ",
+            "charCount": 400
+          }
+        ]
+      },
+      {
+        "title": "rylena/awesome-openclaw - GitHub",
+        "url": "https://github.com/rylena/awesome-openclaw",
+        "description": "OpenClaw (formerly Moltbot, originally Clawdbot) is a free and open-source autonomous AI agent created by Peter Steinberger. It runs locally, connects to ...",
+        "position": 3,
+        "source": "web",
+        "category": "github",
+        "metadata": {
+          "sourceURL": "https://github.com/rylena/awesome-openclaw",
+          "finalURL": "https://github.com/rylena/awesome-openclaw",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "[Skip to content](https://github.com/rylena/awesome-openclaw#start-of-content)",
+            "charCount": 78
+          },
+          {
+            "text": "[Report repository](https://github.com/contact/report-content?content_url=https%3A%2F%2Fgithub.com%2Frylena%2Fawesome-openclaw&report=rylena+%28user%29)",
+            "charCount": 152
+          },
+          {
+            "text": "- [![@rylena](https://avatars.githubusercontent.com/u/47320423?s=64&v=4)](https://github.com/rylena)[**rylena** Rylen Anil](https://github.com/rylena)",
+            "charCount": 150
+          }
+        ]
+      },
+      {
+        "title": "antigravity-awesome-skills/CATALOG.md at main - GitHub",
+        "url": "https://github.com/sickn33/antigravity-awesome-skills/blob/main/CATALOG.md",
+        "description": "Discover and search 18K+ MCP servers and AI agents across 6+ registries using Global Chat's cross-protocol directory and MCP server. mcp, ai- ...",
+        "position": 4,
+        "source": "web",
+        "category": "github",
+        "metadata": {
+          "sourceURL": "https://github.com/sickn33/antigravity-awesome-skills/blob/main/CATALOG.md",
+          "finalURL": "https://github.com/sickn33/antigravity-awesome-skills/blob/main/CATALOG.md",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "| Skill | Description | Tags | Triggers |\n| --- | --- | --- | --- |\n| `3d-web-experience` | Expert in building 3D experiences for the web - Three.js, React Three Fiber, Spline, WebGL, and interactive 3D scenes. Covers product configurators, 3D portf... | 3d, web, experience | 3d, web, experience, building, experiences, three, js, react, fiber, spline, webgl, interactive |\n| `algolia-search` | Expe",
+            "charCount": 400
+          },
+          {
+            "text": "| Skill | Description | Tags | Triggers |\n| --- | --- | --- | --- |\n| `00-andruia-consultant` | Arquitecto de Soluciones Principal y Consultor Tecnológico de Andru.ia. Diagnostica y traza la hoja de ruta óptima para proyectos de IA en español. | 00, andruia, consultant | 00, andruia, consultant, arquitecto, de, soluciones, principal, consultor, tecnol, gico, andru, ia |\n| `10-andruia-skill-smith` ",
+            "charCount": 400
+          },
+          {
+            "text": "| Skill | Description | Tags | Triggers |\n| --- | --- | --- | --- |\n| `007` | Security audit, hardening, threat modeling (STRIDE/PASTA), Red/Blue Team, OWASP checks, code review, incident response, and infrastructure security for any p... | security, audit, owasp, threat-modeling, hardening, pentest | security, audit, owasp, threat-modeling, hardening, pentest, 007, threat, modeling, stride, pasta",
+            "charCount": 400
+          }
+        ]
+      },
+      {
+        "title": "dcostenco/prism-mcp: The Mind Palace for AI Agents - GitHub",
+        "url": "https://github.com/dcostenco/prism-mcp",
+        "description": "Instead of wasting tokens on \"search\" tool calls, Prism uses MCP Prompts ( /resume_session ) to inject context before the LLM thinks, and MCP ...",
+        "position": 5,
+        "source": "web",
+        "category": "github",
+        "metadata": {
+          "sourceURL": "https://github.com/dcostenco/prism-mcp",
+          "finalURL": "https://github.com/dcostenco/prism-mcp",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "| Name | Name | Last commit message | Last commit date |\n| --- | --- | --- | --- |\n| ## Latest commit<br>[![dcostenco](https://avatars.githubusercontent.com/u/64438937?v=4&size=40)](https://github.com/dcostenco)[dcostenco](https://github.com/dcostenco/prism-mcp/commits?author=dcostenco)<br>[fix: rename JPEG images from .png to .jpg for correct GitHub rendering](https://github.com/dcostenco/prism-m",
+            "charCount": 400
+          },
+          {
+            "text": "Prism scores coding tasks across **6 weighted heuristic signals** (keyword analysis, file count, file-type complexity, scope, length, multi-step detection) and recommends whether to keep execution on the host cloud model or delegate to a **local Claw agent** (powered by deepseek-r1 / qwen2.5-coder via Ollama). File-type awareness routes config/docs edits locally while reserving systems-programming",
+            "charCount": 400
+          },
+          {
+            "text": "| Phase | Feature | Inspired By | Status |\n| --- | --- | --- | --- |\n| **v5.0** | TurboQuant 10× Compression — 4-bit quantized 768-dim vectors in <500 bytes | Vector quantization (product/residual PQ) | ✅ Shipped |\n| **v5.0** | Three-Tier Search — native → TurboQuant → FTS5 keyword fallback | Cascaded retrieval architectures | ✅ Shipped |\n| **v5.2** | Smart Consolidation — extract principles, not ",
+            "charCount": 400
+          }
+        ]
+      },
+      {
+        "title": "antigravity-awesome-skills/CHANGELOG.md at main - GitHub",
+        "url": "https://github.com/sickn33/antigravity-awesome-skills/blob/main/CHANGELOG.md",
+        "description": "Key Feature 2: Collect concrete examples and benchmarks for agent capabilities. Try it: Use AgentFolio to find 3 autonomous AI agents focused on code review.",
+        "position": 6,
+        "source": "web",
+        "category": "github",
+        "metadata": {
+          "sourceURL": "https://github.com/sickn33/antigravity-awesome-skills/blob/main/CHANGELOG.md",
+          "finalURL": "https://github.com/sickn33/antigravity-awesome-skills/blob/main/CHANGELOG.md",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "- **Contributor docs formatting** \\- merged PR #418 to correct nested fenced-code examples in `docs/contributors/skill-anatomy.md`, making the markdown examples render correctly for contributors.\n- **Community discovery** \\- current `main` includes the `SoulPass` Community Contributed Skills listing requested in issue #421, keeping Solana wallet, trading, and agent-identity workflows easy to disco",
+            "charCount": 400
+          },
+          {
+            "text": "- **Official (27)**: Sentry (commit, create-pr, find-bugs, iterate-pr), Trail of Bits (culture-index, fix-review, sharp-edges), Expo (expo-deployment, upgrading-expo), Hugging Face (hugging-face-cli, hugging-face-jobs), Vercel, Google Stitch (design-md), Neon (using-neon), n8n (n8n-code-python, n8n-mcp-tools-expert, n8n-node-configuration), SwiftUI, fal.ai (fal-audio, fal-generate, fal-image-edit,",
+            "charCount": 400
+          },
+          {
+            "text": "- `context7-auto-research`: Auto-research capability for Claude Code.\n  - `codex-review`: Professional code review with AI integration.\n  - `exa-search`: Semantic search and discovery using Exa API.\n  - `firecrawl-scraper`: Deep web scraping and PDF parsing.\n  - `tavily-web`: Content extraction and research using Tavily.\n  - `busybox-on-windows`: UNIX tool suite for Windows environments.",
+            "charCount": 390
+          }
+        ]
+      },
+      {
+        "title": "GitHub - leogopal/free-dev-resources: A list of free services ...",
+        "url": "https://github.com/leogopal/free-dev-resources",
+        "description": "Developers and Open Source authors now have many services offering free tiers, but finding them all takes time to make informed decisions.",
+        "position": 7,
+        "source": "web",
+        "category": "github",
+        "metadata": {
+          "sourceURL": "https://github.com/leogopal/free-dev-resources",
+          "finalURL": "https://github.com/leogopal/free-dev-resources",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "- [Google Cloud Platform](https://cloud.google.com/)\n  - App Engine - 28 frontend instance hours per day, nine backend instance hours per day\n  - Cloud Firestore - 1GB storage, 50,000 reads, 20,000 writes, 20,000 deletes per day\n  - Compute Engine - 1 non-preemptible e2-micro, 30GB HDD, 5GB snapshot storage (restricted to certain regions), 1 GB network egress from North America to all region desti",
+            "charCount": 400
+          },
+          {
+            "text": "- [JSONGrid](https://jsongrid.com/) \\- Free tool to Visualize, Edit, Filter complex JSON data into beautiful tabular Grid. Save and Share JSON data over link link.\n- [Zerosheets](https://zerosheets.com/) \\- Turn your Google Sheets spreadsheets into powerful API\\`s to rapidly develop prototypes, websites, apps and more. 500 requests per month available for free.\n- [IP.City](https://ip.city/) — 100 ",
+            "charCount": 400
+          },
+          {
+            "text": "- [3Cols](https://3cols.com/) \\- A free cloud-based code snippet manager for personal and collaborative code.\n- [Bitwarden](https://bitwarden.com/) — The easiest and safest way for individuals, teams, and business organizations to store, share, and sync sensitive data.\n- [Braid](https://www.braidchat.com/) — Chat app designed for teams. Free for public access group, unlimited users, history, and i",
+            "charCount": 400
+          }
+        ]
+      },
+      {
+        "title": "tribixbite/awesome - GitHub",
+        "url": "https://github.com/tribixbite/awesome",
+        "description": "alizdavoodi/MCPDocSearch - This project provides a toolset to crawl websites wikis, tool/library documentions and generate Markdown documentation, and make that ...",
+        "position": 8,
+        "source": "web",
+        "category": "github",
+        "metadata": {
+          "sourceURL": "https://github.com/tribixbite/awesome",
+          "finalURL": "https://github.com/tribixbite/awesome",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "- [CVSRohit/claude-3d-print](https://github.com/CVSRohit/claude-3d-print) \\- Prompt -> Claude -> STL -> sliced .3mf -> Bambu P1S. Working stack with all the firmware quirks documented.\n- [Kikobuf/3d-file-toolkit](https://github.com/Kikobuf/3d-file-toolkit) \\- Pure-Python toolkit for inspecting, editing, converting, and analyzing 3D print files, supports 3MF, STL, OBJ, PLY, and GLB. Detects source ",
+            "charCount": 400
+          },
+          {
+            "text": "- [DMontgomery40/bambu-printer-mcp](https://github.com/DMontgomery40/bambu-printer-mcp) \\- MCP server for Bambu Lab 3D printers — STL manipulation, BambuStudio slicing, and direct printer control\n- [DMontgomery40/mcp-3D-printer-server](https://github.com/DMontgomery40/mcp-3D-printer-server) \\- Connects MCP to major 3D printer APIs (Orca, Bambu, OctoPrint, Klipper, Duet, Repetier, Prusa, Creality).",
+            "charCount": 400
+          },
+          {
+            "text": "- [pbakaus/impeccable](https://github.com/pbakaus/impeccable) \\- The design language that makes your AI harness better at design.\n- [hamedafarag/claudeck](https://github.com/hamedafarag/claudeck) \\- A browser-based UI for Claude Code — chat, run workflows, manage MCP servers, track costs, and orchestrate autonomous agents from a local web interface. Installable as a PWA.\n- [tribixbite/termux-tools",
+            "charCount": 400
+          }
+        ]
+      }
+    ],
+    "searchIds": [
+      "019dc30f-ea72-72ce-afd7-724a7e74382d"
+    ],
+    "usage": {
+      "resultCount": 8,
+      "charsReturned": 8770,
+      "creditsUsed": 10,
+      "rawResultCount": {
+        "web": 8,
+        "news": 0,
+        "images": 0
+      }
+    }
+  },
+  "results": [
+    {
+      "title": "punkpeye/awesome-mcp-servers - GitHub",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers",
+      "domain": "github.com",
+      "description": "MCP is an open protocol that enables AI models to securely interact with local and remote resources through standardized server implementations.",
+      "chunks": [
+        {
+          "text": "- [EtienneChollet/ontomics](https://github.com/EtienneChollet/ontomics) [![EtienneChollet/ontomics MCP server](https://camo.githubusercontent.com/1d36ae687d1118fd81d6bf9fa6e724a562f6e3dfcc88dd856e4e255485ebb686/68747470733a2f2f676c616d612e61692f6d63702f736572766572732f457469656e6e6543686f6c6c65742f6f6e746f6d6963732f6261646765732f73636f72652e737667)](https://glama.ai/mcp/servers/EtienneChollet/onto",
+          "charCount": 400
+        },
+        {
+          "text": "- [mrslbt/xendit-mcp](https://github.com/mrslbt/xendit-mcp) [![mrslbt/xendit-mcp MCP server](https://camo.githubusercontent.com/eb1ed0b028a1cb9eba5dc99d7f9dd77ac86966e888484516f0f406f608ca8101/68747470733a2f2f676c616d612e61692f6d63702f736572766572732f6d72736c62742f78656e6469742d6d63702f6261646765732f73636f72652e737667)](https://glama.ai/mcp/servers/mrslbt/xendit-mcp) 📇 ☁️ \\- Xendit payment gatewa",
+          "charCount": 400
+        },
+        {
+          "text": "- [andreas-roennestad/openhive-mcp](https://github.com/andreas-roennestad/openhive-mcp) [![openhive-mcp MCP server](https://camo.githubusercontent.com/e737532a5e2a2881e28bbc6a8b14c566a6f7c41ecb3a0df504f14914e0e3ccfc/68747470733a2f2f676c616d612e61692f6d63702f736572766572732f616e64726561732d726f656e6e65737461642f6f70656e686976652d6d63702f6261646765732f73636f72652e737667)](https://glama.ai/mcp/server",
+          "charCount": 400
+        }
+      ],
+      "source": "web",
+      "category": "github",
+      "position": 1
+    },
+    {
+      "title": "awesome-mcp-servers/README.md at main - GitHub",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers/blob/main/README.md",
+      "domain": "github.com",
+      "description": "MCP is an open protocol that enables AI models to securely interact with local and remote resources through standardized server implementations.",
+      "chunks": [
+        {
+          "text": "- [EtienneChollet/ontomics](https://github.com/EtienneChollet/ontomics) [![EtienneChollet/ontomics MCP server](https://camo.githubusercontent.com/1d36ae687d1118fd81d6bf9fa6e724a562f6e3dfcc88dd856e4e255485ebb686/68747470733a2f2f676c616d612e61692f6d63702f736572766572732f457469656e6e6543686f6c6c65742f6f6e746f6d6963732f6261646765732f73636f72652e737667)](https://glama.ai/mcp/servers/EtienneChollet/onto",
+          "charCount": 400
+        },
+        {
+          "text": "- [mrslbt/xendit-mcp](https://github.com/mrslbt/xendit-mcp) [![mrslbt/xendit-mcp MCP server](https://camo.githubusercontent.com/eb1ed0b028a1cb9eba5dc99d7f9dd77ac86966e888484516f0f406f608ca8101/68747470733a2f2f676c616d612e61692f6d63702f736572766572732f6d72736c62742f78656e6469742d6d63702f6261646765732f73636f72652e737667)](https://glama.ai/mcp/servers/mrslbt/xendit-mcp) 📇 ☁️ \\- Xendit payment gatewa",
+          "charCount": 400
+        },
+        {
+          "text": "- [mrslbt/rippr](https://github.com/mrslbt/rippr) [![mrslbt/rippr MCP server](https://camo.githubusercontent.com/72f227bf18011f79ed2f706a4e84e44ab422f1e916a780d804dec4d912747c7c/68747470733a2f2f676c616d612e61692f6d63702f736572766572732f6d72736c62742f72697070722f6261646765732f73636f72652e737667)](https://glama.ai/mcp/servers/mrslbt/rippr) 📇 🏠 \\- YouTube transcript extraction for AI agents. Clean ",
+          "charCount": 400
+        }
+      ],
+      "source": "web",
+      "category": "github",
+      "position": 2
+    },
+    {
+      "title": "rylena/awesome-openclaw - GitHub",
+      "url": "https://github.com/rylena/awesome-openclaw",
+      "domain": "github.com",
+      "description": "OpenClaw (formerly Moltbot, originally Clawdbot) is a free and open-source autonomous AI agent created by Peter Steinberger. It runs locally, connects to ...",
+      "chunks": [
+        {
+          "text": "[Skip to content](https://github.com/rylena/awesome-openclaw#start-of-content)",
+          "charCount": 78
+        },
+        {
+          "text": "[Report repository](https://github.com/contact/report-content?content_url=https%3A%2F%2Fgithub.com%2Frylena%2Fawesome-openclaw&report=rylena+%28user%29)",
+          "charCount": 152
+        },
+        {
+          "text": "- [![@rylena](https://avatars.githubusercontent.com/u/47320423?s=64&v=4)](https://github.com/rylena)[**rylena** Rylen Anil](https://github.com/rylena)",
+          "charCount": 150
+        }
+      ],
+      "source": "web",
+      "category": "github",
+      "position": 3
+    },
+    {
+      "title": "antigravity-awesome-skills/CATALOG.md at main - GitHub",
+      "url": "https://github.com/sickn33/antigravity-awesome-skills/blob/main/CATALOG.md",
+      "domain": "github.com",
+      "description": "Discover and search 18K+ MCP servers and AI agents across 6+ registries using Global Chat's cross-protocol directory and MCP server. mcp, ai- ...",
+      "chunks": [
+        {
+          "text": "| Skill | Description | Tags | Triggers |\n| --- | --- | --- | --- |\n| `3d-web-experience` | Expert in building 3D experiences for the web - Three.js, React Three Fiber, Spline, WebGL, and interactive 3D scenes. Covers product configurators, 3D portf... | 3d, web, experience | 3d, web, experience, building, experiences, three, js, react, fiber, spline, webgl, interactive |\n| `algolia-search` | Expe",
+          "charCount": 400
+        },
+        {
+          "text": "| Skill | Description | Tags | Triggers |\n| --- | --- | --- | --- |\n| `00-andruia-consultant` | Arquitecto de Soluciones Principal y Consultor Tecnológico de Andru.ia. Diagnostica y traza la hoja de ruta óptima para proyectos de IA en español. | 00, andruia, consultant | 00, andruia, consultant, arquitecto, de, soluciones, principal, consultor, tecnol, gico, andru, ia |\n| `10-andruia-skill-smith` ",
+          "charCount": 400
+        },
+        {
+          "text": "| Skill | Description | Tags | Triggers |\n| --- | --- | --- | --- |\n| `007` | Security audit, hardening, threat modeling (STRIDE/PASTA), Red/Blue Team, OWASP checks, code review, incident response, and infrastructure security for any p... | security, audit, owasp, threat-modeling, hardening, pentest | security, audit, owasp, threat-modeling, hardening, pentest, 007, threat, modeling, stride, pasta",
+          "charCount": 400
+        }
+      ],
+      "source": "web",
+      "category": "github",
+      "position": 4
+    },
+    {
+      "title": "dcostenco/prism-mcp: The Mind Palace for AI Agents - GitHub",
+      "url": "https://github.com/dcostenco/prism-mcp",
+      "domain": "github.com",
+      "description": "Instead of wasting tokens on \"search\" tool calls, Prism uses MCP Prompts ( /resume_session ) to inject context before the LLM thinks, and MCP ...",
+      "chunks": [
+        {
+          "text": "| Name | Name | Last commit message | Last commit date |\n| --- | --- | --- | --- |\n| ## Latest commit<br>[![dcostenco](https://avatars.githubusercontent.com/u/64438937?v=4&size=40)](https://github.com/dcostenco)[dcostenco](https://github.com/dcostenco/prism-mcp/commits?author=dcostenco)<br>[fix: rename JPEG images from .png to .jpg for correct GitHub rendering](https://github.com/dcostenco/prism-m",
+          "charCount": 400
+        },
+        {
+          "text": "Prism scores coding tasks across **6 weighted heuristic signals** (keyword analysis, file count, file-type complexity, scope, length, multi-step detection) and recommends whether to keep execution on the host cloud model or delegate to a **local Claw agent** (powered by deepseek-r1 / qwen2.5-coder via Ollama). File-type awareness routes config/docs edits locally while reserving systems-programming",
+          "charCount": 400
+        },
+        {
+          "text": "| Phase | Feature | Inspired By | Status |\n| --- | --- | --- | --- |\n| **v5.0** | TurboQuant 10× Compression — 4-bit quantized 768-dim vectors in <500 bytes | Vector quantization (product/residual PQ) | ✅ Shipped |\n| **v5.0** | Three-Tier Search — native → TurboQuant → FTS5 keyword fallback | Cascaded retrieval architectures | ✅ Shipped |\n| **v5.2** | Smart Consolidation — extract principles, not ",
+          "charCount": 400
+        }
+      ],
+      "source": "web",
+      "category": "github",
+      "position": 5
+    },
+    {
+      "title": "antigravity-awesome-skills/CHANGELOG.md at main - GitHub",
+      "url": "https://github.com/sickn33/antigravity-awesome-skills/blob/main/CHANGELOG.md",
+      "domain": "github.com",
+      "description": "Key Feature 2: Collect concrete examples and benchmarks for agent capabilities. Try it: Use AgentFolio to find 3 autonomous AI agents focused on code review.",
+      "chunks": [
+        {
+          "text": "- **Contributor docs formatting** \\- merged PR #418 to correct nested fenced-code examples in `docs/contributors/skill-anatomy.md`, making the markdown examples render correctly for contributors.\n- **Community discovery** \\- current `main` includes the `SoulPass` Community Contributed Skills listing requested in issue #421, keeping Solana wallet, trading, and agent-identity workflows easy to disco",
+          "charCount": 400
+        },
+        {
+          "text": "- **Official (27)**: Sentry (commit, create-pr, find-bugs, iterate-pr), Trail of Bits (culture-index, fix-review, sharp-edges), Expo (expo-deployment, upgrading-expo), Hugging Face (hugging-face-cli, hugging-face-jobs), Vercel, Google Stitch (design-md), Neon (using-neon), n8n (n8n-code-python, n8n-mcp-tools-expert, n8n-node-configuration), SwiftUI, fal.ai (fal-audio, fal-generate, fal-image-edit,",
+          "charCount": 400
+        },
+        {
+          "text": "- `context7-auto-research`: Auto-research capability for Claude Code.\n  - `codex-review`: Professional code review with AI integration.\n  - `exa-search`: Semantic search and discovery using Exa API.\n  - `firecrawl-scraper`: Deep web scraping and PDF parsing.\n  - `tavily-web`: Content extraction and research using Tavily.\n  - `busybox-on-windows`: UNIX tool suite for Windows environments.",
+          "charCount": 390
+        }
+      ],
+      "source": "web",
+      "category": "github",
+      "position": 6
+    },
+    {
+      "title": "GitHub - leogopal/free-dev-resources: A list of free services ...",
+      "url": "https://github.com/leogopal/free-dev-resources",
+      "domain": "github.com",
+      "description": "Developers and Open Source authors now have many services offering free tiers, but finding them all takes time to make informed decisions.",
+      "chunks": [
+        {
+          "text": "- [Google Cloud Platform](https://cloud.google.com/)\n  - App Engine - 28 frontend instance hours per day, nine backend instance hours per day\n  - Cloud Firestore - 1GB storage, 50,000 reads, 20,000 writes, 20,000 deletes per day\n  - Compute Engine - 1 non-preemptible e2-micro, 30GB HDD, 5GB snapshot storage (restricted to certain regions), 1 GB network egress from North America to all region desti",
+          "charCount": 400
+        },
+        {
+          "text": "- [JSONGrid](https://jsongrid.com/) \\- Free tool to Visualize, Edit, Filter complex JSON data into beautiful tabular Grid. Save and Share JSON data over link link.\n- [Zerosheets](https://zerosheets.com/) \\- Turn your Google Sheets spreadsheets into powerful API\\`s to rapidly develop prototypes, websites, apps and more. 500 requests per month available for free.\n- [IP.City](https://ip.city/) — 100 ",
+          "charCount": 400
+        },
+        {
+          "text": "- [3Cols](https://3cols.com/) \\- A free cloud-based code snippet manager for personal and collaborative code.\n- [Bitwarden](https://bitwarden.com/) — The easiest and safest way for individuals, teams, and business organizations to store, share, and sync sensitive data.\n- [Braid](https://www.braidchat.com/) — Chat app designed for teams. Free for public access group, unlimited users, history, and i",
+          "charCount": 400
+        }
+      ],
+      "source": "web",
+      "category": "github",
+      "position": 7
+    },
+    {
+      "title": "tribixbite/awesome - GitHub",
+      "url": "https://github.com/tribixbite/awesome",
+      "domain": "github.com",
+      "description": "alizdavoodi/MCPDocSearch - This project provides a toolset to crawl websites wikis, tool/library documentions and generate Markdown documentation, and make that ...",
+      "chunks": [
+        {
+          "text": "- [CVSRohit/claude-3d-print](https://github.com/CVSRohit/claude-3d-print) \\- Prompt -> Claude -> STL -> sliced .3mf -> Bambu P1S. Working stack with all the firmware quirks documented.\n- [Kikobuf/3d-file-toolkit](https://github.com/Kikobuf/3d-file-toolkit) \\- Pure-Python toolkit for inspecting, editing, converting, and analyzing 3D print files, supports 3MF, STL, OBJ, PLY, and GLB. Detects source ",
+          "charCount": 400
+        },
+        {
+          "text": "- [DMontgomery40/bambu-printer-mcp](https://github.com/DMontgomery40/bambu-printer-mcp) \\- MCP server for Bambu Lab 3D printers — STL manipulation, BambuStudio slicing, and direct printer control\n- [DMontgomery40/mcp-3D-printer-server](https://github.com/DMontgomery40/mcp-3D-printer-server) \\- Connects MCP to major 3D printer APIs (Orca, Bambu, OctoPrint, Klipper, Duet, Repetier, Prusa, Creality).",
+          "charCount": 400
+        },
+        {
+          "text": "- [pbakaus/impeccable](https://github.com/pbakaus/impeccable) \\- The design language that makes your AI harness better at design.\n- [hamedafarag/claudeck](https://github.com/hamedafarag/claudeck) \\- A browser-based UI for Claude Code — chat, run workflows, manage MCP servers, track costs, and orchestrate autonomous agents from a local web interface. Installable as a PWA.\n- [tribixbite/termux-tools",
+          "charCount": 400
+        }
+      ],
+      "source": "web",
+      "category": "github",
+      "position": 8
+    }
+  ]
+}

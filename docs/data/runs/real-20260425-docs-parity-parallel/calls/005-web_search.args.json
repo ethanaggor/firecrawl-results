@@ -1,0 +1,10 @@
+{
+  "objective": "Find official GitHub source for Firecrawl MCP search tool contract, especially firecrawl_search fields categories, country, timeout, ignoreInvalidURLs, enterprise, scrapeOptions, and response metadata.",
+  "search_queries": [
+    "site:github.com firecrawl_mcp firecrawl_search",
+    "site:github.com/firecrawl firecrawl_search scrapeOptions",
+    "site:github.com/firecrawl enterprise ignoreInvalidURLs"
+  ],
+  "session_id": "real20260425docsparityparallel000001",
+  "model_name": "gpt-5.5 xhigh"
+}

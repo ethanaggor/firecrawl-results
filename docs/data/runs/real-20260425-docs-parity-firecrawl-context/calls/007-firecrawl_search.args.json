@@ -1,0 +1,21 @@
+{
+  "query": "Firecrawl search enterprise anon zdr Search API github",
+  "content": "chunks",
+  "maxResults": 5,
+  "maxCharsPerResult": 1800,
+  "maxCharsTotal": 7000,
+  "focus": "GitHub evidence for the Firecrawl Search API enterprise field including anon or zdr values",
+  "sourcePolicy": {
+    "includeDomains": [
+      "github.com"
+    ]
+  },
+  "sources": [
+    "web"
+  ],
+  "categories": [
+    "github"
+  ],
+  "ignoreInvalidURLs": true,
+  "includeRawResults": false
+}

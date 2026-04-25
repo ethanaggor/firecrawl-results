@@ -1,0 +1,10 @@
+{
+  "query": "Exa public API evaluations benchmark methodology SimpleQA MSMARCO WebCode metrics retrieval quality agent search",
+  "max_results": 6,
+  "search_depth": "advanced",
+  "include_domains": [
+    "exa.ai",
+    "docs.exa.ai"
+  ],
+  "include_raw_content": false
+}

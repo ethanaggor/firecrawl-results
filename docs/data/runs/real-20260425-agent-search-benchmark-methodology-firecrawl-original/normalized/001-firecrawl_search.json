@@ -1,0 +1,118 @@
+{
+  "provider": "firecrawl-original",
+  "tool": "firecrawl_search",
+  "isError": false,
+  "rawText": "{\n  \"web\": [\n    {\n      \"url\": \"https://parallel.ai/benchmarks\",\n      \"title\": \"Parallel Quality Benchmarks | Infrastructure for intelligence on the web\",\n      \"description\": \"These benchmarks help to measure different web search offerings on their ability to answer prompts accurately. By obsessing over accuracy, we consistently lead ...\",\n      \"position\": 1\n    },\n    {\n      \"url\": \"https://medium.com/@unicodeveloper/search-apis-for-ai-agents-we-tested-5-domains-heres-the-gap-2a03e09f9868\",\n      \"title\": \"Search APIs for AI Agents: We Tested 5 Domains. Here's the Gap\",\n      \"description\": \"How does Exa compare to other search APIs for AI agents? Exa scores 91% on SimpleQA (strong factual web retrieval) but 24% on FreshQA ...\",\n      \"position\": 2\n    },\n    {\n      \"url\": \"https://exa.ai/blog/people-search-benchmark\",\n      \"title\": \"Introducing Exa's People Search Benchmarks | Exa Blog\",\n      \"description\": \"How we built and open-sourced a people search benchmark to measure retrieval quality across entity search.\",\n      \"position\": 3\n    },\n    {\n      \"url\": \"https://www.firecrawl.dev/blog/best-ai-search-engines-agents\",\n      \"title\": \"Best AI Search Engines for Agents and Workflows in 2026 - Firecrawl\",\n      \"description\": \"Exa leads on company and people search benchmarks it publishes. Tavily benchmarks against SimpleQA and document relevance tasks. Compare ...\",\n      \"position\": 4\n    },\n    {\n      \"url\": \"https://aimultiple.com/agentic-search\",\n      \"title\": \"Agentic Search in 2026: Benchmark 8 Search APIs for Agents\",\n      \"description\": \"Exa AI provides a semantic search API optimized for agentic research and retrieval tasks. Unlike scraping platforms, it focuses on document ...\",\n      \"position\": 5\n    },\n    {\n      \"url\": \"https://github.com/exa-labs/benchmarks\",\n      \"title\": \"exa-labs/benchmarks: Open benchmarks for evaluating search APIs\",\n      \"description\": \"The search method is used by retrieval and RAG evals. The extract method is used by the contents and highlights evals for URL-based extraction. Requirements.\",\n      \"position\": 6,\n      \"category\": \"github\"\n    },\n    {\n      \"url\": \"https://www.newscatcherapi.com/blog-posts/ai-web-search-recall-comparison-openai-exa-parallel-ai-catchall\",\n      \"title\": \"Evaluating Recall in Web Search APIs: OpenAI vs Exa vs Parallel AI ...\",\n      \"description\": \"This is the complete story of how we benchmarked CatchAll against Exa Websets, Parallel AI FindAll, and OpenAI Deep Research using 35 real-world ...\",\n      \"position\": 7\n    },\n    {\n      \"url\": \"https://michaellivs.com/blog/web-search-for-agents-2026/\",\n      \"title\": \"Web Search for Agents in 2026 - /dev/michael\",\n      \"description\": \"A practical guide to every web search API available for agents in 2026 - pricing, data sources, benchmarks, SDKs, and what I picked for my ...\",\n      \"position\": 8\n    }\n  ]\n}",
+  "parsed": {
+    "web": [
+      {
+        "url": "https://parallel.ai/benchmarks",
+        "title": "Parallel Quality Benchmarks | Infrastructure for intelligence on the web",
+        "description": "These benchmarks help to measure different web search offerings on their ability to answer prompts accurately. By obsessing over accuracy, we consistently lead ...",
+        "position": 1
+      },
+      {
+        "url": "https://medium.com/@unicodeveloper/search-apis-for-ai-agents-we-tested-5-domains-heres-the-gap-2a03e09f9868",
+        "title": "Search APIs for AI Agents: We Tested 5 Domains. Here's the Gap",
+        "description": "How does Exa compare to other search APIs for AI agents? Exa scores 91% on SimpleQA (strong factual web retrieval) but 24% on FreshQA ...",
+        "position": 2
+      },
+      {
+        "url": "https://exa.ai/blog/people-search-benchmark",
+        "title": "Introducing Exa's People Search Benchmarks | Exa Blog",
+        "description": "How we built and open-sourced a people search benchmark to measure retrieval quality across entity search.",
+        "position": 3
+      },
+      {
+        "url": "https://www.firecrawl.dev/blog/best-ai-search-engines-agents",
+        "title": "Best AI Search Engines for Agents and Workflows in 2026 - Firecrawl",
+        "description": "Exa leads on company and people search benchmarks it publishes. Tavily benchmarks against SimpleQA and document relevance tasks. Compare ...",
+        "position": 4
+      },
+      {
+        "url": "https://aimultiple.com/agentic-search",
+        "title": "Agentic Search in 2026: Benchmark 8 Search APIs for Agents",
+        "description": "Exa AI provides a semantic search API optimized for agentic research and retrieval tasks. Unlike scraping platforms, it focuses on document ...",
+        "position": 5
+      },
+      {
+        "url": "https://github.com/exa-labs/benchmarks",
+        "title": "exa-labs/benchmarks: Open benchmarks for evaluating search APIs",
+        "description": "The search method is used by retrieval and RAG evals. The extract method is used by the contents and highlights evals for URL-based extraction. Requirements.",
+        "position": 6,
+        "category": "github"
+      },
+      {
+        "url": "https://www.newscatcherapi.com/blog-posts/ai-web-search-recall-comparison-openai-exa-parallel-ai-catchall",
+        "title": "Evaluating Recall in Web Search APIs: OpenAI vs Exa vs Parallel AI ...",
+        "description": "This is the complete story of how we benchmarked CatchAll against Exa Websets, Parallel AI FindAll, and OpenAI Deep Research using 35 real-world ...",
+        "position": 7
+      },
+      {
+        "url": "https://michaellivs.com/blog/web-search-for-agents-2026/",
+        "title": "Web Search for Agents in 2026 - /dev/michael",
+        "description": "A practical guide to every web search API available for agents in 2026 - pricing, data sources, benchmarks, SDKs, and what I picked for my ...",
+        "position": 8
+      }
+    ]
+  },
+  "results": [
+    {
+      "title": "Parallel Quality Benchmarks | Infrastructure for intelligence on the web",
+      "url": "https://parallel.ai/benchmarks",
+      "domain": "parallel.ai",
+      "description": "These benchmarks help to measure different web search offerings on their ability to answer prompts accurately. By obsessing over accuracy, we consistently lead ...",
+      "position": 1
+    },
+    {
+      "title": "Search APIs for AI Agents: We Tested 5 Domains. Here's the Gap",
+      "url": "https://medium.com/@unicodeveloper/search-apis-for-ai-agents-we-tested-5-domains-heres-the-gap-2a03e09f9868",
+      "domain": "medium.com",
+      "description": "How does Exa compare to other search APIs for AI agents? Exa scores 91% on SimpleQA (strong factual web retrieval) but 24% on FreshQA ...",
+      "position": 2
+    },
+    {
+      "title": "Introducing Exa's People Search Benchmarks | Exa Blog",
+      "url": "https://exa.ai/blog/people-search-benchmark",
+      "domain": "exa.ai",
+      "description": "How we built and open-sourced a people search benchmark to measure retrieval quality across entity search.",
+      "position": 3
+    },
+    {
+      "title": "Best AI Search Engines for Agents and Workflows in 2026 - Firecrawl",
+      "url": "https://www.firecrawl.dev/blog/best-ai-search-engines-agents",
+      "domain": "firecrawl.dev",
+      "description": "Exa leads on company and people search benchmarks it publishes. Tavily benchmarks against SimpleQA and document relevance tasks. Compare ...",
+      "position": 4
+    },
+    {
+      "title": "Agentic Search in 2026: Benchmark 8 Search APIs for Agents",
+      "url": "https://aimultiple.com/agentic-search",
+      "domain": "aimultiple.com",
+      "description": "Exa AI provides a semantic search API optimized for agentic research and retrieval tasks. Unlike scraping platforms, it focuses on document ...",
+      "position": 5
+    },
+    {
+      "title": "exa-labs/benchmarks: Open benchmarks for evaluating search APIs",
+      "url": "https://github.com/exa-labs/benchmarks",
+      "domain": "github.com",
+      "description": "The search method is used by retrieval and RAG evals. The extract method is used by the contents and highlights evals for URL-based extraction. Requirements.",
+      "category": "github",
+      "position": 6
+    },
+    {
+      "title": "Evaluating Recall in Web Search APIs: OpenAI vs Exa vs Parallel AI ...",
+      "url": "https://www.newscatcherapi.com/blog-posts/ai-web-search-recall-comparison-openai-exa-parallel-ai-catchall",
+      "domain": "newscatcherapi.com",
+      "description": "This is the complete story of how we benchmarked CatchAll against Exa Websets, Parallel AI FindAll, and OpenAI Deep Research using 35 real-world ...",
+      "position": 7
+    },
+    {
+      "title": "Web Search for Agents in 2026 - /dev/michael",
+      "url": "https://michaellivs.com/blog/web-search-for-agents-2026/",
+      "domain": "michaellivs.com",
+      "description": "A practical guide to every web search API available for agents in 2026 - pricing, data sources, benchmarks, SDKs, and what I picked for my ...",
+      "position": 8
+    }
+  ]
+}

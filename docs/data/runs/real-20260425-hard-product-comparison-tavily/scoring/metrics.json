@@ -1,0 +1,26 @@
+{
+  "provider": "tavily",
+  "taskId": "hard-product-comparison",
+  "toolCalls": 5,
+  "searchCalls": 4,
+  "fetchCalls": 1,
+  "failedCalls": 0,
+  "totalConnectMs": 786,
+  "totalCallLatencyMs": 7214,
+  "argumentTokens": 501,
+  "rawOutputTokens": 19530,
+  "normalizedEvidenceTokens": 11108,
+  "totalTrajectoryTokens": 22783,
+  "contract": {
+    "toolCount": 5,
+    "searchToolCount": 2,
+    "fetchToolCount": 1,
+    "descriptionTokens": 143,
+    "schemaTokens": 2277,
+    "totalMcpFootprintTokens": 2752,
+    "hasFreshnessControl": true,
+    "hasSourcePolicyControl": true,
+    "hasContentBudgetControl": true,
+    "hasUsageMetadata": false
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "urls": [
+    "https://github.com/firecrawl/firecrawl-docs/blob/main/mcp-server.mdx"
+  ],
+  "extract_depth": "basic",
+  "format": "markdown",
+  "include_images": false,
+  "query": "firecrawl_search search tool options categories country timeout ignoreInvalidURLs enterprise scrapeOptions metadata"
+}

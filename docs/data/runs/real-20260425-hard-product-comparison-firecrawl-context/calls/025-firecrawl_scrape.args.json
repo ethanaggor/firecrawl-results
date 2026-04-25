@@ -1,0 +1,9 @@
+{
+  "url": "https://exa.ai/blog/webcode",
+  "formats": [
+    "markdown"
+  ],
+  "onlyMainContent": true,
+  "removeBase64Images": true,
+  "maxAge": 0
+}

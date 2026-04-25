@@ -1,0 +1,10 @@
+{
+  "objective": "Find official Firecrawl docs or GitHub source for Search API fields categories, country, timeout, ignoreInvalidURLs, enterprise, and response metadata relevant to MCP search parity.",
+  "search_queries": [
+    "site:docs.firecrawl.dev search API categories country",
+    "site:docs.firecrawl.dev ignoreInvalidURLs timeout search",
+    "github firecrawl_search enterprise metadata"
+  ],
+  "session_id": "real20260425docsparityparallel000001",
+  "model_name": "gpt-5.5 xhigh"
+}

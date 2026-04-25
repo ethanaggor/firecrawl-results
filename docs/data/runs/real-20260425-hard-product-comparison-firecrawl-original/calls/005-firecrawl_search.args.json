@@ -1,0 +1,9 @@
+{
+  "query": "site:exa.ai Exa MCP search API evals WebCode agent benchmark SimpleQA MSMARCO",
+  "limit": 8,
+  "sources": [
+    {
+      "type": "web"
+    }
+  ]
+}

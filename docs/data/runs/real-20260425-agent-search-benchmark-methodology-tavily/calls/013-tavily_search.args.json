@@ -1,0 +1,9 @@
+{
+  "query": "site:github.com/tavily-ai/tavily-search-evals Document Relevance Benchmark QuotientAI SimpleQA classifier search providers",
+  "max_results": 5,
+  "search_depth": "advanced",
+  "include_domains": [
+    "github.com"
+  ],
+  "include_raw_content": true
+}

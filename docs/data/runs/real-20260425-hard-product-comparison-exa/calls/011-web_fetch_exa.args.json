@@ -1,0 +1,10 @@
+{
+  "urls": [
+    "https://docs.firecrawl.dev/mcp-server",
+    "https://docs.firecrawl.dev/features/search",
+    "https://docs.exa.ai/docs/reference/exa-mcp",
+    "https://docs.parallel.ai/integrations/mcp/search-mcp",
+    "https://docs.tavily.com/documentation/mcp"
+  ],
+  "maxCharacters": 7000
+}

@@ -1,0 +1,40 @@
+{
+  "runId": "real-20260425-hard-product-comparison-parallel",
+  "createdAt": "2026-04-25T05:14:16.641Z",
+  "provider": {
+    "id": "parallel",
+    "name": "Parallel Search remote MCP",
+    "transport": "streamable-http",
+    "url": "https://search.parallel.ai/mcp",
+    "headers": [
+      {
+        "name": "authorization",
+        "required": false,
+        "present": false
+      }
+    ],
+    "searchTools": [
+      "web_search"
+    ],
+    "fetchTools": [
+      "web_fetch"
+    ]
+  },
+  "task": {
+    "id": "hard-product-comparison",
+    "family": "multi-step-research",
+    "question": "For an agent trying to answer hard web questions, how do Firecrawl, Exa, Parallel, and Tavily differ in context shape, tool-call flow, and retrieval quality?",
+    "agentGoal": "Gather evidence from official docs and benchmark pages, then compare agent-facing search behavior. Multiple calls are expected.",
+    "expectedTerms": [
+      "MCP",
+      "search",
+      "agent"
+    ],
+    "expectedDomains": [
+      "docs.firecrawl.dev",
+      "exa.ai",
+      "parallel.ai",
+      "docs.tavily.com"
+    ]
+  }
+}

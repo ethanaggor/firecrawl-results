@@ -1,0 +1,144 @@
+{
+  "provider": "firecrawl-original",
+  "tool": "firecrawl_search",
+  "isError": false,
+  "rawText": "{\n  \"web\": [\n    {\n      \"url\": \"https://www.firecrawl.dev/alternatives/firecrawl-vs-tavily\",\n      \"title\": \"Firecrawl vs Tavily: Complete Comparison for AI Agents & ...\",\n      \"description\": \"Firecrawl prioritizes full-page content quality for ingestion. Tavily adds search ranking and citations for agent context. When it matters.\",\n      \"position\": 1\n    },\n    {\n      \"url\": \"https://docs.firecrawl.dev/mcp-server\",\n      \"title\": \"Firecrawl MCP Server\",\n      \"description\": \"A Model Context Protocol (MCP) server implementation that integrates Firecrawl for searching, scraping, and interacting with the web. Our MCP server is open- ...\",\n      \"position\": 2\n    },\n    {\n      \"url\": \"https://tavily.com/\",\n      \"title\": \"Tavily\",\n      \"description\": \"Tavily is the real‑time search engine for AI agents and RAG workflows — Fast and secure APIs for web search and content extraction.\",\n      \"position\": 3\n    },\n    {\n      \"url\": \"https://aimultiple.com/agentic-search\",\n      \"title\": \"Agentic Search in 2026: Benchmark 8 Search APIs for Agents\",\n      \"description\": \"We tested 8 search APIs, retrieving 5 results per query from each: Brave Search, Tavily, Exa, Firecrawl, SerpAPI, Perplexity, Parallel Search ( ...\",\n      \"position\": 4\n    },\n    {\n      \"url\": \"https://www.firecrawl.dev/blog/best-ai-search-engines-agents\",\n      \"title\": \"Best AI Search Engines for Agents and Workflows in 2026\",\n      \"description\": \"Not all AI search engines are built for agents. Here's a developer breakdown of the top options — Firecrawl, Exa, Tavily, Perplexity, ...\",\n      \"position\": 5\n    },\n    {\n      \"url\": \"https://github.com/firecrawl/firecrawl-mcp-server\",\n      \"title\": \"Official Firecrawl MCP Server - Adds powerful web ...\",\n      \"description\": \"A Model Context Protocol (MCP) server implementation that integrates with Firecrawl for searching, scraping, and interacting with the web. Big thanks to @ ...\",\n      \"position\": 6,\n      \"category\": \"github\"\n    },\n    {\n      \"url\": \"https://parallel.ai/benchmarks\",\n      \"title\": \"Parallel Quality Benchmarks\",\n      \"description\": \"We measure accuracy and overall cost, which includes LLM token costs and tool call costs. **Testing dates**. April 19-21, 2026.\",\n      \"position\": 7\n    },\n    {\n      \"url\": \"https://docs.tavily.com/documentation/agent-skills\",\n      \"title\": \"Tavily Agent Skills\",\n      \"description\": \"Official skills that define best practices, adding web search, extraction, crawling, and research to any AI coding agent.\",\n      \"position\": 8\n    },\n    {\n      \"url\": \"https://www.facebook.com/groups/698593531630485/posts/1270496654440167/\",\n      \"title\": \"MCP servers for web scraping and automation\",\n      \"description\": \"Here's the lineup in simple terms: Firecrawl MCP Server: Perfect for web scraping. It can crawl websites, search, and extract content at ...\",\n      \"position\": 9\n    },\n    {\n      \"url\": \"https://claudemarketplaces.com/mcp/category/search\",\n      \"title\": \"Search & Web Crawling MCP Servers — Exa, Tavily, Crawl4AI\",\n      \"description\": \"MCP servers for web search and crawling. Give Claude access to search engines, web crawlers, and content extraction tools like Exa, Tavily, and Crawl4AI.\",\n      \"position\": 10\n    }\n  ]\n}",
+  "parsed": {
+    "web": [
+      {
+        "url": "https://www.firecrawl.dev/alternatives/firecrawl-vs-tavily",
+        "title": "Firecrawl vs Tavily: Complete Comparison for AI Agents & ...",
+        "description": "Firecrawl prioritizes full-page content quality for ingestion. Tavily adds search ranking and citations for agent context. When it matters.",
+        "position": 1
+      },
+      {
+        "url": "https://docs.firecrawl.dev/mcp-server",
+        "title": "Firecrawl MCP Server",
+        "description": "A Model Context Protocol (MCP) server implementation that integrates Firecrawl for searching, scraping, and interacting with the web. Our MCP server is open- ...",
+        "position": 2
+      },
+      {
+        "url": "https://tavily.com/",
+        "title": "Tavily",
+        "description": "Tavily is the real‑time search engine for AI agents and RAG workflows — Fast and secure APIs for web search and content extraction.",
+        "position": 3
+      },
+      {
+        "url": "https://aimultiple.com/agentic-search",
+        "title": "Agentic Search in 2026: Benchmark 8 Search APIs for Agents",
+        "description": "We tested 8 search APIs, retrieving 5 results per query from each: Brave Search, Tavily, Exa, Firecrawl, SerpAPI, Perplexity, Parallel Search ( ...",
+        "position": 4
+      },
+      {
+        "url": "https://www.firecrawl.dev/blog/best-ai-search-engines-agents",
+        "title": "Best AI Search Engines for Agents and Workflows in 2026",
+        "description": "Not all AI search engines are built for agents. Here's a developer breakdown of the top options — Firecrawl, Exa, Tavily, Perplexity, ...",
+        "position": 5
+      },
+      {
+        "url": "https://github.com/firecrawl/firecrawl-mcp-server",
+        "title": "Official Firecrawl MCP Server - Adds powerful web ...",
+        "description": "A Model Context Protocol (MCP) server implementation that integrates with Firecrawl for searching, scraping, and interacting with the web. Big thanks to @ ...",
+        "position": 6,
+        "category": "github"
+      },
+      {
+        "url": "https://parallel.ai/benchmarks",
+        "title": "Parallel Quality Benchmarks",
+        "description": "We measure accuracy and overall cost, which includes LLM token costs and tool call costs. **Testing dates**. April 19-21, 2026.",
+        "position": 7
+      },
+      {
+        "url": "https://docs.tavily.com/documentation/agent-skills",
+        "title": "Tavily Agent Skills",
+        "description": "Official skills that define best practices, adding web search, extraction, crawling, and research to any AI coding agent.",
+        "position": 8
+      },
+      {
+        "url": "https://www.facebook.com/groups/698593531630485/posts/1270496654440167/",
+        "title": "MCP servers for web scraping and automation",
+        "description": "Here's the lineup in simple terms: Firecrawl MCP Server: Perfect for web scraping. It can crawl websites, search, and extract content at ...",
+        "position": 9
+      },
+      {
+        "url": "https://claudemarketplaces.com/mcp/category/search",
+        "title": "Search & Web Crawling MCP Servers — Exa, Tavily, Crawl4AI",
+        "description": "MCP servers for web search and crawling. Give Claude access to search engines, web crawlers, and content extraction tools like Exa, Tavily, and Crawl4AI.",
+        "position": 10
+      }
+    ]
+  },
+  "results": [
+    {
+      "title": "Firecrawl vs Tavily: Complete Comparison for AI Agents & ...",
+      "url": "https://www.firecrawl.dev/alternatives/firecrawl-vs-tavily",
+      "domain": "firecrawl.dev",
+      "description": "Firecrawl prioritizes full-page content quality for ingestion. Tavily adds search ranking and citations for agent context. When it matters.",
+      "position": 1
+    },
+    {
+      "title": "Firecrawl MCP Server",
+      "url": "https://docs.firecrawl.dev/mcp-server",
+      "domain": "docs.firecrawl.dev",
+      "description": "A Model Context Protocol (MCP) server implementation that integrates Firecrawl for searching, scraping, and interacting with the web. Our MCP server is open- ...",
+      "position": 2
+    },
+    {
+      "title": "Tavily",
+      "url": "https://tavily.com/",
+      "domain": "tavily.com",
+      "description": "Tavily is the real‑time search engine for AI agents and RAG workflows — Fast and secure APIs for web search and content extraction.",
+      "position": 3
+    },
+    {
+      "title": "Agentic Search in 2026: Benchmark 8 Search APIs for Agents",
+      "url": "https://aimultiple.com/agentic-search",
+      "domain": "aimultiple.com",
+      "description": "We tested 8 search APIs, retrieving 5 results per query from each: Brave Search, Tavily, Exa, Firecrawl, SerpAPI, Perplexity, Parallel Search ( ...",
+      "position": 4
+    },
+    {
+      "title": "Best AI Search Engines for Agents and Workflows in 2026",
+      "url": "https://www.firecrawl.dev/blog/best-ai-search-engines-agents",
+      "domain": "firecrawl.dev",
+      "description": "Not all AI search engines are built for agents. Here's a developer breakdown of the top options — Firecrawl, Exa, Tavily, Perplexity, ...",
+      "position": 5
+    },
+    {
+      "title": "Official Firecrawl MCP Server - Adds powerful web ...",
+      "url": "https://github.com/firecrawl/firecrawl-mcp-server",
+      "domain": "github.com",
+      "description": "A Model Context Protocol (MCP) server implementation that integrates with Firecrawl for searching, scraping, and interacting with the web. Big thanks to @ ...",
+      "category": "github",
+      "position": 6
+    },
+    {
+      "title": "Parallel Quality Benchmarks",
+      "url": "https://parallel.ai/benchmarks",
+      "domain": "parallel.ai",
+      "description": "We measure accuracy and overall cost, which includes LLM token costs and tool call costs. **Testing dates**. April 19-21, 2026.",
+      "position": 7
+    },
+    {
+      "title": "Tavily Agent Skills",
+      "url": "https://docs.tavily.com/documentation/agent-skills",
+      "domain": "docs.tavily.com",
+      "description": "Official skills that define best practices, adding web search, extraction, crawling, and research to any AI coding agent.",
+      "position": 8
+    },
+    {
+      "title": "MCP servers for web scraping and automation",
+      "url": "https://www.facebook.com/groups/698593531630485/posts/1270496654440167/",
+      "domain": "facebook.com",
+      "description": "Here's the lineup in simple terms: Firecrawl MCP Server: Perfect for web scraping. It can crawl websites, search, and extract content at ...",
+      "position": 9
+    },
+    {
+      "title": "Search & Web Crawling MCP Servers — Exa, Tavily, Crawl4AI",
+      "url": "https://claudemarketplaces.com/mcp/category/search",
+      "domain": "claudemarketplaces.com",
+      "description": "MCP servers for web search and crawling. Give Claude access to search engines, web crawlers, and content extraction tools like Exa, Tavily, and Crawl4AI.",
+      "position": 10
+    }
+  ]
+}

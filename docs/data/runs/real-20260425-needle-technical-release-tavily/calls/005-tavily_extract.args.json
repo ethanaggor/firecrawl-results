@@ -1,0 +1,11 @@
+{
+  "urls": [
+    "https://react.dev/blog/2025/10/01/react-19-2",
+    "https://react.dev/reference/react/Activity",
+    "https://react.dev/reference/react/useEffectEvent",
+    "https://react.dev/reference/react/cacheSignal"
+  ],
+  "extract_depth": "basic",
+  "format": "markdown",
+  "query": "React 19.2 release October 1 2025 Activity useEffectEvent cacheSignal API examples"
+}

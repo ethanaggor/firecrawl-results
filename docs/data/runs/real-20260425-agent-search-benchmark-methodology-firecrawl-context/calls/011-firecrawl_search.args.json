@@ -1,0 +1,18 @@
+{
+  "query": "Tavily docs search_depth basic advanced chunks best practices search",
+  "content": "chunks",
+  "maxResults": 5,
+  "maxCharsPerResult": 2200,
+  "maxCharsTotal": 9000,
+  "focus": "search_depth values, basic versus advanced, chunks, latency relevance content shape",
+  "sourcePolicy": {
+    "includeDomains": [
+      "docs.tavily.com"
+    ]
+  },
+  "sources": [
+    "web"
+  ],
+  "ignoreInvalidURLs": true,
+  "includeRawResults": false
+}

@@ -1,0 +1,123 @@
+{
+  "status": "complete",
+  "runId": "real-20260425-hard-product-comparison-firecrawl-original",
+  "generatedAt": "2026-04-25T05:22:18.204Z",
+  "manifest": {
+    "runId": "real-20260425-hard-product-comparison-firecrawl-original",
+    "createdAt": "2026-04-25T05:14:18.111Z",
+    "provider": {
+      "id": "firecrawl-original",
+      "name": "Firecrawl MCP upstream",
+      "transport": "stdio",
+      "cwd": "../firecrawl-mcp-server-upstream",
+      "command": "node",
+      "args": [
+        "dist/index.js"
+      ],
+      "env": [
+        {
+          "name": "FIRECRAWL_API_KEY",
+          "required": true,
+          "present": true
+        },
+        {
+          "name": "FIRECRAWL_API_URL",
+          "required": false,
+          "present": false
+        }
+      ],
+      "searchTools": [
+        "firecrawl_search"
+      ],
+      "fetchTools": [
+        "firecrawl_scrape"
+      ],
+      "cwdExists": true
+    },
+    "task": {
+      "id": "hard-product-comparison",
+      "family": "multi-step-research",
+      "question": "For an agent trying to answer hard web questions, how do Firecrawl, Exa, Parallel, and Tavily differ in context shape, tool-call flow, and retrieval quality?",
+      "agentGoal": "Gather evidence from official docs and benchmark pages, then compare agent-facing search behavior. Multiple calls are expected.",
+      "expectedTerms": [
+        "MCP",
+        "search",
+        "agent"
+      ],
+      "expectedDomains": [
+        "docs.firecrawl.dev",
+        "exa.ai",
+        "parallel.ai",
+        "docs.tavily.com"
+      ]
+    }
+  },
+  "metrics": {
+    "provider": "firecrawl-original",
+    "taskId": "hard-product-comparison",
+    "toolCalls": 20,
+    "searchCalls": 8,
+    "fetchCalls": 12,
+    "failedCalls": 0,
+    "totalConnectMs": 3805,
+    "totalCallLatencyMs": 16200,
+    "argumentTokens": 883,
+    "rawOutputTokens": 105075,
+    "normalizedEvidenceTokens": 2247,
+    "totalTrajectoryTokens": 117179,
+    "contract": {
+      "toolCount": 14,
+      "searchToolCount": 1,
+      "fetchToolCount": 2,
+      "descriptionTokens": 5082,
+      "schemaTokens": 5296,
+      "totalMcpFootprintTokens": 11221,
+      "hasFreshnessControl": true,
+      "hasSourcePolicyControl": true,
+      "hasContentBudgetControl": true,
+      "hasUsageMetadata": true
+    }
+  },
+  "semanticScore": {
+    "agentModel": "gpt-5.5 xhigh",
+    "provider": "firecrawl-original",
+    "taskId": "hard-product-comparison",
+    "success": true,
+    "answerSupportedByEvidence": true,
+    "retrievalQualityScore": 4.2,
+    "agentExperienceScore": 3.6,
+    "sourcePolicyAdherent": null,
+    "freshnessAdherent": null,
+    "callRationale": [
+      "Started with a broad search to observe Firecrawl-original's native search-result shape and discover candidate official pages.",
+      "Used targeted official-domain searches after the broad search mixed official and non-official results and missed Exa.",
+      "Scraped selected official docs and benchmark pages for evidence-rich context: Firecrawl MCP/Search docs, Exa MCP/API evals/WebCode pages, Parallel MCP/benchmark/free MCP pages, Tavily MCP/Search docs, and Tavily search-evals.",
+      "Avoided browser automation, curl, web search outside the MCP provider, and direct provider APIs."
+    ],
+    "strengths": [
+      "Successfully reached all expected domains and gathered official evidence for Firecrawl, Exa, Parallel, and Tavily.",
+      "firecrawl_search was easy to call and useful for candidate URL discovery.",
+      "firecrawl_scrape retrieved full-page markdown from docs, blogs, and GitHub pages, which made final claims supportable.",
+      "The provider exposes useful controls such as sources, tbs/filter/location fields, scrapeOptions, and enterprise modes."
+    ],
+    "weaknesses": [
+      "Search result context was shallow: mostly URL, title, description, and position, with no relevance score, dense excerpt, highlight, answer, or usage object in the visible search result.",
+      "Broad search mixed in non-official sources and did not find Exa, requiring targeted follow-up searches.",
+      "Scrape outputs were often large and included navigation/chrome, increasing context cost before synthesis.",
+      "The MCP tool surface is broad and costly to inspect: this run recorded 14 tools and 11221 MCP footprint tokens before evidence gathering."
+    ],
+    "notableFailures": [
+      "No harness/tool-call failures occurred.",
+      "Retrieval friction: the Parallel-targeted searches surfaced docs.parallel.ai/llms-full.txt rather than the canonical Search MCP page, so the canonical URL had to be scraped directly.",
+      "Retrieval friction: the initial broad search returned third-party/social/marketplace pages and required official-domain narrowing.",
+      "Quality limitation: Firecrawl-original search did not provide enough evidence-dense context to answer the comparison without many scrape calls."
+    ],
+    "confidence": 0.86
+  },
+  "artifacts": {
+    "answer": "scoring/final-answer.md",
+    "score": "scoring/agent-score.json",
+    "trace": "trace.jsonl",
+    "tools": "schemas/tools.json"
+  }
+}

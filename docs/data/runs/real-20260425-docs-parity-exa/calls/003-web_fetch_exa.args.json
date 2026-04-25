@@ -1,0 +1,8 @@
+{
+  "urls": [
+    "https://docs.firecrawl.dev/api-reference/endpoint/search",
+    "https://docs.firecrawl.dev/api-reference/v1-endpoint/search",
+    "https://github.com/firecrawl/firecrawl/blob/main/apps/api/src/controllers/v1/types.ts"
+  ],
+  "maxCharacters": 25000
+}

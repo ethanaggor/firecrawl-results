@@ -1,0 +1,36 @@
+{
+  "runId": "real-20260425-needle-technical-release-exa",
+  "createdAt": "2026-04-25T05:24:53.731Z",
+  "provider": {
+    "id": "exa",
+    "name": "Exa remote MCP",
+    "transport": "streamable-http",
+    "url": "https://mcp.exa.ai/mcp?tools=web_search_exa,web_fetch_exa,web_search_advanced_exa",
+    "headers": [
+      {
+        "name": "x-api-key",
+        "required": true,
+        "present": true
+      }
+    ],
+    "searchTools": [
+      "web_search_exa",
+      "web_search_advanced_exa"
+    ],
+    "fetchTools": [
+      "web_fetch_exa"
+    ]
+  },
+  "task": {
+    "id": "needle-technical-release",
+    "family": "hard-retrieval",
+    "question": "Find a recent TypeScript or JavaScript library release after August 2025 that introduced at least three concrete API changes and identify source-backed examples.",
+    "agentGoal": "This mirrors Exa WebCode-style coding-agent search. Prefer changelogs, release notes, and official docs.",
+    "expectedTerms": [
+      "release",
+      "API",
+      "TypeScript"
+    ],
+    "freshness": "year"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "query": "Firecrawl official docs Search API endpoint MCP search tool response fields full page content sources markdown options agent web search",
+  "numResults": 8,
+  "type": "auto",
+  "includeDomains": [
+    "docs.firecrawl.dev"
+  ],
+  "enableHighlights": true,
+  "highlightsMaxCharacters": 1200,
+  "highlightsQuery": "Search API firecrawl_search MCP response data sources markdown scrapeOptions full page content",
+  "textMaxCharacters": 2500,
+  "maxAgeHours": 0
+}

@@ -1,0 +1,6 @@
+{
+  "url": "https://parallel.ai",
+  "search": "Search MCP benchmark WISER agents web_search web_fetch",
+  "limit": 12,
+  "ignoreQueryParameters": true
+}

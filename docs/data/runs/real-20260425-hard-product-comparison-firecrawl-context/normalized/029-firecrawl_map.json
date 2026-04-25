@@ -1,0 +1,154 @@
+{
+  "provider": "firecrawl-context",
+  "tool": "firecrawl_map",
+  "isError": false,
+  "rawText": "{\n  \"links\": [\n    {\n      \"url\": \"https://docs.parallel.ai/llms-full.txt\",\n      \"title\": \"llms-full.txt - Parallel Documentation\",\n      \"description\": \"The Search MCP comprises two tools: * **`web_search`** — General-purpose web search inside an agent's reasoning loop. Use when the agent needs current ...\"\n    },\n    {\n      \"url\": \"https://docs.parallel.ai/api-reference/monitor/delete-monitor\",\n      \"title\": \"Delete Monitor - Parallel\",\n      \"description\": \"Delete a monitor. Deletes a monitor, stopping all future executions. Deleted monitors can no longer be updated or retrieved.\"\n    },\n    {\n      \"url\": \"https://docs.parallel.ai/task-api/group-api\",\n      \"title\": \"Task Group - Parallel\",\n      \"description\": \"Batch process Tasks at scale with the Parallel Task Group API\"\n    },\n    {\n      \"url\": \"https://docs.parallel.ai/api-reference/tasks/retrieve-task-group\",\n      \"title\": \"Retrieve Task Group - Parallel\",\n      \"description\": \"Retrieves aggregated status across runs in a TaskGroup.\"\n    },\n    {\n      \"url\": \"https://docs.parallel.ai/api-reference/tasks/stream-task-run-events\",\n      \"title\": \"Stream Task Run Events - Parallel\",\n      \"description\": \"Streams events for a task run. Returns a stream of events showing progress updates and state changes for the task run. For task runs that did not have enable...\"\n    },\n    {\n      \"url\": \"https://docs.parallel.ai/task-api/webhooks\",\n      \"title\": \"Webhooks - Parallel\",\n      \"description\": \"Webhook events for task run completions\"\n    },\n    {\n      \"url\": \"https://docs.parallel.ai/integrations/openai-tool-calling\",\n      \"title\": \"OpenAI Tool Calling - Parallel\",\n      \"description\": \"Use Parallel Search as a tool with OpenAI's function calling to give GPT models real-time web access\"\n    },\n    {\n      \"url\": \"https://docs.parallel.ai/getting-started/pricing\",\n      \"title\": \"Pricing - Parallel\"\n    },\n    {\n      \"url\": \"https://docs.parallel.ai/findall-api/findall-quickstart\",\n      \"title\": \"FindAll API Quickstart - Parallel\",\n      \"description\": \"Discover and enrich entities from the web using natural language queries with the FindAll API\"\n    },\n    {\n      \"url\": \"https://docs.parallel.ai/findall-api/findall-migration-guide\",\n      \"title\": \"FindAll Migration Guide - Parallel\",\n      \"description\": \"Guide for migrating from V0 to V1 FindAll API\"\n    },\n    {\n      \"url\": \"https://docs.parallel.ai/monitor-api/monitor-webhooks\",\n      \"title\": \"Webhooks - Parallel\",\n      \"description\": \"Receive real-time notifications for Monitor executions and detected events using webhooks\"\n    },\n    {\n      \"url\": \"https://docs.parallel.ai/api-reference/legacy/tasks/stream-task-run-events\",\n      \"title\": \"Stream Task Run Events - Parallel\",\n      \"description\": \"Streams events for a task run. Returns a stream of events showing progress updates and state changes for the task run. For task runs that did not have enable...\"\n    }\n  ]\n}",
+  "parsed": {
+    "links": [
+      {
+        "url": "https://docs.parallel.ai/llms-full.txt",
+        "title": "llms-full.txt - Parallel Documentation",
+        "description": "The Search MCP comprises two tools: * **`web_search`** — General-purpose web search inside an agent's reasoning loop. Use when the agent needs current ..."
+      },
+      {
+        "url": "https://docs.parallel.ai/api-reference/monitor/delete-monitor",
+        "title": "Delete Monitor - Parallel",
+        "description": "Delete a monitor. Deletes a monitor, stopping all future executions. Deleted monitors can no longer be updated or retrieved."
+      },
+      {
+        "url": "https://docs.parallel.ai/task-api/group-api",
+        "title": "Task Group - Parallel",
+        "description": "Batch process Tasks at scale with the Parallel Task Group API"
+      },
+      {
+        "url": "https://docs.parallel.ai/api-reference/tasks/retrieve-task-group",
+        "title": "Retrieve Task Group - Parallel",
+        "description": "Retrieves aggregated status across runs in a TaskGroup."
+      },
+      {
+        "url": "https://docs.parallel.ai/api-reference/tasks/stream-task-run-events",
+        "title": "Stream Task Run Events - Parallel",
+        "description": "Streams events for a task run. Returns a stream of events showing progress updates and state changes for the task run. For task runs that did not have enable..."
+      },
+      {
+        "url": "https://docs.parallel.ai/task-api/webhooks",
+        "title": "Webhooks - Parallel",
+        "description": "Webhook events for task run completions"
+      },
+      {
+        "url": "https://docs.parallel.ai/integrations/openai-tool-calling",
+        "title": "OpenAI Tool Calling - Parallel",
+        "description": "Use Parallel Search as a tool with OpenAI's function calling to give GPT models real-time web access"
+      },
+      {
+        "url": "https://docs.parallel.ai/getting-started/pricing",
+        "title": "Pricing - Parallel"
+      },
+      {
+        "url": "https://docs.parallel.ai/findall-api/findall-quickstart",
+        "title": "FindAll API Quickstart - Parallel",
+        "description": "Discover and enrich entities from the web using natural language queries with the FindAll API"
+      },
+      {
+        "url": "https://docs.parallel.ai/findall-api/findall-migration-guide",
+        "title": "FindAll Migration Guide - Parallel",
+        "description": "Guide for migrating from V0 to V1 FindAll API"
+      },
+      {
+        "url": "https://docs.parallel.ai/monitor-api/monitor-webhooks",
+        "title": "Webhooks - Parallel",
+        "description": "Receive real-time notifications for Monitor executions and detected events using webhooks"
+      },
+      {
+        "url": "https://docs.parallel.ai/api-reference/legacy/tasks/stream-task-run-events",
+        "title": "Stream Task Run Events - Parallel",
+        "description": "Streams events for a task run. Returns a stream of events showing progress updates and state changes for the task run. For task runs that did not have enable..."
+      }
+    ]
+  },
+  "results": [
+    {
+      "title": "llms-full.txt - Parallel Documentation",
+      "url": "https://docs.parallel.ai/llms-full.txt",
+      "domain": "docs.parallel.ai",
+      "description": "The Search MCP comprises two tools: * **`web_search`** — General-purpose web search inside an agent's reasoning loop. Use when the agent needs current ...",
+      "position": 1
+    },
+    {
+      "title": "Delete Monitor - Parallel",
+      "url": "https://docs.parallel.ai/api-reference/monitor/delete-monitor",
+      "domain": "docs.parallel.ai",
+      "description": "Delete a monitor. Deletes a monitor, stopping all future executions. Deleted monitors can no longer be updated or retrieved.",
+      "position": 2
+    },
+    {
+      "title": "Task Group - Parallel",
+      "url": "https://docs.parallel.ai/task-api/group-api",
+      "domain": "docs.parallel.ai",
+      "description": "Batch process Tasks at scale with the Parallel Task Group API",
+      "position": 3
+    },
+    {
+      "title": "Retrieve Task Group - Parallel",
+      "url": "https://docs.parallel.ai/api-reference/tasks/retrieve-task-group",
+      "domain": "docs.parallel.ai",
+      "description": "Retrieves aggregated status across runs in a TaskGroup.",
+      "position": 4
+    },
+    {
+      "title": "Stream Task Run Events - Parallel",
+      "url": "https://docs.parallel.ai/api-reference/tasks/stream-task-run-events",
+      "domain": "docs.parallel.ai",
+      "description": "Streams events for a task run. Returns a stream of events showing progress updates and state changes for the task run. For task runs that did not have enable...",
+      "position": 5
+    },
+    {
+      "title": "Webhooks - Parallel",
+      "url": "https://docs.parallel.ai/task-api/webhooks",
+      "domain": "docs.parallel.ai",
+      "description": "Webhook events for task run completions",
+      "position": 6
+    },
+    {
+      "title": "OpenAI Tool Calling - Parallel",
+      "url": "https://docs.parallel.ai/integrations/openai-tool-calling",
+      "domain": "docs.parallel.ai",
+      "description": "Use Parallel Search as a tool with OpenAI's function calling to give GPT models real-time web access",
+      "position": 7
+    },
+    {
+      "title": "Pricing - Parallel",
+      "url": "https://docs.parallel.ai/getting-started/pricing",
+      "domain": "docs.parallel.ai",
+      "position": 8
+    },
+    {
+      "title": "FindAll API Quickstart - Parallel",
+      "url": "https://docs.parallel.ai/findall-api/findall-quickstart",
+      "domain": "docs.parallel.ai",
+      "description": "Discover and enrich entities from the web using natural language queries with the FindAll API",
+      "position": 9
+    },
+    {
+      "title": "FindAll Migration Guide - Parallel",
+      "url": "https://docs.parallel.ai/findall-api/findall-migration-guide",
+      "domain": "docs.parallel.ai",
+      "description": "Guide for migrating from V0 to V1 FindAll API",
+      "position": 10
+    },
+    {
+      "title": "Webhooks - Parallel",
+      "url": "https://docs.parallel.ai/monitor-api/monitor-webhooks",
+      "domain": "docs.parallel.ai",
+      "description": "Receive real-time notifications for Monitor executions and detected events using webhooks",
+      "position": 11
+    },
+    {
+      "title": "Stream Task Run Events - Parallel",
+      "url": "https://docs.parallel.ai/api-reference/legacy/tasks/stream-task-run-events",
+      "domain": "docs.parallel.ai",
+      "description": "Streams events for a task run. Returns a stream of events showing progress updates and state changes for the task run. For task runs that did not have enable...",
+      "position": 12
+    }
+  ]
+}

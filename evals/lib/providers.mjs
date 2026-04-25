@@ -2,7 +2,7 @@ import { readFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { fromEvals, fromRepo, repoRoot } from './paths.mjs';
-import { optionalEnv, requireEnv, redact } from './env.mjs';
+import { optionalEnv, requireEnv } from './env.mjs';
 
 export const providerIds = [
   'firecrawl-original',
@@ -75,7 +75,6 @@ export function sanitizeProvider(provider) {
       name: item.name,
       required: item.required,
       present: Boolean(process.env[item.name]),
-      sample: redact(process.env[item.name]),
     }));
   }
 
@@ -91,7 +90,6 @@ export function sanitizeProvider(provider) {
       name: item.name,
       required: item.required,
       present: Boolean(process.env[item.env]),
-      sample: redact(process.env[item.env]),
     }));
   }
 

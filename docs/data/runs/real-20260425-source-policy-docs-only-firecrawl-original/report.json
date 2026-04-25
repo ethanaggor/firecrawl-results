@@ -1,0 +1,126 @@
+{
+  "status": "complete",
+  "runId": "real-20260425-source-policy-docs-only-firecrawl-original",
+  "generatedAt": "2026-04-25T05:11:31.437Z",
+  "manifest": {
+    "runId": "real-20260425-source-policy-docs-only-firecrawl-original",
+    "createdAt": "2026-04-25T05:09:20.769Z",
+    "provider": {
+      "id": "firecrawl-original",
+      "name": "Firecrawl MCP upstream",
+      "transport": "stdio",
+      "cwd": "../firecrawl-mcp-server-upstream",
+      "command": "node",
+      "args": [
+        "dist/index.js"
+      ],
+      "env": [
+        {
+          "name": "FIRECRAWL_API_KEY",
+          "required": true,
+          "present": true
+        },
+        {
+          "name": "FIRECRAWL_API_URL",
+          "required": false,
+          "present": false
+        }
+      ],
+      "searchTools": [
+        "firecrawl_search"
+      ],
+      "fetchTools": [
+        "firecrawl_scrape"
+      ],
+      "cwdExists": true
+    },
+    "task": {
+      "id": "source-policy-docs-only",
+      "family": "source-policy",
+      "question": "Using only official Firecrawl docs, what does the Search API say about categories, country, timeout, and ignoreInvalidURLs?",
+      "agentGoal": "Constrain to docs.firecrawl.dev and produce evidence only from that domain.",
+      "expectedTerms": [
+        "categories",
+        "country",
+        "timeout",
+        "ignoreInvalidURLs"
+      ],
+      "expectedDomains": [
+        "docs.firecrawl.dev"
+      ],
+      "sourcePolicy": {
+        "includeDomains": [
+          "docs.firecrawl.dev"
+        ]
+      }
+    }
+  },
+  "metrics": {
+    "provider": "firecrawl-original",
+    "taskId": "source-policy-docs-only",
+    "toolCalls": 2,
+    "searchCalls": 1,
+    "fetchCalls": 1,
+    "failedCalls": 0,
+    "totalConnectMs": 422,
+    "totalCallLatencyMs": 1299,
+    "argumentTokens": 85,
+    "rawOutputTokens": 7851,
+    "normalizedEvidenceTokens": 342,
+    "totalTrajectoryTokens": 19157,
+    "contract": {
+      "toolCount": 14,
+      "searchToolCount": 1,
+      "fetchToolCount": 2,
+      "descriptionTokens": 5082,
+      "schemaTokens": 5296,
+      "totalMcpFootprintTokens": 11221,
+      "hasFreshnessControl": true,
+      "hasSourcePolicyControl": true,
+      "hasContentBudgetControl": true,
+      "hasUsageMetadata": true
+    }
+  },
+  "semanticScore": {
+    "agentModel": "gpt-5.5 xhigh",
+    "provider": "firecrawl-original",
+    "taskId": "source-policy-docs-only",
+    "success": true,
+    "answerSupportedByEvidence": true,
+    "retrievalQualityScore": 4.8,
+    "agentExperienceScore": 4,
+    "sourcePolicyAdherent": true,
+    "freshnessAdherent": null,
+    "callRationale": [
+      "Inspected the recorded MCP tool schema and selected firecrawl_search because the task required search over official docs and the search tool documents query operators including site:.",
+      "Used query-level source policy constraint site:docs.firecrawl.dev because firecrawl_search did not expose a direct includeDomains/source allowlist field.",
+      "Searched first without scrapeOptions, following the tool guidance, then scraped only the canonical Search endpoint docs page because the first result was the relevant API reference and more field detail was needed."
+    ],
+    "strengths": [
+      "All provider evidence came from docs.firecrawl.dev.",
+      "The first search result was the canonical Search API endpoint page.",
+      "The scraped endpoint page directly covered categories and country, and the endpoint example plus search snippet covered timeout and ignoreInvalidURLs."
+    ],
+    "weaknesses": [
+      "Source policy control was indirect through the site: query operator rather than a first-class includeDomains argument.",
+      "The scrape response included a large amount of navigation and duplicated endpoint content, and the normalized scrape evidence did not retain the useful markdown details."
+    ],
+    "notableFailures": [
+      "One harness call failed before provider execution because the argument JSON was initially written under the wrong repository path; the misplaced artifact was removed with trash and the file was recreated under /Users/ethanaggor/firecrawl-results/evals/work/real-20260425-source-policy-docs-only-firecrawl-original/."
+    ],
+    "confidence": 0.9,
+    "toolsUsed": [
+      "firecrawl_search",
+      "firecrawl_scrape"
+    ],
+    "keyUrls": [
+      "https://docs.firecrawl.dev/api-reference/endpoint/search"
+    ]
+  },
+  "artifacts": {
+    "answer": "scoring/final-answer.md",
+    "score": "scoring/agent-score.json",
+    "trace": "trace.jsonl",
+    "tools": "schemas/tools.json"
+  }
+}

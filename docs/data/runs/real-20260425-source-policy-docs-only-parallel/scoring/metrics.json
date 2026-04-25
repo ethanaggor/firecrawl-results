@@ -1,0 +1,26 @@
+{
+  "provider": "parallel",
+  "taskId": "source-policy-docs-only",
+  "toolCalls": 2,
+  "searchCalls": 1,
+  "fetchCalls": 1,
+  "failedCalls": 0,
+  "totalConnectMs": 351,
+  "totalCallLatencyMs": 3247,
+  "argumentTokens": 242,
+  "rawOutputTokens": 9354,
+  "normalizedEvidenceTokens": 198,
+  "totalTrajectoryTokens": 13396,
+  "contract": {
+    "toolCount": 2,
+    "searchToolCount": 1,
+    "fetchToolCount": 1,
+    "descriptionTokens": 63,
+    "schemaTokens": 1034,
+    "totalMcpFootprintTokens": 3800,
+    "hasFreshnessControl": true,
+    "hasSourcePolicyControl": false,
+    "hasContentBudgetControl": true,
+    "hasUsageMetadata": true
+  }
+}

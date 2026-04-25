@@ -1,0 +1,8 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\n  \"web\": [\n    {\n      \"url\": \"https://docs.tavily.com/documentation/mcp\",\n      \"title\": \"Tavily MCP Server\",\n      \"description\": \"Developed by Anthropic, the Model Context Protocol (MCP) enables AI assistants like Claude to seamlessly integrate with Tavily's advanced search and data ...\",\n      \"position\": 1\n    },\n    {\n      \"url\": \"https://docs.tavily.com/documentation/integrations/anthropic\",\n      \"title\": \"Anthropic - Tavily Docs\",\n      \"description\": \"Integrate Tavily with Anthropic Claude to enhance your AI applications with real-time web search capabilities.\",\n      \"position\": 2\n    }\n  ]\n}"
+    }
+  ]
+}

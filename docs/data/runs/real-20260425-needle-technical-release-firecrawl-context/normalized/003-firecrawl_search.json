@@ -1,0 +1,142 @@
+{
+  "provider": "firecrawl-context",
+  "tool": "firecrawl_search",
+  "isError": false,
+  "rawText": "{\n  \"query\": \"React 19.2 October 2025 release notes API useEffectEvent Activity cacheSignal\",\n  \"executedQuery\": \"React 19.2 October 2025 release notes API useEffectEvent Activity cacheSignal (site:react.dev OR site:github.com)\",\n  \"content\": \"chunks\",\n  \"constraints\": {\n    \"maxResults\": 6,\n    \"maxCharsPerResult\": 2500,\n    \"maxCharsTotal\": 12000,\n    \"focus\": \"React 19.2 release date and concrete API changes with example code for Activity, useEffectEvent, cacheSignal, or related APIs\",\n    \"freshness\": {\n      \"startDate\": \"2025-09-01\",\n      \"sortByDate\": true\n    },\n    \"sourcePolicy\": {\n      \"includeDomains\": [\n        \"react.dev\",\n        \"github.com\"\n      ]\n    }\n  },\n  \"results\": [\n    {\n      \"title\": \"React 19.2\",\n      \"url\": \"https://react.dev/blog/2025/10/01/react-19-2\",\n      \"description\": \"In this post, we'll give an overview of the new features in React 19.2, and highlight some notable changes. New React Features. <Activity />; useEffectEvent ...\",\n      \"position\": 1,\n      \"source\": \"web\",\n      \"metadata\": {\n        \"sourceURL\": \"https://react.dev/blog/2025/10/01/react-19-2\",\n        \"finalURL\": \"https://react.dev/blog/2025/10/01/react-19-2\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"- [New React Features](https://react.dev/blog/2025/10/01/react-19-2#new-react-features)\\n  - [`<Activity />`](https://react.dev/blog/2025/10/01/react-19-2#activity)\\n  - [`useEffectEvent`](https://react.dev/blog/2025/10/01/react-19-2#use-effect-event)\\n  - [`cacheSignal`](https://react.dev/blog/2025/10/01/react-19-2#cache-signal)\\n  - [Performance Tracks](https://react.dev/blog/2025/10/01/react-19-2#performance-tracks)\\n- [New React DOM Features](https://react.dev/blog/2025/10/01/react-19-2#new-react-dom-features)\\n  - [Partial Pre-rendering](https://react.dev/blog/2025/10/01/react-19-2#partial-pre-rendering)\\n- [Notable Changes](https://react.dev/blog/2025/10/01/react-19-2#notable-changes)\\n  - [Batching Suspense Boundaries for SSR](https://react.dev/blog/2025/10/01/react-19-2#batching-suspense-boundaries-for-ssr)\\n  - [SSR: Web S\",\n          \"charCount\": 834\n        },\n        {\n          \"text\": \"The problem with the code above is that a change to any values used inside such an “event” will cause the surrounding Effect to re-run. For example, changing the `theme` will cause the chat room to reconnect. This makes sense for values related to the Effect logic itself, like `roomId`, but it doesn’t make sense for `theme`.\",\n          \"charCount\": 326\n        },\n        {\n          \"text\": \"We also show information such as when an update is blocked waiting for a different priority, or when React is waiting for paint before continuing. The Scheduler track helps you understand how React splits your code into different priorities, and the order it completed the work.\",\n          \"charCount\": 278\n        }\n      ]\n    },\n    {\n      \"title\": \"react/CHANGELOG.md at main · facebook/react\",\n      \"url\": \"https://github.com/facebook/react/blob/main/CHANGELOG.md\",\n      \"description\": \"19.2.0 (October 1st, 2025). Below is a list of all new features, APIs, and bug fixes. Read the React 19.2 release post for more information. New React Features.\",\n      \"position\": 2,\n      \"source\": \"web\",\n      \"category\": \"github\",\n      \"metadata\": {\n        \"sourceURL\": \"https://github.com/facebook/react/blob/main/CHANGELOG.md\",\n        \"finalURL\": \"https://github.com/facebook/react/blob/main/CHANGELOG.md\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"- `useId` is a new hook for generating unique IDs on both the client and server, while avoiding hydration mismatches. It is primarily useful for component libraries integrating with accessibility APIs that require unique IDs. This solves an issue that already exists in React 17 and below, but it’s even more important in React 18 because of how the new streaming server renderer delivers HTML out-of-order.\\n- `startTransition` and `useTransition` let you mark some state updates as not urgent. Other state updates are considered urgent by default. React will allow urgent state updates (for example, updating a text input) to interrupt non-urgent state updates (for example, rendering a list of search results).\\n- `useDeferredValue` lets you defer re-rendering a non-urgent part of the tree. It is similar to debouncing, but has a fe\",\n          \"charCount\": 834\n        },\n        {\n          \"text\": \"- Delegate events to roots instead of `document`. ( [@trueadm](https://github.com/trueadm) in [#18195](https://github.com/facebook/react/pull/18195) and [others](https://github.com/facebook/react/pulls?q=is%3Apr+author%3Atrueadm+modern+event+is%3Amerged))\\n- Clean up all effects before running any next effects. ( [@bvaughn](https://github.com/bvaughn) in [#17947](https://github.com/facebook/react/pull/17947))\\n- Run `useEffect` cleanup functions asynchronously. ( [@bvaughn](https://github.com/bvaughn) in [#17925](https://github.com/facebook/react/pull/17925))\\n- Use browser `focusin` and `focusout` for `onFocus` and `onBlur`. ( [@trueadm](https://github.com/trueadm) in [#19186](https://github.com/facebook/react/pull/19186))\\n- Make all `Capture` events use the browser capture phase. ( [@trueadm](https://github.com/trueadm) in \",\n          \"charCount\": 834\n        },\n        {\n          \"text\": \"- Revamp the priority batching heuristics. ( [@acdlite](https://github.com/acdlite) in [#18796](https://github.com/facebook/react/pull/18796))\\n- Add the `unstable_` prefix before the experimental APIs. ( [@acdlite](https://github.com/acdlite) in [#18825](https://github.com/facebook/react/pull/18825))\\n- Remove `unstable_discreteUpdates` and `unstable_flushDiscreteUpdates`. ( [@trueadm](https://github.com/trueadm) in [#18825](https://github.com/facebook/react/pull/18825))\\n- Remove the `timeoutMs` argument. ( [@acdlite](https://github.com/acdlite) in [#19703](https://github.com/facebook/react/pull/19703))\\n- Disable `<div hidden />` prerendering in favor of a different future API. ( [@acdlite](https://github.com/acdlite) in [#18917](https://github.com/facebook/react/pull/18917))\\n- Add `unstable_expectedLoadTime` to Suspense \",\n          \"charCount\": 832\n        }\n      ]\n    }\n  ],\n  \"searchIds\": [\n    \"019dc319-dac0-75ba-9cbf-59a19d00232c\"\n  ],\n  \"usage\": {\n    \"resultCount\": 2,\n    \"charsReturned\": 3938,\n    \"creditsUsed\": 4,\n    \"rawResultCount\": {\n      \"web\": 2,\n      \"news\": 0,\n      \"images\": 0\n    }\n  }\n}",
+  "parsed": {
+    "query": "React 19.2 October 2025 release notes API useEffectEvent Activity cacheSignal",
+    "executedQuery": "React 19.2 October 2025 release notes API useEffectEvent Activity cacheSignal (site:react.dev OR site:github.com)",
+    "content": "chunks",
+    "constraints": {
+      "maxResults": 6,
+      "maxCharsPerResult": 2500,
+      "maxCharsTotal": 12000,
+      "focus": "React 19.2 release date and concrete API changes with example code for Activity, useEffectEvent, cacheSignal, or related APIs",
+      "freshness": {
+        "startDate": "2025-09-01",
+        "sortByDate": true
+      },
+      "sourcePolicy": {
+        "includeDomains": [
+          "react.dev",
+          "github.com"
+        ]
+      }
+    },
+    "results": [
+      {
+        "title": "React 19.2",
+        "url": "https://react.dev/blog/2025/10/01/react-19-2",
+        "description": "In this post, we'll give an overview of the new features in React 19.2, and highlight some notable changes. New React Features. <Activity />; useEffectEvent ...",
+        "position": 1,
+        "source": "web",
+        "metadata": {
+          "sourceURL": "https://react.dev/blog/2025/10/01/react-19-2",
+          "finalURL": "https://react.dev/blog/2025/10/01/react-19-2",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "- [New React Features](https://react.dev/blog/2025/10/01/react-19-2#new-react-features)\n  - [`<Activity />`](https://react.dev/blog/2025/10/01/react-19-2#activity)\n  - [`useEffectEvent`](https://react.dev/blog/2025/10/01/react-19-2#use-effect-event)\n  - [`cacheSignal`](https://react.dev/blog/2025/10/01/react-19-2#cache-signal)\n  - [Performance Tracks](https://react.dev/blog/2025/10/01/react-19-2#performance-tracks)\n- [New React DOM Features](https://react.dev/blog/2025/10/01/react-19-2#new-react-dom-features)\n  - [Partial Pre-rendering](https://react.dev/blog/2025/10/01/react-19-2#partial-pre-rendering)\n- [Notable Changes](https://react.dev/blog/2025/10/01/react-19-2#notable-changes)\n  - [Batching Suspense Boundaries for SSR](https://react.dev/blog/2025/10/01/react-19-2#batching-suspense-boundaries-for-ssr)\n  - [SSR: Web S",
+            "charCount": 834
+          },
+          {
+            "text": "The problem with the code above is that a change to any values used inside such an “event” will cause the surrounding Effect to re-run. For example, changing the `theme` will cause the chat room to reconnect. This makes sense for values related to the Effect logic itself, like `roomId`, but it doesn’t make sense for `theme`.",
+            "charCount": 326
+          },
+          {
+            "text": "We also show information such as when an update is blocked waiting for a different priority, or when React is waiting for paint before continuing. The Scheduler track helps you understand how React splits your code into different priorities, and the order it completed the work.",
+            "charCount": 278
+          }
+        ]
+      },
+      {
+        "title": "react/CHANGELOG.md at main · facebook/react",
+        "url": "https://github.com/facebook/react/blob/main/CHANGELOG.md",
+        "description": "19.2.0 (October 1st, 2025). Below is a list of all new features, APIs, and bug fixes. Read the React 19.2 release post for more information. New React Features.",
+        "position": 2,
+        "source": "web",
+        "category": "github",
+        "metadata": {
+          "sourceURL": "https://github.com/facebook/react/blob/main/CHANGELOG.md",
+          "finalURL": "https://github.com/facebook/react/blob/main/CHANGELOG.md",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "- `useId` is a new hook for generating unique IDs on both the client and server, while avoiding hydration mismatches. It is primarily useful for component libraries integrating with accessibility APIs that require unique IDs. This solves an issue that already exists in React 17 and below, but it’s even more important in React 18 because of how the new streaming server renderer delivers HTML out-of-order.\n- `startTransition` and `useTransition` let you mark some state updates as not urgent. Other state updates are considered urgent by default. React will allow urgent state updates (for example, updating a text input) to interrupt non-urgent state updates (for example, rendering a list of search results).\n- `useDeferredValue` lets you defer re-rendering a non-urgent part of the tree. It is similar to debouncing, but has a fe",
+            "charCount": 834
+          },
+          {
+            "text": "- Delegate events to roots instead of `document`. ( [@trueadm](https://github.com/trueadm) in [#18195](https://github.com/facebook/react/pull/18195) and [others](https://github.com/facebook/react/pulls?q=is%3Apr+author%3Atrueadm+modern+event+is%3Amerged))\n- Clean up all effects before running any next effects. ( [@bvaughn](https://github.com/bvaughn) in [#17947](https://github.com/facebook/react/pull/17947))\n- Run `useEffect` cleanup functions asynchronously. ( [@bvaughn](https://github.com/bvaughn) in [#17925](https://github.com/facebook/react/pull/17925))\n- Use browser `focusin` and `focusout` for `onFocus` and `onBlur`. ( [@trueadm](https://github.com/trueadm) in [#19186](https://github.com/facebook/react/pull/19186))\n- Make all `Capture` events use the browser capture phase. ( [@trueadm](https://github.com/trueadm) in ",
+            "charCount": 834
+          },
+          {
+            "text": "- Revamp the priority batching heuristics. ( [@acdlite](https://github.com/acdlite) in [#18796](https://github.com/facebook/react/pull/18796))\n- Add the `unstable_` prefix before the experimental APIs. ( [@acdlite](https://github.com/acdlite) in [#18825](https://github.com/facebook/react/pull/18825))\n- Remove `unstable_discreteUpdates` and `unstable_flushDiscreteUpdates`. ( [@trueadm](https://github.com/trueadm) in [#18825](https://github.com/facebook/react/pull/18825))\n- Remove the `timeoutMs` argument. ( [@acdlite](https://github.com/acdlite) in [#19703](https://github.com/facebook/react/pull/19703))\n- Disable `<div hidden />` prerendering in favor of a different future API. ( [@acdlite](https://github.com/acdlite) in [#18917](https://github.com/facebook/react/pull/18917))\n- Add `unstable_expectedLoadTime` to Suspense ",
+            "charCount": 832
+          }
+        ]
+      }
+    ],
+    "searchIds": [
+      "019dc319-dac0-75ba-9cbf-59a19d00232c"
+    ],
+    "usage": {
+      "resultCount": 2,
+      "charsReturned": 3938,
+      "creditsUsed": 4,
+      "rawResultCount": {
+        "web": 2,
+        "news": 0,
+        "images": 0
+      }
+    }
+  },
+  "results": [
+    {
+      "title": "React 19.2",
+      "url": "https://react.dev/blog/2025/10/01/react-19-2",
+      "domain": "react.dev",
+      "description": "In this post, we'll give an overview of the new features in React 19.2, and highlight some notable changes. New React Features. <Activity />; useEffectEvent ...",
+      "chunks": [
+        {
+          "text": "- [New React Features](https://react.dev/blog/2025/10/01/react-19-2#new-react-features)\n  - [`<Activity />`](https://react.dev/blog/2025/10/01/react-19-2#activity)\n  - [`useEffectEvent`](https://react.dev/blog/2025/10/01/react-19-2#use-effect-event)\n  - [`cacheSignal`](https://react.dev/blog/2025/10/01/react-19-2#cache-signal)\n  - [Performance Tracks](https://react.dev/blog/2025/10/01/react-19-2#performance-tracks)\n- [New React DOM Features](https://react.dev/blog/2025/10/01/react-19-2#new-react-dom-features)\n  - [Partial Pre-rendering](https://react.dev/blog/2025/10/01/react-19-2#partial-pre-rendering)\n- [Notable Changes](https://react.dev/blog/2025/10/01/react-19-2#notable-changes)\n  - [Batching Suspense Boundaries for SSR](https://react.dev/blog/2025/10/01/react-19-2#batching-suspense-boundaries-for-ssr)\n  - [SSR: Web S",
+          "charCount": 834
+        },
+        {
+          "text": "The problem with the code above is that a change to any values used inside such an “event” will cause the surrounding Effect to re-run. For example, changing the `theme` will cause the chat room to reconnect. This makes sense for values related to the Effect logic itself, like `roomId`, but it doesn’t make sense for `theme`.",
+          "charCount": 326
+        },
+        {
+          "text": "We also show information such as when an update is blocked waiting for a different priority, or when React is waiting for paint before continuing. The Scheduler track helps you understand how React splits your code into different priorities, and the order it completed the work.",
+          "charCount": 278
+        }
+      ],
+      "source": "web",
+      "position": 1
+    },
+    {
+      "title": "react/CHANGELOG.md at main · facebook/react",
+      "url": "https://github.com/facebook/react/blob/main/CHANGELOG.md",
+      "domain": "github.com",
+      "description": "19.2.0 (October 1st, 2025). Below is a list of all new features, APIs, and bug fixes. Read the React 19.2 release post for more information. New React Features.",
+      "chunks": [
+        {
+          "text": "- `useId` is a new hook for generating unique IDs on both the client and server, while avoiding hydration mismatches. It is primarily useful for component libraries integrating with accessibility APIs that require unique IDs. This solves an issue that already exists in React 17 and below, but it’s even more important in React 18 because of how the new streaming server renderer delivers HTML out-of-order.\n- `startTransition` and `useTransition` let you mark some state updates as not urgent. Other state updates are considered urgent by default. React will allow urgent state updates (for example, updating a text input) to interrupt non-urgent state updates (for example, rendering a list of search results).\n- `useDeferredValue` lets you defer re-rendering a non-urgent part of the tree. It is similar to debouncing, but has a fe",
+          "charCount": 834
+        },
+        {
+          "text": "- Delegate events to roots instead of `document`. ( [@trueadm](https://github.com/trueadm) in [#18195](https://github.com/facebook/react/pull/18195) and [others](https://github.com/facebook/react/pulls?q=is%3Apr+author%3Atrueadm+modern+event+is%3Amerged))\n- Clean up all effects before running any next effects. ( [@bvaughn](https://github.com/bvaughn) in [#17947](https://github.com/facebook/react/pull/17947))\n- Run `useEffect` cleanup functions asynchronously. ( [@bvaughn](https://github.com/bvaughn) in [#17925](https://github.com/facebook/react/pull/17925))\n- Use browser `focusin` and `focusout` for `onFocus` and `onBlur`. ( [@trueadm](https://github.com/trueadm) in [#19186](https://github.com/facebook/react/pull/19186))\n- Make all `Capture` events use the browser capture phase. ( [@trueadm](https://github.com/trueadm) in ",
+          "charCount": 834
+        },
+        {
+          "text": "- Revamp the priority batching heuristics. ( [@acdlite](https://github.com/acdlite) in [#18796](https://github.com/facebook/react/pull/18796))\n- Add the `unstable_` prefix before the experimental APIs. ( [@acdlite](https://github.com/acdlite) in [#18825](https://github.com/facebook/react/pull/18825))\n- Remove `unstable_discreteUpdates` and `unstable_flushDiscreteUpdates`. ( [@trueadm](https://github.com/trueadm) in [#18825](https://github.com/facebook/react/pull/18825))\n- Remove the `timeoutMs` argument. ( [@acdlite](https://github.com/acdlite) in [#19703](https://github.com/facebook/react/pull/19703))\n- Disable `<div hidden />` prerendering in favor of a different future API. ( [@acdlite](https://github.com/acdlite) in [#18917](https://github.com/facebook/react/pull/18917))\n- Add `unstable_expectedLoadTime` to Suspense ",
+          "charCount": 832
+        }
+      ],
+      "source": "web",
+      "category": "github",
+      "position": 2
+    }
+  ]
+}

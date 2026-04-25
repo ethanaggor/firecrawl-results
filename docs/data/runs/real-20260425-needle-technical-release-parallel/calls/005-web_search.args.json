@@ -1,0 +1,10 @@
+{
+  "objective": "Find an official changelog or release notes page for a JavaScript or TypeScript library release after August 2025 that explicitly lists multiple API changes with code examples.",
+  "search_queries": [
+    "Next.js 16 release API changes",
+    "LangChain.js 1.0 release TypeScript API",
+    "JavaScript library release API changes 2025"
+  ],
+  "session_id": "real20260425needleparallel000000000001",
+  "model_name": "gpt-5.5 xhigh"
+}

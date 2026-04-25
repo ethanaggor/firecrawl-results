@@ -1,0 +1,108 @@
+{
+  "status": "complete",
+  "runId": "real-20260425-agent-search-benchmark-methodology-exa",
+  "generatedAt": "2026-04-25T05:05:47.169Z",
+  "manifest": {
+    "runId": "real-20260425-agent-search-benchmark-methodology-exa",
+    "createdAt": "2026-04-25T05:01:58.663Z",
+    "provider": {
+      "id": "exa",
+      "name": "Exa remote MCP",
+      "transport": "streamable-http",
+      "url": "https://mcp.exa.ai/mcp?tools=web_search_exa,web_fetch_exa,web_search_advanced_exa",
+      "headers": [
+        {
+          "name": "x-api-key",
+          "required": true,
+          "present": true
+        }
+      ],
+      "searchTools": [
+        "web_search_exa",
+        "web_search_advanced_exa"
+      ],
+      "fetchTools": [
+        "web_fetch_exa"
+      ]
+    },
+    "task": {
+      "id": "agent-search-benchmark-methodology",
+      "family": "benchmark-methodology",
+      "question": "What benchmark methodology should be used for agent web search tools, based on public Exa, Parallel, and Tavily benchmarks?",
+      "agentGoal": "Find and compare public benchmark methodology from Exa, Parallel, and Tavily. Extract metrics and task construction patterns.",
+      "expectedTerms": [
+        "SimpleQA",
+        "WISER",
+        "MSMARCO",
+        "document relevance"
+      ],
+      "expectedDomains": [
+        "exa.ai",
+        "parallel.ai",
+        "github.com",
+        "docs.tavily.com"
+      ]
+    }
+  },
+  "metrics": {
+    "provider": "exa",
+    "taskId": "agent-search-benchmark-methodology",
+    "toolCalls": 3,
+    "searchCalls": 2,
+    "fetchCalls": 1,
+    "failedCalls": 0,
+    "totalConnectMs": 551,
+    "totalCallLatencyMs": 23020,
+    "argumentTokens": 366,
+    "rawOutputTokens": 31581,
+    "normalizedEvidenceTokens": 9336,
+    "totalTrajectoryTokens": 33947,
+    "contract": {
+      "toolCount": 3,
+      "searchToolCount": 2,
+      "fetchToolCount": 1,
+      "descriptionTokens": 235,
+      "schemaTokens": 1509,
+      "totalMcpFootprintTokens": 2000,
+      "hasFreshnessControl": true,
+      "hasSourcePolicyControl": true,
+      "hasContentBudgetControl": true,
+      "hasUsageMetadata": false
+    }
+  },
+  "semanticScore": {
+    "agentModel": "gpt-5.5 xhigh",
+    "provider": "exa",
+    "taskId": "agent-search-benchmark-methodology",
+    "success": true,
+    "answerSupportedByEvidence": true,
+    "retrievalQualityScore": 4.8,
+    "agentExperienceScore": 4.4,
+    "sourcePolicyAdherent": null,
+    "freshnessAdherent": null,
+    "callRationale": "Started from the harness-recorded Exa tool schema, used web_search_advanced_exa because the task required domain filtering and benchmark-specific highlights, then followed up with a Tavily-focused search to hit docs.tavily.com. Fetched the core Exa, Parallel, Tavily GitHub, and Tavily docs pages because the search snippets partially truncated key methodology sections.",
+    "strengths": [
+      "Retrieved primary public sources from Exa, Parallel, Tavily's GitHub organization, and Tavily docs.",
+      "Captured all expected terms: SimpleQA, WISER, MSMARCO/MS MARCO, and document relevance.",
+      "Collected methodology details for answer accuracy, document relevance, LLM judging, task construction, freshness, cost, latency, and tool-call/context efficiency.",
+      "The Exa advanced search schema made domain-restricted discovery and fresh extraction straightforward."
+    ],
+    "weaknesses": [
+      "The first broad search did not include docs.tavily.com, requiring a targeted follow-up.",
+      "Search results included some secondary or less central GitHub repositories that had to be ignored in synthesis.",
+      "The harness did not normalize web_fetch_exa responses into normalized evidence, so the fetched evidence had to be read from the raw recorded artifact."
+    ],
+    "notableFailures": [
+      "No MCP tool call failed.",
+      "A local jq inspection command initially used the wrong raw response shape, but this did not affect the recorded MCP trajectory or answer evidence.",
+      "The step numbering in recorded artifacts advanced as 001, 003, and 005 because the harness counts started and completed tool-call trace events when assigning the next step number."
+    ],
+    "confidence": 0.9
+  },
+  "artifacts": {
+    "answer": "scoring/final-answer.md",
+    "score": "scoring/agent-score.json",
+    "trace": "trace.jsonl",
+    "tools": "schemas/tools.json"
+  }
+}

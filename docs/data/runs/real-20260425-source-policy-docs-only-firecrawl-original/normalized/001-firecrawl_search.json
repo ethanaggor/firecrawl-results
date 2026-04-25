@@ -1,0 +1,77 @@
+{
+  "provider": "firecrawl-original",
+  "tool": "firecrawl_search",
+  "isError": false,
+  "rawText": "{\n  \"web\": [\n    {\n      \"url\": \"https://docs.firecrawl.dev/api-reference/endpoint/search\",\n      \"title\": \"Search - Firecrawl Docs\",\n      \"description\": \"Timeout in milliseconds. ​. ignoreInvalidURLs. boolean. default:false. Excludes URLs from the search results that are invalid for other Firecrawl endpoints.\",\n      \"position\": 1\n    },\n    {\n      \"url\": \"https://docs.firecrawl.dev/sdks/cli\",\n      \"title\": \"CLI - Firecrawl Docs\",\n      \"description\": \"ISO country code (default: US). --timeout <ms>, Timeout in milliseconds (default: 60000). --ignore-invalid-urls, Exclude URLs invalid for other Firecrawl ...\",\n      \"position\": 2\n    },\n    {\n      \"url\": \"https://docs.firecrawl.dev/es/sdks/cli\",\n      \"title\": \"CLI - Firecrawl Docs\",\n      \"description\": \"--timeout <ms>, Tiempo de espera en milisegundos (predeterminado: 60000). --ignore-invalid-urls, Excluir URLs no válidas para otros endpoints de Firecrawl. -- ...\",\n      \"position\": 3\n    },\n    {\n      \"url\": \"https://docs.firecrawl.dev/zh/sdks/cli\",\n      \"title\": \"技能+ CLI - Firecrawl Docs\",\n      \"description\": \"--country <code>, ISO 国家代码（默认：US） ; --timeout <ms>, 以毫秒为单位的超时时间（默认：60000） ; --ignore-invalid-urls, 排除对其他Firecrawl 端点无效的URL ; --scrape ...\",\n      \"position\": 4\n    },\n    {\n      \"url\": \"https://docs.firecrawl.dev/pt-BR/sdks/cli\",\n      \"title\": \"CLI | Firecrawl - Firecrawl Docs\",\n      \"description\": \"--country <code>, Código de país ISO (padrão: US) ; --timeout <ms>, Tempo limite em milissegundos (padrão: 60000) ; --ignore-invalid-urls, Excluir URLs inválidas ...\",\n      \"position\": 5\n    }\n  ]\n}",
+  "parsed": {
+    "web": [
+      {
+        "url": "https://docs.firecrawl.dev/api-reference/endpoint/search",
+        "title": "Search - Firecrawl Docs",
+        "description": "Timeout in milliseconds. ​. ignoreInvalidURLs. boolean. default:false. Excludes URLs from the search results that are invalid for other Firecrawl endpoints.",
+        "position": 1
+      },
+      {
+        "url": "https://docs.firecrawl.dev/sdks/cli",
+        "title": "CLI - Firecrawl Docs",
+        "description": "ISO country code (default: US). --timeout <ms>, Timeout in milliseconds (default: 60000). --ignore-invalid-urls, Exclude URLs invalid for other Firecrawl ...",
+        "position": 2
+      },
+      {
+        "url": "https://docs.firecrawl.dev/es/sdks/cli",
+        "title": "CLI - Firecrawl Docs",
+        "description": "--timeout <ms>, Tiempo de espera en milisegundos (predeterminado: 60000). --ignore-invalid-urls, Excluir URLs no válidas para otros endpoints de Firecrawl. -- ...",
+        "position": 3
+      },
+      {
+        "url": "https://docs.firecrawl.dev/zh/sdks/cli",
+        "title": "技能+ CLI - Firecrawl Docs",
+        "description": "--country <code>, ISO 国家代码（默认：US） ; --timeout <ms>, 以毫秒为单位的超时时间（默认：60000） ; --ignore-invalid-urls, 排除对其他Firecrawl 端点无效的URL ; --scrape ...",
+        "position": 4
+      },
+      {
+        "url": "https://docs.firecrawl.dev/pt-BR/sdks/cli",
+        "title": "CLI | Firecrawl - Firecrawl Docs",
+        "description": "--country <code>, Código de país ISO (padrão: US) ; --timeout <ms>, Tempo limite em milissegundos (padrão: 60000) ; --ignore-invalid-urls, Excluir URLs inválidas ...",
+        "position": 5
+      }
+    ]
+  },
+  "results": [
+    {
+      "title": "Search - Firecrawl Docs",
+      "url": "https://docs.firecrawl.dev/api-reference/endpoint/search",
+      "domain": "docs.firecrawl.dev",
+      "description": "Timeout in milliseconds. ​. ignoreInvalidURLs. boolean. default:false. Excludes URLs from the search results that are invalid for other Firecrawl endpoints.",
+      "position": 1
+    },
+    {
+      "title": "CLI - Firecrawl Docs",
+      "url": "https://docs.firecrawl.dev/sdks/cli",
+      "domain": "docs.firecrawl.dev",
+      "description": "ISO country code (default: US). --timeout <ms>, Timeout in milliseconds (default: 60000). --ignore-invalid-urls, Exclude URLs invalid for other Firecrawl ...",
+      "position": 2
+    },
+    {
+      "title": "CLI - Firecrawl Docs",
+      "url": "https://docs.firecrawl.dev/es/sdks/cli",
+      "domain": "docs.firecrawl.dev",
+      "description": "--timeout <ms>, Tiempo de espera en milisegundos (predeterminado: 60000). --ignore-invalid-urls, Excluir URLs no válidas para otros endpoints de Firecrawl. -- ...",
+      "position": 3
+    },
+    {
+      "title": "技能+ CLI - Firecrawl Docs",
+      "url": "https://docs.firecrawl.dev/zh/sdks/cli",
+      "domain": "docs.firecrawl.dev",
+      "description": "--country <code>, ISO 国家代码（默认：US） ; --timeout <ms>, 以毫秒为单位的超时时间（默认：60000） ; --ignore-invalid-urls, 排除对其他Firecrawl 端点无效的URL ; --scrape ...",
+      "position": 4
+    },
+    {
+      "title": "CLI | Firecrawl - Firecrawl Docs",
+      "url": "https://docs.firecrawl.dev/pt-BR/sdks/cli",
+      "domain": "docs.firecrawl.dev",
+      "description": "--country <code>, Código de país ISO (padrão: US) ; --timeout <ms>, Tempo limite em milissegundos (padrão: 60000) ; --ignore-invalid-urls, Excluir URLs inválidas ...",
+      "position": 5
+    }
+  ]
+}

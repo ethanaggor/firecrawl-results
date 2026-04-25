@@ -1,0 +1,10 @@
+{
+  "urls": [
+    "https://exa.ai/blog/api-evals",
+    "https://www.exa.ai/blog/evals-at-exa",
+    "https://parallel.ai/blog/search-api-benchmark",
+    "https://github.com/tavily-ai/tavily-search-evals/blob/main/README.md",
+    "https://docs.tavily.com/documentation/best-practices/best-practices-search"
+  ],
+  "maxCharacters": 12000
+}

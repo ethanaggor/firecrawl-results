@@ -1,0 +1,10 @@
+{
+  "query": "Tavily public search evals benchmark methodology SimpleQA document relevance GitHub docs",
+  "max_results": 6,
+  "search_depth": "advanced",
+  "include_domains": [
+    "github.com",
+    "docs.tavily.com"
+  ],
+  "include_raw_content": false
+}

@@ -1,0 +1,10 @@
+{
+  "query": "Exa remote MCP web_search_exa web_fetch_exa web_search_advanced_exa agent search benchmark API evals WebCode official",
+  "max_results": 8,
+  "search_depth": "advanced",
+  "include_domains": [
+    "exa.ai",
+    "docs.exa.ai"
+  ],
+  "include_raw_content": false
+}

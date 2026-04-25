@@ -1,0 +1,8 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\n  \"web\": [\n    {\n      \"url\": \"https://exa.ai/blog/api-evals\",\n      \"title\": \"Web Search API Evals - Exa\",\n      \"description\": \"SimpleQA is a recent benchmark from OpenAI that measures how well LLMs answer short factual questions. Each question was designed to elicit ...\",\n      \"position\": 1\n    },\n    {\n      \"url\": \"https://exa.ai/blog/evals-at-exa\",\n      \"title\": \"Our AI Research: How We Evaluate Semantic Search Technology\",\n      \"description\": \"We can use SimpleQA, where an LLM agent must answer factual questions using search results. We pass each question to an LLM, which calls the ...\",\n      \"position\": 2\n    }\n  ]\n}"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "query": "Exa API evals SimpleQA MSMARCO WebCode benchmark methodology metrics",
+  "content": "chunks",
+  "maxResults": 6,
+  "maxCharsPerResult": 2200,
+  "maxCharsTotal": 10000,
+  "focus": "SimpleQA, MSMARCO, WebCode, metrics, evaluation methodology, answer correctness, result relevance",
+  "sourcePolicy": {
+    "includeDomains": [
+      "exa.ai",
+      "docs.exa.ai"
+    ]
+  },
+  "sources": [
+    "web"
+  ],
+  "ignoreInvalidURLs": true,
+  "includeRawResults": false
+}

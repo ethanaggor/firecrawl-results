@@ -1,0 +1,37 @@
+{
+  "provider": "firecrawl-context",
+  "tool": "firecrawl_search",
+  "isError": false,
+  "rawText": "{\n  \"query\": \"Firecrawl Search API MCP firecrawl_search agent context summary chunks markdown docs\",\n  \"executedQuery\": \"Firecrawl Search API MCP firecrawl_search agent context summary chunks markdown docs site:docs.firecrawl.dev\",\n  \"content\": \"chunks\",\n  \"constraints\": {\n    \"maxResults\": 6,\n    \"maxCharsPerResult\": 1600,\n    \"maxCharsTotal\": 7000,\n    \"focus\": \"Firecrawl search API and MCP search behavior, returned context shape, search parameters, scrape follow-up, and agent-facing metadata\",\n    \"sourcePolicy\": {\n      \"includeDomains\": [\n        \"docs.firecrawl.dev\"\n      ]\n    }\n  },\n  \"results\": [],\n  \"searchIds\": [\n    \"019dc310-2b2b-746d-85fe-5f0f7c9190b7\"\n  ],\n  \"usage\": {\n    \"resultCount\": 0,\n    \"charsReturned\": 0,\n    \"creditsUsed\": 0,\n    \"rawResultCount\": {\n      \"web\": 0,\n      \"news\": 0,\n      \"images\": 0\n    }\n  }\n}",
+  "parsed": {
+    "query": "Firecrawl Search API MCP firecrawl_search agent context summary chunks markdown docs",
+    "executedQuery": "Firecrawl Search API MCP firecrawl_search agent context summary chunks markdown docs site:docs.firecrawl.dev",
+    "content": "chunks",
+    "constraints": {
+      "maxResults": 6,
+      "maxCharsPerResult": 1600,
+      "maxCharsTotal": 7000,
+      "focus": "Firecrawl search API and MCP search behavior, returned context shape, search parameters, scrape follow-up, and agent-facing metadata",
+      "sourcePolicy": {
+        "includeDomains": [
+          "docs.firecrawl.dev"
+        ]
+      }
+    },
+    "results": [],
+    "searchIds": [
+      "019dc310-2b2b-746d-85fe-5f0f7c9190b7"
+    ],
+    "usage": {
+      "resultCount": 0,
+      "charsReturned": 0,
+      "creditsUsed": 0,
+      "rawResultCount": {
+        "web": 0,
+        "news": 0,
+        "images": 0
+      }
+    }
+  },
+  "results": []
+}

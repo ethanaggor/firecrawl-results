@@ -1,0 +1,10 @@
+{
+  "objective": "Find official Tavily MCP server documentation and Firecrawl search feature documentation showing agent-facing tool flow and returned content shape.",
+  "search_queries": [
+    "site:docs.tavily.com Tavily MCP",
+    "Tavily MCP server docs",
+    "site:docs.firecrawl.dev features search"
+  ],
+  "session_id": "real20260425hardproductcomparisonparallel001",
+  "model_name": "gpt-5.5 xhigh"
+}

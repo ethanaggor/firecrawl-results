@@ -1,0 +1,9 @@
+{
+  "query": "site:github.com/mendableai/firecrawl-mcp-server firecrawl_search scrapeOptions enterprise categories country timeout ignoreInvalidURLs",
+  "limit": 5,
+  "sources": [
+    {
+      "type": "web"
+    }
+  ]
+}

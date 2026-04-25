@@ -1,0 +1,10 @@
+{
+  "objective": "Find public benchmark methodology pages from Exa, Parallel, and Tavily about evaluating agent/web search tools. Prefer official Exa and Parallel blog/docs pages, Tavily docs or GitHub search-evals, and extract metrics plus task construction patterns such as SimpleQA, WISER, MSMARCO, and document relevance.",
+  "search_queries": [
+    "Parallel WISER search benchmark",
+    "Exa API evals SimpleQA MSMARCO",
+    "Tavily search evals document relevance"
+  ],
+  "session_id": "7d4b2e9f0c3a45b68e1f9a2d6c0b7e4a",
+  "model_name": "gpt-5.5 xhigh"
+}

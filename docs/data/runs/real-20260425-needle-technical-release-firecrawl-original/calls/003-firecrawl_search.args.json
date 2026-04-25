@@ -1,0 +1,10 @@
+{
+  "query": "site:nextjs.org/blog Next.js 16 release API changes TypeScript JavaScript October 2025",
+  "limit": 5,
+  "tbs": "qdr:y",
+  "sources": [
+    {
+      "type": "web"
+    }
+  ]
+}

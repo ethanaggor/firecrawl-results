@@ -1,0 +1,9 @@
+{
+  "query": "site:exa.ai Exa API evals SimpleQA MSMARCO search benchmark methodology",
+  "limit": 6,
+  "sources": [
+    {
+      "type": "web"
+    }
+  ]
+}

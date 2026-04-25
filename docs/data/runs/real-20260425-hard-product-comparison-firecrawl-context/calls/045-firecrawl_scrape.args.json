@@ -1,0 +1,9 @@
+{
+  "url": "https://docs.tavily.com/documentation/api-reference/endpoint/search",
+  "formats": [
+    "markdown"
+  ],
+  "onlyMainContent": true,
+  "removeBase64Images": true,
+  "maxAge": 0
+}

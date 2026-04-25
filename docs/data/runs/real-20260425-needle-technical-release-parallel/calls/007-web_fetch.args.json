@@ -1,0 +1,16 @@
+{
+  "urls": [
+    "https://docs.langchain.com/oss/javascript/releases/langchain-v1",
+    "https://docs.langchain.com/oss/javascript/releases/changelog",
+    "https://nextjs.org/blog/next-16"
+  ],
+  "objective": "Extract official release dates and concrete API changes with code examples for LangChain JS v1 or Next.js 16 after August 2025.",
+  "search_queries": [
+    "LangChain.js v1 release API",
+    "LangChain JavaScript changelog v1",
+    "Next.js 16 API changes"
+  ],
+  "full_content": false,
+  "session_id": "real20260425needleparallel000000000001",
+  "model_name": "gpt-5.5 xhigh"
+}

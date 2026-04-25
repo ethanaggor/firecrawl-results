@@ -1,0 +1,67 @@
+{
+  "agentModel": "gpt-5.5 xhigh",
+  "provider": "firecrawl-context",
+  "taskId": "docs-parity",
+  "success": true,
+  "answerSupportedByEvidence": true,
+  "retrievalQualityScore": 4.6,
+  "agentExperienceScore": 4.4,
+  "sourcePolicyAdherent": true,
+  "freshnessAdherent": null,
+  "callRationale": [
+    {
+      "step": "start",
+      "tool": "listTools",
+      "rationale": "Inspected the provider schema first, as required, and identified firecrawl_search as the best native discovery tool because it exposes bounded context and sourcePolicy controls."
+    },
+    {
+      "step": "001",
+      "tool": "firecrawl_search",
+      "rationale": "Searched official Firecrawl docs and GitHub with chunks and sourcePolicy to discover primary Search API evidence."
+    },
+    {
+      "step": "003",
+      "tool": "firecrawl_scrape",
+      "rationale": "Fetched the exact Search API docs page returned by search because the initial chunks duplicated the request example and did not expose the full body/response sections."
+    },
+    {
+      "step": "005",
+      "tool": "firecrawl_search",
+      "rationale": "Ran a GitHub-constrained source search to corroborate MCP/CLI parity fields from official Firecrawl repositories."
+    },
+    {
+      "step": "007",
+      "tool": "firecrawl_search",
+      "rationale": "Ran a narrow GitHub search for the enterprise/ZDR field after the first GitHub result covered categories/country/timeout/ignoreInvalidURLs but not enterprise."
+    }
+  ],
+  "strengths": [
+    "The provider schema made the correct primary tool clear: firecrawl_search supported sourcePolicy, bounded chunks, content modes, categories, country, timeout, ignoreInvalidURLs, enterprise, and raw-result controls.",
+    "The final answer is grounded in official Firecrawl docs plus official Firecrawl GitHub sources.",
+    "The docs scrape captured the full public API request and response sections, including response metadata and defaults.",
+    "Source policy was followed: returned evidence used docs.firecrawl.dev and github.com only."
+  ],
+  "weaknesses": [
+    "The first docs search returned only one result and duplicated a narrow request-example chunk, so a full scrape was needed.",
+    "The GitHub searches returned some noisy non-Firecrawl results after the useful official Firecrawl result.",
+    "The full scrape response was large and the normalized scrape evidence was minimal, so useful details came from raw saved evidence rather than compact normalized evidence."
+  ],
+  "notableFailures": [
+    {
+      "category": "direct fix and needs no further changes",
+      "failure": "Initial search chunks did not include all required body and response details.",
+      "fix": "Scraped the exact Firecrawl Search API docs URL returned by the search result."
+    },
+    {
+      "category": "direct fix and needs no further changes",
+      "failure": "The first GitHub-constrained search did not surface enterprise/ZDR evidence.",
+      "fix": "Ran a narrower GitHub query for enterprise, anon, and zdr, which returned the official firecrawl-docs MCP server page."
+    },
+    {
+      "category": "fixed but could benefit from cleaner/simpler implementation with an architectural change",
+      "failure": "Search chunks and normalized scrape evidence were not ideal for concise evidence extraction; the agent had to inspect raw artifacts to synthesize the answer.",
+      "fix": "Used the saved raw response artifacts for grounding without making additional provider calls."
+    }
+  ],
+  "confidence": 0.9
+}

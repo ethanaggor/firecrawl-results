@@ -1,0 +1,53 @@
+{
+  "runId": "real-20260425-source-policy-docs-only-firecrawl-context",
+  "createdAt": "2026-04-25T05:09:32.225Z",
+  "provider": {
+    "id": "firecrawl-context",
+    "name": "Firecrawl MCP context fork",
+    "transport": "stdio",
+    "cwd": "../firecrawl-mcp-server",
+    "command": "node",
+    "args": [
+      "dist/index.js"
+    ],
+    "env": [
+      {
+        "name": "FIRECRAWL_API_KEY",
+        "required": true,
+        "present": true
+      },
+      {
+        "name": "FIRECRAWL_API_URL",
+        "required": false,
+        "present": false
+      }
+    ],
+    "searchTools": [
+      "firecrawl_search"
+    ],
+    "fetchTools": [
+      "firecrawl_scrape"
+    ],
+    "cwdExists": true
+  },
+  "task": {
+    "id": "source-policy-docs-only",
+    "family": "source-policy",
+    "question": "Using only official Firecrawl docs, what does the Search API say about categories, country, timeout, and ignoreInvalidURLs?",
+    "agentGoal": "Constrain to docs.firecrawl.dev and produce evidence only from that domain.",
+    "expectedTerms": [
+      "categories",
+      "country",
+      "timeout",
+      "ignoreInvalidURLs"
+    ],
+    "expectedDomains": [
+      "docs.firecrawl.dev"
+    ],
+    "sourcePolicy": {
+      "includeDomains": [
+        "docs.firecrawl.dev"
+      ]
+    }
+  }
+}

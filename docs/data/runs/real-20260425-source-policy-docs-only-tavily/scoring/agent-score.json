@@ -1,0 +1,39 @@
+{
+  "agentModel": "gpt-5.5 xhigh",
+  "provider": "tavily",
+  "taskId": "source-policy-docs-only",
+  "success": true,
+  "answerSupportedByEvidence": true,
+  "retrievalQualityScore": 5,
+  "agentExperienceScore": 4.6,
+  "sourcePolicyAdherent": true,
+  "freshnessAdherent": null,
+  "callRationale": "Started the Tavily trajectory, inspected the schema exposed by the harness, selected tavily_search because it had native include_domains source-policy control, and searched for the four required Firecrawl Search API fields with include_domains set to docs.firecrawl.dev and include_raw_content enabled. No extraction call was needed because the first result was the official Search API endpoint and contained direct evidence for categories, country, timeout, and ignoreInvalidURLs.",
+  "retrievalQuality": {
+    "relevance": 5,
+    "sourceQuality": 5,
+    "coverage": 5,
+    "freshness": null,
+    "grounding": 5,
+    "rationale": "The top result was the official Firecrawl Search API docs page at docs.firecrawl.dev/api-reference/endpoint/search and it directly covered all expected terms. All returned URLs were from docs.firecrawl.dev, so the source policy was satisfied."
+  },
+  "agentExperience": {
+    "toolDiscovery": 5,
+    "controlExpressiveness": 5,
+    "outputInspectability": 4,
+    "followUpAffordance": 4,
+    "errorRecoverability": 5,
+    "rationale": "The Tavily schema made the search tool and include_domains control obvious. The search returned the needed answer in one call, but include_raw_content produced a large response with duplicated endpoint content and extra localized CLI pages, so the output was useful but noisier than ideal."
+  },
+  "strengths": [
+    "Native include_domains control allowed an honest docs.firecrawl.dev-only source policy.",
+    "The first result was the exact official Search API endpoint and contained all required fields.",
+    "One search call was enough; no follow-up fetch was necessary."
+  ],
+  "weaknesses": [
+    "Raw content was large and duplicated parts of the API page.",
+    "The result set included localized CLI documentation pages that were source-policy compliant but not needed for the final answer."
+  ],
+  "notableFailures": [],
+  "confidence": 0.96
+}

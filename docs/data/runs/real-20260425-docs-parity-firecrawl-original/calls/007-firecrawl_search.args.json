@@ -1,0 +1,9 @@
+{
+  "query": "site:github.com Firecrawl MCP server firecrawl_search search tool schema scrapeOptions enterprise",
+  "limit": 5,
+  "sources": [
+    {
+      "type": "web"
+    }
+  ]
+}

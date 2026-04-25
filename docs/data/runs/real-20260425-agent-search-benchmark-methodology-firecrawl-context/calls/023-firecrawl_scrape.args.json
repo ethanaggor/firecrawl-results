@@ -1,0 +1,8 @@
+{
+  "url": "https://github.com/tavily-ai/tavily-search-evals",
+  "formats": [
+    "markdown"
+  ],
+  "onlyMainContent": true,
+  "removeBase64Images": true
+}

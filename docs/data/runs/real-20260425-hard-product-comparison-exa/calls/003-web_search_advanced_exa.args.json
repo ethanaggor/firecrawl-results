@@ -1,0 +1,14 @@
+{
+  "query": "Tavily official documentation for MCP server, search tool, search_depth basic advanced, chunks, relevance, latency, agent search behavior",
+  "numResults": 8,
+  "type": "auto",
+  "includeDomains": [
+    "docs.tavily.com",
+    "tavily.com"
+  ],
+  "enableHighlights": true,
+  "highlightsMaxCharacters": 1000,
+  "highlightsQuery": "MCP search_depth advanced basic chunks relevance latency agent search",
+  "textMaxCharacters": 2000,
+  "maxAgeHours": 0
+}

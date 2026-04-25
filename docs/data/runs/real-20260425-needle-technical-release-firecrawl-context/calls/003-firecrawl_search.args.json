@@ -1,0 +1,21 @@
+{
+  "query": "React 19.2 October 2025 release notes API useEffectEvent Activity cacheSignal",
+  "content": "chunks",
+  "focus": "React 19.2 release date and concrete API changes with example code for Activity, useEffectEvent, cacheSignal, or related APIs",
+  "maxResults": 6,
+  "maxCharsPerResult": 2500,
+  "maxCharsTotal": 12000,
+  "freshness": {
+    "startDate": "2025-09-01",
+    "sortByDate": true
+  },
+  "sourcePolicy": {
+    "includeDomains": [
+      "react.dev",
+      "github.com"
+    ]
+  },
+  "sources": [
+    "web"
+  ]
+}

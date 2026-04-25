@@ -1,0 +1,19 @@
+{
+  "query": "Exa official MCP web_search_exa web_fetch_exa contents highlights summary search agent benchmark API evals WebCode",
+  "content": "chunks",
+  "focus": "Exa MCP endpoint and tools, search result content shape, highlights/text/summary behavior, and Exa benchmark methodology or retrieval quality claims",
+  "maxResults": 8,
+  "maxCharsPerResult": 1600,
+  "maxCharsTotal": 10000,
+  "sourcePolicy": {
+    "includeDomains": [
+      "exa.ai",
+      "docs.exa.ai"
+    ]
+  },
+  "sources": [
+    "web"
+  ],
+  "ignoreInvalidURLs": true,
+  "includeRawResults": false
+}

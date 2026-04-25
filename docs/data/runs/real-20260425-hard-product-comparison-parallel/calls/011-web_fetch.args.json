@@ -1,0 +1,20 @@
+{
+  "urls": [
+    "https://docs.firecrawl.dev/api-reference/endpoint/search",
+    "https://docs.firecrawl.dev/mcp-server",
+    "https://exa.ai/docs/reference/exa-mcp",
+    "https://exa.ai/docs/reference/evaluating-exa-search",
+    "https://docs.parallel.ai/integrations/mcp/search-mcp",
+    "https://docs.parallel.ai/search/search-quickstart",
+    "https://docs.tavily.com/documentation/best-practices/best-practices-search",
+    "https://docs.tavily.com/documentation/api-reference/endpoint/search"
+  ],
+  "objective": "Extract agent-facing MCP/search tool flow, context shape, controls, limits, and quality tradeoffs.",
+  "search_queries": [
+    "MCP search agent context",
+    "search depth excerpts chunks",
+    "web_search web_fetch"
+  ],
+  "session_id": "real20260425hardproductcomparisonparallel001",
+  "model_name": "gpt-5.5 xhigh"
+}

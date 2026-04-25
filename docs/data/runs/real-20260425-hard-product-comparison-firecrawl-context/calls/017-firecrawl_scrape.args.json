@@ -1,0 +1,9 @@
+{
+  "url": "https://exa.ai/docs/reference/exa-mcp",
+  "formats": [
+    "markdown"
+  ],
+  "onlyMainContent": true,
+  "removeBase64Images": true,
+  "maxAge": 0
+}

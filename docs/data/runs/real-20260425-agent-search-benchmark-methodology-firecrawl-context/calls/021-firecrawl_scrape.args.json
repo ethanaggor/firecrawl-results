@@ -1,0 +1,8 @@
+{
+  "url": "https://parallel.ai/blog/search-api-benchmark",
+  "formats": [
+    "markdown"
+  ],
+  "onlyMainContent": true,
+  "removeBase64Images": true
+}

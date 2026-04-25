@@ -1,0 +1,16 @@
+{
+  "urls": [
+    "https://nextjs.org/blog/next-16",
+    "https://nextjs.org/docs/app/guides/upgrading/version-16",
+    "https://nextjs.org/docs/app/guides/caching"
+  ],
+  "objective": "Find Next.js 16 API changes: proxy replacing middleware, caching APIs updateTag refresh revalidateTag, cacheComponents config, reactCompiler config.",
+  "search_queries": [
+    "Next.js 16 proxy API",
+    "Next.js 16 caching APIs",
+    "Next.js 16 cacheComponents reactCompiler"
+  ],
+  "full_content": false,
+  "session_id": "real20260425needleparallel000000000001",
+  "model_name": "gpt-5.5 xhigh"
+}

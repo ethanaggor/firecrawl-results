@@ -1,0 +1,10 @@
+{
+  "query": "recent TypeScript JavaScript library release after August 2025 API changes changelog official docs",
+  "limit": 5,
+  "tbs": "qdr:y",
+  "sources": [
+    {
+      "type": "web"
+    }
+  ]
+}

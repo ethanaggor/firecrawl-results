@@ -1,0 +1,50 @@
+{
+  "agentModel": "gpt-5.5 xhigh",
+  "provider": "exa",
+  "taskId": "docs-parity",
+  "success": true,
+  "answerSupportedByEvidence": true,
+  "retrievalQualityScore": 4.8,
+  "agentExperienceScore": 4.2,
+  "sourcePolicyAdherent": true,
+  "freshnessAdherent": null,
+  "toolsUsed": [
+    "web_search_advanced_exa",
+    "web_fetch_exa"
+  ],
+  "callCount": 2,
+  "callRationale": [
+    {
+      "tool": "web_search_advanced_exa",
+      "rationale": "Started with the advanced search tool because the task had an explicit source policy. The call used includeDomains for docs.firecrawl.dev and github.com, highlights for the requested fields, a text budget, and maxAgeHours 0."
+    },
+    {
+      "tool": "web_fetch_exa",
+      "rationale": "Fetched the v2 Search API reference, v1 Search API reference, and Firecrawl v1 source types file after the search result showed the right pages but did not expose all details, especially enterprise and full response metadata."
+    }
+  ],
+  "strengths": [
+    "The run stayed within the assigned Exa MCP provider and used the benchmark harness for all MCP calls.",
+    "The first search found only official Firecrawl docs and GitHub source because includeDomains was applied.",
+    "The fetched v2 API reference directly covered categories, country, timeout, ignoreInvalidURLs, enterprise, response metadata, warning, id, and creditsUsed.",
+    "The fetched GitHub source confirmed the v1 search schema and implementation response/document metadata shape."
+  ],
+  "weaknesses": [
+    "The web_fetch_exa response was large, about 22k raw response tokens, because the docs page included the full OpenAPI schema and the source file was long.",
+    "The harness normalized the fetch call to zero normalized evidence even though the raw fetch response contained useful evidence, so final support depends partly on raw artifacts.",
+    "The public docs expose a categories shape mismatch: prose examples show string categories while the embedded v2 OpenAPI schema shows typed category objects."
+  ],
+  "notableFailures": [
+    {
+      "category": "direct fix and needs no further changes",
+      "failure": "Initial search excerpts were not sufficient for all requested fields, especially enterprise and full metadata.",
+      "fix": "Made one targeted batched fetch for the v2 docs, v1 docs, and GitHub source types file."
+    },
+    {
+      "category": "fixed but could benefit from cleaner/simpler implementation with an architectural change",
+      "failure": "web_fetch_exa produced useful raw evidence but the benchmark normalizer recorded zero normalized evidence for that fetch.",
+      "fix": "Used the saved raw fetch artifact as evidence for the final answer; a cleaner benchmark normalizer could extract fetched-page evidence."
+    }
+  ],
+  "confidence": 0.92
+}

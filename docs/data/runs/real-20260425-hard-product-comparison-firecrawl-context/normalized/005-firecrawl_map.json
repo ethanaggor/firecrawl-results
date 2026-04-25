@@ -1,0 +1,132 @@
+{
+  "provider": "firecrawl-context",
+  "tool": "firecrawl_map",
+  "isError": false,
+  "rawText": "{\n  \"links\": [\n    {\n      \"url\": \"https://docs.firecrawl.dev/features/search\",\n      \"title\": \"Search - Firecrawl Docs\",\n      \"description\": \"Search the web and get clean, structured content from every result in a single API call. Pass a query to /search and Firecrawl returns titles, descriptions, ...\"\n    },\n    {\n      \"url\": \"https://docs.firecrawl.dev/mcp-server\",\n      \"title\": \"Firecrawl MCP Server\",\n      \"description\": \"A Model Context Protocol (MCP) server implementation that integrates Firecrawl for searching, scraping, and interacting with the web. Our MCP server is open- ...\"\n    },\n    {\n      \"url\": \"https://docs.firecrawl.dev/developer-guides/mcp-setup-guides/factory-ai\",\n      \"title\": \"MCP Web Search & Scrape in Factory AI - Firecrawl Docs\",\n      \"description\": \"1. Get Your API Key · 2. Install Factory AI CLI · 3. Add Firecrawl MCP Server · 4. Done!\"\n    },\n    {\n      \"url\": \"https://docs.firecrawl.dev/developer-guides/mcp-setup-guides/claude-ai\",\n      \"title\": \"MCP Web Search & Scrape in Claude.ai - Firecrawl Docs\",\n      \"description\": \"Add Custom Connector. Go to Settings > Connectors in Claude.ai and click Add custom connector. Fill in the connector details:.\"\n    },\n    {\n      \"url\": \"https://docs.firecrawl.dev/developer-guides/mcp-setup-guides/cursor\",\n      \"title\": \"MCP Web Search & Scrape in Cursor - Firecrawl Docs\",\n      \"description\": \"1. Get Your API Key · 2. Add to Cursor · 3. Restart Cursor.\"\n    },\n    {\n      \"url\": \"https://docs.firecrawl.dev/developer-guides/mcp-setup-guides/chatgpt\",\n      \"title\": \"MCP Web Search & Scrape in ChatGPT - Firecrawl Docs\",\n      \"description\": \"1. Get Your API Key · 2. Enable Developer Mode · 3. Create the Connector · 4. Verify Setup · 5. Access Firecrawl Tools.\"\n    },\n    {\n      \"url\": \"https://docs.firecrawl.dev/developer-guides/mcp-setup-guides/claude-code\",\n      \"title\": \"MCP Web Search & Scrape in Claude Code - Firecrawl Docs\",\n      \"description\": \"Replace your-api-key with your actual Firecrawl API key. Done! You can now search and scrape the web from Claude Code.\"\n    },\n    {\n      \"url\": \"https://docs.firecrawl.dev/developer-guides/mcp-setup-guides/windsurf\",\n      \"title\": \"MCP Web Search & Scrape in Windsurf - Firecrawl Docs\",\n      \"description\": \"Add web scraping and search capabilities to Windsurf with Firecrawl MCP. ​. Quick Setup. ​. 1. Get Your API Key. Sign up at firecrawl.dev/app and copy your API ...\"\n    },\n    {\n      \"url\": \"https://docs.firecrawl.dev/advanced-scraping-guide\",\n      \"title\": \"Advanced Scraping Guide - Firecrawl Docs\",\n      \"description\": \"Configure scrape options, browser actions, crawl, map, and the agent endpoint with Firecrawl's full API surface.\"\n    },\n    {\n      \"url\": \"https://docs.firecrawl.dev/introduction\",\n      \"title\": \"Introduction | Firecrawl\",\n      \"description\": \"Search the web and get full page content from results in one call. See the Search feature docs for all options. Python. Node. cURL.\"\n    }\n  ]\n}",
+  "parsed": {
+    "links": [
+      {
+        "url": "https://docs.firecrawl.dev/features/search",
+        "title": "Search - Firecrawl Docs",
+        "description": "Search the web and get clean, structured content from every result in a single API call. Pass a query to /search and Firecrawl returns titles, descriptions, ..."
+      },
+      {
+        "url": "https://docs.firecrawl.dev/mcp-server",
+        "title": "Firecrawl MCP Server",
+        "description": "A Model Context Protocol (MCP) server implementation that integrates Firecrawl for searching, scraping, and interacting with the web. Our MCP server is open- ..."
+      },
+      {
+        "url": "https://docs.firecrawl.dev/developer-guides/mcp-setup-guides/factory-ai",
+        "title": "MCP Web Search & Scrape in Factory AI - Firecrawl Docs",
+        "description": "1. Get Your API Key · 2. Install Factory AI CLI · 3. Add Firecrawl MCP Server · 4. Done!"
+      },
+      {
+        "url": "https://docs.firecrawl.dev/developer-guides/mcp-setup-guides/claude-ai",
+        "title": "MCP Web Search & Scrape in Claude.ai - Firecrawl Docs",
+        "description": "Add Custom Connector. Go to Settings > Connectors in Claude.ai and click Add custom connector. Fill in the connector details:."
+      },
+      {
+        "url": "https://docs.firecrawl.dev/developer-guides/mcp-setup-guides/cursor",
+        "title": "MCP Web Search & Scrape in Cursor - Firecrawl Docs",
+        "description": "1. Get Your API Key · 2. Add to Cursor · 3. Restart Cursor."
+      },
+      {
+        "url": "https://docs.firecrawl.dev/developer-guides/mcp-setup-guides/chatgpt",
+        "title": "MCP Web Search & Scrape in ChatGPT - Firecrawl Docs",
+        "description": "1. Get Your API Key · 2. Enable Developer Mode · 3. Create the Connector · 4. Verify Setup · 5. Access Firecrawl Tools."
+      },
+      {
+        "url": "https://docs.firecrawl.dev/developer-guides/mcp-setup-guides/claude-code",
+        "title": "MCP Web Search & Scrape in Claude Code - Firecrawl Docs",
+        "description": "Replace your-api-key with your actual Firecrawl API key. Done! You can now search and scrape the web from Claude Code."
+      },
+      {
+        "url": "https://docs.firecrawl.dev/developer-guides/mcp-setup-guides/windsurf",
+        "title": "MCP Web Search & Scrape in Windsurf - Firecrawl Docs",
+        "description": "Add web scraping and search capabilities to Windsurf with Firecrawl MCP. ​. Quick Setup. ​. 1. Get Your API Key. Sign up at firecrawl.dev/app and copy your API ..."
+      },
+      {
+        "url": "https://docs.firecrawl.dev/advanced-scraping-guide",
+        "title": "Advanced Scraping Guide - Firecrawl Docs",
+        "description": "Configure scrape options, browser actions, crawl, map, and the agent endpoint with Firecrawl's full API surface."
+      },
+      {
+        "url": "https://docs.firecrawl.dev/introduction",
+        "title": "Introduction | Firecrawl",
+        "description": "Search the web and get full page content from results in one call. See the Search feature docs for all options. Python. Node. cURL."
+      }
+    ]
+  },
+  "results": [
+    {
+      "title": "Search - Firecrawl Docs",
+      "url": "https://docs.firecrawl.dev/features/search",
+      "domain": "docs.firecrawl.dev",
+      "description": "Search the web and get clean, structured content from every result in a single API call. Pass a query to /search and Firecrawl returns titles, descriptions, ...",
+      "position": 1
+    },
+    {
+      "title": "Firecrawl MCP Server",
+      "url": "https://docs.firecrawl.dev/mcp-server",
+      "domain": "docs.firecrawl.dev",
+      "description": "A Model Context Protocol (MCP) server implementation that integrates Firecrawl for searching, scraping, and interacting with the web. Our MCP server is open- ...",
+      "position": 2
+    },
+    {
+      "title": "MCP Web Search & Scrape in Factory AI - Firecrawl Docs",
+      "url": "https://docs.firecrawl.dev/developer-guides/mcp-setup-guides/factory-ai",
+      "domain": "docs.firecrawl.dev",
+      "description": "1. Get Your API Key · 2. Install Factory AI CLI · 3. Add Firecrawl MCP Server · 4. Done!",
+      "position": 3
+    },
+    {
+      "title": "MCP Web Search & Scrape in Claude.ai - Firecrawl Docs",
+      "url": "https://docs.firecrawl.dev/developer-guides/mcp-setup-guides/claude-ai",
+      "domain": "docs.firecrawl.dev",
+      "description": "Add Custom Connector. Go to Settings > Connectors in Claude.ai and click Add custom connector. Fill in the connector details:.",
+      "position": 4
+    },
+    {
+      "title": "MCP Web Search & Scrape in Cursor - Firecrawl Docs",
+      "url": "https://docs.firecrawl.dev/developer-guides/mcp-setup-guides/cursor",
+      "domain": "docs.firecrawl.dev",
+      "description": "1. Get Your API Key · 2. Add to Cursor · 3. Restart Cursor.",
+      "position": 5
+    },
+    {
+      "title": "MCP Web Search & Scrape in ChatGPT - Firecrawl Docs",
+      "url": "https://docs.firecrawl.dev/developer-guides/mcp-setup-guides/chatgpt",
+      "domain": "docs.firecrawl.dev",
+      "description": "1. Get Your API Key · 2. Enable Developer Mode · 3. Create the Connector · 4. Verify Setup · 5. Access Firecrawl Tools.",
+      "position": 6
+    },
+    {
+      "title": "MCP Web Search & Scrape in Claude Code - Firecrawl Docs",
+      "url": "https://docs.firecrawl.dev/developer-guides/mcp-setup-guides/claude-code",
+      "domain": "docs.firecrawl.dev",
+      "description": "Replace your-api-key with your actual Firecrawl API key. Done! You can now search and scrape the web from Claude Code.",
+      "position": 7
+    },
+    {
+      "title": "MCP Web Search & Scrape in Windsurf - Firecrawl Docs",
+      "url": "https://docs.firecrawl.dev/developer-guides/mcp-setup-guides/windsurf",
+      "domain": "docs.firecrawl.dev",
+      "description": "Add web scraping and search capabilities to Windsurf with Firecrawl MCP. ​. Quick Setup. ​. 1. Get Your API Key. Sign up at firecrawl.dev/app and copy your API ...",
+      "position": 8
+    },
+    {
+      "title": "Advanced Scraping Guide - Firecrawl Docs",
+      "url": "https://docs.firecrawl.dev/advanced-scraping-guide",
+      "domain": "docs.firecrawl.dev",
+      "description": "Configure scrape options, browser actions, crawl, map, and the agent endpoint with Firecrawl's full API surface.",
+      "position": 9
+    },
+    {
+      "title": "Introduction | Firecrawl",
+      "url": "https://docs.firecrawl.dev/introduction",
+      "domain": "docs.firecrawl.dev",
+      "description": "Search the web and get full page content from results in one call. See the Search feature docs for all options. Python. Node. cURL.",
+      "position": 10
+    }
+  ]
+}

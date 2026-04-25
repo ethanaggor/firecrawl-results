@@ -1,0 +1,38 @@
+{
+  "provider": "firecrawl-context",
+  "tool": "firecrawl_search",
+  "isError": false,
+  "rawText": "{\n  \"query\": \"Parallel Search MCP web_search web_fetch agents benchmark WISER dense excerpts free search mcp official docs\",\n  \"executedQuery\": \"Parallel Search MCP web_search web_fetch agents benchmark WISER dense excerpts free search mcp official docs (site:parallel.ai OR site:docs.parallel.ai)\",\n  \"content\": \"chunks\",\n  \"constraints\": {\n    \"maxResults\": 8,\n    \"maxCharsPerResult\": 1600,\n    \"maxCharsTotal\": 10000,\n    \"focus\": \"Parallel Search MCP endpoint, tool-call flow, web_search/web_fetch behavior, result context shape, limits, and public benchmark methodology for agents\",\n    \"sourcePolicy\": {\n      \"includeDomains\": [\n        \"parallel.ai\",\n        \"docs.parallel.ai\"\n      ]\n    }\n  },\n  \"results\": [],\n  \"searchIds\": [\n    \"019dc312-0fec-72dc-8952-a68dfd188b5d\"\n  ],\n  \"usage\": {\n    \"resultCount\": 0,\n    \"charsReturned\": 0,\n    \"creditsUsed\": 0,\n    \"rawResultCount\": {\n      \"web\": 0,\n      \"news\": 0,\n      \"images\": 0\n    }\n  }\n}",
+  "parsed": {
+    "query": "Parallel Search MCP web_search web_fetch agents benchmark WISER dense excerpts free search mcp official docs",
+    "executedQuery": "Parallel Search MCP web_search web_fetch agents benchmark WISER dense excerpts free search mcp official docs (site:parallel.ai OR site:docs.parallel.ai)",
+    "content": "chunks",
+    "constraints": {
+      "maxResults": 8,
+      "maxCharsPerResult": 1600,
+      "maxCharsTotal": 10000,
+      "focus": "Parallel Search MCP endpoint, tool-call flow, web_search/web_fetch behavior, result context shape, limits, and public benchmark methodology for agents",
+      "sourcePolicy": {
+        "includeDomains": [
+          "parallel.ai",
+          "docs.parallel.ai"
+        ]
+      }
+    },
+    "results": [],
+    "searchIds": [
+      "019dc312-0fec-72dc-8952-a68dfd188b5d"
+    ],
+    "usage": {
+      "resultCount": 0,
+      "charsReturned": 0,
+      "creditsUsed": 0,
+      "rawResultCount": {
+        "web": 0,
+        "news": 0,
+        "images": 0
+      }
+    }
+  },
+  "results": []
+}

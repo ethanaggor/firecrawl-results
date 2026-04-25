@@ -1,0 +1,21 @@
+{
+  "query": "Exa Parallel Tavily public search benchmark methodology SimpleQA WISER MSMARCO document relevance",
+  "content": "chunks",
+  "maxResults": 10,
+  "maxCharsPerResult": 1800,
+  "maxCharsTotal": 14000,
+  "focus": "benchmark methodology, evaluation datasets, metrics, task construction patterns, agent search workflows",
+  "sourcePolicy": {
+    "includeDomains": [
+      "exa.ai",
+      "parallel.ai",
+      "github.com",
+      "docs.tavily.com"
+    ]
+  },
+  "sources": [
+    "web"
+  ],
+  "ignoreInvalidURLs": true,
+  "includeRawResults": false
+}

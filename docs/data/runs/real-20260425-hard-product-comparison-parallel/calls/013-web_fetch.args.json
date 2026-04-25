@@ -1,0 +1,19 @@
+{
+  "urls": [
+    "https://parallel.ai/blog/search-api-benchmark",
+    "https://parallel.ai/benchmarks",
+    "https://exa.ai/blog/api-evals",
+    "https://exa.ai/blog/evals-at-exa",
+    "https://exa.ai/blog/webcode",
+    "https://github.com/tavily-ai/tavily-search-evals",
+    "https://www.firecrawl.dev/blog/best-web-search-mcp"
+  ],
+  "objective": "Extract benchmark methodology and retrieval quality claims for agent web search products.",
+  "search_queries": [
+    "agent search benchmark quality",
+    "retrieval quality methodology",
+    "MCP search comparison"
+  ],
+  "session_id": "real20260425hardproductcomparisonparallel001",
+  "model_name": "gpt-5.5 xhigh"
+}

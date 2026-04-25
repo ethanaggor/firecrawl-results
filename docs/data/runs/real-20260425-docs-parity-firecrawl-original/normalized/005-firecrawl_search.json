@@ -1,0 +1,10 @@
+{
+  "provider": "firecrawl-original",
+  "tool": "firecrawl_search",
+  "isError": false,
+  "rawText": "{\n  \"web\": []\n}",
+  "parsed": {
+    "web": []
+  },
+  "results": []
+}

@@ -1,0 +1,88 @@
+{
+  "provider": "firecrawl-context",
+  "tool": "firecrawl_search",
+  "isError": false,
+  "rawText": "{\n  \"query\": \"Exa WebCode evaluation guide search benchmark retrieval quality latency freshness agentic suitability\",\n  \"executedQuery\": \"Exa WebCode evaluation guide search benchmark retrieval quality latency freshness agentic suitability (site:exa.ai OR site:docs.exa.ai)\",\n  \"content\": \"chunks\",\n  \"constraints\": {\n    \"maxResults\": 6,\n    \"maxCharsPerResult\": 2400,\n    \"maxCharsTotal\": 10000,\n    \"focus\": \"WebCode coding-agent benchmark, evaluation guide metrics, latency, freshness, cost efficiency, agentic suitability\",\n    \"sourcePolicy\": {\n      \"includeDomains\": [\n        \"exa.ai\",\n        \"docs.exa.ai\"\n      ]\n    }\n  },\n  \"results\": [\n    {\n      \"title\": \"llms-full.txt - Exa\",\n      \"url\": \"https://exa.ai/docs/llms-full.txt\",\n      \"description\": \"With our new Auto search architecture, we can no longer generate meaningful scores for Auto search results. The search functionality works exactly the same way ...\",\n      \"position\": 1,\n      \"source\": \"web\",\n      \"metadata\": {\n        \"sourceURL\": \"https://exa.ai/docs/llms-full.txt\",\n        \"finalURL\": \"https://exa.ai/docs/llms-full.txt\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"Exa Instant delivers improved neural search with better quality and sub-200ms latency. Use \\\\`type = \\\"instant\\\"\\\\` to enable the fastest search experience.\",\n          \"charCount\": 152\n        },\n        {\n          \"text\": \"This guide will show you how you can define and use Exa search within the LangGraph framework. This framework provides a straightforward way for you to define an AI agent and for it to retrieve high-quality, semantically matched content via Exa search.\",\n          \"charCount\": 252\n        },\n        {\n          \"text\": \"\\\\`\\\\`\\\\`\\n Workflow executed successfully\\n Final state:\\n Messages:\\n SystemMessage: You are a helpful assistant....\\n HumanMessage: Check this text for hallucinations: The Eiffel Tower, an iconic iron lattice structure located in Pa...\\n AIMessage: Use hallucination\\\\_check tool...\\n AIMessage: {'claims': \\\\[{'claim': 'The Eiffel Tower is an iconic iron lattice structure', 'assessment': 'support...\\\\\\n\\\\\\n Analysis Result:\\\\\\n Claim: The Eiffel Tower is an iconic iron lattice structure\\\\\\n Assessment: supported\\\\\\n Confidence Score: 1\\\\\\n Supporting Sources:\\\\\\n \\\\- https://www.toureiffel.paris/en/news/130-years/what-eiffel-tower-made...\\\\\\n \\\\- https://thechalkface.net/resources/melting\\\\_the\\\\_eiffel\\\\_tower.pdf...\\\\\\n \\\\- https://datagenetics.com/blog/april22016/index.html...\\\\\\n \\\\- https://engineering.purdue.edu/MSE/abo\",\n          \"charCount\": 800\n        }\n      ]\n    }\n  ],\n  \"searchIds\": [\n    \"019dc305-cb1b-76cc-a856-87ce40c6d96e\"\n  ],\n  \"usage\": {\n    \"resultCount\": 1,\n    \"charsReturned\": 1204,\n    \"creditsUsed\": 3,\n    \"rawResultCount\": {\n      \"web\": 1,\n      \"news\": 0,\n      \"images\": 0\n    }\n  }\n}",
+  "parsed": {
+    "query": "Exa WebCode evaluation guide search benchmark retrieval quality latency freshness agentic suitability",
+    "executedQuery": "Exa WebCode evaluation guide search benchmark retrieval quality latency freshness agentic suitability (site:exa.ai OR site:docs.exa.ai)",
+    "content": "chunks",
+    "constraints": {
+      "maxResults": 6,
+      "maxCharsPerResult": 2400,
+      "maxCharsTotal": 10000,
+      "focus": "WebCode coding-agent benchmark, evaluation guide metrics, latency, freshness, cost efficiency, agentic suitability",
+      "sourcePolicy": {
+        "includeDomains": [
+          "exa.ai",
+          "docs.exa.ai"
+        ]
+      }
+    },
+    "results": [
+      {
+        "title": "llms-full.txt - Exa",
+        "url": "https://exa.ai/docs/llms-full.txt",
+        "description": "With our new Auto search architecture, we can no longer generate meaningful scores for Auto search results. The search functionality works exactly the same way ...",
+        "position": 1,
+        "source": "web",
+        "metadata": {
+          "sourceURL": "https://exa.ai/docs/llms-full.txt",
+          "finalURL": "https://exa.ai/docs/llms-full.txt",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "Exa Instant delivers improved neural search with better quality and sub-200ms latency. Use \\`type = \"instant\"\\` to enable the fastest search experience.",
+            "charCount": 152
+          },
+          {
+            "text": "This guide will show you how you can define and use Exa search within the LangGraph framework. This framework provides a straightforward way for you to define an AI agent and for it to retrieve high-quality, semantically matched content via Exa search.",
+            "charCount": 252
+          },
+          {
+            "text": "\\`\\`\\`\n Workflow executed successfully\n Final state:\n Messages:\n SystemMessage: You are a helpful assistant....\n HumanMessage: Check this text for hallucinations: The Eiffel Tower, an iconic iron lattice structure located in Pa...\n AIMessage: Use hallucination\\_check tool...\n AIMessage: {'claims': \\[{'claim': 'The Eiffel Tower is an iconic iron lattice structure', 'assessment': 'support...\\\n\\\n Analysis Result:\\\n Claim: The Eiffel Tower is an iconic iron lattice structure\\\n Assessment: supported\\\n Confidence Score: 1\\\n Supporting Sources:\\\n \\- https://www.toureiffel.paris/en/news/130-years/what-eiffel-tower-made...\\\n \\- https://thechalkface.net/resources/melting\\_the\\_eiffel\\_tower.pdf...\\\n \\- https://datagenetics.com/blog/april22016/index.html...\\\n \\- https://engineering.purdue.edu/MSE/abo",
+            "charCount": 800
+          }
+        ]
+      }
+    ],
+    "searchIds": [
+      "019dc305-cb1b-76cc-a856-87ce40c6d96e"
+    ],
+    "usage": {
+      "resultCount": 1,
+      "charsReturned": 1204,
+      "creditsUsed": 3,
+      "rawResultCount": {
+        "web": 1,
+        "news": 0,
+        "images": 0
+      }
+    }
+  },
+  "results": [
+    {
+      "title": "llms-full.txt - Exa",
+      "url": "https://exa.ai/docs/llms-full.txt",
+      "domain": "exa.ai",
+      "description": "With our new Auto search architecture, we can no longer generate meaningful scores for Auto search results. The search functionality works exactly the same way ...",
+      "chunks": [
+        {
+          "text": "Exa Instant delivers improved neural search with better quality and sub-200ms latency. Use \\`type = \"instant\"\\` to enable the fastest search experience.",
+          "charCount": 152
+        },
+        {
+          "text": "This guide will show you how you can define and use Exa search within the LangGraph framework. This framework provides a straightforward way for you to define an AI agent and for it to retrieve high-quality, semantically matched content via Exa search.",
+          "charCount": 252
+        },
+        {
+          "text": "\\`\\`\\`\n Workflow executed successfully\n Final state:\n Messages:\n SystemMessage: You are a helpful assistant....\n HumanMessage: Check this text for hallucinations: The Eiffel Tower, an iconic iron lattice structure located in Pa...\n AIMessage: Use hallucination\\_check tool...\n AIMessage: {'claims': \\[{'claim': 'The Eiffel Tower is an iconic iron lattice structure', 'assessment': 'support...\\\n\\\n Analysis Result:\\\n Claim: The Eiffel Tower is an iconic iron lattice structure\\\n Assessment: supported\\\n Confidence Score: 1\\\n Supporting Sources:\\\n \\- https://www.toureiffel.paris/en/news/130-years/what-eiffel-tower-made...\\\n \\- https://thechalkface.net/resources/melting\\_the\\_eiffel\\_tower.pdf...\\\n \\- https://datagenetics.com/blog/april22016/index.html...\\\n \\- https://engineering.purdue.edu/MSE/abo",
+          "charCount": 800
+        }
+      ],
+      "source": "web",
+      "position": 1
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "query": "site:docs.firecrawl.dev Firecrawl MCP server search scrape tool agent docs",
+  "limit": 6,
+  "sources": [
+    {
+      "type": "web"
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "status": "complete",
+  "runId": "real-20260425-source-policy-docs-only-firecrawl-context",
+  "generatedAt": "2026-04-25T05:11:52.168Z",
+  "manifest": {
+    "runId": "real-20260425-source-policy-docs-only-firecrawl-context",
+    "createdAt": "2026-04-25T05:09:32.225Z",
+    "provider": {
+      "id": "firecrawl-context",
+      "name": "Firecrawl MCP context fork",
+      "transport": "stdio",
+      "cwd": "../firecrawl-mcp-server",
+      "command": "node",
+      "args": [
+        "dist/index.js"
+      ],
+      "env": [
+        {
+          "name": "FIRECRAWL_API_KEY",
+          "required": true,
+          "present": true
+        },
+        {
+          "name": "FIRECRAWL_API_URL",
+          "required": false,
+          "present": false
+        }
+      ],
+      "searchTools": [
+        "firecrawl_search"
+      ],
+      "fetchTools": [
+        "firecrawl_scrape"
+      ],
+      "cwdExists": true
+    },
+    "task": {
+      "id": "source-policy-docs-only",
+      "family": "source-policy",
+      "question": "Using only official Firecrawl docs, what does the Search API say about categories, country, timeout, and ignoreInvalidURLs?",
+      "agentGoal": "Constrain to docs.firecrawl.dev and produce evidence only from that domain.",
+      "expectedTerms": [
+        "categories",
+        "country",
+        "timeout",
+        "ignoreInvalidURLs"
+      ],
+      "expectedDomains": [
+        "docs.firecrawl.dev"
+      ],
+      "sourcePolicy": {
+        "includeDomains": [
+          "docs.firecrawl.dev"
+        ]
+      }
+    }
+  },
+  "metrics": {
+    "provider": "firecrawl-context",
+    "taskId": "source-policy-docs-only",
+    "toolCalls": 2,
+    "searchCalls": 1,
+    "fetchCalls": 1,
+    "failedCalls": 0,
+    "totalConnectMs": 438,
+    "totalCallLatencyMs": 1023,
+    "argumentTokens": 167,
+    "rawOutputTokens": 10743,
+    "normalizedEvidenceTokens": 2033,
+    "totalTrajectoryTokens": 22629,
+    "contract": {
+      "toolCount": 14,
+      "searchToolCount": 1,
+      "fetchToolCount": 2,
+      "descriptionTokens": 5356,
+      "schemaTokens": 5505,
+      "totalMcpFootprintTokens": 11719,
+      "hasFreshnessControl": true,
+      "hasSourcePolicyControl": true,
+      "hasContentBudgetControl": true,
+      "hasUsageMetadata": true
+    }
+  },
+  "semanticScore": {
+    "agentModel": "gpt-5.5 xhigh",
+    "provider": "firecrawl-context",
+    "taskId": "source-policy-docs-only",
+    "success": true,
+    "answerSupportedByEvidence": true,
+    "retrievalQualityScore": 4.8,
+    "agentExperienceScore": 4.2,
+    "sourcePolicyAdherent": true,
+    "freshnessAdherent": null,
+    "callRationale": [
+      "Started the requested firecrawl-context run and inspected the exposed tool schema.",
+      "Used firecrawl_search because the exact docs URL was not assumed up front and the tool exposed native sourcePolicy.includeDomains controls.",
+      "Constrained search to docs.firecrawl.dev with sourcePolicy.includeDomains and used chunks mode for focused parameter evidence.",
+      "Followed up with firecrawl_scrape on the discovered official Search endpoint because the search chunks clipped some body-field descriptions needed for timeout and ignoreInvalidURLs."
+    ],
+    "strengths": [
+      "Native sourcePolicy.includeDomains was available and the executed search query added a docs.firecrawl.dev site constraint.",
+      "All returned search result domains were docs.firecrawl.dev.",
+      "The exact Search endpoint scrape provided direct support for all expected terms: categories, country, timeout, and ignoreInvalidURLs.",
+      "The final answer cites only the official docs.firecrawl.dev Search endpoint."
+    ],
+    "weaknesses": [
+      "The MCP tool surface is large, producing a high schema/description footprint before the first content call.",
+      "The first search response included duplicated chunks and localized/CLI docs pages in addition to the primary Search endpoint.",
+      "The focused search chunks clipped some parameter descriptions, so an exact-page scrape was needed."
+    ],
+    "notableFailures": [
+      {
+        "category": "direct fix and needs no further changes",
+        "description": "The first attempted harness call failed with ENOENT because the args JSON was accidentally written relative to the original shell repo instead of /Users/ethanaggor/firecrawl-results.",
+        "fix": "Removed the accidental scratch file with trash, rewrote the args file under the requested evals/work run directory, and reran the same harness call successfully.",
+        "architecturalConcern": "No provider or benchmark architecture change is needed."
+      }
+    ],
+    "confidence": 0.93
+  },
+  "artifacts": {
+    "answer": "scoring/final-answer.md",
+    "score": "scoring/agent-score.json",
+    "trace": "trace.jsonl",
+    "tools": "schemas/tools.json"
+  }
+}

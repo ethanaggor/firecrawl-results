@@ -1,0 +1,10 @@
+{
+  "query": "github.com/firecrawl/firecrawl searchRequestSchema categories country timeout ignoreInvalidURLs enterprise search API schema",
+  "max_results": 6,
+  "search_depth": "advanced",
+  "topic": "general",
+  "include_domains": [
+    "github.com"
+  ],
+  "include_raw_content": false
+}

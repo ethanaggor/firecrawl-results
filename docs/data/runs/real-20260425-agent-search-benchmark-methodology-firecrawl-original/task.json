@@ -1,0 +1,18 @@
+{
+  "id": "agent-search-benchmark-methodology",
+  "family": "benchmark-methodology",
+  "question": "What benchmark methodology should be used for agent web search tools, based on public Exa, Parallel, and Tavily benchmarks?",
+  "agentGoal": "Find and compare public benchmark methodology from Exa, Parallel, and Tavily. Extract metrics and task construction patterns.",
+  "expectedTerms": [
+    "SimpleQA",
+    "WISER",
+    "MSMARCO",
+    "document relevance"
+  ],
+  "expectedDomains": [
+    "exa.ai",
+    "parallel.ai",
+    "github.com",
+    "docs.tavily.com"
+  ]
+}

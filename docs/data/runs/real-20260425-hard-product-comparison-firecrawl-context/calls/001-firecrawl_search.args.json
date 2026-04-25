@@ -1,0 +1,25 @@
+{
+  "query": "Firecrawl Exa Parallel Tavily MCP search agent benchmark context shape tool call flow retrieval quality",
+  "content": "chunks",
+  "focus": "official docs or benchmark pages describing MCP search tools, agent-facing context shape, tool-call flow, returned content, and retrieval quality benchmarks",
+  "maxResults": 8,
+  "maxCharsPerResult": 1200,
+  "maxCharsTotal": 9000,
+  "sourcePolicy": {
+    "includeDomains": [
+      "docs.firecrawl.dev",
+      "exa.ai",
+      "docs.exa.ai",
+      "parallel.ai",
+      "docs.parallel.ai",
+      "docs.tavily.com",
+      "tavily.com",
+      "github.com"
+    ]
+  },
+  "sources": [
+    "web"
+  ],
+  "ignoreInvalidURLs": true,
+  "includeRawResults": false
+}

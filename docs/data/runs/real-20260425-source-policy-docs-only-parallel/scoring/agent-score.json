@@ -1,0 +1,50 @@
+{
+  "agentModel": "gpt-5.5 xhigh",
+  "provider": "parallel",
+  "taskId": "source-policy-docs-only",
+  "success": true,
+  "answerSupportedByEvidence": true,
+  "retrievalQualityScore": 5,
+  "agentExperienceScore": 4,
+  "sourcePolicyAdherent": true,
+  "freshnessAdherent": null,
+  "callRationale": [
+    {
+      "step": "start",
+      "rationale": "Started the requested isolated run and inspected the provider schema. Parallel exposed web_search and web_fetch. It did not expose a native domain or source-policy field, so source restriction had to be expressed in the objective and search queries."
+    },
+    {
+      "step": "001 web_search",
+      "rationale": "Searched with docs.firecrawl.dev-only constraints and targeted queries for Search API categories, country, timeout, and ignoreInvalidURLs."
+    },
+    {
+      "step": "003 web_fetch",
+      "rationale": "Fetched the canonical Search API reference and Search feature docs returned by search to get direct excerpts for all four requested fields."
+    }
+  ],
+  "strengths": [
+    "All visible evidence used in the answer came from docs.firecrawl.dev.",
+    "The targeted fetch returned direct Search API/OpenAPI excerpts covering categories, country, timeout, and ignoreInvalidURLs.",
+    "The provider output included compact enough excerpts after fetch to support the final answer without needing full_content."
+  ],
+  "weaknesses": [
+    "Parallel did not expose a native domain/source-policy control in the tool schema, so the docs.firecrawl.dev restriction depended on query-level site constraints and the objective.",
+    "The initial web_search response was verbose and included several related but non-canonical docs pages, making a follow-up fetch necessary.",
+    "The harness normalized expectedTermHit metric reported false even though the raw visible excerpts contained the expected terms."
+  ],
+  "notableFailures": [
+    {
+      "category": "direct fix and needs no further changes",
+      "failure": "No provider-native source/domain filter was available.",
+      "fix": "Used docs.firecrawl.dev-only instructions in the objective and site:docs.firecrawl.dev constraints in every search query, then only fetched docs.firecrawl.dev URLs.",
+      "residualRisk": "Query-level constraints are weaker than a native source-policy parameter, but this run's returned and cited evidence stayed on the required domain."
+    },
+    {
+      "category": "direct fix and needs no further changes",
+      "failure": "The first search result set included useful but broad docs pages and did not make timeout and ignoreInvalidURLs as cleanly answerable as the canonical API reference.",
+      "fix": "Fetched the Search API reference and Search feature docs with field-specific objective/query focus.",
+      "residualRisk": "No further call was needed because the fetch returned direct OpenAPI text for timeout and ignoreInvalidURLs."
+    }
+  ],
+  "confidence": 0.95
+}

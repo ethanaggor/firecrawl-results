@@ -1,0 +1,10 @@
+{
+  "urls": [
+    "https://docs.firecrawl.dev/api-reference/endpoint/search",
+    "https://github.com/firecrawl/firecrawl/blob/main/apps/api/src/controllers/v2/types.ts"
+  ],
+  "extract_depth": "basic",
+  "format": "markdown",
+  "include_images": false,
+  "query": "Firecrawl Search API fields categories country timeout ignoreInvalidURLs enterprise response metadata"
+}

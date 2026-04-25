@@ -1,0 +1,18 @@
+{
+  "query": "site:github.com release notes TypeScript API changes September 2025 JavaScript library",
+  "content": "chunks",
+  "focus": "release notes or changelog for a TypeScript or JavaScript library after August 2025, concrete API changes, examples",
+  "maxResults": 8,
+  "maxCharsPerResult": 1800,
+  "maxCharsTotal": 9000,
+  "freshness": {
+    "startDate": "2025-09-01",
+    "sortByDate": true
+  },
+  "sources": [
+    "web"
+  ],
+  "categories": [
+    "github"
+  ]
+}

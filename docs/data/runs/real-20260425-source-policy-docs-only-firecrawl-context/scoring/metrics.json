@@ -1,0 +1,26 @@
+{
+  "provider": "firecrawl-context",
+  "taskId": "source-policy-docs-only",
+  "toolCalls": 2,
+  "searchCalls": 1,
+  "fetchCalls": 1,
+  "failedCalls": 0,
+  "totalConnectMs": 438,
+  "totalCallLatencyMs": 1023,
+  "argumentTokens": 167,
+  "rawOutputTokens": 10743,
+  "normalizedEvidenceTokens": 2033,
+  "totalTrajectoryTokens": 22629,
+  "contract": {
+    "toolCount": 14,
+    "searchToolCount": 1,
+    "fetchToolCount": 2,
+    "descriptionTokens": 5356,
+    "schemaTokens": 5505,
+    "totalMcpFootprintTokens": 11719,
+    "hasFreshnessControl": true,
+    "hasSourcePolicyControl": true,
+    "hasContentBudgetControl": true,
+    "hasUsageMetadata": true
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "query": "Tavily MCP search_depth advanced chunks agent search evals official docs",
+  "max_results": 8,
+  "search_depth": "advanced",
+  "include_domains": [
+    "docs.tavily.com",
+    "tavily.com",
+    "github.com"
+  ],
+  "include_raw_content": false
+}

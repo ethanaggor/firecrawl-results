@@ -1,0 +1,9 @@
+{
+  "query": "site:parallel.ai Parallel Search MCP benchmark WISER agents web_search web_fetch excerpts",
+  "limit": 8,
+  "sources": [
+    {
+      "type": "web"
+    }
+  ]
+}

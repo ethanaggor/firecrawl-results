@@ -1,0 +1,10 @@
+{
+  "objective": "Find official docs and benchmark pages comparing agent-facing web search products Firecrawl Exa Parallel Tavily MCP search agent context retrieval quality.",
+  "search_queries": [
+    "Firecrawl Exa Parallel Tavily MCP",
+    "agent web search benchmark",
+    "MCP search docs"
+  ],
+  "session_id": "real20260425hardproductcomparisonparallel001",
+  "model_name": "gpt-5.5 xhigh"
+}

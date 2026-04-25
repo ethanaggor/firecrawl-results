@@ -1,0 +1,9 @@
+{
+  "url": "https://docs.parallel.ai/integrations/mcp/search-mcp",
+  "formats": [
+    "markdown"
+  ],
+  "onlyMainContent": true,
+  "removeBase64Images": true,
+  "maxAge": 0
+}

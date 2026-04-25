@@ -1,0 +1,6 @@
+{
+  "url": "https://docs.tavily.com",
+  "search": "MCP search_depth advanced chunks search API best practices",
+  "limit": 15,
+  "ignoreQueryParameters": true
+}

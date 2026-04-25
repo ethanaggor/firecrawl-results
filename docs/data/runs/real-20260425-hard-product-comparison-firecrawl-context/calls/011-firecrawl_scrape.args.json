@@ -1,0 +1,9 @@
+{
+  "url": "https://docs.firecrawl.dev/mcp-server",
+  "formats": [
+    "markdown"
+  ],
+  "onlyMainContent": true,
+  "removeBase64Images": true,
+  "maxAge": 0
+}

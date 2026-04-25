@@ -1,0 +1,9 @@
+{
+  "query": "official docs benchmark pages Firecrawl Exa Parallel Tavily MCP search agent retrieval quality context shape tool calls",
+  "limit": 10,
+  "sources": [
+    {
+      "type": "web"
+    }
+  ]
+}

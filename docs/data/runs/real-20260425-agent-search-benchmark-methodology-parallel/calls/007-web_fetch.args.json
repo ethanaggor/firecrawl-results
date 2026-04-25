@@ -1,0 +1,16 @@
+{
+  "urls": [
+    "https://docs.tavily.com/documentation/best-practices/best-practices-search",
+    "https://docs.tavily.com/sdk/python/reference",
+    "https://docs.tavily.com/examples/agent-toolkit/tools"
+  ],
+  "objective": "Extract search_depth tradeoffs, content shape controls, relevance/latency guidance, token budgets, and agent retrieval patterns.",
+  "search_queries": [
+    "search_depth latency relevance chunks",
+    "content controls token budget",
+    "agent retrieval search tools"
+  ],
+  "full_content": false,
+  "session_id": "7d4b2e9f0c3a45b68e1f9a2d6c0b7e4a",
+  "model_name": "gpt-5.5 xhigh"
+}

@@ -1,0 +1,117 @@
+{
+  "status": "complete",
+  "runId": "real-20260425-hard-product-comparison-exa",
+  "generatedAt": "2026-04-25T05:20:24.220Z",
+  "manifest": {
+    "runId": "real-20260425-hard-product-comparison-exa",
+    "createdAt": "2026-04-25T05:14:19.977Z",
+    "provider": {
+      "id": "exa",
+      "name": "Exa remote MCP",
+      "transport": "streamable-http",
+      "url": "https://mcp.exa.ai/mcp?tools=web_search_exa,web_fetch_exa,web_search_advanced_exa",
+      "headers": [
+        {
+          "name": "x-api-key",
+          "required": true,
+          "present": true
+        }
+      ],
+      "searchTools": [
+        "web_search_exa",
+        "web_search_advanced_exa"
+      ],
+      "fetchTools": [
+        "web_fetch_exa"
+      ]
+    },
+    "task": {
+      "id": "hard-product-comparison",
+      "family": "multi-step-research",
+      "question": "For an agent trying to answer hard web questions, how do Firecrawl, Exa, Parallel, and Tavily differ in context shape, tool-call flow, and retrieval quality?",
+      "agentGoal": "Gather evidence from official docs and benchmark pages, then compare agent-facing search behavior. Multiple calls are expected.",
+      "expectedTerms": [
+        "MCP",
+        "search",
+        "agent"
+      ],
+      "expectedDomains": [
+        "docs.firecrawl.dev",
+        "exa.ai",
+        "parallel.ai",
+        "docs.tavily.com"
+      ]
+    }
+  },
+  "metrics": {
+    "provider": "exa",
+    "taskId": "hard-product-comparison",
+    "toolCalls": 7,
+    "searchCalls": 5,
+    "fetchCalls": 2,
+    "failedCalls": 0,
+    "totalConnectMs": 1328,
+    "totalCallLatencyMs": 56326,
+    "argumentTokens": 892,
+    "rawOutputTokens": 100576,
+    "normalizedEvidenceTokens": 24170,
+    "totalTrajectoryTokens": 103468,
+    "contract": {
+      "toolCount": 3,
+      "searchToolCount": 2,
+      "fetchToolCount": 1,
+      "descriptionTokens": 235,
+      "schemaTokens": 1509,
+      "totalMcpFootprintTokens": 2000,
+      "hasFreshnessControl": true,
+      "hasSourcePolicyControl": true,
+      "hasContentBudgetControl": true,
+      "hasUsageMetadata": false
+    }
+  },
+  "semanticScore": {
+    "agentModel": "gpt-5.5 xhigh",
+    "provider": "exa",
+    "taskId": "hard-product-comparison",
+    "success": true,
+    "answerSupportedByEvidence": true,
+    "retrievalQualityScore": 4.4,
+    "agentExperienceScore": 3.8,
+    "sourcePolicyAdherent": null,
+    "freshnessAdherent": null,
+    "callRationale": [
+      "001 web_search_advanced_exa: broad official-domain discovery across the expected product/doc/benchmark domains.",
+      "003 web_search_advanced_exa: focused Tavily query because the broad discovery call missed docs.tavily.com.",
+      "005 web_search_advanced_exa: focused Firecrawl query to capture Search API and MCP search context shape.",
+      "007 web_search_advanced_exa: focused Exa query to capture MCP docs, evaluation guide, API evals, and WebCode evidence.",
+      "009 web_search_advanced_exa: focused Parallel query to capture Search MCP docs and benchmark/product claims.",
+      "011 web_fetch_exa: batch fetch for MCP and search contract pages.",
+      "013 web_fetch_exa: batch fetch for search-quality and benchmark pages."
+    ],
+    "strengths": [
+      "Tool discovery was clear: Exa exposed basic search, advanced search, and fetch with domain, date, freshness, highlight, summary, text budget, and subpage controls.",
+      "Domain-filtered advanced searches found official evidence for all required providers and expected concepts: MCP, search, and agent.",
+      "The search results included enough clean text and highlights to compare context shape, tool flow, and quality claims without needing arbitrary external sources.",
+      "Exa found both docs and benchmark/evaluation pages, including Exa API evals, Exa WebCode, Parallel WISER-Search benchmark evidence, Tavily search-depth docs, and Firecrawl Search API docs."
+    ],
+    "weaknesses": [
+      "The initial broad discovery call missed Tavily entirely, requiring a focused recovery call.",
+      "Raw search responses were large, around 9k to 12k tokens per search call, even with highlights and text budgets.",
+      "Batch fetches produced very large raw responses despite `maxCharacters`, which reduced context-budget predictability.",
+      "Fetch responses normalized to zero evidence entries in the harness, so search-normalized evidence was more useful than fetch-normalized evidence."
+    ],
+    "notableFailures": [
+      "Direct fix, needs no further changes: the first attempted call failed locally because the args file was created relative to the wrong workspace; the accidental file was moved to trash and the args were recreated under /Users/ethanaggor/firecrawl-results/evals/work.",
+      "Direct fix, needs no further changes: broad discovery did not return Tavily; a targeted docs.tavily.com query recovered the missing provider evidence.",
+      "Fixed but could benefit from cleaner/simpler implementation with an architectural change: web_fetch_exa did not provide predictable context budgeting in this batch trajectory and returned much larger raw responses than requested.",
+      "Fixed but could benefit from cleaner/simpler implementation with an architectural change: harness normalization for fetch calls produced no normalized evidence, making final evidence accounting depend on search normalization and raw fetch text."
+    ],
+    "confidence": 0.84
+  },
+  "artifacts": {
+    "answer": "scoring/final-answer.md",
+    "score": "scoring/agent-score.json",
+    "trace": "trace.jsonl",
+    "tools": "schemas/tools.json"
+  }
+}

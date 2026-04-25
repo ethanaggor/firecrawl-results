@@ -1,0 +1,51 @@
+{
+  "provider": "firecrawl-original",
+  "tool": "firecrawl_search",
+  "isError": false,
+  "rawText": "{\n  \"web\": [\n    {\n      \"url\": \"https://parallel.ai/blog/search-api-benchmark\",\n      \"title\": \"A state-of-the-art search API purpose-built for agents\",\n      \"description\": \"**The results show that agents using Parallel Search MCP achieve superior accuracy at up to 50% lower total cost** when compared to agents using ...\",\n      \"position\": 1\n    },\n    {\n      \"url\": \"https://parallel.ai/blog/introducing-findall-api\",\n      \"title\": \"Introducing the Parallel FindAll API\",\n      \"description\": \"This benchmark, created by Parallel, contains 40 complex multi-criteria queries covering public companies, startups, SMBs, specialized entities, ...\",\n      \"position\": 2\n    },\n    {\n      \"url\": \"https://docs.parallel.ai/llms-full.txt\",\n      \"title\": \"llms-full.txt - Parallel Documentation\",\n      \"description\": \"See [MCP Tool Calling](/task-api/mcp-tool-call) for complete documentation ... This guide shows how to define Parallel Search as an OpenAI function and handle ...\",\n      \"position\": 3\n    }\n  ]\n}",
+  "parsed": {
+    "web": [
+      {
+        "url": "https://parallel.ai/blog/search-api-benchmark",
+        "title": "A state-of-the-art search API purpose-built for agents",
+        "description": "**The results show that agents using Parallel Search MCP achieve superior accuracy at up to 50% lower total cost** when compared to agents using ...",
+        "position": 1
+      },
+      {
+        "url": "https://parallel.ai/blog/introducing-findall-api",
+        "title": "Introducing the Parallel FindAll API",
+        "description": "This benchmark, created by Parallel, contains 40 complex multi-criteria queries covering public companies, startups, SMBs, specialized entities, ...",
+        "position": 2
+      },
+      {
+        "url": "https://docs.parallel.ai/llms-full.txt",
+        "title": "llms-full.txt - Parallel Documentation",
+        "description": "See [MCP Tool Calling](/task-api/mcp-tool-call) for complete documentation ... This guide shows how to define Parallel Search as an OpenAI function and handle ...",
+        "position": 3
+      }
+    ]
+  },
+  "results": [
+    {
+      "title": "A state-of-the-art search API purpose-built for agents",
+      "url": "https://parallel.ai/blog/search-api-benchmark",
+      "domain": "parallel.ai",
+      "description": "**The results show that agents using Parallel Search MCP achieve superior accuracy at up to 50% lower total cost** when compared to agents using ...",
+      "position": 1
+    },
+    {
+      "title": "Introducing the Parallel FindAll API",
+      "url": "https://parallel.ai/blog/introducing-findall-api",
+      "domain": "parallel.ai",
+      "description": "This benchmark, created by Parallel, contains 40 complex multi-criteria queries covering public companies, startups, SMBs, specialized entities, ...",
+      "position": 2
+    },
+    {
+      "title": "llms-full.txt - Parallel Documentation",
+      "url": "https://docs.parallel.ai/llms-full.txt",
+      "domain": "docs.parallel.ai",
+      "description": "See [MCP Tool Calling](/task-api/mcp-tool-call) for complete documentation ... This guide shows how to define Parallel Search as an OpenAI function and handle ...",
+      "position": 3
+    }
+  ]
+}

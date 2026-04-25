@@ -1,0 +1,77 @@
+{
+  "provider": "firecrawl-original",
+  "tool": "firecrawl_search",
+  "isError": false,
+  "rawText": "{\n  \"web\": [\n    {\n      \"url\": \"https://docs.firecrawl.dev/api-reference/endpoint/search\",\n      \"title\": \"Search - Firecrawl Docs\",\n      \"description\": \"Use the country parameter to specify the country for search results using ISO country codes. ... Filter search results by specific categories using the categories ...\",\n      \"position\": 1\n    },\n    {\n      \"url\": \"https://docs.firecrawl.dev/zh/api-reference/endpoint/search\",\n      \"title\": \"Search（搜索） - Firecrawl Docs\",\n      \"description\": \"... categories\\\": [ { \\\"type\\\": \\\"github\\\" } ], \\\"tbs\\\": \\\"<string>\\\", \\\"location\\\": \\\"<string>\\\", \\\"country\\\": \\\"US\\\", \\\"timeout\\\": 60000, \\\"ignoreInvalidURLs\\\": false, \\\"enterprise\\\": [ ...\",\n      \"position\": 2\n    },\n    {\n      \"url\": \"https://docs.firecrawl.dev/fr/api-reference/endpoint/search\",\n      \"title\": \"Recherche - Firecrawl Docs\",\n      \"description\": \"Exclut des résultats de recherche les URL qui ne sont pas valides pour d'autres endpoints Firecrawl. Cela permet de réduire les erreurs si vous transmettez les ...\",\n      \"position\": 3\n    },\n    {\n      \"url\": \"https://docs.firecrawl.dev/ja/api-reference/endpoint/search\",\n      \"title\": \"検索 - Firecrawl Docs\",\n      \"description\": \"他の Firecrawl エンドポイントでは無効となる URL を検索結果から除外します。これにより、検索から取得したデータを他の Firecrawl API エンドポイントに渡す際のエラー ...\",\n      \"position\": 4\n    },\n    {\n      \"url\": \"https://docs.firecrawl.dev/es/api-reference/endpoint/search\",\n      \"title\": \"Búsqueda - Firecrawl Docs\",\n      \"description\": \"Excluye de los resultados de búsqueda las URLs que no son válidas para otros endpoints de Firecrawl. Esto ayuda a reducir errores si estás enviando datos desde ...\",\n      \"position\": 5\n    }\n  ]\n}",
+  "parsed": {
+    "web": [
+      {
+        "url": "https://docs.firecrawl.dev/api-reference/endpoint/search",
+        "title": "Search - Firecrawl Docs",
+        "description": "Use the country parameter to specify the country for search results using ISO country codes. ... Filter search results by specific categories using the categories ...",
+        "position": 1
+      },
+      {
+        "url": "https://docs.firecrawl.dev/zh/api-reference/endpoint/search",
+        "title": "Search（搜索） - Firecrawl Docs",
+        "description": "... categories\": [ { \"type\": \"github\" } ], \"tbs\": \"<string>\", \"location\": \"<string>\", \"country\": \"US\", \"timeout\": 60000, \"ignoreInvalidURLs\": false, \"enterprise\": [ ...",
+        "position": 2
+      },
+      {
+        "url": "https://docs.firecrawl.dev/fr/api-reference/endpoint/search",
+        "title": "Recherche - Firecrawl Docs",
+        "description": "Exclut des résultats de recherche les URL qui ne sont pas valides pour d'autres endpoints Firecrawl. Cela permet de réduire les erreurs si vous transmettez les ...",
+        "position": 3
+      },
+      {
+        "url": "https://docs.firecrawl.dev/ja/api-reference/endpoint/search",
+        "title": "検索 - Firecrawl Docs",
+        "description": "他の Firecrawl エンドポイントでは無効となる URL を検索結果から除外します。これにより、検索から取得したデータを他の Firecrawl API エンドポイントに渡す際のエラー ...",
+        "position": 4
+      },
+      {
+        "url": "https://docs.firecrawl.dev/es/api-reference/endpoint/search",
+        "title": "Búsqueda - Firecrawl Docs",
+        "description": "Excluye de los resultados de búsqueda las URLs que no son válidas para otros endpoints de Firecrawl. Esto ayuda a reducir errores si estás enviando datos desde ...",
+        "position": 5
+      }
+    ]
+  },
+  "results": [
+    {
+      "title": "Search - Firecrawl Docs",
+      "url": "https://docs.firecrawl.dev/api-reference/endpoint/search",
+      "domain": "docs.firecrawl.dev",
+      "description": "Use the country parameter to specify the country for search results using ISO country codes. ... Filter search results by specific categories using the categories ...",
+      "position": 1
+    },
+    {
+      "title": "Search（搜索） - Firecrawl Docs",
+      "url": "https://docs.firecrawl.dev/zh/api-reference/endpoint/search",
+      "domain": "docs.firecrawl.dev",
+      "description": "... categories\": [ { \"type\": \"github\" } ], \"tbs\": \"<string>\", \"location\": \"<string>\", \"country\": \"US\", \"timeout\": 60000, \"ignoreInvalidURLs\": false, \"enterprise\": [ ...",
+      "position": 2
+    },
+    {
+      "title": "Recherche - Firecrawl Docs",
+      "url": "https://docs.firecrawl.dev/fr/api-reference/endpoint/search",
+      "domain": "docs.firecrawl.dev",
+      "description": "Exclut des résultats de recherche les URL qui ne sont pas valides pour d'autres endpoints Firecrawl. Cela permet de réduire les erreurs si vous transmettez les ...",
+      "position": 3
+    },
+    {
+      "title": "検索 - Firecrawl Docs",
+      "url": "https://docs.firecrawl.dev/ja/api-reference/endpoint/search",
+      "domain": "docs.firecrawl.dev",
+      "description": "他の Firecrawl エンドポイントでは無効となる URL を検索結果から除外します。これにより、検索から取得したデータを他の Firecrawl API エンドポイントに渡す際のエラー ...",
+      "position": 4
+    },
+    {
+      "title": "Búsqueda - Firecrawl Docs",
+      "url": "https://docs.firecrawl.dev/es/api-reference/endpoint/search",
+      "domain": "docs.firecrawl.dev",
+      "description": "Excluye de los resultados de búsqueda las URLs que no son válidas para otros endpoints de Firecrawl. Esto ayuda a reducir errores si estás enviando datos desde ...",
+      "position": 5
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "query": "Exa WebCode evaluation guide search benchmark retrieval quality latency freshness agentic suitability",
+  "content": "chunks",
+  "maxResults": 6,
+  "maxCharsPerResult": 2400,
+  "maxCharsTotal": 10000,
+  "focus": "WebCode coding-agent benchmark, evaluation guide metrics, latency, freshness, cost efficiency, agentic suitability",
+  "sourcePolicy": {
+    "includeDomains": [
+      "exa.ai",
+      "docs.exa.ai"
+    ]
+  },
+  "sources": [
+    "web"
+  ],
+  "ignoreInvalidURLs": true,
+  "includeRawResults": false
+}

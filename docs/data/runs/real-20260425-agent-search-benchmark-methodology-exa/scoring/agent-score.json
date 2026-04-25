@@ -1,0 +1,29 @@
+{
+  "agentModel": "gpt-5.5 xhigh",
+  "provider": "exa",
+  "taskId": "agent-search-benchmark-methodology",
+  "success": true,
+  "answerSupportedByEvidence": true,
+  "retrievalQualityScore": 4.8,
+  "agentExperienceScore": 4.4,
+  "sourcePolicyAdherent": null,
+  "freshnessAdherent": null,
+  "callRationale": "Started from the harness-recorded Exa tool schema, used web_search_advanced_exa because the task required domain filtering and benchmark-specific highlights, then followed up with a Tavily-focused search to hit docs.tavily.com. Fetched the core Exa, Parallel, Tavily GitHub, and Tavily docs pages because the search snippets partially truncated key methodology sections.",
+  "strengths": [
+    "Retrieved primary public sources from Exa, Parallel, Tavily's GitHub organization, and Tavily docs.",
+    "Captured all expected terms: SimpleQA, WISER, MSMARCO/MS MARCO, and document relevance.",
+    "Collected methodology details for answer accuracy, document relevance, LLM judging, task construction, freshness, cost, latency, and tool-call/context efficiency.",
+    "The Exa advanced search schema made domain-restricted discovery and fresh extraction straightforward."
+  ],
+  "weaknesses": [
+    "The first broad search did not include docs.tavily.com, requiring a targeted follow-up.",
+    "Search results included some secondary or less central GitHub repositories that had to be ignored in synthesis.",
+    "The harness did not normalize web_fetch_exa responses into normalized evidence, so the fetched evidence had to be read from the raw recorded artifact."
+  ],
+  "notableFailures": [
+    "No MCP tool call failed.",
+    "A local jq inspection command initially used the wrong raw response shape, but this did not affect the recorded MCP trajectory or answer evidence.",
+    "The step numbering in recorded artifacts advanced as 001, 003, and 005 because the harness counts started and completed tool-call trace events when assigning the next step number."
+  ],
+  "confidence": 0.9
+}

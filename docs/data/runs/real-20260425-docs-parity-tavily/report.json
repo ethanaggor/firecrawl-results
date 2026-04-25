@@ -1,0 +1,136 @@
+{
+  "status": "complete",
+  "runId": "real-20260425-docs-parity-tavily",
+  "generatedAt": "2026-04-25T04:58:27.949Z",
+  "manifest": {
+    "runId": "real-20260425-docs-parity-tavily",
+    "createdAt": "2026-04-25T04:55:44.557Z",
+    "provider": {
+      "id": "tavily",
+      "name": "Tavily remote MCP",
+      "transport": "streamable-http",
+      "url": "https://mcp.tavily.com/mcp/?tavilyApiKey=***",
+      "query": [
+        {
+          "name": "tavilyApiKey",
+          "env": "TAVILY_API_KEY",
+          "required": true
+        }
+      ],
+      "searchTools": [
+        "tavily-search",
+        "tavily_search",
+        "search"
+      ],
+      "fetchTools": [
+        "tavily-extract",
+        "tavily_extract",
+        "extract"
+      ],
+      "headers": []
+    },
+    "task": {
+      "id": "docs-parity",
+      "family": "api-documentation",
+      "question": "Which public Firecrawl Search API fields are relevant to MCP search parity, especially categories, country, timeout, ignoreInvalidURLs, enterprise, and response metadata?",
+      "agentGoal": "Find primary documentation or source evidence for the Search API fields and response metadata. Prefer Firecrawl docs and official source.",
+      "expectedTerms": [
+        "categories",
+        "country",
+        "timeout",
+        "ignoreInvalidURLs"
+      ],
+      "expectedDomains": [
+        "docs.firecrawl.dev",
+        "github.com"
+      ],
+      "sourcePolicy": {
+        "includeDomains": [
+          "docs.firecrawl.dev",
+          "github.com"
+        ]
+      },
+      "notes": "This is the direct parity question behind the implementation."
+    }
+  },
+  "metrics": {
+    "provider": "tavily",
+    "taskId": "docs-parity",
+    "toolCalls": 4,
+    "searchCalls": 2,
+    "fetchCalls": 2,
+    "failedCalls": 0,
+    "totalConnectMs": 617,
+    "totalCallLatencyMs": 15110,
+    "argumentTokens": 302,
+    "rawOutputTokens": 10147,
+    "normalizedEvidenceTokens": 6646,
+    "totalTrajectoryTokens": 13201,
+    "contract": {
+      "toolCount": 5,
+      "searchToolCount": 2,
+      "fetchToolCount": 1,
+      "descriptionTokens": 143,
+      "schemaTokens": 2277,
+      "totalMcpFootprintTokens": 2752,
+      "hasFreshnessControl": true,
+      "hasSourcePolicyControl": true,
+      "hasContentBudgetControl": true,
+      "hasUsageMetadata": false
+    }
+  },
+  "semanticScore": {
+    "agentModel": "gpt-5.5 xhigh",
+    "provider": "tavily",
+    "taskId": "docs-parity",
+    "success": true,
+    "answerSupportedByEvidence": true,
+    "retrievalQualityScore": 4.2,
+    "agentExperienceScore": 4.2,
+    "sourcePolicyAdherent": true,
+    "freshnessAdherent": null,
+    "callRationale": [
+      {
+        "step": "001",
+        "tool": "tavily_search",
+        "rationale": "Started with a constrained search over docs.firecrawl.dev and github.com for the public Search API fields and metadata named by the task."
+      },
+      {
+        "step": "003",
+        "tool": "tavily_extract",
+        "rationale": "Extracted the primary Search API docs page and the initially discovered GitHub types file to ground exact fields beyond search snippets."
+      },
+      {
+        "step": "005",
+        "tool": "tavily_search",
+        "rationale": "Ran a narrower GitHub-only search after the first GitHub extract did not cleanly expose the search-specific source contract."
+      },
+      {
+        "step": "007",
+        "tool": "tavily_extract",
+        "rationale": "Extracted the Firecrawl MCP docs source to compare documented MCP search options with public Search API fields."
+      }
+    ],
+    "strengths": [
+      "The first search found the primary Firecrawl Search API docs page as the top result and included the expected domains.",
+      "The retrieved docs evidence directly covered categories, country, timeout, ignoreInvalidURLs, enterprise, scrapeOptions, and response metadata.",
+      "The GitHub MCP docs source exposed the documented MCP search options, making parity gaps visible without leaving the source policy."
+    ],
+    "weaknesses": [
+      "Tavily search snippets for the docs page were duplicated and truncated around response metadata, so response metadata details were only partially visible.",
+      "The extract result for the GitHub types.ts URL returned nearby but not search-specific schema snippets, which reduced source-code confidence.",
+      "The GitHub-only search included some irrelevant third-party GitHub repositories even with the github.com domain constraint."
+    ],
+    "notableFailures": [
+      "Step 003 extracted ignoreInvalidURLs from unrelated extract/batch scrape schema context in types.ts; this was corrected by a targeted GitHub-only search and MCP docs source extraction.",
+      "No provider/tool error occurred."
+    ],
+    "confidence": 0.86
+  },
+  "artifacts": {
+    "answer": "scoring/final-answer.md",
+    "score": "scoring/agent-score.json",
+    "trace": "trace.jsonl",
+    "tools": "schemas/tools.json"
+  }
+}
