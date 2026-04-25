@@ -1,0 +1,82 @@
+{
+  "provider": "firecrawl-context",
+  "taskId": "agent-search-benchmark-methodology",
+  "toolCalls": 16,
+  "searchCalls": 8,
+  "fetchCalls": 6,
+  "mapCalls": 2,
+  "discoveryCalls": 10,
+  "extractionCalls": 6,
+  "failedCalls": 0,
+  "zeroResultCalls": 2,
+  "zeroResultSearchCalls": 2,
+  "expectedTermMissCalls": 9,
+  "expectedDomainMissCalls": 8,
+  "expectedTermMissSearchCalls": 6,
+  "expectedDomainMissSearchCalls": 6,
+  "sourcePolicyViolationCalls": 0,
+  "recoverySignalCalls": 10,
+  "recoverySignalRate": 1.25,
+  "totalResultCount": 74,
+  "uniqueUrlCount": 71,
+  "uniqueDomainCount": 21,
+  "duplicateUrlRate": 0.0405,
+  "expectedDomainsCovered": [
+    "github.com",
+    "exa.ai",
+    "parallel.ai",
+    "docs.tavily.com"
+  ],
+  "firstSearch": {
+    "tool": "firecrawl_search",
+    "resultCount": 8,
+    "expectedTermHit": false,
+    "expectedDomainHit": false,
+    "rawOutputTokens": 252529,
+    "normalizedEvidenceTokens": 3189,
+    "domains": [
+      "arxiv.org"
+    ],
+    "urls": [
+      "https://arxiv.org/html/2508.07999v1",
+      "https://arxiv.org/html/2505.15872v1",
+      "https://arxiv.org/html/2512.23044v1",
+      "https://arxiv.org/html/2506.18959v1",
+      "https://arxiv.org/html/2604.10938v1",
+      "https://arxiv.org/html/2510.14240v5",
+      "https://arxiv.org/html/2602.16313v1",
+      "https://arxiv.org/html/2603.29020v1"
+    ]
+  },
+  "totalConnectMs": 3573,
+  "totalCallLatencyMs": 54651,
+  "argumentTokens": 1510,
+  "rawOutputTokens": 670711,
+  "normalizedEvidenceTokens": 24018,
+  "evidenceToRawTokenRatio": 0.0358,
+  "avgRawOutputTokensPerCall": 41919.44,
+  "rawOutputOutlierThresholdTokens": 50000,
+  "rawOutputOutlierCalls": 3,
+  "maxRawOutputCall": {
+    "tool": "firecrawl_search",
+    "rawOutputTokens": 252529,
+    "normalizedEvidenceTokens": 3189,
+    "resultCount": 8
+  },
+  "avgResultsPerSearchCall": 3.63,
+  "totalTrajectoryTokens": 683618,
+  "contract": {
+    "toolCount": 14,
+    "searchToolCount": 1,
+    "fetchToolCount": 2,
+    "descriptionTokens": 5052,
+    "schemaTokens": 5505,
+    "totalMcpFootprintTokens": 11397,
+    "searchOnlyFootprintTokens": 2330,
+    "searchFetchFootprintTokens": 5303,
+    "hasFreshnessControl": true,
+    "hasSourcePolicyControl": true,
+    "hasContentBudgetControl": true,
+    "hasUsageMetadata": true
+  }
+}

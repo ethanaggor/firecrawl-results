@@ -1,0 +1,82 @@
+{
+  "provider": "firecrawl-context",
+  "taskId": "hard-product-comparison",
+  "toolCalls": 25,
+  "searchCalls": 5,
+  "fetchCalls": 15,
+  "mapCalls": 5,
+  "discoveryCalls": 10,
+  "extractionCalls": 15,
+  "failedCalls": 0,
+  "zeroResultCalls": 3,
+  "zeroResultSearchCalls": 3,
+  "expectedTermMissCalls": 3,
+  "expectedDomainMissCalls": 5,
+  "expectedTermMissSearchCalls": 3,
+  "expectedDomainMissSearchCalls": 4,
+  "sourcePolicyViolationCalls": 0,
+  "recoverySignalCalls": 12,
+  "recoverySignalRate": 2.4,
+  "totalResultCount": 82,
+  "uniqueUrlCount": 67,
+  "uniqueDomainCount": 6,
+  "duplicateUrlRate": 0.1829,
+  "expectedDomainsCovered": [
+    "docs.firecrawl.dev",
+    "exa.ai",
+    "parallel.ai",
+    "docs.tavily.com"
+  ],
+  "firstSearch": {
+    "tool": "firecrawl_search",
+    "resultCount": 8,
+    "expectedTermHit": true,
+    "expectedDomainHit": false,
+    "rawOutputTokens": 4885,
+    "normalizedEvidenceTokens": 3276,
+    "domains": [
+      "github.com"
+    ],
+    "urls": [
+      "https://github.com/punkpeye/awesome-mcp-servers",
+      "https://github.com/punkpeye/awesome-mcp-servers/blob/main/README.md",
+      "https://github.com/rylena/awesome-openclaw",
+      "https://github.com/sickn33/antigravity-awesome-skills/blob/main/CATALOG.md",
+      "https://github.com/dcostenco/prism-mcp",
+      "https://github.com/sickn33/antigravity-awesome-skills/blob/main/CHANGELOG.md",
+      "https://github.com/leogopal/free-dev-resources",
+      "https://github.com/tribixbite/awesome"
+    ]
+  },
+  "totalConnectMs": 5076,
+  "totalCallLatencyMs": 48424,
+  "argumentTokens": 1838,
+  "rawOutputTokens": 134205,
+  "normalizedEvidenceTokens": 38708,
+  "evidenceToRawTokenRatio": 0.2884,
+  "avgRawOutputTokensPerCall": 5368.2,
+  "rawOutputOutlierThresholdTokens": 50000,
+  "rawOutputOutlierCalls": 0,
+  "maxRawOutputCall": {
+    "tool": "firecrawl_scrape",
+    "rawOutputTokens": 15663,
+    "normalizedEvidenceTokens": 2181,
+    "resultCount": 1
+  },
+  "avgResultsPerSearchCall": 1.8,
+  "totalTrajectoryTokens": 147762,
+  "contract": {
+    "toolCount": 14,
+    "searchToolCount": 1,
+    "fetchToolCount": 2,
+    "descriptionTokens": 5356,
+    "schemaTokens": 5505,
+    "totalMcpFootprintTokens": 11719,
+    "searchOnlyFootprintTokens": 2652,
+    "searchFetchFootprintTokens": 5625,
+    "hasFreshnessControl": true,
+    "hasSourcePolicyControl": true,
+    "hasContentBudgetControl": true,
+    "hasUsageMetadata": true
+  }
+}

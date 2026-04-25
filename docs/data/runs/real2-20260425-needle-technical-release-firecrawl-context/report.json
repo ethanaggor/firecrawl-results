@@ -1,0 +1,171 @@
+{
+  "status": "complete",
+  "runId": "real2-20260425-needle-technical-release-firecrawl-context",
+  "generatedAt": "2026-04-25T07:04:53.794Z",
+  "manifest": {
+    "runId": "real2-20260425-needle-technical-release-firecrawl-context",
+    "createdAt": "2026-04-25T06:51:49.102Z",
+    "provider": {
+      "id": "firecrawl-context",
+      "name": "Firecrawl MCP context fork",
+      "transport": "stdio",
+      "cwd": "../firecrawl-mcp-server",
+      "command": "node",
+      "args": [
+        "dist/index.js"
+      ],
+      "env": [
+        {
+          "name": "FIRECRAWL_API_KEY",
+          "required": true,
+          "present": true
+        },
+        {
+          "name": "FIRECRAWL_API_URL",
+          "required": false,
+          "present": false
+        }
+      ],
+      "searchTools": [
+        "firecrawl_search"
+      ],
+      "fetchTools": [
+        "firecrawl_scrape"
+      ],
+      "mapTools": [
+        "firecrawl_map"
+      ],
+      "cwdExists": true
+    },
+    "task": {
+      "id": "needle-technical-release",
+      "family": "hard-retrieval",
+      "question": "Find a recent TypeScript or JavaScript library release after August 2025 that introduced at least three concrete API changes and identify source-backed examples.",
+      "agentGoal": "This mirrors Exa WebCode-style coding-agent search. Prefer changelogs, release notes, and official docs.",
+      "expectedTerms": [
+        "release",
+        "API",
+        "TypeScript"
+      ],
+      "freshness": "year"
+    }
+  },
+  "metrics": {
+    "provider": "firecrawl-context",
+    "taskId": "needle-technical-release",
+    "toolCalls": 3,
+    "searchCalls": 2,
+    "fetchCalls": 1,
+    "mapCalls": 0,
+    "discoveryCalls": 2,
+    "extractionCalls": 1,
+    "failedCalls": 0,
+    "zeroResultCalls": 0,
+    "zeroResultSearchCalls": 0,
+    "expectedTermMissCalls": 0,
+    "expectedDomainMissCalls": 0,
+    "expectedTermMissSearchCalls": 0,
+    "expectedDomainMissSearchCalls": 0,
+    "sourcePolicyViolationCalls": 0,
+    "recoverySignalCalls": 0,
+    "recoverySignalRate": 0,
+    "totalResultCount": 15,
+    "uniqueUrlCount": 13,
+    "uniqueDomainCount": 9,
+    "duplicateUrlRate": 0.1333,
+    "expectedDomainsCovered": [],
+    "firstSearch": {
+      "tool": "firecrawl_search",
+      "resultCount": 8,
+      "expectedTermHit": true,
+      "rawOutputTokens": 4592,
+      "normalizedEvidenceTokens": 3097,
+      "domains": [
+        "ajianaz.dev",
+        "deno.com",
+        "tc39.es",
+        "firebase.google.com",
+        "github.com",
+        "typedoc.org",
+        "github.blog",
+        "strapi.io"
+      ],
+      "urls": [
+        "https://ajianaz.dev/typescript-in-2026-why-javascript-is-finally-being-left-behind/",
+        "https://deno.com/blog?tag=product-update",
+        "https://tc39.es/ecma262/",
+        "https://firebase.google.com/support/release-notes/js",
+        "https://github.com/facebook/react/blob/main/CHANGELOG.md",
+        "https://typedoc.org/documents/Changelog.html",
+        "https://github.blog/news-insights/octoverse/octoverse-a-new-developer-joins-github-every-second-as-ai-leads-typescript-to-1/",
+        "https://strapi.io/blog/best-javascript-frameworks"
+      ]
+    },
+    "totalConnectMs": 667,
+    "totalCallLatencyMs": 11178,
+    "argumentTokens": 389,
+    "rawOutputTokens": 14195,
+    "normalizedEvidenceTokens": 7510,
+    "evidenceToRawTokenRatio": 0.5291,
+    "avgRawOutputTokensPerCall": 4731.67,
+    "rawOutputOutlierThresholdTokens": 50000,
+    "rawOutputOutlierCalls": 0,
+    "maxRawOutputCall": {
+      "tool": "firecrawl_scrape",
+      "rawOutputTokens": 5981,
+      "normalizedEvidenceTokens": 2042,
+      "resultCount": 1
+    },
+    "avgResultsPerSearchCall": 7,
+    "totalTrajectoryTokens": 25981,
+    "contract": {
+      "toolCount": 14,
+      "searchToolCount": 1,
+      "fetchToolCount": 2,
+      "descriptionTokens": 5052,
+      "schemaTokens": 5505,
+      "totalMcpFootprintTokens": 11397,
+      "searchOnlyFootprintTokens": 2330,
+      "searchFetchFootprintTokens": 5303,
+      "hasFreshnessControl": true,
+      "hasSourcePolicyControl": true,
+      "hasContentBudgetControl": true,
+      "hasUsageMetadata": true
+    }
+  },
+  "semanticScore": {
+    "agentModel": "gpt-5.5 xhigh",
+    "provider": "firecrawl-context",
+    "taskId": "needle-technical-release",
+    "success": true,
+    "answerSupportedByEvidence": true,
+    "retrievalQualityScore": 5,
+    "agentExperienceScore": 4,
+    "sourcePolicyAdherent": true,
+    "freshnessAdherent": true,
+    "callRationale": [
+      "Started with a broad freshness-bounded search for post-August-2025 TypeScript or JavaScript library release notes with API changes.",
+      "Narrowed to official React and GitHub sources after the first search surfaced React as a promising library release.",
+      "Scraped the exact official React 19.2 release post to capture the release date, npm availability, API names, behavioral descriptions, and code examples."
+    ],
+    "strengths": [
+      "The final answer is grounded in the official React release post rather than third-party summaries.",
+      "Freshness controls were used with a start date of 2025-09-01.",
+      "The provider returned enough exact-page markdown to support concrete examples for more than three API changes."
+    ],
+    "weaknesses": [
+      "The initial broad search returned noisy results from non-official and unrelated sources.",
+      "The GitHub changelog result was discovered but its focused chunks included older React releases, so the exact React blog scrape was necessary."
+    ],
+    "notableFailures": [
+      "A first local harness call failed with ENOENT because the args JSON path was created relative to the wrong repository; this happened before any provider response and was corrected with an absolute evals/work path."
+    ],
+    "confidence": 0.96
+  },
+  "artifacts": {
+    "answer": "scoring/final-answer.md",
+    "score": "scoring/agent-score.json",
+    "trace": "trace.jsonl",
+    "tools": "schemas/tools.json"
+  }
+}

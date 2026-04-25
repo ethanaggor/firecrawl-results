@@ -1,0 +1,19 @@
+{
+  "query": "Exa official MCP web search API content highlights autoprompt neural keyword search agent context docs benchmark",
+  "content": "chunks",
+  "maxResults": 6,
+  "maxCharsPerResult": 3000,
+  "maxCharsTotal": 14000,
+  "focus": "remote MCP endpoint, default and optional tools, search result context shape, highlights, text contents, neural search, autoprompt, benchmarks for agent search",
+  "sourcePolicy": {
+    "includeDomains": [
+      "docs.exa.ai",
+      "exa.ai"
+    ]
+  },
+  "sources": [
+    "web"
+  ],
+  "ignoreInvalidURLs": true,
+  "includeRawResults": false
+}

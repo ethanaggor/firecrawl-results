@@ -1,7 +1,7 @@
 {
   "status": "complete",
   "runId": "real-20260425-source-policy-docs-only-firecrawl-context",
-  "generatedAt": "2026-04-25T05:11:52.168Z",
+  "generatedAt": "2026-04-25T07:04:50.760Z",
   "manifest": {
     "runId": "real-20260425-source-policy-docs-only-firecrawl-context",
     "createdAt": "2026-04-25T05:09:32.225Z",
@@ -61,12 +61,60 @@
     "toolCalls": 2,
     "searchCalls": 1,
     "fetchCalls": 1,
+    "mapCalls": 0,
+    "discoveryCalls": 1,
+    "extractionCalls": 1,
     "failedCalls": 0,
+    "zeroResultCalls": 0,
+    "zeroResultSearchCalls": 0,
+    "expectedTermMissCalls": 0,
+    "expectedDomainMissCalls": 0,
+    "expectedTermMissSearchCalls": 0,
+    "expectedDomainMissSearchCalls": 0,
+    "sourcePolicyViolationCalls": 0,
+    "recoverySignalCalls": 0,
+    "recoverySignalRate": 0,
+    "totalResultCount": 6,
+    "uniqueUrlCount": 5,
+    "uniqueDomainCount": 1,
+    "duplicateUrlRate": 0.1667,
+    "expectedDomainsCovered": [
+      "docs.firecrawl.dev"
+    ],
+    "firstSearch": {
+      "tool": "firecrawl_search",
+      "resultCount": 5,
+      "expectedTermHit": true,
+      "expectedDomainHit": true,
+      "rawOutputTokens": 3355,
+      "normalizedEvidenceTokens": 2016,
+      "domains": [
+        "docs.firecrawl.dev"
+      ],
+      "urls": [
+        "https://docs.firecrawl.dev/api-reference/endpoint/search",
+        "https://docs.firecrawl.dev/sdks/cli",
+        "https://docs.firecrawl.dev/zh/api-reference/endpoint/search",
+        "https://docs.firecrawl.dev/fr/api-reference/endpoint/search",
+        "https://docs.firecrawl.dev/es/sdks/cli"
+      ]
+    },
     "totalConnectMs": 438,
     "totalCallLatencyMs": 1023,
     "argumentTokens": 167,
     "rawOutputTokens": 10743,
-    "normalizedEvidenceTokens": 2033,
+    "normalizedEvidenceTokens": 4347,
+    "evidenceToRawTokenRatio": 0.4046,
+    "avgRawOutputTokensPerCall": 5371.5,
+    "rawOutputOutlierThresholdTokens": 50000,
+    "rawOutputOutlierCalls": 0,
+    "maxRawOutputCall": {
+      "tool": "firecrawl_scrape",
+      "rawOutputTokens": 7388,
+      "normalizedEvidenceTokens": 2331,
+      "resultCount": 1
+    },
+    "avgResultsPerSearchCall": 5,
     "totalTrajectoryTokens": 22629,
     "contract": {
       "toolCount": 14,
@@ -75,6 +123,8 @@
       "descriptionTokens": 5356,
       "schemaTokens": 5505,
       "totalMcpFootprintTokens": 11719,
+      "searchOnlyFootprintTokens": 2652,
+      "searchFetchFootprintTokens": 5625,
       "hasFreshnessControl": true,
       "hasSourcePolicyControl": true,
       "hasContentBudgetControl": true,

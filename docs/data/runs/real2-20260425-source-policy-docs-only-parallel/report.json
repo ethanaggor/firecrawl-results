@@ -1,0 +1,168 @@
+{
+  "status": "complete",
+  "runId": "real2-20260425-source-policy-docs-only-parallel",
+  "generatedAt": "2026-04-25T07:04:53.987Z",
+  "manifest": {
+    "runId": "real2-20260425-source-policy-docs-only-parallel",
+    "createdAt": "2026-04-25T06:53:35.938Z",
+    "provider": {
+      "id": "parallel",
+      "name": "Parallel Search remote MCP",
+      "transport": "streamable-http",
+      "url": "https://search.parallel.ai/mcp",
+      "headers": [
+        {
+          "name": "authorization",
+          "required": false,
+          "present": false
+        }
+      ],
+      "searchTools": [
+        "web_search"
+      ],
+      "fetchTools": [
+        "web_fetch"
+      ]
+    },
+    "task": {
+      "id": "source-policy-docs-only",
+      "family": "source-policy",
+      "question": "Using only official Firecrawl docs, what does the Search API say about categories, country, timeout, and ignoreInvalidURLs?",
+      "agentGoal": "Constrain to docs.firecrawl.dev and produce evidence only from that domain.",
+      "expectedTerms": [
+        "categories",
+        "country",
+        "timeout",
+        "ignoreInvalidURLs"
+      ],
+      "expectedDomains": [
+        "docs.firecrawl.dev"
+      ],
+      "sourcePolicy": {
+        "includeDomains": [
+          "docs.firecrawl.dev"
+        ]
+      }
+    }
+  },
+  "metrics": {
+    "provider": "parallel",
+    "taskId": "source-policy-docs-only",
+    "toolCalls": 4,
+    "searchCalls": 1,
+    "fetchCalls": 3,
+    "mapCalls": 0,
+    "discoveryCalls": 1,
+    "extractionCalls": 3,
+    "failedCalls": 0,
+    "zeroResultCalls": 0,
+    "zeroResultSearchCalls": 0,
+    "expectedTermMissCalls": 0,
+    "expectedDomainMissCalls": 0,
+    "expectedTermMissSearchCalls": 0,
+    "expectedDomainMissSearchCalls": 0,
+    "sourcePolicyViolationCalls": 1,
+    "recoverySignalCalls": 0,
+    "recoverySignalRate": 0,
+    "totalResultCount": 15,
+    "uniqueUrlCount": 12,
+    "uniqueDomainCount": 2,
+    "duplicateUrlRate": 0.2,
+    "expectedDomainsCovered": [
+      "docs.firecrawl.dev"
+    ],
+    "firstSearch": {
+      "tool": "web_search",
+      "resultCount": 10,
+      "expectedTermHit": true,
+      "expectedDomainHit": true,
+      "rawOutputTokens": 5978,
+      "normalizedEvidenceTokens": 5153,
+      "domains": [
+        "docs.firecrawl.dev",
+        "lobehub.com"
+      ],
+      "urls": [
+        "https://docs.firecrawl.dev/fr/api-reference/endpoint/search",
+        "https://docs.firecrawl.dev/api-reference/endpoint/search",
+        "https://lobehub.com/skills/composiohq-awesome-claude-skills-firecrawl-automation",
+        "https://docs.firecrawl.dev/quickstarts/languages/php",
+        "https://docs.firecrawl.dev/api-reference/endpoint/scrape",
+        "https://docs.firecrawl.dev/quickstarts/frameworks/cloudflare-workers",
+        "https://docs.firecrawl.dev/features/map",
+        "https://docs.firecrawl.dev/features/scrape",
+        "https://docs.firecrawl.dev/quickstarts/frameworks/rails",
+        "https://docs.firecrawl.dev/api-reference/introduction"
+      ]
+    },
+    "totalConnectMs": 674,
+    "totalCallLatencyMs": 7018,
+    "argumentTokens": 512,
+    "rawOutputTokens": 25472,
+    "normalizedEvidenceTokens": 9912,
+    "evidenceToRawTokenRatio": 0.3891,
+    "avgRawOutputTokensPerCall": 6368,
+    "rawOutputOutlierThresholdTokens": 50000,
+    "rawOutputOutlierCalls": 0,
+    "maxRawOutputCall": {
+      "tool": "web_fetch",
+      "rawOutputTokens": 18065,
+      "normalizedEvidenceTokens": 3747,
+      "resultCount": 2
+    },
+    "avgResultsPerSearchCall": 10,
+    "totalTrajectoryTokens": 29784,
+    "contract": {
+      "toolCount": 2,
+      "searchToolCount": 1,
+      "fetchToolCount": 1,
+      "descriptionTokens": 63,
+      "schemaTokens": 1034,
+      "totalMcpFootprintTokens": 3800,
+      "searchOnlyFootprintTokens": 1585,
+      "searchFetchFootprintTokens": 3800,
+      "hasFreshnessControl": true,
+      "hasSourcePolicyControl": false,
+      "hasContentBudgetControl": true,
+      "hasUsageMetadata": true
+    }
+  },
+  "semanticScore": {
+    "agentModel": "gpt-5.5 xhigh",
+    "provider": "parallel",
+    "taskId": "source-policy-docs-only",
+    "success": true,
+    "answerSupportedByEvidence": true,
+    "retrievalQualityScore": 4,
+    "agentExperienceScore": 4,
+    "sourcePolicyAdherent": false,
+    "freshnessAdherent": null,
+    "callRationale": [
+      "Started with a docs-only search objective for Firecrawl Search API parameters on docs.firecrawl.dev.",
+      "Fetched the official Search feature page and Search API reference after the search returned the canonical docs URL.",
+      "Made a narrower API reference fetch for timeout and ignoreInvalidURLs because the first fetch did not surface ignoreInvalidURLs clearly.",
+      "Made a final targeted fetch for categories so the final answer could cite official docs-only evidence for all requested fields."
+    ],
+    "strengths": [
+      "The provider found the canonical official Search API reference page and official Search feature page.",
+      "Targeted fetches returned concise, directly relevant excerpts for categories, country, timeout, and ignoreInvalidURLs.",
+      "The final answer uses only docs.firecrawl.dev evidence."
+    ],
+    "weaknesses": [
+      "The provider has no explicit source-policy control in the exposed schema.",
+      "The initial docs-only web_search still returned one off-domain result from lobehub.com.",
+      "Fetching the OpenAPI JSON URL produced a fetch_error despite HTTP 200, so the usable evidence came from the rendered API reference page."
+    ],
+    "notableFailures": [
+      "Source policy was not fully adherent at the retrieval level because the first search result set included an off-domain page.",
+      "The first broad full_content fetch was very large and still did not clearly extract ignoreInvalidURLs, requiring a narrower follow-up fetch."
+    ],
+    "confidence": 0.9
+  },
+  "artifacts": {
+    "answer": "scoring/final-answer.md",
+    "score": "scoring/agent-score.json",
+    "trace": "trace.jsonl",
+    "tools": "schemas/tools.json"
+  }
+}

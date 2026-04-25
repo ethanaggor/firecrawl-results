@@ -755,8 +755,8 @@
                 budgeting, and returned context.
               </div>
               <div>
-                The benchmark should compare the previous MCP, the upgraded MCP, Firecrawl content modes, Exa, and
-                Parallel on the same agent tasks.
+                The first benchmark made the boundary clear: the MCP shape helps, but Firecrawl still needs stronger
+                server-side agent-context search.
               </div>
             </div>
           </section>
@@ -1043,6 +1043,10 @@
                 <strong>Deterministic baseline</strong>
                 <span>No AI compression yet. Chunk selection should fail in evals before I make it more complex.</span>
               </div>
+              <div class="decision">
+                <strong>No raw payload flag</strong>
+                <span>The harness stores raw artifacts. The MCP returns bounded evidence, not debug payloads.</span>
+              </div>
             </div>
           </section>
 
@@ -1075,61 +1079,89 @@
           </section>
 
           <section id="evals">
-            <h2>Eval plan</h2>
+            <h2>What the benchmark showed</h2>
 
             <p>
-              The first benchmark should answer a narrow question: does the upgraded contract make agents better at
-              using Firecrawl Search? Correctness matters, but so do context size, source adherence, freshness,
-              tool-call count, latency, credits, and follow-up quality.
+              The first run made the failure mode visible. Firecrawl could finish hard tasks, but it often finished
+              them through recovery: extra searches, map calls, and scrape calls that rebuilt the context Search should
+              have returned earlier.
             </p>
 
             <div class="metric-grid">
               <div class="metric">
-                <strong>4 / 4</strong>
-                <span>live smoke checks passed</span>
+                <strong>25 -> 13</strong>
+                <span>Firecrawl hard comparison calls after the MCP warning/schema pass</span>
               </div>
               <div class="metric">
-                <strong>9</strong>
-                <span>credits used in smoke validation</span>
+                <strong>3</strong>
+                <span>zero-result Firecrawl searches still needed on that same task</span>
               </div>
               <div class="metric">
-                <strong>1,498ms</strong>
-                <span>average smoke latency</span>
+                <strong>0</strong>
+                <span>Exa and Parallel recovery signals on the second benchmark</span>
               </div>
             </div>
 
             <div class="benchmark-stub">
               <div class="stub-row">
-                <strong>Previous MCP</strong>
-                <span>Baseline contract: search fields and generic scrape options.</span>
-                <span class="status-pill">to run</span>
-              </div>
-              <div class="stub-row">
-                <strong>Upgraded MCP</strong>
-                <span>Content modes, hard budgets, source policy, response accounting.</span>
-                <span class="status-pill">to run</span>
-              </div>
-              <div class="stub-row">
-                <strong>Firecrawl modes</strong>
-                <span><code>results</code>, <code>summary</code>, <code>chunks</code>, and <code>markdown</code>.</span>
-                <span class="status-pill">to run</span>
+                <strong>Firecrawl context</strong>
+                <span>Better trajectory after the MCP pass. Still brittle on broad multi-domain retrieval.</span>
+                <span class="status-pill">RQ 4.50</span>
               </div>
               <div class="stub-row">
                 <strong>Exa</strong>
-                <span>Reference surface with summaries, highlights, and content controls.</span>
-                <span class="status-pill">to run</span>
+                <span>Best second-run retrieval quality. Domain-restricted advanced search stayed direct.</span>
+                <span class="status-pill">RQ 5.00</span>
               </div>
               <div class="stub-row">
                 <strong>Parallel</strong>
-                <span>Reference surface focused on LLM-optimized web context.</span>
-                <span class="status-pill">to run</span>
+                <span>Compact evidence and low recovery. Weaker explicit source-policy semantics than Firecrawl or Exa.</span>
+                <span class="status-pill">RQ 4.75</span>
+              </div>
+              <div class="stub-row">
+                <strong>Firecrawl source-policy task</strong>
+                <span>Strong result. Firecrawl and Exa both solved the docs-only task in two calls; Parallel leaked an off-domain result.</span>
+                <span class="status-pill">strength</span>
+              </div>
+              <div class="stub-row">
+                <strong>Raw payload anomaly</strong>
+                <span>The second methodology run exposed a bad debug affordance: raw search payloads could enter the context window.</span>
+                <span class="status-pill">fixed</span>
               </div>
             </div>
 
             <p>
-              I would run this in three passes: contract checks, Firecrawl mode comparisons, then Exa and Parallel on
-              the same agent tasks. If chunks lose, improve chunks. If summaries win, make summary mode the default.
-              If the contract reduces follow-up calls without hurting answerability, that is the product signal.
+              The Firecrawl ablations changed my mind on one thing. I expected multi-domain source-policy fanout to
+              help. It did not. <code>compile</code>, <code>fanout</code>, and <code>hybrid</code> all failed the hard
+              benchmark-methodology query, and all stayed weak on balanced product comparison. More client-side calls
+              cannot repair a search response that never finds the right source set.
+            </p>
+
+            <p>
+              The second run sharpened the conclusion. The MCP warning/schema pass helped the hard product-comparison
+              trajectory: Firecrawl went from map-and-scrape recovery to search-only recovery. That is real progress.
+              But Exa and Parallel still returned cleaner first-pass context with fewer dead ends.
+            </p>
+
+            <p>
+              The same run also caught a contract mistake I had missed: <code>includeRawResults</code>. One agent used
+              it during benchmark-methodology research and blew the trajectory out to roughly 684k tokens. That field
+              does not belong in the agent-facing search contract. The harness already saves raw artifacts; the MCP
+              should return bounded evidence.
+            </p>
+
+            <p>
+              That is the clean product split. The MCP can make budgets, content mode, source policy, warnings, usage,
+              credits, and Search IDs clear. The endpoint has to own objective-shaped retrieval, domain-balanced source
+              policy, and excerpts good enough to reduce scrape recovery.
+            </p>
+
+            <p>
+              I am keeping a running research ledger in
+              <a href="https://github.com/ethanaggor/firecrawl-results/blob/main/RESEARCH.md">RESEARCH.md</a>. The raw
+              trajectories and side-by-side reports are published in <a href="results.html">the results viewer</a>. The
+              latest Firecrawl ablation report is also available as
+              <a href="data/firecrawl-ablations-latest.json">JSON</a>.
             </p>
           </section>
 

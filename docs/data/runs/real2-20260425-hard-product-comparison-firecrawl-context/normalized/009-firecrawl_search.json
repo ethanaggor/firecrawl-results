@@ -1,0 +1,423 @@
+{
+  "provider": "firecrawl-context",
+  "tool": "firecrawl_search",
+  "isError": false,
+  "rawText": "{\n  \"query\": \"Firecrawl search API documentation formats json markdown scrape search MCP\",\n  \"executedQuery\": \"Firecrawl search API documentation formats json markdown scrape search MCP site:docs.firecrawl.dev\",\n  \"content\": \"chunks\",\n  \"constraints\": {\n    \"maxResults\": 8,\n    \"maxCharsPerResult\": 3000,\n    \"maxCharsTotal\": 16000,\n    \"focus\": \"Search API parameters, MCP search tool, content formats, scrape/search flow, response metadata, source policy or freshness controls\",\n    \"sourcePolicy\": {\n      \"includeDomains\": [\n        \"docs.firecrawl.dev\"\n      ]\n    }\n  },\n  \"results\": [\n    {\n      \"title\": \"Introduction | Firecrawl\",\n      \"url\": \"https://docs.firecrawl.dev/introduction\",\n      \"description\": \"Search. Search the web and get full page content from results ; Scrape. Extract content from any URL as markdown, HTML, or structured JSON ; Interact. Continue ...\",\n      \"position\": 1,\n      \"source\": \"web\",\n      \"metadata\": {\n        \"sourceURL\": \"https://docs.firecrawl.dev/introduction\",\n        \"finalURL\": \"https://docs.firecrawl.dev/introduction\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"[**Scrape** \\\\\\\\\\n\\\\\\\\\\nExtract content from any URL as markdown, HTML, or structured JSON](https://docs.firecrawl.dev/introduction#scrape)\",\n          \"charCount\": 133\n        },\n        {\n          \"text\": \"- **LLM-ready output**: Clean markdown, structured JSON, screenshots, and more.\\n- **Handles the hard stuff**: Proxies, anti-bot, JavaScript rendering, and dynamic content.\\n- **Reliable**: Built for production with high uptime and consistent results.\\n- **Fast**: Results in seconds, optimized for high throughput.\\n- **MCP Server**: Connect Firecrawl to any AI tool via the [Model Context Protocol](https://docs.firecrawl.dev/mcp-server).\",\n          \"charCount\": 436\n        },\n        {\n          \"text\": \"```\\n{\\n  \\\"success\\\": true,\\n  \\\"data\\\" : {\\n    \\\"markdown\\\": \\\"Launch Week I is here! [See our Day 2 Release 🚀](https://www.firecrawl.dev/blog/launch-week-i-day-2-doubled-rate-limits)[💥 Get 2 months free...\\\",\\\\\\n    \\\"html\\\": \\\"<!DOCTYPE html><html lang=\\\\\\\"en\\\\\\\" class=\\\\\\\"light\\\\\\\" style=\\\\\\\"color-scheme: light;\\\\\\\"><body class=\\\\\\\"__variable_36bd41 __variable_d7dc5d font-inter ...\\\",\\\\\\n    \\\"metadata\\\": {\\\\\\n      \\\"title\\\": \\\"Home - Firecrawl\\\",\\\\\\n      \\\"description\\\": \\\"Firecrawl crawls and converts any website into clean markdown.\\\",\\\\\\n      \\\"language\\\": \\\"en\\\",\\\\\\n      \\\"keywords\\\": \\\"Firecrawl,Markdown,Data,Mendable,Langchain\\\",\\\\\\n      \\\"robots\\\": \\\"follow, index\\\",\\\\\\n      \\\"ogTitle\\\": \\\"Firecrawl\\\",\\\\\\n      \\\"ogDescription\\\": \\\"Turn any website into LLM-ready data.\\\",\\\\\\n      \\\"ogUrl\\\": \\\"https://www.firecrawl.dev/\\\",\\\\\\n      \\\"ogImage\\\": \\\"https://www.firecrawl.dev/og.png?123\\\",\\\\\\n      \\\"ogLocaleAlternate\\\": [],\\\\\\n      \\\"ogSiteName\\\": \\\"Firecrawl\\\",\\\\\\n      \\\"sourceURL\\\": \\\"https://firecrawl.dev\\\",\\\\\\n      \\\"statusCode\\\": 200,\\\\\\n      \\\"contentType\\\": \\\"text/html\",\n          \"charCount\": 1000\n        }\n      ]\n    },\n    {\n      \"title\": \"Search - Firecrawl Docs\",\n      \"url\": \"https://docs.firecrawl.dev/features/search\",\n      \"description\": \"Pass a query to /search and Firecrawl returns titles, descriptions, and URLs. Add scrapeOptions to also retrieve full-page markdown, HTML, links, or screenshots ...\",\n      \"position\": 2,\n      \"source\": \"web\",\n      \"metadata\": {\n        \"sourceURL\": \"https://docs.firecrawl.dev/features/search\",\n        \"finalURL\": \"https://docs.firecrawl.dev/features/search\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"# Search and scrape content\\nresults = firecrawl.search(\\n    \\\"firecrawl web scraping\\\",\\n    limit=3,\\n    scrape_options={\\n        \\\"formats\\\": [\\\"markdown\\\", \\\"links\\\"]\\n    }\\n)\\n```\",\n          \"charCount\": 172\n        },\n        {\n          \"text\": \"```\\n{\\n  \\\"success\\\": true,\\n  \\\"data\\\": [\\\\\\n    {\\\\\\n      \\\"title\\\": \\\"Firecrawl - The Ultimate Web Scraping API\\\",\\\\\\n      \\\"description\\\": \\\"Firecrawl is a powerful web scraping API that turns any website into clean, structured data for AI and analysis.\\\",\\\\\\n      \\\"url\\\": \\\"https://firecrawl.dev/\\\",\\\\\\n      \\\"markdown\\\": \\\"# Firecrawl\\\\n\\\\nThe Ultimate Web Scraping API\\\\n\\\\n## Turn any website into clean, structured data\\\\n\\\\nFirecrawl makes it easy to extract data from websites for AI applications, market research, content aggregation, and more...\\\",\\\\\\n      \\\"links\\\": [\\\\\\n        \\\"https://firecrawl.dev/pricing\\\",\\\\\\n        \\\"https://firecrawl.dev/docs\\\",\\\\\\n        \\\"https://firecrawl.dev/guides\\\"\\\\\\n      ],\\\\\\n      \\\"metadata\\\": {\\\\\\n        \\\"title\\\": \\\"Firecrawl - The Ultimate Web Scraping API\\\",\\\\\\n        \\\"description\\\": \\\"Firecrawl is a powerful web scraping API that turns any website into clean, structured data for AI and analysis.\\\",\\\\\\n        \\\"sourceURL\\\": \\\"https://firecrawl.dev/\\\",\\\\\\n        \\\"statusCode\\\": 200\\\\\\n      }\\\\\\n    }\\\\\\n  ]\\n}\\n\",\n          \"charCount\": 1000\n        },\n        {\n          \"text\": \"```\\ncurl -X POST https://api.firecrawl.dev/v2/search \\\\\\n  -H \\\"Content-Type: application/json\\\" \\\\\\n  -H \\\"Authorization: Bearer fc-YOUR_API_KEY\\\" \\\\\\n  -d '{\\n    \\\"query\\\": \\\"sensitive topic\\\",\\n    \\\"limit\\\": 5,\\n    \\\"enterprise\\\": [\\\"zdr\\\"],\\n    \\\"scrapeOptions\\\": {\\n      \\\"formats\\\": [\\\"markdown\\\"],\\n      \\\"zeroDataRetention\\\": true\\n    }\\n  }'\\n```\",\n          \"charCount\": 325\n        }\n      ]\n    },\n    {\n      \"title\": \"Firecrawl MCP Server\",\n      \"url\": \"https://docs.firecrawl.dev/mcp-server\",\n      \"description\": \"A Model Context Protocol (MCP) server implementation that integrates Firecrawl for searching, scraping, and interacting with the web. Our MCP server is open- ...\",\n      \"position\": 3,\n      \"source\": \"web\",\n      \"metadata\": {\n        \"sourceURL\": \"https://docs.firecrawl.dev/mcp-server\",\n        \"finalURL\": \"https://docs.firecrawl.dev/mcp-server\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"- [Features](https://docs.firecrawl.dev/mcp-server#features)\\n- [Installation](https://docs.firecrawl.dev/mcp-server#installation)\\n- [Remote hosted URL](https://docs.firecrawl.dev/mcp-server#remote-hosted-url)\\n- [Running with npx](https://docs.firecrawl.dev/mcp-server#running-with-npx)\\n- [Manual Installation](https://docs.firecrawl.dev/mcp-server#manual-installation)\\n- [Running on Cursor](https://docs.firecrawl.dev/mcp-server#running-on-cursor)\\n- [Manual Installation](https://docs.firecrawl.dev/mcp-server#manual-installation-2)\\n- [Running on Windsurf](https://docs.firecrawl.dev/mcp-server#running-on-windsurf)\\n- [Running with Streamable HTTP Mode](https://docs.firecrawl.dev/mcp-server#running-with-streamable-http-mode)\\n- [Installing via Smithery (Legacy)](https://docs.firecrawl.dev/mcp-server#installing-via-smithery-legacy)\\n- [Running on VS Code](https://docs.firecrawl.dev/mcp-server#running-on-vs-code)\\n- [Running on Claude Desktop](https://docs.firecrawl.dev/mcp-server#running-on-claude\",\n          \"charCount\": 1000\n        },\n        {\n          \"text\": \"```\\n{\\n  \\\"name\\\": \\\"firecrawl_scrape\\\",\\n  \\\"arguments\\\": {\\n    \\\"url\\\": \\\"https://example.com\\\",\\n    \\\"formats\\\": [\\\"markdown\\\"],\\n    \\\"onlyMainContent\\\": true,\\n    \\\"waitFor\\\": 1000,\\n    \\\"mobile\\\": false,\\n    \\\"includeTags\\\": [\\\"article\\\", \\\"main\\\"],\\n    \\\"excludeTags\\\": [\\\"nav\\\", \\\"footer\\\"],\\n    \\\"skipTlsVerification\\\": false\\n  }\\n}\\n```\",\n          \"charCount\": 307\n        },\n        {\n          \"text\": \"```\\n{\\n  \\\"name\\\": \\\"firecrawl_search\\\",\\n  \\\"arguments\\\": {\\n    \\\"query\\\": \\\"your search query\\\",\\n    \\\"limit\\\": 5,\\n    \\\"location\\\": \\\"United States\\\",\\n    \\\"tbs\\\": \\\"qdr:m\\\",\\n    \\\"scrapeOptions\\\": {\\n      \\\"formats\\\": [\\\"markdown\\\"],\\n      \\\"onlyMainContent\\\": true\\n    }\\n  }\\n}\\n```\",\n          \"charCount\": 255\n        }\n      ]\n    },\n    {\n      \"title\": \"Scrape - Firecrawl Docs\",\n      \"url\": \"https://docs.firecrawl.dev/features/scrape\",\n      \"description\": \"Firecrawl converts web pages into markdown, ideal for LLM applications. It manages complexities: proxies, caching, rate limits, js-blocked content ...\",\n      \"position\": 4,\n      \"source\": \"web\",\n      \"metadata\": {\n        \"sourceURL\": \"https://docs.firecrawl.dev/features/scrape\",\n        \"finalURL\": \"https://docs.firecrawl.dev/features/scrape\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"- [Scraping a URL with Firecrawl](https://docs.firecrawl.dev/features/scrape#scraping-a-url-with-firecrawl)\\n- [/scrape endpoint](https://docs.firecrawl.dev/features/scrape#%2Fscrape-endpoint)\\n- [Installation](https://docs.firecrawl.dev/features/scrape#installation)\\n- [Usage](https://docs.firecrawl.dev/features/scrape#usage)\\n- [Response](https://docs.firecrawl.dev/features/scrape#response)\\n- [Scrape Formats](https://docs.firecrawl.dev/features/scrape#scrape-formats)\\n- [Extract structured data](https://docs.firecrawl.dev/features/scrape#extract-structured-data)\\n- [/scrape (with json) endpoint](https://docs.firecrawl.dev/features/scrape#%2Fscrape-with-json-endpoint)\\n- [Extracting without schema](https://docs.firecrawl.dev/features/scrape#extracting-without-schema)\\n- [JSON format options](https://docs.firecrawl.dev/features/scrape#json-format-options)\\n- [Extract brand identity](https://docs.firecrawl.dev/features/scrape#extract-brand-identity)\\n- [/scrape (with branding) endpoint](https://d\",\n          \"charCount\": 1000\n        },\n        {\n          \"text\": \"# Scrape a website:\\ndoc = firecrawl.scrape(\\\"https://firecrawl.dev\\\", formats=[\\\"markdown\\\", \\\"html\\\"])\\nprint(doc)\\n```\",\n          \"charCount\": 112\n        },\n        {\n          \"text\": \"```\\n{\\n  \\\"success\\\": true,\\n  \\\"data\\\" : {\\n    \\\"markdown\\\": \\\"Launch Week I is here! [See our Day 2 Release 🚀](https://www.firecrawl.dev/blog/launch-week-i-day-2-doubled-rate-limits)[💥 Get 2 months free...\\\",\\\\\\n    \\\"html\\\": \\\"<!DOCTYPE html><html lang=\\\\\\\"en\\\\\\\" class=\\\\\\\"light\\\\\\\" style=\\\\\\\"color-scheme: light;\\\\\\\"><body class=\\\\\\\"__variable_36bd41 __variable_d7dc5d font-inter ...\\\",\\\\\\n    \\\"metadata\\\": {\\\\\\n      \\\"title\\\": \\\"Home - Firecrawl\\\",\\\\\\n      \\\"description\\\": \\\"Firecrawl crawls and converts any website into clean markdown.\\\",\\\\\\n      \\\"language\\\": \\\"en\\\",\\\\\\n      \\\"keywords\\\": \\\"Firecrawl,Markdown,Data,Mendable,Langchain\\\",\\\\\\n      \\\"robots\\\": \\\"follow, index\\\",\\\\\\n      \\\"ogTitle\\\": \\\"Firecrawl\\\",\\\\\\n      \\\"ogDescription\\\": \\\"Turn any website into LLM-ready data.\\\",\\\\\\n      \\\"ogUrl\\\": \\\"https://www.firecrawl.dev/\\\",\\\\\\n      \\\"ogImage\\\": \\\"https://www.firecrawl.dev/og.png?123\\\",\\\\\\n      \\\"ogLocaleAlternate\\\": [],\\\\\\n      \\\"ogSiteName\\\": \\\"Firecrawl\\\",\\\\\\n      \\\"sourceURL\\\": \\\"https://firecrawl.dev\\\",\\\\\\n      \\\"statusCode\\\": 200,\\\\\\n      \\\"contentType\\\": \\\"text/html\",\n          \"charCount\": 1000\n        }\n      ]\n    },\n    {\n      \"title\": \"Advanced Scraping Guide - Firecrawl Docs\",\n      \"url\": \"https://docs.firecrawl.dev/advanced-scraping-guide\",\n      \"description\": \"See the full Scrape API reference for details. ​. JSON extraction via formats. Use the JSON format object in formats to extract structured data in one pass:.\",\n      \"position\": 5,\n      \"source\": \"web\",\n      \"metadata\": {\n        \"sourceURL\": \"https://docs.firecrawl.dev/advanced-scraping-guide\",\n        \"finalURL\": \"https://docs.firecrawl.dev/advanced-scraping-guide\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"```\\ncurl -X POST https://api.firecrawl.dev/v2/scrape \\\\\\n  -H 'Content-Type: application/json' \\\\\\n  -H 'Authorization: Bearer fc-YOUR-API-KEY' \\\\\\n  -d '{\\n    \\\"url\\\": \\\"https://example.com\\\",\\n    \\\"actions\\\": [\\\\\\n      { \\\"type\\\": \\\"click\\\", \\\"selector\\\": \\\".expand-button\\\", \\\"all\\\": true },\\\\\\n      { \\\"type\\\": \\\"wait\\\", \\\"milliseconds\\\": 500 }\\\\\\n    ],\\n    \\\"formats\\\": [\\\"markdown\\\"]\\n  }'\\n```\",\n          \"charCount\": 363\n        },\n        {\n          \"text\": \"```\\ncurl -X POST https://api.firecrawl.dev/v2/scrape \\\\\\n  -H 'Content-Type: application/json' \\\\\\n  -H 'Authorization: Bearer fc-YOUR-API-KEY' \\\\\\n  -d '{\\n    \\\"url\\\": \\\"https://example.com\\\",\\n    \\\"actions\\\": [\\\\\\n      { \\\"type\\\": \\\"executeJavascript\\\", \\\"script\\\": \\\"document.querySelector(\\\\\\\"#__NEXT_DATA__\\\\\\\").textContent\\\" }\\\\\\n    ],\\n    \\\"formats\\\": [\\\"markdown\\\"]\\n  }'\\n```\",\n          \"charCount\": 352\n        },\n        {\n          \"text\": \"```\\ncurl -X POST https://api.firecrawl.dev/v2/scrape \\\\\\n    -H 'Content-Type: application/json' \\\\\\n    -H 'Authorization: Bearer fc-YOUR-API-KEY' \\\\\\n    -d '{\\n      \\\"url\\\": \\\"https://docs.firecrawl.dev\\\",\\n      \\\"formats\\\": [\\\\\\n        \\\"markdown\\\",\\\\\\n        \\\"links\\\",\\\\\\n        \\\"html\\\",\\\\\\n        \\\"rawHtml\\\",\\\\\\n        { \\\"type\\\": \\\"screenshot\\\", \\\"fullPage\\\": true, \\\"quality\\\": 80 }\\\\\\n      ],\\n      \\\"includeTags\\\": [\\\"h1\\\", \\\"p\\\", \\\"a\\\", \\\".main-content\\\"],\\n      \\\"excludeTags\\\": [\\\"#ad\\\", \\\"#footer\\\"],\\n      \\\"onlyMainContent\\\": false,\\n      \\\"waitFor\\\": 1000,\\n      \\\"timeout\\\": 15000,\\n      \\\"parsers\\\": [\\\"pdf\\\"]\\n    }'\\n```\",\n          \"charCount\": 582\n        }\n      ]\n    },\n    {\n      \"title\": \"Scraping Wikipedia - Firecrawl Docs\",\n      \"url\": \"https://docs.firecrawl.dev/developer-guides/common-sites/wikipedia\",\n      \"description\": \"Scrape with JSON Mode. Extract structured data from Wikipedia articles using Zod schemas.\",\n      \"position\": 6,\n      \"source\": \"web\",\n      \"metadata\": {\n        \"sourceURL\": \"https://docs.firecrawl.dev/developer-guides/common-sites/wikipedia\",\n        \"finalURL\": \"https://docs.firecrawl.dev/developer-guides/common-sites/wikipedia\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"- [Setup](https://docs.firecrawl.dev/developer-guides/common-sites/wikipedia#setup)\\n- [Use Cases](https://docs.firecrawl.dev/developer-guides/common-sites/wikipedia#use-cases)\\n- [Scrape with JSON Mode](https://docs.firecrawl.dev/developer-guides/common-sites/wikipedia#scrape-with-json-mode)\\n- [Search](https://docs.firecrawl.dev/developer-guides/common-sites/wikipedia#search)\\n- [Scrape](https://docs.firecrawl.dev/developer-guides/common-sites/wikipedia#scrape)\\n- [Map](https://docs.firecrawl.dev/developer-guides/common-sites/wikipedia#map)\\n- [Crawl](https://docs.firecrawl.dev/developer-guides/common-sites/wikipedia#crawl)\\n- [Batch Scrape](https://docs.firecrawl.dev/developer-guides/common-sites/wikipedia#batch-scrape)\",\n          \"charCount\": 725\n        },\n        {\n          \"text\": \"const searchResult = await firecrawl.search('quantum computing site:en.wikipedia.org', {\\n    limit: 10,\\n    sources: [{ type: 'web' }], // { type: 'news' }, { type: 'images' }\\n    scrapeOptions: {\\n        formats: ['markdown']\\n    }\\n});\",\n          \"charCount\": 236\n        },\n        {\n          \"text\": \"const result = await firecrawl.scrape('https://en.wikipedia.org/wiki/Artificial_intelligence', {\\n    formats: ['markdown'], // i.e. html, links, etc.\\n    onlyMainContent: true\\n});\",\n          \"charCount\": 179\n        }\n      ]\n    },\n    {\n      \"title\": \"Welcome to V1 - Firecrawl Docs\",\n      \"url\": \"https://docs.firecrawl.dev/v1-welcome\",\n      \"description\": \"Scrape Formats. You can now choose what formats you want your output in. You can specify multiple output formats. Supported formats are: Markdown ...\",\n      \"position\": 7,\n      \"source\": \"web\",\n      \"metadata\": {\n        \"sourceURL\": \"https://docs.firecrawl.dev/v1-welcome\",\n        \"finalURL\": \"https://docs.firecrawl.dev/v1-welcome\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"- [Scrape Formats](https://docs.firecrawl.dev/v1-welcome#scrape-formats)\\n- [Response](https://docs.firecrawl.dev/v1-welcome#response)\\n- [Introducing /map (Alpha)](https://docs.firecrawl.dev/v1-welcome#introducing-%2Fmap-alpha)\\n- [Usage](https://docs.firecrawl.dev/v1-welcome#usage)\\n- [Response](https://docs.firecrawl.dev/v1-welcome#response-2)\\n- [WebSockets](https://docs.firecrawl.dev/v1-welcome#websockets)\\n- [JSON format](https://docs.firecrawl.dev/v1-welcome#json-format)\\n- [Extracting without schema (New)](https://docs.firecrawl.dev/v1-welcome#extracting-without-schema-new)\\n- [New Crawl Webhook](https://docs.firecrawl.dev/v1-welcome#new-crawl-webhook)\\n- [Webhook Events](https://docs.firecrawl.dev/v1-welcome#webhook-events)\\n- [Webhook Response](https://docs.firecrawl.dev/v1-welcome#webhook-response)\\n- [Migrating from V0](https://docs.firecrawl.dev/v1-welcome#migrating-from-v0)\\n- [/scrape endpoint](https://docs.firecrawl.dev/v1-welcome#%2Fscrape-endpoint)\\n- [Formats](https://docs.firecr\",\n          \"charCount\": 1000\n        },\n        {\n          \"text\": \"- Output Formats for `/scrape`. Choose what formats you want your output in.\\n- New [`/map` endpoint](https://docs.firecrawl.dev/features/map) for getting most of the URLs of a webpage.\\n- Developer friendly API for `/crawl/{id}` status.\\n- 2x Rate Limits for all plans.\\n- [Go SDK](https://docs.firecrawl.dev/sdks/go) and [Rust SDK](https://docs.firecrawl.dev/sdks/rust)\\n- Teams support\\n- API Key Management in the dashboard.\\n- `onlyMainContent` is now default to `true`.\\n- `/crawl` webhooks and websocket support.\",\n          \"charCount\": 511\n        },\n        {\n          \"text\": \"```\\n{\\n  \\\"success\\\": true,\\n  \\\"data\\\" : {\\n    \\\"markdown\\\": \\\"Launch Week I is here! [See our Day 2 Release 🚀](https://www.firecrawl.dev/blog/launch-week-i-day-2-doubled-rate-limits)[💥 Get 2 months free...\\\",\\\\\\n    \\\"html\\\": \\\"<!DOCTYPE html><html lang=\\\\\\\"en\\\\\\\" class=\\\\\\\"light\\\\\\\" style=\\\\\\\"color-scheme: light;\\\\\\\"><body class=\\\\\\\"__variable_36bd41 __variable_d7dc5d font-inter ...\\\",\\\\\\n    \\\"metadata\\\": {\\\\\\n      \\\"title\\\": \\\"Home - Firecrawl\\\",\\\\\\n      \\\"description\\\": \\\"Firecrawl crawls and converts any website into clean markdown.\\\",\\\\\\n      \\\"language\\\": \\\"en\\\",\\\\\\n      \\\"keywords\\\": \\\"Firecrawl,Markdown,Data,Mendable,Langchain\\\",\\\\\\n      \\\"robots\\\": \\\"follow, index\\\",\\\\\\n      \\\"ogTitle\\\": \\\"Firecrawl\\\",\\\\\\n      \\\"ogDescription\\\": \\\"Turn any website into LLM-ready data.\\\",\\\\\\n      \\\"ogUrl\\\": \\\"https://www.firecrawl.dev/\\\",\\\\\\n      \\\"ogImage\\\": \\\"https://www.firecrawl.dev/og.png?123\\\",\\\\\\n      \\\"ogLocaleAlternate\\\": [],\\\\\\n      \\\"ogSiteName\\\": \\\"Firecrawl\\\",\\\\\\n      \\\"sourceURL\\\": \\\"https://firecrawl.dev\\\",\\\\\\n      \\\"statusCode\\\": 200\\\\\\n    }\\\\\\n  }\\\\\\n}\\\\\\n```\\\\\\n\\\\\\n## [​](htt\",\n          \"charCount\": 1000\n        }\n      ]\n    },\n    {\n      \"title\": \"Introduction - Firecrawl Docs\",\n      \"url\": \"https://docs.firecrawl.dev/api-reference/introduction\",\n      \"description\": \"Scrape. Extract content from any webpage in markdown or json format.\",\n      \"position\": 8,\n      \"source\": \"web\",\n      \"metadata\": {\n        \"sourceURL\": \"https://docs.firecrawl.dev/api-reference/introduction\",\n        \"finalURL\": \"https://docs.firecrawl.dev/api-reference/introduction\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"[Skip to main content](https://docs.firecrawl.dev/api-reference/introduction#content-area)\",\n          \"charCount\": 90\n        },\n        {\n          \"text\": \"## [​](https://docs.firecrawl.dev/api-reference/introduction\\\\#response-codes)  Response codes\",\n          \"charCount\": 93\n        },\n        {\n          \"text\": \"| Status | Description |\\n| --- | --- |\\n| 200 | Request was successful. |\\n| 400 | Verify the correctness of the parameters. |\\n| 401 | The API key was not provided. |\\n| 402 | Payment required |\\n| 404 | The requested resource could not be located. |\\n| 408 | The request timed out (e.g., page took too long to load). |\\n| 429 | The rate limit has been surpassed. |\\n| 5xx | Signifies a server error with Firecrawl. |\",\n          \"charCount\": 410\n        }\n      ]\n    }\n  ],\n  \"searchIds\": [\n    \"019dc36a-44ab-703c-b706-867a7c1e892b\"\n  ],\n  \"usage\": {\n    \"resultCount\": 8,\n    \"charsReturned\": 12281,\n    \"creditsUsed\": 10,\n    \"rawResultCount\": {\n      \"web\": 8,\n      \"news\": 0,\n      \"images\": 0\n    }\n  }\n}",
+  "parsed": {
+    "query": "Firecrawl search API documentation formats json markdown scrape search MCP",
+    "executedQuery": "Firecrawl search API documentation formats json markdown scrape search MCP site:docs.firecrawl.dev",
+    "content": "chunks",
+    "constraints": {
+      "maxResults": 8,
+      "maxCharsPerResult": 3000,
+      "maxCharsTotal": 16000,
+      "focus": "Search API parameters, MCP search tool, content formats, scrape/search flow, response metadata, source policy or freshness controls",
+      "sourcePolicy": {
+        "includeDomains": [
+          "docs.firecrawl.dev"
+        ]
+      }
+    },
+    "results": [
+      {
+        "title": "Introduction | Firecrawl",
+        "url": "https://docs.firecrawl.dev/introduction",
+        "description": "Search. Search the web and get full page content from results ; Scrape. Extract content from any URL as markdown, HTML, or structured JSON ; Interact. Continue ...",
+        "position": 1,
+        "source": "web",
+        "metadata": {
+          "sourceURL": "https://docs.firecrawl.dev/introduction",
+          "finalURL": "https://docs.firecrawl.dev/introduction",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "[**Scrape** \\\\\n\\\\\nExtract content from any URL as markdown, HTML, or structured JSON](https://docs.firecrawl.dev/introduction#scrape)",
+            "charCount": 133
+          },
+          {
+            "text": "- **LLM-ready output**: Clean markdown, structured JSON, screenshots, and more.\n- **Handles the hard stuff**: Proxies, anti-bot, JavaScript rendering, and dynamic content.\n- **Reliable**: Built for production with high uptime and consistent results.\n- **Fast**: Results in seconds, optimized for high throughput.\n- **MCP Server**: Connect Firecrawl to any AI tool via the [Model Context Protocol](https://docs.firecrawl.dev/mcp-server).",
+            "charCount": 436
+          },
+          {
+            "text": "```\n{\n  \"success\": true,\n  \"data\" : {\n    \"markdown\": \"Launch Week I is here! [See our Day 2 Release 🚀](https://www.firecrawl.dev/blog/launch-week-i-day-2-doubled-rate-limits)[💥 Get 2 months free...\",\\\n    \"html\": \"<!DOCTYPE html><html lang=\\\"en\\\" class=\\\"light\\\" style=\\\"color-scheme: light;\\\"><body class=\\\"__variable_36bd41 __variable_d7dc5d font-inter ...\",\\\n    \"metadata\": {\\\n      \"title\": \"Home - Firecrawl\",\\\n      \"description\": \"Firecrawl crawls and converts any website into clean markdown.\",\\\n      \"language\": \"en\",\\\n      \"keywords\": \"Firecrawl,Markdown,Data,Mendable,Langchain\",\\\n      \"robots\": \"follow, index\",\\\n      \"ogTitle\": \"Firecrawl\",\\\n      \"ogDescription\": \"Turn any website into LLM-ready data.\",\\\n      \"ogUrl\": \"https://www.firecrawl.dev/\",\\\n      \"ogImage\": \"https://www.firecrawl.dev/og.png?123\",\\\n      \"ogLocaleAlternate\": [],\\\n      \"ogSiteName\": \"Firecrawl\",\\\n      \"sourceURL\": \"https://firecrawl.dev\",\\\n      \"statusCode\": 200,\\\n      \"contentType\": \"text/html",
+            "charCount": 1000
+          }
+        ]
+      },
+      {
+        "title": "Search - Firecrawl Docs",
+        "url": "https://docs.firecrawl.dev/features/search",
+        "description": "Pass a query to /search and Firecrawl returns titles, descriptions, and URLs. Add scrapeOptions to also retrieve full-page markdown, HTML, links, or screenshots ...",
+        "position": 2,
+        "source": "web",
+        "metadata": {
+          "sourceURL": "https://docs.firecrawl.dev/features/search",
+          "finalURL": "https://docs.firecrawl.dev/features/search",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "# Search and scrape content\nresults = firecrawl.search(\n    \"firecrawl web scraping\",\n    limit=3,\n    scrape_options={\n        \"formats\": [\"markdown\", \"links\"]\n    }\n)\n```",
+            "charCount": 172
+          },
+          {
+            "text": "```\n{\n  \"success\": true,\n  \"data\": [\\\n    {\\\n      \"title\": \"Firecrawl - The Ultimate Web Scraping API\",\\\n      \"description\": \"Firecrawl is a powerful web scraping API that turns any website into clean, structured data for AI and analysis.\",\\\n      \"url\": \"https://firecrawl.dev/\",\\\n      \"markdown\": \"# Firecrawl\\n\\nThe Ultimate Web Scraping API\\n\\n## Turn any website into clean, structured data\\n\\nFirecrawl makes it easy to extract data from websites for AI applications, market research, content aggregation, and more...\",\\\n      \"links\": [\\\n        \"https://firecrawl.dev/pricing\",\\\n        \"https://firecrawl.dev/docs\",\\\n        \"https://firecrawl.dev/guides\"\\\n      ],\\\n      \"metadata\": {\\\n        \"title\": \"Firecrawl - The Ultimate Web Scraping API\",\\\n        \"description\": \"Firecrawl is a powerful web scraping API that turns any website into clean, structured data for AI and analysis.\",\\\n        \"sourceURL\": \"https://firecrawl.dev/\",\\\n        \"statusCode\": 200\\\n      }\\\n    }\\\n  ]\n}\n",
+            "charCount": 1000
+          },
+          {
+            "text": "```\ncurl -X POST https://api.firecrawl.dev/v2/search \\\n  -H \"Content-Type: application/json\" \\\n  -H \"Authorization: Bearer fc-YOUR_API_KEY\" \\\n  -d '{\n    \"query\": \"sensitive topic\",\n    \"limit\": 5,\n    \"enterprise\": [\"zdr\"],\n    \"scrapeOptions\": {\n      \"formats\": [\"markdown\"],\n      \"zeroDataRetention\": true\n    }\n  }'\n```",
+            "charCount": 325
+          }
+        ]
+      },
+      {
+        "title": "Firecrawl MCP Server",
+        "url": "https://docs.firecrawl.dev/mcp-server",
+        "description": "A Model Context Protocol (MCP) server implementation that integrates Firecrawl for searching, scraping, and interacting with the web. Our MCP server is open- ...",
+        "position": 3,
+        "source": "web",
+        "metadata": {
+          "sourceURL": "https://docs.firecrawl.dev/mcp-server",
+          "finalURL": "https://docs.firecrawl.dev/mcp-server",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "- [Features](https://docs.firecrawl.dev/mcp-server#features)\n- [Installation](https://docs.firecrawl.dev/mcp-server#installation)\n- [Remote hosted URL](https://docs.firecrawl.dev/mcp-server#remote-hosted-url)\n- [Running with npx](https://docs.firecrawl.dev/mcp-server#running-with-npx)\n- [Manual Installation](https://docs.firecrawl.dev/mcp-server#manual-installation)\n- [Running on Cursor](https://docs.firecrawl.dev/mcp-server#running-on-cursor)\n- [Manual Installation](https://docs.firecrawl.dev/mcp-server#manual-installation-2)\n- [Running on Windsurf](https://docs.firecrawl.dev/mcp-server#running-on-windsurf)\n- [Running with Streamable HTTP Mode](https://docs.firecrawl.dev/mcp-server#running-with-streamable-http-mode)\n- [Installing via Smithery (Legacy)](https://docs.firecrawl.dev/mcp-server#installing-via-smithery-legacy)\n- [Running on VS Code](https://docs.firecrawl.dev/mcp-server#running-on-vs-code)\n- [Running on Claude Desktop](https://docs.firecrawl.dev/mcp-server#running-on-claude",
+            "charCount": 1000
+          },
+          {
+            "text": "```\n{\n  \"name\": \"firecrawl_scrape\",\n  \"arguments\": {\n    \"url\": \"https://example.com\",\n    \"formats\": [\"markdown\"],\n    \"onlyMainContent\": true,\n    \"waitFor\": 1000,\n    \"mobile\": false,\n    \"includeTags\": [\"article\", \"main\"],\n    \"excludeTags\": [\"nav\", \"footer\"],\n    \"skipTlsVerification\": false\n  }\n}\n```",
+            "charCount": 307
+          },
+          {
+            "text": "```\n{\n  \"name\": \"firecrawl_search\",\n  \"arguments\": {\n    \"query\": \"your search query\",\n    \"limit\": 5,\n    \"location\": \"United States\",\n    \"tbs\": \"qdr:m\",\n    \"scrapeOptions\": {\n      \"formats\": [\"markdown\"],\n      \"onlyMainContent\": true\n    }\n  }\n}\n```",
+            "charCount": 255
+          }
+        ]
+      },
+      {
+        "title": "Scrape - Firecrawl Docs",
+        "url": "https://docs.firecrawl.dev/features/scrape",
+        "description": "Firecrawl converts web pages into markdown, ideal for LLM applications. It manages complexities: proxies, caching, rate limits, js-blocked content ...",
+        "position": 4,
+        "source": "web",
+        "metadata": {
+          "sourceURL": "https://docs.firecrawl.dev/features/scrape",
+          "finalURL": "https://docs.firecrawl.dev/features/scrape",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "- [Scraping a URL with Firecrawl](https://docs.firecrawl.dev/features/scrape#scraping-a-url-with-firecrawl)\n- [/scrape endpoint](https://docs.firecrawl.dev/features/scrape#%2Fscrape-endpoint)\n- [Installation](https://docs.firecrawl.dev/features/scrape#installation)\n- [Usage](https://docs.firecrawl.dev/features/scrape#usage)\n- [Response](https://docs.firecrawl.dev/features/scrape#response)\n- [Scrape Formats](https://docs.firecrawl.dev/features/scrape#scrape-formats)\n- [Extract structured data](https://docs.firecrawl.dev/features/scrape#extract-structured-data)\n- [/scrape (with json) endpoint](https://docs.firecrawl.dev/features/scrape#%2Fscrape-with-json-endpoint)\n- [Extracting without schema](https://docs.firecrawl.dev/features/scrape#extracting-without-schema)\n- [JSON format options](https://docs.firecrawl.dev/features/scrape#json-format-options)\n- [Extract brand identity](https://docs.firecrawl.dev/features/scrape#extract-brand-identity)\n- [/scrape (with branding) endpoint](https://d",
+            "charCount": 1000
+          },
+          {
+            "text": "# Scrape a website:\ndoc = firecrawl.scrape(\"https://firecrawl.dev\", formats=[\"markdown\", \"html\"])\nprint(doc)\n```",
+            "charCount": 112
+          },
+          {
+            "text": "```\n{\n  \"success\": true,\n  \"data\" : {\n    \"markdown\": \"Launch Week I is here! [See our Day 2 Release 🚀](https://www.firecrawl.dev/blog/launch-week-i-day-2-doubled-rate-limits)[💥 Get 2 months free...\",\\\n    \"html\": \"<!DOCTYPE html><html lang=\\\"en\\\" class=\\\"light\\\" style=\\\"color-scheme: light;\\\"><body class=\\\"__variable_36bd41 __variable_d7dc5d font-inter ...\",\\\n    \"metadata\": {\\\n      \"title\": \"Home - Firecrawl\",\\\n      \"description\": \"Firecrawl crawls and converts any website into clean markdown.\",\\\n      \"language\": \"en\",\\\n      \"keywords\": \"Firecrawl,Markdown,Data,Mendable,Langchain\",\\\n      \"robots\": \"follow, index\",\\\n      \"ogTitle\": \"Firecrawl\",\\\n      \"ogDescription\": \"Turn any website into LLM-ready data.\",\\\n      \"ogUrl\": \"https://www.firecrawl.dev/\",\\\n      \"ogImage\": \"https://www.firecrawl.dev/og.png?123\",\\\n      \"ogLocaleAlternate\": [],\\\n      \"ogSiteName\": \"Firecrawl\",\\\n      \"sourceURL\": \"https://firecrawl.dev\",\\\n      \"statusCode\": 200,\\\n      \"contentType\": \"text/html",
+            "charCount": 1000
+          }
+        ]
+      },
+      {
+        "title": "Advanced Scraping Guide - Firecrawl Docs",
+        "url": "https://docs.firecrawl.dev/advanced-scraping-guide",
+        "description": "See the full Scrape API reference for details. ​. JSON extraction via formats. Use the JSON format object in formats to extract structured data in one pass:.",
+        "position": 5,
+        "source": "web",
+        "metadata": {
+          "sourceURL": "https://docs.firecrawl.dev/advanced-scraping-guide",
+          "finalURL": "https://docs.firecrawl.dev/advanced-scraping-guide",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "```\ncurl -X POST https://api.firecrawl.dev/v2/scrape \\\n  -H 'Content-Type: application/json' \\\n  -H 'Authorization: Bearer fc-YOUR-API-KEY' \\\n  -d '{\n    \"url\": \"https://example.com\",\n    \"actions\": [\\\n      { \"type\": \"click\", \"selector\": \".expand-button\", \"all\": true },\\\n      { \"type\": \"wait\", \"milliseconds\": 500 }\\\n    ],\n    \"formats\": [\"markdown\"]\n  }'\n```",
+            "charCount": 363
+          },
+          {
+            "text": "```\ncurl -X POST https://api.firecrawl.dev/v2/scrape \\\n  -H 'Content-Type: application/json' \\\n  -H 'Authorization: Bearer fc-YOUR-API-KEY' \\\n  -d '{\n    \"url\": \"https://example.com\",\n    \"actions\": [\\\n      { \"type\": \"executeJavascript\", \"script\": \"document.querySelector(\\\"#__NEXT_DATA__\\\").textContent\" }\\\n    ],\n    \"formats\": [\"markdown\"]\n  }'\n```",
+            "charCount": 352
+          },
+          {
+            "text": "```\ncurl -X POST https://api.firecrawl.dev/v2/scrape \\\n    -H 'Content-Type: application/json' \\\n    -H 'Authorization: Bearer fc-YOUR-API-KEY' \\\n    -d '{\n      \"url\": \"https://docs.firecrawl.dev\",\n      \"formats\": [\\\n        \"markdown\",\\\n        \"links\",\\\n        \"html\",\\\n        \"rawHtml\",\\\n        { \"type\": \"screenshot\", \"fullPage\": true, \"quality\": 80 }\\\n      ],\n      \"includeTags\": [\"h1\", \"p\", \"a\", \".main-content\"],\n      \"excludeTags\": [\"#ad\", \"#footer\"],\n      \"onlyMainContent\": false,\n      \"waitFor\": 1000,\n      \"timeout\": 15000,\n      \"parsers\": [\"pdf\"]\n    }'\n```",
+            "charCount": 582
+          }
+        ]
+      },
+      {
+        "title": "Scraping Wikipedia - Firecrawl Docs",
+        "url": "https://docs.firecrawl.dev/developer-guides/common-sites/wikipedia",
+        "description": "Scrape with JSON Mode. Extract structured data from Wikipedia articles using Zod schemas.",
+        "position": 6,
+        "source": "web",
+        "metadata": {
+          "sourceURL": "https://docs.firecrawl.dev/developer-guides/common-sites/wikipedia",
+          "finalURL": "https://docs.firecrawl.dev/developer-guides/common-sites/wikipedia",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "- [Setup](https://docs.firecrawl.dev/developer-guides/common-sites/wikipedia#setup)\n- [Use Cases](https://docs.firecrawl.dev/developer-guides/common-sites/wikipedia#use-cases)\n- [Scrape with JSON Mode](https://docs.firecrawl.dev/developer-guides/common-sites/wikipedia#scrape-with-json-mode)\n- [Search](https://docs.firecrawl.dev/developer-guides/common-sites/wikipedia#search)\n- [Scrape](https://docs.firecrawl.dev/developer-guides/common-sites/wikipedia#scrape)\n- [Map](https://docs.firecrawl.dev/developer-guides/common-sites/wikipedia#map)\n- [Crawl](https://docs.firecrawl.dev/developer-guides/common-sites/wikipedia#crawl)\n- [Batch Scrape](https://docs.firecrawl.dev/developer-guides/common-sites/wikipedia#batch-scrape)",
+            "charCount": 725
+          },
+          {
+            "text": "const searchResult = await firecrawl.search('quantum computing site:en.wikipedia.org', {\n    limit: 10,\n    sources: [{ type: 'web' }], // { type: 'news' }, { type: 'images' }\n    scrapeOptions: {\n        formats: ['markdown']\n    }\n});",
+            "charCount": 236
+          },
+          {
+            "text": "const result = await firecrawl.scrape('https://en.wikipedia.org/wiki/Artificial_intelligence', {\n    formats: ['markdown'], // i.e. html, links, etc.\n    onlyMainContent: true\n});",
+            "charCount": 179
+          }
+        ]
+      },
+      {
+        "title": "Welcome to V1 - Firecrawl Docs",
+        "url": "https://docs.firecrawl.dev/v1-welcome",
+        "description": "Scrape Formats. You can now choose what formats you want your output in. You can specify multiple output formats. Supported formats are: Markdown ...",
+        "position": 7,
+        "source": "web",
+        "metadata": {
+          "sourceURL": "https://docs.firecrawl.dev/v1-welcome",
+          "finalURL": "https://docs.firecrawl.dev/v1-welcome",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "- [Scrape Formats](https://docs.firecrawl.dev/v1-welcome#scrape-formats)\n- [Response](https://docs.firecrawl.dev/v1-welcome#response)\n- [Introducing /map (Alpha)](https://docs.firecrawl.dev/v1-welcome#introducing-%2Fmap-alpha)\n- [Usage](https://docs.firecrawl.dev/v1-welcome#usage)\n- [Response](https://docs.firecrawl.dev/v1-welcome#response-2)\n- [WebSockets](https://docs.firecrawl.dev/v1-welcome#websockets)\n- [JSON format](https://docs.firecrawl.dev/v1-welcome#json-format)\n- [Extracting without schema (New)](https://docs.firecrawl.dev/v1-welcome#extracting-without-schema-new)\n- [New Crawl Webhook](https://docs.firecrawl.dev/v1-welcome#new-crawl-webhook)\n- [Webhook Events](https://docs.firecrawl.dev/v1-welcome#webhook-events)\n- [Webhook Response](https://docs.firecrawl.dev/v1-welcome#webhook-response)\n- [Migrating from V0](https://docs.firecrawl.dev/v1-welcome#migrating-from-v0)\n- [/scrape endpoint](https://docs.firecrawl.dev/v1-welcome#%2Fscrape-endpoint)\n- [Formats](https://docs.firecr",
+            "charCount": 1000
+          },
+          {
+            "text": "- Output Formats for `/scrape`. Choose what formats you want your output in.\n- New [`/map` endpoint](https://docs.firecrawl.dev/features/map) for getting most of the URLs of a webpage.\n- Developer friendly API for `/crawl/{id}` status.\n- 2x Rate Limits for all plans.\n- [Go SDK](https://docs.firecrawl.dev/sdks/go) and [Rust SDK](https://docs.firecrawl.dev/sdks/rust)\n- Teams support\n- API Key Management in the dashboard.\n- `onlyMainContent` is now default to `true`.\n- `/crawl` webhooks and websocket support.",
+            "charCount": 511
+          },
+          {
+            "text": "```\n{\n  \"success\": true,\n  \"data\" : {\n    \"markdown\": \"Launch Week I is here! [See our Day 2 Release 🚀](https://www.firecrawl.dev/blog/launch-week-i-day-2-doubled-rate-limits)[💥 Get 2 months free...\",\\\n    \"html\": \"<!DOCTYPE html><html lang=\\\"en\\\" class=\\\"light\\\" style=\\\"color-scheme: light;\\\"><body class=\\\"__variable_36bd41 __variable_d7dc5d font-inter ...\",\\\n    \"metadata\": {\\\n      \"title\": \"Home - Firecrawl\",\\\n      \"description\": \"Firecrawl crawls and converts any website into clean markdown.\",\\\n      \"language\": \"en\",\\\n      \"keywords\": \"Firecrawl,Markdown,Data,Mendable,Langchain\",\\\n      \"robots\": \"follow, index\",\\\n      \"ogTitle\": \"Firecrawl\",\\\n      \"ogDescription\": \"Turn any website into LLM-ready data.\",\\\n      \"ogUrl\": \"https://www.firecrawl.dev/\",\\\n      \"ogImage\": \"https://www.firecrawl.dev/og.png?123\",\\\n      \"ogLocaleAlternate\": [],\\\n      \"ogSiteName\": \"Firecrawl\",\\\n      \"sourceURL\": \"https://firecrawl.dev\",\\\n      \"statusCode\": 200\\\n    }\\\n  }\\\n}\\\n```\\\n\\\n## [​](htt",
+            "charCount": 1000
+          }
+        ]
+      },
+      {
+        "title": "Introduction - Firecrawl Docs",
+        "url": "https://docs.firecrawl.dev/api-reference/introduction",
+        "description": "Scrape. Extract content from any webpage in markdown or json format.",
+        "position": 8,
+        "source": "web",
+        "metadata": {
+          "sourceURL": "https://docs.firecrawl.dev/api-reference/introduction",
+          "finalURL": "https://docs.firecrawl.dev/api-reference/introduction",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "[Skip to main content](https://docs.firecrawl.dev/api-reference/introduction#content-area)",
+            "charCount": 90
+          },
+          {
+            "text": "## [​](https://docs.firecrawl.dev/api-reference/introduction\\#response-codes)  Response codes",
+            "charCount": 93
+          },
+          {
+            "text": "| Status | Description |\n| --- | --- |\n| 200 | Request was successful. |\n| 400 | Verify the correctness of the parameters. |\n| 401 | The API key was not provided. |\n| 402 | Payment required |\n| 404 | The requested resource could not be located. |\n| 408 | The request timed out (e.g., page took too long to load). |\n| 429 | The rate limit has been surpassed. |\n| 5xx | Signifies a server error with Firecrawl. |",
+            "charCount": 410
+          }
+        ]
+      }
+    ],
+    "searchIds": [
+      "019dc36a-44ab-703c-b706-867a7c1e892b"
+    ],
+    "usage": {
+      "resultCount": 8,
+      "charsReturned": 12281,
+      "creditsUsed": 10,
+      "rawResultCount": {
+        "web": 8,
+        "news": 0,
+        "images": 0
+      }
+    }
+  },
+  "results": [
+    {
+      "title": "Introduction | Firecrawl",
+      "url": "https://docs.firecrawl.dev/introduction",
+      "domain": "docs.firecrawl.dev",
+      "description": "Search. Search the web and get full page content from results ; Scrape. Extract content from any URL as markdown, HTML, or structured JSON ; Interact. Continue ...",
+      "chunks": [
+        {
+          "text": "[**Scrape** \\\\\n\\\\\nExtract content from any URL as markdown, HTML, or structured JSON](https://docs.firecrawl.dev/introduction#scrape)",
+          "charCount": 133
+        },
+        {
+          "text": "- **LLM-ready output**: Clean markdown, structured JSON, screenshots, and more.\n- **Handles the hard stuff**: Proxies, anti-bot, JavaScript rendering, and dynamic content.\n- **Reliable**: Built for production with high uptime and consistent results.\n- **Fast**: Results in seconds, optimized for high throughput.\n- **MCP Server**: Connect Firecrawl to any AI tool via the [Model Context Protocol](https://docs.firecrawl.dev/mcp-server).",
+          "charCount": 436
+        },
+        {
+          "text": "```\n{\n  \"success\": true,\n  \"data\" : {\n    \"markdown\": \"Launch Week I is here! [See our Day 2 Release 🚀](https://www.firecrawl.dev/blog/launch-week-i-day-2-doubled-rate-limits)[💥 Get 2 months free...\",\\\n    \"html\": \"<!DOCTYPE html><html lang=\\\"en\\\" class=\\\"light\\\" style=\\\"color-scheme: light;\\\"><body class=\\\"__variable_36bd41 __variable_d7dc5d font-inter ...\",\\\n    \"metadata\": {\\\n      \"title\": \"Home - Firecrawl\",\\\n      \"description\": \"Firecrawl crawls and converts any website into clean markdown.\",\\\n      \"language\": \"en\",\\\n      \"keywords\": \"Firecrawl,Markdown,Data,Mendable,Langchain\",\\\n      \"robots\": \"follow, index\",\\\n      \"ogTitle\": \"Firecrawl\",\\\n      \"ogDescription\": \"Turn any website into LLM-ready data.\",\\\n      \"ogUrl\": \"https://www.firecrawl.dev/\",\\\n      \"ogImage\": \"https://www.firecrawl.dev/og.png?123\",\\\n      \"ogLocaleAlternate\": [],\\\n      \"ogSiteName\": \"Firecrawl\",\\\n      \"sourceURL\": \"https://firecrawl.dev\",\\\n      \"statusCode\": 200,\\\n      \"contentType\": \"text/html",
+          "charCount": 1000
+        }
+      ],
+      "source": "web",
+      "position": 1
+    },
+    {
+      "title": "Search - Firecrawl Docs",
+      "url": "https://docs.firecrawl.dev/features/search",
+      "domain": "docs.firecrawl.dev",
+      "description": "Pass a query to /search and Firecrawl returns titles, descriptions, and URLs. Add scrapeOptions to also retrieve full-page markdown, HTML, links, or screenshots ...",
+      "chunks": [
+        {
+          "text": "# Search and scrape content\nresults = firecrawl.search(\n    \"firecrawl web scraping\",\n    limit=3,\n    scrape_options={\n        \"formats\": [\"markdown\", \"links\"]\n    }\n)\n```",
+          "charCount": 172
+        },
+        {
+          "text": "```\n{\n  \"success\": true,\n  \"data\": [\\\n    {\\\n      \"title\": \"Firecrawl - The Ultimate Web Scraping API\",\\\n      \"description\": \"Firecrawl is a powerful web scraping API that turns any website into clean, structured data for AI and analysis.\",\\\n      \"url\": \"https://firecrawl.dev/\",\\\n      \"markdown\": \"# Firecrawl\\n\\nThe Ultimate Web Scraping API\\n\\n## Turn any website into clean, structured data\\n\\nFirecrawl makes it easy to extract data from websites for AI applications, market research, content aggregation, and more...\",\\\n      \"links\": [\\\n        \"https://firecrawl.dev/pricing\",\\\n        \"https://firecrawl.dev/docs\",\\\n        \"https://firecrawl.dev/guides\"\\\n      ],\\\n      \"metadata\": {\\\n        \"title\": \"Firecrawl - The Ultimate Web Scraping API\",\\\n        \"description\": \"Firecrawl is a powerful web scraping API that turns any website into clean, structured data for AI and analysis.\",\\\n        \"sourceURL\": \"https://firecrawl.dev/\",\\\n        \"statusCode\": 200\\\n      }\\\n    }\\\n  ]\n}\n",
+          "charCount": 1000
+        },
+        {
+          "text": "```\ncurl -X POST https://api.firecrawl.dev/v2/search \\\n  -H \"Content-Type: application/json\" \\\n  -H \"Authorization: Bearer fc-YOUR_API_KEY\" \\\n  -d '{\n    \"query\": \"sensitive topic\",\n    \"limit\": 5,\n    \"enterprise\": [\"zdr\"],\n    \"scrapeOptions\": {\n      \"formats\": [\"markdown\"],\n      \"zeroDataRetention\": true\n    }\n  }'\n```",
+          "charCount": 325
+        }
+      ],
+      "source": "web",
+      "position": 2
+    },
+    {
+      "title": "Firecrawl MCP Server",
+      "url": "https://docs.firecrawl.dev/mcp-server",
+      "domain": "docs.firecrawl.dev",
+      "description": "A Model Context Protocol (MCP) server implementation that integrates Firecrawl for searching, scraping, and interacting with the web. Our MCP server is open- ...",
+      "chunks": [
+        {
+          "text": "- [Features](https://docs.firecrawl.dev/mcp-server#features)\n- [Installation](https://docs.firecrawl.dev/mcp-server#installation)\n- [Remote hosted URL](https://docs.firecrawl.dev/mcp-server#remote-hosted-url)\n- [Running with npx](https://docs.firecrawl.dev/mcp-server#running-with-npx)\n- [Manual Installation](https://docs.firecrawl.dev/mcp-server#manual-installation)\n- [Running on Cursor](https://docs.firecrawl.dev/mcp-server#running-on-cursor)\n- [Manual Installation](https://docs.firecrawl.dev/mcp-server#manual-installation-2)\n- [Running on Windsurf](https://docs.firecrawl.dev/mcp-server#running-on-windsurf)\n- [Running with Streamable HTTP Mode](https://docs.firecrawl.dev/mcp-server#running-with-streamable-http-mode)\n- [Installing via Smithery (Legacy)](https://docs.firecrawl.dev/mcp-server#installing-via-smithery-legacy)\n- [Running on VS Code](https://docs.firecrawl.dev/mcp-server#running-on-vs-code)\n- [Running on Claude Desktop](https://docs.firecrawl.dev/mcp-server#running-on-claude",
+          "charCount": 1000
+        },
+        {
+          "text": "```\n{\n  \"name\": \"firecrawl_scrape\",\n  \"arguments\": {\n    \"url\": \"https://example.com\",\n    \"formats\": [\"markdown\"],\n    \"onlyMainContent\": true,\n    \"waitFor\": 1000,\n    \"mobile\": false,\n    \"includeTags\": [\"article\", \"main\"],\n    \"excludeTags\": [\"nav\", \"footer\"],\n    \"skipTlsVerification\": false\n  }\n}\n```",
+          "charCount": 307
+        },
+        {
+          "text": "```\n{\n  \"name\": \"firecrawl_search\",\n  \"arguments\": {\n    \"query\": \"your search query\",\n    \"limit\": 5,\n    \"location\": \"United States\",\n    \"tbs\": \"qdr:m\",\n    \"scrapeOptions\": {\n      \"formats\": [\"markdown\"],\n      \"onlyMainContent\": true\n    }\n  }\n}\n```",
+          "charCount": 255
+        }
+      ],
+      "source": "web",
+      "position": 3
+    },
+    {
+      "title": "Scrape - Firecrawl Docs",
+      "url": "https://docs.firecrawl.dev/features/scrape",
+      "domain": "docs.firecrawl.dev",
+      "description": "Firecrawl converts web pages into markdown, ideal for LLM applications. It manages complexities: proxies, caching, rate limits, js-blocked content ...",
+      "chunks": [
+        {
+          "text": "- [Scraping a URL with Firecrawl](https://docs.firecrawl.dev/features/scrape#scraping-a-url-with-firecrawl)\n- [/scrape endpoint](https://docs.firecrawl.dev/features/scrape#%2Fscrape-endpoint)\n- [Installation](https://docs.firecrawl.dev/features/scrape#installation)\n- [Usage](https://docs.firecrawl.dev/features/scrape#usage)\n- [Response](https://docs.firecrawl.dev/features/scrape#response)\n- [Scrape Formats](https://docs.firecrawl.dev/features/scrape#scrape-formats)\n- [Extract structured data](https://docs.firecrawl.dev/features/scrape#extract-structured-data)\n- [/scrape (with json) endpoint](https://docs.firecrawl.dev/features/scrape#%2Fscrape-with-json-endpoint)\n- [Extracting without schema](https://docs.firecrawl.dev/features/scrape#extracting-without-schema)\n- [JSON format options](https://docs.firecrawl.dev/features/scrape#json-format-options)\n- [Extract brand identity](https://docs.firecrawl.dev/features/scrape#extract-brand-identity)\n- [/scrape (with branding) endpoint](https://d",
+          "charCount": 1000
+        },
+        {
+          "text": "# Scrape a website:\ndoc = firecrawl.scrape(\"https://firecrawl.dev\", formats=[\"markdown\", \"html\"])\nprint(doc)\n```",
+          "charCount": 112
+        },
+        {
+          "text": "```\n{\n  \"success\": true,\n  \"data\" : {\n    \"markdown\": \"Launch Week I is here! [See our Day 2 Release 🚀](https://www.firecrawl.dev/blog/launch-week-i-day-2-doubled-rate-limits)[💥 Get 2 months free...\",\\\n    \"html\": \"<!DOCTYPE html><html lang=\\\"en\\\" class=\\\"light\\\" style=\\\"color-scheme: light;\\\"><body class=\\\"__variable_36bd41 __variable_d7dc5d font-inter ...\",\\\n    \"metadata\": {\\\n      \"title\": \"Home - Firecrawl\",\\\n      \"description\": \"Firecrawl crawls and converts any website into clean markdown.\",\\\n      \"language\": \"en\",\\\n      \"keywords\": \"Firecrawl,Markdown,Data,Mendable,Langchain\",\\\n      \"robots\": \"follow, index\",\\\n      \"ogTitle\": \"Firecrawl\",\\\n      \"ogDescription\": \"Turn any website into LLM-ready data.\",\\\n      \"ogUrl\": \"https://www.firecrawl.dev/\",\\\n      \"ogImage\": \"https://www.firecrawl.dev/og.png?123\",\\\n      \"ogLocaleAlternate\": [],\\\n      \"ogSiteName\": \"Firecrawl\",\\\n      \"sourceURL\": \"https://firecrawl.dev\",\\\n      \"statusCode\": 200,\\\n      \"contentType\": \"text/html",
+          "charCount": 1000
+        }
+      ],
+      "source": "web",
+      "position": 4
+    },
+    {
+      "title": "Advanced Scraping Guide - Firecrawl Docs",
+      "url": "https://docs.firecrawl.dev/advanced-scraping-guide",
+      "domain": "docs.firecrawl.dev",
+      "description": "See the full Scrape API reference for details. ​. JSON extraction via formats. Use the JSON format object in formats to extract structured data in one pass:.",
+      "chunks": [
+        {
+          "text": "```\ncurl -X POST https://api.firecrawl.dev/v2/scrape \\\n  -H 'Content-Type: application/json' \\\n  -H 'Authorization: Bearer fc-YOUR-API-KEY' \\\n  -d '{\n    \"url\": \"https://example.com\",\n    \"actions\": [\\\n      { \"type\": \"click\", \"selector\": \".expand-button\", \"all\": true },\\\n      { \"type\": \"wait\", \"milliseconds\": 500 }\\\n    ],\n    \"formats\": [\"markdown\"]\n  }'\n```",
+          "charCount": 363
+        },
+        {
+          "text": "```\ncurl -X POST https://api.firecrawl.dev/v2/scrape \\\n  -H 'Content-Type: application/json' \\\n  -H 'Authorization: Bearer fc-YOUR-API-KEY' \\\n  -d '{\n    \"url\": \"https://example.com\",\n    \"actions\": [\\\n      { \"type\": \"executeJavascript\", \"script\": \"document.querySelector(\\\"#__NEXT_DATA__\\\").textContent\" }\\\n    ],\n    \"formats\": [\"markdown\"]\n  }'\n```",
+          "charCount": 352
+        },
+        {
+          "text": "```\ncurl -X POST https://api.firecrawl.dev/v2/scrape \\\n    -H 'Content-Type: application/json' \\\n    -H 'Authorization: Bearer fc-YOUR-API-KEY' \\\n    -d '{\n      \"url\": \"https://docs.firecrawl.dev\",\n      \"formats\": [\\\n        \"markdown\",\\\n        \"links\",\\\n        \"html\",\\\n        \"rawHtml\",\\\n        { \"type\": \"screenshot\", \"fullPage\": true, \"quality\": 80 }\\\n      ],\n      \"includeTags\": [\"h1\", \"p\", \"a\", \".main-content\"],\n      \"excludeTags\": [\"#ad\", \"#footer\"],\n      \"onlyMainContent\": false,\n      \"waitFor\": 1000,\n      \"timeout\": 15000,\n      \"parsers\": [\"pdf\"]\n    }'\n```",
+          "charCount": 582
+        }
+      ],
+      "source": "web",
+      "position": 5
+    },
+    {
+      "title": "Scraping Wikipedia - Firecrawl Docs",
+      "url": "https://docs.firecrawl.dev/developer-guides/common-sites/wikipedia",
+      "domain": "docs.firecrawl.dev",
+      "description": "Scrape with JSON Mode. Extract structured data from Wikipedia articles using Zod schemas.",
+      "chunks": [
+        {
+          "text": "- [Setup](https://docs.firecrawl.dev/developer-guides/common-sites/wikipedia#setup)\n- [Use Cases](https://docs.firecrawl.dev/developer-guides/common-sites/wikipedia#use-cases)\n- [Scrape with JSON Mode](https://docs.firecrawl.dev/developer-guides/common-sites/wikipedia#scrape-with-json-mode)\n- [Search](https://docs.firecrawl.dev/developer-guides/common-sites/wikipedia#search)\n- [Scrape](https://docs.firecrawl.dev/developer-guides/common-sites/wikipedia#scrape)\n- [Map](https://docs.firecrawl.dev/developer-guides/common-sites/wikipedia#map)\n- [Crawl](https://docs.firecrawl.dev/developer-guides/common-sites/wikipedia#crawl)\n- [Batch Scrape](https://docs.firecrawl.dev/developer-guides/common-sites/wikipedia#batch-scrape)",
+          "charCount": 725
+        },
+        {
+          "text": "const searchResult = await firecrawl.search('quantum computing site:en.wikipedia.org', {\n    limit: 10,\n    sources: [{ type: 'web' }], // { type: 'news' }, { type: 'images' }\n    scrapeOptions: {\n        formats: ['markdown']\n    }\n});",
+          "charCount": 236
+        },
+        {
+          "text": "const result = await firecrawl.scrape('https://en.wikipedia.org/wiki/Artificial_intelligence', {\n    formats: ['markdown'], // i.e. html, links, etc.\n    onlyMainContent: true\n});",
+          "charCount": 179
+        }
+      ],
+      "source": "web",
+      "position": 6
+    },
+    {
+      "title": "Welcome to V1 - Firecrawl Docs",
+      "url": "https://docs.firecrawl.dev/v1-welcome",
+      "domain": "docs.firecrawl.dev",
+      "description": "Scrape Formats. You can now choose what formats you want your output in. You can specify multiple output formats. Supported formats are: Markdown ...",
+      "chunks": [
+        {
+          "text": "- [Scrape Formats](https://docs.firecrawl.dev/v1-welcome#scrape-formats)\n- [Response](https://docs.firecrawl.dev/v1-welcome#response)\n- [Introducing /map (Alpha)](https://docs.firecrawl.dev/v1-welcome#introducing-%2Fmap-alpha)\n- [Usage](https://docs.firecrawl.dev/v1-welcome#usage)\n- [Response](https://docs.firecrawl.dev/v1-welcome#response-2)\n- [WebSockets](https://docs.firecrawl.dev/v1-welcome#websockets)\n- [JSON format](https://docs.firecrawl.dev/v1-welcome#json-format)\n- [Extracting without schema (New)](https://docs.firecrawl.dev/v1-welcome#extracting-without-schema-new)\n- [New Crawl Webhook](https://docs.firecrawl.dev/v1-welcome#new-crawl-webhook)\n- [Webhook Events](https://docs.firecrawl.dev/v1-welcome#webhook-events)\n- [Webhook Response](https://docs.firecrawl.dev/v1-welcome#webhook-response)\n- [Migrating from V0](https://docs.firecrawl.dev/v1-welcome#migrating-from-v0)\n- [/scrape endpoint](https://docs.firecrawl.dev/v1-welcome#%2Fscrape-endpoint)\n- [Formats](https://docs.firecr",
+          "charCount": 1000
+        },
+        {
+          "text": "- Output Formats for `/scrape`. Choose what formats you want your output in.\n- New [`/map` endpoint](https://docs.firecrawl.dev/features/map) for getting most of the URLs of a webpage.\n- Developer friendly API for `/crawl/{id}` status.\n- 2x Rate Limits for all plans.\n- [Go SDK](https://docs.firecrawl.dev/sdks/go) and [Rust SDK](https://docs.firecrawl.dev/sdks/rust)\n- Teams support\n- API Key Management in the dashboard.\n- `onlyMainContent` is now default to `true`.\n- `/crawl` webhooks and websocket support.",
+          "charCount": 511
+        },
+        {
+          "text": "```\n{\n  \"success\": true,\n  \"data\" : {\n    \"markdown\": \"Launch Week I is here! [See our Day 2 Release 🚀](https://www.firecrawl.dev/blog/launch-week-i-day-2-doubled-rate-limits)[💥 Get 2 months free...\",\\\n    \"html\": \"<!DOCTYPE html><html lang=\\\"en\\\" class=\\\"light\\\" style=\\\"color-scheme: light;\\\"><body class=\\\"__variable_36bd41 __variable_d7dc5d font-inter ...\",\\\n    \"metadata\": {\\\n      \"title\": \"Home - Firecrawl\",\\\n      \"description\": \"Firecrawl crawls and converts any website into clean markdown.\",\\\n      \"language\": \"en\",\\\n      \"keywords\": \"Firecrawl,Markdown,Data,Mendable,Langchain\",\\\n      \"robots\": \"follow, index\",\\\n      \"ogTitle\": \"Firecrawl\",\\\n      \"ogDescription\": \"Turn any website into LLM-ready data.\",\\\n      \"ogUrl\": \"https://www.firecrawl.dev/\",\\\n      \"ogImage\": \"https://www.firecrawl.dev/og.png?123\",\\\n      \"ogLocaleAlternate\": [],\\\n      \"ogSiteName\": \"Firecrawl\",\\\n      \"sourceURL\": \"https://firecrawl.dev\",\\\n      \"statusCode\": 200\\\n    }\\\n  }\\\n}\\\n```\\\n\\\n## [​](htt",
+          "charCount": 1000
+        }
+      ],
+      "source": "web",
+      "position": 7
+    },
+    {
+      "title": "Introduction - Firecrawl Docs",
+      "url": "https://docs.firecrawl.dev/api-reference/introduction",
+      "domain": "docs.firecrawl.dev",
+      "description": "Scrape. Extract content from any webpage in markdown or json format.",
+      "chunks": [
+        {
+          "text": "[Skip to main content](https://docs.firecrawl.dev/api-reference/introduction#content-area)",
+          "charCount": 90
+        },
+        {
+          "text": "## [​](https://docs.firecrawl.dev/api-reference/introduction\\#response-codes)  Response codes",
+          "charCount": 93
+        },
+        {
+          "text": "| Status | Description |\n| --- | --- |\n| 200 | Request was successful. |\n| 400 | Verify the correctness of the parameters. |\n| 401 | The API key was not provided. |\n| 402 | Payment required |\n| 404 | The requested resource could not be located. |\n| 408 | The request timed out (e.g., page took too long to load). |\n| 429 | The rate limit has been surpassed. |\n| 5xx | Signifies a server error with Firecrawl. |",
+          "charCount": 410
+        }
+      ],
+      "source": "web",
+      "position": 8
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "query": "Tavily search API benchmark SimpleQA MS MARCO document relevance evaluation methodology",
+  "content": "chunks",
+  "maxResults": 10,
+  "maxCharsPerResult": 2200,
+  "maxCharsTotal": 16000,
+  "focus": "Tavily benchmark methodology, search API evaluation, comparison with Exa or Parallel, document relevance, metrics, task construction",
+  "freshness": "year",
+  "sources": [
+    "web"
+  ],
+  "ignoreInvalidURLs": true,
+  "includeRawResults": true
+}

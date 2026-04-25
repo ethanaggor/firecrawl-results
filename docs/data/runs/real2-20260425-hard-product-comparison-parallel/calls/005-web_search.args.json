@@ -1,0 +1,10 @@
+{
+  "objective": "Find official Parallel AI documentation or product pages for web search, MCP tools, answer/search result shape, freshness, and agent workflow.",
+  "search_queries": [
+    "Parallel AI web search docs",
+    "Parallel AI MCP docs",
+    "parallel.ai search API"
+  ],
+  "session_id": "9f2e4a8d1c7b4e6390af5d2c8b7611e4",
+  "model_name": "gpt-5.5 xhigh"
+}

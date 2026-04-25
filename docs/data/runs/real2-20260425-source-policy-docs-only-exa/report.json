@@ -1,0 +1,157 @@
+{
+  "status": "complete",
+  "runId": "real2-20260425-source-policy-docs-only-exa",
+  "generatedAt": "2026-04-25T07:04:53.890Z",
+  "manifest": {
+    "runId": "real2-20260425-source-policy-docs-only-exa",
+    "createdAt": "2026-04-25T06:52:37.441Z",
+    "provider": {
+      "id": "exa",
+      "name": "Exa remote MCP",
+      "transport": "streamable-http",
+      "url": "https://mcp.exa.ai/mcp?tools=web_search_exa,web_fetch_exa,web_search_advanced_exa",
+      "headers": [
+        {
+          "name": "x-api-key",
+          "required": true,
+          "present": true
+        }
+      ],
+      "searchTools": [
+        "web_search_exa",
+        "web_search_advanced_exa"
+      ],
+      "fetchTools": [
+        "web_fetch_exa"
+      ]
+    },
+    "task": {
+      "id": "source-policy-docs-only",
+      "family": "source-policy",
+      "question": "Using only official Firecrawl docs, what does the Search API say about categories, country, timeout, and ignoreInvalidURLs?",
+      "agentGoal": "Constrain to docs.firecrawl.dev and produce evidence only from that domain.",
+      "expectedTerms": [
+        "categories",
+        "country",
+        "timeout",
+        "ignoreInvalidURLs"
+      ],
+      "expectedDomains": [
+        "docs.firecrawl.dev"
+      ],
+      "sourcePolicy": {
+        "includeDomains": [
+          "docs.firecrawl.dev"
+        ]
+      }
+    }
+  },
+  "metrics": {
+    "provider": "exa",
+    "taskId": "source-policy-docs-only",
+    "toolCalls": 2,
+    "searchCalls": 1,
+    "fetchCalls": 1,
+    "mapCalls": 0,
+    "discoveryCalls": 1,
+    "extractionCalls": 1,
+    "failedCalls": 0,
+    "zeroResultCalls": 0,
+    "zeroResultSearchCalls": 0,
+    "expectedTermMissCalls": 0,
+    "expectedDomainMissCalls": 0,
+    "expectedTermMissSearchCalls": 0,
+    "expectedDomainMissSearchCalls": 0,
+    "sourcePolicyViolationCalls": 0,
+    "recoverySignalCalls": 0,
+    "recoverySignalRate": 0,
+    "totalResultCount": 6,
+    "uniqueUrlCount": 5,
+    "uniqueDomainCount": 1,
+    "duplicateUrlRate": 0.1667,
+    "expectedDomainsCovered": [
+      "docs.firecrawl.dev"
+    ],
+    "firstSearch": {
+      "tool": "web_search_advanced_exa",
+      "resultCount": 5,
+      "expectedTermHit": true,
+      "expectedDomainHit": true,
+      "rawOutputTokens": 9776,
+      "normalizedEvidenceTokens": 6785,
+      "domains": [
+        "docs.firecrawl.dev"
+      ],
+      "urls": [
+        "https://docs.firecrawl.dev/api-reference/endpoint/search",
+        "https://docs.firecrawl.dev/v0/api-reference/endpoint/search",
+        "https://docs.firecrawl.dev/features/search",
+        "https://docs.firecrawl.dev/api-reference/v1-endpoint/search",
+        "https://docs.firecrawl.dev/es/api-reference/endpoint/search"
+      ]
+    },
+    "totalConnectMs": 344,
+    "totalCallLatencyMs": 11349,
+    "argumentTokens": 137,
+    "rawOutputTokens": 16735,
+    "normalizedEvidenceTokens": 8369,
+    "evidenceToRawTokenRatio": 0.5001,
+    "avgRawOutputTokensPerCall": 8367.5,
+    "rawOutputOutlierThresholdTokens": 50000,
+    "rawOutputOutlierCalls": 0,
+    "maxRawOutputCall": {
+      "tool": "web_search_advanced_exa",
+      "rawOutputTokens": 9776,
+      "normalizedEvidenceTokens": 6785,
+      "resultCount": 5
+    },
+    "avgResultsPerSearchCall": 5,
+    "totalTrajectoryTokens": 18872,
+    "contract": {
+      "toolCount": 3,
+      "searchToolCount": 2,
+      "fetchToolCount": 1,
+      "descriptionTokens": 235,
+      "schemaTokens": 1509,
+      "totalMcpFootprintTokens": 2000,
+      "searchOnlyFootprintTokens": 1718,
+      "searchFetchFootprintTokens": 2000,
+      "hasFreshnessControl": true,
+      "hasSourcePolicyControl": true,
+      "hasContentBudgetControl": true,
+      "hasUsageMetadata": false
+    }
+  },
+  "semanticScore": {
+    "agentModel": "gpt-5.5 xhigh",
+    "provider": "exa",
+    "taskId": "source-policy-docs-only",
+    "success": true,
+    "answerSupportedByEvidence": true,
+    "retrievalQualityScore": 5,
+    "agentExperienceScore": 4,
+    "sourcePolicyAdherent": true,
+    "freshnessAdherent": null,
+    "callRationale": [
+      "Used web_search_advanced_exa because the task required an explicit docs.firecrawl.dev source policy; included docs.firecrawl.dev as the only domain and maxAgeHours 0 to avoid stale cached search context.",
+      "Fetched the current v2 Search API reference page directly after search found it, because the full OpenAPI field definitions for country, timeout, and ignoreInvalidURLs were needed for a precise answer."
+    ],
+    "strengths": [
+      "Advanced search exposed includeDomains and kept all returned search results on docs.firecrawl.dev.",
+      "The first search retrieved the exact current Search API reference and matched all expected terms.",
+      "The direct fetch returned enough current official documentation to answer all requested fields from a single primary source."
+    ],
+    "weaknesses": [
+      "The search results also included older v0/v1 and localized docs pages, so an agent still has to choose the current v2 page carefully.",
+      "The fetch tool itself did not expose a source-policy or freshness parameter, so adherence depended on fetching only the known docs.firecrawl.dev URL selected from the policy-constrained search."
+    ],
+    "notableFailures": [],
+    "confidence": 0.95
+  },
+  "artifacts": {
+    "answer": "scoring/final-answer.md",
+    "score": "scoring/agent-score.json",
+    "trace": "trace.jsonl",
+    "tools": "schemas/tools.json"
+  }
+}

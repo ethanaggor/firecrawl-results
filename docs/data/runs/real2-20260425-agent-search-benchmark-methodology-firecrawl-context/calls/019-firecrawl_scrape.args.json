@@ -1,0 +1,9 @@
+{
+  "url": "https://parallel.ai/blog/parallel-task-api",
+  "formats": [
+    "markdown"
+  ],
+  "onlyMainContent": true,
+  "removeBase64Images": true,
+  "maxAge": 0
+}

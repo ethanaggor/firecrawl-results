@@ -1,0 +1,10 @@
+{
+  "objective": "Find the official Tavily MCP Server documentation page and its available tools for AI agents.",
+  "search_queries": [
+    "Tavily MCP Server",
+    "docs.tavily.com MCP server",
+    "Tavily available tools MCP"
+  ],
+  "session_id": "9f2e4a8d1c7b4e6390af5d2c8b7611e4",
+  "model_name": "gpt-5.5 xhigh"
+}

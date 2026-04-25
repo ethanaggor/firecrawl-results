@@ -1,0 +1,328 @@
+{
+  "provider": "firecrawl-context",
+  "tool": "firecrawl_search",
+  "isError": false,
+  "rawText": "{\n  \"query\": \"Tavily MCP server official docs tools tavily_search tavily_extract tavily_crawl\",\n  \"executedQuery\": \"Tavily MCP server official docs tools tavily_search tavily_extract tavily_crawl (site:docs.tavily.com OR site:tavily.com)\",\n  \"content\": \"chunks\",\n  \"constraints\": {\n    \"maxResults\": 6,\n    \"maxCharsPerResult\": 3500,\n    \"maxCharsTotal\": 16000,\n    \"focus\": \"Tavily MCP server setup, tool list, tavily_search, tavily_extract, tavily_crawl, and agent-facing context shape\",\n    \"sourcePolicy\": {\n      \"includeDomains\": [\n        \"docs.tavily.com\",\n        \"tavily.com\"\n      ]\n    }\n  },\n  \"results\": [\n    {\n      \"title\": \"Tavily MCP Server\",\n      \"url\": \"https://docs.tavily.com/documentation/mcp\",\n      \"description\": \"Developed by Anthropic, the Model Context Protocol (MCP) enables AI assistants like Claude to seamlessly integrate with Tavily's advanced search and data ...\",\n      \"position\": 1,\n      \"source\": \"web\",\n      \"metadata\": {\n        \"sourceURL\": \"https://docs.tavily.com/documentation/mcp\",\n        \"finalURL\": \"https://docs.tavily.com/documentation/mcp\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"The Model Context Protocol (MCP) is an open standard that enables AI systems to interact seamlessly with various data sources and tools, facilitating secure, two-way connections.Developed by Anthropic, the Model Context Protocol (MCP) enables AI assistants like Claude to seamlessly integrate with Tavily’s advanced search and data extraction capabilities. This integration provides AI models with real-time access to web information, complete with sophisticated filtering options and domain-specific search features.\",\n          \"charCount\": 517\n        },\n        {\n          \"text\": \"- Seamless interaction with the tavily-search and tavily-extract tools\\n- Real-time web search capabilities through the tavily-search tool\\n- Intelligent data extraction from web pages via the tavily-extract tool\",\n          \"charCount\": 210\n        },\n        {\n          \"text\": \"```\\n{\\n  \\\"mcpServers\\\": {\\n    \\\"tavily-mcp\\\": {\\n      \\\"command\\\": \\\"npx\\\",\\n      \\\"args\\\": [\\\"-y\\\", \\\"tavily-mcp@latest\\\"],\\n      \\\"env\\\": {\\n        \\\"TAVILY_API_KEY\\\": \\\"your-api-key-here\\\",\\n        \\\"DEFAULT_PARAMETERS\\\": \\\"{\\\\\\\"include_images\\\\\\\": true, \\\\\\\"max_results\\\\\\\": 15, \\\\\\\"search_depth\\\\\\\": \\\\\\\"advanced\\\\\\\"}\\\"\\n      }\\n    }\\n  }\\n}\\n```\",\n          \"charCount\": 308\n        }\n      ]\n    },\n    {\n      \"title\": \"Tavily Crawl\",\n      \"url\": \"https://docs.tavily.com/documentation/api-reference/endpoint/crawl\",\n      \"description\": \"Tavily Crawl is a graph-based website traversal tool that can explore hundreds of paths in parallel with built-in extraction and intelligent discovery.\",\n      \"position\": 2,\n      \"source\": \"web\",\n      \"metadata\": {\n        \"sourceURL\": \"https://docs.tavily.com/documentation/api-reference/endpoint/crawl\",\n        \"finalURL\": \"https://docs.tavily.com/documentation/api-reference/endpoint/crawl\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"```\\n{\\n  \\\"base_url\\\": \\\"docs.tavily.com\\\",\\n  \\\"results\\\": [\\\\\\n    {\\\\\\n      \\\"url\\\": \\\"https://docs.tavily.com/welcome\\\",\\\\\\n      \\\"raw_content\\\": \\\"Welcome - Tavily Docs\\\\n\\\\n[Tavily Docs home page![light logo](https://mintlify.s3.us-west-1.amazonaws.com/tavilyai/logo/light.svg)![dark logo](https://mintlify.s3.us-west-1.amazonaws.com/tavilyai/logo/dark.svg)](https://tavily.com/)\\\\n\\\\nSearch or ask...\\\\n\\\\nCtrl K\\\\n\\\\n- [Support](mailto:support@tavily.com)\\\\n- [Get an API key](https://app.tavily.com)\\\\n- [Get an API key](https://app.tavily.com)\\\\n\\\\nSearch...\\\\n\\\\nNavigation\\\\n\\\\n[Home](/welcome)[Documentation](/documentation/about)[SDKs](/sdk/python/quick-start)[Examples](/examples/use-cases/data-enrichment)[FAQ](/faq/faq)\\\\n\\\\nExplore our docs\\\\n\\\\nYour journey to state-of-the-art web search starts right here.\\\\n\\\\n[## Quickstart\\\\n\\\\nStart searching with Tavily in minutes](documentation/quickstart)[## API Reference\\\\n\\\\nStart using Tavily's powerful APIs](documentation/api-reference/endpoint/search)[## API Credits Overview\\\\\",\n          \"charCount\": 1000\n        },\n        {\n          \"text\": \"```\\n{\\n  \\\"base_url\\\": \\\"docs.tavily.com\\\",\\n  \\\"results\\\": [\\\\\\n    {\\\\\\n      \\\"url\\\": \\\"https://docs.tavily.com/welcome\\\",\\\\\\n      \\\"raw_content\\\": \\\"Welcome - Tavily Docs\\\\n\\\\n[Tavily Docs home page![light logo](https://mintlify.s3.us-west-1.amazonaws.com/tavilyai/logo/light.svg)![dark logo](https://mintlify.s3.us-west-1.amazonaws.com/tavilyai/logo/dark.svg)](https://tavily.com/)\\\\n\\\\nSearch or ask...\\\\n\\\\nCtrl K\\\\n\\\\n- [Support](mailto:support@tavily.com)\\\\n- [Get an API key](https://app.tavily.com)\\\\n- [Get an API key](https://app.tavily.com)\\\\n\\\\nSearch...\\\\n\\\\nNavigation\\\\n\\\\n[Home](/welcome)[Documentation](/documentation/about)[SDKs](/sdk/python/quick-start)[Examples](/examples/use-cases/data-enrichment)[FAQ](/faq/faq)\\\\n\\\\nExplore our docs\\\\n\\\\nYour journey to state-of-the-art web search starts right here.\\\\n\\\\n[## Quickstart\\\\n\\\\nStart searching with Tavily in minutes](documentation/quickstart)[## API Reference\\\\n\\\\nStart using Tavily's powerful APIs](documentation/api-reference/endpoint/search)[## API Credits Overview\\\\\",\n          \"charCount\": 1000\n        },\n        {\n          \"text\": \"```\\n[\\\\\\n  {\\\\\\n    \\\"url\\\": \\\"https://docs.tavily.com/welcome\\\",\\\\\\n    \\\"raw_content\\\": \\\"Welcome - Tavily Docs\\\\n\\\\n[Tavily Docs home page![light logo](https://mintlify.s3.us-west-1.amazonaws.com/tavilyai/logo/light.svg)![dark logo](https://mintlify.s3.us-west-1.amazonaws.com/tavilyai/logo/dark.svg)](https://tavily.com/)\\\\n\\\\nSearch or ask...\\\\n\\\\nCtrl K\\\\n\\\\n- [Support](mailto:support@tavily.com)\\\\n- [Get an API key](https://app.tavily.com)\\\\n- [Get an API key](https://app.tavily.com)\\\\n\\\\nSearch...\\\\n\\\\nNavigation\\\\n\\\\n[Home](/welcome)[Documentation](/documentation/about)[SDKs](/sdk/python/quick-start)[Examples](/examples/use-cases/data-enrichment)[FAQ](/faq/faq)\\\\n\\\\nExplore our docs\\\\n\\\\nYour journey to state-of-the-art web search starts right here.\\\\n\\\\n[## Quickstart\\\\n\\\\nStart searching with Tavily in minutes](documentation/quickstart)[## API Reference\\\\n\\\\nStart using Tavily's powerful APIs](documentation/api-reference/endpoint/search)[## API Credits Overview\\\\n\\\\nLearn how to get and manage your Tavily API Credits\",\n          \"charCount\": 1000\n        }\n      ]\n    },\n    {\n      \"title\": \"Tavily\",\n      \"url\": \"https://tavily.com/\",\n      \"description\": \"Connect your AI agents to the web. Real-time search, extraction, research, and web crawling through a single, secure API.\",\n      \"position\": 3,\n      \"source\": \"web\",\n      \"metadata\": {\n        \"sourceURL\": \"https://tavily.com/\",\n        \"finalURL\": \"https://www.tavily.com/\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"Real-time search, extraction, research, and web crawling through a single, secure API.\",\n          \"charCount\": 86\n        },\n        {\n          \"text\": \"Retrieve live web data, extract relevant content, and return it structured and chunked for models, so agents reason over facts without hallucinating.\",\n          \"charCount\": 149\n        },\n        {\n          \"text\": \"[![Databricks Partners with Tavily on MCP Marketplace](https://www.tavily.com/_next/image?url=%2Fspotlight-placeholders%2Fdatabricks-red.png&w=3840&q=75)](https://www.databricks.com/blog/accelerate-ai-development-databricks-discover-govern-and-build-mcp-and-agent-bricks)[![IBM Partners with Tavily on WatsonX Platform](https://www.tavily.com/spotlight-placeholders/ibm.svg)](https://www.ibm.com/new/announcements/driving-smarter-data-enrichment-ibm-and-tavily-partner-for-agentic-ai-solutions)[![JetBrains Integrates Tavily for Real-Time AI Search](https://www.tavily.com/_next/image?url=%2Fspotlight-placeholders%2FJetBrains.png&w=3840&q=75)](https://www.tavily.com/blog/jetbrains-tavily)[![Tavily releases /research endpoint, achieves state-of-the-art](https://www.tavily.com/_next/image?url=%2Fspotlight-placeholders%2Fresearch.png&w=3840&q=75)](https://chat-research.tavily.com/)[![Tavily raises $25M Series A Funding](https://www.tavily.com/_next/image?url=%2Fspotlight-placeholders%2FSeries%20\",\n          \"charCount\": 1000\n        }\n      ]\n    },\n    {\n      \"title\": \"Tavily Agent Skills\",\n      \"url\": \"https://docs.tavily.com/documentation/agent-skills\",\n      \"description\": \"Official skills that define best practices, adding web search, extraction, crawling, and research to any AI coding agent.\",\n      \"position\": 4,\n      \"source\": \"web\",\n      \"metadata\": {\n        \"sourceURL\": \"https://docs.tavily.com/documentation/agent-skills\",\n        \"finalURL\": \"https://docs.tavily.com/documentation/agent-skills\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"| Skill | Description |\\n| --- | --- |\\n| `tavily-search` | Web search with agent-optimized results. |\\n| `tavily-extract` | Extract clean markdown/text from URLs. |\\n| `tavily-crawl` | Crawl a website and extract content from multiple pages with semantic filtering. |\\n| `tavily-map` | Discover and list all URLs on a website. |\\n| `tavily-research` | AI-powered research that produces a cited report. |\\n| `tavily-best-practices` | Reference docs for building production-ready Tavily integrations. |\",\n          \"charCount\": 494\n        },\n        {\n          \"text\": \"Build production-ready Tavily integrations with best practices baked in. Reference documentation for implementing web search, content extraction, crawling, and research in agentic workflows, RAG systems, or autonomous agents.**Invoke explicitly:**\",\n          \"charCount\": 247\n        },\n        {\n          \"text\": \"- “Add Tavily search to my internal company chatbot so it can answer questions about our competitors”\\n- “Build a lead enrichment tool that uses Tavily to find company information from their website”\\n- “Create a news monitoring agent that tracks mentions of our brand using Tavily search”\\n- “Implement a RAG pipeline that uses Tavily extract to pull content from industry reports”\",\n          \"charCount\": 379\n        }\n      ]\n    },\n    {\n      \"title\": \"LangChain - Tavily Docs\",\n      \"url\": \"https://docs.tavily.com/documentation/integrations/langchain\",\n      \"description\": \"The langchain-tavily Python package is the official LangChain integration of Tavily, including Search, Extract, Map, Crawl, Research functionality. ​.\",\n      \"position\": 5,\n      \"source\": \"web\",\n      \"metadata\": {\n        \"sourceURL\": \"https://docs.tavily.com/documentation/integrations/langchain\",\n        \"finalURL\": \"https://docs.tavily.com/documentation/integrations/langchain\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"- [Installation](https://docs.tavily.com/documentation/integrations/langchain#installation)\\n- [Credentials](https://docs.tavily.com/documentation/integrations/langchain#credentials)\\n- [Tavily Search](https://docs.tavily.com/documentation/integrations/langchain#tavily-search)\\n- [Available Parameters](https://docs.tavily.com/documentation/integrations/langchain#available-parameters)\\n- [Instantiation](https://docs.tavily.com/documentation/integrations/langchain#instantiation)\\n- [Invoke directly with args](https://docs.tavily.com/documentation/integrations/langchain#invoke-directly-with-args)\\n- [Direct Tool Invocation](https://docs.tavily.com/documentation/integrations/langchain#direct-tool-invocation)\\n- [Use with Agent](https://docs.tavily.com/documentation/integrations/langchain#use-with-agent)\\n- [Tavily Extract](https://docs.tavily.com/documentation/integrations/langchain#tavily-extract)\\n- [Available Parameters](https://docs.tavily.com/documentation/integrations/langchain#available-para\",\n          \"charCount\": 1000\n        },\n        {\n          \"text\": \"> **Warning**: The [`langchain_community.tools.tavily_search.tool`](https://python.langchain.com/docs/integrations/tools/tavily_search/) is deprecated. While it remains functional for now, we strongly recommend migrating to the new `langchain-tavily` Python package which supports [Search](https://docs.tavily.com/documentation/integrations/langchain#tavily-search), [Extract](https://docs.tavily.com/documentation/integrations/langchain#tavily-extract), [Map](https://docs.tavily.com/documentation/integrations/langchain#tavily-mapcrawl), [Crawl](https://docs.tavily.com/documentation/integrations/langchain#tavily-mapcrawl), [Research](https://docs.tavily.com/documentation/integrations/langchain#tavily_research) functionality and receives continuous updates with the latest features.\",\n          \"charCount\": 787\n        },\n        {\n          \"text\": \"Tavily provides two complementary tools for website exploration: **Map** and **Crawl**. The `map` tool discovers and lists URLs from a website, providing a structural overview without extracting content. The `crawl` tool then extracts the full content from these discovered URLs, making it ideal for data extraction, documentation indexing, and building knowledge bases.\",\n          \"charCount\": 370\n        }\n      ]\n    },\n    {\n      \"title\": \"Tavily Extract\",\n      \"url\": \"https://docs.tavily.com/documentation/api-reference/endpoint/extract\",\n      \"description\": \"Extract web page content from one or more specified URLs using Tavily Extract.\",\n      \"position\": 6,\n      \"source\": \"web\",\n      \"metadata\": {\n        \"sourceURL\": \"https://docs.tavily.com/documentation/api-reference/endpoint/extract\",\n        \"finalURL\": \"https://docs.tavily.com/documentation/api-reference/endpoint/extract\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"- [Introduction](https://docs.tavily.com/documentation/api-reference/introduction)\\n- [POST\\\\\\\\\\n\\\\\\\\\\nSearch](https://docs.tavily.com/documentation/api-reference/endpoint/search)\\n- [POST\\\\\\\\\\n\\\\\\\\\\nExtract](https://docs.tavily.com/documentation/api-reference/endpoint/extract)\\n- [POST\\\\\\\\\\n\\\\\\\\\\nCrawl](https://docs.tavily.com/documentation/api-reference/endpoint/crawl)\\n- [POST\\\\\\\\\\n\\\\\\\\\\nMap](https://docs.tavily.com/documentation/api-reference/endpoint/map)\\n- Research\",\n          \"charCount\": 447\n        },\n        {\n          \"text\": \"- [Search](https://docs.tavily.com/documentation/best-practices/best-practices-search)\\n- [Extract](https://docs.tavily.com/documentation/best-practices/best-practices-extract)\\n- [Crawl](https://docs.tavily.com/documentation/best-practices/best-practices-crawl)\\n- [Research](https://docs.tavily.com/documentation/best-practices/best-practices-research)\\n- [API Key Management](https://docs.tavily.com/documentation/best-practices/api-key-management)\",\n          \"charCount\": 447\n        },\n        {\n          \"text\": \"```\\n{\\n  \\\"results\\\": [\\\\\\n    {\\\\\\n      \\\"url\\\": \\\"https://en.wikipedia.org/wiki/Artificial_intelligence\\\",\\\\\\n      \\\"raw_content\\\": \\\"\\\\\\\"Jump to content\\\\\\\\nMain menu\\\\\\\\nSearch\\\\\\\\nAppearance\\\\\\\\nDonate\\\\\\\\nCreate account\\\\\\\\nLog in\\\\\\\\nPersonal tools\\\\\\\\n        Photograph your local culture, help Wikipedia and win!\\\\\\\\nToggle the table of contents\\\\\\\\nArtificial intelligence\\\\\\\\n161 languages\\\\\\\\nArticle\\\\\\\\nTalk\\\\\\\\nRead\\\\\\\\nView source\\\\\\\\nView history\\\\\\\\nTools\\\\\\\\nFrom Wikipedia, the free encyclopedia\\\\\\\\n\\\\\\\\\\\\\\\"AI\\\\\\\\\\\\\\\" redirects here. For other uses, see AI (disambiguation) and Artificial intelligence (disambiguation).\\\\\\\\nPart of a series on\\\\\\\\nArtificial intelligence (AI)\\\\\\\\nshow\\\\\\\\nMajor goals\\\\\\\\nshow\\\\\\\\nApproaches\\\\\\\\nshow\\\\\\\\nApplications\\\\\\\\nshow\\\\\\\\nPhilosophy\\\\\\\\nshow\\\\\\\\nHistory\\\\\\\\nshow\\\\\\\\nGlossary\\\\\\\\nvte\\\\\\\\nArtificial intelligence (AI), in its broadest sense, is intelligence exhibited by machines, particularly computer systems. It is a field of research in computer science that develops and studies methods and software that enable machines to p\",\n          \"charCount\": 1000\n        }\n      ]\n    }\n  ],\n  \"searchIds\": [\n    \"019dc36b-ccc4-73b7-801a-47273da718dd\"\n  ],\n  \"usage\": {\n    \"resultCount\": 6,\n    \"charsReturned\": 10441,\n    \"creditsUsed\": 8,\n    \"rawResultCount\": {\n      \"web\": 6,\n      \"news\": 0,\n      \"images\": 0\n    }\n  }\n}",
+  "parsed": {
+    "query": "Tavily MCP server official docs tools tavily_search tavily_extract tavily_crawl",
+    "executedQuery": "Tavily MCP server official docs tools tavily_search tavily_extract tavily_crawl (site:docs.tavily.com OR site:tavily.com)",
+    "content": "chunks",
+    "constraints": {
+      "maxResults": 6,
+      "maxCharsPerResult": 3500,
+      "maxCharsTotal": 16000,
+      "focus": "Tavily MCP server setup, tool list, tavily_search, tavily_extract, tavily_crawl, and agent-facing context shape",
+      "sourcePolicy": {
+        "includeDomains": [
+          "docs.tavily.com",
+          "tavily.com"
+        ]
+      }
+    },
+    "results": [
+      {
+        "title": "Tavily MCP Server",
+        "url": "https://docs.tavily.com/documentation/mcp",
+        "description": "Developed by Anthropic, the Model Context Protocol (MCP) enables AI assistants like Claude to seamlessly integrate with Tavily's advanced search and data ...",
+        "position": 1,
+        "source": "web",
+        "metadata": {
+          "sourceURL": "https://docs.tavily.com/documentation/mcp",
+          "finalURL": "https://docs.tavily.com/documentation/mcp",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "The Model Context Protocol (MCP) is an open standard that enables AI systems to interact seamlessly with various data sources and tools, facilitating secure, two-way connections.Developed by Anthropic, the Model Context Protocol (MCP) enables AI assistants like Claude to seamlessly integrate with Tavily’s advanced search and data extraction capabilities. This integration provides AI models with real-time access to web information, complete with sophisticated filtering options and domain-specific search features.",
+            "charCount": 517
+          },
+          {
+            "text": "- Seamless interaction with the tavily-search and tavily-extract tools\n- Real-time web search capabilities through the tavily-search tool\n- Intelligent data extraction from web pages via the tavily-extract tool",
+            "charCount": 210
+          },
+          {
+            "text": "```\n{\n  \"mcpServers\": {\n    \"tavily-mcp\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"tavily-mcp@latest\"],\n      \"env\": {\n        \"TAVILY_API_KEY\": \"your-api-key-here\",\n        \"DEFAULT_PARAMETERS\": \"{\\\"include_images\\\": true, \\\"max_results\\\": 15, \\\"search_depth\\\": \\\"advanced\\\"}\"\n      }\n    }\n  }\n}\n```",
+            "charCount": 308
+          }
+        ]
+      },
+      {
+        "title": "Tavily Crawl",
+        "url": "https://docs.tavily.com/documentation/api-reference/endpoint/crawl",
+        "description": "Tavily Crawl is a graph-based website traversal tool that can explore hundreds of paths in parallel with built-in extraction and intelligent discovery.",
+        "position": 2,
+        "source": "web",
+        "metadata": {
+          "sourceURL": "https://docs.tavily.com/documentation/api-reference/endpoint/crawl",
+          "finalURL": "https://docs.tavily.com/documentation/api-reference/endpoint/crawl",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "```\n{\n  \"base_url\": \"docs.tavily.com\",\n  \"results\": [\\\n    {\\\n      \"url\": \"https://docs.tavily.com/welcome\",\\\n      \"raw_content\": \"Welcome - Tavily Docs\\n\\n[Tavily Docs home page![light logo](https://mintlify.s3.us-west-1.amazonaws.com/tavilyai/logo/light.svg)![dark logo](https://mintlify.s3.us-west-1.amazonaws.com/tavilyai/logo/dark.svg)](https://tavily.com/)\\n\\nSearch or ask...\\n\\nCtrl K\\n\\n- [Support](mailto:support@tavily.com)\\n- [Get an API key](https://app.tavily.com)\\n- [Get an API key](https://app.tavily.com)\\n\\nSearch...\\n\\nNavigation\\n\\n[Home](/welcome)[Documentation](/documentation/about)[SDKs](/sdk/python/quick-start)[Examples](/examples/use-cases/data-enrichment)[FAQ](/faq/faq)\\n\\nExplore our docs\\n\\nYour journey to state-of-the-art web search starts right here.\\n\\n[## Quickstart\\n\\nStart searching with Tavily in minutes](documentation/quickstart)[## API Reference\\n\\nStart using Tavily's powerful APIs](documentation/api-reference/endpoint/search)[## API Credits Overview\\",
+            "charCount": 1000
+          },
+          {
+            "text": "```\n{\n  \"base_url\": \"docs.tavily.com\",\n  \"results\": [\\\n    {\\\n      \"url\": \"https://docs.tavily.com/welcome\",\\\n      \"raw_content\": \"Welcome - Tavily Docs\\n\\n[Tavily Docs home page![light logo](https://mintlify.s3.us-west-1.amazonaws.com/tavilyai/logo/light.svg)![dark logo](https://mintlify.s3.us-west-1.amazonaws.com/tavilyai/logo/dark.svg)](https://tavily.com/)\\n\\nSearch or ask...\\n\\nCtrl K\\n\\n- [Support](mailto:support@tavily.com)\\n- [Get an API key](https://app.tavily.com)\\n- [Get an API key](https://app.tavily.com)\\n\\nSearch...\\n\\nNavigation\\n\\n[Home](/welcome)[Documentation](/documentation/about)[SDKs](/sdk/python/quick-start)[Examples](/examples/use-cases/data-enrichment)[FAQ](/faq/faq)\\n\\nExplore our docs\\n\\nYour journey to state-of-the-art web search starts right here.\\n\\n[## Quickstart\\n\\nStart searching with Tavily in minutes](documentation/quickstart)[## API Reference\\n\\nStart using Tavily's powerful APIs](documentation/api-reference/endpoint/search)[## API Credits Overview\\",
+            "charCount": 1000
+          },
+          {
+            "text": "```\n[\\\n  {\\\n    \"url\": \"https://docs.tavily.com/welcome\",\\\n    \"raw_content\": \"Welcome - Tavily Docs\\n\\n[Tavily Docs home page![light logo](https://mintlify.s3.us-west-1.amazonaws.com/tavilyai/logo/light.svg)![dark logo](https://mintlify.s3.us-west-1.amazonaws.com/tavilyai/logo/dark.svg)](https://tavily.com/)\\n\\nSearch or ask...\\n\\nCtrl K\\n\\n- [Support](mailto:support@tavily.com)\\n- [Get an API key](https://app.tavily.com)\\n- [Get an API key](https://app.tavily.com)\\n\\nSearch...\\n\\nNavigation\\n\\n[Home](/welcome)[Documentation](/documentation/about)[SDKs](/sdk/python/quick-start)[Examples](/examples/use-cases/data-enrichment)[FAQ](/faq/faq)\\n\\nExplore our docs\\n\\nYour journey to state-of-the-art web search starts right here.\\n\\n[## Quickstart\\n\\nStart searching with Tavily in minutes](documentation/quickstart)[## API Reference\\n\\nStart using Tavily's powerful APIs](documentation/api-reference/endpoint/search)[## API Credits Overview\\n\\nLearn how to get and manage your Tavily API Credits",
+            "charCount": 1000
+          }
+        ]
+      },
+      {
+        "title": "Tavily",
+        "url": "https://tavily.com/",
+        "description": "Connect your AI agents to the web. Real-time search, extraction, research, and web crawling through a single, secure API.",
+        "position": 3,
+        "source": "web",
+        "metadata": {
+          "sourceURL": "https://tavily.com/",
+          "finalURL": "https://www.tavily.com/",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "Real-time search, extraction, research, and web crawling through a single, secure API.",
+            "charCount": 86
+          },
+          {
+            "text": "Retrieve live web data, extract relevant content, and return it structured and chunked for models, so agents reason over facts without hallucinating.",
+            "charCount": 149
+          },
+          {
+            "text": "[![Databricks Partners with Tavily on MCP Marketplace](https://www.tavily.com/_next/image?url=%2Fspotlight-placeholders%2Fdatabricks-red.png&w=3840&q=75)](https://www.databricks.com/blog/accelerate-ai-development-databricks-discover-govern-and-build-mcp-and-agent-bricks)[![IBM Partners with Tavily on WatsonX Platform](https://www.tavily.com/spotlight-placeholders/ibm.svg)](https://www.ibm.com/new/announcements/driving-smarter-data-enrichment-ibm-and-tavily-partner-for-agentic-ai-solutions)[![JetBrains Integrates Tavily for Real-Time AI Search](https://www.tavily.com/_next/image?url=%2Fspotlight-placeholders%2FJetBrains.png&w=3840&q=75)](https://www.tavily.com/blog/jetbrains-tavily)[![Tavily releases /research endpoint, achieves state-of-the-art](https://www.tavily.com/_next/image?url=%2Fspotlight-placeholders%2Fresearch.png&w=3840&q=75)](https://chat-research.tavily.com/)[![Tavily raises $25M Series A Funding](https://www.tavily.com/_next/image?url=%2Fspotlight-placeholders%2FSeries%20",
+            "charCount": 1000
+          }
+        ]
+      },
+      {
+        "title": "Tavily Agent Skills",
+        "url": "https://docs.tavily.com/documentation/agent-skills",
+        "description": "Official skills that define best practices, adding web search, extraction, crawling, and research to any AI coding agent.",
+        "position": 4,
+        "source": "web",
+        "metadata": {
+          "sourceURL": "https://docs.tavily.com/documentation/agent-skills",
+          "finalURL": "https://docs.tavily.com/documentation/agent-skills",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "| Skill | Description |\n| --- | --- |\n| `tavily-search` | Web search with agent-optimized results. |\n| `tavily-extract` | Extract clean markdown/text from URLs. |\n| `tavily-crawl` | Crawl a website and extract content from multiple pages with semantic filtering. |\n| `tavily-map` | Discover and list all URLs on a website. |\n| `tavily-research` | AI-powered research that produces a cited report. |\n| `tavily-best-practices` | Reference docs for building production-ready Tavily integrations. |",
+            "charCount": 494
+          },
+          {
+            "text": "Build production-ready Tavily integrations with best practices baked in. Reference documentation for implementing web search, content extraction, crawling, and research in agentic workflows, RAG systems, or autonomous agents.**Invoke explicitly:**",
+            "charCount": 247
+          },
+          {
+            "text": "- “Add Tavily search to my internal company chatbot so it can answer questions about our competitors”\n- “Build a lead enrichment tool that uses Tavily to find company information from their website”\n- “Create a news monitoring agent that tracks mentions of our brand using Tavily search”\n- “Implement a RAG pipeline that uses Tavily extract to pull content from industry reports”",
+            "charCount": 379
+          }
+        ]
+      },
+      {
+        "title": "LangChain - Tavily Docs",
+        "url": "https://docs.tavily.com/documentation/integrations/langchain",
+        "description": "The langchain-tavily Python package is the official LangChain integration of Tavily, including Search, Extract, Map, Crawl, Research functionality. ​.",
+        "position": 5,
+        "source": "web",
+        "metadata": {
+          "sourceURL": "https://docs.tavily.com/documentation/integrations/langchain",
+          "finalURL": "https://docs.tavily.com/documentation/integrations/langchain",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "- [Installation](https://docs.tavily.com/documentation/integrations/langchain#installation)\n- [Credentials](https://docs.tavily.com/documentation/integrations/langchain#credentials)\n- [Tavily Search](https://docs.tavily.com/documentation/integrations/langchain#tavily-search)\n- [Available Parameters](https://docs.tavily.com/documentation/integrations/langchain#available-parameters)\n- [Instantiation](https://docs.tavily.com/documentation/integrations/langchain#instantiation)\n- [Invoke directly with args](https://docs.tavily.com/documentation/integrations/langchain#invoke-directly-with-args)\n- [Direct Tool Invocation](https://docs.tavily.com/documentation/integrations/langchain#direct-tool-invocation)\n- [Use with Agent](https://docs.tavily.com/documentation/integrations/langchain#use-with-agent)\n- [Tavily Extract](https://docs.tavily.com/documentation/integrations/langchain#tavily-extract)\n- [Available Parameters](https://docs.tavily.com/documentation/integrations/langchain#available-para",
+            "charCount": 1000
+          },
+          {
+            "text": "> **Warning**: The [`langchain_community.tools.tavily_search.tool`](https://python.langchain.com/docs/integrations/tools/tavily_search/) is deprecated. While it remains functional for now, we strongly recommend migrating to the new `langchain-tavily` Python package which supports [Search](https://docs.tavily.com/documentation/integrations/langchain#tavily-search), [Extract](https://docs.tavily.com/documentation/integrations/langchain#tavily-extract), [Map](https://docs.tavily.com/documentation/integrations/langchain#tavily-mapcrawl), [Crawl](https://docs.tavily.com/documentation/integrations/langchain#tavily-mapcrawl), [Research](https://docs.tavily.com/documentation/integrations/langchain#tavily_research) functionality and receives continuous updates with the latest features.",
+            "charCount": 787
+          },
+          {
+            "text": "Tavily provides two complementary tools for website exploration: **Map** and **Crawl**. The `map` tool discovers and lists URLs from a website, providing a structural overview without extracting content. The `crawl` tool then extracts the full content from these discovered URLs, making it ideal for data extraction, documentation indexing, and building knowledge bases.",
+            "charCount": 370
+          }
+        ]
+      },
+      {
+        "title": "Tavily Extract",
+        "url": "https://docs.tavily.com/documentation/api-reference/endpoint/extract",
+        "description": "Extract web page content from one or more specified URLs using Tavily Extract.",
+        "position": 6,
+        "source": "web",
+        "metadata": {
+          "sourceURL": "https://docs.tavily.com/documentation/api-reference/endpoint/extract",
+          "finalURL": "https://docs.tavily.com/documentation/api-reference/endpoint/extract",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "- [Introduction](https://docs.tavily.com/documentation/api-reference/introduction)\n- [POST\\\\\n\\\\\nSearch](https://docs.tavily.com/documentation/api-reference/endpoint/search)\n- [POST\\\\\n\\\\\nExtract](https://docs.tavily.com/documentation/api-reference/endpoint/extract)\n- [POST\\\\\n\\\\\nCrawl](https://docs.tavily.com/documentation/api-reference/endpoint/crawl)\n- [POST\\\\\n\\\\\nMap](https://docs.tavily.com/documentation/api-reference/endpoint/map)\n- Research",
+            "charCount": 447
+          },
+          {
+            "text": "- [Search](https://docs.tavily.com/documentation/best-practices/best-practices-search)\n- [Extract](https://docs.tavily.com/documentation/best-practices/best-practices-extract)\n- [Crawl](https://docs.tavily.com/documentation/best-practices/best-practices-crawl)\n- [Research](https://docs.tavily.com/documentation/best-practices/best-practices-research)\n- [API Key Management](https://docs.tavily.com/documentation/best-practices/api-key-management)",
+            "charCount": 447
+          },
+          {
+            "text": "```\n{\n  \"results\": [\\\n    {\\\n      \"url\": \"https://en.wikipedia.org/wiki/Artificial_intelligence\",\\\n      \"raw_content\": \"\\\"Jump to content\\\\nMain menu\\\\nSearch\\\\nAppearance\\\\nDonate\\\\nCreate account\\\\nLog in\\\\nPersonal tools\\\\n        Photograph your local culture, help Wikipedia and win!\\\\nToggle the table of contents\\\\nArtificial intelligence\\\\n161 languages\\\\nArticle\\\\nTalk\\\\nRead\\\\nView source\\\\nView history\\\\nTools\\\\nFrom Wikipedia, the free encyclopedia\\\\n\\\\\\\"AI\\\\\\\" redirects here. For other uses, see AI (disambiguation) and Artificial intelligence (disambiguation).\\\\nPart of a series on\\\\nArtificial intelligence (AI)\\\\nshow\\\\nMajor goals\\\\nshow\\\\nApproaches\\\\nshow\\\\nApplications\\\\nshow\\\\nPhilosophy\\\\nshow\\\\nHistory\\\\nshow\\\\nGlossary\\\\nvte\\\\nArtificial intelligence (AI), in its broadest sense, is intelligence exhibited by machines, particularly computer systems. It is a field of research in computer science that develops and studies methods and software that enable machines to p",
+            "charCount": 1000
+          }
+        ]
+      }
+    ],
+    "searchIds": [
+      "019dc36b-ccc4-73b7-801a-47273da718dd"
+    ],
+    "usage": {
+      "resultCount": 6,
+      "charsReturned": 10441,
+      "creditsUsed": 8,
+      "rawResultCount": {
+        "web": 6,
+        "news": 0,
+        "images": 0
+      }
+    }
+  },
+  "results": [
+    {
+      "title": "Tavily MCP Server",
+      "url": "https://docs.tavily.com/documentation/mcp",
+      "domain": "docs.tavily.com",
+      "description": "Developed by Anthropic, the Model Context Protocol (MCP) enables AI assistants like Claude to seamlessly integrate with Tavily's advanced search and data ...",
+      "chunks": [
+        {
+          "text": "The Model Context Protocol (MCP) is an open standard that enables AI systems to interact seamlessly with various data sources and tools, facilitating secure, two-way connections.Developed by Anthropic, the Model Context Protocol (MCP) enables AI assistants like Claude to seamlessly integrate with Tavily’s advanced search and data extraction capabilities. This integration provides AI models with real-time access to web information, complete with sophisticated filtering options and domain-specific search features.",
+          "charCount": 517
+        },
+        {
+          "text": "- Seamless interaction with the tavily-search and tavily-extract tools\n- Real-time web search capabilities through the tavily-search tool\n- Intelligent data extraction from web pages via the tavily-extract tool",
+          "charCount": 210
+        },
+        {
+          "text": "```\n{\n  \"mcpServers\": {\n    \"tavily-mcp\": {\n      \"command\": \"npx\",\n      \"args\": [\"-y\", \"tavily-mcp@latest\"],\n      \"env\": {\n        \"TAVILY_API_KEY\": \"your-api-key-here\",\n        \"DEFAULT_PARAMETERS\": \"{\\\"include_images\\\": true, \\\"max_results\\\": 15, \\\"search_depth\\\": \\\"advanced\\\"}\"\n      }\n    }\n  }\n}\n```",
+          "charCount": 308
+        }
+      ],
+      "source": "web",
+      "position": 1
+    },
+    {
+      "title": "Tavily Crawl",
+      "url": "https://docs.tavily.com/documentation/api-reference/endpoint/crawl",
+      "domain": "docs.tavily.com",
+      "description": "Tavily Crawl is a graph-based website traversal tool that can explore hundreds of paths in parallel with built-in extraction and intelligent discovery.",
+      "chunks": [
+        {
+          "text": "```\n{\n  \"base_url\": \"docs.tavily.com\",\n  \"results\": [\\\n    {\\\n      \"url\": \"https://docs.tavily.com/welcome\",\\\n      \"raw_content\": \"Welcome - Tavily Docs\\n\\n[Tavily Docs home page![light logo](https://mintlify.s3.us-west-1.amazonaws.com/tavilyai/logo/light.svg)![dark logo](https://mintlify.s3.us-west-1.amazonaws.com/tavilyai/logo/dark.svg)](https://tavily.com/)\\n\\nSearch or ask...\\n\\nCtrl K\\n\\n- [Support](mailto:support@tavily.com)\\n- [Get an API key](https://app.tavily.com)\\n- [Get an API key](https://app.tavily.com)\\n\\nSearch...\\n\\nNavigation\\n\\n[Home](/welcome)[Documentation](/documentation/about)[SDKs](/sdk/python/quick-start)[Examples](/examples/use-cases/data-enrichment)[FAQ](/faq/faq)\\n\\nExplore our docs\\n\\nYour journey to state-of-the-art web search starts right here.\\n\\n[## Quickstart\\n\\nStart searching with Tavily in minutes](documentation/quickstart)[## API Reference\\n\\nStart using Tavily's powerful APIs](documentation/api-reference/endpoint/search)[## API Credits Overview\\",
+          "charCount": 1000
+        },
+        {
+          "text": "```\n{\n  \"base_url\": \"docs.tavily.com\",\n  \"results\": [\\\n    {\\\n      \"url\": \"https://docs.tavily.com/welcome\",\\\n      \"raw_content\": \"Welcome - Tavily Docs\\n\\n[Tavily Docs home page![light logo](https://mintlify.s3.us-west-1.amazonaws.com/tavilyai/logo/light.svg)![dark logo](https://mintlify.s3.us-west-1.amazonaws.com/tavilyai/logo/dark.svg)](https://tavily.com/)\\n\\nSearch or ask...\\n\\nCtrl K\\n\\n- [Support](mailto:support@tavily.com)\\n- [Get an API key](https://app.tavily.com)\\n- [Get an API key](https://app.tavily.com)\\n\\nSearch...\\n\\nNavigation\\n\\n[Home](/welcome)[Documentation](/documentation/about)[SDKs](/sdk/python/quick-start)[Examples](/examples/use-cases/data-enrichment)[FAQ](/faq/faq)\\n\\nExplore our docs\\n\\nYour journey to state-of-the-art web search starts right here.\\n\\n[## Quickstart\\n\\nStart searching with Tavily in minutes](documentation/quickstart)[## API Reference\\n\\nStart using Tavily's powerful APIs](documentation/api-reference/endpoint/search)[## API Credits Overview\\",
+          "charCount": 1000
+        },
+        {
+          "text": "```\n[\\\n  {\\\n    \"url\": \"https://docs.tavily.com/welcome\",\\\n    \"raw_content\": \"Welcome - Tavily Docs\\n\\n[Tavily Docs home page![light logo](https://mintlify.s3.us-west-1.amazonaws.com/tavilyai/logo/light.svg)![dark logo](https://mintlify.s3.us-west-1.amazonaws.com/tavilyai/logo/dark.svg)](https://tavily.com/)\\n\\nSearch or ask...\\n\\nCtrl K\\n\\n- [Support](mailto:support@tavily.com)\\n- [Get an API key](https://app.tavily.com)\\n- [Get an API key](https://app.tavily.com)\\n\\nSearch...\\n\\nNavigation\\n\\n[Home](/welcome)[Documentation](/documentation/about)[SDKs](/sdk/python/quick-start)[Examples](/examples/use-cases/data-enrichment)[FAQ](/faq/faq)\\n\\nExplore our docs\\n\\nYour journey to state-of-the-art web search starts right here.\\n\\n[## Quickstart\\n\\nStart searching with Tavily in minutes](documentation/quickstart)[## API Reference\\n\\nStart using Tavily's powerful APIs](documentation/api-reference/endpoint/search)[## API Credits Overview\\n\\nLearn how to get and manage your Tavily API Credits",
+          "charCount": 1000
+        }
+      ],
+      "source": "web",
+      "position": 2
+    },
+    {
+      "title": "Tavily",
+      "url": "https://tavily.com/",
+      "domain": "tavily.com",
+      "description": "Connect your AI agents to the web. Real-time search, extraction, research, and web crawling through a single, secure API.",
+      "chunks": [
+        {
+          "text": "Real-time search, extraction, research, and web crawling through a single, secure API.",
+          "charCount": 86
+        },
+        {
+          "text": "Retrieve live web data, extract relevant content, and return it structured and chunked for models, so agents reason over facts without hallucinating.",
+          "charCount": 149
+        },
+        {
+          "text": "[![Databricks Partners with Tavily on MCP Marketplace](https://www.tavily.com/_next/image?url=%2Fspotlight-placeholders%2Fdatabricks-red.png&w=3840&q=75)](https://www.databricks.com/blog/accelerate-ai-development-databricks-discover-govern-and-build-mcp-and-agent-bricks)[![IBM Partners with Tavily on WatsonX Platform](https://www.tavily.com/spotlight-placeholders/ibm.svg)](https://www.ibm.com/new/announcements/driving-smarter-data-enrichment-ibm-and-tavily-partner-for-agentic-ai-solutions)[![JetBrains Integrates Tavily for Real-Time AI Search](https://www.tavily.com/_next/image?url=%2Fspotlight-placeholders%2FJetBrains.png&w=3840&q=75)](https://www.tavily.com/blog/jetbrains-tavily)[![Tavily releases /research endpoint, achieves state-of-the-art](https://www.tavily.com/_next/image?url=%2Fspotlight-placeholders%2Fresearch.png&w=3840&q=75)](https://chat-research.tavily.com/)[![Tavily raises $25M Series A Funding](https://www.tavily.com/_next/image?url=%2Fspotlight-placeholders%2FSeries%20",
+          "charCount": 1000
+        }
+      ],
+      "source": "web",
+      "position": 3
+    },
+    {
+      "title": "Tavily Agent Skills",
+      "url": "https://docs.tavily.com/documentation/agent-skills",
+      "domain": "docs.tavily.com",
+      "description": "Official skills that define best practices, adding web search, extraction, crawling, and research to any AI coding agent.",
+      "chunks": [
+        {
+          "text": "| Skill | Description |\n| --- | --- |\n| `tavily-search` | Web search with agent-optimized results. |\n| `tavily-extract` | Extract clean markdown/text from URLs. |\n| `tavily-crawl` | Crawl a website and extract content from multiple pages with semantic filtering. |\n| `tavily-map` | Discover and list all URLs on a website. |\n| `tavily-research` | AI-powered research that produces a cited report. |\n| `tavily-best-practices` | Reference docs for building production-ready Tavily integrations. |",
+          "charCount": 494
+        },
+        {
+          "text": "Build production-ready Tavily integrations with best practices baked in. Reference documentation for implementing web search, content extraction, crawling, and research in agentic workflows, RAG systems, or autonomous agents.**Invoke explicitly:**",
+          "charCount": 247
+        },
+        {
+          "text": "- “Add Tavily search to my internal company chatbot so it can answer questions about our competitors”\n- “Build a lead enrichment tool that uses Tavily to find company information from their website”\n- “Create a news monitoring agent that tracks mentions of our brand using Tavily search”\n- “Implement a RAG pipeline that uses Tavily extract to pull content from industry reports”",
+          "charCount": 379
+        }
+      ],
+      "source": "web",
+      "position": 4
+    },
+    {
+      "title": "LangChain - Tavily Docs",
+      "url": "https://docs.tavily.com/documentation/integrations/langchain",
+      "domain": "docs.tavily.com",
+      "description": "The langchain-tavily Python package is the official LangChain integration of Tavily, including Search, Extract, Map, Crawl, Research functionality. ​.",
+      "chunks": [
+        {
+          "text": "- [Installation](https://docs.tavily.com/documentation/integrations/langchain#installation)\n- [Credentials](https://docs.tavily.com/documentation/integrations/langchain#credentials)\n- [Tavily Search](https://docs.tavily.com/documentation/integrations/langchain#tavily-search)\n- [Available Parameters](https://docs.tavily.com/documentation/integrations/langchain#available-parameters)\n- [Instantiation](https://docs.tavily.com/documentation/integrations/langchain#instantiation)\n- [Invoke directly with args](https://docs.tavily.com/documentation/integrations/langchain#invoke-directly-with-args)\n- [Direct Tool Invocation](https://docs.tavily.com/documentation/integrations/langchain#direct-tool-invocation)\n- [Use with Agent](https://docs.tavily.com/documentation/integrations/langchain#use-with-agent)\n- [Tavily Extract](https://docs.tavily.com/documentation/integrations/langchain#tavily-extract)\n- [Available Parameters](https://docs.tavily.com/documentation/integrations/langchain#available-para",
+          "charCount": 1000
+        },
+        {
+          "text": "> **Warning**: The [`langchain_community.tools.tavily_search.tool`](https://python.langchain.com/docs/integrations/tools/tavily_search/) is deprecated. While it remains functional for now, we strongly recommend migrating to the new `langchain-tavily` Python package which supports [Search](https://docs.tavily.com/documentation/integrations/langchain#tavily-search), [Extract](https://docs.tavily.com/documentation/integrations/langchain#tavily-extract), [Map](https://docs.tavily.com/documentation/integrations/langchain#tavily-mapcrawl), [Crawl](https://docs.tavily.com/documentation/integrations/langchain#tavily-mapcrawl), [Research](https://docs.tavily.com/documentation/integrations/langchain#tavily_research) functionality and receives continuous updates with the latest features.",
+          "charCount": 787
+        },
+        {
+          "text": "Tavily provides two complementary tools for website exploration: **Map** and **Crawl**. The `map` tool discovers and lists URLs from a website, providing a structural overview without extracting content. The `crawl` tool then extracts the full content from these discovered URLs, making it ideal for data extraction, documentation indexing, and building knowledge bases.",
+          "charCount": 370
+        }
+      ],
+      "source": "web",
+      "position": 5
+    },
+    {
+      "title": "Tavily Extract",
+      "url": "https://docs.tavily.com/documentation/api-reference/endpoint/extract",
+      "domain": "docs.tavily.com",
+      "description": "Extract web page content from one or more specified URLs using Tavily Extract.",
+      "chunks": [
+        {
+          "text": "- [Introduction](https://docs.tavily.com/documentation/api-reference/introduction)\n- [POST\\\\\n\\\\\nSearch](https://docs.tavily.com/documentation/api-reference/endpoint/search)\n- [POST\\\\\n\\\\\nExtract](https://docs.tavily.com/documentation/api-reference/endpoint/extract)\n- [POST\\\\\n\\\\\nCrawl](https://docs.tavily.com/documentation/api-reference/endpoint/crawl)\n- [POST\\\\\n\\\\\nMap](https://docs.tavily.com/documentation/api-reference/endpoint/map)\n- Research",
+          "charCount": 447
+        },
+        {
+          "text": "- [Search](https://docs.tavily.com/documentation/best-practices/best-practices-search)\n- [Extract](https://docs.tavily.com/documentation/best-practices/best-practices-extract)\n- [Crawl](https://docs.tavily.com/documentation/best-practices/best-practices-crawl)\n- [Research](https://docs.tavily.com/documentation/best-practices/best-practices-research)\n- [API Key Management](https://docs.tavily.com/documentation/best-practices/api-key-management)",
+          "charCount": 447
+        },
+        {
+          "text": "```\n{\n  \"results\": [\\\n    {\\\n      \"url\": \"https://en.wikipedia.org/wiki/Artificial_intelligence\",\\\n      \"raw_content\": \"\\\"Jump to content\\\\nMain menu\\\\nSearch\\\\nAppearance\\\\nDonate\\\\nCreate account\\\\nLog in\\\\nPersonal tools\\\\n        Photograph your local culture, help Wikipedia and win!\\\\nToggle the table of contents\\\\nArtificial intelligence\\\\n161 languages\\\\nArticle\\\\nTalk\\\\nRead\\\\nView source\\\\nView history\\\\nTools\\\\nFrom Wikipedia, the free encyclopedia\\\\n\\\\\\\"AI\\\\\\\" redirects here. For other uses, see AI (disambiguation) and Artificial intelligence (disambiguation).\\\\nPart of a series on\\\\nArtificial intelligence (AI)\\\\nshow\\\\nMajor goals\\\\nshow\\\\nApproaches\\\\nshow\\\\nApplications\\\\nshow\\\\nPhilosophy\\\\nshow\\\\nHistory\\\\nshow\\\\nGlossary\\\\nvte\\\\nArtificial intelligence (AI), in its broadest sense, is intelligence exhibited by machines, particularly computer systems. It is a field of research in computer science that develops and studies methods and software that enable machines to p",
+          "charCount": 1000
+        }
+      ],
+      "source": "web",
+      "position": 6
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "runId": "real2-20260425-needle-technical-release-parallel",
+  "createdAt": "2026-04-25T06:53:48.674Z",
+  "provider": {
+    "id": "parallel",
+    "name": "Parallel Search remote MCP",
+    "transport": "streamable-http",
+    "url": "https://search.parallel.ai/mcp",
+    "headers": [
+      {
+        "name": "authorization",
+        "required": false,
+        "present": false
+      }
+    ],
+    "searchTools": [
+      "web_search"
+    ],
+    "fetchTools": [
+      "web_fetch"
+    ]
+  },
+  "task": {
+    "id": "needle-technical-release",
+    "family": "hard-retrieval",
+    "question": "Find a recent TypeScript or JavaScript library release after August 2025 that introduced at least three concrete API changes and identify source-backed examples.",
+    "agentGoal": "This mirrors Exa WebCode-style coding-agent search. Prefer changelogs, release notes, and official docs.",
+    "expectedTerms": [
+      "release",
+      "API",
+      "TypeScript"
+    ],
+    "freshness": "year"
+  }
+}

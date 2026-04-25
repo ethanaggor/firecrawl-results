@@ -101,60 +101,70 @@
       "title": "Introduction - Firecrawl Docs",
       "url": "https://docs.firecrawl.dev/api-reference/introduction",
       "domain": "docs.firecrawl.dev",
+      "content": "The Firecrawl API has a rate limit to ensure the stability and reliability of the service. The rate limit is applied to all endpoints and is based on the number",
       "position": 1
     },
     {
       "title": "Introduction - Firecrawl Docs",
       "url": "https://docs.firecrawl.dev/api-reference/v2-introduction",
       "domain": "docs.firecrawl.dev",
+      "content": "The Firecrawl API gives you programmatic access to web data. All endpoints share a common base URL, authentication scheme, and response format described on",
       "position": 2
     },
     {
       "title": "Search - Firecrawl Docs",
       "url": "https://docs.firecrawl.dev/api-reference/v1-endpoint/search",
       "domain": "docs.firecrawl.dev",
+      "content": "The search endpoint combines web search with Firecrawl's scraping capabilities to return full page content for any query. Include scrapeOptions with formats: [\"",
       "position": 3
     },
     {
       "title": "Firecrawl - The Web Data API for AI",
       "url": "https://www.firecrawl.dev/",
       "domain": "firecrawl.dev",
+      "content": "Firecrawl - The Web Data API for AI\nThe web crawling, scraping, and search API for AI. Built for scale. Firecrawl delivers the entire internet to AI agents and builders.",
       "position": 4
     },
     {
       "title": "Search - Firecrawl Docs",
       "url": "https://docs.firecrawl.dev/api-reference/endpoint/search",
       "domain": "docs.firecrawl.dev",
+      "content": "Search - Firecrawl Docs\nThe search endpoint combines web search with Firecrawl's scraping capabilities to return full page content for any query.",
       "position": 5
     },
     {
       "title": "Firecrawl MCP Server",
       "url": "https://docs.firecrawl.dev/mcp-server",
       "domain": "docs.firecrawl.dev",
+      "content": "Firecrawl MCP Server\nA Model Context Protocol (MCP) server implementation that integrates Firecrawl for web scraping capabilities. Our MCP server is open-source and available on",
       "position": 6
     },
     {
       "title": "Introduction | Firecrawl",
       "url": "https://docs.firecrawl.dev/introduction",
       "domain": "docs.firecrawl.dev",
+      "content": "Introduction | Firecrawl\nSearch, scrape, and interact: Three APIs that cover every step of gathering web data reliably. LLM-ready output: Clean markdown, structured JSON, screenshots,",
       "position": 7
     },
     {
       "title": "Welcome to V1",
       "url": "https://docs.firecrawl.dev/v1-welcome",
       "domain": "docs.firecrawl.dev",
+      "content": "Welcome to V1\nFirecrawl V1 is here! With that we introduce a more reliable and developer friendly API. Here is what's new: Output Formats for /scrape .",
       "position": 8
     },
     {
       "title": "Official Firecrawl MCP Server - Adds powerful web ...",
       "url": "https://github.com/firecrawl/firecrawl-mcp-server",
       "domain": "github.com",
+      "content": "Official Firecrawl MCP Server - Adds powerful web ...\nA Model Context Protocol (MCP) server implementation that integrates with Firecrawl for web scraping capabilities. Big thanks to @vrknetha, @knacklabs for the",
       "position": 9
     },
     {
       "title": "Crawl",
       "url": "https://docs.firecrawl.dev/features/crawl",
       "domain": "docs.firecrawl.dev",
+      "content": "Crawl\nCrawl submits a URL to Firecrawl and recursively discovers and scrapes every reachable subpage. It handles sitemaps, JavaScript rendering, and rate limits",
       "position": 10
     }
   ]

@@ -1,0 +1,6 @@
+{
+  "url": "https://docs.tavily.com",
+  "search": "benchmark SimpleQA WISER MSMARCO document relevance search API",
+  "limit": 20,
+  "ignoreQueryParameters": true
+}

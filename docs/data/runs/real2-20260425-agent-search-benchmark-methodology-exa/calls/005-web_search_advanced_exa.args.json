@@ -1,0 +1,15 @@
+{
+  "query": "Tavily public benchmark methodology dynamic evaluation document relevance QuotientAI web search APIs Part 2",
+  "numResults": 6,
+  "type": "auto",
+  "includeDomains": [
+    "tavily.com",
+    "docs.tavily.com",
+    "github.com"
+  ],
+  "enableHighlights": true,
+  "highlightsQuery": "dynamic evaluation document relevance QuotientAI benchmark methodology web search APIs",
+  "highlightsMaxCharacters": 1800,
+  "textMaxCharacters": 5000,
+  "maxAgeHours": 0
+}

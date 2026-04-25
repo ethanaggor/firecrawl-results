@@ -1,0 +1,9 @@
+{
+  "url": "https://parallel.ai/blog/parallel-search-extract-ga",
+  "formats": [
+    "markdown"
+  ],
+  "onlyMainContent": true,
+  "removeBase64Images": true,
+  "maxAge": 0
+}

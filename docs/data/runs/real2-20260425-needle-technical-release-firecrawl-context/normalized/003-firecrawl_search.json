@@ -1,0 +1,338 @@
+{
+  "provider": "firecrawl-context",
+  "tool": "firecrawl_search",
+  "isError": false,
+  "rawText": "{\n  \"query\": \"React 19.2 official release notes API changes examples October 2025\",\n  \"executedQuery\": \"React 19.2 official release notes API changes examples October 2025 (site:react.dev OR site:github.com)\",\n  \"content\": \"chunks\",\n  \"constraints\": {\n    \"maxResults\": 6,\n    \"maxCharsPerResult\": 2500,\n    \"maxCharsTotal\": 12000,\n    \"focus\": \"React 19.2 release date and concrete API changes with examples such as Activity, useEffectEvent, cacheSignal, renderToReadableStream, or other new APIs\",\n    \"freshness\": {\n      \"startDate\": \"2025-09-01\",\n      \"sortByDate\": true\n    },\n    \"sourcePolicy\": {\n      \"includeDomains\": [\n        \"react.dev\",\n        \"github.com\"\n      ]\n    }\n  },\n  \"results\": [\n    {\n      \"title\": \"React 19.2\",\n      \"url\": \"https://react.dev/blog/2025/10/01/react-19-2\",\n      \"description\": \"React 19.2. October 1, 2025 by The React Team. React 19.2 is now available ... Check out the eslint-plugin-react-hooks changelog for a full list of changes.\",\n      \"position\": 1,\n      \"source\": \"web\",\n      \"metadata\": {\n        \"sourceURL\": \"https://react.dev/blog/2025/10/01/react-19-2\",\n        \"finalURL\": \"https://react.dev/blog/2025/10/01/react-19-2\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"This is our third release in the last year, following React 19 in December and React 19.1 in June. In this post, we’ll give an overview of the new features in React 19.2, and highlight some notable changes.\",\n          \"charCount\": 206\n        },\n        {\n          \"text\": \"- [New React Features](https://react.dev/blog/2025/10/01/react-19-2#new-react-features)\\n  - [`<Activity />`](https://react.dev/blog/2025/10/01/react-19-2#activity)\\n  - [`useEffectEvent`](https://react.dev/blog/2025/10/01/react-19-2#use-effect-event)\\n  - [`cacheSignal`](https://react.dev/blog/2025/10/01/react-19-2#cache-signal)\\n  - [Performance Tracks](https://react.dev/blog/2025/10/01/react-19-2#performance-tracks)\\n- [New React DOM Features](https://react.dev/blog/2025/10/01/react-19-2#new-react-dom-features)\\n  - [Partial Pre-rendering](https://react.dev/blog/2025/10/01/react-19-2#partial-pre-rendering)\\n- [Notable Changes](https://react.dev/blog/2025/10/01/react-19-2#notable-changes)\\n  - [Batching Suspense Boundaries for SSR](https://react.dev/blog/2025/10/01/react-19-2#batching-suspense-boundaries-for-ssr)\\n  - [SSR: Web S\",\n          \"charCount\": 834\n        },\n        {\n          \"text\": \"The Scheduler track shows what React is working on for different priorities such as “blocking” for user interactions, or “transition” for updates inside startTransition. Inside each track, you will see the type of work being performed such as the event that scheduled an update, and when the render for that update happened.\",\n          \"charCount\": 324\n        }\n      ]\n    },\n    {\n      \"title\": \"react/CHANGELOG.md at main · facebook/react\",\n      \"url\": \"https://github.com/facebook/react/blob/main/CHANGELOG.md\",\n      \"description\": \"19.2.0 (October 1st, 2025). Below is a list of all new features, APIs, and bug fixes. Read the React 19.2 release post for more information. New React Features.\",\n      \"position\": 2,\n      \"source\": \"web\",\n      \"category\": \"github\",\n      \"metadata\": {\n        \"sourceURL\": \"https://github.com/facebook/react/blob/main/CHANGELOG.md\",\n        \"finalURL\": \"https://github.com/facebook/react/blob/main/CHANGELOG.md\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"- `useId` is a new hook for generating unique IDs on both the client and server, while avoiding hydration mismatches. It is primarily useful for component libraries integrating with accessibility APIs that require unique IDs. This solves an issue that already exists in React 17 and below, but it’s even more important in React 18 because of how the new streaming server renderer delivers HTML out-of-order.\\n- `startTransition` and `useTransition` let you mark some state updates as not urgent. Other state updates are considered urgent by default. React will allow urgent state updates (for example, updating a text input) to interrupt non-urgent state updates (for example, rendering a list of search results).\\n- `useDeferredValue` lets you defer re-rendering a non-urgent part of the tree. It is similar to debouncing, but has a fe\",\n          \"charCount\": 834\n        },\n        {\n          \"text\": \"- **Automatic batching:** This release introduces a performance improvement that changes to the way React batches updates to do more batching automatically. See [Automatic batching for fewer renders in React 18](https://github.com/reactwg/react-18/discussions/21) for more info. In the rare case that you need to opt out, wrap the state update in `flushSync`.\\n- **Stricter Strict Mode**: In the future, React will provide a feature that lets components preserve state between unmounts. To prepare for it, React 18 introduces a new development-only check to Strict Mode. React will automatically unmount and remount every component, whenever a component mounts for the first time, restoring the previous state on the second mount. If this breaks your app, consider removing Strict Mode until you can fix the components to be resilient \",\n          \"charCount\": 834\n        },\n        {\n          \"text\": \"- Support for using ES6 classes to build React components; see the [v0.13.0 beta 1 notes](https://reactjs.org/blog/2015/01/27/react-v0.13.0-beta-1.html) for details.\\n- Added new top-level API `React.findDOMNode(component)`, which should be used in place of `component.getDOMNode()`. The base class for ES6-based components will not have `getDOMNode`. This change will enable some more patterns moving forward.\\n- Added a new top-level API `React.cloneElement(el, props)` for making copies of React elements – see the [v0.13 RC2 notes](https://reactjs.org/blog/2015/03/03/react-v0.13-rc2.html#react.cloneelement) for more details.\\n- New `ref` style, allowing a callback to be used in place of a name: `<Photo ref={(c) => this._photo = c} />` allows you to reference the component with `this._photo` (as opposed to `ref=\\\"photo\\\"` which \",\n          \"charCount\": 832\n        }\n      ]\n    },\n    {\n      \"title\": \"React Blog\",\n      \"url\": \"https://react.dev/blog\",\n      \"description\": \"React 19.2. October 1, 2025. React 19.2 adds new features like Activity, React Performance Tracks, useEffectEvent, and more. In this ...\",\n      \"position\": 3,\n      \"source\": \"web\",\n      \"metadata\": {\n        \"sourceURL\": \"https://react.dev/blog\",\n        \"finalURL\": \"https://react.dev/blog\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"This blog is the official source for the updates from the React team. Anything important, including release notes or deprecation notices, will be posted here first.\",\n          \"charCount\": 164\n        },\n        {\n          \"text\": \"[**The React Foundation: A New Home for React Hosted by the Linux Foundation**\\\\\\\\\\n\\\\\\\\\\nFebruary 24, 2026\\\\\\\\\\n\\\\\\\\\\nThe React Foundation has officially launched under the Linux Foundation.\\\\\\\\\\n\\\\\\\\\\nRead more](https://react.dev/blog/2026/02/24/the-react-foundation) [**Denial of Service and Source Code Exposure in React Server Components**\\\\\\\\\\n\\\\\\\\\\nDecember 11, 2025\\\\\\\\\\n\\\\\\\\\\nSecurity researchers have found and disclosed two additional vulnerabilities in React Server Components while attempting to exploit the patches in last week’s critical vulnerability…\\\\\\\\\\n\\\\\\\\\\nRead more](https://react.dev/blog/2025/12/11/denial-of-service-and-source-code-exposure-in-react-server-components) [**Critical Security Vulnerability in React Server Components**\\\\\\\\\\n\\\\\\\\\\nDecember 3, 2025\\\\\\\\\\n\\\\\\\\\\nThere is an unauthenticated remote code execution vulnerability in React Server Comp\",\n          \"charCount\": 834\n        },\n        {\n          \"text\": \"### All release notes [Link for All release notes ](https://react.dev/blog\\\\#all-release-notes \\\"Link for All release notes \\\")\",\n          \"charCount\": 124\n        }\n      ]\n    },\n    {\n      \"title\": \"Critical Security Vulnerability in React Server Components\",\n      \"url\": \"https://react.dev/blog/2025/12/03/critical-security-vulnerability-in-react-server-components\",\n      \"description\": \"December 3, 2025 by The React Team. There is an unauthenticated remote code execution vulnerability in React Server Components.\",\n      \"position\": 4,\n      \"source\": \"web\",\n      \"metadata\": {\n        \"sourceURL\": \"https://react.dev/blog/2025/12/03/critical-security-vulnerability-in-react-server-components\",\n        \"finalURL\": \"https://react.dev/blog/2025/12/03/critical-security-vulnerability-in-react-server-components\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"### Affected frameworks and bundlers [Link for Affected frameworks and bundlers ](https://react.dev/blog/2025/12/03/critical-security-vulnerability-in-react-server-components\\\\#affected-frameworks-and-bundlers \\\"Link for Affected frameworks and bundlers \\\")\",\n          \"charCount\": 254\n        },\n        {\n          \"text\": \"## Update Instructions [Link for Update Instructions ](https://react.dev/blog/2025/12/03/critical-security-vulnerability-in-react-server-components\\\\#update-instructions \\\"Link for Update Instructions \\\")\",\n          \"charCount\": 201\n        },\n        {\n          \"text\": \"- **November 29th**: Lachlan Davidson reported the security vulnerability via [Meta Bug Bounty](https://bugbounty.meta.com/).\\n- **November 30th**: Meta security researchers confirmed and began working with the React team on a fix.\\n- **December 1st**: A fix was created and the React team began working with affected hosting providers and open source projects to validate the fix, implement mitigations and roll out the fix\\n- **December 3rd**: The fix was published to npm and the publicly disclosed as CVE-2025-55182.\",\n          \"charCount\": 517\n        }\n      ]\n    },\n    {\n      \"title\": \"Error: Could not find the module X in the React Client ...\",\n      \"url\": \"https://github.com/payloadcms/payload/issues/14419\",\n      \"description\": \"It looks like a race between Admin/FE/API compiles after file changes - Next's logs show Turbopack compiling multiple routes concurrently. The issue began ...\",\n      \"position\": 5,\n      \"source\": \"web\",\n      \"category\": \"github\",\n      \"metadata\": {\n        \"sourceURL\": \"https://github.com/payloadcms/payload/issues/14419\",\n        \"finalURL\": \"https://github.com/payloadcms/payload/issues/14419\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"It **looks like a race** between Admin/FE/API compiles after file changes - Next’s logs show Turbopack compiling multiple routes concurrently. The issue **began specifically with Next 15.5.0**. In that release, Turbopack changed how it handles HMR after **clearing the chunk cache** \\\\- they removed code that delete From Require Cache the turbopack runtime (to fix memory leaks), and removed this TODO comment: `Stop re-evaluating React Client once it relies on Turbopack's chunk cache.`\",\n          \"charCount\": 487\n        },\n        {\n          \"text\": \"- Admin HMR often **does not recompile at all** when adding new fields (no UI update; only a full dev server restart reflects changes).\\n- On SQLite, removing a field triggers the migration prompt and _does_ recompile Admin (and doesn’t error).\\n- On MongoDB, no Admin HMR whether adding or removing fields; restart required.\\n- If I trigger server restart via the `(N)` browser widget in Next 16 (in preferences), the **same React Client Manifest errors** resurface—suggesting the underlying Turbopack/manifest issue still exists; it’s just masked when Admin HMR doesn’t run.\",\n          \"charCount\": 573\n        },\n        {\n          \"text\": \"1. `pnpm i`\\n2. `pnpm dev` (Turbopack)\\n3. Open `/admin`, go to Contact Page\\n4. **Add** a new field to a collection → Admin UI usually does **not** update (no HMR). Refresh doesn’t help. Restart required.\\n5. **Remove** a field → Payload prompts DB migration; after accept, Admin HMR **does** rebuild and reflect change.\\n6. If you restart via the new (N) widget, the **React Client Manifest** errors may appear again.\",\n          \"charCount\": 414\n        }\n      ]\n    },\n    {\n      \"title\": \"FEC/release_notes/release_notes.md at master · fecgov/FEC\",\n      \"url\": \"https://github.com/fecgov/FEC/blob/master/release_notes/release_notes.md\",\n      \"description\": \"December 09, 2025 (Sprint 30.2). Changed. -API Fix Form3L version issue. November 25, 2025 (Sprint 30.1). Lapse in funding. November 11, 2025 (Sprint 29.i).\",\n      \"position\": 6,\n      \"source\": \"web\",\n      \"category\": \"github\",\n      \"metadata\": {\n        \"sourceURL\": \"https://github.com/fecgov/FEC/blob/master/release_notes/release_notes.md\",\n        \"finalURL\": \"https://github.com/fecgov/FEC/blob/master/release_notes/release_notes.md\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"[Skip to content](https://github.com/fecgov/FEC/blob/master/release_notes/release_notes.md#start-of-content)\",\n          \"charCount\": 108\n        },\n        {\n          \"text\": \"You signed in with another tab or window. [Reload](https://github.com/fecgov/FEC/blob/master/release_notes/release_notes.md) to refresh your session.You signed out in another tab or window. [Reload](https://github.com/fecgov/FEC/blob/master/release_notes/release_notes.md) to refresh your session.You switched accounts on another tab or window. [Reload](https://github.com/fecgov/FEC/blob/master/release_notes/release_notes.md) to refresh your session.Dismiss alert\",\n          \"charCount\": 465\n        },\n        {\n          \"text\": \"[History](https://github.com/fecgov/FEC/commits/master/release_notes/release_notes.md)\",\n          \"charCount\": 86\n        }\n      ]\n    }\n  ],\n  \"searchIds\": [\n    \"019dc369-dba1-73a6-a1b3-e8525b03fe7f\"\n  ],\n  \"usage\": {\n    \"resultCount\": 6,\n    \"charsReturned\": 8091,\n    \"creditsUsed\": 8,\n    \"rawResultCount\": {\n      \"web\": 6,\n      \"news\": 0,\n      \"images\": 0\n    }\n  }\n}",
+  "parsed": {
+    "query": "React 19.2 official release notes API changes examples October 2025",
+    "executedQuery": "React 19.2 official release notes API changes examples October 2025 (site:react.dev OR site:github.com)",
+    "content": "chunks",
+    "constraints": {
+      "maxResults": 6,
+      "maxCharsPerResult": 2500,
+      "maxCharsTotal": 12000,
+      "focus": "React 19.2 release date and concrete API changes with examples such as Activity, useEffectEvent, cacheSignal, renderToReadableStream, or other new APIs",
+      "freshness": {
+        "startDate": "2025-09-01",
+        "sortByDate": true
+      },
+      "sourcePolicy": {
+        "includeDomains": [
+          "react.dev",
+          "github.com"
+        ]
+      }
+    },
+    "results": [
+      {
+        "title": "React 19.2",
+        "url": "https://react.dev/blog/2025/10/01/react-19-2",
+        "description": "React 19.2. October 1, 2025 by The React Team. React 19.2 is now available ... Check out the eslint-plugin-react-hooks changelog for a full list of changes.",
+        "position": 1,
+        "source": "web",
+        "metadata": {
+          "sourceURL": "https://react.dev/blog/2025/10/01/react-19-2",
+          "finalURL": "https://react.dev/blog/2025/10/01/react-19-2",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "This is our third release in the last year, following React 19 in December and React 19.1 in June. In this post, we’ll give an overview of the new features in React 19.2, and highlight some notable changes.",
+            "charCount": 206
+          },
+          {
+            "text": "- [New React Features](https://react.dev/blog/2025/10/01/react-19-2#new-react-features)\n  - [`<Activity />`](https://react.dev/blog/2025/10/01/react-19-2#activity)\n  - [`useEffectEvent`](https://react.dev/blog/2025/10/01/react-19-2#use-effect-event)\n  - [`cacheSignal`](https://react.dev/blog/2025/10/01/react-19-2#cache-signal)\n  - [Performance Tracks](https://react.dev/blog/2025/10/01/react-19-2#performance-tracks)\n- [New React DOM Features](https://react.dev/blog/2025/10/01/react-19-2#new-react-dom-features)\n  - [Partial Pre-rendering](https://react.dev/blog/2025/10/01/react-19-2#partial-pre-rendering)\n- [Notable Changes](https://react.dev/blog/2025/10/01/react-19-2#notable-changes)\n  - [Batching Suspense Boundaries for SSR](https://react.dev/blog/2025/10/01/react-19-2#batching-suspense-boundaries-for-ssr)\n  - [SSR: Web S",
+            "charCount": 834
+          },
+          {
+            "text": "The Scheduler track shows what React is working on for different priorities such as “blocking” for user interactions, or “transition” for updates inside startTransition. Inside each track, you will see the type of work being performed such as the event that scheduled an update, and when the render for that update happened.",
+            "charCount": 324
+          }
+        ]
+      },
+      {
+        "title": "react/CHANGELOG.md at main · facebook/react",
+        "url": "https://github.com/facebook/react/blob/main/CHANGELOG.md",
+        "description": "19.2.0 (October 1st, 2025). Below is a list of all new features, APIs, and bug fixes. Read the React 19.2 release post for more information. New React Features.",
+        "position": 2,
+        "source": "web",
+        "category": "github",
+        "metadata": {
+          "sourceURL": "https://github.com/facebook/react/blob/main/CHANGELOG.md",
+          "finalURL": "https://github.com/facebook/react/blob/main/CHANGELOG.md",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "- `useId` is a new hook for generating unique IDs on both the client and server, while avoiding hydration mismatches. It is primarily useful for component libraries integrating with accessibility APIs that require unique IDs. This solves an issue that already exists in React 17 and below, but it’s even more important in React 18 because of how the new streaming server renderer delivers HTML out-of-order.\n- `startTransition` and `useTransition` let you mark some state updates as not urgent. Other state updates are considered urgent by default. React will allow urgent state updates (for example, updating a text input) to interrupt non-urgent state updates (for example, rendering a list of search results).\n- `useDeferredValue` lets you defer re-rendering a non-urgent part of the tree. It is similar to debouncing, but has a fe",
+            "charCount": 834
+          },
+          {
+            "text": "- **Automatic batching:** This release introduces a performance improvement that changes to the way React batches updates to do more batching automatically. See [Automatic batching for fewer renders in React 18](https://github.com/reactwg/react-18/discussions/21) for more info. In the rare case that you need to opt out, wrap the state update in `flushSync`.\n- **Stricter Strict Mode**: In the future, React will provide a feature that lets components preserve state between unmounts. To prepare for it, React 18 introduces a new development-only check to Strict Mode. React will automatically unmount and remount every component, whenever a component mounts for the first time, restoring the previous state on the second mount. If this breaks your app, consider removing Strict Mode until you can fix the components to be resilient ",
+            "charCount": 834
+          },
+          {
+            "text": "- Support for using ES6 classes to build React components; see the [v0.13.0 beta 1 notes](https://reactjs.org/blog/2015/01/27/react-v0.13.0-beta-1.html) for details.\n- Added new top-level API `React.findDOMNode(component)`, which should be used in place of `component.getDOMNode()`. The base class for ES6-based components will not have `getDOMNode`. This change will enable some more patterns moving forward.\n- Added a new top-level API `React.cloneElement(el, props)` for making copies of React elements – see the [v0.13 RC2 notes](https://reactjs.org/blog/2015/03/03/react-v0.13-rc2.html#react.cloneelement) for more details.\n- New `ref` style, allowing a callback to be used in place of a name: `<Photo ref={(c) => this._photo = c} />` allows you to reference the component with `this._photo` (as opposed to `ref=\"photo\"` which ",
+            "charCount": 832
+          }
+        ]
+      },
+      {
+        "title": "React Blog",
+        "url": "https://react.dev/blog",
+        "description": "React 19.2. October 1, 2025. React 19.2 adds new features like Activity, React Performance Tracks, useEffectEvent, and more. In this ...",
+        "position": 3,
+        "source": "web",
+        "metadata": {
+          "sourceURL": "https://react.dev/blog",
+          "finalURL": "https://react.dev/blog",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "This blog is the official source for the updates from the React team. Anything important, including release notes or deprecation notices, will be posted here first.",
+            "charCount": 164
+          },
+          {
+            "text": "[**The React Foundation: A New Home for React Hosted by the Linux Foundation**\\\\\n\\\\\nFebruary 24, 2026\\\\\n\\\\\nThe React Foundation has officially launched under the Linux Foundation.\\\\\n\\\\\nRead more](https://react.dev/blog/2026/02/24/the-react-foundation) [**Denial of Service and Source Code Exposure in React Server Components**\\\\\n\\\\\nDecember 11, 2025\\\\\n\\\\\nSecurity researchers have found and disclosed two additional vulnerabilities in React Server Components while attempting to exploit the patches in last week’s critical vulnerability…\\\\\n\\\\\nRead more](https://react.dev/blog/2025/12/11/denial-of-service-and-source-code-exposure-in-react-server-components) [**Critical Security Vulnerability in React Server Components**\\\\\n\\\\\nDecember 3, 2025\\\\\n\\\\\nThere is an unauthenticated remote code execution vulnerability in React Server Comp",
+            "charCount": 834
+          },
+          {
+            "text": "### All release notes [Link for All release notes ](https://react.dev/blog\\#all-release-notes \"Link for All release notes \")",
+            "charCount": 124
+          }
+        ]
+      },
+      {
+        "title": "Critical Security Vulnerability in React Server Components",
+        "url": "https://react.dev/blog/2025/12/03/critical-security-vulnerability-in-react-server-components",
+        "description": "December 3, 2025 by The React Team. There is an unauthenticated remote code execution vulnerability in React Server Components.",
+        "position": 4,
+        "source": "web",
+        "metadata": {
+          "sourceURL": "https://react.dev/blog/2025/12/03/critical-security-vulnerability-in-react-server-components",
+          "finalURL": "https://react.dev/blog/2025/12/03/critical-security-vulnerability-in-react-server-components",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "### Affected frameworks and bundlers [Link for Affected frameworks and bundlers ](https://react.dev/blog/2025/12/03/critical-security-vulnerability-in-react-server-components\\#affected-frameworks-and-bundlers \"Link for Affected frameworks and bundlers \")",
+            "charCount": 254
+          },
+          {
+            "text": "## Update Instructions [Link for Update Instructions ](https://react.dev/blog/2025/12/03/critical-security-vulnerability-in-react-server-components\\#update-instructions \"Link for Update Instructions \")",
+            "charCount": 201
+          },
+          {
+            "text": "- **November 29th**: Lachlan Davidson reported the security vulnerability via [Meta Bug Bounty](https://bugbounty.meta.com/).\n- **November 30th**: Meta security researchers confirmed and began working with the React team on a fix.\n- **December 1st**: A fix was created and the React team began working with affected hosting providers and open source projects to validate the fix, implement mitigations and roll out the fix\n- **December 3rd**: The fix was published to npm and the publicly disclosed as CVE-2025-55182.",
+            "charCount": 517
+          }
+        ]
+      },
+      {
+        "title": "Error: Could not find the module X in the React Client ...",
+        "url": "https://github.com/payloadcms/payload/issues/14419",
+        "description": "It looks like a race between Admin/FE/API compiles after file changes - Next's logs show Turbopack compiling multiple routes concurrently. The issue began ...",
+        "position": 5,
+        "source": "web",
+        "category": "github",
+        "metadata": {
+          "sourceURL": "https://github.com/payloadcms/payload/issues/14419",
+          "finalURL": "https://github.com/payloadcms/payload/issues/14419",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "It **looks like a race** between Admin/FE/API compiles after file changes - Next’s logs show Turbopack compiling multiple routes concurrently. The issue **began specifically with Next 15.5.0**. In that release, Turbopack changed how it handles HMR after **clearing the chunk cache** \\- they removed code that delete From Require Cache the turbopack runtime (to fix memory leaks), and removed this TODO comment: `Stop re-evaluating React Client once it relies on Turbopack's chunk cache.`",
+            "charCount": 487
+          },
+          {
+            "text": "- Admin HMR often **does not recompile at all** when adding new fields (no UI update; only a full dev server restart reflects changes).\n- On SQLite, removing a field triggers the migration prompt and _does_ recompile Admin (and doesn’t error).\n- On MongoDB, no Admin HMR whether adding or removing fields; restart required.\n- If I trigger server restart via the `(N)` browser widget in Next 16 (in preferences), the **same React Client Manifest errors** resurface—suggesting the underlying Turbopack/manifest issue still exists; it’s just masked when Admin HMR doesn’t run.",
+            "charCount": 573
+          },
+          {
+            "text": "1. `pnpm i`\n2. `pnpm dev` (Turbopack)\n3. Open `/admin`, go to Contact Page\n4. **Add** a new field to a collection → Admin UI usually does **not** update (no HMR). Refresh doesn’t help. Restart required.\n5. **Remove** a field → Payload prompts DB migration; after accept, Admin HMR **does** rebuild and reflect change.\n6. If you restart via the new (N) widget, the **React Client Manifest** errors may appear again.",
+            "charCount": 414
+          }
+        ]
+      },
+      {
+        "title": "FEC/release_notes/release_notes.md at master · fecgov/FEC",
+        "url": "https://github.com/fecgov/FEC/blob/master/release_notes/release_notes.md",
+        "description": "December 09, 2025 (Sprint 30.2). Changed. -API Fix Form3L version issue. November 25, 2025 (Sprint 30.1). Lapse in funding. November 11, 2025 (Sprint 29.i).",
+        "position": 6,
+        "source": "web",
+        "category": "github",
+        "metadata": {
+          "sourceURL": "https://github.com/fecgov/FEC/blob/master/release_notes/release_notes.md",
+          "finalURL": "https://github.com/fecgov/FEC/blob/master/release_notes/release_notes.md",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "[Skip to content](https://github.com/fecgov/FEC/blob/master/release_notes/release_notes.md#start-of-content)",
+            "charCount": 108
+          },
+          {
+            "text": "You signed in with another tab or window. [Reload](https://github.com/fecgov/FEC/blob/master/release_notes/release_notes.md) to refresh your session.You signed out in another tab or window. [Reload](https://github.com/fecgov/FEC/blob/master/release_notes/release_notes.md) to refresh your session.You switched accounts on another tab or window. [Reload](https://github.com/fecgov/FEC/blob/master/release_notes/release_notes.md) to refresh your session.Dismiss alert",
+            "charCount": 465
+          },
+          {
+            "text": "[History](https://github.com/fecgov/FEC/commits/master/release_notes/release_notes.md)",
+            "charCount": 86
+          }
+        ]
+      }
+    ],
+    "searchIds": [
+      "019dc369-dba1-73a6-a1b3-e8525b03fe7f"
+    ],
+    "usage": {
+      "resultCount": 6,
+      "charsReturned": 8091,
+      "creditsUsed": 8,
+      "rawResultCount": {
+        "web": 6,
+        "news": 0,
+        "images": 0
+      }
+    }
+  },
+  "results": [
+    {
+      "title": "React 19.2",
+      "url": "https://react.dev/blog/2025/10/01/react-19-2",
+      "domain": "react.dev",
+      "description": "React 19.2. October 1, 2025 by The React Team. React 19.2 is now available ... Check out the eslint-plugin-react-hooks changelog for a full list of changes.",
+      "chunks": [
+        {
+          "text": "This is our third release in the last year, following React 19 in December and React 19.1 in June. In this post, we’ll give an overview of the new features in React 19.2, and highlight some notable changes.",
+          "charCount": 206
+        },
+        {
+          "text": "- [New React Features](https://react.dev/blog/2025/10/01/react-19-2#new-react-features)\n  - [`<Activity />`](https://react.dev/blog/2025/10/01/react-19-2#activity)\n  - [`useEffectEvent`](https://react.dev/blog/2025/10/01/react-19-2#use-effect-event)\n  - [`cacheSignal`](https://react.dev/blog/2025/10/01/react-19-2#cache-signal)\n  - [Performance Tracks](https://react.dev/blog/2025/10/01/react-19-2#performance-tracks)\n- [New React DOM Features](https://react.dev/blog/2025/10/01/react-19-2#new-react-dom-features)\n  - [Partial Pre-rendering](https://react.dev/blog/2025/10/01/react-19-2#partial-pre-rendering)\n- [Notable Changes](https://react.dev/blog/2025/10/01/react-19-2#notable-changes)\n  - [Batching Suspense Boundaries for SSR](https://react.dev/blog/2025/10/01/react-19-2#batching-suspense-boundaries-for-ssr)\n  - [SSR: Web S",
+          "charCount": 834
+        },
+        {
+          "text": "The Scheduler track shows what React is working on for different priorities such as “blocking” for user interactions, or “transition” for updates inside startTransition. Inside each track, you will see the type of work being performed such as the event that scheduled an update, and when the render for that update happened.",
+          "charCount": 324
+        }
+      ],
+      "source": "web",
+      "position": 1
+    },
+    {
+      "title": "react/CHANGELOG.md at main · facebook/react",
+      "url": "https://github.com/facebook/react/blob/main/CHANGELOG.md",
+      "domain": "github.com",
+      "description": "19.2.0 (October 1st, 2025). Below is a list of all new features, APIs, and bug fixes. Read the React 19.2 release post for more information. New React Features.",
+      "chunks": [
+        {
+          "text": "- `useId` is a new hook for generating unique IDs on both the client and server, while avoiding hydration mismatches. It is primarily useful for component libraries integrating with accessibility APIs that require unique IDs. This solves an issue that already exists in React 17 and below, but it’s even more important in React 18 because of how the new streaming server renderer delivers HTML out-of-order.\n- `startTransition` and `useTransition` let you mark some state updates as not urgent. Other state updates are considered urgent by default. React will allow urgent state updates (for example, updating a text input) to interrupt non-urgent state updates (for example, rendering a list of search results).\n- `useDeferredValue` lets you defer re-rendering a non-urgent part of the tree. It is similar to debouncing, but has a fe",
+          "charCount": 834
+        },
+        {
+          "text": "- **Automatic batching:** This release introduces a performance improvement that changes to the way React batches updates to do more batching automatically. See [Automatic batching for fewer renders in React 18](https://github.com/reactwg/react-18/discussions/21) for more info. In the rare case that you need to opt out, wrap the state update in `flushSync`.\n- **Stricter Strict Mode**: In the future, React will provide a feature that lets components preserve state between unmounts. To prepare for it, React 18 introduces a new development-only check to Strict Mode. React will automatically unmount and remount every component, whenever a component mounts for the first time, restoring the previous state on the second mount. If this breaks your app, consider removing Strict Mode until you can fix the components to be resilient ",
+          "charCount": 834
+        },
+        {
+          "text": "- Support for using ES6 classes to build React components; see the [v0.13.0 beta 1 notes](https://reactjs.org/blog/2015/01/27/react-v0.13.0-beta-1.html) for details.\n- Added new top-level API `React.findDOMNode(component)`, which should be used in place of `component.getDOMNode()`. The base class for ES6-based components will not have `getDOMNode`. This change will enable some more patterns moving forward.\n- Added a new top-level API `React.cloneElement(el, props)` for making copies of React elements – see the [v0.13 RC2 notes](https://reactjs.org/blog/2015/03/03/react-v0.13-rc2.html#react.cloneelement) for more details.\n- New `ref` style, allowing a callback to be used in place of a name: `<Photo ref={(c) => this._photo = c} />` allows you to reference the component with `this._photo` (as opposed to `ref=\"photo\"` which ",
+          "charCount": 832
+        }
+      ],
+      "source": "web",
+      "category": "github",
+      "position": 2
+    },
+    {
+      "title": "React Blog",
+      "url": "https://react.dev/blog",
+      "domain": "react.dev",
+      "description": "React 19.2. October 1, 2025. React 19.2 adds new features like Activity, React Performance Tracks, useEffectEvent, and more. In this ...",
+      "chunks": [
+        {
+          "text": "This blog is the official source for the updates from the React team. Anything important, including release notes or deprecation notices, will be posted here first.",
+          "charCount": 164
+        },
+        {
+          "text": "[**The React Foundation: A New Home for React Hosted by the Linux Foundation**\\\\\n\\\\\nFebruary 24, 2026\\\\\n\\\\\nThe React Foundation has officially launched under the Linux Foundation.\\\\\n\\\\\nRead more](https://react.dev/blog/2026/02/24/the-react-foundation) [**Denial of Service and Source Code Exposure in React Server Components**\\\\\n\\\\\nDecember 11, 2025\\\\\n\\\\\nSecurity researchers have found and disclosed two additional vulnerabilities in React Server Components while attempting to exploit the patches in last week’s critical vulnerability…\\\\\n\\\\\nRead more](https://react.dev/blog/2025/12/11/denial-of-service-and-source-code-exposure-in-react-server-components) [**Critical Security Vulnerability in React Server Components**\\\\\n\\\\\nDecember 3, 2025\\\\\n\\\\\nThere is an unauthenticated remote code execution vulnerability in React Server Comp",
+          "charCount": 834
+        },
+        {
+          "text": "### All release notes [Link for All release notes ](https://react.dev/blog\\#all-release-notes \"Link for All release notes \")",
+          "charCount": 124
+        }
+      ],
+      "source": "web",
+      "position": 3
+    },
+    {
+      "title": "Critical Security Vulnerability in React Server Components",
+      "url": "https://react.dev/blog/2025/12/03/critical-security-vulnerability-in-react-server-components",
+      "domain": "react.dev",
+      "description": "December 3, 2025 by The React Team. There is an unauthenticated remote code execution vulnerability in React Server Components.",
+      "chunks": [
+        {
+          "text": "### Affected frameworks and bundlers [Link for Affected frameworks and bundlers ](https://react.dev/blog/2025/12/03/critical-security-vulnerability-in-react-server-components\\#affected-frameworks-and-bundlers \"Link for Affected frameworks and bundlers \")",
+          "charCount": 254
+        },
+        {
+          "text": "## Update Instructions [Link for Update Instructions ](https://react.dev/blog/2025/12/03/critical-security-vulnerability-in-react-server-components\\#update-instructions \"Link for Update Instructions \")",
+          "charCount": 201
+        },
+        {
+          "text": "- **November 29th**: Lachlan Davidson reported the security vulnerability via [Meta Bug Bounty](https://bugbounty.meta.com/).\n- **November 30th**: Meta security researchers confirmed and began working with the React team on a fix.\n- **December 1st**: A fix was created and the React team began working with affected hosting providers and open source projects to validate the fix, implement mitigations and roll out the fix\n- **December 3rd**: The fix was published to npm and the publicly disclosed as CVE-2025-55182.",
+          "charCount": 517
+        }
+      ],
+      "source": "web",
+      "position": 4
+    },
+    {
+      "title": "Error: Could not find the module X in the React Client ...",
+      "url": "https://github.com/payloadcms/payload/issues/14419",
+      "domain": "github.com",
+      "description": "It looks like a race between Admin/FE/API compiles after file changes - Next's logs show Turbopack compiling multiple routes concurrently. The issue began ...",
+      "chunks": [
+        {
+          "text": "It **looks like a race** between Admin/FE/API compiles after file changes - Next’s logs show Turbopack compiling multiple routes concurrently. The issue **began specifically with Next 15.5.0**. In that release, Turbopack changed how it handles HMR after **clearing the chunk cache** \\- they removed code that delete From Require Cache the turbopack runtime (to fix memory leaks), and removed this TODO comment: `Stop re-evaluating React Client once it relies on Turbopack's chunk cache.`",
+          "charCount": 487
+        },
+        {
+          "text": "- Admin HMR often **does not recompile at all** when adding new fields (no UI update; only a full dev server restart reflects changes).\n- On SQLite, removing a field triggers the migration prompt and _does_ recompile Admin (and doesn’t error).\n- On MongoDB, no Admin HMR whether adding or removing fields; restart required.\n- If I trigger server restart via the `(N)` browser widget in Next 16 (in preferences), the **same React Client Manifest errors** resurface—suggesting the underlying Turbopack/manifest issue still exists; it’s just masked when Admin HMR doesn’t run.",
+          "charCount": 573
+        },
+        {
+          "text": "1. `pnpm i`\n2. `pnpm dev` (Turbopack)\n3. Open `/admin`, go to Contact Page\n4. **Add** a new field to a collection → Admin UI usually does **not** update (no HMR). Refresh doesn’t help. Restart required.\n5. **Remove** a field → Payload prompts DB migration; after accept, Admin HMR **does** rebuild and reflect change.\n6. If you restart via the new (N) widget, the **React Client Manifest** errors may appear again.",
+          "charCount": 414
+        }
+      ],
+      "source": "web",
+      "category": "github",
+      "position": 5
+    },
+    {
+      "title": "FEC/release_notes/release_notes.md at master · fecgov/FEC",
+      "url": "https://github.com/fecgov/FEC/blob/master/release_notes/release_notes.md",
+      "domain": "github.com",
+      "description": "December 09, 2025 (Sprint 30.2). Changed. -API Fix Form3L version issue. November 25, 2025 (Sprint 30.1). Lapse in funding. November 11, 2025 (Sprint 29.i).",
+      "chunks": [
+        {
+          "text": "[Skip to content](https://github.com/fecgov/FEC/blob/master/release_notes/release_notes.md#start-of-content)",
+          "charCount": 108
+        },
+        {
+          "text": "You signed in with another tab or window. [Reload](https://github.com/fecgov/FEC/blob/master/release_notes/release_notes.md) to refresh your session.You signed out in another tab or window. [Reload](https://github.com/fecgov/FEC/blob/master/release_notes/release_notes.md) to refresh your session.You switched accounts on another tab or window. [Reload](https://github.com/fecgov/FEC/blob/master/release_notes/release_notes.md) to refresh your session.Dismiss alert",
+          "charCount": 465
+        },
+        {
+          "text": "[History](https://github.com/fecgov/FEC/commits/master/release_notes/release_notes.md)",
+          "charCount": 86
+        }
+      ],
+      "source": "web",
+      "category": "github",
+      "position": 6
+    }
+  ]
+}

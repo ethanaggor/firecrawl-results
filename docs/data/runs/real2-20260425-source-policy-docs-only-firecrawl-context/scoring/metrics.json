@@ -1,0 +1,76 @@
+{
+  "provider": "firecrawl-context",
+  "taskId": "source-policy-docs-only",
+  "toolCalls": 2,
+  "searchCalls": 1,
+  "fetchCalls": 1,
+  "mapCalls": 0,
+  "discoveryCalls": 1,
+  "extractionCalls": 1,
+  "failedCalls": 0,
+  "zeroResultCalls": 0,
+  "zeroResultSearchCalls": 0,
+  "expectedTermMissCalls": 0,
+  "expectedDomainMissCalls": 0,
+  "expectedTermMissSearchCalls": 0,
+  "expectedDomainMissSearchCalls": 0,
+  "sourcePolicyViolationCalls": 0,
+  "recoverySignalCalls": 0,
+  "recoverySignalRate": 0,
+  "totalResultCount": 6,
+  "uniqueUrlCount": 5,
+  "uniqueDomainCount": 1,
+  "duplicateUrlRate": 0.1667,
+  "expectedDomainsCovered": [
+    "docs.firecrawl.dev"
+  ],
+  "firstSearch": {
+    "tool": "firecrawl_search",
+    "resultCount": 5,
+    "expectedTermHit": true,
+    "expectedDomainHit": true,
+    "rawOutputTokens": 4269,
+    "normalizedEvidenceTokens": 2817,
+    "domains": [
+      "docs.firecrawl.dev"
+    ],
+    "urls": [
+      "https://docs.firecrawl.dev/api-reference/endpoint/search",
+      "https://docs.firecrawl.dev/sdks/cli",
+      "https://docs.firecrawl.dev/zh/api-reference/endpoint/search",
+      "https://docs.firecrawl.dev/fr/api-reference/endpoint/search",
+      "https://docs.firecrawl.dev/es/sdks/cli"
+    ]
+  },
+  "totalConnectMs": 465,
+  "totalCallLatencyMs": 895,
+  "argumentTokens": 170,
+  "rawOutputTokens": 11654,
+  "normalizedEvidenceTokens": 5148,
+  "evidenceToRawTokenRatio": 0.4417,
+  "avgRawOutputTokensPerCall": 5827,
+  "rawOutputOutlierThresholdTokens": 50000,
+  "rawOutputOutlierCalls": 0,
+  "maxRawOutputCall": {
+    "tool": "firecrawl_scrape",
+    "rawOutputTokens": 7385,
+    "normalizedEvidenceTokens": 2331,
+    "resultCount": 1
+  },
+  "avgResultsPerSearchCall": 5,
+  "totalTrajectoryTokens": 23221,
+  "contract": {
+    "toolCount": 14,
+    "searchToolCount": 1,
+    "fetchToolCount": 2,
+    "descriptionTokens": 5052,
+    "schemaTokens": 5505,
+    "totalMcpFootprintTokens": 11397,
+    "searchOnlyFootprintTokens": 2330,
+    "searchFetchFootprintTokens": 5303,
+    "hasFreshnessControl": true,
+    "hasSourcePolicyControl": true,
+    "hasContentBudgetControl": true,
+    "hasUsageMetadata": true
+  }
+}

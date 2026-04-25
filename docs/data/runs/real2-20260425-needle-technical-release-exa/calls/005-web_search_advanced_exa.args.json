@@ -1,0 +1,13 @@
+{
+  "query": "Next.js 16 official documentation upgrade guide cacheComponents proxy.ts revalidateTag updateTag refresh API changes",
+  "numResults": 5,
+  "type": "auto",
+  "includeDomains": [
+    "nextjs.org"
+  ],
+  "textMaxCharacters": 5000,
+  "enableHighlights": true,
+  "highlightsMaxCharacters": 2500,
+  "highlightsQuery": "Next.js 16 API changes cacheComponents proxy.ts revalidateTag updateTag refresh",
+  "maxAgeHours": 0
+}

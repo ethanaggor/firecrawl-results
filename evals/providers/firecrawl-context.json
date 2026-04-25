@@ -10,5 +10,6 @@
     { "name": "FIRECRAWL_API_URL", "required": false }
   ],
   "searchTools": ["firecrawl_search"],
-  "fetchTools": ["firecrawl_scrape"]
+  "fetchTools": ["firecrawl_scrape"],
+  "mapTools": ["firecrawl_map"]
 }

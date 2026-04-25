@@ -1,0 +1,16 @@
+{
+  "query": "Parallel AI official docs Search API MCP agent dense excerpts response shape search results freshness WISER benchmark tool calls",
+  "numResults": 8,
+  "type": "auto",
+  "includeDomains": [
+    "parallel.ai",
+    "docs.parallel.ai"
+  ],
+  "textMaxCharacters": 5000,
+  "enableHighlights": true,
+  "highlightsMaxCharacters": 2200,
+  "highlightsQuery": "Parallel Search API MCP response shape dense excerpts tool calls agent WISER benchmark retrieval quality",
+  "enableSummary": true,
+  "summaryQuery": "What does Parallel return to agents, what tool-call flow does it imply, and what retrieval-quality controls or benchmarks are documented?",
+  "maxAgeHours": 0
+}

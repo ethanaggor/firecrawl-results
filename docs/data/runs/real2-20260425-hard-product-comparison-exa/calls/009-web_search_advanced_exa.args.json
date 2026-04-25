@@ -1,0 +1,16 @@
+{
+  "query": "Firecrawl official docs MCP firecrawl_search search API scrapeOptions response shape full page content agent deep research structured extraction",
+  "numResults": 8,
+  "type": "auto",
+  "includeDomains": [
+    "docs.firecrawl.dev",
+    "firecrawl.dev"
+  ],
+  "textMaxCharacters": 5000,
+  "enableHighlights": true,
+  "highlightsMaxCharacters": 2200,
+  "highlightsQuery": "Firecrawl search API MCP firecrawl_search scrapeOptions full page content structured extraction agent deep research",
+  "enableSummary": true,
+  "summaryQuery": "What does Firecrawl return to agents, what tool-call flow does it imply, and what retrieval-quality controls are documented?",
+  "maxAgeHours": 0
+}

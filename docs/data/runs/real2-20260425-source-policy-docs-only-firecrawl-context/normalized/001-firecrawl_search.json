@@ -1,0 +1,279 @@
+{
+  "provider": "firecrawl-context",
+  "tool": "firecrawl_search",
+  "isError": false,
+  "rawText": "{\n  \"query\": \"Firecrawl Search API categories country timeout ignoreInvalidURLs\",\n  \"executedQuery\": \"Firecrawl Search API categories country timeout ignoreInvalidURLs site:docs.firecrawl.dev\",\n  \"content\": \"chunks\",\n  \"constraints\": {\n    \"maxResults\": 5,\n    \"maxCharsPerResult\": 2500,\n    \"maxCharsTotal\": 9000,\n    \"focus\": \"Search API request fields categories, country, timeout, ignoreInvalidURLs, allowed values, defaults, and docs examples\",\n    \"sourcePolicy\": {\n      \"includeDomains\": [\n        \"docs.firecrawl.dev\"\n      ]\n    }\n  },\n  \"results\": [\n    {\n      \"title\": \"Search - Firecrawl Docs\",\n      \"url\": \"https://docs.firecrawl.dev/api-reference/endpoint/search\",\n      \"description\": \"Use the country parameter to specify the country for search results using ISO country codes. ... Filter search results by specific categories using the categories ...\",\n      \"position\": 1,\n      \"source\": \"web\",\n      \"metadata\": {\n        \"sourceURL\": \"https://docs.firecrawl.dev/api-reference/endpoint/search\",\n        \"finalURL\": \"https://docs.firecrawl.dev/api-reference/endpoint/search\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"```\\ncurl --request POST \\\\\\n  --url https://api.firecrawl.dev/v2/search \\\\\\n  --header 'Authorization: Bearer <token>' \\\\\\n  --header 'Content-Type: application/json' \\\\\\n  --data '\\n{\\n  \\\"query\\\": \\\"<string>\\\",\\n  \\\"limit\\\": 10,\\n  \\\"sources\\\": [\\\\\\n    \\\"web\\\"\\\\\\n  ],\\n  \\\"categories\\\": [\\\\\\n    {\\\\\\n      \\\"type\\\": \\\"github\\\"\\\\\\n    }\\\\\\n  ],\\n  \\\"tbs\\\": \\\"<string>\\\",\\n  \\\"location\\\": \\\"<string>\\\",\\n  \\\"country\\\": \\\"US\\\",\\n  \\\"timeout\\\": 60000,\\n  \\\"ignoreInvalidURLs\\\": false,\\n  \\\"enterprise\\\": [\\\\\\n    \\\"anon\\\"\\\\\\n  ],\\n  \\\"scrapeOptions\\\": {\\n    \\\"formats\\\": [\\\\\\n      \\\"markdown\\\"\\\\\\n    ],\\n    \\\"onlyMainContent\\\": true,\\n    \\\"maxAge\\\": 172800000,\\n    \\\"waitFor\\\": 0,\\n    \\\"mobile\\\": false,\\n    \\\"skipTlsVerification\\\": true,\\n    \\\"timeout\\\": 60000,\\n    \\\"parsers\\\": [\\\\\\n      \\\"pdf\\\"\\\\\\n    ],\\n    \\\"location\\\": {\\n      \\\"country\\\": \\\"US\\\"\\n    },\\n    \\\"removeBase64Images\\\": true,\\n    \\\"blockAds\\\": true,\\n    \\\"proxy\\\": \\\"auto\\\",\\n  \",\n          \"charCount\": 834\n        },\n        {\n          \"text\": \"```\\ncurl --request POST \\\\\\n  --url https://api.firecrawl.dev/v2/search \\\\\\n  --header 'Authorization: Bearer <token>' \\\\\\n  --header 'Content-Type: application/json' \\\\\\n  --data '\\n{\\n  \\\"query\\\": \\\"<string>\\\",\\n  \\\"limit\\\": 10,\\n  \\\"sources\\\": [\\\\\\n    \\\"web\\\"\\\\\\n  ],\\n  \\\"categories\\\": [\\\\\\n    {\\\\\\n      \\\"type\\\": \\\"github\\\"\\\\\\n    }\\\\\\n  ],\\n  \\\"tbs\\\": \\\"<string>\\\",\\n  \\\"location\\\": \\\"<string>\\\",\\n  \\\"country\\\": \\\"US\\\",\\n  \\\"timeout\\\": 60000,\\n  \\\"ignoreInvalidURLs\\\": false,\\n  \\\"enterprise\\\": [\\\\\\n    \\\"anon\\\"\\\\\\n  ],\\n  \\\"scrapeOptions\\\": {\\n    \\\"formats\\\": [\\\\\\n      \\\"markdown\\\"\\\\\\n    ],\\n    \\\"onlyMainContent\\\": true,\\n    \\\"maxAge\\\": 172800000,\\n    \\\"waitFor\\\": 0,\\n    \\\"mobile\\\": false,\\n    \\\"skipTlsVerification\\\": true,\\n    \\\"timeout\\\": 60000,\\n    \\\"parsers\\\": [\\\\\\n      \\\"pdf\\\"\\\\\\n    ],\\n    \\\"location\\\": {\\n      \\\"country\\\": \\\"US\\\"\\n    },\\n    \\\"removeBase64Images\\\": true,\\n    \\\"blockAds\\\": true,\\n    \\\"proxy\\\": \\\"auto\\\",\\n  \",\n          \"charCount\": 834\n        },\n        {\n          \"text\": \"## [​](https://docs.firecrawl.dev/api-reference/endpoint/search\\\\#country-parameter)  Country Parameter\",\n          \"charCount\": 102\n        }\n      ]\n    },\n    {\n      \"title\": \"CLI - Firecrawl Docs\",\n      \"url\": \"https://docs.firecrawl.dev/sdks/cli\",\n      \"description\": \"Search, scrape, and interact with the web directly from the terminal. The Firecrawl CLI works standalone or as a skill that AI coding agents like Claude ...\",\n      \"position\": 2,\n      \"source\": \"web\",\n      \"metadata\": {\n        \"sourceURL\": \"https://docs.firecrawl.dev/sdks/cli\",\n        \"finalURL\": \"https://docs.firecrawl.dev/sdks/cli\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"- [Installation](https://docs.firecrawl.dev/sdks/cli#installation)\\n- [Authentication](https://docs.firecrawl.dev/sdks/cli#authentication)\\n- [Login](https://docs.firecrawl.dev/sdks/cli#login)\\n- [View Configuration](https://docs.firecrawl.dev/sdks/cli#view-configuration)\\n- [Logout](https://docs.firecrawl.dev/sdks/cli#logout)\\n- [Self-Hosted / Local Development](https://docs.firecrawl.dev/sdks/cli#self-hosted-%2F-local-development)\\n- [Check Status](https://docs.firecrawl.dev/sdks/cli#check-status)\\n- [Commands](https://docs.firecrawl.dev/sdks/cli#commands)\\n- [Scrape](https://docs.firecrawl.dev/sdks/cli#scrape)\\n- [Output Formats](https://docs.firecrawl.dev/sdks/cli#output-formats)\\n- [Scrape Options](https://docs.firecrawl.dev/sdks/cli#scrape-options)\\n- [Search](https://docs.firecrawl.dev/sdks/cli#search)\\n- [Search Options](https\",\n          \"charCount\": 834\n        },\n        {\n          \"text\": \"# Configure and persist the custom API URL\\nfirecrawl config --api-url http://localhost:3002\\n```\",\n          \"charCount\": 95\n        },\n        {\n          \"text\": \"| Option | Description |\\n| --- | --- |\\n| `--limit <number>` | Maximum results (default: 5, max: 100) |\\n| `--sources <sources>` | Sources to search: `web`, `images`, `news` (comma-separated) |\\n| `--categories <categories>` | Filter by category: `github`, `research`, `pdf` (comma-separated) |\\n| `--tbs <value>` | Time filter: `qdr:h` (hour), `qdr:d` (day), `qdr:w` (week), `qdr:m` (month), `qdr:y` (year) |\\n| `--location <location>` | Geo-targeting (e.g., “Berlin,Germany”) |\\n| `--country <code>` | ISO country code (default: US) |\\n| `--timeout <ms>` | Timeout in milliseconds (default: 60000) |\\n| `--ignore-invalid-urls` | Exclude URLs invalid for other Firecrawl endpoints |\\n| `--scrape` | Scrape search results |\\n| `--scrape-formats <formats>` | Formats for scraped content (default: markdown) |\\n| `--only-main-content` | Include on\",\n          \"charCount\": 834\n        }\n      ]\n    },\n    {\n      \"title\": \"Search（搜索） - Firecrawl Docs\",\n      \"url\": \"https://docs.firecrawl.dev/zh/api-reference/endpoint/search\",\n      \"description\": \"... categories\\\": [ { \\\"type\\\": \\\"github\\\" } ], \\\"tbs\\\": \\\"<string>\\\", \\\"location\\\": \\\"<string>\\\", \\\"country\\\": \\\"US\\\", \\\"timeout\\\": 60000, \\\"ignoreInvalidURLs\\\": false, \\\"enterprise\\\": [ ...\",\n      \"position\": 3,\n      \"source\": \"web\",\n      \"metadata\": {\n        \"sourceURL\": \"https://docs.firecrawl.dev/zh/api-reference/endpoint/search\",\n        \"finalURL\": \"https://docs.firecrawl.dev/zh/api-reference/endpoint/search\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"```\\ncurl --request POST \\\\\\n  --url https://api.firecrawl.dev/v2/search \\\\\\n  --header 'Authorization: Bearer <token>' \\\\\\n  --header 'Content-Type: application/json' \\\\\\n  --data '\\n{\\n  \\\"query\\\": \\\"<string>\\\",\\n  \\\"limit\\\": 10,\\n  \\\"sources\\\": [\\\\\\n    \\\"web\\\"\\\\\\n  ],\\n  \\\"categories\\\": [\\\\\\n    {\\\\\\n      \\\"type\\\": \\\"github\\\"\\\\\\n    }\\\\\\n  ],\\n  \\\"tbs\\\": \\\"<string>\\\",\\n  \\\"location\\\": \\\"<string>\\\",\\n  \\\"country\\\": \\\"US\\\",\\n  \\\"timeout\\\": 60000,\\n  \\\"ignoreInvalidURLs\\\": false,\\n  \\\"enterprise\\\": [\\\\\\n    \\\"anon\\\"\\\\\\n  ],\\n  \\\"scrapeOptions\\\": {\\n    \\\"formats\\\": [\\\\\\n      \\\"markdown\\\"\\\\\\n    ],\\n    \\\"onlyMainContent\\\": true,\\n    \\\"maxAge\\\": 172800000,\\n    \\\"waitFor\\\": 0,\\n    \\\"mobile\\\": false,\\n    \\\"skipTlsVerification\\\": true,\\n    \\\"timeout\\\": 60000,\\n    \\\"parsers\\\": [\\\\\\n      \\\"pdf\\\"\\\\\\n    ],\\n    \\\"location\\\": {\\n      \\\"country\\\": \\\"US\\\"\\n    },\\n    \\\"removeBase64Images\\\": true,\\n    \\\"blockAds\\\": true,\\n    \\\"proxy\\\": \\\"auto\\\",\\n  \",\n          \"charCount\": 834\n        },\n        {\n          \"text\": \"```\\ncurl --request POST \\\\\\n  --url https://api.firecrawl.dev/v2/search \\\\\\n  --header 'Authorization: Bearer <token>' \\\\\\n  --header 'Content-Type: application/json' \\\\\\n  --data '\\n{\\n  \\\"query\\\": \\\"<string>\\\",\\n  \\\"limit\\\": 10,\\n  \\\"sources\\\": [\\\\\\n    \\\"web\\\"\\\\\\n  ],\\n  \\\"categories\\\": [\\\\\\n    {\\\\\\n      \\\"type\\\": \\\"github\\\"\\\\\\n    }\\\\\\n  ],\\n  \\\"tbs\\\": \\\"<string>\\\",\\n  \\\"location\\\": \\\"<string>\\\",\\n  \\\"country\\\": \\\"US\\\",\\n  \\\"timeout\\\": 60000,\\n  \\\"ignoreInvalidURLs\\\": false,\\n  \\\"enterprise\\\": [\\\\\\n    \\\"anon\\\"\\\\\\n  ],\\n  \\\"scrapeOptions\\\": {\\n    \\\"formats\\\": [\\\\\\n      \\\"markdown\\\"\\\\\\n    ],\\n    \\\"onlyMainContent\\\": true,\\n    \\\"maxAge\\\": 172800000,\\n    \\\"waitFor\\\": 0,\\n    \\\"mobile\\\": false,\\n    \\\"skipTlsVerification\\\": true,\\n    \\\"timeout\\\": 60000,\\n    \\\"parsers\\\": [\\\\\\n      \\\"pdf\\\"\\\\\\n    ],\\n    \\\"location\\\": {\\n      \\\"country\\\": \\\"US\\\"\\n    },\\n    \\\"removeBase64Images\\\": true,\\n    \\\"blockAds\\\": true,\\n    \\\"proxy\\\": \\\"auto\\\",\\n  \",\n          \"charCount\": 834\n        },\n        {\n          \"text\": \"## [​](https://docs.firecrawl.dev/zh/api-reference/endpoint/search\\\\#country-%E5%8F%82%E6%95%B0)  country 参数\",\n          \"charCount\": 107\n        }\n      ]\n    },\n    {\n      \"title\": \"Recherche - Firecrawl Docs\",\n      \"url\": \"https://docs.firecrawl.dev/fr/api-reference/endpoint/search\",\n      \"description\": \"Exclut des résultats de recherche les URL qui ne sont pas valides pour d'autres endpoints Firecrawl. Cela permet de réduire les erreurs si vous transmettez les ...\",\n      \"position\": 4,\n      \"source\": \"web\",\n      \"metadata\": {\n        \"sourceURL\": \"https://docs.firecrawl.dev/fr/api-reference/endpoint/search\",\n        \"finalURL\": \"https://docs.firecrawl.dev/fr/api-reference/endpoint/search\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"```\\ncurl --request POST \\\\\\n  --url https://api.firecrawl.dev/v2/search \\\\\\n  --header 'Authorization: Bearer <token>' \\\\\\n  --header 'Content-Type: application/json' \\\\\\n  --data '\\n{\\n  \\\"query\\\": \\\"<string>\\\",\\n  \\\"limit\\\": 10,\\n  \\\"sources\\\": [\\\\\\n    \\\"web\\\"\\\\\\n  ],\\n  \\\"categories\\\": [\\\\\\n    {\\\\\\n      \\\"type\\\": \\\"github\\\"\\\\\\n    }\\\\\\n  ],\\n  \\\"tbs\\\": \\\"<string>\\\",\\n  \\\"location\\\": \\\"<string>\\\",\\n  \\\"country\\\": \\\"US\\\",\\n  \\\"timeout\\\": 60000,\\n  \\\"ignoreInvalidURLs\\\": false,\\n  \\\"enterprise\\\": [\\\\\\n    \\\"anon\\\"\\\\\\n  ],\\n  \\\"scrapeOptions\\\": {\\n    \\\"formats\\\": [\\\\\\n      \\\"markdown\\\"\\\\\\n    ],\\n    \\\"onlyMainContent\\\": true,\\n    \\\"maxAge\\\": 172800000,\\n    \\\"waitFor\\\": 0,\\n    \\\"mobile\\\": false,\\n    \\\"skipTlsVerification\\\": true,\\n    \\\"timeout\\\": 60000,\\n    \\\"parsers\\\": [\\\\\\n      \\\"pdf\\\"\\\\\\n    ],\\n    \\\"location\\\": {\\n      \\\"country\\\": \\\"US\\\"\\n    },\\n    \\\"removeBase64Images\\\": true,\\n    \\\"blockAds\\\": true,\\n    \\\"proxy\\\": \\\"auto\\\",\\n  \",\n          \"charCount\": 834\n        },\n        {\n          \"text\": \"```\\ncurl --request POST \\\\\\n  --url https://api.firecrawl.dev/v2/search \\\\\\n  --header 'Authorization: Bearer <token>' \\\\\\n  --header 'Content-Type: application/json' \\\\\\n  --data '\\n{\\n  \\\"query\\\": \\\"<string>\\\",\\n  \\\"limit\\\": 10,\\n  \\\"sources\\\": [\\\\\\n    \\\"web\\\"\\\\\\n  ],\\n  \\\"categories\\\": [\\\\\\n    {\\\\\\n      \\\"type\\\": \\\"github\\\"\\\\\\n    }\\\\\\n  ],\\n  \\\"tbs\\\": \\\"<string>\\\",\\n  \\\"location\\\": \\\"<string>\\\",\\n  \\\"country\\\": \\\"US\\\",\\n  \\\"timeout\\\": 60000,\\n  \\\"ignoreInvalidURLs\\\": false,\\n  \\\"enterprise\\\": [\\\\\\n    \\\"anon\\\"\\\\\\n  ],\\n  \\\"scrapeOptions\\\": {\\n    \\\"formats\\\": [\\\\\\n      \\\"markdown\\\"\\\\\\n    ],\\n    \\\"onlyMainContent\\\": true,\\n    \\\"maxAge\\\": 172800000,\\n    \\\"waitFor\\\": 0,\\n    \\\"mobile\\\": false,\\n    \\\"skipTlsVerification\\\": true,\\n    \\\"timeout\\\": 60000,\\n    \\\"parsers\\\": [\\\\\\n      \\\"pdf\\\"\\\\\\n    ],\\n    \\\"location\\\": {\\n      \\\"country\\\": \\\"US\\\"\\n    },\\n    \\\"removeBase64Images\\\": true,\\n    \\\"blockAds\\\": true,\\n    \\\"proxy\\\": \\\"auto\\\",\\n  \",\n          \"charCount\": 834\n        },\n        {\n          \"text\": \"## [​](https://docs.firecrawl.dev/fr/api-reference/endpoint/search\\\\#param%C3%A8tre-country)  Paramètre country\",\n          \"charCount\": 110\n        }\n      ]\n    },\n    {\n      \"title\": \"CLI - Firecrawl Docs\",\n      \"url\": \"https://docs.firecrawl.dev/es/sdks/cli\",\n      \"description\": \"Busca, haz scraping e interactúa con la web directamente desde la terminal. La CLI de Firecrawl funciona de forma independiente o como un Skill que los ...\",\n      \"position\": 5,\n      \"source\": \"web\",\n      \"metadata\": {\n        \"sourceURL\": \"https://docs.firecrawl.dev/es/sdks/cli\",\n        \"finalURL\": \"https://docs.firecrawl.dev/es/sdks/cli\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"- [Búsqueda](https://docs.firecrawl.dev/es/features/search)\\n- scraping\",\n          \"charCount\": 70\n        },\n        {\n          \"text\": \"# Configure and persist the custom API URL\\nfirecrawl config --api-url http://localhost:3002\\n```\",\n          \"charCount\": 95\n        },\n        {\n          \"text\": \"| Opción | Descripción |\\n| --- | --- |\\n| `--limit <number>` | Número máximo de resultados (predeterminado: 5, máximo: 100) |\\n| `--sources <sources>` | Fuentes de búsqueda: `web`, `images`, `news` (separadas por comas) |\\n| `--categories <categories>` | Filtrar por categoría: `github`, `research`, `pdf` (separadas por comas) |\\n| `--tbs <value>` | Filtro de tiempo: `qdr:h` (hora), `qdr:d` (día), `qdr:w` (semana), `qdr:m` (mes), `qdr:y` (año) |\\n| `--location <location>` | Segmentación geográfica (p. ej., “Berlin,Germany”) |\\n| `--country <code>` | Código de país ISO (predeterminado: US) |\\n| `--timeout <ms>` | Tiempo de espera en milisegundos (predeterminado: 60000) |\\n| `--ignore-invalid-urls` | Excluir URLs no válidas para otros endpoints de Firecrawl |\\n| `--scrape` | Extraer resultados de búsqueda |\\n| `--scrape-formats <format\",\n          \"charCount\": 834\n        }\n      ]\n    }\n  ],\n  \"searchIds\": [\n    \"019dc369-6eeb-74da-94d7-85c3c83b8667\"\n  ],\n  \"usage\": {\n    \"resultCount\": 5,\n    \"charsReturned\": 8085,\n    \"creditsUsed\": 7,\n    \"rawResultCount\": {\n      \"web\": 5,\n      \"news\": 0,\n      \"images\": 0\n    }\n  }\n}",
+  "parsed": {
+    "query": "Firecrawl Search API categories country timeout ignoreInvalidURLs",
+    "executedQuery": "Firecrawl Search API categories country timeout ignoreInvalidURLs site:docs.firecrawl.dev",
+    "content": "chunks",
+    "constraints": {
+      "maxResults": 5,
+      "maxCharsPerResult": 2500,
+      "maxCharsTotal": 9000,
+      "focus": "Search API request fields categories, country, timeout, ignoreInvalidURLs, allowed values, defaults, and docs examples",
+      "sourcePolicy": {
+        "includeDomains": [
+          "docs.firecrawl.dev"
+        ]
+      }
+    },
+    "results": [
+      {
+        "title": "Search - Firecrawl Docs",
+        "url": "https://docs.firecrawl.dev/api-reference/endpoint/search",
+        "description": "Use the country parameter to specify the country for search results using ISO country codes. ... Filter search results by specific categories using the categories ...",
+        "position": 1,
+        "source": "web",
+        "metadata": {
+          "sourceURL": "https://docs.firecrawl.dev/api-reference/endpoint/search",
+          "finalURL": "https://docs.firecrawl.dev/api-reference/endpoint/search",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "```\ncurl --request POST \\\n  --url https://api.firecrawl.dev/v2/search \\\n  --header 'Authorization: Bearer <token>' \\\n  --header 'Content-Type: application/json' \\\n  --data '\n{\n  \"query\": \"<string>\",\n  \"limit\": 10,\n  \"sources\": [\\\n    \"web\"\\\n  ],\n  \"categories\": [\\\n    {\\\n      \"type\": \"github\"\\\n    }\\\n  ],\n  \"tbs\": \"<string>\",\n  \"location\": \"<string>\",\n  \"country\": \"US\",\n  \"timeout\": 60000,\n  \"ignoreInvalidURLs\": false,\n  \"enterprise\": [\\\n    \"anon\"\\\n  ],\n  \"scrapeOptions\": {\n    \"formats\": [\\\n      \"markdown\"\\\n    ],\n    \"onlyMainContent\": true,\n    \"maxAge\": 172800000,\n    \"waitFor\": 0,\n    \"mobile\": false,\n    \"skipTlsVerification\": true,\n    \"timeout\": 60000,\n    \"parsers\": [\\\n      \"pdf\"\\\n    ],\n    \"location\": {\n      \"country\": \"US\"\n    },\n    \"removeBase64Images\": true,\n    \"blockAds\": true,\n    \"proxy\": \"auto\",\n  ",
+            "charCount": 834
+          },
+          {
+            "text": "```\ncurl --request POST \\\n  --url https://api.firecrawl.dev/v2/search \\\n  --header 'Authorization: Bearer <token>' \\\n  --header 'Content-Type: application/json' \\\n  --data '\n{\n  \"query\": \"<string>\",\n  \"limit\": 10,\n  \"sources\": [\\\n    \"web\"\\\n  ],\n  \"categories\": [\\\n    {\\\n      \"type\": \"github\"\\\n    }\\\n  ],\n  \"tbs\": \"<string>\",\n  \"location\": \"<string>\",\n  \"country\": \"US\",\n  \"timeout\": 60000,\n  \"ignoreInvalidURLs\": false,\n  \"enterprise\": [\\\n    \"anon\"\\\n  ],\n  \"scrapeOptions\": {\n    \"formats\": [\\\n      \"markdown\"\\\n    ],\n    \"onlyMainContent\": true,\n    \"maxAge\": 172800000,\n    \"waitFor\": 0,\n    \"mobile\": false,\n    \"skipTlsVerification\": true,\n    \"timeout\": 60000,\n    \"parsers\": [\\\n      \"pdf\"\\\n    ],\n    \"location\": {\n      \"country\": \"US\"\n    },\n    \"removeBase64Images\": true,\n    \"blockAds\": true,\n    \"proxy\": \"auto\",\n  ",
+            "charCount": 834
+          },
+          {
+            "text": "## [​](https://docs.firecrawl.dev/api-reference/endpoint/search\\#country-parameter)  Country Parameter",
+            "charCount": 102
+          }
+        ]
+      },
+      {
+        "title": "CLI - Firecrawl Docs",
+        "url": "https://docs.firecrawl.dev/sdks/cli",
+        "description": "Search, scrape, and interact with the web directly from the terminal. The Firecrawl CLI works standalone or as a skill that AI coding agents like Claude ...",
+        "position": 2,
+        "source": "web",
+        "metadata": {
+          "sourceURL": "https://docs.firecrawl.dev/sdks/cli",
+          "finalURL": "https://docs.firecrawl.dev/sdks/cli",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "- [Installation](https://docs.firecrawl.dev/sdks/cli#installation)\n- [Authentication](https://docs.firecrawl.dev/sdks/cli#authentication)\n- [Login](https://docs.firecrawl.dev/sdks/cli#login)\n- [View Configuration](https://docs.firecrawl.dev/sdks/cli#view-configuration)\n- [Logout](https://docs.firecrawl.dev/sdks/cli#logout)\n- [Self-Hosted / Local Development](https://docs.firecrawl.dev/sdks/cli#self-hosted-%2F-local-development)\n- [Check Status](https://docs.firecrawl.dev/sdks/cli#check-status)\n- [Commands](https://docs.firecrawl.dev/sdks/cli#commands)\n- [Scrape](https://docs.firecrawl.dev/sdks/cli#scrape)\n- [Output Formats](https://docs.firecrawl.dev/sdks/cli#output-formats)\n- [Scrape Options](https://docs.firecrawl.dev/sdks/cli#scrape-options)\n- [Search](https://docs.firecrawl.dev/sdks/cli#search)\n- [Search Options](https",
+            "charCount": 834
+          },
+          {
+            "text": "# Configure and persist the custom API URL\nfirecrawl config --api-url http://localhost:3002\n```",
+            "charCount": 95
+          },
+          {
+            "text": "| Option | Description |\n| --- | --- |\n| `--limit <number>` | Maximum results (default: 5, max: 100) |\n| `--sources <sources>` | Sources to search: `web`, `images`, `news` (comma-separated) |\n| `--categories <categories>` | Filter by category: `github`, `research`, `pdf` (comma-separated) |\n| `--tbs <value>` | Time filter: `qdr:h` (hour), `qdr:d` (day), `qdr:w` (week), `qdr:m` (month), `qdr:y` (year) |\n| `--location <location>` | Geo-targeting (e.g., “Berlin,Germany”) |\n| `--country <code>` | ISO country code (default: US) |\n| `--timeout <ms>` | Timeout in milliseconds (default: 60000) |\n| `--ignore-invalid-urls` | Exclude URLs invalid for other Firecrawl endpoints |\n| `--scrape` | Scrape search results |\n| `--scrape-formats <formats>` | Formats for scraped content (default: markdown) |\n| `--only-main-content` | Include on",
+            "charCount": 834
+          }
+        ]
+      },
+      {
+        "title": "Search（搜索） - Firecrawl Docs",
+        "url": "https://docs.firecrawl.dev/zh/api-reference/endpoint/search",
+        "description": "... categories\": [ { \"type\": \"github\" } ], \"tbs\": \"<string>\", \"location\": \"<string>\", \"country\": \"US\", \"timeout\": 60000, \"ignoreInvalidURLs\": false, \"enterprise\": [ ...",
+        "position": 3,
+        "source": "web",
+        "metadata": {
+          "sourceURL": "https://docs.firecrawl.dev/zh/api-reference/endpoint/search",
+          "finalURL": "https://docs.firecrawl.dev/zh/api-reference/endpoint/search",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "```\ncurl --request POST \\\n  --url https://api.firecrawl.dev/v2/search \\\n  --header 'Authorization: Bearer <token>' \\\n  --header 'Content-Type: application/json' \\\n  --data '\n{\n  \"query\": \"<string>\",\n  \"limit\": 10,\n  \"sources\": [\\\n    \"web\"\\\n  ],\n  \"categories\": [\\\n    {\\\n      \"type\": \"github\"\\\n    }\\\n  ],\n  \"tbs\": \"<string>\",\n  \"location\": \"<string>\",\n  \"country\": \"US\",\n  \"timeout\": 60000,\n  \"ignoreInvalidURLs\": false,\n  \"enterprise\": [\\\n    \"anon\"\\\n  ],\n  \"scrapeOptions\": {\n    \"formats\": [\\\n      \"markdown\"\\\n    ],\n    \"onlyMainContent\": true,\n    \"maxAge\": 172800000,\n    \"waitFor\": 0,\n    \"mobile\": false,\n    \"skipTlsVerification\": true,\n    \"timeout\": 60000,\n    \"parsers\": [\\\n      \"pdf\"\\\n    ],\n    \"location\": {\n      \"country\": \"US\"\n    },\n    \"removeBase64Images\": true,\n    \"blockAds\": true,\n    \"proxy\": \"auto\",\n  ",
+            "charCount": 834
+          },
+          {
+            "text": "```\ncurl --request POST \\\n  --url https://api.firecrawl.dev/v2/search \\\n  --header 'Authorization: Bearer <token>' \\\n  --header 'Content-Type: application/json' \\\n  --data '\n{\n  \"query\": \"<string>\",\n  \"limit\": 10,\n  \"sources\": [\\\n    \"web\"\\\n  ],\n  \"categories\": [\\\n    {\\\n      \"type\": \"github\"\\\n    }\\\n  ],\n  \"tbs\": \"<string>\",\n  \"location\": \"<string>\",\n  \"country\": \"US\",\n  \"timeout\": 60000,\n  \"ignoreInvalidURLs\": false,\n  \"enterprise\": [\\\n    \"anon\"\\\n  ],\n  \"scrapeOptions\": {\n    \"formats\": [\\\n      \"markdown\"\\\n    ],\n    \"onlyMainContent\": true,\n    \"maxAge\": 172800000,\n    \"waitFor\": 0,\n    \"mobile\": false,\n    \"skipTlsVerification\": true,\n    \"timeout\": 60000,\n    \"parsers\": [\\\n      \"pdf\"\\\n    ],\n    \"location\": {\n      \"country\": \"US\"\n    },\n    \"removeBase64Images\": true,\n    \"blockAds\": true,\n    \"proxy\": \"auto\",\n  ",
+            "charCount": 834
+          },
+          {
+            "text": "## [​](https://docs.firecrawl.dev/zh/api-reference/endpoint/search\\#country-%E5%8F%82%E6%95%B0)  country 参数",
+            "charCount": 107
+          }
+        ]
+      },
+      {
+        "title": "Recherche - Firecrawl Docs",
+        "url": "https://docs.firecrawl.dev/fr/api-reference/endpoint/search",
+        "description": "Exclut des résultats de recherche les URL qui ne sont pas valides pour d'autres endpoints Firecrawl. Cela permet de réduire les erreurs si vous transmettez les ...",
+        "position": 4,
+        "source": "web",
+        "metadata": {
+          "sourceURL": "https://docs.firecrawl.dev/fr/api-reference/endpoint/search",
+          "finalURL": "https://docs.firecrawl.dev/fr/api-reference/endpoint/search",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "```\ncurl --request POST \\\n  --url https://api.firecrawl.dev/v2/search \\\n  --header 'Authorization: Bearer <token>' \\\n  --header 'Content-Type: application/json' \\\n  --data '\n{\n  \"query\": \"<string>\",\n  \"limit\": 10,\n  \"sources\": [\\\n    \"web\"\\\n  ],\n  \"categories\": [\\\n    {\\\n      \"type\": \"github\"\\\n    }\\\n  ],\n  \"tbs\": \"<string>\",\n  \"location\": \"<string>\",\n  \"country\": \"US\",\n  \"timeout\": 60000,\n  \"ignoreInvalidURLs\": false,\n  \"enterprise\": [\\\n    \"anon\"\\\n  ],\n  \"scrapeOptions\": {\n    \"formats\": [\\\n      \"markdown\"\\\n    ],\n    \"onlyMainContent\": true,\n    \"maxAge\": 172800000,\n    \"waitFor\": 0,\n    \"mobile\": false,\n    \"skipTlsVerification\": true,\n    \"timeout\": 60000,\n    \"parsers\": [\\\n      \"pdf\"\\\n    ],\n    \"location\": {\n      \"country\": \"US\"\n    },\n    \"removeBase64Images\": true,\n    \"blockAds\": true,\n    \"proxy\": \"auto\",\n  ",
+            "charCount": 834
+          },
+          {
+            "text": "```\ncurl --request POST \\\n  --url https://api.firecrawl.dev/v2/search \\\n  --header 'Authorization: Bearer <token>' \\\n  --header 'Content-Type: application/json' \\\n  --data '\n{\n  \"query\": \"<string>\",\n  \"limit\": 10,\n  \"sources\": [\\\n    \"web\"\\\n  ],\n  \"categories\": [\\\n    {\\\n      \"type\": \"github\"\\\n    }\\\n  ],\n  \"tbs\": \"<string>\",\n  \"location\": \"<string>\",\n  \"country\": \"US\",\n  \"timeout\": 60000,\n  \"ignoreInvalidURLs\": false,\n  \"enterprise\": [\\\n    \"anon\"\\\n  ],\n  \"scrapeOptions\": {\n    \"formats\": [\\\n      \"markdown\"\\\n    ],\n    \"onlyMainContent\": true,\n    \"maxAge\": 172800000,\n    \"waitFor\": 0,\n    \"mobile\": false,\n    \"skipTlsVerification\": true,\n    \"timeout\": 60000,\n    \"parsers\": [\\\n      \"pdf\"\\\n    ],\n    \"location\": {\n      \"country\": \"US\"\n    },\n    \"removeBase64Images\": true,\n    \"blockAds\": true,\n    \"proxy\": \"auto\",\n  ",
+            "charCount": 834
+          },
+          {
+            "text": "## [​](https://docs.firecrawl.dev/fr/api-reference/endpoint/search\\#param%C3%A8tre-country)  Paramètre country",
+            "charCount": 110
+          }
+        ]
+      },
+      {
+        "title": "CLI - Firecrawl Docs",
+        "url": "https://docs.firecrawl.dev/es/sdks/cli",
+        "description": "Busca, haz scraping e interactúa con la web directamente desde la terminal. La CLI de Firecrawl funciona de forma independiente o como un Skill que los ...",
+        "position": 5,
+        "source": "web",
+        "metadata": {
+          "sourceURL": "https://docs.firecrawl.dev/es/sdks/cli",
+          "finalURL": "https://docs.firecrawl.dev/es/sdks/cli",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "- [Búsqueda](https://docs.firecrawl.dev/es/features/search)\n- scraping",
+            "charCount": 70
+          },
+          {
+            "text": "# Configure and persist the custom API URL\nfirecrawl config --api-url http://localhost:3002\n```",
+            "charCount": 95
+          },
+          {
+            "text": "| Opción | Descripción |\n| --- | --- |\n| `--limit <number>` | Número máximo de resultados (predeterminado: 5, máximo: 100) |\n| `--sources <sources>` | Fuentes de búsqueda: `web`, `images`, `news` (separadas por comas) |\n| `--categories <categories>` | Filtrar por categoría: `github`, `research`, `pdf` (separadas por comas) |\n| `--tbs <value>` | Filtro de tiempo: `qdr:h` (hora), `qdr:d` (día), `qdr:w` (semana), `qdr:m` (mes), `qdr:y` (año) |\n| `--location <location>` | Segmentación geográfica (p. ej., “Berlin,Germany”) |\n| `--country <code>` | Código de país ISO (predeterminado: US) |\n| `--timeout <ms>` | Tiempo de espera en milisegundos (predeterminado: 60000) |\n| `--ignore-invalid-urls` | Excluir URLs no válidas para otros endpoints de Firecrawl |\n| `--scrape` | Extraer resultados de búsqueda |\n| `--scrape-formats <format",
+            "charCount": 834
+          }
+        ]
+      }
+    ],
+    "searchIds": [
+      "019dc369-6eeb-74da-94d7-85c3c83b8667"
+    ],
+    "usage": {
+      "resultCount": 5,
+      "charsReturned": 8085,
+      "creditsUsed": 7,
+      "rawResultCount": {
+        "web": 5,
+        "news": 0,
+        "images": 0
+      }
+    }
+  },
+  "results": [
+    {
+      "title": "Search - Firecrawl Docs",
+      "url": "https://docs.firecrawl.dev/api-reference/endpoint/search",
+      "domain": "docs.firecrawl.dev",
+      "description": "Use the country parameter to specify the country for search results using ISO country codes. ... Filter search results by specific categories using the categories ...",
+      "chunks": [
+        {
+          "text": "```\ncurl --request POST \\\n  --url https://api.firecrawl.dev/v2/search \\\n  --header 'Authorization: Bearer <token>' \\\n  --header 'Content-Type: application/json' \\\n  --data '\n{\n  \"query\": \"<string>\",\n  \"limit\": 10,\n  \"sources\": [\\\n    \"web\"\\\n  ],\n  \"categories\": [\\\n    {\\\n      \"type\": \"github\"\\\n    }\\\n  ],\n  \"tbs\": \"<string>\",\n  \"location\": \"<string>\",\n  \"country\": \"US\",\n  \"timeout\": 60000,\n  \"ignoreInvalidURLs\": false,\n  \"enterprise\": [\\\n    \"anon\"\\\n  ],\n  \"scrapeOptions\": {\n    \"formats\": [\\\n      \"markdown\"\\\n    ],\n    \"onlyMainContent\": true,\n    \"maxAge\": 172800000,\n    \"waitFor\": 0,\n    \"mobile\": false,\n    \"skipTlsVerification\": true,\n    \"timeout\": 60000,\n    \"parsers\": [\\\n      \"pdf\"\\\n    ],\n    \"location\": {\n      \"country\": \"US\"\n    },\n    \"removeBase64Images\": true,\n    \"blockAds\": true,\n    \"proxy\": \"auto\",\n  ",
+          "charCount": 834
+        },
+        {
+          "text": "```\ncurl --request POST \\\n  --url https://api.firecrawl.dev/v2/search \\\n  --header 'Authorization: Bearer <token>' \\\n  --header 'Content-Type: application/json' \\\n  --data '\n{\n  \"query\": \"<string>\",\n  \"limit\": 10,\n  \"sources\": [\\\n    \"web\"\\\n  ],\n  \"categories\": [\\\n    {\\\n      \"type\": \"github\"\\\n    }\\\n  ],\n  \"tbs\": \"<string>\",\n  \"location\": \"<string>\",\n  \"country\": \"US\",\n  \"timeout\": 60000,\n  \"ignoreInvalidURLs\": false,\n  \"enterprise\": [\\\n    \"anon\"\\\n  ],\n  \"scrapeOptions\": {\n    \"formats\": [\\\n      \"markdown\"\\\n    ],\n    \"onlyMainContent\": true,\n    \"maxAge\": 172800000,\n    \"waitFor\": 0,\n    \"mobile\": false,\n    \"skipTlsVerification\": true,\n    \"timeout\": 60000,\n    \"parsers\": [\\\n      \"pdf\"\\\n    ],\n    \"location\": {\n      \"country\": \"US\"\n    },\n    \"removeBase64Images\": true,\n    \"blockAds\": true,\n    \"proxy\": \"auto\",\n  ",
+          "charCount": 834
+        },
+        {
+          "text": "## [​](https://docs.firecrawl.dev/api-reference/endpoint/search\\#country-parameter)  Country Parameter",
+          "charCount": 102
+        }
+      ],
+      "source": "web",
+      "position": 1
+    },
+    {
+      "title": "CLI - Firecrawl Docs",
+      "url": "https://docs.firecrawl.dev/sdks/cli",
+      "domain": "docs.firecrawl.dev",
+      "description": "Search, scrape, and interact with the web directly from the terminal. The Firecrawl CLI works standalone or as a skill that AI coding agents like Claude ...",
+      "chunks": [
+        {
+          "text": "- [Installation](https://docs.firecrawl.dev/sdks/cli#installation)\n- [Authentication](https://docs.firecrawl.dev/sdks/cli#authentication)\n- [Login](https://docs.firecrawl.dev/sdks/cli#login)\n- [View Configuration](https://docs.firecrawl.dev/sdks/cli#view-configuration)\n- [Logout](https://docs.firecrawl.dev/sdks/cli#logout)\n- [Self-Hosted / Local Development](https://docs.firecrawl.dev/sdks/cli#self-hosted-%2F-local-development)\n- [Check Status](https://docs.firecrawl.dev/sdks/cli#check-status)\n- [Commands](https://docs.firecrawl.dev/sdks/cli#commands)\n- [Scrape](https://docs.firecrawl.dev/sdks/cli#scrape)\n- [Output Formats](https://docs.firecrawl.dev/sdks/cli#output-formats)\n- [Scrape Options](https://docs.firecrawl.dev/sdks/cli#scrape-options)\n- [Search](https://docs.firecrawl.dev/sdks/cli#search)\n- [Search Options](https",
+          "charCount": 834
+        },
+        {
+          "text": "# Configure and persist the custom API URL\nfirecrawl config --api-url http://localhost:3002\n```",
+          "charCount": 95
+        },
+        {
+          "text": "| Option | Description |\n| --- | --- |\n| `--limit <number>` | Maximum results (default: 5, max: 100) |\n| `--sources <sources>` | Sources to search: `web`, `images`, `news` (comma-separated) |\n| `--categories <categories>` | Filter by category: `github`, `research`, `pdf` (comma-separated) |\n| `--tbs <value>` | Time filter: `qdr:h` (hour), `qdr:d` (day), `qdr:w` (week), `qdr:m` (month), `qdr:y` (year) |\n| `--location <location>` | Geo-targeting (e.g., “Berlin,Germany”) |\n| `--country <code>` | ISO country code (default: US) |\n| `--timeout <ms>` | Timeout in milliseconds (default: 60000) |\n| `--ignore-invalid-urls` | Exclude URLs invalid for other Firecrawl endpoints |\n| `--scrape` | Scrape search results |\n| `--scrape-formats <formats>` | Formats for scraped content (default: markdown) |\n| `--only-main-content` | Include on",
+          "charCount": 834
+        }
+      ],
+      "source": "web",
+      "position": 2
+    },
+    {
+      "title": "Search（搜索） - Firecrawl Docs",
+      "url": "https://docs.firecrawl.dev/zh/api-reference/endpoint/search",
+      "domain": "docs.firecrawl.dev",
+      "description": "... categories\": [ { \"type\": \"github\" } ], \"tbs\": \"<string>\", \"location\": \"<string>\", \"country\": \"US\", \"timeout\": 60000, \"ignoreInvalidURLs\": false, \"enterprise\": [ ...",
+      "chunks": [
+        {
+          "text": "```\ncurl --request POST \\\n  --url https://api.firecrawl.dev/v2/search \\\n  --header 'Authorization: Bearer <token>' \\\n  --header 'Content-Type: application/json' \\\n  --data '\n{\n  \"query\": \"<string>\",\n  \"limit\": 10,\n  \"sources\": [\\\n    \"web\"\\\n  ],\n  \"categories\": [\\\n    {\\\n      \"type\": \"github\"\\\n    }\\\n  ],\n  \"tbs\": \"<string>\",\n  \"location\": \"<string>\",\n  \"country\": \"US\",\n  \"timeout\": 60000,\n  \"ignoreInvalidURLs\": false,\n  \"enterprise\": [\\\n    \"anon\"\\\n  ],\n  \"scrapeOptions\": {\n    \"formats\": [\\\n      \"markdown\"\\\n    ],\n    \"onlyMainContent\": true,\n    \"maxAge\": 172800000,\n    \"waitFor\": 0,\n    \"mobile\": false,\n    \"skipTlsVerification\": true,\n    \"timeout\": 60000,\n    \"parsers\": [\\\n      \"pdf\"\\\n    ],\n    \"location\": {\n      \"country\": \"US\"\n    },\n    \"removeBase64Images\": true,\n    \"blockAds\": true,\n    \"proxy\": \"auto\",\n  ",
+          "charCount": 834
+        },
+        {
+          "text": "```\ncurl --request POST \\\n  --url https://api.firecrawl.dev/v2/search \\\n  --header 'Authorization: Bearer <token>' \\\n  --header 'Content-Type: application/json' \\\n  --data '\n{\n  \"query\": \"<string>\",\n  \"limit\": 10,\n  \"sources\": [\\\n    \"web\"\\\n  ],\n  \"categories\": [\\\n    {\\\n      \"type\": \"github\"\\\n    }\\\n  ],\n  \"tbs\": \"<string>\",\n  \"location\": \"<string>\",\n  \"country\": \"US\",\n  \"timeout\": 60000,\n  \"ignoreInvalidURLs\": false,\n  \"enterprise\": [\\\n    \"anon\"\\\n  ],\n  \"scrapeOptions\": {\n    \"formats\": [\\\n      \"markdown\"\\\n    ],\n    \"onlyMainContent\": true,\n    \"maxAge\": 172800000,\n    \"waitFor\": 0,\n    \"mobile\": false,\n    \"skipTlsVerification\": true,\n    \"timeout\": 60000,\n    \"parsers\": [\\\n      \"pdf\"\\\n    ],\n    \"location\": {\n      \"country\": \"US\"\n    },\n    \"removeBase64Images\": true,\n    \"blockAds\": true,\n    \"proxy\": \"auto\",\n  ",
+          "charCount": 834
+        },
+        {
+          "text": "## [​](https://docs.firecrawl.dev/zh/api-reference/endpoint/search\\#country-%E5%8F%82%E6%95%B0)  country 参数",
+          "charCount": 107
+        }
+      ],
+      "source": "web",
+      "position": 3
+    },
+    {
+      "title": "Recherche - Firecrawl Docs",
+      "url": "https://docs.firecrawl.dev/fr/api-reference/endpoint/search",
+      "domain": "docs.firecrawl.dev",
+      "description": "Exclut des résultats de recherche les URL qui ne sont pas valides pour d'autres endpoints Firecrawl. Cela permet de réduire les erreurs si vous transmettez les ...",
+      "chunks": [
+        {
+          "text": "```\ncurl --request POST \\\n  --url https://api.firecrawl.dev/v2/search \\\n  --header 'Authorization: Bearer <token>' \\\n  --header 'Content-Type: application/json' \\\n  --data '\n{\n  \"query\": \"<string>\",\n  \"limit\": 10,\n  \"sources\": [\\\n    \"web\"\\\n  ],\n  \"categories\": [\\\n    {\\\n      \"type\": \"github\"\\\n    }\\\n  ],\n  \"tbs\": \"<string>\",\n  \"location\": \"<string>\",\n  \"country\": \"US\",\n  \"timeout\": 60000,\n  \"ignoreInvalidURLs\": false,\n  \"enterprise\": [\\\n    \"anon\"\\\n  ],\n  \"scrapeOptions\": {\n    \"formats\": [\\\n      \"markdown\"\\\n    ],\n    \"onlyMainContent\": true,\n    \"maxAge\": 172800000,\n    \"waitFor\": 0,\n    \"mobile\": false,\n    \"skipTlsVerification\": true,\n    \"timeout\": 60000,\n    \"parsers\": [\\\n      \"pdf\"\\\n    ],\n    \"location\": {\n      \"country\": \"US\"\n    },\n    \"removeBase64Images\": true,\n    \"blockAds\": true,\n    \"proxy\": \"auto\",\n  ",
+          "charCount": 834
+        },
+        {
+          "text": "```\ncurl --request POST \\\n  --url https://api.firecrawl.dev/v2/search \\\n  --header 'Authorization: Bearer <token>' \\\n  --header 'Content-Type: application/json' \\\n  --data '\n{\n  \"query\": \"<string>\",\n  \"limit\": 10,\n  \"sources\": [\\\n    \"web\"\\\n  ],\n  \"categories\": [\\\n    {\\\n      \"type\": \"github\"\\\n    }\\\n  ],\n  \"tbs\": \"<string>\",\n  \"location\": \"<string>\",\n  \"country\": \"US\",\n  \"timeout\": 60000,\n  \"ignoreInvalidURLs\": false,\n  \"enterprise\": [\\\n    \"anon\"\\\n  ],\n  \"scrapeOptions\": {\n    \"formats\": [\\\n      \"markdown\"\\\n    ],\n    \"onlyMainContent\": true,\n    \"maxAge\": 172800000,\n    \"waitFor\": 0,\n    \"mobile\": false,\n    \"skipTlsVerification\": true,\n    \"timeout\": 60000,\n    \"parsers\": [\\\n      \"pdf\"\\\n    ],\n    \"location\": {\n      \"country\": \"US\"\n    },\n    \"removeBase64Images\": true,\n    \"blockAds\": true,\n    \"proxy\": \"auto\",\n  ",
+          "charCount": 834
+        },
+        {
+          "text": "## [​](https://docs.firecrawl.dev/fr/api-reference/endpoint/search\\#param%C3%A8tre-country)  Paramètre country",
+          "charCount": 110
+        }
+      ],
+      "source": "web",
+      "position": 4
+    },
+    {
+      "title": "CLI - Firecrawl Docs",
+      "url": "https://docs.firecrawl.dev/es/sdks/cli",
+      "domain": "docs.firecrawl.dev",
+      "description": "Busca, haz scraping e interactúa con la web directamente desde la terminal. La CLI de Firecrawl funciona de forma independiente o como un Skill que los ...",
+      "chunks": [
+        {
+          "text": "- [Búsqueda](https://docs.firecrawl.dev/es/features/search)\n- scraping",
+          "charCount": 70
+        },
+        {
+          "text": "# Configure and persist the custom API URL\nfirecrawl config --api-url http://localhost:3002\n```",
+          "charCount": 95
+        },
+        {
+          "text": "| Opción | Descripción |\n| --- | --- |\n| `--limit <number>` | Número máximo de resultados (predeterminado: 5, máximo: 100) |\n| `--sources <sources>` | Fuentes de búsqueda: `web`, `images`, `news` (separadas por comas) |\n| `--categories <categories>` | Filtrar por categoría: `github`, `research`, `pdf` (separadas por comas) |\n| `--tbs <value>` | Filtro de tiempo: `qdr:h` (hora), `qdr:d` (día), `qdr:w` (semana), `qdr:m` (mes), `qdr:y` (año) |\n| `--location <location>` | Segmentación geográfica (p. ej., “Berlin,Germany”) |\n| `--country <code>` | Código de país ISO (predeterminado: US) |\n| `--timeout <ms>` | Tiempo de espera en milisegundos (predeterminado: 60000) |\n| `--ignore-invalid-urls` | Excluir URLs no válidas para otros endpoints de Firecrawl |\n| `--scrape` | Extraer resultados de búsqueda |\n| `--scrape-formats <format",
+          "charCount": 834
+        }
+      ],
+      "source": "web",
+      "position": 5
+    }
+  ]
+}

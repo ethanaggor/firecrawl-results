@@ -1,0 +1,10 @@
+{
+  "objective": "Find official Firecrawl documentation for MCP/search behavior, response context shape, scrapeOptions, and agent-facing usage.",
+  "search_queries": [
+    "Firecrawl MCP search docs",
+    "Firecrawl search scrapeOptions",
+    "docs.firecrawl.dev search MCP"
+  ],
+  "session_id": "9f2e4a8d1c7b4e6390af5d2c8b7611e4",
+  "model_name": "gpt-5.5 xhigh"
+}

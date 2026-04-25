@@ -1,0 +1,17 @@
+{
+  "query": "agentic search benchmark methodology evaluating AI agents web search browsing retrieval multi step questions",
+  "content": "chunks",
+  "maxResults": 8,
+  "maxCharsPerResult": 1800,
+  "maxCharsTotal": 12000,
+  "focus": "benchmark methodology, task construction, evaluation metrics, human grading, source citation requirements, contamination controls, and limitations",
+  "freshness": "year",
+  "sources": [
+    "web"
+  ],
+  "categories": [
+    "research"
+  ],
+  "ignoreInvalidURLs": true,
+  "includeRawResults": true
+}

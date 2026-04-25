@@ -32,7 +32,7 @@ function looksLikeResult(item) {
     item &&
     typeof item === 'object' &&
     !Array.isArray(item) &&
-    typeof item.url === 'string'
+    typeof (item.url ?? item.sourceURL ?? item.finalURL) === 'string'
   );
 }
 
@@ -49,6 +49,33 @@ function collectResultLike(value, out = []) {
   return out;
 }
 
+function textParts(item) {
+  const values = [
+    item.content,
+    item.text,
+    item.markdown,
+    item.summary,
+    item.snippet,
+    item.highlight,
+    item.raw_content,
+    item.rawContent,
+    item.full_content,
+    item.fullContent,
+    Array.isArray(item.excerpts) ? item.excerpts.join('\n\n') : undefined,
+    Array.isArray(item.highlights) ? item.highlights.join('\n\n') : undefined,
+  ];
+
+  return values
+    .filter((value) => typeof value === 'string' && value.trim().length > 0)
+    .map((value) => value.trim());
+}
+
+function clipContent(text, maxChars = 8000) {
+  if (!text) return undefined;
+  if (text.length <= maxChars) return text;
+  return `${text.slice(0, maxChars)}\n\n[normalized excerpt truncated ${text.length - maxChars} chars; full response saved in raw artifact]`;
+}
+
 function normalizeItem(item, index) {
   const chunks = Array.isArray(item.chunks)
     ? item.chunks.map((chunk) =>
@@ -58,22 +85,15 @@ function normalizeItem(item, index) {
       )
     : undefined;
 
-  const content =
-    item.content ??
-    item.text ??
-    item.markdown ??
-    item.summary ??
-    item.snippet ??
-    item.highlight ??
-    item.highlights?.join?.('\n\n');
+  const content = textParts(item).join('\n\n');
 
   return {
     title: item.title ?? item.name,
-    url: item.url,
-    domain: getDomain(item.url),
+    url: item.url ?? item.sourceURL ?? item.finalURL,
+    domain: getDomain(item.url ?? item.sourceURL ?? item.finalURL),
     description: item.description ?? item.snippet,
-    publishedDate: item.publishedDate ?? item.date,
-    content: typeof content === 'string' ? content : undefined,
+    publishedDate: item.publishedDate ?? item.publish_date ?? item.date,
+    content: clipContent(content),
     chunks,
     source: item.source,
     category: item.category,
@@ -81,17 +101,61 @@ function normalizeItem(item, index) {
   };
 }
 
+function resultLikesFromParsed(parsed) {
+  const resultLikes = collectResultLike(parsed);
+
+  if (
+    parsed &&
+    typeof parsed === 'object' &&
+    !Array.isArray(parsed) &&
+    typeof parsed.markdown === 'string'
+  ) {
+    const metadata = parsed.metadata ?? {};
+    const url = parsed.url ?? metadata.sourceURL ?? metadata.finalURL ?? metadata.url;
+    if (url) {
+      resultLikes.unshift({
+        title: parsed.title ?? metadata.title,
+        url,
+        sourceURL: metadata.sourceURL,
+        finalURL: metadata.finalURL,
+        markdown: parsed.markdown,
+      });
+    }
+  }
+
+  return resultLikes;
+}
+
+function markdownSections(rawText) {
+  const matches = Array.from(rawText.matchAll(/^#\s+(.+?)\nURL:\s+(https?:\/\/\S+)/gm));
+  if (!matches.length) return [];
+
+  return matches.map((match, index) => {
+    const start = match.index ?? 0;
+    const end = matches[index + 1]?.index ?? rawText.length;
+    return {
+      title: match[1].trim(),
+      url: match[2].trim(),
+      markdown: rawText.slice(start, end).trim(),
+    };
+  });
+}
+
 export function normalizeToolResult(providerId, toolName, response) {
   const rawText = extractMcpText(response);
   const parsedText = maybeParseJson(rawText);
   const parsed = parsedText ?? response;
-  const resultLikes = collectResultLike(parsed);
+  const resultLikes = [
+    ...markdownSections(rawText),
+    ...resultLikesFromParsed(parsed),
+  ];
   const seen = new Set();
   const results = [];
 
   for (const item of resultLikes) {
-    if (seen.has(item.url)) continue;
-    seen.add(item.url);
+    const url = item.url ?? item.sourceURL ?? item.finalURL;
+    if (!url || seen.has(url)) continue;
+    seen.add(url);
     results.push(normalizeItem(item, results.length));
   }
 

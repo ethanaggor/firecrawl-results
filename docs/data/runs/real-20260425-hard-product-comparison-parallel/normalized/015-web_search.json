@@ -101,60 +101,70 @@
       "title": "Databricks - Tavily Docs",
       "url": "https://docs.tavily.com/documentation/partnerships/databricks",
       "domain": "docs.tavily.com",
+      "content": "Tavily MCP Server is available on Databricks Marketplace, enabling one-click installation that creates a secure Unity Catalog connection for authenticated",
       "position": 1
     },
     {
       "title": "Tavily MCP Server",
       "url": "https://hub.docker.com/mcp/server/tavily",
       "domain": "hub.docker.com",
+      "content": "The Tavily MCP server provides seamless interaction with the tavily-search and tavily-extract tools, real-time web search capabilities through the tavily-search",
       "position": 2
     },
     {
       "title": "Google ADK",
       "url": "https://docs.tavily.com/documentation/integrations/google-adk",
       "domain": "docs.tavily.com",
+      "content": "The Tavily MCP Server connects your ADK agent to Tavily's AI-focused search, extraction, and crawling platform. This gives your agent the ability to perform",
       "position": 3
     },
     {
       "title": "Tavily MCP Server - Tavily Docs",
       "url": "https://docs.tavily.com/documentation/mcp",
       "domain": "docs.tavily.com",
+      "content": "The Model Context Protocol (MCP) is an open standard that enables AI systems to interact seamlessly with various data sources and tools, facilitating secure, two-way connections. Developed by Anthropic, the Model Context Protocol (MCP) enables AI assistants like Claude to seamlessly integrate with Tavily’s advanced search and data extraction capabilities. This integration provides AI models with real-time access to web information, complete with sophisticated filtering options and domain-specific search features.\n\nThe Tavily MCP server provides:\n\n* Seamless interaction with the tavily-search and tavily-extract tools\n* Real-time web search capabilities through the tavily-search tool\n* Intelligent data extraction from web pages via the tavily-extract tool\n\n## ​\n\nRemote MCP Server\n\nThe easiest way to take advantage of Tavily MCP is by using the remote URL. This provides a seamless experience without requiring local installation or configuration.\nSimply use the remote MCP server URL with your Tavily API key:\n\nCopy\n\nAsk AI\n\n```\nhttps://mcp.tavily.com/mcp/?tavilyApiKey=<your-api-key>\n```\n\nGet your Tavily API key from [tavily.com](https://www.tavily.com/) .\n\n### ​\n\nConnect to Cursor\n\n[](https://cursor.com/en-US/install-mcp?name=tavily-remote-mcp&config=eyJjb21tYW5kIjoibnB4IC15IG1jcC1yZW1vdGUgaHR0cHM6Ly9tY3AudGF2aWx5LmNvbS9tY3AvP3RhdmlseUFwaUtleT08eW91ci1hcGkta2V5PiIsImVudiI6e319) Click the ⬆️ Add to Cursor ⬆️ button, this will do most of the work for you but you will still need to edit the configuration to add your API-KEY. You can get a Tavily API key [here](https://www.tavily.com/) . once you click the button you should be redirect to Cursor … You will then be redirected to your `mcp.json` file where you have to add `your-api-key` .\n\nCopy\n\nAsk AI\n\n```\n{   \"mcpServers\" : {     \"tavily-remote-mcp\" : {       \"command\" :  \"npx -y mcp-remote https://mcp.tavily.com/mcp/?\ntavilyApiKey=<your-api-key>\" ,       \"env\" : {}     }   } }\n```\n\n### ​\n\nConnect to Claude Desktop\n\nClaude desktop now supports adding `integrations` which is currently in beta. An integration in this case is the Tavily Remote MCP, below I will explain how to add the MCP as an `integration` in Claude desktop. Open claude desktop, click the button with the two sliders and then navigate to add integrations. Name the integration and insert the Tavily remote MCP url with your API key. You can get a Tavily API key [here](https://www.tavily.com/) . Click `Add` to confirm.\n\n### ​\n\nOpenAI\n\nAllow models to use remote MCP servers to perform tasks.\n\n* You first need to export your OPENAI\\_API\\_KEY\n* You must also add your Tavily API-key to `<your-api-key>` , you can get a Tavily API key [here](https://www.tavily.com/)\n\nCopy\n\nAsk AI\n\n```\nfrom  openai  import  OpenAI client  =  OpenAI() resp  =  client.responses.create(     model = \"gpt-4.",
       "position": 4
     },
     {
       "title": "Databricks Marketplace",
       "url": "https://marketplace.databricks.com/details/3709f418-1ed3-42a8-a753-38d06ce281c7/Tavily_Tavily-MCP-Server",
       "domain": "marketplace.databricks.com",
+      "content": "##  Marketplace\n\n[Provide feedback](https://databricks.sjc1.qualtrics.com/jfe/form/SV_24PQ3EYaJgt1gou?eventId=17767741033775e4j1h7w)\n\nLearn\n\nTry for free\n\n* + [Product](https://www.databricks.com/product/data-lakehouse)\n    + [Platform Overview](https://www.databricks.com/product/data-lakehouse)\n    + [Pricing](https://www.databricks.com/product/pricing)\n    + [Open Source Tech](https://www.databricks.com/product/open-source)\n    + [Try Databricks](https://signup.databricks.com/?dbx_source=marketplace)\n    + [Demo](https://www.databricks.com/discover/demos)\n* + [Learn & Support](https://www.databricks.com/learn)\n    + [Documentation](https://docs.databricks.com/?_gl=1*1w1dhn0*_gcl_aw*R0NMLjE2ODQ5NDY4NjkuQ2p3S0NBanc2N2FqQmhBVkVpd0EyZ19qRUFxelJidVlYWVo2ckp0LXVWUmdWdEdhVWYzV2RhRFlQQm9FZG1KaW90MzVoa0hJYWFWRVpSb0NYZ1lRQXZEX0J3RQ..*_gcl_au*MTkzNDMwMTU2LjE2ODQ4NDkxOTQ.&_ga=2.150734399.864130997.1685115452-363909835.1676038271&_gac=1.249112309.1684946869.",
       "position": 5
     },
     {
       "title": "Tavily MCP Server - GitHub",
       "url": "https://github.com/tavily-ai/tavily-mcp",
       "domain": "github.com",
+      "content": "main\n\nBranches Tags\n\n \n\nGo to file\n\nCode\n\nOpen more actions menu\n\n## Folders and files\n\n|Name |Name |Last commit message |Last commit date |\n| --- | --- | --- | --- |\n|## Latest commit\n\n## History\n\n209 Commits\n\n 209 Commits |\n|assets |assets | | |\n|src |src | | |\n|.gitignore |.gitignore | | |\n|Dockerfile |Dockerfile | | |\n|LICENCE |LICENCE | | |\n|README.md |README.md | | |\n|package-lock.json |package-lock.json | | |\n|package.json |package.json | | |\n|smithery.yaml |smithery.yaml | | |\n|tsconfig.json |tsconfig.json | | |\n|View all files |\n\n## Repository files navigation\n\n* README\n* MIT license\n\n# Tavily MCP Server\n\n[](https://camo.githubusercontent.com/2058d7a8d0fe5392e4650ddb46088f94030656806b59545e827e5fb4a60858f2/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f73746172732f746176696c792d61692f746176696c792d6d63703f7374796c653d736f6369616c) [](https://camo.githubusercontent.\ncom/92ee4661cfc67d8ded5d09f86ca75eae016e825147c4a6449b4389beab747b11/68747470733a2f2f696d672e736869656c64732e696f2f6e706d2f64742f746176696c792d6d6370) [](https://camo.githubusercontent.com/1524d777e29c61bbe42e68f4ab503a3662a9f9fc551c94e369e60f0f1ae86b40/68747470733a2f2f736d6974686572792e61692f62616467652f40746176696c792d61692f746176696c792d6d6370)\n\nThe Tavily MCP server provides:\n\n* search, extract, map, crawl tools\n* Real-time web search capabilities through the tavily-search tool\n* Intelligent data extraction from web pages via the tavily-extract tool\n* Powerful web mapping tool that creates a structured map of website\n* Web crawler that systematically explores websites\n\n### 📚 Helpful Resources\n\n* [Tutorial](https://medium.com/@dustin_36183/building-a-knowledge-graph-assistant-combining-tavily-and-neo4j-mcp-servers-with-claude-db92de075df9) on combining Tavily MCP with Neo4j MCP server\n* [Tutorial](https://medium.\ncom/@dustin_36183/connect-your-coding-assistant-to-the-web-integrating-tavily-mcp-with-cline-in-vs-code-5f923a4983d1) on integrating Tavily MCP with Cline in VS Code\n\n## Remote MCP Server\n\nConnect directly to Tavily's remote MCP server instead of running it locally. This provides a seamless experience without requiring local installation or configuration.\n\nSimply use the remote MCP server URL with your Tavily API key:\n\n```\nhttps://mcp.tavily.com/mcp/?tavilyApiKey=<your-api-key>\n```\n\nGet your Tavily API key from [tavily.com](https://www.tavily.com/) .\n\nAlternatively, you can pass your API key through an Authorization header if the MCP client supports this:\n\n```\nAuthorization: Bearer <your-api-key>\n```\n\n**Note:** When using the remote MCP, you can specify default parameters for all requests by including a `DEFAULT_PARAMETERS` header containing a JSON object with your desired defaults. Example:\n\n```\n{ \"include_images\" : true , \"search_depth\" : \" basic \" , \"max_results\" : 10 }\n```",
       "position": 6
     },
     {
       "title": "Tavily - MCP Registry",
       "url": "https://github.com/mcp/tavily-ai/tavily-mcp",
       "domain": "github.com",
+      "content": "Tavily - MCP Registry\nJan 28, 2026 — A faster, safer way to build with AI: the GitHub MCP Registry centralizes MCP servers for effortless discovery, integration, and open collaboration.",
       "position": 7
     },
     {
       "title": "tavily-ai repositories",
       "url": "https://github.com/orgs/tavily-ai/repositories",
       "domain": "github.com",
+      "content": "tavily-ai repositories\n5 days ago — tavily-mcp. Public. tavily-ai/tavily-mcp's past year of commit activity. Production ready MCP server with real-time search, extract, map & crawl.",
       "position": 8
     },
     {
       "title": "Tavily MCP Server for Klavis AI - GitHub",
       "url": "https://github.com/jameskanyiri/tavily_mcp_server",
       "domain": "github.com",
+      "content": "Tavily MCP Server for Klavis AI - GitHub\nThis MCP server integrates the Tavily AI search platform into the Klavis AI ecosystem. It provides atomic, AI-friendly tools for real-time web",
       "position": 9
     },
     {
       "title": "Tavily Agent Skills",
       "url": "https://docs.tavily.com/documentation/agent-skills",
       "domain": "docs.tavily.com",
+      "content": "> ## Documentation Index\n> Fetch the complete documentation index at: https://docs.tavily.com/llms.txt\n> Use this file to discover all available pages before exploring further.\n\n# Tavily Agent Skills\n\n> Official skills that define best practices, adding web search, extraction, crawling, and research to any AI coding agent.\n\n<CardGroup cols={2}>\n  <Card title=\"GitHub\" icon=\"github\" href=\"https://github.com/tavily-ai/skills\" horizontal>\n    `/tavily-ai/skills`\n  </Card>\n\n  <Card title=\"Get API Key\" icon=\"key\" href=\"https://app.tavily.com\" horizontal>\n    Sign up at tavily.com\n  </Card>\n</CardGroup>\n\nAgent Skills let you add Tavily's web capabilities to AI coding agents like Claude Code, Cursor, Cline, Codex, Windsurf, and others via the [Tavily CLI](https://docs.tavily.com/documentation/tavily-cli).\n\n## Available Skills\n\n| Skill                   | Description                                                                      |\n| ----------------------- | -------------------------------------------------------------------------------- |\n| `tavily-search`         | Web search with agent-optimized results.                                         |\n| `tavily-extract`        | Extract clean markdown/text from URLs.                                           |\n| `tavily-crawl`          | Crawl a website and extract content from multiple pages with semantic filtering. |\n| `tavily-map`            | Discover and list all URLs on a website.                                         |\n| `tavily-research`       | AI-powered research that produces a cited report.                                |\n| `tavily-best-practices` | Reference docs for building production-ready Tavily integrations.                |\n\n## Installation\n\n### Step 1:\n\nInstall the Tavily CLI:\n\n```bash theme={null}\ncurl -fsSL https://cli.tavily.com/install.sh | bash\n```\n\nSee the [CLI docs](https://docs.tavily.\ncom/documentation/tavily-cli) for other installation methods.\n\n### Step 2:\n\nInstall the skills:\n\n```bash theme={null}\nnpx skills add tavily-ai/skills --all\n```\n\nOr install a specific skill:\n\n```bash theme={null}\nnpx skills add tavily-ai/skills --skill tavily-search\n```\n\nAfter installation, restart your AI agent to load the skills.\n\n## Usage\n\nOnce installed, skills are automatically available to your agent. No additional configuration is needed — your agent will use them when appropriate based on your prompts.\n\n### Automatic Invocation\n\nSimply describe what you need and your agent will use the right Tavily skill:\n\n```\nSearch for the latest news on AI regulations\n```\n\n```\nCrawl the Stripe API docs and save them locally\n```\n\n```\nResearch the competitive landscape for AI coding assistants\n```\n\n### Explicit Skill Invocation\n\nYou can also invoke skills directly using slash commands:\n\n```\n/tavily-search current React best practices\n```\n\n```\n/tavily-extract https://example.com/blog/post\n```",
       "position": 10
     }
   ]

@@ -1,0 +1,20 @@
+{
+  "id": "exa",
+  "name": "Exa remote MCP",
+  "transport": "streamable-http",
+  "url": "https://mcp.exa.ai/mcp?tools=web_search_exa,web_fetch_exa,web_search_advanced_exa",
+  "headers": [
+    {
+      "name": "x-api-key",
+      "required": true,
+      "present": true
+    }
+  ],
+  "searchTools": [
+    "web_search_exa",
+    "web_search_advanced_exa"
+  ],
+  "fetchTools": [
+    "web_fetch_exa"
+  ]
+}

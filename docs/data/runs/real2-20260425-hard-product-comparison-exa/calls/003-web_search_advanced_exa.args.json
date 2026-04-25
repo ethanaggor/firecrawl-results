@@ -1,0 +1,16 @@
+{
+  "query": "Tavily official docs search API MCP agent web search response context chunks answer images include_raw_content advanced search retrieval depth topic docs",
+  "numResults": 8,
+  "type": "auto",
+  "includeDomains": [
+    "docs.tavily.com",
+    "tavily.com"
+  ],
+  "textMaxCharacters": 5000,
+  "enableHighlights": true,
+  "highlightsMaxCharacters": 2000,
+  "highlightsQuery": "Tavily search API response shape context chunks answer raw content MCP agent retrieval depth",
+  "enableSummary": true,
+  "summaryQuery": "What does Tavily return to agents, what tool-call flow does it imply, and what retrieval-quality controls are documented?",
+  "maxAgeHours": 0
+}

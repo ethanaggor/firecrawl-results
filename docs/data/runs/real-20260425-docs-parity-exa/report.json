@@ -1,7 +1,7 @@
 {
   "status": "complete",
   "runId": "real-20260425-docs-parity-exa",
-  "generatedAt": "2026-04-25T04:59:41.457Z",
+  "generatedAt": "2026-04-25T07:04:49.275Z",
   "manifest": {
     "runId": "real-20260425-docs-parity-exa",
     "createdAt": "2026-04-25T04:55:47.654Z",
@@ -55,12 +55,63 @@
     "toolCalls": 2,
     "searchCalls": 1,
     "fetchCalls": 1,
+    "mapCalls": 0,
+    "discoveryCalls": 1,
+    "extractionCalls": 1,
     "failedCalls": 0,
+    "zeroResultCalls": 0,
+    "zeroResultSearchCalls": 0,
+    "expectedTermMissCalls": 0,
+    "expectedDomainMissCalls": 0,
+    "expectedTermMissSearchCalls": 0,
+    "expectedDomainMissSearchCalls": 0,
+    "sourcePolicyViolationCalls": 0,
+    "recoverySignalCalls": 0,
+    "recoverySignalRate": 0,
+    "totalResultCount": 9,
+    "uniqueUrlCount": 7,
+    "uniqueDomainCount": 2,
+    "duplicateUrlRate": 0.2222,
+    "expectedDomainsCovered": [
+      "docs.firecrawl.dev",
+      "github.com"
+    ],
+    "firstSearch": {
+      "tool": "web_search_advanced_exa",
+      "resultCount": 6,
+      "expectedTermHit": true,
+      "expectedDomainHit": true,
+      "rawOutputTokens": 10352,
+      "normalizedEvidenceTokens": 7055,
+      "domains": [
+        "github.com",
+        "docs.firecrawl.dev"
+      ],
+      "urls": [
+        "https://github.com/firecrawl/firecrawl/blob/6a5965a0/apps/api/src/controllers/v1/search.ts",
+        "https://docs.firecrawl.dev/api-reference/endpoint/search",
+        "https://docs.firecrawl.dev/api-reference/v1-endpoint/search",
+        "https://docs.firecrawl.dev/api-reference",
+        "https://docs.firecrawl.dev/features/search",
+        "https://docs.firecrawl.dev/"
+      ]
+    },
     "totalConnectMs": 401,
     "totalCallLatencyMs": 11727,
     "argumentTokens": 202,
     "rawOutputTokens": 32631,
-    "normalizedEvidenceTokens": 5584,
+    "normalizedEvidenceTokens": 12060,
+    "evidenceToRawTokenRatio": 0.3696,
+    "avgRawOutputTokensPerCall": 16315.5,
+    "rawOutputOutlierThresholdTokens": 50000,
+    "rawOutputOutlierCalls": 0,
+    "maxRawOutputCall": {
+      "tool": "web_fetch_exa",
+      "rawOutputTokens": 22279,
+      "normalizedEvidenceTokens": 5005,
+      "resultCount": 3
+    },
+    "avgResultsPerSearchCall": 6,
     "totalTrajectoryTokens": 34833,
     "contract": {
       "toolCount": 3,
@@ -69,6 +120,8 @@
       "descriptionTokens": 235,
       "schemaTokens": 1509,
       "totalMcpFootprintTokens": 2000,
+      "searchOnlyFootprintTokens": 1718,
+      "searchFetchFootprintTokens": 2000,
       "hasFreshnessControl": true,
       "hasSourcePolicyControl": true,
       "hasContentBudgetControl": true,

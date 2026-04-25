@@ -1,0 +1,10 @@
+{
+  "objective": "Find official Firecrawl documentation or product pages with evidence about Firecrawl search retrieval quality, benchmarks, reliability, or hard web coverage for agents.",
+  "search_queries": [
+    "Firecrawl search benchmark",
+    "Firecrawl retrieval quality",
+    "Firecrawl search agents"
+  ],
+  "session_id": "9f2e4a8d1c7b4e6390af5d2c8b7611e4",
+  "model_name": "gpt-5.5 xhigh"
+}

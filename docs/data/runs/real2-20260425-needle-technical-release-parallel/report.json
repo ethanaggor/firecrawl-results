@@ -1,0 +1,159 @@
+{
+  "status": "complete",
+  "runId": "real2-20260425-needle-technical-release-parallel",
+  "generatedAt": "2026-04-25T07:04:53.856Z",
+  "manifest": {
+    "runId": "real2-20260425-needle-technical-release-parallel",
+    "createdAt": "2026-04-25T06:53:48.674Z",
+    "provider": {
+      "id": "parallel",
+      "name": "Parallel Search remote MCP",
+      "transport": "streamable-http",
+      "url": "https://search.parallel.ai/mcp",
+      "headers": [
+        {
+          "name": "authorization",
+          "required": false,
+          "present": false
+        }
+      ],
+      "searchTools": [
+        "web_search"
+      ],
+      "fetchTools": [
+        "web_fetch"
+      ]
+    },
+    "task": {
+      "id": "needle-technical-release",
+      "family": "hard-retrieval",
+      "question": "Find a recent TypeScript or JavaScript library release after August 2025 that introduced at least three concrete API changes and identify source-backed examples.",
+      "agentGoal": "This mirrors Exa WebCode-style coding-agent search. Prefer changelogs, release notes, and official docs.",
+      "expectedTerms": [
+        "release",
+        "API",
+        "TypeScript"
+      ],
+      "freshness": "year"
+    }
+  },
+  "metrics": {
+    "provider": "parallel",
+    "taskId": "needle-technical-release",
+    "toolCalls": 4,
+    "searchCalls": 2,
+    "fetchCalls": 2,
+    "mapCalls": 0,
+    "discoveryCalls": 2,
+    "extractionCalls": 2,
+    "failedCalls": 0,
+    "zeroResultCalls": 0,
+    "zeroResultSearchCalls": 0,
+    "expectedTermMissCalls": 0,
+    "expectedDomainMissCalls": 0,
+    "expectedTermMissSearchCalls": 0,
+    "expectedDomainMissSearchCalls": 0,
+    "sourcePolicyViolationCalls": 0,
+    "recoverySignalCalls": 0,
+    "recoverySignalRate": 0,
+    "totalResultCount": 26,
+    "uniqueUrlCount": 25,
+    "uniqueDomainCount": 13,
+    "duplicateUrlRate": 0.0385,
+    "expectedDomainsCovered": [],
+    "firstSearch": {
+      "tool": "web_search",
+      "resultCount": 10,
+      "expectedTermHit": true,
+      "rawOutputTokens": 7036,
+      "normalizedEvidenceTokens": 6112,
+      "domains": [
+        "typescriptlang.org",
+        "medium.com",
+        "devblogs.microsoft.com",
+        "typescriptdocs.com",
+        "docs.npmjs.com",
+        "github.com"
+      ],
+      "urls": [
+        "https://www.typescriptlang.org/docs/handbook/release-notes/typescript-6-0.html",
+        "https://medium.com/@lamjed.gaidi070/modern-javascript-in-2025-key-concepts-and-browser-apis-every-developer-should-know-overview-991de06d7b22",
+        "https://devblogs.microsoft.com/typescript/announcing-typescript-6-0/",
+        "https://typescriptdocs.com/release-notes",
+        "https://docs.npmjs.com/cli/v8/using-npm/changelog",
+        "https://www.typescriptlang.org/docs/handbook/release-notes/typescript-5-3.html",
+        "https://devblogs.microsoft.com/typescript/announcing-typescript-5-9-rc/",
+        "https://github.com/microsoft/typescript/wiki/roadmap",
+        "https://www.typescriptlang.org/docs/handbook/release-notes/typescript-5-0.html",
+        "https://github.com/microsoft/typescript/releases"
+      ]
+    },
+    "totalConnectMs": 667,
+    "totalCallLatencyMs": 7093,
+    "argumentTokens": 539,
+    "rawOutputTokens": 23251,
+    "normalizedEvidenceTokens": 19606,
+    "evidenceToRawTokenRatio": 0.8432,
+    "avgRawOutputTokensPerCall": 5812.75,
+    "rawOutputOutlierThresholdTokens": 50000,
+    "rawOutputOutlierCalls": 0,
+    "maxRawOutputCall": {
+      "tool": "web_search",
+      "rawOutputTokens": 7502,
+      "normalizedEvidenceTokens": 6574,
+      "resultCount": 10
+    },
+    "avgResultsPerSearchCall": 10,
+    "totalTrajectoryTokens": 27590,
+    "contract": {
+      "toolCount": 2,
+      "searchToolCount": 1,
+      "fetchToolCount": 1,
+      "descriptionTokens": 63,
+      "schemaTokens": 1034,
+      "totalMcpFootprintTokens": 3800,
+      "searchOnlyFootprintTokens": 1585,
+      "searchFetchFootprintTokens": 3800,
+      "hasFreshnessControl": true,
+      "hasSourcePolicyControl": false,
+      "hasContentBudgetControl": true,
+      "hasUsageMetadata": true
+    }
+  },
+  "semanticScore": {
+    "agentModel": "gpt-5.5 xhigh",
+    "provider": "parallel",
+    "taskId": "needle-technical-release",
+    "success": true,
+    "answerSupportedByEvidence": true,
+    "retrievalQualityScore": 5,
+    "agentExperienceScore": 4,
+    "sourcePolicyAdherent": true,
+    "freshnessAdherent": true,
+    "callRationale": [
+      "Started with a broad official-release/changelog search for TypeScript or JavaScript releases after August 2025 with API changes.",
+      "Broadened from TypeScript 6.0 to library/framework candidates because Next.js 16 and React 19.2 were stronger matches for a JavaScript/TypeScript library release.",
+      "Fetched the official Next.js 16 announcement and upgrade guide to verify the release date, post-August-2025 freshness, and migration-level API changes.",
+      "Fetched official Next.js API reference pages for use cache, revalidateTag, updateTag, and proxy to obtain concrete call signatures and code examples."
+    ],
+    "strengths": [
+      "Final answer is grounded in official Next.js release notes, upgrade docs, and API reference pages.",
+      "Evidence includes a release date after August 2025 and more than three concrete API changes with code-shaped examples.",
+      "Provider returned useful excerpts with API signatures and migration examples, especially for caching and proxy APIs."
+    ],
+    "weaknesses": [
+      "The first search was broad and returned TypeScript/compiler results plus some non-official or less relevant pages before narrowing to Next.js.",
+      "The provider schema lacks explicit source-policy controls, so official-source preference had to be encoded in the objective text."
+    ],
+    "notableFailures": [
+      "The Next.js 16 blog result did not expose a normal publish_date field, but the page excerpt included official frontmatter with publishedAt: October 21st 2025."
+    ],
+    "confidence": 0.94
+  },
+  "artifacts": {
+    "answer": "scoring/final-answer.md",
+    "score": "scoring/agent-score.json",
+    "trace": "trace.jsonl",
+    "tools": "schemas/tools.json"
+  }
+}

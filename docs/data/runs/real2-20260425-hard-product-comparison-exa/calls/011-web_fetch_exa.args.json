@@ -1,0 +1,14 @@
+{
+  "urls": [
+    "https://docs.firecrawl.dev/api-reference/endpoint/search",
+    "https://docs.firecrawl.dev/mcp-server",
+    "https://docs.exa.ai/docs/reference/search-api-guide-for-coding-agents",
+    "https://exa.ai/docs/reference/search-best-practices",
+    "https://docs.parallel.ai/search/search",
+    "https://parallel.ai/blog/introducing-parallel-search",
+    "https://parallel.ai/blog/search-api-benchmark",
+    "https://docs.tavily.com/documentation/api-reference/endpoint/search",
+    "https://docs.tavily.com/documentation/mcp"
+  ],
+  "maxCharacters": 12000
+}

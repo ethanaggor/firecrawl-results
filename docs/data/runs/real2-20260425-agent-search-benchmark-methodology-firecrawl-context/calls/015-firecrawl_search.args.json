@@ -1,0 +1,19 @@
+{
+  "query": "Parallel AI search benchmark methodology WISER SimpleQA web search API benchmark document relevance",
+  "content": "chunks",
+  "maxResults": 8,
+  "maxCharsPerResult": 2200,
+  "maxCharsTotal": 14000,
+  "focus": "Parallel public benchmark methodology, benchmark names, metrics, task construction, document relevance, SimpleQA, WISER",
+  "freshness": "year",
+  "sourcePolicy": {
+    "includeDomains": [
+      "parallel.ai"
+    ]
+  },
+  "sources": [
+    "web"
+  ],
+  "ignoreInvalidURLs": true,
+  "includeRawResults": true
+}

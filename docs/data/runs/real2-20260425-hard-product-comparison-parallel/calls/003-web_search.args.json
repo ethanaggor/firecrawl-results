@@ -1,0 +1,10 @@
+{
+  "objective": "Find official Exa documentation for search tools, content/result shape, highlights, autoprompt or neural search, and agent-facing workflow.",
+  "search_queries": [
+    "Exa search API docs",
+    "Exa AI search contents",
+    "Exa MCP server docs"
+  ],
+  "session_id": "9f2e4a8d1c7b4e6390af5d2c8b7611e4",
+  "model_name": "gpt-5.5 xhigh"
+}

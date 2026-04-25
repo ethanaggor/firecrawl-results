@@ -1,0 +1,10 @@
+{
+  "objective": "Find official Parallel AI benchmark methodology for search or agent web search tools, especially benchmarks named WISER, SimpleQA, or methods describing query tasks, metrics, relevance, freshness, latency, and token or citation quality.",
+  "search_queries": [
+    "Parallel AI WISER benchmark",
+    "Parallel search benchmark SimpleQA",
+    "site:parallel.ai benchmark search"
+  ],
+  "session_id": "real2-20260425-agent-search-benchmark-methodology-parallel",
+  "model_name": "gpt-5.5 xhigh"
+}

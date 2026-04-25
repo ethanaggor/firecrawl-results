@@ -1,0 +1,14 @@
+{
+  "query": "live deep research benchmark methodology user-centric dynamic citation-grounded reports agentic search evaluation",
+  "content": "chunks",
+  "maxResults": 8,
+  "maxCharsPerResult": 1800,
+  "maxCharsTotal": 14000,
+  "focus": "task principles, dynamic/live web requirement, citation grounding, grading criteria, evaluator design, source verification, limitations",
+  "freshness": "year",
+  "sources": [
+    "web"
+  ],
+  "ignoreInvalidURLs": true,
+  "includeRawResults": true
+}

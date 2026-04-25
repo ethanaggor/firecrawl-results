@@ -1,0 +1,82 @@
+{
+  "provider": "parallel",
+  "taskId": "source-policy-docs-only",
+  "toolCalls": 4,
+  "searchCalls": 1,
+  "fetchCalls": 3,
+  "mapCalls": 0,
+  "discoveryCalls": 1,
+  "extractionCalls": 3,
+  "failedCalls": 0,
+  "zeroResultCalls": 0,
+  "zeroResultSearchCalls": 0,
+  "expectedTermMissCalls": 0,
+  "expectedDomainMissCalls": 0,
+  "expectedTermMissSearchCalls": 0,
+  "expectedDomainMissSearchCalls": 0,
+  "sourcePolicyViolationCalls": 1,
+  "recoverySignalCalls": 0,
+  "recoverySignalRate": 0,
+  "totalResultCount": 15,
+  "uniqueUrlCount": 12,
+  "uniqueDomainCount": 2,
+  "duplicateUrlRate": 0.2,
+  "expectedDomainsCovered": [
+    "docs.firecrawl.dev"
+  ],
+  "firstSearch": {
+    "tool": "web_search",
+    "resultCount": 10,
+    "expectedTermHit": true,
+    "expectedDomainHit": true,
+    "rawOutputTokens": 5978,
+    "normalizedEvidenceTokens": 5153,
+    "domains": [
+      "docs.firecrawl.dev",
+      "lobehub.com"
+    ],
+    "urls": [
+      "https://docs.firecrawl.dev/fr/api-reference/endpoint/search",
+      "https://docs.firecrawl.dev/api-reference/endpoint/search",
+      "https://lobehub.com/skills/composiohq-awesome-claude-skills-firecrawl-automation",
+      "https://docs.firecrawl.dev/quickstarts/languages/php",
+      "https://docs.firecrawl.dev/api-reference/endpoint/scrape",
+      "https://docs.firecrawl.dev/quickstarts/frameworks/cloudflare-workers",
+      "https://docs.firecrawl.dev/features/map",
+      "https://docs.firecrawl.dev/features/scrape",
+      "https://docs.firecrawl.dev/quickstarts/frameworks/rails",
+      "https://docs.firecrawl.dev/api-reference/introduction"
+    ]
+  },
+  "totalConnectMs": 674,
+  "totalCallLatencyMs": 7018,
+  "argumentTokens": 512,
+  "rawOutputTokens": 25472,
+  "normalizedEvidenceTokens": 9912,
+  "evidenceToRawTokenRatio": 0.3891,
+  "avgRawOutputTokensPerCall": 6368,
+  "rawOutputOutlierThresholdTokens": 50000,
+  "rawOutputOutlierCalls": 0,
+  "maxRawOutputCall": {
+    "tool": "web_fetch",
+    "rawOutputTokens": 18065,
+    "normalizedEvidenceTokens": 3747,
+    "resultCount": 2
+  },
+  "avgResultsPerSearchCall": 10,
+  "totalTrajectoryTokens": 29784,
+  "contract": {
+    "toolCount": 2,
+    "searchToolCount": 1,
+    "fetchToolCount": 1,
+    "descriptionTokens": 63,
+    "schemaTokens": 1034,
+    "totalMcpFootprintTokens": 3800,
+    "searchOnlyFootprintTokens": 1585,
+    "searchFetchFootprintTokens": 3800,
+    "hasFreshnessControl": true,
+    "hasSourcePolicyControl": false,
+    "hasContentBudgetControl": true,
+    "hasUsageMetadata": true
+  }
+}

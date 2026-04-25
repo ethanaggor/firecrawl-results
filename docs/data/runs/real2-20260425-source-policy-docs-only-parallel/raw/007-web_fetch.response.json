@@ -1,0 +1,32 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\n  \"extract_id\": \"extract_8fa7cc3847f04fc0842a4e4811c8dee0\",\n  \"results\": [\n    {\n      \"url\": \"https://docs.firecrawl.dev/api-reference/endpoint/search\",\n      \"title\": \"\",\n      \"publish_date\": null,\n      \"excerpts\": [\n        \"Section Title: Search > Categories Parameter\\nContent:\\nFilter search results by specific categories using the `categories` parameter:\\n**`github`**: Search within GitHub repositories, code, issues, and documentation\\n**`research`**: Search academic and research websites (arXiv, Nature, IEEE, PubMed, etc.)\\n**`pdf`**: Search for PDFs\\nSection Title: Search > Categories Parameter > Example Usage\\nContent:\\n```json theme={null}\\n{\\n  \\\"query\\\": \\\"machine learning\\\",\\n  \\\"categories\\\": [\\\"github\\\", \\\"research\\\"],\\n  \\\"limit\\\": 10\\n}\\n```\\nSection Title: Search > Categories Parameter > Category Response\\nContent:\\nEach result includes a `category` field indicating its source:\\n```json theme={null}\\n{\\n  \\\"success\\\": true,\\n  \\\"data\\\": {\\n    \\\"web\\\": [\\n      {\\n        \\\"url\\\": \\\"https://github.com/example/ml-project\\\",\\n        \\\"title\\\": \\\"Machine Learning Project\\\",\\n        \\\"description\\\": \\\"Implementation of ML algorithms\\\",\\n        \\\"category\\\": \\\"github\\\"\\n      },\\n      {\\n        \\\"url\\\": \\\"https://arxiv.org/abs/2024.12345\\\",\\n        \\\"title\\\": \\\"ML Research Paper\\\",\\n        \\\"description\\\": \\\"Latest advances in machine learning\\\",\\n        \\\"category\\\": \\\"research\\\"\\n      }\\n    ]\\n  }\\n}\\n```\\n ... \\nSection Title: Search > OpenAPI\\nContent:\\nenum:\\n                              - pdf\\n                        required:\\n                          - type\\n                  description: >-\\n                    Categories to filter results by. Defaults to [], which means\\n                    results will not be filtered by any categories. tbs:\\n                  type: string\\n                  description: >-\\n                    Time-based search parameter. Supports predefined time ranges\\n                    (`qdr:h`, `qdr:d`, `qdr:w`, `qdr:m`, `qdr:y`), custom date\\n                    ranges (`cdr:1,cd_min:MM/DD/YYYY,cd_max:MM/DD/YYYY`), and\\n                    sort by date (`sbd:1`). Values can be combined, e.g. `sbd:1,qdr:w`. location:\\n                  type: string\\n                  description: >-\\n                    Location parameter for search results (e.g. `San\\n                    Francisco,California,United States`). For best results, set\\n                    both this and the `country` parameter.\"\n      ],\n      \"full_content\": null\n    }\n  ],\n  \"errors\": [],\n  \"warnings\": null,\n  \"usage\": [\n    {\n      \"name\": \"sku_extract_excerpts\",\n      \"count\": 1\n    }\n  ],\n  \"session_id\": \"a67b3e1142b84f7099e6c4f55c14d931\"\n}"
+    }
+  ],
+  "structuredContent": {
+    "extract_id": "extract_8fa7cc3847f04fc0842a4e4811c8dee0",
+    "results": [
+      {
+        "url": "https://docs.firecrawl.dev/api-reference/endpoint/search",
+        "title": "",
+        "publish_date": null,
+        "excerpts": [
+          "Section Title: Search > Categories Parameter\nContent:\nFilter search results by specific categories using the `categories` parameter:\n**`github`**: Search within GitHub repositories, code, issues, and documentation\n**`research`**: Search academic and research websites (arXiv, Nature, IEEE, PubMed, etc.)\n**`pdf`**: Search for PDFs\nSection Title: Search > Categories Parameter > Example Usage\nContent:\n```json theme={null}\n{\n  \"query\": \"machine learning\",\n  \"categories\": [\"github\", \"research\"],\n  \"limit\": 10\n}\n```\nSection Title: Search > Categories Parameter > Category Response\nContent:\nEach result includes a `category` field indicating its source:\n```json theme={null}\n{\n  \"success\": true,\n  \"data\": {\n    \"web\": [\n      {\n        \"url\": \"https://github.com/example/ml-project\",\n        \"title\": \"Machine Learning Project\",\n        \"description\": \"Implementation of ML algorithms\",\n        \"category\": \"github\"\n      },\n      {\n        \"url\": \"https://arxiv.org/abs/2024.12345\",\n        \"title\": \"ML Research Paper\",\n        \"description\": \"Latest advances in machine learning\",\n        \"category\": \"research\"\n      }\n    ]\n  }\n}\n```\n ... \nSection Title: Search > OpenAPI\nContent:\nenum:\n                              - pdf\n                        required:\n                          - type\n                  description: >-\n                    Categories to filter results by. Defaults to [], which means\n                    results will not be filtered by any categories. tbs:\n                  type: string\n                  description: >-\n                    Time-based search parameter. Supports predefined time ranges\n                    (`qdr:h`, `qdr:d`, `qdr:w`, `qdr:m`, `qdr:y`), custom date\n                    ranges (`cdr:1,cd_min:MM/DD/YYYY,cd_max:MM/DD/YYYY`), and\n                    sort by date (`sbd:1`). Values can be combined, e.g. `sbd:1,qdr:w`. location:\n                  type: string\n                  description: >-\n                    Location parameter for search results (e.g. `San\n                    Francisco,California,United States`). For best results, set\n                    both this and the `country` parameter."
+        ],
+        "full_content": null
+      }
+    ],
+    "errors": [],
+    "warnings": null,
+    "usage": [
+      {
+        "name": "sku_extract_excerpts",
+        "count": 1
+      }
+    ],
+    "session_id": "a67b3e1142b84f7099e6c4f55c14d931"
+  },
+  "isError": false
+}

@@ -1,0 +1,235 @@
+{
+  "provider": "firecrawl-context",
+  "tool": "firecrawl_search",
+  "isError": false,
+  "rawText": "{\n  \"query\": \"Exa MCP server tools web_search_exa crawling_exa docs endpoint\",\n  \"executedQuery\": \"Exa MCP server tools web_search_exa crawling_exa docs endpoint (site:docs.exa.ai OR site:exa.ai)\",\n  \"content\": \"chunks\",\n  \"constraints\": {\n    \"maxResults\": 8,\n    \"maxCharsPerResult\": 3000,\n    \"maxCharsTotal\": 16000,\n    \"focus\": \"Exa MCP server endpoint, available tools, default tools, optional tools, content returned by search and crawl\",\n    \"sourcePolicy\": {\n      \"includeDomains\": [\n        \"docs.exa.ai\",\n        \"exa.ai\"\n      ]\n    }\n  },\n  \"results\": [\n    {\n      \"title\": \"Web Search MCP - Exa\",\n      \"url\": \"https://exa.ai/docs/reference/exa-mcp\",\n      \"description\": \"Complete setup guide for Exa MCP Server. Connect Claude Desktop, Cursor, VS Code, and 10+ AI assistants to Exa's web search and code search tools.\",\n      \"position\": 1,\n      \"source\": \"web\",\n      \"metadata\": {\n        \"sourceURL\": \"https://exa.ai/docs/reference/exa-mcp\",\n        \"finalURL\": \"https://exa.ai/docs/reference/exa-mcp\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"Exa MCP connects AI assistants to Exa’s search capabilities, including web search and code search. It is open-source and available on [GitHub](https://github.com/exa-labs/exa-mcp-server).\",\n          \"charCount\": 187\n        },\n        {\n          \"text\": \"| Tool | Description |\\n| --- | --- |\\n| `web_search_advanced_exa` | Advanced web search with full control over category filters, domain restrictions, date ranges, highlights, summaries, and subpage crawling |\",\n          \"charCount\": 207\n        },\n        {\n          \"text\": \"| Tool | Use instead |\\n| --- | --- |\\n| `get_code_context_exa` | `web_search_exa` |\\n| `company_research_exa` | `web_search_advanced_exa` |\\n| `crawling_exa` | `web_fetch_exa` |\\n| `people_search_exa` | `web_search_advanced_exa` |\\n| `linkedin_search_exa` | `web_search_advanced_exa` |\\n| `deep_researcher_start` | [Research API](https://exa.ai/docs/reference/research/create-a-task) |\\n| `deep_researcher_check` | [Research API](https://exa.ai/docs/reference/research/get-a-task) |\\n| `deep_search_exa` | `web_search_advanced_exa` |\",\n          \"charCount\": 525\n        }\n      ]\n    },\n    {\n      \"title\": \"Exa | Web Search API, AI Search Engine, & Website Crawler\",\n      \"url\": \"https://exa.ai/\",\n      \"description\": \"Real-time AI search engine with a powerful web search API, web crawling API, SERP API, and deep research tools. Search and extract structured content from ...\",\n      \"position\": 2,\n      \"source\": \"web\",\n      \"metadata\": {\n        \"sourceURL\": \"https://exa.ai/\",\n        \"finalURL\": \"https://exa.ai/\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"Best-in-class across company search, people search, and code — not just general web queries.\",\n          \"charCount\": 92\n        },\n        {\n          \"text\": \"> Exa's strong coverage and flexible API have been a key differentiator for us. Scientists trust our product further when the relevant papers they expect to see are available to them in the right workflows. The ability to customize search based on the use case easily, is important.\",\n          \"charCount\": 282\n        },\n        {\n          \"text\": \"> StackAI and Exa are the dream team…Exa is amazing at web search! We're proud to use Exa on our platform and to show our customers how web search can power AI agent workflows.\",\n          \"charCount\": 176\n        }\n      ]\n    },\n    {\n      \"title\": \"Create your setup prompt - Exa Dashboard\",\n      \"url\": \"https://dashboard.exa.ai/onboarding-guest\",\n      \"description\": \"Enable specific tools: ``` https://mcp.exa.ai/mcp?exaApiKey=&tools ... **Available tools (enabled by default):** - `web_search_exa ...\",\n      \"position\": 3,\n      \"source\": \"web\",\n      \"metadata\": {\n        \"sourceURL\": \"https://dashboard.exa.ai/onboarding-guest\",\n        \"finalURL\": \"https://dashboard.exa.ai/onboarding-guest\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"Enable all tools:\\n```\\nhttps://mcp.exa.ai/mcp?exaApiKey=&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,company_research_exa,people_search_exa,deep_researcher_start,deep_researcher_check\\n```\",\n          \"charCount\": 221\n        },\n        {\n          \"text\": \"**Available tools (enabled by default):**\\n- `web_search_exa`\\n- `get_code_context_exa`\\n- `company_research_exa`\",\n          \"charCount\": 110\n        },\n        {\n          \"text\": \"**Optional tools (enable via `tools=`):**\\n- `web_search_advanced_exa`\\n- `crawling_exa`\\n- `people_search_exa`\\n- `deep_researcher_start`\\n- `deep_researcher_check`\",\n          \"charCount\": 160\n        }\n      ]\n    },\n    {\n      \"title\": \"llms-full.txt - Exa\",\n      \"url\": \"https://exa.ai/docs/llms-full.txt\",\n      \"description\": \"Out of the box, Exa now automatically routes your queries to the best search type. <Info> Read our documentation on Exa's different search types [here](/ ...\",\n      \"position\": 4,\n      \"source\": \"web\",\n      \"metadata\": {\n        \"sourceURL\": \"https://exa.ai/docs/llms-full.txt\",\n        \"finalURL\": \"https://exa.ai/docs/llms-full.txt\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"\\\\\\\\* \\\\*\\\\*Live crawling\\\\*\\\\*: Fetching content live requires real-time web requests. Set \\\\`livecrawl=\\\"never\\\"\\\\` to use cached content and maintain optimal speed.\\n\\\\\\\\* \\\\*\\\\*AI summaries\\\\*\\\\*: Requesting AI-generated summaries requires LLM processing, which adds significant latency to your requests.\\n\\\\\\\\* \\\\*\\\\*Complex date filters\\\\*\\\\*: Using wide date ranges or multiple date constraints requires additional filtering that can slow down results.\\n\\\\\\\\* \\\\*\\\\*Include/exclude text\\\\*\\\\*: Text-based content filtering requires scanning through results, which impacts response times.\\n\\\\\\\\* \\\\*\\\\*Subpages\\\\*\\\\*: Including subpages in your search requires additional processing and can significantly increase latency.\",\n          \"charCount\": 690\n        },\n        {\n          \"text\": \"Exa's search endpoint previously charged separately for search results and their webpage contents. Now, contents for 10 search results per request are included for free, and as a result API usage is cheaper for the majority of users.\",\n          \"charCount\": 233\n        },\n        {\n          \"text\": \"\\\\`\\\\`\\\\`\\n Workflow executed successfully\\n Final state:\\n Messages:\\n SystemMessage: You are a helpful assistant....\\n HumanMessage: Check this text for hallucinations: The Eiffel Tower, an iconic iron lattice structure located in Pa...\\n AIMessage: Use hallucination\\\\_check tool...\\n AIMessage: {'claims': \\\\[{'claim': 'The Eiffel Tower is an iconic iron lattice structure', 'assessment': 'support...\\\\\\n\\\\\\n Analysis Result:\\\\\\n Claim: The Eiffel Tower is an iconic iron lattice structure\\\\\\n Assessment: supported\\\\\\n Confidence Score: 1\\\\\\n Supporting Sources:\\\\\\n \\\\- https://www.toureiffel.paris/en/news/130-years/what-eiffel-tower-made...\\\\\\n \\\\- https://thechalkface.net/resources/melting\\\\_the\\\\_eiffel\\\\_tower.pdf...\\\\\\n \\\\- https://datagenetics.com/blog/april22016/index.html...\\\\\\n \\\\- https://engineering.purdue.edu/MSE/aboutus/gotmaterials/Buildings/patel.html...\\\\\\n \\\\- https://www.toureiffel.paris/en/news/130-years/how-long-can-tower-last...\\\\\\n Refuting Sources:\\\\\\n\\\\\\n Claim: The Eiffel Tower is located in Paris\\\\\\n Assessmen\",\n          \"charCount\": 1000\n        }\n      ]\n    }\n  ],\n  \"searchIds\": [\n    \"019dc36a-68d0-7638-9134-2ee57b7df6f7\"\n  ],\n  \"usage\": {\n    \"resultCount\": 4,\n    \"charsReturned\": 3883,\n    \"creditsUsed\": 6,\n    \"rawResultCount\": {\n      \"web\": 4,\n      \"news\": 0,\n      \"images\": 0\n    }\n  },\n  \"warnings\": [\n    \"sourcePolicy covered 1 of 2 includeDomains; split unrelated domains into focused follow-up searches if coverage matters\"\n  ]\n}",
+  "parsed": {
+    "query": "Exa MCP server tools web_search_exa crawling_exa docs endpoint",
+    "executedQuery": "Exa MCP server tools web_search_exa crawling_exa docs endpoint (site:docs.exa.ai OR site:exa.ai)",
+    "content": "chunks",
+    "constraints": {
+      "maxResults": 8,
+      "maxCharsPerResult": 3000,
+      "maxCharsTotal": 16000,
+      "focus": "Exa MCP server endpoint, available tools, default tools, optional tools, content returned by search and crawl",
+      "sourcePolicy": {
+        "includeDomains": [
+          "docs.exa.ai",
+          "exa.ai"
+        ]
+      }
+    },
+    "results": [
+      {
+        "title": "Web Search MCP - Exa",
+        "url": "https://exa.ai/docs/reference/exa-mcp",
+        "description": "Complete setup guide for Exa MCP Server. Connect Claude Desktop, Cursor, VS Code, and 10+ AI assistants to Exa's web search and code search tools.",
+        "position": 1,
+        "source": "web",
+        "metadata": {
+          "sourceURL": "https://exa.ai/docs/reference/exa-mcp",
+          "finalURL": "https://exa.ai/docs/reference/exa-mcp",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "Exa MCP connects AI assistants to Exa’s search capabilities, including web search and code search. It is open-source and available on [GitHub](https://github.com/exa-labs/exa-mcp-server).",
+            "charCount": 187
+          },
+          {
+            "text": "| Tool | Description |\n| --- | --- |\n| `web_search_advanced_exa` | Advanced web search with full control over category filters, domain restrictions, date ranges, highlights, summaries, and subpage crawling |",
+            "charCount": 207
+          },
+          {
+            "text": "| Tool | Use instead |\n| --- | --- |\n| `get_code_context_exa` | `web_search_exa` |\n| `company_research_exa` | `web_search_advanced_exa` |\n| `crawling_exa` | `web_fetch_exa` |\n| `people_search_exa` | `web_search_advanced_exa` |\n| `linkedin_search_exa` | `web_search_advanced_exa` |\n| `deep_researcher_start` | [Research API](https://exa.ai/docs/reference/research/create-a-task) |\n| `deep_researcher_check` | [Research API](https://exa.ai/docs/reference/research/get-a-task) |\n| `deep_search_exa` | `web_search_advanced_exa` |",
+            "charCount": 525
+          }
+        ]
+      },
+      {
+        "title": "Exa | Web Search API, AI Search Engine, & Website Crawler",
+        "url": "https://exa.ai/",
+        "description": "Real-time AI search engine with a powerful web search API, web crawling API, SERP API, and deep research tools. Search and extract structured content from ...",
+        "position": 2,
+        "source": "web",
+        "metadata": {
+          "sourceURL": "https://exa.ai/",
+          "finalURL": "https://exa.ai/",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "Best-in-class across company search, people search, and code — not just general web queries.",
+            "charCount": 92
+          },
+          {
+            "text": "> Exa's strong coverage and flexible API have been a key differentiator for us. Scientists trust our product further when the relevant papers they expect to see are available to them in the right workflows. The ability to customize search based on the use case easily, is important.",
+            "charCount": 282
+          },
+          {
+            "text": "> StackAI and Exa are the dream team…Exa is amazing at web search! We're proud to use Exa on our platform and to show our customers how web search can power AI agent workflows.",
+            "charCount": 176
+          }
+        ]
+      },
+      {
+        "title": "Create your setup prompt - Exa Dashboard",
+        "url": "https://dashboard.exa.ai/onboarding-guest",
+        "description": "Enable specific tools: ``` https://mcp.exa.ai/mcp?exaApiKey=&tools ... **Available tools (enabled by default):** - `web_search_exa ...",
+        "position": 3,
+        "source": "web",
+        "metadata": {
+          "sourceURL": "https://dashboard.exa.ai/onboarding-guest",
+          "finalURL": "https://dashboard.exa.ai/onboarding-guest",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "Enable all tools:\n```\nhttps://mcp.exa.ai/mcp?exaApiKey=&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,company_research_exa,people_search_exa,deep_researcher_start,deep_researcher_check\n```",
+            "charCount": 221
+          },
+          {
+            "text": "**Available tools (enabled by default):**\n- `web_search_exa`\n- `get_code_context_exa`\n- `company_research_exa`",
+            "charCount": 110
+          },
+          {
+            "text": "**Optional tools (enable via `tools=`):**\n- `web_search_advanced_exa`\n- `crawling_exa`\n- `people_search_exa`\n- `deep_researcher_start`\n- `deep_researcher_check`",
+            "charCount": 160
+          }
+        ]
+      },
+      {
+        "title": "llms-full.txt - Exa",
+        "url": "https://exa.ai/docs/llms-full.txt",
+        "description": "Out of the box, Exa now automatically routes your queries to the best search type. <Info> Read our documentation on Exa's different search types [here](/ ...",
+        "position": 4,
+        "source": "web",
+        "metadata": {
+          "sourceURL": "https://exa.ai/docs/llms-full.txt",
+          "finalURL": "https://exa.ai/docs/llms-full.txt",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "\\\\* \\*\\*Live crawling\\*\\*: Fetching content live requires real-time web requests. Set \\`livecrawl=\"never\"\\` to use cached content and maintain optimal speed.\n\\\\* \\*\\*AI summaries\\*\\*: Requesting AI-generated summaries requires LLM processing, which adds significant latency to your requests.\n\\\\* \\*\\*Complex date filters\\*\\*: Using wide date ranges or multiple date constraints requires additional filtering that can slow down results.\n\\\\* \\*\\*Include/exclude text\\*\\*: Text-based content filtering requires scanning through results, which impacts response times.\n\\\\* \\*\\*Subpages\\*\\*: Including subpages in your search requires additional processing and can significantly increase latency.",
+            "charCount": 690
+          },
+          {
+            "text": "Exa's search endpoint previously charged separately for search results and their webpage contents. Now, contents for 10 search results per request are included for free, and as a result API usage is cheaper for the majority of users.",
+            "charCount": 233
+          },
+          {
+            "text": "\\`\\`\\`\n Workflow executed successfully\n Final state:\n Messages:\n SystemMessage: You are a helpful assistant....\n HumanMessage: Check this text for hallucinations: The Eiffel Tower, an iconic iron lattice structure located in Pa...\n AIMessage: Use hallucination\\_check tool...\n AIMessage: {'claims': \\[{'claim': 'The Eiffel Tower is an iconic iron lattice structure', 'assessment': 'support...\\\n\\\n Analysis Result:\\\n Claim: The Eiffel Tower is an iconic iron lattice structure\\\n Assessment: supported\\\n Confidence Score: 1\\\n Supporting Sources:\\\n \\- https://www.toureiffel.paris/en/news/130-years/what-eiffel-tower-made...\\\n \\- https://thechalkface.net/resources/melting\\_the\\_eiffel\\_tower.pdf...\\\n \\- https://datagenetics.com/blog/april22016/index.html...\\\n \\- https://engineering.purdue.edu/MSE/aboutus/gotmaterials/Buildings/patel.html...\\\n \\- https://www.toureiffel.paris/en/news/130-years/how-long-can-tower-last...\\\n Refuting Sources:\\\n\\\n Claim: The Eiffel Tower is located in Paris\\\n Assessmen",
+            "charCount": 1000
+          }
+        ]
+      }
+    ],
+    "searchIds": [
+      "019dc36a-68d0-7638-9134-2ee57b7df6f7"
+    ],
+    "usage": {
+      "resultCount": 4,
+      "charsReturned": 3883,
+      "creditsUsed": 6,
+      "rawResultCount": {
+        "web": 4,
+        "news": 0,
+        "images": 0
+      }
+    },
+    "warnings": [
+      "sourcePolicy covered 1 of 2 includeDomains; split unrelated domains into focused follow-up searches if coverage matters"
+    ]
+  },
+  "results": [
+    {
+      "title": "Web Search MCP - Exa",
+      "url": "https://exa.ai/docs/reference/exa-mcp",
+      "domain": "exa.ai",
+      "description": "Complete setup guide for Exa MCP Server. Connect Claude Desktop, Cursor, VS Code, and 10+ AI assistants to Exa's web search and code search tools.",
+      "chunks": [
+        {
+          "text": "Exa MCP connects AI assistants to Exa’s search capabilities, including web search and code search. It is open-source and available on [GitHub](https://github.com/exa-labs/exa-mcp-server).",
+          "charCount": 187
+        },
+        {
+          "text": "| Tool | Description |\n| --- | --- |\n| `web_search_advanced_exa` | Advanced web search with full control over category filters, domain restrictions, date ranges, highlights, summaries, and subpage crawling |",
+          "charCount": 207
+        },
+        {
+          "text": "| Tool | Use instead |\n| --- | --- |\n| `get_code_context_exa` | `web_search_exa` |\n| `company_research_exa` | `web_search_advanced_exa` |\n| `crawling_exa` | `web_fetch_exa` |\n| `people_search_exa` | `web_search_advanced_exa` |\n| `linkedin_search_exa` | `web_search_advanced_exa` |\n| `deep_researcher_start` | [Research API](https://exa.ai/docs/reference/research/create-a-task) |\n| `deep_researcher_check` | [Research API](https://exa.ai/docs/reference/research/get-a-task) |\n| `deep_search_exa` | `web_search_advanced_exa` |",
+          "charCount": 525
+        }
+      ],
+      "source": "web",
+      "position": 1
+    },
+    {
+      "title": "Exa | Web Search API, AI Search Engine, & Website Crawler",
+      "url": "https://exa.ai/",
+      "domain": "exa.ai",
+      "description": "Real-time AI search engine with a powerful web search API, web crawling API, SERP API, and deep research tools. Search and extract structured content from ...",
+      "chunks": [
+        {
+          "text": "Best-in-class across company search, people search, and code — not just general web queries.",
+          "charCount": 92
+        },
+        {
+          "text": "> Exa's strong coverage and flexible API have been a key differentiator for us. Scientists trust our product further when the relevant papers they expect to see are available to them in the right workflows. The ability to customize search based on the use case easily, is important.",
+          "charCount": 282
+        },
+        {
+          "text": "> StackAI and Exa are the dream team…Exa is amazing at web search! We're proud to use Exa on our platform and to show our customers how web search can power AI agent workflows.",
+          "charCount": 176
+        }
+      ],
+      "source": "web",
+      "position": 2
+    },
+    {
+      "title": "Create your setup prompt - Exa Dashboard",
+      "url": "https://dashboard.exa.ai/onboarding-guest",
+      "domain": "dashboard.exa.ai",
+      "description": "Enable specific tools: ``` https://mcp.exa.ai/mcp?exaApiKey=&tools ... **Available tools (enabled by default):** - `web_search_exa ...",
+      "chunks": [
+        {
+          "text": "Enable all tools:\n```\nhttps://mcp.exa.ai/mcp?exaApiKey=&tools=web_search_exa,web_search_advanced_exa,get_code_context_exa,crawling_exa,company_research_exa,people_search_exa,deep_researcher_start,deep_researcher_check\n```",
+          "charCount": 221
+        },
+        {
+          "text": "**Available tools (enabled by default):**\n- `web_search_exa`\n- `get_code_context_exa`\n- `company_research_exa`",
+          "charCount": 110
+        },
+        {
+          "text": "**Optional tools (enable via `tools=`):**\n- `web_search_advanced_exa`\n- `crawling_exa`\n- `people_search_exa`\n- `deep_researcher_start`\n- `deep_researcher_check`",
+          "charCount": 160
+        }
+      ],
+      "source": "web",
+      "position": 3
+    },
+    {
+      "title": "llms-full.txt - Exa",
+      "url": "https://exa.ai/docs/llms-full.txt",
+      "domain": "exa.ai",
+      "description": "Out of the box, Exa now automatically routes your queries to the best search type. <Info> Read our documentation on Exa's different search types [here](/ ...",
+      "chunks": [
+        {
+          "text": "\\\\* \\*\\*Live crawling\\*\\*: Fetching content live requires real-time web requests. Set \\`livecrawl=\"never\"\\` to use cached content and maintain optimal speed.\n\\\\* \\*\\*AI summaries\\*\\*: Requesting AI-generated summaries requires LLM processing, which adds significant latency to your requests.\n\\\\* \\*\\*Complex date filters\\*\\*: Using wide date ranges or multiple date constraints requires additional filtering that can slow down results.\n\\\\* \\*\\*Include/exclude text\\*\\*: Text-based content filtering requires scanning through results, which impacts response times.\n\\\\* \\*\\*Subpages\\*\\*: Including subpages in your search requires additional processing and can significantly increase latency.",
+          "charCount": 690
+        },
+        {
+          "text": "Exa's search endpoint previously charged separately for search results and their webpage contents. Now, contents for 10 search results per request are included for free, and as a result API usage is cheaper for the majority of users.",
+          "charCount": 233
+        },
+        {
+          "text": "\\`\\`\\`\n Workflow executed successfully\n Final state:\n Messages:\n SystemMessage: You are a helpful assistant....\n HumanMessage: Check this text for hallucinations: The Eiffel Tower, an iconic iron lattice structure located in Pa...\n AIMessage: Use hallucination\\_check tool...\n AIMessage: {'claims': \\[{'claim': 'The Eiffel Tower is an iconic iron lattice structure', 'assessment': 'support...\\\n\\\n Analysis Result:\\\n Claim: The Eiffel Tower is an iconic iron lattice structure\\\n Assessment: supported\\\n Confidence Score: 1\\\n Supporting Sources:\\\n \\- https://www.toureiffel.paris/en/news/130-years/what-eiffel-tower-made...\\\n \\- https://thechalkface.net/resources/melting\\_the\\_eiffel\\_tower.pdf...\\\n \\- https://datagenetics.com/blog/april22016/index.html...\\\n \\- https://engineering.purdue.edu/MSE/aboutus/gotmaterials/Buildings/patel.html...\\\n \\- https://www.toureiffel.paris/en/news/130-years/how-long-can-tower-last...\\\n Refuting Sources:\\\n\\\n Claim: The Eiffel Tower is located in Paris\\\n Assessmen",
+          "charCount": 1000
+        }
+      ],
+      "source": "web",
+      "position": 4
+    }
+  ]
+}

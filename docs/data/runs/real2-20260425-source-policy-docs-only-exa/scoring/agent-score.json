@@ -1,0 +1,26 @@
+{
+  "agentModel": "gpt-5.5 xhigh",
+  "provider": "exa",
+  "taskId": "source-policy-docs-only",
+  "success": true,
+  "answerSupportedByEvidence": true,
+  "retrievalQualityScore": 5,
+  "agentExperienceScore": 4,
+  "sourcePolicyAdherent": true,
+  "freshnessAdherent": null,
+  "callRationale": [
+    "Used web_search_advanced_exa because the task required an explicit docs.firecrawl.dev source policy; included docs.firecrawl.dev as the only domain and maxAgeHours 0 to avoid stale cached search context.",
+    "Fetched the current v2 Search API reference page directly after search found it, because the full OpenAPI field definitions for country, timeout, and ignoreInvalidURLs were needed for a precise answer."
+  ],
+  "strengths": [
+    "Advanced search exposed includeDomains and kept all returned search results on docs.firecrawl.dev.",
+    "The first search retrieved the exact current Search API reference and matched all expected terms.",
+    "The direct fetch returned enough current official documentation to answer all requested fields from a single primary source."
+  ],
+  "weaknesses": [
+    "The search results also included older v0/v1 and localized docs pages, so an agent still has to choose the current v2 page carefully.",
+    "The fetch tool itself did not expose a source-policy or freshness parameter, so adherence depended on fetching only the known docs.firecrawl.dev URL selected from the policy-constrained search."
+  ],
+  "notableFailures": [],
+  "confidence": 0.95
+}

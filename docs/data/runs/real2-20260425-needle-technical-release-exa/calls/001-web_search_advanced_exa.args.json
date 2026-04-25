@@ -1,0 +1,17 @@
+{
+  "query": "official release notes for a JavaScript TypeScript library release after August 2025 with concrete API changes examples",
+  "numResults": 5,
+  "type": "auto",
+  "includeDomains": [
+    "react.dev",
+    "nextjs.org",
+    "typescriptlang.org",
+    "nodejs.org"
+  ],
+  "startPublishedDate": "2025-09-01",
+  "textMaxCharacters": 4000,
+  "enableHighlights": true,
+  "highlightsMaxCharacters": 2000,
+  "highlightsQuery": "release API changes TypeScript JavaScript examples",
+  "maxAgeHours": 0
+}

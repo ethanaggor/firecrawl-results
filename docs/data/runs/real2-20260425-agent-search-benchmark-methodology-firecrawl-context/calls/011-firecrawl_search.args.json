@@ -1,0 +1,14 @@
+{
+  "query": "Exa Parallel Tavily public benchmark methodology SimpleQA WISER MSMARCO document relevance web search API",
+  "content": "chunks",
+  "maxResults": 10,
+  "maxCharsPerResult": 2200,
+  "maxCharsTotal": 18000,
+  "focus": "public benchmark methodology, metrics, task construction, SimpleQA, WISER, MSMARCO, document relevance, web search API comparison",
+  "freshness": "year",
+  "sources": [
+    "web"
+  ],
+  "ignoreInvalidURLs": true,
+  "includeRawResults": true
+}

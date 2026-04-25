@@ -1,0 +1,21 @@
+{
+  "query": "official documentation and benchmark pages comparing Firecrawl Exa Parallel Tavily search APIs for AI agents hard web questions context returned tool call flow retrieval quality MCP",
+  "numResults": 10,
+  "type": "auto",
+  "includeDomains": [
+    "docs.firecrawl.dev",
+    "exa.ai",
+    "docs.exa.ai",
+    "parallel.ai",
+    "docs.parallel.ai",
+    "docs.tavily.com",
+    "tavily.com"
+  ],
+  "textMaxCharacters": 4000,
+  "enableHighlights": true,
+  "highlightsMaxCharacters": 1500,
+  "highlightsQuery": "agent search context shape tool-call flow retrieval quality MCP benchmark",
+  "enableSummary": true,
+  "summaryQuery": "How does this provider's agent-facing web search or MCP behavior shape context, tool calls, and retrieval quality?",
+  "maxAgeHours": 0
+}

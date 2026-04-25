@@ -1,0 +1,16 @@
+{
+  "query": "Exa official docs search API MCP AI agents contents highlights text max characters response shape neural search retrieval quality",
+  "numResults": 8,
+  "type": "auto",
+  "includeDomains": [
+    "docs.exa.ai",
+    "exa.ai"
+  ],
+  "textMaxCharacters": 5000,
+  "enableHighlights": true,
+  "highlightsMaxCharacters": 2000,
+  "highlightsQuery": "Exa search API response shape text highlights context max characters MCP agent retrieval quality",
+  "enableSummary": true,
+  "summaryQuery": "What does Exa return to agents, what tool-call flow does it imply, and what retrieval-quality controls are documented?",
+  "maxAgeHours": 0
+}

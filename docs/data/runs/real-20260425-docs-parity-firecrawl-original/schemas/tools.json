@@ -9,6 +9,8 @@
     "descriptionTokens": 5082,
     "schemaTokens": 5296,
     "totalMcpFootprintTokens": 11221,
+    "searchOnlyFootprintTokens": 2154,
+    "searchFetchFootprintTokens": 5127,
     "hasFreshnessControl": true,
     "hasSourcePolicyControl": true,
     "hasContentBudgetControl": true,

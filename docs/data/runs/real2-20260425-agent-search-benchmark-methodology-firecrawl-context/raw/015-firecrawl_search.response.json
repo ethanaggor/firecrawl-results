@@ -1,0 +1,8 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\n  \"query\": \"Parallel AI search benchmark methodology WISER SimpleQA web search API benchmark document relevance\",\n  \"executedQuery\": \"Parallel AI search benchmark methodology WISER SimpleQA web search API benchmark document relevance site:parallel.ai\",\n  \"content\": \"chunks\",\n  \"constraints\": {\n    \"maxResults\": 8,\n    \"maxCharsPerResult\": 2200,\n    \"maxCharsTotal\": 14000,\n    \"focus\": \"Parallel public benchmark methodology, benchmark names, metrics, task construction, document relevance, SimpleQA, WISER\",\n    \"freshness\": \"year\",\n    \"sourcePolicy\": {\n      \"includeDomains\": [\n        \"parallel.ai\"\n      ]\n    }\n  },\n  \"results\": [],\n  \"searchIds\": [\n    \"019dc36c-8328-77ad-8811-509441931cba\"\n  ],\n  \"usage\": {\n    \"resultCount\": 0,\n    \"charsReturned\": 0,\n    \"creditsUsed\": 0,\n    \"rawResultCount\": {\n      \"web\": 0,\n      \"news\": 0,\n      \"images\": 0\n    }\n  },\n  \"rawResults\": [\n    {\n      \"success\": true,\n      \"data\": {\n        \"web\": []\n      },\n      \"creditsUsed\": 0,\n      \"id\": \"019dc36c-8328-77ad-8811-509441931cba\"\n    }\n  ]\n}"
+    }
+  ]
+}

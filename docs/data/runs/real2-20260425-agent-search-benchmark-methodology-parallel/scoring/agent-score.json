@@ -1,0 +1,34 @@
+{
+  "agentModel": "gpt-5.5 xhigh",
+  "provider": "parallel",
+  "taskId": "agent-search-benchmark-methodology",
+  "success": true,
+  "answerSupportedByEvidence": true,
+  "retrievalQualityScore": 5,
+  "agentExperienceScore": 4,
+  "sourcePolicyAdherent": true,
+  "freshnessAdherent": null,
+  "callRationale": [
+    "Started with a broad provider-methodology search to identify public Exa, Parallel, and Tavily benchmark sources and expected benchmark terms.",
+    "Ran a focused Parallel search because the broad search undercovered Parallel and the task requires WISER and agent-search methodology.",
+    "Ran a focused Tavily search to capture Tavily's SimpleQA and document relevance methodology and official/public eval sources.",
+    "Ran a targeted MSMARCO search because the required term was not clearly covered by the first Tavily search and Exa's methodology critique depends on it.",
+    "Fetched the strongest provider and GitHub sources in one batch with excerpt mode to extract datasets, metrics, judging methods, cost/latency controls, and task construction patterns."
+  ],
+  "strengths": [
+    "Recovered all expected benchmark concepts: SimpleQA, WISER, MSMARCO/MS MARCO, and document relevance.",
+    "Used strong primary sources from Exa, Parallel, Tavily, and public GitHub benchmark repositories.",
+    "Captured both retrieval-level and agent-loop methodologies rather than reducing the task to answer accuracy only.",
+    "Extracted concrete controls and metrics: max tool calls, max documents, context normalization, LLM judging, cost including LLM tokens, latency, and freshness timing."
+  ],
+  "weaknesses": [
+    "Parallel's provider schema does not expose hard domain/source filters, so source targeting had to be expressed in the natural-language objective and search queries.",
+    "The best Tavily benchmark methodology evidence was split across tavily.com blog/homepage and GitHub rather than a dedicated docs.tavily.com benchmark page.",
+    "The fetch call used excerpt mode, which kept the trajectory efficient but meant some details from large benchmark pages were available from search excerpts rather than full-page reads."
+  ],
+  "notableFailures": [
+    "Initial broad search found strong Exa and Tavily sources but weak Parallel coverage; fixed with a targeted Parallel benchmark search.",
+    "Initial Tavily-focused search did not surface MSMARCO clearly; fixed with a targeted MSMARCO search that found Exa's methodology discussion."
+  ],
+  "confidence": 0.9
+}

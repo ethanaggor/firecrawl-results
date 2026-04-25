@@ -1,0 +1,29 @@
+{
+  "agentModel": "gpt-5.5 xhigh",
+  "provider": "firecrawl-context",
+  "taskId": "source-policy-docs-only",
+  "success": true,
+  "answerSupportedByEvidence": true,
+  "retrievalQualityScore": 5,
+  "agentExperienceScore": 4,
+  "sourcePolicyAdherent": true,
+  "freshnessAdherent": null,
+  "callRationale": [
+    "Started with a docs.firecrawl.dev-constrained firecrawl_search call using chunks to discover official Search API evidence for categories, country, timeout, and ignoreInvalidURLs.",
+    "Followed up with firecrawl_scrape on the canonical Search API docs URL because the search chunks repeated request examples and only partially exposed the body-field descriptions."
+  ],
+  "strengths": [
+    "The provider honored the includeDomains source policy and returned only docs.firecrawl.dev evidence.",
+    "The canonical Search API scrape contained all four expected fields, defaults, and explanatory text needed for a supported answer.",
+    "The run surfaced a useful nuance in the official docs: categories are described in the schema as category objects while an example uses string category names."
+  ],
+  "weaknesses": [
+    "The first search call returned duplicated chunks and multilingual/CLI results in addition to the canonical English API page, so exact-page scraping was necessary.",
+    "The search chunk extraction alone did not capture the full body parameter descriptions for timeout and ignoreInvalidURLs."
+  ],
+  "notableFailures": [
+    "One harness invocation failed before reaching the provider because the args file had been created in the wrong working directory; the file was trashed and recreated under the benchmark workdir.",
+    "The constrained search retrieval was source-policy compliant but not clean enough by itself for a complete final answer."
+  ],
+  "confidence": 0.96
+}

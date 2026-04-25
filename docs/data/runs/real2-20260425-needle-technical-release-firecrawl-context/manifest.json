@@ -1,0 +1,48 @@
+{
+  "runId": "real2-20260425-needle-technical-release-firecrawl-context",
+  "createdAt": "2026-04-25T06:51:49.102Z",
+  "provider": {
+    "id": "firecrawl-context",
+    "name": "Firecrawl MCP context fork",
+    "transport": "stdio",
+    "cwd": "../firecrawl-mcp-server",
+    "command": "node",
+    "args": [
+      "dist/index.js"
+    ],
+    "env": [
+      {
+        "name": "FIRECRAWL_API_KEY",
+        "required": true,
+        "present": true
+      },
+      {
+        "name": "FIRECRAWL_API_URL",
+        "required": false,
+        "present": false
+      }
+    ],
+    "searchTools": [
+      "firecrawl_search"
+    ],
+    "fetchTools": [
+      "firecrawl_scrape"
+    ],
+    "mapTools": [
+      "firecrawl_map"
+    ],
+    "cwdExists": true
+  },
+  "task": {
+    "id": "needle-technical-release",
+    "family": "hard-retrieval",
+    "question": "Find a recent TypeScript or JavaScript library release after August 2025 that introduced at least three concrete API changes and identify source-backed examples.",
+    "agentGoal": "This mirrors Exa WebCode-style coding-agent search. Prefer changelogs, release notes, and official docs.",
+    "expectedTerms": [
+      "release",
+      "API",
+      "TypeScript"
+    ],
+    "freshness": "year"
+  }
+}

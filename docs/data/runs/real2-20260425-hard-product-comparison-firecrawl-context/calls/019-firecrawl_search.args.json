@@ -1,0 +1,19 @@
+{
+  "query": "Parallel web search benchmarks HLE BrowseComp FRAMES SimpleQA retrieval quality agents",
+  "content": "chunks",
+  "maxResults": 6,
+  "maxCharsPerResult": 3500,
+  "maxCharsTotal": 16000,
+  "focus": "official benchmark claims or methodology for Parallel search retrieval quality, datasets such as HLE BrowseComp FRAMES SimpleQA, dense excerpts, and agent web search performance",
+  "sourcePolicy": {
+    "includeDomains": [
+      "parallel.ai",
+      "docs.parallel.ai"
+    ]
+  },
+  "sources": [
+    "web"
+  ],
+  "ignoreInvalidURLs": true,
+  "includeRawResults": false
+}

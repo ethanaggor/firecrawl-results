@@ -1,0 +1,6 @@
+{
+  "url": "https://parallel.ai",
+  "search": "benchmark search WISER SimpleQA document relevance",
+  "limit": 20,
+  "ignoreQueryParameters": true
+}

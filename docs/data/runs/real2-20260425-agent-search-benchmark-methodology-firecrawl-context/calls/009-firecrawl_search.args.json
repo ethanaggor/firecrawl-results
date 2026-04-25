@@ -1,0 +1,14 @@
+{
+  "query": "AI search engine benchmark methodology answer quality source citation correctness human evaluation LLM search agents",
+  "content": "chunks",
+  "maxResults": 8,
+  "maxCharsPerResult": 1600,
+  "maxCharsTotal": 12000,
+  "focus": "evaluation dimensions for search answers, citation/source quality, human preference or expert grading, factual accuracy, benchmark construction",
+  "freshness": "year",
+  "sources": [
+    "web"
+  ],
+  "ignoreInvalidURLs": true,
+  "includeRawResults": true
+}

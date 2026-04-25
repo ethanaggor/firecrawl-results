@@ -1,0 +1,40 @@
+{
+  "agentModel": "gpt-5.5 xhigh",
+  "provider": "parallel",
+  "taskId": "hard-product-comparison",
+  "success": true,
+  "answerSupportedByEvidence": true,
+  "retrievalQualityScore": 5,
+  "agentExperienceScore": 4,
+  "sourcePolicyAdherent": true,
+  "freshnessAdherent": true,
+  "callRationale": [
+    "Searched Firecrawl official docs for MCP/search behavior, scrapeOptions, response context, and agent-facing usage.",
+    "Searched Exa official docs for search, contents/highlights, MCP, and agent workflow evidence.",
+    "Searched Parallel official docs/product pages for Search API, MCP flow, objective/query shape, freshness, source controls, and benchmarks.",
+    "Searched Tavily official docs for Search API, Extract, MCP, response shape, answer modes, and agent workflow evidence.",
+    "Searched benchmark/evaluation pages for hard-agent web search comparisons across Parallel, Exa, Tavily, and Firecrawl.",
+    "Ran a Firecrawl-specific quality follow-up because the first Firecrawl search found docs but limited retrieval-quality benchmark evidence.",
+    "Fetched the core official docs pages for all four providers to extract context/result shapes and tool-call flow evidence.",
+    "Fetched benchmark pages from Parallel, Exa, and exa-labs to capture methodology and accuracy/cost figures.",
+    "Ran a Tavily MCP follow-up because the initial Tavily search surfaced integrations and agent skills before the canonical MCP page.",
+    "Fetched Tavily MCP and Search API details to fill in MCP tools, search response fields, include_answer/raw_content controls, depth, and domain filters."
+  ],
+  "strengths": [
+    "Covered all expected official domains: docs.firecrawl.dev, exa.ai, parallel.ai/docs.parallel.ai, and docs.tavily.com.",
+    "Found current benchmark evidence including Parallel April 2026 benchmark methodology and Exa 2026 comparison pages.",
+    "Fetched compact official docs for context shapes and MCP/tool flows instead of relying only on search snippets.",
+    "Follow-up calls corrected initial gaps for Firecrawl quality evidence and Tavily MCP details."
+  ],
+  "weaknesses": [
+    "Firecrawl did not appear in the retrieved hard-QA benchmark tables, so its retrieval-quality comparison is less direct than Exa/Parallel/Tavily.",
+    "Several benchmark pages are provider-affiliated, so the answer explicitly caveats methodology and potential self-comparison bias.",
+    "The Parallel provider schema did not expose a structured source-policy parameter, so official-source targeting was done through objectives and follow-up selection."
+  ],
+  "notableFailures": [
+    "One harness call failed before reaching the provider because the first JSON args path was created under the initial repo instead of /Users/ethanaggor/firecrawl-results; it produced no raw provider response artifact.",
+    "Initial Parallel and Tavily searches included some irrelevant or third-party results; follow-up searches/fetches narrowed the final evidence to official docs, product pages, and benchmark pages.",
+    "Firecrawl benchmark evidence found was mostly extraction/product-positioning evidence rather than the same hard-question retrieval benchmark used for Exa, Parallel, and Tavily."
+  ],
+  "confidence": 0.87
+}

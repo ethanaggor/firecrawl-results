@@ -1,0 +1,1368 @@
+{
+  "suite": "firecrawl-ablations",
+  "generatedAt": "2026-04-25T06:44:48.156Z",
+  "mcpRoot": "/Users/ethanaggor/firecrawl-mcp-server",
+  "records": [
+    {
+      "taskId": "multi-domain-product-comparison",
+      "variantId": "compile",
+      "strategy": "compile",
+      "input": {
+        "query": "Firecrawl Exa Parallel Tavily MCP search agent benchmark context shape tool call flow retrieval quality",
+        "content": "chunks",
+        "maxResults": 8,
+        "maxCharsPerResult": 1200,
+        "maxCharsTotal": 9000,
+        "focus": "official docs or benchmark pages describing MCP search tools, agent-facing context shape, tool-call flow, returned content, and retrieval quality benchmarks",
+        "sourcePolicy": {
+          "includeDomains": [
+            "docs.firecrawl.dev",
+            "exa.ai",
+            "docs.exa.ai",
+            "parallel.ai",
+            "docs.parallel.ai",
+            "docs.tavily.com",
+            "tavily.com",
+            "github.com"
+          ]
+        },
+        "sources": [
+          "web"
+        ],
+        "ignoreInvalidURLs": true
+      },
+      "ok": true,
+      "latencyMs": 1146,
+      "metrics": {
+        "resultCount": 8,
+        "rawResultCount": {
+          "web": 8,
+          "news": 0,
+          "images": 0
+        },
+        "charsReturned": 8770,
+        "responseTokens": 4919,
+        "evidenceTokens": 3276,
+        "creditsUsed": 10,
+        "searchIdCount": 1,
+        "sourcePolicyAdherent": true,
+        "expectedTermHit": true,
+        "expectedTermsMatched": [
+          "MCP",
+          "search",
+          "agent"
+        ],
+        "expectedDomainHit": false,
+        "expectedDomainsMatched": [],
+        "expectedDomainCoverage": 0,
+        "uniqueDomainCount": 1,
+        "domains": [
+          "github.com"
+        ]
+      },
+      "firstResult": {
+        "title": "punkpeye/awesome-mcp-servers - GitHub",
+        "url": "https://github.com/punkpeye/awesome-mcp-servers",
+        "domain": "github.com"
+      },
+      "warnings": [
+        "sourcePolicy covered 1 of 8 includeDomains; split unrelated domains into focused follow-up searches if coverage matters"
+      ],
+      "sampleResults": [
+        {
+          "title": "punkpeye/awesome-mcp-servers - GitHub",
+          "url": "https://github.com/punkpeye/awesome-mcp-servers",
+          "domain": "github.com",
+          "description": "MCP is an open protocol that enables AI models to securely interact with local and remote resources through standardized server implementations.",
+          "evidencePreview": "punkpeye/awesome-mcp-servers - GitHub\nhttps://github.com/punkpeye/awesome-mcp-servers\nMCP is an open protocol that enables AI models to securely interact with local and remote resources through standardized server implementations.\n- [EtienneChollet/ontomics](https://github.com/EtienneChollet/ontomics) [![EtienneChollet/ontomics MCP server](https://camo.githubusercontent.com/1d36ae687d1118fd81d6bf9fa6e724a562f6e3dfcc88dd856e4e255485ebb686/68747470733a2f2f676c616d612e61692f6d63702f736572766572732f457469656e6e6543686f6c6c65742f6f6e746f6d6963732f6261646765732f73636f72652e737667)](https://glama.ai/mcp/servers/EtienneChollet/onto\n- [mrslbt/xendit-mcp](https://github.com/mrslbt/xendit-mcp) [![mrslb"
+        },
+        {
+          "title": "awesome-mcp-servers/README.md at main - GitHub",
+          "url": "https://github.com/punkpeye/awesome-mcp-servers/blob/main/README.md",
+          "domain": "github.com",
+          "description": "MCP is an open protocol that enables AI models to securely interact with local and remote resources through standardized server implementations.",
+          "evidencePreview": "awesome-mcp-servers/README.md at main - GitHub\nhttps://github.com/punkpeye/awesome-mcp-servers/blob/main/README.md\nMCP is an open protocol that enables AI models to securely interact with local and remote resources through standardized server implementations.\n- [EtienneChollet/ontomics](https://github.com/EtienneChollet/ontomics) [![EtienneChollet/ontomics MCP server](https://camo.githubusercontent.com/1d36ae687d1118fd81d6bf9fa6e724a562f6e3dfcc88dd856e4e255485ebb686/68747470733a2f2f676c616d612e61692f6d63702f736572766572732f457469656e6e6543686f6c6c65742f6f6e746f6d6963732f6261646765732f73636f72652e737667)](https://glama.ai/mcp/servers/EtienneChollet/onto\n- [mrslbt/xendit-mcp](https://github.co"
+        },
+        {
+          "title": "rylena/awesome-openclaw - GitHub",
+          "url": "https://github.com/rylena/awesome-openclaw",
+          "domain": "github.com",
+          "description": "OpenClaw (formerly Moltbot, originally Clawdbot) is a free and open-source autonomous AI agent created by Peter Steinberger. It runs locally, connects to ...",
+          "evidencePreview": "rylena/awesome-openclaw - GitHub\nhttps://github.com/rylena/awesome-openclaw\nOpenClaw (formerly Moltbot, originally Clawdbot) is a free and open-source autonomous AI agent created by Peter Steinberger. It runs locally, connects to ...\n[Skip to content](https://github.com/rylena/awesome-openclaw#start-of-content)\n[Report repository](https://github.com/contact/report-content?content_url=https%3A%2F%2Fgithub.com%2Frylena%2Fawesome-openclaw&report=rylena+%28user%29)\n- [![@rylena](https://avatars.githubusercontent.com/u/47320423?s=64&v=4)](https://github.com/rylena)[**rylena** Rylen Anil](https://github.com/rylena)"
+        },
+        {
+          "title": "antigravity-awesome-skills/CATALOG.md at main - GitHub",
+          "url": "https://github.com/sickn33/antigravity-awesome-skills/blob/main/CATALOG.md",
+          "domain": "github.com",
+          "description": "Discover and search 18K+ MCP servers and AI agents across 6+ registries using Global Chat's cross-protocol directory and MCP server. mcp, ai- ...",
+          "evidencePreview": "antigravity-awesome-skills/CATALOG.md at main - GitHub\nhttps://github.com/sickn33/antigravity-awesome-skills/blob/main/CATALOG.md\nDiscover and search 18K+ MCP servers and AI agents across 6+ registries using Global Chat's cross-protocol directory and MCP server. mcp, ai- ...\n| Skill | Description | Tags | Triggers |\n| --- | --- | --- | --- |\n| `3d-web-experience` | Expert in building 3D experiences for the web - Three.js, React Three Fiber, Spline, WebGL, and interactive 3D scenes. Covers product configurators, 3D portf... | 3d, web, experience | 3d, web, experience, building, experiences, three, js, react, fiber, spline, webgl, interactive |\n| `algolia-search` | Expe\n| Skill | Description |"
+        },
+        {
+          "title": "dcostenco/prism-mcp: The Mind Palace for AI Agents - GitHub",
+          "url": "https://github.com/dcostenco/prism-mcp",
+          "domain": "github.com",
+          "description": "Instead of wasting tokens on \"search\" tool calls, Prism uses MCP Prompts ( /resume_session ) to inject context before the LLM thinks, and MCP ...",
+          "evidencePreview": "dcostenco/prism-mcp: The Mind Palace for AI Agents - GitHub\nhttps://github.com/dcostenco/prism-mcp\nInstead of wasting tokens on \"search\" tool calls, Prism uses MCP Prompts ( /resume_session ) to inject context before the LLM thinks, and MCP ...\n| Name | Name | Last commit message | Last commit date |\n| --- | --- | --- | --- |\n| ## Latest commit<br>[![dcostenco](https://avatars.githubusercontent.com/u/64438937?v=4&size=40)](https://github.com/dcostenco)[dcostenco](https://github.com/dcostenco/prism-mcp/commits?author=dcostenco)<br>[fix: rename JPEG images from .png to .jpg for correct GitHub rendering](https://github.com/dcostenco/prism-m\nPrism scores coding tasks across **6 weighted heuristi"
+        }
+      ]
+    },
+    {
+      "taskId": "multi-domain-product-comparison",
+      "variantId": "fanout",
+      "strategy": "fanout",
+      "input": {
+        "query": "Firecrawl Exa Parallel Tavily MCP search agent benchmark context shape tool call flow retrieval quality",
+        "content": "chunks",
+        "maxResults": 8,
+        "maxCharsPerResult": 1200,
+        "maxCharsTotal": 9000,
+        "focus": "official docs or benchmark pages describing MCP search tools, agent-facing context shape, tool-call flow, returned content, and retrieval quality benchmarks",
+        "sourcePolicy": {
+          "includeDomains": [
+            "docs.firecrawl.dev",
+            "exa.ai",
+            "docs.exa.ai",
+            "parallel.ai",
+            "docs.parallel.ai",
+            "docs.tavily.com",
+            "tavily.com",
+            "github.com"
+          ]
+        },
+        "sources": [
+          "web"
+        ],
+        "ignoreInvalidURLs": true
+      },
+      "ok": true,
+      "latencyMs": 1226,
+      "metrics": {
+        "resultCount": 8,
+        "rawResultCount": {
+          "web": 8,
+          "news": 0,
+          "images": 0
+        },
+        "charsReturned": 8770,
+        "responseTokens": 5194,
+        "evidenceTokens": 3272,
+        "creditsUsed": 10,
+        "searchIdCount": 8,
+        "sourcePolicyAdherent": true,
+        "expectedTermHit": true,
+        "expectedTermsMatched": [
+          "MCP",
+          "search",
+          "agent"
+        ],
+        "expectedDomainHit": false,
+        "expectedDomainsMatched": [],
+        "expectedDomainCoverage": 0,
+        "uniqueDomainCount": 1,
+        "domains": [
+          "github.com"
+        ]
+      },
+      "firstResult": {
+        "title": "punkpeye/awesome-mcp-servers - GitHub",
+        "url": "https://github.com/punkpeye/awesome-mcp-servers",
+        "domain": "github.com"
+      },
+      "warnings": [
+        "sourcePolicy covered 1 of 8 includeDomains; split unrelated domains into focused follow-up searches if coverage matters"
+      ],
+      "sampleResults": [
+        {
+          "title": "punkpeye/awesome-mcp-servers - GitHub",
+          "url": "https://github.com/punkpeye/awesome-mcp-servers",
+          "domain": "github.com",
+          "description": "MCP is an open protocol that enables AI models to securely interact with local and remote resources through standardized server implementations.",
+          "evidencePreview": "punkpeye/awesome-mcp-servers - GitHub\nhttps://github.com/punkpeye/awesome-mcp-servers\nMCP is an open protocol that enables AI models to securely interact with local and remote resources through standardized server implementations.\n- [EtienneChollet/ontomics](https://github.com/EtienneChollet/ontomics) [![EtienneChollet/ontomics MCP server](https://camo.githubusercontent.com/1d36ae687d1118fd81d6bf9fa6e724a562f6e3dfcc88dd856e4e255485ebb686/68747470733a2f2f676c616d612e61692f6d63702f736572766572732f457469656e6e6543686f6c6c65742f6f6e746f6d6963732f6261646765732f73636f72652e737667)](https://glama.ai/mcp/servers/EtienneChollet/onto\n- [mrslbt/xendit-mcp](https://github.com/mrslbt/xendit-mcp) [![mrslb"
+        },
+        {
+          "title": "awesome-mcp-servers/README.md at main - GitHub",
+          "url": "https://github.com/punkpeye/awesome-mcp-servers/blob/main/README.md",
+          "domain": "github.com",
+          "description": "MCP is an open protocol that enables AI models to securely interact with local and remote resources through standardized server implementations.",
+          "evidencePreview": "awesome-mcp-servers/README.md at main - GitHub\nhttps://github.com/punkpeye/awesome-mcp-servers/blob/main/README.md\nMCP is an open protocol that enables AI models to securely interact with local and remote resources through standardized server implementations.\n- [EtienneChollet/ontomics](https://github.com/EtienneChollet/ontomics) [![EtienneChollet/ontomics MCP server](https://camo.githubusercontent.com/1d36ae687d1118fd81d6bf9fa6e724a562f6e3dfcc88dd856e4e255485ebb686/68747470733a2f2f676c616d612e61692f6d63702f736572766572732f457469656e6e6543686f6c6c65742f6f6e746f6d6963732f6261646765732f73636f72652e737667)](https://glama.ai/mcp/servers/EtienneChollet/onto\n- [mrslbt/xendit-mcp](https://github.co"
+        },
+        {
+          "title": "antigravity-awesome-skills/CATALOG.md at main - GitHub",
+          "url": "https://github.com/sickn33/antigravity-awesome-skills/blob/main/CATALOG.md",
+          "domain": "github.com",
+          "description": "Discover and search 18K+ MCP servers and AI agents across 6+ registries using Global Chat's cross-protocol directory and MCP server. mcp, ai- ...",
+          "evidencePreview": "antigravity-awesome-skills/CATALOG.md at main - GitHub\nhttps://github.com/sickn33/antigravity-awesome-skills/blob/main/CATALOG.md\nDiscover and search 18K+ MCP servers and AI agents across 6+ registries using Global Chat's cross-protocol directory and MCP server. mcp, ai- ...\n| Skill | Description | Tags | Triggers |\n| --- | --- | --- | --- |\n| `3d-web-experience` | Expert in building 3D experiences for the web - Three.js, React Three Fiber, Spline, WebGL, and interactive 3D scenes. Covers product configurators, 3D portf... | 3d, web, experience | 3d, web, experience, building, experiences, three, js, react, fiber, spline, webgl, interactive |\n| `algolia-search` | Expe\n| Skill | Description |"
+        },
+        {
+          "title": "rylena/awesome-openclaw - GitHub",
+          "url": "https://github.com/rylena/awesome-openclaw",
+          "domain": "github.com",
+          "description": "OpenClaw (formerly Moltbot, originally Clawdbot) is a free and open-source autonomous AI agent created by Peter Steinberger. It runs locally, connects to ...",
+          "evidencePreview": "rylena/awesome-openclaw - GitHub\nhttps://github.com/rylena/awesome-openclaw\nOpenClaw (formerly Moltbot, originally Clawdbot) is a free and open-source autonomous AI agent created by Peter Steinberger. It runs locally, connects to ...\n[Skip to content](https://github.com/rylena/awesome-openclaw#start-of-content)\n[Report repository](https://github.com/contact/report-content?content_url=https%3A%2F%2Fgithub.com%2Frylena%2Fawesome-openclaw&report=rylena+%28user%29)\n- [![@rylena](https://avatars.githubusercontent.com/u/47320423?s=64&v=4)](https://github.com/rylena)[**rylena** Rylen Anil](https://github.com/rylena)"
+        },
+        {
+          "title": "dcostenco/prism-mcp: The Mind Palace for AI Agents - GitHub",
+          "url": "https://github.com/dcostenco/prism-mcp",
+          "domain": "github.com",
+          "description": "Instead of wasting tokens on \"search\" tool calls, Prism uses MCP Prompts ( /resume_session ) to inject context before the LLM thinks, and MCP ...",
+          "evidencePreview": "dcostenco/prism-mcp: The Mind Palace for AI Agents - GitHub\nhttps://github.com/dcostenco/prism-mcp\nInstead of wasting tokens on \"search\" tool calls, Prism uses MCP Prompts ( /resume_session ) to inject context before the LLM thinks, and MCP ...\n| Name | Name | Last commit message | Last commit date |\n| --- | --- | --- | --- |\n| ## Latest commit<br>[![dcostenco](https://avatars.githubusercontent.com/u/64438937?v=4&size=40)](https://github.com/dcostenco)[dcostenco](https://github.com/dcostenco/prism-mcp/commits?author=dcostenco)<br>[fix: rename JPEG images from .png to .jpg for correct GitHub rendering](https://github.com/dcostenco/prism-m\nPrism scores coding tasks across **6 weighted heuristi"
+        }
+      ]
+    },
+    {
+      "taskId": "multi-domain-product-comparison",
+      "variantId": "hybrid",
+      "strategy": "hybrid",
+      "input": {
+        "query": "Firecrawl Exa Parallel Tavily MCP search agent benchmark context shape tool call flow retrieval quality",
+        "content": "chunks",
+        "maxResults": 8,
+        "maxCharsPerResult": 1200,
+        "maxCharsTotal": 9000,
+        "focus": "official docs or benchmark pages describing MCP search tools, agent-facing context shape, tool-call flow, returned content, and retrieval quality benchmarks",
+        "sourcePolicy": {
+          "includeDomains": [
+            "docs.firecrawl.dev",
+            "exa.ai",
+            "docs.exa.ai",
+            "parallel.ai",
+            "docs.parallel.ai",
+            "docs.tavily.com",
+            "tavily.com",
+            "github.com"
+          ]
+        },
+        "sources": [
+          "web"
+        ],
+        "ignoreInvalidURLs": true
+      },
+      "ok": true,
+      "latencyMs": 2271,
+      "metrics": {
+        "resultCount": 8,
+        "rawResultCount": {
+          "web": 16,
+          "news": 0,
+          "images": 0
+        },
+        "charsReturned": 8770,
+        "responseTokens": 5293,
+        "evidenceTokens": 3276,
+        "creditsUsed": 20,
+        "searchIdCount": 9,
+        "sourcePolicyAdherent": true,
+        "expectedTermHit": true,
+        "expectedTermsMatched": [
+          "MCP",
+          "search",
+          "agent"
+        ],
+        "expectedDomainHit": false,
+        "expectedDomainsMatched": [],
+        "expectedDomainCoverage": 0,
+        "uniqueDomainCount": 1,
+        "domains": [
+          "github.com"
+        ]
+      },
+      "firstResult": {
+        "title": "punkpeye/awesome-mcp-servers - GitHub",
+        "url": "https://github.com/punkpeye/awesome-mcp-servers",
+        "domain": "github.com"
+      },
+      "warnings": [
+        "sourcePolicy covered 1 of 8 includeDomains; split unrelated domains into focused follow-up searches if coverage matters"
+      ],
+      "sampleResults": [
+        {
+          "title": "punkpeye/awesome-mcp-servers - GitHub",
+          "url": "https://github.com/punkpeye/awesome-mcp-servers",
+          "domain": "github.com",
+          "description": "MCP is an open protocol that enables AI models to securely interact with local and remote resources through standardized server implementations.",
+          "evidencePreview": "punkpeye/awesome-mcp-servers - GitHub\nhttps://github.com/punkpeye/awesome-mcp-servers\nMCP is an open protocol that enables AI models to securely interact with local and remote resources through standardized server implementations.\n- [EtienneChollet/ontomics](https://github.com/EtienneChollet/ontomics) [![EtienneChollet/ontomics MCP server](https://camo.githubusercontent.com/1d36ae687d1118fd81d6bf9fa6e724a562f6e3dfcc88dd856e4e255485ebb686/68747470733a2f2f676c616d612e61692f6d63702f736572766572732f457469656e6e6543686f6c6c65742f6f6e746f6d6963732f6261646765732f73636f72652e737667)](https://glama.ai/mcp/servers/EtienneChollet/onto\n- [mrslbt/xendit-mcp](https://github.com/mrslbt/xendit-mcp) [![mrslb"
+        },
+        {
+          "title": "awesome-mcp-servers/README.md at main - GitHub",
+          "url": "https://github.com/punkpeye/awesome-mcp-servers/blob/main/README.md",
+          "domain": "github.com",
+          "description": "MCP is an open protocol that enables AI models to securely interact with local and remote resources through standardized server implementations.",
+          "evidencePreview": "awesome-mcp-servers/README.md at main - GitHub\nhttps://github.com/punkpeye/awesome-mcp-servers/blob/main/README.md\nMCP is an open protocol that enables AI models to securely interact with local and remote resources through standardized server implementations.\n- [EtienneChollet/ontomics](https://github.com/EtienneChollet/ontomics) [![EtienneChollet/ontomics MCP server](https://camo.githubusercontent.com/1d36ae687d1118fd81d6bf9fa6e724a562f6e3dfcc88dd856e4e255485ebb686/68747470733a2f2f676c616d612e61692f6d63702f736572766572732f457469656e6e6543686f6c6c65742f6f6e746f6d6963732f6261646765732f73636f72652e737667)](https://glama.ai/mcp/servers/EtienneChollet/onto\n- [mrslbt/xendit-mcp](https://github.co"
+        },
+        {
+          "title": "rylena/awesome-openclaw - GitHub",
+          "url": "https://github.com/rylena/awesome-openclaw",
+          "domain": "github.com",
+          "description": "OpenClaw (formerly Moltbot, originally Clawdbot) is a free and open-source autonomous AI agent created by Peter Steinberger. It runs locally, connects to ...",
+          "evidencePreview": "rylena/awesome-openclaw - GitHub\nhttps://github.com/rylena/awesome-openclaw\nOpenClaw (formerly Moltbot, originally Clawdbot) is a free and open-source autonomous AI agent created by Peter Steinberger. It runs locally, connects to ...\n[Skip to content](https://github.com/rylena/awesome-openclaw#start-of-content)\n[Report repository](https://github.com/contact/report-content?content_url=https%3A%2F%2Fgithub.com%2Frylena%2Fawesome-openclaw&report=rylena+%28user%29)\n- [![@rylena](https://avatars.githubusercontent.com/u/47320423?s=64&v=4)](https://github.com/rylena)[**rylena** Rylen Anil](https://github.com/rylena)"
+        },
+        {
+          "title": "antigravity-awesome-skills/CATALOG.md at main - GitHub",
+          "url": "https://github.com/sickn33/antigravity-awesome-skills/blob/main/CATALOG.md",
+          "domain": "github.com",
+          "description": "Discover and search 18K+ MCP servers and AI agents across 6+ registries using Global Chat's cross-protocol directory and MCP server. mcp, ai- ...",
+          "evidencePreview": "antigravity-awesome-skills/CATALOG.md at main - GitHub\nhttps://github.com/sickn33/antigravity-awesome-skills/blob/main/CATALOG.md\nDiscover and search 18K+ MCP servers and AI agents across 6+ registries using Global Chat's cross-protocol directory and MCP server. mcp, ai- ...\n| Skill | Description | Tags | Triggers |\n| --- | --- | --- | --- |\n| `3d-web-experience` | Expert in building 3D experiences for the web - Three.js, React Three Fiber, Spline, WebGL, and interactive 3D scenes. Covers product configurators, 3D portf... | 3d, web, experience | 3d, web, experience, building, experiences, three, js, react, fiber, spline, webgl, interactive |\n| `algolia-search` | Expe\n| Skill | Description |"
+        },
+        {
+          "title": "dcostenco/prism-mcp: The Mind Palace for AI Agents - GitHub",
+          "url": "https://github.com/dcostenco/prism-mcp",
+          "domain": "github.com",
+          "description": "Instead of wasting tokens on \"search\" tool calls, Prism uses MCP Prompts ( /resume_session ) to inject context before the LLM thinks, and MCP ...",
+          "evidencePreview": "dcostenco/prism-mcp: The Mind Palace for AI Agents - GitHub\nhttps://github.com/dcostenco/prism-mcp\nInstead of wasting tokens on \"search\" tool calls, Prism uses MCP Prompts ( /resume_session ) to inject context before the LLM thinks, and MCP ...\n| Name | Name | Last commit message | Last commit date |\n| --- | --- | --- | --- |\n| ## Latest commit<br>[![dcostenco](https://avatars.githubusercontent.com/u/64438937?v=4&size=40)](https://github.com/dcostenco)[dcostenco](https://github.com/dcostenco/prism-mcp/commits?author=dcostenco)<br>[fix: rename JPEG images from .png to .jpg for correct GitHub rendering](https://github.com/dcostenco/prism-m\nPrism scores coding tasks across **6 weighted heuristi"
+        }
+      ]
+    },
+    {
+      "taskId": "docs-parity-content-mode",
+      "variantId": "results",
+      "strategy": "compile",
+      "input": {
+        "query": "Firecrawl Search API categories country timeout ignoreInvalidURLs",
+        "maxResults": 5,
+        "maxCharsPerResult": 1600,
+        "maxCharsTotal": 8000,
+        "focus": "Search API request fields categories country timeout ignoreInvalidURLs",
+        "sourcePolicy": {
+          "includeDomains": [
+            "docs.firecrawl.dev"
+          ]
+        },
+        "sources": [
+          "web"
+        ],
+        "ignoreInvalidURLs": true,
+        "content": "results"
+      },
+      "ok": true,
+      "latencyMs": 98,
+      "metrics": {
+        "resultCount": 5,
+        "rawResultCount": {
+          "web": 5,
+          "news": 0,
+          "images": 0
+        },
+        "charsReturned": 0,
+        "responseTokens": 662,
+        "evidenceTokens": 271,
+        "creditsUsed": 2,
+        "searchIdCount": 1,
+        "sourcePolicyAdherent": true,
+        "expectedTermHit": true,
+        "expectedTermsMatched": [
+          "categories",
+          "country",
+          "timeout",
+          "ignoreInvalidURLs"
+        ],
+        "expectedDomainHit": true,
+        "expectedDomainsMatched": [
+          "docs.firecrawl.dev"
+        ],
+        "expectedDomainCoverage": 1,
+        "uniqueDomainCount": 1,
+        "domains": [
+          "docs.firecrawl.dev"
+        ]
+      },
+      "firstResult": {
+        "title": "Search - Firecrawl Docs",
+        "url": "https://docs.firecrawl.dev/api-reference/endpoint/search",
+        "domain": "docs.firecrawl.dev"
+      },
+      "warnings": [
+        "focus is ignored when content is results"
+      ],
+      "sampleResults": [
+        {
+          "title": "Search - Firecrawl Docs",
+          "url": "https://docs.firecrawl.dev/api-reference/endpoint/search",
+          "domain": "docs.firecrawl.dev",
+          "description": "Use the country parameter to specify the country for search results using ISO country codes. ... Filter search results by specific categories using the categories ...",
+          "evidencePreview": "Search - Firecrawl Docs\nhttps://docs.firecrawl.dev/api-reference/endpoint/search\nUse the country parameter to specify the country for search results using ISO country codes. ... Filter search results by specific categories using the categories ..."
+        },
+        {
+          "title": "CLI - Firecrawl Docs",
+          "url": "https://docs.firecrawl.dev/sdks/cli",
+          "domain": "docs.firecrawl.dev",
+          "description": "Search, scrape, and interact with the web directly from the terminal. The Firecrawl CLI works standalone or as a skill that AI coding agents like Claude ...",
+          "evidencePreview": "CLI - Firecrawl Docs\nhttps://docs.firecrawl.dev/sdks/cli\nSearch, scrape, and interact with the web directly from the terminal. The Firecrawl CLI works standalone or as a skill that AI coding agents like Claude ..."
+        },
+        {
+          "title": "Search（搜索） - Firecrawl Docs",
+          "url": "https://docs.firecrawl.dev/zh/api-reference/endpoint/search",
+          "domain": "docs.firecrawl.dev",
+          "description": "... categories\": [ { \"type\": \"github\" } ], \"tbs\": \"<string>\", \"location\": \"<string>\", \"country\": \"US\", \"timeout\": 60000, \"ignoreInvalidURLs\": false, \"enterprise\": [ ...",
+          "evidencePreview": "Search（搜索） - Firecrawl Docs\nhttps://docs.firecrawl.dev/zh/api-reference/endpoint/search\n... categories\": [ { \"type\": \"github\" } ], \"tbs\": \"<string>\", \"location\": \"<string>\", \"country\": \"US\", \"timeout\": 60000, \"ignoreInvalidURLs\": false, \"enterprise\": [ ..."
+        },
+        {
+          "title": "Recherche - Firecrawl Docs",
+          "url": "https://docs.firecrawl.dev/fr/api-reference/endpoint/search",
+          "domain": "docs.firecrawl.dev",
+          "description": "Exclut des résultats de recherche les URL qui ne sont pas valides pour d'autres endpoints Firecrawl. Cela permet de réduire les erreurs si vous transmettez les ...",
+          "evidencePreview": "Recherche - Firecrawl Docs\nhttps://docs.firecrawl.dev/fr/api-reference/endpoint/search\nExclut des résultats de recherche les URL qui ne sont pas valides pour d'autres endpoints Firecrawl. Cela permet de réduire les erreurs si vous transmettez les ..."
+        },
+        {
+          "title": "CLI - Firecrawl Docs",
+          "url": "https://docs.firecrawl.dev/es/sdks/cli",
+          "domain": "docs.firecrawl.dev",
+          "description": "Busca, haz scraping e interactúa con la web directamente desde la terminal. La CLI de Firecrawl funciona de forma independiente o como un Skill que los ...",
+          "evidencePreview": "CLI - Firecrawl Docs\nhttps://docs.firecrawl.dev/es/sdks/cli\nBusca, haz scraping e interactúa con la web directamente desde la terminal. La CLI de Firecrawl funciona de forma independiente o como un Skill que los ..."
+        }
+      ]
+    },
+    {
+      "taskId": "docs-parity-content-mode",
+      "variantId": "summary",
+      "strategy": "compile",
+      "input": {
+        "query": "Firecrawl Search API categories country timeout ignoreInvalidURLs",
+        "maxResults": 5,
+        "maxCharsPerResult": 1600,
+        "maxCharsTotal": 8000,
+        "focus": "Search API request fields categories country timeout ignoreInvalidURLs",
+        "sourcePolicy": {
+          "includeDomains": [
+            "docs.firecrawl.dev"
+          ]
+        },
+        "sources": [
+          "web"
+        ],
+        "ignoreInvalidURLs": true,
+        "content": "summary"
+      },
+      "ok": true,
+      "latencyMs": 14439,
+      "metrics": {
+        "resultCount": 5,
+        "rawResultCount": {
+          "web": 5,
+          "news": 0,
+          "images": 0
+        },
+        "charsReturned": 4944,
+        "responseTokens": 1958,
+        "evidenceTokens": 1239,
+        "creditsUsed": 7,
+        "searchIdCount": 1,
+        "sourcePolicyAdherent": true,
+        "expectedTermHit": true,
+        "expectedTermsMatched": [
+          "categories",
+          "country",
+          "timeout",
+          "ignoreInvalidURLs"
+        ],
+        "expectedDomainHit": true,
+        "expectedDomainsMatched": [
+          "docs.firecrawl.dev"
+        ],
+        "expectedDomainCoverage": 1,
+        "uniqueDomainCount": 1,
+        "domains": [
+          "docs.firecrawl.dev"
+        ]
+      },
+      "firstResult": {
+        "title": "Search - Firecrawl Docs",
+        "url": "https://docs.firecrawl.dev/api-reference/endpoint/search",
+        "domain": "docs.firecrawl.dev"
+      },
+      "sampleResults": [
+        {
+          "title": "Search - Firecrawl Docs",
+          "url": "https://docs.firecrawl.dev/api-reference/endpoint/search",
+          "domain": "docs.firecrawl.dev",
+          "description": "Use the country parameter to specify the country for search results using ISO country codes. ... Filter search results by specific categories using the categories ...",
+          "evidencePreview": "Search - Firecrawl Docs\nhttps://docs.firecrawl.dev/api-reference/endpoint/search\nUse the country parameter to specify the country for search results using ISO country codes. ... Filter search results by specific categories using the categories ...\nThe Firecrawl API allows users to perform searches and scrape content from the web efficiently. The key features include:\n\n1. **Search Functionality**: Users can execute search queries that return results from various sources, such as web, images, news, and specific categories like GitHub or PDF.\n\n2. **Parameters**: Users have multiple parameters at their disposal:\n   - **query**: The search string.\n   - **limit**: The number of results to return, "
+        },
+        {
+          "title": "CLI - Firecrawl Docs",
+          "url": "https://docs.firecrawl.dev/sdks/cli",
+          "domain": "docs.firecrawl.dev",
+          "description": "Search, scrape, and interact with the web directly from the terminal. The Firecrawl CLI works standalone or as a skill that AI coding agents like Claude ...",
+          "evidencePreview": "CLI - Firecrawl Docs\nhttps://docs.firecrawl.dev/sdks/cli\nSearch, scrape, and interact with the web directly from the terminal. The Firecrawl CLI works standalone or as a skill that AI coding agents like Claude ...\nThe Firecrawl CLI documentation provides comprehensive guidance for using the Firecrawl tool to scrape, search, and interact with web data from the terminal. Key functionalities include installation steps, authentication methods, and various commands for scraping URLs and managing browser sessions. Users can scrape content in multiple formats, search the web with filtering options, discover URLs on websites, and utilize browser automation. The CLI supports commands for checking cre"
+        },
+        {
+          "title": "Search（搜索） - Firecrawl Docs",
+          "url": "https://docs.firecrawl.dev/zh/api-reference/endpoint/search",
+          "domain": "docs.firecrawl.dev",
+          "description": "... categories\": [ { \"type\": \"github\" } ], \"tbs\": \"<string>\", \"location\": \"<string>\", \"country\": \"US\", \"timeout\": 60000, \"ignoreInvalidURLs\": false, \"enterprise\": [ ...",
+          "evidencePreview": "Search（搜索） - Firecrawl Docs\nhttps://docs.firecrawl.dev/zh/api-reference/endpoint/search\n... categories\": [ { \"type\": \"github\" } ], \"tbs\": \"<string>\", \"location\": \"<string>\", \"country\": \"US\", \"timeout\": 60000, \"ignoreInvalidURLs\": false, \"enterprise\": [ ...\nThe Firecrawl API offers a comprehensive search endpoint that integrates web search capabilities with the functionality to scrape content. Users can perform searches using various parameters, such as query strings, limit the number of results, specify categories, and determine the geographic location for searches. The API supports multiple response formats and various query operators to refine search results. The response includes detailed"
+        },
+        {
+          "title": "Recherche - Firecrawl Docs",
+          "url": "https://docs.firecrawl.dev/fr/api-reference/endpoint/search",
+          "domain": "docs.firecrawl.dev",
+          "description": "Exclut des résultats de recherche les URL qui ne sont pas valides pour d'autres endpoints Firecrawl. Cela permet de réduire les erreurs si vous transmettez les ...",
+          "evidencePreview": "Recherche - Firecrawl Docs\nhttps://docs.firecrawl.dev/fr/api-reference/endpoint/search\nExclut des résultats de recherche les URL qui ne sont pas valides pour d'autres endpoints Firecrawl. Cela permet de réduire les erreurs si vous transmettez les ...\nThe Firecrawl API offers an endpoint for searching and scraping web results. The main features include: \n\n1. **POST /search Endpoint**: Initiates a search and scrape based on a query, with options for limiting results, defining sources (e.g., web, images, news), and filtering by categories (GitHub, research, PDF).\n2. **Search Parameters**: Allows the inclusion of parameters like `location`, `country`, and `timeout` to refine searches.\n3. **Scrap"
+        },
+        {
+          "title": "CLI - Firecrawl Docs",
+          "url": "https://docs.firecrawl.dev/es/sdks/cli",
+          "domain": "docs.firecrawl.dev",
+          "description": "Busca, haz scraping e interactúa con la web directamente desde la terminal. La CLI de Firecrawl funciona de forma independiente o como un Skill que los ...",
+          "evidencePreview": "CLI - Firecrawl Docs\nhttps://docs.firecrawl.dev/es/sdks/cli\nBusca, haz scraping e interactúa con la web directamente desde la terminal. La CLI de Firecrawl funciona de forma independiente o como un Skill que los ...\nThe Firecrawl CLI Documentation provides a comprehensive guide on using the Firecrawl command line interface for web scraping and data collection. Key points include:\n\n1. **Installation**: Instructions for installing the CLI, including using npm and setting up for AI agents.\n2. **Authentication**: Details on logging in using API keys or browser authentication.\n3. **Scraping Commands**: Various commands for scraping data from URLs, with options for output formats and content filte"
+        }
+      ]
+    },
+    {
+      "taskId": "docs-parity-content-mode",
+      "variantId": "chunks",
+      "strategy": "compile",
+      "input": {
+        "query": "Firecrawl Search API categories country timeout ignoreInvalidURLs",
+        "maxResults": 5,
+        "maxCharsPerResult": 1600,
+        "maxCharsTotal": 8000,
+        "focus": "Search API request fields categories country timeout ignoreInvalidURLs",
+        "sourcePolicy": {
+          "includeDomains": [
+            "docs.firecrawl.dev"
+          ]
+        },
+        "sources": [
+          "web"
+        ],
+        "ignoreInvalidURLs": true,
+        "content": "chunks"
+      },
+      "ok": true,
+      "latencyMs": 710,
+      "metrics": {
+        "resultCount": 5,
+        "rawResultCount": {
+          "web": 5,
+          "news": 0,
+          "images": 0
+        },
+        "charsReturned": 5003,
+        "responseTokens": 3162,
+        "evidenceTokens": 1857,
+        "creditsUsed": 7,
+        "searchIdCount": 1,
+        "sourcePolicyAdherent": true,
+        "expectedTermHit": true,
+        "expectedTermsMatched": [
+          "categories",
+          "country",
+          "timeout",
+          "ignoreInvalidURLs"
+        ],
+        "expectedDomainHit": true,
+        "expectedDomainsMatched": [
+          "docs.firecrawl.dev"
+        ],
+        "expectedDomainCoverage": 1,
+        "uniqueDomainCount": 1,
+        "domains": [
+          "docs.firecrawl.dev"
+        ]
+      },
+      "firstResult": {
+        "title": "Search - Firecrawl Docs",
+        "url": "https://docs.firecrawl.dev/api-reference/endpoint/search",
+        "domain": "docs.firecrawl.dev"
+      },
+      "sampleResults": [
+        {
+          "title": "Search - Firecrawl Docs",
+          "url": "https://docs.firecrawl.dev/api-reference/endpoint/search",
+          "domain": "docs.firecrawl.dev",
+          "description": "Use the country parameter to specify the country for search results using ISO country codes. ... Filter search results by specific categories using the categories ...",
+          "evidencePreview": "Search - Firecrawl Docs\nhttps://docs.firecrawl.dev/api-reference/endpoint/search\nUse the country parameter to specify the country for search results using ISO country codes. ... Filter search results by specific categories using the categories ...\n```\ncurl --request POST \\\n  --url https://api.firecrawl.dev/v2/search \\\n  --header 'Authorization: Bearer <token>' \\\n  --header 'Content-Type: application/json' \\\n  --data '\n{\n  \"query\": \"<string>\",\n  \"limit\": 10,\n  \"sources\": [\\\n    \"web\"\\\n  ],\n  \"categories\": [\\\n    {\\\n      \"type\": \"github\"\\\n    }\\\n  ],\n  \"tbs\": \"<string>\",\n  \"location\": \"<string>\",\n  \"country\": \"US\",\n  \"timeout\": 60000,\n  \"ignoreInvalidURLs\": false,\n  \"enterprise\": [\\\n    \"anon"
+        },
+        {
+          "title": "CLI - Firecrawl Docs",
+          "url": "https://docs.firecrawl.dev/sdks/cli",
+          "domain": "docs.firecrawl.dev",
+          "description": "Search, scrape, and interact with the web directly from the terminal. The Firecrawl CLI works standalone or as a skill that AI coding agents like Claude ...",
+          "evidencePreview": "CLI - Firecrawl Docs\nhttps://docs.firecrawl.dev/sdks/cli\nSearch, scrape, and interact with the web directly from the terminal. The Firecrawl CLI works standalone or as a skill that AI coding agents like Claude ...\n```\n# Search the web\nfirecrawl search \"web scraping tutorials\"\n# Search with category filters\nfirecrawl search \"react hooks\" --categories github\nfirecrawl search \"machine learning\" --categories research,pdf\n| Option | Description |\n| --- | --- |\n| `--limit <number>` | Maximum results (default: 5, max: 100) |\n| `--sources <sources>` | Sources to search: `web`, `images`, `news` (comma-separated) |\n| `--categories <categories>` | Filter by category: `github`, `research`, `pdf` (comma-"
+        },
+        {
+          "title": "Search（搜索） - Firecrawl Docs",
+          "url": "https://docs.firecrawl.dev/zh/api-reference/endpoint/search",
+          "domain": "docs.firecrawl.dev",
+          "description": "... categories\": [ { \"type\": \"github\" } ], \"tbs\": \"<string>\", \"location\": \"<string>\", \"country\": \"US\", \"timeout\": 60000, \"ignoreInvalidURLs\": false, \"enterprise\": [ ...",
+          "evidencePreview": "Search（搜索） - Firecrawl Docs\nhttps://docs.firecrawl.dev/zh/api-reference/endpoint/search\n... categories\": [ { \"type\": \"github\" } ], \"tbs\": \"<string>\", \"location\": \"<string>\", \"country\": \"US\", \"timeout\": 60000, \"ignoreInvalidURLs\": false, \"enterprise\": [ ...\n```\ncurl --request POST \\\n  --url https://api.firecrawl.dev/v2/search \\\n  --header 'Authorization: Bearer <token>' \\\n  --header 'Content-Type: application/json' \\\n  --data '\n{\n  \"query\": \"<string>\",\n  \"limit\": 10,\n  \"sources\": [\\\n    \"web\"\\\n  ],\n  \"categories\": [\\\n    {\\\n      \"type\": \"github\"\\\n    }\\\n  ],\n  \"tbs\": \"<string>\",\n  \"location\": \"<string>\",\n  \"country\": \"US\",\n  \"timeout\": 60000,\n  \"ignoreInvalidURLs\": false,\n  \"enterprise\": [\\\n"
+        },
+        {
+          "title": "Recherche - Firecrawl Docs",
+          "url": "https://docs.firecrawl.dev/fr/api-reference/endpoint/search",
+          "domain": "docs.firecrawl.dev",
+          "description": "Exclut des résultats de recherche les URL qui ne sont pas valides pour d'autres endpoints Firecrawl. Cela permet de réduire les erreurs si vous transmettez les ...",
+          "evidencePreview": "Recherche - Firecrawl Docs\nhttps://docs.firecrawl.dev/fr/api-reference/endpoint/search\nExclut des résultats de recherche les URL qui ne sont pas valides pour d'autres endpoints Firecrawl. Cela permet de réduire les erreurs si vous transmettez les ...\n```\ncurl --request POST \\\n  --url https://api.firecrawl.dev/v2/search \\\n  --header 'Authorization: Bearer <token>' \\\n  --header 'Content-Type: application/json' \\\n  --data '\n{\n  \"query\": \"<string>\",\n  \"limit\": 10,\n  \"sources\": [\\\n    \"web\"\\\n  ],\n  \"categories\": [\\\n    {\\\n      \"type\": \"github\"\\\n    }\\\n  ],\n  \"tbs\": \"<string>\",\n  \"location\": \"<string>\",\n  \"country\": \"US\",\n  \"timeout\": 60000,\n  \"ignoreInvalidURLs\": false,\n  \"enterprise\": [\\\n    \"a"
+        },
+        {
+          "title": "CLI - Firecrawl Docs",
+          "url": "https://docs.firecrawl.dev/es/sdks/cli",
+          "domain": "docs.firecrawl.dev",
+          "description": "Busca, haz scraping e interactúa con la web directamente desde la terminal. La CLI de Firecrawl funciona de forma independiente o como un Skill que los ...",
+          "evidencePreview": "CLI - Firecrawl Docs\nhttps://docs.firecrawl.dev/es/sdks/cli\nBusca, haz scraping e interactúa con la web directamente desde la terminal. La CLI de Firecrawl funciona de forma independiente o como un Skill que los ...\n```\n# Buscar en la web\nfirecrawl search \"web scraping tutorials\"\n# Search with category filters\nfirecrawl search \"react hooks\" --categories github\nfirecrawl search \"machine learning\" --categories research,pdf\n| Opción | Descripción |\n| --- | --- |\n| `--limit <number>` | Número máximo de resultados (predeterminado: 5, máximo: 100) |\n| `--sources <sources>` | Fuentes de búsqueda: `web`, `images`, `news` (separadas por comas) |\n| `--categories <categories>` | Filtrar por categoría: "
+        }
+      ]
+    },
+    {
+      "taskId": "docs-parity-content-mode",
+      "variantId": "markdown",
+      "strategy": "compile",
+      "input": {
+        "query": "Firecrawl Search API categories country timeout ignoreInvalidURLs",
+        "maxResults": 5,
+        "maxCharsPerResult": 1600,
+        "maxCharsTotal": 8000,
+        "focus": "Search API request fields categories country timeout ignoreInvalidURLs",
+        "sourcePolicy": {
+          "includeDomains": [
+            "docs.firecrawl.dev"
+          ]
+        },
+        "sources": [
+          "web"
+        ],
+        "ignoreInvalidURLs": true,
+        "content": "markdown"
+      },
+      "ok": true,
+      "latencyMs": 610,
+      "metrics": {
+        "resultCount": 5,
+        "rawResultCount": {
+          "web": 5,
+          "news": 0,
+          "images": 0
+        },
+        "charsReturned": 8000,
+        "responseTokens": 3722,
+        "evidenceTokens": 2803,
+        "creditsUsed": 7,
+        "searchIdCount": 1,
+        "sourcePolicyAdherent": true,
+        "expectedTermHit": true,
+        "expectedTermsMatched": [
+          "categories",
+          "country",
+          "timeout",
+          "ignoreInvalidURLs"
+        ],
+        "expectedDomainHit": true,
+        "expectedDomainsMatched": [
+          "docs.firecrawl.dev"
+        ],
+        "expectedDomainCoverage": 1,
+        "uniqueDomainCount": 1,
+        "domains": [
+          "docs.firecrawl.dev"
+        ]
+      },
+      "firstResult": {
+        "title": "Search - Firecrawl Docs",
+        "url": "https://docs.firecrawl.dev/api-reference/endpoint/search",
+        "domain": "docs.firecrawl.dev"
+      },
+      "warnings": [
+        "maxCharsTotal hard cap reached at 8000 characters"
+      ],
+      "sampleResults": [
+        {
+          "title": "Search - Firecrawl Docs",
+          "url": "https://docs.firecrawl.dev/api-reference/endpoint/search",
+          "domain": "docs.firecrawl.dev",
+          "description": "Use the country parameter to specify the country for search results using ISO country codes. ... Filter search results by specific categories using the categories ...",
+          "evidencePreview": "Search - Firecrawl Docs\nhttps://docs.firecrawl.dev/api-reference/endpoint/search\nUse the country parameter to specify the country for search results using ISO country codes. ... Filter search results by specific categories using the categories ...\n[Skip to main content](https://docs.firecrawl.dev/api-reference/endpoint/search#content-area)\n\n[Firecrawl Docs home page![light logo](https://mintcdn.com/firecrawl/iilnMwCX-8eR1yOO/logo/logo.png?fit=max&auto=format&n=iilnMwCX-8eR1yOO&q=85&s=c45b3c967c19a39190e76fe8e9c2ed5a)![dark logo](https://mintcdn.com/firecrawl/iilnMwCX-8eR1yOO/logo/logo-dark.png?fit=max&auto=format&n=iilnMwCX-8eR1yOO&q=85&s=3fee4abe033bd3c26e8ad92043a91c17)](https://firecrawl."
+        },
+        {
+          "title": "CLI - Firecrawl Docs",
+          "url": "https://docs.firecrawl.dev/sdks/cli",
+          "domain": "docs.firecrawl.dev",
+          "description": "Search, scrape, and interact with the web directly from the terminal. The Firecrawl CLI works standalone or as a skill that AI coding agents like Claude ...",
+          "evidencePreview": "CLI - Firecrawl Docs\nhttps://docs.firecrawl.dev/sdks/cli\nSearch, scrape, and interact with the web directly from the terminal. The Firecrawl CLI works standalone or as a skill that AI coding agents like Claude ...\n[Skip to main content](https://docs.firecrawl.dev/sdks/cli#content-area)\n\n[Firecrawl Docs home page![light logo](https://mintcdn.com/firecrawl/iilnMwCX-8eR1yOO/logo/logo.png?fit=max&auto=format&n=iilnMwCX-8eR1yOO&q=85&s=c45b3c967c19a39190e76fe8e9c2ed5a)![dark logo](https://mintcdn.com/firecrawl/iilnMwCX-8eR1yOO/logo/logo-dark.png?fit=max&auto=format&n=iilnMwCX-8eR1yOO&q=85&s=3fee4abe033bd3c26e8ad92043a91c17)](https://firecrawl.dev/)\n\nv2\n![US](https://d3gk2c5xim1je2.cloudfront.net/f"
+        },
+        {
+          "title": "Search（搜索） - Firecrawl Docs",
+          "url": "https://docs.firecrawl.dev/zh/api-reference/endpoint/search",
+          "domain": "docs.firecrawl.dev",
+          "description": "... categories\": [ { \"type\": \"github\" } ], \"tbs\": \"<string>\", \"location\": \"<string>\", \"country\": \"US\", \"timeout\": 60000, \"ignoreInvalidURLs\": false, \"enterprise\": [ ...",
+          "evidencePreview": "Search（搜索） - Firecrawl Docs\nhttps://docs.firecrawl.dev/zh/api-reference/endpoint/search\n... categories\": [ { \"type\": \"github\" } ], \"tbs\": \"<string>\", \"location\": \"<string>\", \"country\": \"US\", \"timeout\": 60000, \"ignoreInvalidURLs\": false, \"enterprise\": [ ...\n[跳转到主要内容](https://docs.firecrawl.dev/zh/api-reference/endpoint/search#content-area)\n\n[Firecrawl Docs home page![light logo](https://mintcdn.com/firecrawl/iilnMwCX-8eR1yOO/logo/logo.png?fit=max&auto=format&n=iilnMwCX-8eR1yOO&q=85&s=c45b3c967c19a39190e76fe8e9c2ed5a)![dark logo](https://mintcdn.com/firecrawl/iilnMwCX-8eR1yOO/logo/logo-dark.png?fit=max&auto=format&n=iilnMwCX-8eR1yOO&q=85&s=3fee4abe033bd3c26e8ad92043a91c17)](https://firecrawl.d"
+        },
+        {
+          "title": "Recherche - Firecrawl Docs",
+          "url": "https://docs.firecrawl.dev/fr/api-reference/endpoint/search",
+          "domain": "docs.firecrawl.dev",
+          "description": "Exclut des résultats de recherche les URL qui ne sont pas valides pour d'autres endpoints Firecrawl. Cela permet de réduire les erreurs si vous transmettez les ...",
+          "evidencePreview": "Recherche - Firecrawl Docs\nhttps://docs.firecrawl.dev/fr/api-reference/endpoint/search\nExclut des résultats de recherche les URL qui ne sont pas valides pour d'autres endpoints Firecrawl. Cela permet de réduire les erreurs si vous transmettez les ...\n[Passer au contenu principal](https://docs.firecrawl.dev/fr/api-reference/endpoint/search#content-area)\n\n[Firecrawl Docs home page![light logo](https://mintcdn.com/firecrawl/iilnMwCX-8eR1yOO/logo/logo.png?fit=max&auto=format&n=iilnMwCX-8eR1yOO&q=85&s=c45b3c967c19a39190e76fe8e9c2ed5a)![dark logo](https://mintcdn.com/firecrawl/iilnMwCX-8eR1yOO/logo/logo-dark.png?fit=max&auto=format&n=iilnMwCX-8eR1yOO&q=85&s=3fee4abe033bd3c26e8ad92043a91c17)](https"
+        },
+        {
+          "title": "CLI - Firecrawl Docs",
+          "url": "https://docs.firecrawl.dev/es/sdks/cli",
+          "domain": "docs.firecrawl.dev",
+          "description": "Busca, haz scraping e interactúa con la web directamente desde la terminal. La CLI de Firecrawl funciona de forma independiente o como un Skill que los ...",
+          "evidencePreview": "CLI - Firecrawl Docs\nhttps://docs.firecrawl.dev/es/sdks/cli\nBusca, haz scraping e interactúa con la web directamente desde la terminal. La CLI de Firecrawl funciona de forma independiente o como un Skill que los ...\n[Saltar al contenido principal](https://docs.firecrawl.dev/es/sdks/cli#content-area)\n\n[Firecrawl Docs home page![light logo](https://mintcdn.com/firecrawl/iilnMwCX-8eR1yOO/logo/logo.png?fit=max&auto=format&n=iilnMwCX-8eR1yOO&q=85&s=c45b3c967c19a39190e76fe8e9c2ed5a)![dark logo](https://mintcdn.com/firecrawl/iilnMwCX-8eR1yOO/logo/logo-dark.png?fit=max&auto=format&n=iilnMwCX-8eR1yOO&q=85&s=3fee4abe033bd3c26e8ad92043a91c17)](https://firecrawl.dev/)\n\nv2\n![ES](https://d3gk2c5xim1je2.cl"
+        }
+      ]
+    },
+    {
+      "taskId": "benchmark-methodology-content-mode",
+      "variantId": "chunks-compile",
+      "strategy": "compile",
+      "input": {
+        "query": "Exa Parallel Tavily public search benchmark methodology SimpleQA WISER MSMARCO document relevance",
+        "maxResults": 10,
+        "maxCharsPerResult": 1800,
+        "maxCharsTotal": 14000,
+        "focus": "benchmark methodology, evaluation datasets, metrics, task construction patterns, agent search workflows",
+        "sourcePolicy": {
+          "includeDomains": [
+            "exa.ai",
+            "parallel.ai",
+            "github.com",
+            "docs.tavily.com"
+          ]
+        },
+        "sources": [
+          "web"
+        ],
+        "ignoreInvalidURLs": true,
+        "content": "chunks"
+      },
+      "ok": true,
+      "latencyMs": 287,
+      "metrics": {
+        "resultCount": 0,
+        "rawResultCount": {
+          "web": 0,
+          "news": 0,
+          "images": 0
+        },
+        "charsReturned": 0,
+        "responseTokens": 309,
+        "evidenceTokens": 0,
+        "creditsUsed": 0,
+        "searchIdCount": 1,
+        "sourcePolicyAdherent": true,
+        "expectedTermHit": false,
+        "expectedTermsMatched": [],
+        "expectedDomainHit": false,
+        "expectedDomainsMatched": [],
+        "expectedDomainCoverage": 0,
+        "uniqueDomainCount": 0,
+        "domains": []
+      },
+      "warnings": [
+        "sourcePolicy includeDomains returned no covered domains; try a more focused query or split unrelated domains into separate searches"
+      ],
+      "sampleResults": []
+    },
+    {
+      "taskId": "benchmark-methodology-content-mode",
+      "variantId": "chunks-hybrid",
+      "strategy": "hybrid",
+      "input": {
+        "query": "Exa Parallel Tavily public search benchmark methodology SimpleQA WISER MSMARCO document relevance",
+        "maxResults": 10,
+        "maxCharsPerResult": 1800,
+        "maxCharsTotal": 14000,
+        "focus": "benchmark methodology, evaluation datasets, metrics, task construction patterns, agent search workflows",
+        "sourcePolicy": {
+          "includeDomains": [
+            "exa.ai",
+            "parallel.ai",
+            "github.com",
+            "docs.tavily.com"
+          ]
+        },
+        "sources": [
+          "web"
+        ],
+        "ignoreInvalidURLs": true,
+        "content": "chunks"
+      },
+      "ok": true,
+      "latencyMs": 438,
+      "metrics": {
+        "resultCount": 0,
+        "rawResultCount": {
+          "web": 0,
+          "news": 0,
+          "images": 0
+        },
+        "charsReturned": 0,
+        "responseTokens": 499,
+        "evidenceTokens": 0,
+        "creditsUsed": 0,
+        "searchIdCount": 5,
+        "sourcePolicyAdherent": true,
+        "expectedTermHit": false,
+        "expectedTermsMatched": [],
+        "expectedDomainHit": false,
+        "expectedDomainsMatched": [],
+        "expectedDomainCoverage": 0,
+        "uniqueDomainCount": 0,
+        "domains": []
+      },
+      "warnings": [
+        "sourcePolicy includeDomains returned no covered domains; try a more focused query or split unrelated domains into separate searches"
+      ],
+      "sampleResults": []
+    },
+    {
+      "taskId": "benchmark-methodology-content-mode",
+      "variantId": "summary-hybrid",
+      "strategy": "hybrid",
+      "input": {
+        "query": "Exa Parallel Tavily public search benchmark methodology SimpleQA WISER MSMARCO document relevance",
+        "maxResults": 10,
+        "maxCharsPerResult": 1800,
+        "maxCharsTotal": 14000,
+        "focus": "benchmark methodology, evaluation datasets, metrics, task construction patterns, agent search workflows",
+        "sourcePolicy": {
+          "includeDomains": [
+            "exa.ai",
+            "parallel.ai",
+            "github.com",
+            "docs.tavily.com"
+          ]
+        },
+        "sources": [
+          "web"
+        ],
+        "ignoreInvalidURLs": true,
+        "content": "summary"
+      },
+      "ok": true,
+      "latencyMs": 407,
+      "metrics": {
+        "resultCount": 0,
+        "rawResultCount": {
+          "web": 0,
+          "news": 0,
+          "images": 0
+        },
+        "charsReturned": 0,
+        "responseTokens": 498,
+        "evidenceTokens": 0,
+        "creditsUsed": 0,
+        "searchIdCount": 5,
+        "sourcePolicyAdherent": true,
+        "expectedTermHit": false,
+        "expectedTermsMatched": [],
+        "expectedDomainHit": false,
+        "expectedDomainsMatched": [],
+        "expectedDomainCoverage": 0,
+        "uniqueDomainCount": 0,
+        "domains": []
+      },
+      "warnings": [
+        "sourcePolicy includeDomains returned no covered domains; try a more focused query or split unrelated domains into separate searches"
+      ],
+      "sampleResults": []
+    },
+    {
+      "taskId": "benchmark-methodology-content-mode",
+      "variantId": "markdown-hybrid",
+      "strategy": "hybrid",
+      "input": {
+        "query": "Exa Parallel Tavily public search benchmark methodology SimpleQA WISER MSMARCO document relevance",
+        "maxResults": 10,
+        "maxCharsPerResult": 1800,
+        "maxCharsTotal": 14000,
+        "focus": "benchmark methodology, evaluation datasets, metrics, task construction patterns, agent search workflows",
+        "sourcePolicy": {
+          "includeDomains": [
+            "exa.ai",
+            "parallel.ai",
+            "github.com",
+            "docs.tavily.com"
+          ]
+        },
+        "sources": [
+          "web"
+        ],
+        "ignoreInvalidURLs": true,
+        "content": "markdown"
+      },
+      "ok": true,
+      "latencyMs": 239,
+      "metrics": {
+        "resultCount": 0,
+        "rawResultCount": {
+          "web": 0,
+          "news": 0,
+          "images": 0
+        },
+        "charsReturned": 0,
+        "responseTokens": 506,
+        "evidenceTokens": 0,
+        "creditsUsed": 0,
+        "searchIdCount": 5,
+        "sourcePolicyAdherent": true,
+        "expectedTermHit": false,
+        "expectedTermsMatched": [],
+        "expectedDomainHit": false,
+        "expectedDomainsMatched": [],
+        "expectedDomainCoverage": 0,
+        "uniqueDomainCount": 0,
+        "domains": []
+      },
+      "warnings": [
+        "sourcePolicy includeDomains returned no covered domains; try a more focused query or split unrelated domains into separate searches"
+      ],
+      "sampleResults": []
+    },
+    {
+      "taskId": "focus-effect",
+      "variantId": "without-focus",
+      "strategy": "compile",
+      "input": {
+        "query": "recent TypeScript JavaScript library release after August 2025 introduced API changes changelog release notes",
+        "content": "chunks",
+        "maxResults": 8,
+        "maxCharsPerResult": 1400,
+        "maxCharsTotal": 9000,
+        "freshness": "year",
+        "categories": [
+          "github"
+        ],
+        "sources": [
+          "web"
+        ],
+        "ignoreInvalidURLs": true
+      },
+      "ok": true,
+      "latencyMs": 956,
+      "metrics": {
+        "resultCount": 8,
+        "rawResultCount": {
+          "web": 8,
+          "news": 0,
+          "images": 0
+        },
+        "charsReturned": 6560,
+        "responseTokens": 3967,
+        "evidenceTokens": 2440,
+        "creditsUsed": 10,
+        "searchIdCount": 1,
+        "expectedTermHit": true,
+        "expectedTermsMatched": [
+          "release",
+          "API",
+          "TypeScript"
+        ],
+        "expectedDomainsMatched": [],
+        "uniqueDomainCount": 2,
+        "domains": [
+          "github.com",
+          "codeql.github.com"
+        ]
+      },
+      "firstResult": {
+        "title": "node/doc/changelogs/CHANGELOG_V24.md at main - GitHub",
+        "url": "https://github.com/nodejs/node/blob/main/doc/changelogs/CHANGELOG_V24.md",
+        "domain": "github.com"
+      },
+      "sampleResults": [
+        {
+          "title": "node/doc/changelogs/CHANGELOG_V24.md at main - GitHub",
+          "url": "https://github.com/nodejs/node/blob/main/doc/changelogs/CHANGELOG_V24.md",
+          "domain": "github.com",
+          "description": "This is a security release. Notable Changes. (CVE-2025-27209) HashDoS in V8 with new RapidHash algorithm; (CVE- ...",
+          "evidencePreview": "node/doc/changelogs/CHANGELOG_V24.md at main - GitHub\nhttps://github.com/nodejs/node/blob/main/doc/changelogs/CHANGELOG_V24.md\nThis is a security release. Notable Changes. (CVE-2025-27209) HashDoS in V8 with new RapidHash algorithm; (CVE- ...\n- \\[ [`148373cea1`](https://github.com/nodejs/node/commit/148373cea1)\\] \\- **assert,util**: improve comparison performance (Ruben Bridgewater) [#61176](https://github.com/nodejs/node/pull/61176)\n- \\[ [`e5558b0859`](https://github.com/nodejs/node/commit/e5558b0859)\\] \\- **assert,util**: fix deep comparing invalid dates skipping properties (Ruben Bridgewater) [#61076](https://github.com/nodejs/node/pull/61076)\n- \\[ [`83cffd92b5`](https://github.com/nodejs"
+        },
+        {
+          "title": "react/CHANGELOG.md at main · facebook/react - GitHub",
+          "url": "https://github.com/facebook/react/blob/main/CHANGELOG.md",
+          "domain": "github.com",
+          "description": "Below is a list of all new features, APIs, deprecations, and breaking changes. Read React 19 release post and React 19 upgrade guide for more information. Note ...",
+          "evidencePreview": "react/CHANGELOG.md at main · facebook/react - GitHub\nhttps://github.com/facebook/react/blob/main/CHANGELOG.md\nBelow is a list of all new features, APIs, deprecations, and breaking changes. Read React 19 release post and React 19 upgrade guide for more information. Note ...\nBelow is a list of all new features, APIs, deprecations, and breaking changes. Read [React 19 release post](https://react.dev/blog/2024/04/25/react-19) and [React 19 upgrade guide](https://react.dev/blog/2024/04/25/react-19-upgrade-guide) for more information.\n> Note: To help make the upgrade to React 19 easier, we’ve published a react@18.3 release that is identical to 18.2 but adds warnings for deprecated APIs and other c"
+        },
+        {
+          "title": "GitHub - demergent-labs/azle: A WebAssembly runtime for ...",
+          "url": "https://github.com/demergent-labs/azle",
+          "domain": "github.com",
+          "description": "Its focus is on API and runtime stability, security, performance, TypeScript and JavaScript language support, the ICP APIs, and Candid remote procedure calls ( ...",
+          "evidencePreview": "GitHub - demergent-labs/azle: A WebAssembly runtime for ...\nhttps://github.com/demergent-labs/azle\nIts focus is on API and runtime stability, security, performance, TypeScript and JavaScript language support, the ICP APIs, and Candid remote procedure calls ( ...\n| Name | Name | Last commit message | Last commit date |\n| --- | --- | --- | --- |\n| ## Latest commit<br>[![azle-auto-merge-bot[bot]](https://avatars.githubusercontent.com/in/1738142?v=4&size=40)](https://github.com/apps/azle-auto-merge-bot)[azle-auto-merge-bot\\[bot\\]](https://github.com/demergent-labs/azle/commits?author=azle-auto-merge-bot%5Bbot%5D)<br>[Merge pull request](https://github.com/demergent-labs/azle/commit/723e82d4790d5"
+        },
+        {
+          "title": "node/doc/changelogs/CHANGELOG_V22.md at main - GitHub",
+          "url": "https://github.com/nodejs/node/blob/main/doc/changelogs/CHANGELOG_V22.md",
+          "domain": "github.com",
+          "description": "This release adds a new API module.enableCompileCache() that can be used to enable on-disk code caching of all modules loaded after this API is called.",
+          "evidencePreview": "node/doc/changelogs/CHANGELOG_V22.md at main - GitHub\nhttps://github.com/nodejs/node/blob/main/doc/changelogs/CHANGELOG_V22.md\nThis release adds a new API module.enableCompileCache() that can be used to enable on-disk code caching of all modules loaded after this API is called.\n[Skip to content](https://github.com/nodejs/node/blob/main/doc/changelogs/CHANGELOG_V22.md#start-of-content)\nYou signed in with another tab or window. [Reload](https://github.com/nodejs/node/blob/main/doc/changelogs/CHANGELOG_V22.md) to refresh your session.You signed out in another tab or window. [Reload](https://github.com/nodejs/node/blob/main/doc/changelogs/CHANGELOG_V22.md) to refresh your session.You switched ac"
+        },
+        {
+          "title": "CHANGELOG.md - amannn/next-intl - GitHub",
+          "url": "https://github.com/amannn/next-intl/blob/main/CHANGELOG.md",
+          "domain": "github.com",
+          "description": "4.9.0 (2026-04-01) · Support transitionTypes on Link (#2302) ; 4.8.4 (2026-03-31) · Remove TypeScript peer dependency and update examples to TypeScript v6 (#2293) ...",
+          "evidencePreview": "CHANGELOG.md - amannn/next-intl - GitHub\nhttps://github.com/amannn/next-intl/blob/main/CHANGELOG.md\n4.9.0 (2026-04-01) · Support transitionTypes on Link (#2302) ; 4.8.4 (2026-03-31) · Remove TypeScript peer dependency and update examples to TypeScript v6 (#2293) ...\n[Permalink: 4.6.1 (2025-12-16)](https://github.com/amannn/next-intl/blob/main/CHANGELOG.md#461-2025-12-16)\n[Permalink: 4.6.0 (2025-12-12)](https://github.com/amannn/next-intl/blob/main/CHANGELOG.md#460-2025-12-12)\n- Repair package publishing workflow (this release doesn't include any library changes) ( [ceba9ae](https://github.com/amannn/next-intl/commit/ceba9ae92e863d7185c40054e8218e76a483f6a8)) – by @amannn"
+        }
+      ]
+    },
+    {
+      "taskId": "focus-effect",
+      "variantId": "with-focus",
+      "strategy": "compile",
+      "input": {
+        "query": "recent TypeScript JavaScript library release after August 2025 introduced API changes changelog release notes",
+        "content": "chunks",
+        "maxResults": 8,
+        "maxCharsPerResult": 1400,
+        "maxCharsTotal": 9000,
+        "freshness": "year",
+        "categories": [
+          "github"
+        ],
+        "sources": [
+          "web"
+        ],
+        "ignoreInvalidURLs": true,
+        "focus": "release notes or changelog entries with concrete API additions removals migrations TypeScript JavaScript"
+      },
+      "ok": true,
+      "latencyMs": 833,
+      "metrics": {
+        "resultCount": 8,
+        "rawResultCount": {
+          "web": 8,
+          "news": 0,
+          "images": 0
+        },
+        "charsReturned": 7340,
+        "responseTokens": 4194,
+        "evidenceTokens": 2645,
+        "creditsUsed": 10,
+        "searchIdCount": 1,
+        "expectedTermHit": true,
+        "expectedTermsMatched": [
+          "release",
+          "API",
+          "TypeScript"
+        ],
+        "expectedDomainsMatched": [],
+        "uniqueDomainCount": 2,
+        "domains": [
+          "github.com",
+          "codeql.github.com"
+        ]
+      },
+      "firstResult": {
+        "title": "node/doc/changelogs/CHANGELOG_V24.md at main - GitHub",
+        "url": "https://github.com/nodejs/node/blob/main/doc/changelogs/CHANGELOG_V24.md",
+        "domain": "github.com"
+      },
+      "sampleResults": [
+        {
+          "title": "node/doc/changelogs/CHANGELOG_V24.md at main - GitHub",
+          "url": "https://github.com/nodejs/node/blob/main/doc/changelogs/CHANGELOG_V24.md",
+          "domain": "github.com",
+          "description": "This is a security release. Notable Changes. (CVE-2025-27209) HashDoS in V8 with new RapidHash algorithm; (CVE- ...",
+          "evidencePreview": "node/doc/changelogs/CHANGELOG_V24.md at main - GitHub\nhttps://github.com/nodejs/node/blob/main/doc/changelogs/CHANGELOG_V24.md\nThis is a security release. Notable Changes. (CVE-2025-27209) HashDoS in V8 with new RapidHash algorithm; (CVE- ...\n- \\[ [`a73279c60d`](https://github.com/nodejs/node/commit/a73279c60d)\\] \\- **assert**: use a set instead of an array for faster lookup (Ruben Bridgewater) [#61076](https://github.com/nodejs/node/pull/61076)\n- \\[ [`6a61bcd73c`](https://github.com/nodejs/node/commit/6a61bcd73c)\\] \\- **assert,util**: fix deep comparison for sets and maps with mixed types (Ruben Bridgewater) [#61388](https://github.com/nodejs/node/pull/61388)\n- \\[ [`cf0eabcd42`](https://git"
+        },
+        {
+          "title": "react/CHANGELOG.md at main · facebook/react - GitHub",
+          "url": "https://github.com/facebook/react/blob/main/CHANGELOG.md",
+          "domain": "github.com",
+          "description": "Below is a list of all new features, APIs, deprecations, and breaking changes. Read React 19 release post and React 19 upgrade guide for more information. Note ...",
+          "evidencePreview": "react/CHANGELOG.md at main · facebook/react - GitHub\nhttps://github.com/facebook/react/blob/main/CHANGELOG.md\nBelow is a list of all new features, APIs, deprecations, and breaking changes. Read React 19 release post and React 19 upgrade guide for more information. Note ...\n- New JSX Transform is now required: We introduced [a new JSX transform](https://legacy.reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html) in 2020 to improve bundle size and use JSX without importing React. In React 19, we’re adding additional improvements like using ref as a prop and JSX speed improvements that require the new transform.\n- Errors in render are not re-thrown: Errors that are not caught by "
+        },
+        {
+          "title": "GitHub - demergent-labs/azle: A WebAssembly runtime for ...",
+          "url": "https://github.com/demergent-labs/azle",
+          "domain": "github.com",
+          "description": "Its focus is on API and runtime stability, security, performance, TypeScript and JavaScript language support, the ICP APIs, and Candid remote procedure calls ( ...",
+          "evidencePreview": "GitHub - demergent-labs/azle: A WebAssembly runtime for ...\nhttps://github.com/demergent-labs/azle\nIts focus is on API and runtime stability, security, performance, TypeScript and JavaScript language support, the ICP APIs, and Candid remote procedure calls ( ...\n| Name | Name | Last commit message | Last commit date |\n| --- | --- | --- | --- |\n| ## Latest commit<br>[![azle-auto-merge-bot[bot]](https://avatars.githubusercontent.com/in/1738142?v=4&size=40)](https://github.com/apps/azle-auto-merge-bot)[azle-auto-merge-bot\\[bot\\]](https://github.com/demergent-labs/azle/commits?author=azle-auto-merge-bot%5Bbot%5D)<br>[Merge pull request](https://github.com/demergent-labs/azle/commit/723e82d4790d5"
+        },
+        {
+          "title": "node/doc/changelogs/CHANGELOG_V22.md at main - GitHub",
+          "url": "https://github.com/nodejs/node/blob/main/doc/changelogs/CHANGELOG_V22.md",
+          "domain": "github.com",
+          "description": "This release adds a new API module.enableCompileCache() that can be used to enable on-disk code caching of all modules loaded after this API is called.",
+          "evidencePreview": "node/doc/changelogs/CHANGELOG_V22.md at main - GitHub\nhttps://github.com/nodejs/node/blob/main/doc/changelogs/CHANGELOG_V22.md\nThis release adds a new API module.enableCompileCache() that can be used to enable on-disk code caching of all modules loaded after this API is called.\n[Skip to content](https://github.com/nodejs/node/blob/main/doc/changelogs/CHANGELOG_V22.md#start-of-content)\nYou signed in with another tab or window. [Reload](https://github.com/nodejs/node/blob/main/doc/changelogs/CHANGELOG_V22.md) to refresh your session.You signed out in another tab or window. [Reload](https://github.com/nodejs/node/blob/main/doc/changelogs/CHANGELOG_V22.md) to refresh your session.You switched ac"
+        },
+        {
+          "title": "CHANGELOG.md - amannn/next-intl - GitHub",
+          "url": "https://github.com/amannn/next-intl/blob/main/CHANGELOG.md",
+          "domain": "github.com",
+          "description": "4.9.0 (2026-04-01) · Support transitionTypes on Link (#2302) ; 4.8.4 (2026-03-31) · Remove TypeScript peer dependency and update examples to TypeScript v6 (#2293) ...",
+          "evidencePreview": "CHANGELOG.md - amannn/next-intl - GitHub\nhttps://github.com/amannn/next-intl/blob/main/CHANGELOG.md\n4.9.0 (2026-04-01) · Support transitionTypes on Link (#2302) ; 4.8.4 (2026-03-31) · Remove TypeScript peer dependency and update examples to TypeScript v6 (#2293) ...\nYou signed in with another tab or window. [Reload](https://github.com/amannn/next-intl/blob/main/CHANGELOG.md) to refresh your session.You signed out in another tab or window. [Reload](https://github.com/amannn/next-intl/blob/main/CHANGELOG.md) to refresh your session.You switched accounts on another tab or window. [Reload](https://github.com/amannn/next-intl/blob/main/CHANGELOG.md) to refresh your session.Dismiss alert\n[Permalin"
+        }
+      ]
+    }
+  ],
+  "summary": [
+    {
+      "taskId": "multi-domain-product-comparison",
+      "bestVariant": "compile",
+      "bestStrategy": "compile",
+      "bestScore": 8.54,
+      "variants": [
+        {
+          "variantId": "compile",
+          "strategy": "compile",
+          "score": 8.54,
+          "ok": true,
+          "resultCount": 8,
+          "responseTokens": 4919,
+          "evidenceTokens": 3276,
+          "expectedDomainCoverage": 0,
+          "expectedTermsMatched": [
+            "MCP",
+            "search",
+            "agent"
+          ],
+          "domains": [
+            "github.com"
+          ],
+          "warnings": [
+            "sourcePolicy covered 1 of 8 includeDomains; split unrelated domains into focused follow-up searches if coverage matters"
+          ]
+        },
+        {
+          "variantId": "fanout",
+          "strategy": "fanout",
+          "score": 8.4,
+          "ok": true,
+          "resultCount": 8,
+          "responseTokens": 5194,
+          "evidenceTokens": 3272,
+          "expectedDomainCoverage": 0,
+          "expectedTermsMatched": [
+            "MCP",
+            "search",
+            "agent"
+          ],
+          "domains": [
+            "github.com"
+          ],
+          "warnings": [
+            "sourcePolicy covered 1 of 8 includeDomains; split unrelated domains into focused follow-up searches if coverage matters"
+          ]
+        },
+        {
+          "variantId": "hybrid",
+          "strategy": "hybrid",
+          "score": 8.35,
+          "ok": true,
+          "resultCount": 8,
+          "responseTokens": 5293,
+          "evidenceTokens": 3276,
+          "expectedDomainCoverage": 0,
+          "expectedTermsMatched": [
+            "MCP",
+            "search",
+            "agent"
+          ],
+          "domains": [
+            "github.com"
+          ],
+          "warnings": [
+            "sourcePolicy covered 1 of 8 includeDomains; split unrelated domains into focused follow-up searches if coverage matters"
+          ]
+        }
+      ]
+    },
+    {
+      "taskId": "docs-parity-content-mode",
+      "bestVariant": "results",
+      "bestStrategy": "compile",
+      "bestScore": 104.67,
+      "variants": [
+        {
+          "variantId": "results",
+          "strategy": "compile",
+          "score": 104.67,
+          "ok": true,
+          "resultCount": 5,
+          "responseTokens": 662,
+          "evidenceTokens": 271,
+          "expectedDomainCoverage": 1,
+          "expectedTermsMatched": [
+            "categories",
+            "country",
+            "timeout",
+            "ignoreInvalidURLs"
+          ],
+          "domains": [
+            "docs.firecrawl.dev"
+          ],
+          "warnings": [
+            "focus is ignored when content is results"
+          ]
+        },
+        {
+          "variantId": "summary",
+          "strategy": "compile",
+          "score": 104.02,
+          "ok": true,
+          "resultCount": 5,
+          "responseTokens": 1958,
+          "evidenceTokens": 1239,
+          "expectedDomainCoverage": 1,
+          "expectedTermsMatched": [
+            "categories",
+            "country",
+            "timeout",
+            "ignoreInvalidURLs"
+          ],
+          "domains": [
+            "docs.firecrawl.dev"
+          ]
+        },
+        {
+          "variantId": "chunks",
+          "strategy": "compile",
+          "score": 103.42,
+          "ok": true,
+          "resultCount": 5,
+          "responseTokens": 3162,
+          "evidenceTokens": 1857,
+          "expectedDomainCoverage": 1,
+          "expectedTermsMatched": [
+            "categories",
+            "country",
+            "timeout",
+            "ignoreInvalidURLs"
+          ],
+          "domains": [
+            "docs.firecrawl.dev"
+          ]
+        },
+        {
+          "variantId": "markdown",
+          "strategy": "compile",
+          "score": 103.14,
+          "ok": true,
+          "resultCount": 5,
+          "responseTokens": 3722,
+          "evidenceTokens": 2803,
+          "expectedDomainCoverage": 1,
+          "expectedTermsMatched": [
+            "categories",
+            "country",
+            "timeout",
+            "ignoreInvalidURLs"
+          ],
+          "domains": [
+            "docs.firecrawl.dev"
+          ],
+          "warnings": [
+            "maxCharsTotal hard cap reached at 8000 characters"
+          ]
+        }
+      ]
+    },
+    {
+      "taskId": "benchmark-methodology-content-mode",
+      "bestVariant": "chunks-compile",
+      "bestStrategy": "compile",
+      "bestScore": -25.15,
+      "variants": [
+        {
+          "variantId": "chunks-compile",
+          "strategy": "compile",
+          "score": -25.15,
+          "ok": true,
+          "resultCount": 0,
+          "responseTokens": 309,
+          "evidenceTokens": 0,
+          "expectedDomainCoverage": 0,
+          "expectedTermsMatched": [],
+          "domains": [],
+          "warnings": [
+            "sourcePolicy includeDomains returned no covered domains; try a more focused query or split unrelated domains into separate searches"
+          ]
+        },
+        {
+          "variantId": "summary-hybrid",
+          "strategy": "hybrid",
+          "score": -25.25,
+          "ok": true,
+          "resultCount": 0,
+          "responseTokens": 498,
+          "evidenceTokens": 0,
+          "expectedDomainCoverage": 0,
+          "expectedTermsMatched": [],
+          "domains": [],
+          "warnings": [
+            "sourcePolicy includeDomains returned no covered domains; try a more focused query or split unrelated domains into separate searches"
+          ]
+        },
+        {
+          "variantId": "chunks-hybrid",
+          "strategy": "hybrid",
+          "score": -25.25,
+          "ok": true,
+          "resultCount": 0,
+          "responseTokens": 499,
+          "evidenceTokens": 0,
+          "expectedDomainCoverage": 0,
+          "expectedTermsMatched": [],
+          "domains": [],
+          "warnings": [
+            "sourcePolicy includeDomains returned no covered domains; try a more focused query or split unrelated domains into separate searches"
+          ]
+        },
+        {
+          "variantId": "markdown-hybrid",
+          "strategy": "hybrid",
+          "score": -25.25,
+          "ok": true,
+          "resultCount": 0,
+          "responseTokens": 506,
+          "evidenceTokens": 0,
+          "expectedDomainCoverage": 0,
+          "expectedTermsMatched": [],
+          "domains": [],
+          "warnings": [
+            "sourcePolicy includeDomains returned no covered domains; try a more focused query or split unrelated domains into separate searches"
+          ]
+        }
+      ]
+    },
+    {
+      "taskId": "focus-effect",
+      "bestVariant": "without-focus",
+      "bestStrategy": "compile",
+      "bestScore": 49.02,
+      "variants": [
+        {
+          "variantId": "without-focus",
+          "strategy": "compile",
+          "score": 49.02,
+          "ok": true,
+          "resultCount": 8,
+          "responseTokens": 3967,
+          "evidenceTokens": 2440,
+          "expectedTermsMatched": [
+            "release",
+            "API",
+            "TypeScript"
+          ],
+          "domains": [
+            "github.com",
+            "codeql.github.com"
+          ]
+        },
+        {
+          "variantId": "with-focus",
+          "strategy": "compile",
+          "score": 48.9,
+          "ok": true,
+          "resultCount": 8,
+          "responseTokens": 4194,
+          "evidenceTokens": 2645,
+          "expectedTermsMatched": [
+            "release",
+            "API",
+            "TypeScript"
+          ],
+          "domains": [
+            "github.com",
+            "codeql.github.com"
+          ]
+        }
+      ]
+    }
+  ]
+}

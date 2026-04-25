@@ -1,0 +1,125 @@
+[
+  {
+    "id": "multi-domain-product-comparison",
+    "question": "Can Firecrawl Search return domain-balanced agent context for a multi-provider product comparison without map/scrape recovery?",
+    "expectedTerms": ["MCP", "search", "agent"],
+    "expectedDomains": [
+      "docs.firecrawl.dev",
+      "exa.ai",
+      "parallel.ai",
+      "docs.tavily.com"
+    ],
+    "sourcePolicy": {
+      "includeDomains": [
+        "docs.firecrawl.dev",
+        "exa.ai",
+        "docs.exa.ai",
+        "parallel.ai",
+        "docs.parallel.ai",
+        "docs.tavily.com",
+        "tavily.com",
+        "github.com"
+      ]
+    },
+    "input": {
+      "query": "Firecrawl Exa Parallel Tavily MCP search agent benchmark context shape tool call flow retrieval quality",
+      "content": "chunks",
+      "maxResults": 8,
+      "maxCharsPerResult": 1200,
+      "maxCharsTotal": 9000,
+      "focus": "official docs or benchmark pages describing MCP search tools, agent-facing context shape, tool-call flow, returned content, and retrieval quality benchmarks",
+      "sourcePolicy": {
+        "includeDomains": [
+          "docs.firecrawl.dev",
+          "exa.ai",
+          "docs.exa.ai",
+          "parallel.ai",
+          "docs.parallel.ai",
+          "docs.tavily.com",
+          "tavily.com",
+          "github.com"
+        ]
+      },
+      "sources": ["web"],
+      "ignoreInvalidURLs": true
+    },
+    "variants": [
+      { "id": "compile", "sourcePolicyStrategy": "compile" },
+      { "id": "fanout", "sourcePolicyStrategy": "fanout" },
+      { "id": "hybrid", "sourcePolicyStrategy": "hybrid" }
+    ]
+  },
+  {
+    "id": "docs-parity-content-mode",
+    "question": "Which content mode gives the best single-call evidence for Firecrawl Search API parity fields?",
+    "expectedTerms": ["categories", "country", "timeout", "ignoreInvalidURLs"],
+    "expectedDomains": ["docs.firecrawl.dev"],
+    "input": {
+      "query": "Firecrawl Search API categories country timeout ignoreInvalidURLs",
+      "maxResults": 5,
+      "maxCharsPerResult": 1600,
+      "maxCharsTotal": 8000,
+      "focus": "Search API request fields categories country timeout ignoreInvalidURLs",
+      "sourcePolicy": {
+        "includeDomains": ["docs.firecrawl.dev"]
+      },
+      "sources": ["web"],
+      "ignoreInvalidURLs": true
+    },
+    "variants": [
+      { "id": "results", "input": { "content": "results" } },
+      { "id": "summary", "input": { "content": "summary" } },
+      { "id": "chunks", "input": { "content": "chunks" } },
+      { "id": "markdown", "input": { "content": "markdown" } }
+    ]
+  },
+  {
+    "id": "benchmark-methodology-content-mode",
+    "question": "Which content mode gives the best benchmark-methodology evidence across Exa, Parallel, and Tavily sources?",
+    "expectedTerms": ["SimpleQA", "WISER", "MSMARCO", "document relevance"],
+    "expectedDomains": ["exa.ai", "parallel.ai", "github.com", "docs.tavily.com"],
+    "input": {
+      "query": "Exa Parallel Tavily public search benchmark methodology SimpleQA WISER MSMARCO document relevance",
+      "maxResults": 10,
+      "maxCharsPerResult": 1800,
+      "maxCharsTotal": 14000,
+      "focus": "benchmark methodology, evaluation datasets, metrics, task construction patterns, agent search workflows",
+      "sourcePolicy": {
+        "includeDomains": ["exa.ai", "parallel.ai", "github.com", "docs.tavily.com"]
+      },
+      "sources": ["web"],
+      "ignoreInvalidURLs": true
+    },
+    "variants": [
+      { "id": "chunks-compile", "sourcePolicyStrategy": "compile", "input": { "content": "chunks" } },
+      { "id": "chunks-hybrid", "sourcePolicyStrategy": "hybrid", "input": { "content": "chunks" } },
+      { "id": "summary-hybrid", "sourcePolicyStrategy": "hybrid", "input": { "content": "summary" } },
+      { "id": "markdown-hybrid", "sourcePolicyStrategy": "hybrid", "input": { "content": "markdown" } }
+    ]
+  },
+  {
+    "id": "focus-effect",
+    "question": "Does focus materially improve chunk evidence for a hard technical release query?",
+    "expectedTerms": ["release", "API", "TypeScript"],
+    "input": {
+      "query": "recent TypeScript JavaScript library release after August 2025 introduced API changes changelog release notes",
+      "content": "chunks",
+      "maxResults": 8,
+      "maxCharsPerResult": 1400,
+      "maxCharsTotal": 9000,
+      "freshness": "year",
+      "categories": ["github"],
+      "sources": ["web"],
+      "ignoreInvalidURLs": true
+    },
+    "variants": [
+      { "id": "without-focus" },
+      {
+        "id": "with-focus",
+        "input": {
+          "focus": "release notes or changelog entries with concrete API additions removals migrations TypeScript JavaScript"
+        }
+      }
+    ]
+  }
+]

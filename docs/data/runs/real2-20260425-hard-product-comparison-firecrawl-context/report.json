@@ -1,0 +1,172 @@
+{
+  "status": "complete",
+  "runId": "real2-20260425-hard-product-comparison-firecrawl-context",
+  "generatedAt": "2026-04-25T07:04:53.451Z",
+  "manifest": {
+    "runId": "real2-20260425-hard-product-comparison-firecrawl-context",
+    "createdAt": "2026-04-25T06:51:09.074Z",
+    "provider": {
+      "id": "firecrawl-context",
+      "name": "Firecrawl MCP context fork",
+      "transport": "stdio",
+      "cwd": "../firecrawl-mcp-server",
+      "command": "node",
+      "args": [
+        "dist/index.js"
+      ],
+      "env": [
+        {
+          "name": "FIRECRAWL_API_KEY",
+          "required": true,
+          "present": true
+        },
+        {
+          "name": "FIRECRAWL_API_URL",
+          "required": false,
+          "present": false
+        }
+      ],
+      "searchTools": [
+        "firecrawl_search"
+      ],
+      "fetchTools": [
+        "firecrawl_scrape"
+      ],
+      "mapTools": [
+        "firecrawl_map"
+      ],
+      "cwdExists": true
+    },
+    "task": {
+      "id": "hard-product-comparison",
+      "family": "multi-step-research",
+      "question": "For an agent trying to answer hard web questions, how do Firecrawl, Exa, Parallel, and Tavily differ in context shape, tool-call flow, and retrieval quality?",
+      "agentGoal": "Gather evidence from official docs and benchmark pages, then compare agent-facing search behavior. Multiple calls are expected.",
+      "expectedTerms": [
+        "MCP",
+        "search",
+        "agent"
+      ],
+      "expectedDomains": [
+        "docs.firecrawl.dev",
+        "exa.ai",
+        "parallel.ai",
+        "docs.tavily.com"
+      ]
+    }
+  },
+  "metrics": {
+    "provider": "firecrawl-context",
+    "taskId": "hard-product-comparison",
+    "toolCalls": 13,
+    "searchCalls": 13,
+    "fetchCalls": 0,
+    "mapCalls": 0,
+    "discoveryCalls": 13,
+    "extractionCalls": 0,
+    "failedCalls": 0,
+    "zeroResultCalls": 3,
+    "zeroResultSearchCalls": 3,
+    "expectedTermMissCalls": 3,
+    "expectedDomainMissCalls": 4,
+    "expectedTermMissSearchCalls": 3,
+    "expectedDomainMissSearchCalls": 4,
+    "sourcePolicyViolationCalls": 0,
+    "recoverySignalCalls": 7,
+    "recoverySignalRate": 0.54,
+    "totalResultCount": 45,
+    "uniqueUrlCount": 37,
+    "uniqueDomainCount": 7,
+    "duplicateUrlRate": 0.1778,
+    "expectedDomainsCovered": [
+      "exa.ai",
+      "parallel.ai",
+      "docs.tavily.com",
+      "docs.firecrawl.dev"
+    ],
+    "firstSearch": {
+      "tool": "firecrawl_search",
+      "resultCount": 0,
+      "expectedTermHit": false,
+      "expectedDomainHit": false,
+      "rawOutputTokens": 306,
+      "normalizedEvidenceTokens": 0,
+      "domains": [],
+      "urls": []
+    },
+    "totalConnectMs": 2798,
+    "totalCallLatencyMs": 31929,
+    "argumentTokens": 1938,
+    "rawOutputTokens": 33802,
+    "normalizedEvidenceTokens": 21234,
+    "evidenceToRawTokenRatio": 0.6282,
+    "avgRawOutputTokensPerCall": 2600.15,
+    "rawOutputOutlierThresholdTokens": 50000,
+    "rawOutputOutlierCalls": 0,
+    "maxRawOutputCall": {
+      "tool": "firecrawl_search",
+      "rawOutputTokens": 5618,
+      "normalizedEvidenceTokens": 3800,
+      "resultCount": 8
+    },
+    "avgResultsPerSearchCall": 3.46,
+    "totalTrajectoryTokens": 47137,
+    "contract": {
+      "toolCount": 14,
+      "searchToolCount": 1,
+      "fetchToolCount": 2,
+      "descriptionTokens": 5052,
+      "schemaTokens": 5505,
+      "totalMcpFootprintTokens": 11397,
+      "searchOnlyFootprintTokens": 2330,
+      "searchFetchFootprintTokens": 5303,
+      "hasFreshnessControl": true,
+      "hasSourcePolicyControl": true,
+      "hasContentBudgetControl": true,
+      "hasUsageMetadata": true
+    }
+  },
+  "semanticScore": {
+    "agentModel": "gpt-5.5 xhigh",
+    "provider": "firecrawl-context",
+    "taskId": "hard-product-comparison",
+    "success": true,
+    "answerSupportedByEvidence": true,
+    "retrievalQualityScore": 4,
+    "agentExperienceScore": 4,
+    "sourcePolicyAdherent": true,
+    "freshnessAdherent": null,
+    "callRationale": [
+      "Started with official-domain searches for Firecrawl, Exa, Parallel, and Tavily using chunked context to compare agent-facing search behavior.",
+      "Used focused follow-up searches after broad sourcePolicy queries returned zero results or warnings.",
+      "Searched exact MCP and documentation pages for each vendor to compare context shape and tool-call flow.",
+      "Added benchmark-focused searches for Exa, Parallel, and Tavily to separate retrieval-quality evidence from API ergonomics.",
+      "Kept all evidence to provider-returned results and official/provider domains surfaced through the benchmark harness."
+    ],
+    "strengths": [
+      "Provider schema is rich for agents: content modes, focus, sourcePolicy, freshness, budget controls, and usage metadata.",
+      "Focused searches retrieved strong official evidence across all four expected vendors.",
+      "Warnings were actionable and helped recover from failed broad source-policy searches.",
+      "Parallel and Exa benchmark/evaluation evidence was especially strong."
+    ],
+    "weaknesses": [
+      "Broad multi-domain sourcePolicy searches returned zero results twice, requiring split follow-ups.",
+      "Some chunk outputs were noisy or repetitive, especially llms-full and crawl/example-heavy pages.",
+      "Tavily benchmark evidence was weak in this trajectory beyond a homepage state-of-the-art teaser.",
+      "Firecrawl official retrieval-quality benchmark evidence was not found, so the Firecrawl assessment relies more on context contract and extraction workflow evidence."
+    ],
+    "notableFailures": [
+      "Initial Firecrawl multi-domain official-doc search returned no results.",
+      "Broad all-vendor benchmark search returned no results.",
+      "Tavily benchmark-focused search returned no results and required an alternate research-endpoint query.",
+      "One local harness call failed before execution because temporary args were initially written in the wrong workdir; it was not a provider retrieval failure."
+    ],
+    "confidence": 0.86
+  },
+  "artifacts": {
+    "answer": "scoring/final-answer.md",
+    "score": "scoring/agent-score.json",
+    "trace": "trace.jsonl",
+    "tools": "schemas/tools.json"
+  }
+}

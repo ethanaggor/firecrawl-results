@@ -1,0 +1,20 @@
+{
+  "query": "Tavily benchmark methodology search API SimpleQA WISER MSMARCO document relevance",
+  "content": "chunks",
+  "maxResults": 8,
+  "maxCharsPerResult": 2200,
+  "maxCharsTotal": 14000,
+  "focus": "Tavily public benchmark methodology, search API evaluation, SimpleQA, WISER, MSMARCO, document relevance, metrics",
+  "freshness": "year",
+  "sourcePolicy": {
+    "includeDomains": [
+      "tavily.com",
+      "docs.tavily.com"
+    ]
+  },
+  "sources": [
+    "web"
+  ],
+  "ignoreInvalidURLs": true,
+  "includeRawResults": true
+}

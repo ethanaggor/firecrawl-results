@@ -1,0 +1,10 @@
+{
+  "objective": "Find official Firecrawl docs on docs.firecrawl.dev for the Search API parameters categories, country, timeout, and ignoreInvalidURLs. Return only docs.firecrawl.dev results.",
+  "search_queries": [
+    "site:docs.firecrawl.dev search api",
+    "Firecrawl search categories country",
+    "ignoreInvalidURLs timeout Firecrawl"
+  ],
+  "session_id": "a67b3e1142b84f7099e6c4f55c14d931",
+  "model_name": "gpt-5.5 xhigh"
+}

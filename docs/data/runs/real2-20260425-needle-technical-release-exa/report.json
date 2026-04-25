@@ -1,0 +1,149 @@
+{
+  "status": "complete",
+  "runId": "real2-20260425-needle-technical-release-exa",
+  "generatedAt": "2026-04-25T07:04:53.743Z",
+  "manifest": {
+    "runId": "real2-20260425-needle-technical-release-exa",
+    "createdAt": "2026-04-25T06:52:50.526Z",
+    "provider": {
+      "id": "exa",
+      "name": "Exa remote MCP",
+      "transport": "streamable-http",
+      "url": "https://mcp.exa.ai/mcp?tools=web_search_exa,web_fetch_exa,web_search_advanced_exa",
+      "headers": [
+        {
+          "name": "x-api-key",
+          "required": true,
+          "present": true
+        }
+      ],
+      "searchTools": [
+        "web_search_exa",
+        "web_search_advanced_exa"
+      ],
+      "fetchTools": [
+        "web_fetch_exa"
+      ]
+    },
+    "task": {
+      "id": "needle-technical-release",
+      "family": "hard-retrieval",
+      "question": "Find a recent TypeScript or JavaScript library release after August 2025 that introduced at least three concrete API changes and identify source-backed examples.",
+      "agentGoal": "This mirrors Exa WebCode-style coding-agent search. Prefer changelogs, release notes, and official docs.",
+      "expectedTerms": [
+        "release",
+        "API",
+        "TypeScript"
+      ],
+      "freshness": "year"
+    }
+  },
+  "metrics": {
+    "provider": "exa",
+    "taskId": "needle-technical-release",
+    "toolCalls": 4,
+    "searchCalls": 2,
+    "fetchCalls": 2,
+    "mapCalls": 0,
+    "discoveryCalls": 2,
+    "extractionCalls": 2,
+    "failedCalls": 0,
+    "zeroResultCalls": 0,
+    "zeroResultSearchCalls": 0,
+    "expectedTermMissCalls": 0,
+    "expectedDomainMissCalls": 0,
+    "expectedTermMissSearchCalls": 0,
+    "expectedDomainMissSearchCalls": 0,
+    "sourcePolicyViolationCalls": 0,
+    "recoverySignalCalls": 0,
+    "recoverySignalRate": 0,
+    "totalResultCount": 12,
+    "uniqueUrlCount": 10,
+    "uniqueDomainCount": 3,
+    "duplicateUrlRate": 0.1667,
+    "expectedDomainsCovered": [],
+    "firstSearch": {
+      "tool": "web_search_advanced_exa",
+      "resultCount": 5,
+      "expectedTermHit": true,
+      "rawOutputTokens": 8180,
+      "normalizedEvidenceTokens": 7035,
+      "domains": [
+        "nextjs.org",
+        "typescriptlang.org"
+      ],
+      "urls": [
+        "https://nextjs.org/blog/next-16-1",
+        "https://nextjs.org/blog/next-16",
+        "https://typescriptlang.org/docs/handbook/classes.html",
+        "https://typescriptlang.org/docs/handbook/advanced-types.html",
+        "https://typescriptlang.org/docs/handbook/declaration-files/templates/global-plugin-d-ts.html"
+      ]
+    },
+    "totalConnectMs": 704,
+    "totalCallLatencyMs": 22042,
+    "argumentTokens": 327,
+    "rawOutputTokens": 30685,
+    "normalizedEvidenceTokens": 19245,
+    "evidenceToRawTokenRatio": 0.6272,
+    "avgRawOutputTokensPerCall": 7671.25,
+    "rawOutputOutlierThresholdTokens": 50000,
+    "rawOutputOutlierCalls": 0,
+    "maxRawOutputCall": {
+      "tool": "web_search_advanced_exa",
+      "rawOutputTokens": 9997,
+      "normalizedEvidenceTokens": 8406,
+      "resultCount": 5
+    },
+    "avgResultsPerSearchCall": 5,
+    "totalTrajectoryTokens": 33012,
+    "contract": {
+      "toolCount": 3,
+      "searchToolCount": 2,
+      "fetchToolCount": 1,
+      "descriptionTokens": 235,
+      "schemaTokens": 1509,
+      "totalMcpFootprintTokens": 2000,
+      "searchOnlyFootprintTokens": 1718,
+      "searchFetchFootprintTokens": 2000,
+      "hasFreshnessControl": true,
+      "hasSourcePolicyControl": true,
+      "hasContentBudgetControl": true,
+      "hasUsageMetadata": false
+    }
+  },
+  "semanticScore": {
+    "agentModel": "gpt-5.5 xhigh",
+    "provider": "exa",
+    "taskId": "needle-technical-release",
+    "success": true,
+    "answerSupportedByEvidence": true,
+    "retrievalQualityScore": 5,
+    "agentExperienceScore": 4,
+    "sourcePolicyAdherent": true,
+    "freshnessAdherent": true,
+    "callRationale": [
+      "Started with a freshness-scoped official-domain search for post-August-2025 TypeScript/JavaScript release notes with API changes.",
+      "Fetched the official Next.js 16 release note because it directly matched the task with a 2025-10-21 release date and several API/configuration changes.",
+      "Ran a targeted official Next.js documentation search for upgrade-guide details around cacheComponents, proxy.ts, revalidateTag, updateTag, and refresh.",
+      "Fetched the official Version 16 upgrade guide to support concrete migration examples and TypeScript/JavaScript code snippets."
+    ],
+    "strengths": [
+      "Retrieved official release-note evidence and official upgrade-guide evidence.",
+      "Confirmed freshness with a release published after August 2025.",
+      "Collected more than three concrete API/configuration changes with examples."
+    ],
+    "weaknesses": [
+      "The first broad search returned some unrelated TypeScript handbook pages before the targeted Next.js follow-up.",
+      "The selected artifact is a framework release rather than a small library release, though it is still a JavaScript/TypeScript package release."
+    ],
+    "notableFailures": [],
+    "confidence": 0.93
+  },
+  "artifacts": {
+    "answer": "scoring/final-answer.md",
+    "score": "scoring/agent-score.json",
+    "trace": "trace.jsonl",
+    "tools": "schemas/tools.json"
+  }
+}

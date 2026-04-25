@@ -1,0 +1,42 @@
+{
+  "provider": "firecrawl-context",
+  "tool": "firecrawl_search",
+  "isError": false,
+  "rawText": "{\n  \"query\": \"Firecrawl MCP Search API content modes summary chunks markdown sourcePolicy freshness maxCharsTotal agent context official docs\",\n  \"executedQuery\": \"Firecrawl MCP Search API content modes summary chunks markdown sourcePolicy freshness maxCharsTotal agent context official docs (site:docs.firecrawl.dev OR site:firecrawl.dev OR site:github.com)\",\n  \"content\": \"chunks\",\n  \"constraints\": {\n    \"maxResults\": 6,\n    \"maxCharsPerResult\": 3000,\n    \"maxCharsTotal\": 14000,\n    \"focus\": \"agent-facing search behavior, context modes, source policy, freshness controls, response metadata, and MCP tool flow\",\n    \"sourcePolicy\": {\n      \"includeDomains\": [\n        \"docs.firecrawl.dev\",\n        \"firecrawl.dev\",\n        \"github.com\"\n      ]\n    }\n  },\n  \"results\": [],\n  \"searchIds\": [\n    \"019dc369-78bf-7511-afd7-7e1b005dad79\"\n  ],\n  \"usage\": {\n    \"resultCount\": 0,\n    \"charsReturned\": 0,\n    \"creditsUsed\": 0,\n    \"rawResultCount\": {\n      \"web\": 0,\n      \"news\": 0,\n      \"images\": 0\n    }\n  },\n  \"warnings\": [\n    \"sourcePolicy includeDomains returned no covered domains; try a more focused query or split unrelated domains into separate searches\"\n  ]\n}",
+  "parsed": {
+    "query": "Firecrawl MCP Search API content modes summary chunks markdown sourcePolicy freshness maxCharsTotal agent context official docs",
+    "executedQuery": "Firecrawl MCP Search API content modes summary chunks markdown sourcePolicy freshness maxCharsTotal agent context official docs (site:docs.firecrawl.dev OR site:firecrawl.dev OR site:github.com)",
+    "content": "chunks",
+    "constraints": {
+      "maxResults": 6,
+      "maxCharsPerResult": 3000,
+      "maxCharsTotal": 14000,
+      "focus": "agent-facing search behavior, context modes, source policy, freshness controls, response metadata, and MCP tool flow",
+      "sourcePolicy": {
+        "includeDomains": [
+          "docs.firecrawl.dev",
+          "firecrawl.dev",
+          "github.com"
+        ]
+      }
+    },
+    "results": [],
+    "searchIds": [
+      "019dc369-78bf-7511-afd7-7e1b005dad79"
+    ],
+    "usage": {
+      "resultCount": 0,
+      "charsReturned": 0,
+      "creditsUsed": 0,
+      "rawResultCount": {
+        "web": 0,
+        "news": 0,
+        "images": 0
+      }
+    },
+    "warnings": [
+      "sourcePolicy includeDomains returned no covered domains; try a more focused query or split unrelated domains into separate searches"
+    ]
+  },
+  "results": []
+}

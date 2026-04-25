@@ -1,0 +1,10 @@
+{
+  "objective": "Find public benchmark methodology for web search APIs that explicitly mentions MSMARCO or MS MARCO in connection with Tavily, Exa, Parallel, or agent search evaluation. Prefer official pages and public benchmark repositories.",
+  "search_queries": [
+    "MSMARCO Tavily benchmark",
+    "MS MARCO Exa benchmark",
+    "agent search MSMARCO benchmark"
+  ],
+  "session_id": "real2-20260425-agent-search-benchmark-methodology-parallel",
+  "model_name": "gpt-5.5 xhigh"
+}

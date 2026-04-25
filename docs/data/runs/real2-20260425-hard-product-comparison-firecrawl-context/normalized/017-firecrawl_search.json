@@ -1,0 +1,327 @@
+{
+  "provider": "firecrawl-context",
+  "tool": "firecrawl_search",
+  "isError": false,
+  "rawText": "{\n  \"query\": \"How to Evaluate Exa Search benchmark methodology search API latency quality tool calling\",\n  \"executedQuery\": \"How to Evaluate Exa Search benchmark methodology search API latency quality tool calling site:exa.ai\",\n  \"content\": \"chunks\",\n  \"constraints\": {\n    \"maxResults\": 6,\n    \"maxCharsPerResult\": 3500,\n    \"maxCharsTotal\": 16000,\n    \"focus\": \"benchmark methodology, recommended settings, search types, quality-latency tradeoffs, tool-calling evaluation, and agent search evaluation\",\n    \"sourcePolicy\": {\n      \"includeDomains\": [\n        \"exa.ai\"\n      ]\n    }\n  },\n  \"results\": [\n    {\n      \"title\": \"How to Evaluate Exa Search\",\n      \"url\": \"https://exa.ai/docs/reference/evaluating-exa-search\",\n      \"description\": \"Evaluating Exa with Tool Calling. For evaluating Exa in agentic workflows where LLMs autonomously call search tools, proper tool calling setup is critical. Tool ...\",\n      \"position\": 1,\n      \"source\": \"web\",\n      \"metadata\": {\n        \"sourceURL\": \"https://exa.ai/docs/reference/evaluating-exa-search\",\n        \"finalURL\": \"https://exa.ai/docs/reference/evaluating-exa-search\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"- [Overview](https://exa.ai/docs/reference/evaluating-exa-search#overview)\\n- [Best Practice: Start with Defaults](https://exa.ai/docs/reference/evaluating-exa-search#best-practice-start-with-defaults)\\n- [Compare Within Latency Classes](https://exa.ai/docs/reference/evaluating-exa-search#compare-within-latency-classes)\\n- [Search Types: Understanding the Quality-Latency Spectrum](https://exa.ai/docs/reference/evaluating-exa-search#search-types-understanding-the-quality-latency-spectrum)\\n- [Fast Search](https://exa.ai/docs/reference/evaluating-exa-search#fast-search)\\n- [Auto Search (Default)](https://exa.ai/docs/reference/evaluating-exa-search#auto-search-default)\\n- [Deep Search](https://exa.ai/docs/reference/evaluating-exa-search#deep-search)\\n- [Neural Search](https://exa.ai/docs/reference/evaluating-exa-search#neural-search)\\n- [Evaluating Exa with Tool Calling](https://exa.ai/docs/reference/evaluating-exa-search#evaluating-exa-with-tool-calling)\\n- [Why Tool Calling Matters for Evaluatio\",\n          \"charCount\": 1000\n        },\n        {\n          \"text\": \"**The most important recommendation for fair evaluation: use Exa’s default settings.**Adding restrictive parameters (date filters, domain restrictions, text inclusion/exclusion) often causes agents to over-optimize in non-meaningful ways, unnecessarily limiting results and reducing quality without providing valuable insights. Unless your evaluation specifically tests a filtered use case, avoid adding constraints that don’t reflect real-world usage.**Recommended minimal configuration:**\",\n          \"charCount\": 490\n        },\n        {\n          \"text\": \"| Benchmark | Description | Recommended Search Type | Focus Area |\\n| --- | --- | --- | --- |\\n| **SimpleQA** | Single-step factual questions | `Fast`, `Auto` | Low-latency QA accuracy |\\n| **FRAMES** (single-step) | Straightforward retrieval tasks | `Fast`, `Auto` | Single-hop retrieval quality |\\n| **FRAMES** (agentic) | Multi-step reasoning requiring iteration | `Deep` | Agentic workflow performance |\\n| **MultiLoKo** | Multi-hop knowledge queries | `Deep` | Complex reasoning chains |\\n| **BrowseComp** | Web browsing comprehension | `Deep` | Context understanding |\\n| **Seal0** | General search quality | `Fast`, `Auto`, `Deep` | Overall performance |\\n| **WebWalkerQA** | Navigation-style queries | `Fast`, `Auto` | Real-world search scenarios |\\n| **HLE** | Hard, long, emerging questions | `Deep` | Difficult edge cases |\\n| **FreshQA** | Time-sensitive queries | All types with `maxAgeHours: 0` | Freshness/timeliness |\",\n          \"charCount\": 923\n        }\n      ]\n    },\n    {\n      \"title\": \"Our AI Research: How We Evaluate Semantic Search Technology\",\n      \"url\": \"https://exa.ai/blog/evals-at-exa\",\n      \"description\": \"Exa is a modern AI search engine with SERP API, website crawler tools, and deep research API. ... benchmarks/frameworks for judging search quality ...\",\n      \"position\": 2,\n      \"source\": \"web\",\n      \"metadata\": {\n        \"sourceURL\": \"https://exa.ai/blog/evals-at-exa\",\n        \"finalURL\": \"https://exa.ai/blog/evals-at-exa\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"But what does \\\"best\\\" actually mean? How do you evaluate web search quality? In this post, we'll share both our evaluation results and our philosophy behind evaluating web search.\",\n          \"charCount\": 178\n        },\n        {\n          \"text\": \"However, we've found that pinning down accuracy on downstream tasks is often hard, expensive, or intractable. In some domains, like coding agents, it's possible to define a (somewhat) objective ground truth, like SWE-Bench. In others, like using retrieval in a general chatbot system, any evaluation of the quality of the answers is necessarily imperfect or limited. Any answer to evaluating search engines that reduces to evaluating LLM output is bottlenecked by our ability to evaluate LLM output—and the perpetual debate on LLM evals shows us how limiting that bottleneck is.\",\n          \"charCount\": 578\n        },\n        {\n          \"text\": \"1. **Real-world optimization**: By evaluating on actual query distributions over full web-scale indexes, we ensure Exa performs well on the searches that matter to users.\\n2. **Rapid iteration**: Open evaluations let us rapidly test improvements without waiting for human labeling or being constrained by fixed corpora.\\n3. **Comprehensive measurement**: By evaluating both result quality and downstream task performance, we ensure Exa works well both for direct search and as a tool for LLMs.\\n4. **Current relevance**: Our evaluation approach naturally handles emerging topics and current events that fixed benchmarks miss.\",\n          \"charCount\": 622\n        }\n      ]\n    },\n    {\n      \"title\": \"Search Best Practices - Exa\",\n      \"url\": \"https://exa.ai/docs/reference/search-best-practices\",\n      \"description\": \"Anthropic Tool Calling · OpenAI Tool Calling · AI SDK by Vercel · OpenAI SDK ... Search method: auto (highest quality), fast (low latency), instant (lowest ...\",\n      \"position\": 3,\n      \"source\": \"web\",\n      \"metadata\": {\n        \"sourceURL\": \"https://exa.ai/docs/reference/search-best-practices\",\n        \"finalURL\": \"https://exa.ai/docs/reference/search-best-practices\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"Exa’s Search API returns a list of webpages and their contents based on a natural language search query. Results are optimized for LLM consumption, enabling higher-quality completions with clean, token efficient data.**Recommended:** Try our [Coding Agent Quickstart](https://dashboard.exa.ai/onboarding) — get a working search call in under a minute, then come back here for the full reference.\",\n          \"charCount\": 395\n        },\n        {\n          \"text\": \"- **Token efficient**: Use `highlights` to get key excerpts relevant to your query, reducing token usage by 10x compared to full text, without adding latency.\\n- **Specialized index coverage**: State of the art search performance on [people](https://exa.ai/blog/people-search-benchmark), [company](https://exa.ai/blog/company-search-benchmarks), and code using Exa’s in-house search indexes.\\n- **Incredible speed**: From `auto` for highest quality to `fast` for sub-second latency to `instant` for sub-200ms latency, Exa provides the fastest search available without compromising on quality—enabling real-time workflows like autocomplete and live suggestions.\",\n          \"charCount\": 658\n        },\n        {\n          \"text\": \"| Field | Type | Notes | Example |\\n| --- | --- | --- | --- |\\n| query | string | The search query. Supports long, semantically rich descriptions for finding niche content. | ”blog post about embeddings and vector search” |\\n| type | string | Search method: `auto` (highest quality), `fast` (low latency), `instant` (lowest latency), `deep-lite`, `deep`, or `deep-reasoning`. | ”auto” |\\n| systemPrompt | string | Instructions that guide synthesized output and, for deep-search variants, search planning. | ”Prefer official sources and avoid duplicate results” |\\n| outputSchema | object | JSON schema that controls `output.content`. When set, `/search` returns `output` for any search type. | `{ \\\"type\\\": \\\"text\\\", \\\"description\\\": \\\"one sentence\\\" }` |\\n| stream | boolean | If true, `/search` streams OpenAI-compatible chat completion chunks over SSE instead of returning one JSON payload. | `true` |\\n| numResults | int | Number of results to return (1-100). Defaults to 10. | 10 |\\n| highlights | bool/obj | Re\",\n          \"charCount\": 1000\n        }\n      ]\n    },\n    {\n      \"title\": \"Introducing Exa 2.1 | Exa Blog\",\n      \"url\": \"https://exa.ai/blog/exa-api-2-1\",\n      \"description\": \"The Exa MCP quality has dramatically improved with a new deep search tool. Low-Latency Evals. Fast eval. Fast search evals. Most of our ...\",\n      \"position\": 4,\n      \"source\": \"web\",\n      \"metadata\": {\n        \"sourceURL\": \"https://exa.ai/blog/exa-api-2-1\",\n        \"finalURL\": \"https://exa.ai/blog/exa-api-2-1\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"[Exa Highlights: Quality, Token-Efficient Search](https://exa.ai/blog/highlights-for-agents) [Exa Highlights: Quality, Token-Efficient Search](https://exa.ai/blog/highlights-for-agents) [Read more](https://exa.ai/blog/highlights-for-agents)\",\n          \"charCount\": 240\n        },\n        {\n          \"text\": \"1. All Exa search API endpoints have significantly improved in quality -- Exa Fast, Exa Auto, and Exa Deep.\\n2. The Exa MCP quality has dramatically improved with a new deep search tool.\",\n          \"charCount\": 185\n        },\n        {\n          \"text\": \"In the MCP setting, we test how well a simple but powerful agent performs when given access to the MCP of the respective search API. This harness passed the LLM query to GPT-5, which is allowed to call the MCP up to 10 times in sequence with an appropriate query and default settings, and the final output is again graded with gpt-4o-mini against the expected answer.\",\n          \"charCount\": 367\n        }\n      ]\n    },\n    {\n      \"title\": \"Exa × Fireworks | Exa Blog\",\n      \"url\": \"https://exa.ai/blog/fireworks-exa\",\n      \"description\": \"Exa is a modern AI search engine with SERP API, website crawler tools, and ... Integrate Exa Search. Test for free · Talk to Sales. Search built for your ...\",\n      \"position\": 5,\n      \"source\": \"web\",\n      \"metadata\": {\n        \"sourceURL\": \"https://exa.ai/blog/fireworks-exa\",\n        \"finalURL\": \"https://exa.ai/blog/fireworks-exa\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"[Exa Highlights: Quality, Token-Efficient Search](https://exa.ai/blog/highlights-for-agents) [Exa Highlights: Quality, Token-Efficient Search](https://exa.ai/blog/highlights-for-agents) [Read more](https://exa.ai/blog/highlights-for-agents)\",\n          \"charCount\": 240\n        },\n        {\n          \"text\": \"Exa is the search engine for AI applications and Fireworks is a fast, scalable inference platform for open source AI models. Using both allows users to access all real-time data on the web and interact with that information using frontier open source language models at blazing speed. By the end of this tutorial, you'll have code to run this yourself and free API credits on Exa to get started.\",\n          \"charCount\": 395\n        },\n        {\n          \"text\": \"```python\\nDO_EMBED_RERANK = True\\n# RERANKING TOGGLE:\\n# - Exa already performs semantic search with its own high-quality reranking\\n# - Setting this to True is mainly for DEMO PURPOSES to showcase Fireworks' embedding capabilities\\n# - Also useful if you want CUSTOM RANKING logic (e.g., prioritize certain content types,\\n#   use domain-specific embeddings, or apply your own similarity metrics)\\n# - False = use Exa's native ranking order (faster, no extra API calls)\",\n          \"charCount\": 464\n        }\n      ]\n    },\n    {\n      \"title\": \"llms-full.txt - Exa\",\n      \"url\": \"https://exa.ai/docs/llms-full.txt\",\n      \"description\": \"Use `type = \\\"auto\\\"`, `category = \\\"company\\\"` to use this in our search API. ... tool that researches companies relevant to what you're interested in. If you ...\",\n      \"position\": 6,\n      \"source\": \"web\",\n      \"metadata\": {\n        \"sourceURL\": \"https://exa.ai/docs/llms-full.txt\",\n        \"finalURL\": \"https://exa.ai/docs/llms-full.txt\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"\\\\\\\\* \\\\*\\\\*Speed\\\\*\\\\*: p50 latency below 425ms - that's 30% faster than other search APIs\\n\\\\\\\\* \\\\*\\\\*Exa Index\\\\*\\\\*: Uses the same index of high quality content as our neural search\\n\\\\\\\\* \\\\*\\\\*Customization\\\\*\\\\*: Full compatibility with all the same parameters as our other search types\",\n          \"charCount\": 274\n        },\n        {\n          \"text\": \"This guide will show you how you can define and use Exa search within the LangGraph framework. This framework provides a straightforward way for you to define an AI agent and for it to retrieve high-quality, semantically matched content via Exa search.\",\n          \"charCount\": 252\n        },\n        {\n          \"text\": \"\\\\`\\\\`\\\\`\\n Workflow executed successfully\\n Final state:\\n Messages:\\n SystemMessage: You are a helpful assistant....\\n HumanMessage: Check this text for hallucinations: The Eiffel Tower, an iconic iron lattice structure located in Pa...\\n AIMessage: Use hallucination\\\\_check tool...\\n AIMessage: {'claims': \\\\[{'claim': 'The Eiffel Tower is an iconic iron lattice structure', 'assessment': 'support...\\\\\\n\\\\\\n Analysis Result:\\\\\\n Claim: The Eiffel Tower is an iconic iron lattice structure\\\\\\n Assessment: supported\\\\\\n Confidence Score: 1\\\\\\n Supporting Sources:\\\\\\n \\\\- https://www.toureiffel.paris/en/news/130-years/what-eiffel-tower-made...\\\\\\n \\\\- https://thechalkface.net/resources/melting\\\\_the\\\\_eiffel\\\\_tower.pdf...\\\\\\n \\\\- https://datagenetics.com/blog/april22016/index.html...\\\\\\n \\\\- https://engineering.purdue.edu/MSE/aboutus/gotmaterials/Buildings/patel.html...\\\\\\n \\\\- https://www.toureiffel.paris/en/news/130-years/how-long-can-tower-last...\\\\\\n Refuting Sources:\\\\\\n\\\\\\n Claim: The Eiffel Tower is located in Paris\\\\\\n Assessmen\",\n          \"charCount\": 1000\n        }\n      ]\n    }\n  ],\n  \"searchIds\": [\n    \"019dc36b-6ba0-720c-888d-143946644c20\"\n  ],\n  \"usage\": {\n    \"resultCount\": 6,\n    \"charsReturned\": 9261,\n    \"creditsUsed\": 8,\n    \"rawResultCount\": {\n      \"web\": 6,\n      \"news\": 0,\n      \"images\": 0\n    }\n  }\n}",
+  "parsed": {
+    "query": "How to Evaluate Exa Search benchmark methodology search API latency quality tool calling",
+    "executedQuery": "How to Evaluate Exa Search benchmark methodology search API latency quality tool calling site:exa.ai",
+    "content": "chunks",
+    "constraints": {
+      "maxResults": 6,
+      "maxCharsPerResult": 3500,
+      "maxCharsTotal": 16000,
+      "focus": "benchmark methodology, recommended settings, search types, quality-latency tradeoffs, tool-calling evaluation, and agent search evaluation",
+      "sourcePolicy": {
+        "includeDomains": [
+          "exa.ai"
+        ]
+      }
+    },
+    "results": [
+      {
+        "title": "How to Evaluate Exa Search",
+        "url": "https://exa.ai/docs/reference/evaluating-exa-search",
+        "description": "Evaluating Exa with Tool Calling. For evaluating Exa in agentic workflows where LLMs autonomously call search tools, proper tool calling setup is critical. Tool ...",
+        "position": 1,
+        "source": "web",
+        "metadata": {
+          "sourceURL": "https://exa.ai/docs/reference/evaluating-exa-search",
+          "finalURL": "https://exa.ai/docs/reference/evaluating-exa-search",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "- [Overview](https://exa.ai/docs/reference/evaluating-exa-search#overview)\n- [Best Practice: Start with Defaults](https://exa.ai/docs/reference/evaluating-exa-search#best-practice-start-with-defaults)\n- [Compare Within Latency Classes](https://exa.ai/docs/reference/evaluating-exa-search#compare-within-latency-classes)\n- [Search Types: Understanding the Quality-Latency Spectrum](https://exa.ai/docs/reference/evaluating-exa-search#search-types-understanding-the-quality-latency-spectrum)\n- [Fast Search](https://exa.ai/docs/reference/evaluating-exa-search#fast-search)\n- [Auto Search (Default)](https://exa.ai/docs/reference/evaluating-exa-search#auto-search-default)\n- [Deep Search](https://exa.ai/docs/reference/evaluating-exa-search#deep-search)\n- [Neural Search](https://exa.ai/docs/reference/evaluating-exa-search#neural-search)\n- [Evaluating Exa with Tool Calling](https://exa.ai/docs/reference/evaluating-exa-search#evaluating-exa-with-tool-calling)\n- [Why Tool Calling Matters for Evaluatio",
+            "charCount": 1000
+          },
+          {
+            "text": "**The most important recommendation for fair evaluation: use Exa’s default settings.**Adding restrictive parameters (date filters, domain restrictions, text inclusion/exclusion) often causes agents to over-optimize in non-meaningful ways, unnecessarily limiting results and reducing quality without providing valuable insights. Unless your evaluation specifically tests a filtered use case, avoid adding constraints that don’t reflect real-world usage.**Recommended minimal configuration:**",
+            "charCount": 490
+          },
+          {
+            "text": "| Benchmark | Description | Recommended Search Type | Focus Area |\n| --- | --- | --- | --- |\n| **SimpleQA** | Single-step factual questions | `Fast`, `Auto` | Low-latency QA accuracy |\n| **FRAMES** (single-step) | Straightforward retrieval tasks | `Fast`, `Auto` | Single-hop retrieval quality |\n| **FRAMES** (agentic) | Multi-step reasoning requiring iteration | `Deep` | Agentic workflow performance |\n| **MultiLoKo** | Multi-hop knowledge queries | `Deep` | Complex reasoning chains |\n| **BrowseComp** | Web browsing comprehension | `Deep` | Context understanding |\n| **Seal0** | General search quality | `Fast`, `Auto`, `Deep` | Overall performance |\n| **WebWalkerQA** | Navigation-style queries | `Fast`, `Auto` | Real-world search scenarios |\n| **HLE** | Hard, long, emerging questions | `Deep` | Difficult edge cases |\n| **FreshQA** | Time-sensitive queries | All types with `maxAgeHours: 0` | Freshness/timeliness |",
+            "charCount": 923
+          }
+        ]
+      },
+      {
+        "title": "Our AI Research: How We Evaluate Semantic Search Technology",
+        "url": "https://exa.ai/blog/evals-at-exa",
+        "description": "Exa is a modern AI search engine with SERP API, website crawler tools, and deep research API. ... benchmarks/frameworks for judging search quality ...",
+        "position": 2,
+        "source": "web",
+        "metadata": {
+          "sourceURL": "https://exa.ai/blog/evals-at-exa",
+          "finalURL": "https://exa.ai/blog/evals-at-exa",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "But what does \"best\" actually mean? How do you evaluate web search quality? In this post, we'll share both our evaluation results and our philosophy behind evaluating web search.",
+            "charCount": 178
+          },
+          {
+            "text": "However, we've found that pinning down accuracy on downstream tasks is often hard, expensive, or intractable. In some domains, like coding agents, it's possible to define a (somewhat) objective ground truth, like SWE-Bench. In others, like using retrieval in a general chatbot system, any evaluation of the quality of the answers is necessarily imperfect or limited. Any answer to evaluating search engines that reduces to evaluating LLM output is bottlenecked by our ability to evaluate LLM output—and the perpetual debate on LLM evals shows us how limiting that bottleneck is.",
+            "charCount": 578
+          },
+          {
+            "text": "1. **Real-world optimization**: By evaluating on actual query distributions over full web-scale indexes, we ensure Exa performs well on the searches that matter to users.\n2. **Rapid iteration**: Open evaluations let us rapidly test improvements without waiting for human labeling or being constrained by fixed corpora.\n3. **Comprehensive measurement**: By evaluating both result quality and downstream task performance, we ensure Exa works well both for direct search and as a tool for LLMs.\n4. **Current relevance**: Our evaluation approach naturally handles emerging topics and current events that fixed benchmarks miss.",
+            "charCount": 622
+          }
+        ]
+      },
+      {
+        "title": "Search Best Practices - Exa",
+        "url": "https://exa.ai/docs/reference/search-best-practices",
+        "description": "Anthropic Tool Calling · OpenAI Tool Calling · AI SDK by Vercel · OpenAI SDK ... Search method: auto (highest quality), fast (low latency), instant (lowest ...",
+        "position": 3,
+        "source": "web",
+        "metadata": {
+          "sourceURL": "https://exa.ai/docs/reference/search-best-practices",
+          "finalURL": "https://exa.ai/docs/reference/search-best-practices",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "Exa’s Search API returns a list of webpages and their contents based on a natural language search query. Results are optimized for LLM consumption, enabling higher-quality completions with clean, token efficient data.**Recommended:** Try our [Coding Agent Quickstart](https://dashboard.exa.ai/onboarding) — get a working search call in under a minute, then come back here for the full reference.",
+            "charCount": 395
+          },
+          {
+            "text": "- **Token efficient**: Use `highlights` to get key excerpts relevant to your query, reducing token usage by 10x compared to full text, without adding latency.\n- **Specialized index coverage**: State of the art search performance on [people](https://exa.ai/blog/people-search-benchmark), [company](https://exa.ai/blog/company-search-benchmarks), and code using Exa’s in-house search indexes.\n- **Incredible speed**: From `auto` for highest quality to `fast` for sub-second latency to `instant` for sub-200ms latency, Exa provides the fastest search available without compromising on quality—enabling real-time workflows like autocomplete and live suggestions.",
+            "charCount": 658
+          },
+          {
+            "text": "| Field | Type | Notes | Example |\n| --- | --- | --- | --- |\n| query | string | The search query. Supports long, semantically rich descriptions for finding niche content. | ”blog post about embeddings and vector search” |\n| type | string | Search method: `auto` (highest quality), `fast` (low latency), `instant` (lowest latency), `deep-lite`, `deep`, or `deep-reasoning`. | ”auto” |\n| systemPrompt | string | Instructions that guide synthesized output and, for deep-search variants, search planning. | ”Prefer official sources and avoid duplicate results” |\n| outputSchema | object | JSON schema that controls `output.content`. When set, `/search` returns `output` for any search type. | `{ \"type\": \"text\", \"description\": \"one sentence\" }` |\n| stream | boolean | If true, `/search` streams OpenAI-compatible chat completion chunks over SSE instead of returning one JSON payload. | `true` |\n| numResults | int | Number of results to return (1-100). Defaults to 10. | 10 |\n| highlights | bool/obj | Re",
+            "charCount": 1000
+          }
+        ]
+      },
+      {
+        "title": "Introducing Exa 2.1 | Exa Blog",
+        "url": "https://exa.ai/blog/exa-api-2-1",
+        "description": "The Exa MCP quality has dramatically improved with a new deep search tool. Low-Latency Evals. Fast eval. Fast search evals. Most of our ...",
+        "position": 4,
+        "source": "web",
+        "metadata": {
+          "sourceURL": "https://exa.ai/blog/exa-api-2-1",
+          "finalURL": "https://exa.ai/blog/exa-api-2-1",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "[Exa Highlights: Quality, Token-Efficient Search](https://exa.ai/blog/highlights-for-agents) [Exa Highlights: Quality, Token-Efficient Search](https://exa.ai/blog/highlights-for-agents) [Read more](https://exa.ai/blog/highlights-for-agents)",
+            "charCount": 240
+          },
+          {
+            "text": "1. All Exa search API endpoints have significantly improved in quality -- Exa Fast, Exa Auto, and Exa Deep.\n2. The Exa MCP quality has dramatically improved with a new deep search tool.",
+            "charCount": 185
+          },
+          {
+            "text": "In the MCP setting, we test how well a simple but powerful agent performs when given access to the MCP of the respective search API. This harness passed the LLM query to GPT-5, which is allowed to call the MCP up to 10 times in sequence with an appropriate query and default settings, and the final output is again graded with gpt-4o-mini against the expected answer.",
+            "charCount": 367
+          }
+        ]
+      },
+      {
+        "title": "Exa × Fireworks | Exa Blog",
+        "url": "https://exa.ai/blog/fireworks-exa",
+        "description": "Exa is a modern AI search engine with SERP API, website crawler tools, and ... Integrate Exa Search. Test for free · Talk to Sales. Search built for your ...",
+        "position": 5,
+        "source": "web",
+        "metadata": {
+          "sourceURL": "https://exa.ai/blog/fireworks-exa",
+          "finalURL": "https://exa.ai/blog/fireworks-exa",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "[Exa Highlights: Quality, Token-Efficient Search](https://exa.ai/blog/highlights-for-agents) [Exa Highlights: Quality, Token-Efficient Search](https://exa.ai/blog/highlights-for-agents) [Read more](https://exa.ai/blog/highlights-for-agents)",
+            "charCount": 240
+          },
+          {
+            "text": "Exa is the search engine for AI applications and Fireworks is a fast, scalable inference platform for open source AI models. Using both allows users to access all real-time data on the web and interact with that information using frontier open source language models at blazing speed. By the end of this tutorial, you'll have code to run this yourself and free API credits on Exa to get started.",
+            "charCount": 395
+          },
+          {
+            "text": "```python\nDO_EMBED_RERANK = True\n# RERANKING TOGGLE:\n# - Exa already performs semantic search with its own high-quality reranking\n# - Setting this to True is mainly for DEMO PURPOSES to showcase Fireworks' embedding capabilities\n# - Also useful if you want CUSTOM RANKING logic (e.g., prioritize certain content types,\n#   use domain-specific embeddings, or apply your own similarity metrics)\n# - False = use Exa's native ranking order (faster, no extra API calls)",
+            "charCount": 464
+          }
+        ]
+      },
+      {
+        "title": "llms-full.txt - Exa",
+        "url": "https://exa.ai/docs/llms-full.txt",
+        "description": "Use `type = \"auto\"`, `category = \"company\"` to use this in our search API. ... tool that researches companies relevant to what you're interested in. If you ...",
+        "position": 6,
+        "source": "web",
+        "metadata": {
+          "sourceURL": "https://exa.ai/docs/llms-full.txt",
+          "finalURL": "https://exa.ai/docs/llms-full.txt",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "\\\\* \\*\\*Speed\\*\\*: p50 latency below 425ms - that's 30% faster than other search APIs\n\\\\* \\*\\*Exa Index\\*\\*: Uses the same index of high quality content as our neural search\n\\\\* \\*\\*Customization\\*\\*: Full compatibility with all the same parameters as our other search types",
+            "charCount": 274
+          },
+          {
+            "text": "This guide will show you how you can define and use Exa search within the LangGraph framework. This framework provides a straightforward way for you to define an AI agent and for it to retrieve high-quality, semantically matched content via Exa search.",
+            "charCount": 252
+          },
+          {
+            "text": "\\`\\`\\`\n Workflow executed successfully\n Final state:\n Messages:\n SystemMessage: You are a helpful assistant....\n HumanMessage: Check this text for hallucinations: The Eiffel Tower, an iconic iron lattice structure located in Pa...\n AIMessage: Use hallucination\\_check tool...\n AIMessage: {'claims': \\[{'claim': 'The Eiffel Tower is an iconic iron lattice structure', 'assessment': 'support...\\\n\\\n Analysis Result:\\\n Claim: The Eiffel Tower is an iconic iron lattice structure\\\n Assessment: supported\\\n Confidence Score: 1\\\n Supporting Sources:\\\n \\- https://www.toureiffel.paris/en/news/130-years/what-eiffel-tower-made...\\\n \\- https://thechalkface.net/resources/melting\\_the\\_eiffel\\_tower.pdf...\\\n \\- https://datagenetics.com/blog/april22016/index.html...\\\n \\- https://engineering.purdue.edu/MSE/aboutus/gotmaterials/Buildings/patel.html...\\\n \\- https://www.toureiffel.paris/en/news/130-years/how-long-can-tower-last...\\\n Refuting Sources:\\\n\\\n Claim: The Eiffel Tower is located in Paris\\\n Assessmen",
+            "charCount": 1000
+          }
+        ]
+      }
+    ],
+    "searchIds": [
+      "019dc36b-6ba0-720c-888d-143946644c20"
+    ],
+    "usage": {
+      "resultCount": 6,
+      "charsReturned": 9261,
+      "creditsUsed": 8,
+      "rawResultCount": {
+        "web": 6,
+        "news": 0,
+        "images": 0
+      }
+    }
+  },
+  "results": [
+    {
+      "title": "How to Evaluate Exa Search",
+      "url": "https://exa.ai/docs/reference/evaluating-exa-search",
+      "domain": "exa.ai",
+      "description": "Evaluating Exa with Tool Calling. For evaluating Exa in agentic workflows where LLMs autonomously call search tools, proper tool calling setup is critical. Tool ...",
+      "chunks": [
+        {
+          "text": "- [Overview](https://exa.ai/docs/reference/evaluating-exa-search#overview)\n- [Best Practice: Start with Defaults](https://exa.ai/docs/reference/evaluating-exa-search#best-practice-start-with-defaults)\n- [Compare Within Latency Classes](https://exa.ai/docs/reference/evaluating-exa-search#compare-within-latency-classes)\n- [Search Types: Understanding the Quality-Latency Spectrum](https://exa.ai/docs/reference/evaluating-exa-search#search-types-understanding-the-quality-latency-spectrum)\n- [Fast Search](https://exa.ai/docs/reference/evaluating-exa-search#fast-search)\n- [Auto Search (Default)](https://exa.ai/docs/reference/evaluating-exa-search#auto-search-default)\n- [Deep Search](https://exa.ai/docs/reference/evaluating-exa-search#deep-search)\n- [Neural Search](https://exa.ai/docs/reference/evaluating-exa-search#neural-search)\n- [Evaluating Exa with Tool Calling](https://exa.ai/docs/reference/evaluating-exa-search#evaluating-exa-with-tool-calling)\n- [Why Tool Calling Matters for Evaluatio",
+          "charCount": 1000
+        },
+        {
+          "text": "**The most important recommendation for fair evaluation: use Exa’s default settings.**Adding restrictive parameters (date filters, domain restrictions, text inclusion/exclusion) often causes agents to over-optimize in non-meaningful ways, unnecessarily limiting results and reducing quality without providing valuable insights. Unless your evaluation specifically tests a filtered use case, avoid adding constraints that don’t reflect real-world usage.**Recommended minimal configuration:**",
+          "charCount": 490
+        },
+        {
+          "text": "| Benchmark | Description | Recommended Search Type | Focus Area |\n| --- | --- | --- | --- |\n| **SimpleQA** | Single-step factual questions | `Fast`, `Auto` | Low-latency QA accuracy |\n| **FRAMES** (single-step) | Straightforward retrieval tasks | `Fast`, `Auto` | Single-hop retrieval quality |\n| **FRAMES** (agentic) | Multi-step reasoning requiring iteration | `Deep` | Agentic workflow performance |\n| **MultiLoKo** | Multi-hop knowledge queries | `Deep` | Complex reasoning chains |\n| **BrowseComp** | Web browsing comprehension | `Deep` | Context understanding |\n| **Seal0** | General search quality | `Fast`, `Auto`, `Deep` | Overall performance |\n| **WebWalkerQA** | Navigation-style queries | `Fast`, `Auto` | Real-world search scenarios |\n| **HLE** | Hard, long, emerging questions | `Deep` | Difficult edge cases |\n| **FreshQA** | Time-sensitive queries | All types with `maxAgeHours: 0` | Freshness/timeliness |",
+          "charCount": 923
+        }
+      ],
+      "source": "web",
+      "position": 1
+    },
+    {
+      "title": "Our AI Research: How We Evaluate Semantic Search Technology",
+      "url": "https://exa.ai/blog/evals-at-exa",
+      "domain": "exa.ai",
+      "description": "Exa is a modern AI search engine with SERP API, website crawler tools, and deep research API. ... benchmarks/frameworks for judging search quality ...",
+      "chunks": [
+        {
+          "text": "But what does \"best\" actually mean? How do you evaluate web search quality? In this post, we'll share both our evaluation results and our philosophy behind evaluating web search.",
+          "charCount": 178
+        },
+        {
+          "text": "However, we've found that pinning down accuracy on downstream tasks is often hard, expensive, or intractable. In some domains, like coding agents, it's possible to define a (somewhat) objective ground truth, like SWE-Bench. In others, like using retrieval in a general chatbot system, any evaluation of the quality of the answers is necessarily imperfect or limited. Any answer to evaluating search engines that reduces to evaluating LLM output is bottlenecked by our ability to evaluate LLM output—and the perpetual debate on LLM evals shows us how limiting that bottleneck is.",
+          "charCount": 578
+        },
+        {
+          "text": "1. **Real-world optimization**: By evaluating on actual query distributions over full web-scale indexes, we ensure Exa performs well on the searches that matter to users.\n2. **Rapid iteration**: Open evaluations let us rapidly test improvements without waiting for human labeling or being constrained by fixed corpora.\n3. **Comprehensive measurement**: By evaluating both result quality and downstream task performance, we ensure Exa works well both for direct search and as a tool for LLMs.\n4. **Current relevance**: Our evaluation approach naturally handles emerging topics and current events that fixed benchmarks miss.",
+          "charCount": 622
+        }
+      ],
+      "source": "web",
+      "position": 2
+    },
+    {
+      "title": "Search Best Practices - Exa",
+      "url": "https://exa.ai/docs/reference/search-best-practices",
+      "domain": "exa.ai",
+      "description": "Anthropic Tool Calling · OpenAI Tool Calling · AI SDK by Vercel · OpenAI SDK ... Search method: auto (highest quality), fast (low latency), instant (lowest ...",
+      "chunks": [
+        {
+          "text": "Exa’s Search API returns a list of webpages and their contents based on a natural language search query. Results are optimized for LLM consumption, enabling higher-quality completions with clean, token efficient data.**Recommended:** Try our [Coding Agent Quickstart](https://dashboard.exa.ai/onboarding) — get a working search call in under a minute, then come back here for the full reference.",
+          "charCount": 395
+        },
+        {
+          "text": "- **Token efficient**: Use `highlights` to get key excerpts relevant to your query, reducing token usage by 10x compared to full text, without adding latency.\n- **Specialized index coverage**: State of the art search performance on [people](https://exa.ai/blog/people-search-benchmark), [company](https://exa.ai/blog/company-search-benchmarks), and code using Exa’s in-house search indexes.\n- **Incredible speed**: From `auto` for highest quality to `fast` for sub-second latency to `instant` for sub-200ms latency, Exa provides the fastest search available without compromising on quality—enabling real-time workflows like autocomplete and live suggestions.",
+          "charCount": 658
+        },
+        {
+          "text": "| Field | Type | Notes | Example |\n| --- | --- | --- | --- |\n| query | string | The search query. Supports long, semantically rich descriptions for finding niche content. | ”blog post about embeddings and vector search” |\n| type | string | Search method: `auto` (highest quality), `fast` (low latency), `instant` (lowest latency), `deep-lite`, `deep`, or `deep-reasoning`. | ”auto” |\n| systemPrompt | string | Instructions that guide synthesized output and, for deep-search variants, search planning. | ”Prefer official sources and avoid duplicate results” |\n| outputSchema | object | JSON schema that controls `output.content`. When set, `/search` returns `output` for any search type. | `{ \"type\": \"text\", \"description\": \"one sentence\" }` |\n| stream | boolean | If true, `/search` streams OpenAI-compatible chat completion chunks over SSE instead of returning one JSON payload. | `true` |\n| numResults | int | Number of results to return (1-100). Defaults to 10. | 10 |\n| highlights | bool/obj | Re",
+          "charCount": 1000
+        }
+      ],
+      "source": "web",
+      "position": 3
+    },
+    {
+      "title": "Introducing Exa 2.1 | Exa Blog",
+      "url": "https://exa.ai/blog/exa-api-2-1",
+      "domain": "exa.ai",
+      "description": "The Exa MCP quality has dramatically improved with a new deep search tool. Low-Latency Evals. Fast eval. Fast search evals. Most of our ...",
+      "chunks": [
+        {
+          "text": "[Exa Highlights: Quality, Token-Efficient Search](https://exa.ai/blog/highlights-for-agents) [Exa Highlights: Quality, Token-Efficient Search](https://exa.ai/blog/highlights-for-agents) [Read more](https://exa.ai/blog/highlights-for-agents)",
+          "charCount": 240
+        },
+        {
+          "text": "1. All Exa search API endpoints have significantly improved in quality -- Exa Fast, Exa Auto, and Exa Deep.\n2. The Exa MCP quality has dramatically improved with a new deep search tool.",
+          "charCount": 185
+        },
+        {
+          "text": "In the MCP setting, we test how well a simple but powerful agent performs when given access to the MCP of the respective search API. This harness passed the LLM query to GPT-5, which is allowed to call the MCP up to 10 times in sequence with an appropriate query and default settings, and the final output is again graded with gpt-4o-mini against the expected answer.",
+          "charCount": 367
+        }
+      ],
+      "source": "web",
+      "position": 4
+    },
+    {
+      "title": "Exa × Fireworks | Exa Blog",
+      "url": "https://exa.ai/blog/fireworks-exa",
+      "domain": "exa.ai",
+      "description": "Exa is a modern AI search engine with SERP API, website crawler tools, and ... Integrate Exa Search. Test for free · Talk to Sales. Search built for your ...",
+      "chunks": [
+        {
+          "text": "[Exa Highlights: Quality, Token-Efficient Search](https://exa.ai/blog/highlights-for-agents) [Exa Highlights: Quality, Token-Efficient Search](https://exa.ai/blog/highlights-for-agents) [Read more](https://exa.ai/blog/highlights-for-agents)",
+          "charCount": 240
+        },
+        {
+          "text": "Exa is the search engine for AI applications and Fireworks is a fast, scalable inference platform for open source AI models. Using both allows users to access all real-time data on the web and interact with that information using frontier open source language models at blazing speed. By the end of this tutorial, you'll have code to run this yourself and free API credits on Exa to get started.",
+          "charCount": 395
+        },
+        {
+          "text": "```python\nDO_EMBED_RERANK = True\n# RERANKING TOGGLE:\n# - Exa already performs semantic search with its own high-quality reranking\n# - Setting this to True is mainly for DEMO PURPOSES to showcase Fireworks' embedding capabilities\n# - Also useful if you want CUSTOM RANKING logic (e.g., prioritize certain content types,\n#   use domain-specific embeddings, or apply your own similarity metrics)\n# - False = use Exa's native ranking order (faster, no extra API calls)",
+          "charCount": 464
+        }
+      ],
+      "source": "web",
+      "position": 5
+    },
+    {
+      "title": "llms-full.txt - Exa",
+      "url": "https://exa.ai/docs/llms-full.txt",
+      "domain": "exa.ai",
+      "description": "Use `type = \"auto\"`, `category = \"company\"` to use this in our search API. ... tool that researches companies relevant to what you're interested in. If you ...",
+      "chunks": [
+        {
+          "text": "\\\\* \\*\\*Speed\\*\\*: p50 latency below 425ms - that's 30% faster than other search APIs\n\\\\* \\*\\*Exa Index\\*\\*: Uses the same index of high quality content as our neural search\n\\\\* \\*\\*Customization\\*\\*: Full compatibility with all the same parameters as our other search types",
+          "charCount": 274
+        },
+        {
+          "text": "This guide will show you how you can define and use Exa search within the LangGraph framework. This framework provides a straightforward way for you to define an AI agent and for it to retrieve high-quality, semantically matched content via Exa search.",
+          "charCount": 252
+        },
+        {
+          "text": "\\`\\`\\`\n Workflow executed successfully\n Final state:\n Messages:\n SystemMessage: You are a helpful assistant....\n HumanMessage: Check this text for hallucinations: The Eiffel Tower, an iconic iron lattice structure located in Pa...\n AIMessage: Use hallucination\\_check tool...\n AIMessage: {'claims': \\[{'claim': 'The Eiffel Tower is an iconic iron lattice structure', 'assessment': 'support...\\\n\\\n Analysis Result:\\\n Claim: The Eiffel Tower is an iconic iron lattice structure\\\n Assessment: supported\\\n Confidence Score: 1\\\n Supporting Sources:\\\n \\- https://www.toureiffel.paris/en/news/130-years/what-eiffel-tower-made...\\\n \\- https://thechalkface.net/resources/melting\\_the\\_eiffel\\_tower.pdf...\\\n \\- https://datagenetics.com/blog/april22016/index.html...\\\n \\- https://engineering.purdue.edu/MSE/aboutus/gotmaterials/Buildings/patel.html...\\\n \\- https://www.toureiffel.paris/en/news/130-years/how-long-can-tower-last...\\\n Refuting Sources:\\\n\\\n Claim: The Eiffel Tower is located in Paris\\\n Assessmen",
+          "charCount": 1000
+        }
+      ],
+      "source": "web",
+      "position": 6
+    }
+  ]
+}

@@ -1,0 +1,210 @@
+{
+  "provider": "firecrawl-context",
+  "tool": "firecrawl_map",
+  "isError": false,
+  "rawText": "{\n  \"links\": [\n    {\n      \"url\": \"https://docs.tavily.com/documentation/api-reference/endpoint/search\",\n      \"title\": \"Tavily Search - Tavily Docs\",\n      \"description\": \"Execute a search query using Tavily Search.\"\n    },\n    {\n      \"url\": \"https://docs.tavily.com/documentation/best-practices/best-practices-search\",\n      \"title\": \"Best Practices for Search - Tavily Docs\",\n      \"description\": \"Learn how to optimize your queries, refine search filters, and leverage advanced parameters for better performance.\"\n    },\n    {\n      \"url\": \"https://docs.tavily.com/documentation/api-credits\",\n      \"title\": \"Credits & Pricing - Tavily Docs\",\n      \"description\": \"Learn how to get and manage your Tavily API Credits.\"\n    },\n    {\n      \"url\": \"https://docs.tavily.com/documentation/api-reference/endpoint/crawl\",\n      \"title\": \"Tavily Crawl - Tavily Docs\",\n      \"description\": \"Tavily Crawl is a graph-based website traversal tool that can explore hundreds of paths in parallel with built-in extraction and intelligent discovery.\"\n    },\n    {\n      \"url\": \"https://docs.tavily.com/documentation/api-reference/introduction\",\n      \"title\": \"Introduction - Tavily Docs\",\n      \"description\": \"Easily integrate our APIs with your services.\"\n    },\n    {\n      \"url\": \"https://docs.tavily.com/documentation/api-reference/endpoint/usage\",\n      \"title\": \"Usage - Tavily Docs\",\n      \"description\": \"Get API key and account usage details\"\n    },\n    {\n      \"url\": \"https://docs.tavily.com/documentation/agent-skills\",\n      \"title\": \"Tavily Agent Skills - Tavily Docs\",\n      \"description\": \"Official skills that define best practices, adding web search, extraction, crawling, and research to any AI coding agent.\"\n    },\n    {\n      \"url\": \"https://docs.tavily.com/documentation/integrations/dify\",\n      \"title\": \"Dify - Tavily Docs\",\n      \"description\": \"Tavily is now available for no-code integration through Dify.\"\n    },\n    {\n      \"url\": \"https://docs.tavily.com/documentation/integrations/openclaw\",\n      \"title\": \"OpenClaw - Tavily Docs\",\n      \"description\": \"Integrate Tavily with OpenClaw to give your AI agents real-time web search and content extraction across WhatsApp, Telegram, Discord, iMessage, and more.\"\n    },\n    {\n      \"url\": \"https://docs.tavily.com/documentation/integrations/agent-builder\",\n      \"title\": \"OpenAI Agent Builder - Tavily Docs\",\n      \"description\": \"Integrate OpenAI’s Agent Builder with Tavily’s MCP server to empower your AI agents with real-time web access.\"\n    },\n    {\n      \"url\": \"https://docs.tavily.com/documentation/mcp\",\n      \"title\": \"Tavily MCP Server - Tavily Docs\",\n      \"description\": \"Tavily MCP Server allows you to use the Tavily API in your MCP clients.\"\n    },\n    {\n      \"url\": \"https://docs.tavily.com/documentation/quickstart\",\n      \"title\": \"Quickstart - Tavily Docs\",\n      \"description\": \"Start searching with Tavily in under 5 minutes.\"\n    },\n    {\n      \"url\": \"https://docs.tavily.com/documentation/best-practices/best-practices-extract\",\n      \"title\": \"Best Practices for Extract - Tavily Docs\",\n      \"description\": \"Learn how to optimize content extraction, choose the right approach, and configure parameters for better performance.\"\n    },\n    {\n      \"url\": \"https://docs.tavily.com/documentation/about\",\n      \"title\": \"About - Tavily Docs\",\n      \"description\": \"Welcome to Tavily!\"\n    },\n    {\n      \"url\": \"https://docs.tavily.com/faq/faq\",\n      \"title\": \"Frequently Asked Questions - Tavily Docs\"\n    },\n    {\n      \"url\": \"https://docs.tavily.com/examples/use-cases/web-eval\",\n      \"title\": \"RAG Evaluation - Tavily Docs\",\n      \"description\": \"Effortless Web-Based RAG Evaluation Using Tavily and LangGraph\"\n    },\n    {\n      \"url\": \"https://docs.tavily.com/changelog\"\n    }\n  ]\n}",
+  "parsed": {
+    "links": [
+      {
+        "url": "https://docs.tavily.com/documentation/api-reference/endpoint/search",
+        "title": "Tavily Search - Tavily Docs",
+        "description": "Execute a search query using Tavily Search."
+      },
+      {
+        "url": "https://docs.tavily.com/documentation/best-practices/best-practices-search",
+        "title": "Best Practices for Search - Tavily Docs",
+        "description": "Learn how to optimize your queries, refine search filters, and leverage advanced parameters for better performance."
+      },
+      {
+        "url": "https://docs.tavily.com/documentation/api-credits",
+        "title": "Credits & Pricing - Tavily Docs",
+        "description": "Learn how to get and manage your Tavily API Credits."
+      },
+      {
+        "url": "https://docs.tavily.com/documentation/api-reference/endpoint/crawl",
+        "title": "Tavily Crawl - Tavily Docs",
+        "description": "Tavily Crawl is a graph-based website traversal tool that can explore hundreds of paths in parallel with built-in extraction and intelligent discovery."
+      },
+      {
+        "url": "https://docs.tavily.com/documentation/api-reference/introduction",
+        "title": "Introduction - Tavily Docs",
+        "description": "Easily integrate our APIs with your services."
+      },
+      {
+        "url": "https://docs.tavily.com/documentation/api-reference/endpoint/usage",
+        "title": "Usage - Tavily Docs",
+        "description": "Get API key and account usage details"
+      },
+      {
+        "url": "https://docs.tavily.com/documentation/agent-skills",
+        "title": "Tavily Agent Skills - Tavily Docs",
+        "description": "Official skills that define best practices, adding web search, extraction, crawling, and research to any AI coding agent."
+      },
+      {
+        "url": "https://docs.tavily.com/documentation/integrations/dify",
+        "title": "Dify - Tavily Docs",
+        "description": "Tavily is now available for no-code integration through Dify."
+      },
+      {
+        "url": "https://docs.tavily.com/documentation/integrations/openclaw",
+        "title": "OpenClaw - Tavily Docs",
+        "description": "Integrate Tavily with OpenClaw to give your AI agents real-time web search and content extraction across WhatsApp, Telegram, Discord, iMessage, and more."
+      },
+      {
+        "url": "https://docs.tavily.com/documentation/integrations/agent-builder",
+        "title": "OpenAI Agent Builder - Tavily Docs",
+        "description": "Integrate OpenAI’s Agent Builder with Tavily’s MCP server to empower your AI agents with real-time web access."
+      },
+      {
+        "url": "https://docs.tavily.com/documentation/mcp",
+        "title": "Tavily MCP Server - Tavily Docs",
+        "description": "Tavily MCP Server allows you to use the Tavily API in your MCP clients."
+      },
+      {
+        "url": "https://docs.tavily.com/documentation/quickstart",
+        "title": "Quickstart - Tavily Docs",
+        "description": "Start searching with Tavily in under 5 minutes."
+      },
+      {
+        "url": "https://docs.tavily.com/documentation/best-practices/best-practices-extract",
+        "title": "Best Practices for Extract - Tavily Docs",
+        "description": "Learn how to optimize content extraction, choose the right approach, and configure parameters for better performance."
+      },
+      {
+        "url": "https://docs.tavily.com/documentation/about",
+        "title": "About - Tavily Docs",
+        "description": "Welcome to Tavily!"
+      },
+      {
+        "url": "https://docs.tavily.com/faq/faq",
+        "title": "Frequently Asked Questions - Tavily Docs"
+      },
+      {
+        "url": "https://docs.tavily.com/examples/use-cases/web-eval",
+        "title": "RAG Evaluation - Tavily Docs",
+        "description": "Effortless Web-Based RAG Evaluation Using Tavily and LangGraph"
+      },
+      {
+        "url": "https://docs.tavily.com/changelog"
+      }
+    ]
+  },
+  "results": [
+    {
+      "title": "Tavily Search - Tavily Docs",
+      "url": "https://docs.tavily.com/documentation/api-reference/endpoint/search",
+      "domain": "docs.tavily.com",
+      "description": "Execute a search query using Tavily Search.",
+      "position": 1
+    },
+    {
+      "title": "Best Practices for Search - Tavily Docs",
+      "url": "https://docs.tavily.com/documentation/best-practices/best-practices-search",
+      "domain": "docs.tavily.com",
+      "description": "Learn how to optimize your queries, refine search filters, and leverage advanced parameters for better performance.",
+      "position": 2
+    },
+    {
+      "title": "Credits & Pricing - Tavily Docs",
+      "url": "https://docs.tavily.com/documentation/api-credits",
+      "domain": "docs.tavily.com",
+      "description": "Learn how to get and manage your Tavily API Credits.",
+      "position": 3
+    },
+    {
+      "title": "Tavily Crawl - Tavily Docs",
+      "url": "https://docs.tavily.com/documentation/api-reference/endpoint/crawl",
+      "domain": "docs.tavily.com",
+      "description": "Tavily Crawl is a graph-based website traversal tool that can explore hundreds of paths in parallel with built-in extraction and intelligent discovery.",
+      "position": 4
+    },
+    {
+      "title": "Introduction - Tavily Docs",
+      "url": "https://docs.tavily.com/documentation/api-reference/introduction",
+      "domain": "docs.tavily.com",
+      "description": "Easily integrate our APIs with your services.",
+      "position": 5
+    },
+    {
+      "title": "Usage - Tavily Docs",
+      "url": "https://docs.tavily.com/documentation/api-reference/endpoint/usage",
+      "domain": "docs.tavily.com",
+      "description": "Get API key and account usage details",
+      "position": 6
+    },
+    {
+      "title": "Tavily Agent Skills - Tavily Docs",
+      "url": "https://docs.tavily.com/documentation/agent-skills",
+      "domain": "docs.tavily.com",
+      "description": "Official skills that define best practices, adding web search, extraction, crawling, and research to any AI coding agent.",
+      "position": 7
+    },
+    {
+      "title": "Dify - Tavily Docs",
+      "url": "https://docs.tavily.com/documentation/integrations/dify",
+      "domain": "docs.tavily.com",
+      "description": "Tavily is now available for no-code integration through Dify.",
+      "position": 8
+    },
+    {
+      "title": "OpenClaw - Tavily Docs",
+      "url": "https://docs.tavily.com/documentation/integrations/openclaw",
+      "domain": "docs.tavily.com",
+      "description": "Integrate Tavily with OpenClaw to give your AI agents real-time web search and content extraction across WhatsApp, Telegram, Discord, iMessage, and more.",
+      "position": 9
+    },
+    {
+      "title": "OpenAI Agent Builder - Tavily Docs",
+      "url": "https://docs.tavily.com/documentation/integrations/agent-builder",
+      "domain": "docs.tavily.com",
+      "description": "Integrate OpenAI’s Agent Builder with Tavily’s MCP server to empower your AI agents with real-time web access.",
+      "position": 10
+    },
+    {
+      "title": "Tavily MCP Server - Tavily Docs",
+      "url": "https://docs.tavily.com/documentation/mcp",
+      "domain": "docs.tavily.com",
+      "description": "Tavily MCP Server allows you to use the Tavily API in your MCP clients.",
+      "position": 11
+    },
+    {
+      "title": "Quickstart - Tavily Docs",
+      "url": "https://docs.tavily.com/documentation/quickstart",
+      "domain": "docs.tavily.com",
+      "description": "Start searching with Tavily in under 5 minutes.",
+      "position": 12
+    },
+    {
+      "title": "Best Practices for Extract - Tavily Docs",
+      "url": "https://docs.tavily.com/documentation/best-practices/best-practices-extract",
+      "domain": "docs.tavily.com",
+      "description": "Learn how to optimize content extraction, choose the right approach, and configure parameters for better performance.",
+      "position": 13
+    },
+    {
+      "title": "About - Tavily Docs",
+      "url": "https://docs.tavily.com/documentation/about",
+      "domain": "docs.tavily.com",
+      "description": "Welcome to Tavily!",
+      "position": 14
+    },
+    {
+      "title": "Frequently Asked Questions - Tavily Docs",
+      "url": "https://docs.tavily.com/faq/faq",
+      "domain": "docs.tavily.com",
+      "position": 15
+    },
+    {
+      "title": "RAG Evaluation - Tavily Docs",
+      "url": "https://docs.tavily.com/examples/use-cases/web-eval",
+      "domain": "docs.tavily.com",
+      "description": "Effortless Web-Based RAG Evaluation Using Tavily and LangGraph",
+      "position": 16
+    },
+    {
+      "url": "https://docs.tavily.com/changelog",
+      "domain": "docs.tavily.com",
+      "position": 17
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "urls": [
+    "https://docs.tavily.com/documentation/mcp",
+    "https://docs.tavily.com/documentation/api-reference/endpoint/search"
+  ],
+  "objective": "Extract Tavily MCP tools, search response fields, include_answer/raw_content controls, depth and domain filters.",
+  "search_queries": [
+    "Tavily MCP tools",
+    "Tavily search response fields"
+  ],
+  "full_content": false,
+  "session_id": "9f2e4a8d1c7b4e6390af5d2c8b7611e4",
+  "model_name": "gpt-5.5 xhigh"
+}

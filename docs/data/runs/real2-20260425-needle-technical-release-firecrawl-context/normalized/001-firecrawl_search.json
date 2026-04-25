@@ -1,0 +1,411 @@
+{
+  "provider": "firecrawl-context",
+  "tool": "firecrawl_search",
+  "isError": false,
+  "rawText": "{\n  \"query\": \"official release notes TypeScript JavaScript library release API changes after August 2025\",\n  \"executedQuery\": \"official release notes TypeScript JavaScript library release API changes after August 2025\",\n  \"content\": \"chunks\",\n  \"constraints\": {\n    \"maxResults\": 8,\n    \"maxCharsPerResult\": 1600,\n    \"maxCharsTotal\": 10000,\n    \"focus\": \"release date after August 2025, concrete API changes, TypeScript or JavaScript library, examples from changelog or official docs\",\n    \"freshness\": {\n      \"startDate\": \"2025-09-01\",\n      \"sortByDate\": true\n    }\n  },\n  \"results\": [\n    {\n      \"title\": \"TypeScript in 2026: Why JavaScript Is Finally Being Left Behind\",\n      \"url\": \"https://ajianaz.dev/typescript-in-2026-why-javascript-is-finally-being-left-behind/\",\n      \"description\": \"TypeScript 5.9 Release Notes - Official documentation covering import defer , expandable hovers, and configuration improvements; TypeScript 5.6 Release Notes ...\",\n      \"position\": 1,\n      \"source\": \"web\",\n      \"metadata\": {\n        \"sourceURL\": \"https://ajianaz.dev/typescript-in-2026-why-javascript-is-finally-being-left-behind/\",\n        \"finalURL\": \"https://ajianaz.dev/typescript-in-2026-why-javascript-is-finally-being-left-behind/\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"_TypeScript officially became the most-used programming language on GitHub in August 2025, overtaking both Python and JavaScript. Source: GitHub Octoverse 2025 Report_\",\n          \"charCount\": 167\n        },\n        {\n          \"text\": \"> \\\"In August 2025, TypeScript became the most-used language on GitHub, overtaking Python and JavaScript for the first time. Over the past year, TypeScript added more than one million contributors, which was the largest absolute growth of any language on GitHub.\\\" — _GitHub Octoverse 2025 Report_\",\n          \"charCount\": 295\n        },\n        {\n          \"text\": \"1. [**GitHub Octoverse 2025 Report**](https://github.blog/news-insights/octoverse/what-the-fastest-growing-tools-reveal-about-how-software-is-being-built/?ref=ajianaz.dev) \\\\- TypeScript becomes #1 programming language on GitHub, overtaking Python and JavaScript\\n2. [**TypeScript 5.9 Release Notes**](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-5-9.html?ref=ajianaz.dev) \\\\- Official documentation covering `import defer`, expandable hovers, and configuration improvements\\n3. [**TypeScript 5.6 Release Notes**]\",\n          \"charCount\": 534\n        }\n      ]\n    },\n    {\n      \"title\": \"Blog\",\n      \"url\": \"https://deno.com/blog?tag=product-update\",\n      \"description\": \"Deno 1.26 Release Notes. Deno 1.26 adds Cache Web API; improves permission system, experimental npm support, Node.js compatibility; ships with TypeScript 4.8, ...\",\n      \"position\": 2,\n      \"source\": \"web\",\n      \"metadata\": {\n        \"sourceURL\": \"https://deno.com/blog?tag=product-update\",\n        \"finalURL\": \"https://deno.com/blog?tag=product-update\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"[![](https://deno.com/blog/v1.26/ogp.png?__frsh_c=721c82d5cb61a04593b2e3c30be4127413a43136)**Deno 1.26 Release Notes** \\\\\\\\\\nDeno 1.26 adds Cache Web API; improves permission system, experimental npm support, Node.js compatibility; ships with TypeScript 4.8, and more.](https://deno.com/blog/v1.26)\",\n          \"charCount\": 295\n        },\n        {\n          \"text\": \"[![](https://deno.com/blog/v1.23/header.png?__frsh_c=721c82d5cb61a04593b2e3c30be4127413a43136)**Deno 1.23 Release Notes** \\\\\\\\\\nDeno 1.23 changes default type-checking behavior, ships with TypeScript 4.7, updates \\\"deno task\\\", and more](https://deno.com/blog/v1.23)\",\n          \"charCount\": 261\n        },\n        {\n          \"text\": \"[![](https://deno.com/blog/v1.22/header.png?__frsh_c=721c82d5cb61a04593b2e3c30be4127413a43136)**Deno 1.22 Release Notes** \\\\\\\\\\nDeno 1.22 changes default type-checking behavior, removes Deno.emit() API, adds Response.json() API, adds Deno namespace to workers by default, and more](https://deno.com/blog/v1.22)\",\n          \"charCount\": 307\n        }\n      ]\n    },\n    {\n      \"title\": \"ECMAScript® 2027 Language Specification\",\n      \"url\": \"https://tc39.es/ecma262/\",\n      \"description\": \"Introduction. This Ecma Standard defines the ECMAScript 2027 Language. It is the eighteenth edition of the ECMAScript Language Specification.\",\n      \"position\": 3,\n      \"source\": \"web\",\n      \"metadata\": {\n        \"sourceURL\": \"https://tc39.es/ecma262/\",\n        \"finalURL\": \"https://tc39.es/ecma262/\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"01. [Introduction](https://tc39.es/ecma262/#sec-intro \\\"Introduction\\\")\\n02. [1 Scope](https://tc39.es/ecma262/#sec-scope \\\"Scope\\\")\\n03. + [2 Conformance](https://tc39.es/ecma262/#sec-conformance \\\"Conformance\\\")\\n    1. [2.1 Example Normative Optional Clause Heading](https://tc39.es/ecma262/#sec-conformance-normative-optional \\\"Example Normative Optional Clause Heading\\\")\\n    2. [2.2 Example Legacy Clause Heading](https://tc39.es/ecma262/#sec-conformance-legacy \\\"Example Legacy Clause Heading\\\")\\n    3. [2.3 Example Legacy Normative Optiona\",\n          \"charCount\": 534\n        },\n        {\n          \"text\": \"| Intrinsic Name | Global Name | ECMAScript Language Association |\\n| --- | --- | --- |\\n| [%AggregateError%](https://tc39.es/ecma262/#sec-aggregate-error-constructor) | `AggregateError` | The `AggregateError`[constructor](https://tc39.es/ecma262/#constructor) ([20.5.7.1](https://tc39.es/ecma262/#sec-aggregate-error-constructor)) |\\n| [%Array%](https://tc39.es/ecma262/#sec-array-constructor) | `Array` | The Array [constructor](https://tc39.es/ecma262/#constructor) ([23.1.1](https://tc39.es/ecma262/#sec-array-constructor)) |\\n| [%Arr\",\n          \"charCount\": 534\n        },\n        {\n          \"text\": \"[RegularExpressionLiteral](https://tc39.es/ecma262/#prod-RegularExpressionLiteral)::/[RegularExpressionBody](https://tc39.es/ecma262/#prod-RegularExpressionBody)/[RegularExpressionFlags](https://tc39.es/ecma262/#prod-RegularExpressionFlags)[RegularExpressionBody](https://tc39.es/ecma262/#prod-RegularExpressionBody)::[RegularExpressionFirstChar](https://tc39.es/ecma262/#prod-RegularExpressionFirstChar)[RegularExpressionChars](https://tc39.es/ecma262/#prod-RegularExpressionChars)[RegularExpressionChars](https://tc39.es/ecma262/#\",\n          \"charCount\": 532\n        }\n      ]\n    },\n    {\n      \"title\": \"Firebase JavaScript SDK Release Notes - Google\",\n      \"url\": \"https://firebase.google.com/support/release-notes/js\",\n      \"description\": \"1 - August 28, 2025. AI Logic. Fixed an issue that caused TypeScript compilation errors.\",\n      \"position\": 4,\n      \"source\": \"web\",\n      \"metadata\": {\n        \"sourceURL\": \"https://firebase.google.com/support/release-notes/js\",\n        \"finalURL\": \"https://firebase.google.com/support/release-notes/js\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"- On this page\\n- [Version 12.12.1 - April 20, 2026](https://firebase.google.com/support/release-notes/js#version_12121_-_april_20_2026)\\n  - [AI Logic](https://firebase.google.com/support/release-notes/js#ai-logic)\\n- [Version 12.12.0 - April 9, 2026](https://firebase.google.com/support/release-notes/js#version_12120_-_april_9_2026)\\n  - [AI Logic](https://firebase.google.com/support/release-notes/js#ai-logic_1)\\n  - [Authentication](https://firebase.google.com/support/release-notes/js#authentication)\\n  - [SQL Connect](https://fireb\",\n          \"charCount\": 534\n        },\n        {\n          \"text\": \"- This release introduces the new modular API, which enables tree-shaking,\\nbundle size reduction, and other benefits. See\\n[SDK versions 8 and 9](https://firebase.google.com/docs/web/learn-more#modular-version) for more details.\\nUsers of version 8 will need to update their code in order\\nfor it to still work with version 9.0.0 and higher. We have provided a compat\\npackage to make this migration easier. See the\\n[upgrade guide](https://firebase.google.com/docs/web/modular-upgrade) for instructions for upgrading\\nfrom version 8 or the\",\n          \"charCount\": 534\n        },\n        {\n          \"text\": \"- Access to offline persistence is no longer limited to a single tab.\\nYou can opt into this new experimental mode by invoking `enablePersistence()`\\nwith `{experimentalTabSynchronization: true}`. All tabs accessing persistence\\nmust use the same setting for this flag.\\n- Fixed an issue where the first `get()` call made after being offline\\ncould incorrectly return cached data without attempting to reach the backend.\\n- Changed `get()` to only make 1 attempt to reach the backend before\\nreturning cached data, potentially reducing del\",\n          \"charCount\": 532\n        }\n      ]\n    },\n    {\n      \"title\": \"react/CHANGELOG.md at main · facebook/react\",\n      \"url\": \"https://github.com/facebook/react/blob/main/CHANGELOG.md\",\n      \"description\": \"Below is a list of all new features, APIs, deprecations, and breaking changes. Read React 19 release post and React 19 upgrade guide for more information. Note: ...\",\n      \"position\": 5,\n      \"source\": \"web\",\n      \"category\": \"github\",\n      \"metadata\": {\n        \"sourceURL\": \"https://github.com/facebook/react/blob/main/CHANGELOG.md\",\n        \"finalURL\": \"https://github.com/facebook/react/blob/main/CHANGELOG.md\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"- Added `unstable_prerender`, a new experimental API for prerendering React Server Components on the server [#31724](https://github.com/facebook/react/pull/31724)\\n- Fixed an issue where streams would hang when receiving new chunks after a global error [#31840](https://github.com/facebook/react/pull/31840), [#31851](https://github.com/facebook/react/pull/31851)\\n- Fixed an issue where pending chunks were counted twice. [#31833](https://github.com/facebook/react/pull/31833)\\n- Added support for streaming in edge environments [#31852\",\n          \"charCount\": 534\n        },\n        {\n          \"text\": \"- New JSX Transform is now required: We introduced [a new JSX transform](https://legacy.reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html) in 2020 to improve bundle size and use JSX without importing React. In React 19, we’re adding additional improvements like using ref as a prop and JSX speed improvements that require the new transform.\\n- Errors in render are not re-thrown: Errors that are not caught by an Error Boundary are now reported to window.reportError. Errors that are caught by an Error Boundary are re\",\n          \"charCount\": 534\n        },\n        {\n          \"text\": \"- Add support for async Actions ( [#26621](https://github.com/facebook/react/pull/26621), [#26726](https://github.com/facebook/react/pull/26726), [#28078](https://github.com/facebook/react/pull/28078), [#28097](https://github.com/facebook/react/pull/28097), [#29226](https://github.com/facebook/react/pull/29226), [#29618](https://github.com/facebook/react/pull/29618), [#29670](https://github.com/facebook/react/pull/29670), [#26716](https://github.com/facebook/react/pull/26716) by [@acdlite](https://github.com/acdlite) and [@seb\",\n          \"charCount\": 532\n        }\n      ]\n    },\n    {\n      \"title\": \"Changelog\",\n      \"url\": \"https://typedoc.org/documents/Changelog.html\",\n      \"description\": \"v0.28.19 (2026-04-12). Features. Added French translations for the TypeDoc interface and help descriptions. Added support for triple-slash comment style, ...\",\n      \"position\": 6,\n      \"source\": \"web\",\n      \"metadata\": {\n        \"sourceURL\": \"https://typedoc.org/documents/Changelog.html\",\n        \"finalURL\": \"https://typedoc.org/documents/Changelog.html\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"- Drop support for Node 16.\\n- Moved from `marked` to `markdown-it` for parsing as marked has moved to an async model which supporting would significantly complicate TypeDoc's rendering code.\\nThis means that any projects setting `markedOptions` needs to be updated to use `markdownItOptions`.\\nUnlike `marked@4`, `markdown-it` pushes lots of functionality to plugins. To use plugins, a JavaScript config file must be used with the `markdownItLoader` option.\\n- Updated Shiki from 0.14 to 1.x. This should mostly be a transparent update w\",\n          \"charCount\": 534\n        },\n        {\n          \"text\": \"- The `label` property on `Reflection` has moved to `Comment`.\\n- The default value of the `out` option has been changed from `\\\"\\\"` to `\\\"./docs\\\"`, #2195.\\n- Renamed `DeclarationReflection#version` to `DeclarationReflection#projectVersion` to match property on `ProjectReflection`.\\n- Removed unused `Reflection#originalName`.\\n- Removed `Reflection#kindString`, use `ReflectionKind.singularString(reflection.kind)` or `ReflectionKind.pluralString(reflection.kind)` instead.\\n- The `named-tuple-member` and `template-literal` type kind have \",\n          \"charCount\": 534\n        },\n        {\n          \"text\": \"- Node 12 is no longer officially supported as it has gone end of life as of 2022-04-30. It might still work, but may stop working at any time.\\n- Dropped support for TypeScript before 4.6.\\n- `{@link}` tags in comments will now be resolved as declaration references similar to TSDoc's declaration references.\\nFor most cases, this will just work. See [the documentation](https://github.com/TypeStrong/typedoc-site/blob/da9760bccf30ce96210f6e35b9dcc2a4ddeed234/guides/link-resolution.md) for details on how link resolution works.\\n- Typ\",\n          \"charCount\": 532\n        }\n      ]\n    },\n    {\n      \"title\": \"Octoverse: A new developer joins GitHub every second as ...\",\n      \"url\": \"https://github.blog/news-insights/octoverse/octoverse-a-new-developer-joins-github-every-second-as-ai-leads-typescript-to-1/\",\n      \"description\": \"TypeScript is now the most used language on GitHub. In August 2025, TypeScript overtook both Python and JavaScript. Its rise illustrates how developers are ...\",\n      \"position\": 7,\n      \"source\": \"web\",\n      \"metadata\": {\n        \"sourceURL\": \"https://github.blog/news-insights/octoverse/octoverse-a-new-developer-joins-github-every-second-as-ai-leads-typescript-to-1/\",\n        \"finalURL\": \"https://github.blog/news-insights/octoverse/octoverse-a-new-developer-joins-github-every-second-as-ai-leads-typescript-to-1/\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"This surge in activity coincides with a structural milestone: for the first time, TypeScript overtook both Python and JavaScript in August 2025 to become the most used language on GitHub, reflecting how developers are reshaping their toolkits. This marks the most significant language shift in more than a decade.\",\n          \"charCount\": 313\n        },\n        {\n          \"text\": \"- **AI code review** **helps developers.** We [conducted in-depth interviews with developers about their code review process](https://github.blog/ai-and-ml/generative-ai/code-review-in-the-age-of-ai-why-developers-will-always-own-the-merge-button/) and found that 72.6% of developers who use [Copilot code review](https://docs.github.com/en/copilot/concepts/agents/code-review) said it improved their effectiveness **.**\\n- **Developers are using AI and agentic tools to build and share their work faster.** Between the total number of\",\n          \"charCount\": 534\n        },\n        {\n          \"text\": \"- **2025**: Refers to September 1, 2024 through August 31, 2025.\\n- **Year-over-year language comparisons:** Unless otherwise noted, YoY values reflect same-month comparisons (e.g., Aug 2025 vs Aug 2024) to normalize for month-length and seasonality in developer activity.\\n- **Contributions:** Commenting on a commit, issue, pull request, pull request diff, or team discussion; creating a gist, issue, pull request, or team discussion; pushing commits to a project; and reviewing a pull request.\\n- **Contributors**: GitHub users who ha\",\n          \"charCount\": 534\n        }\n      ]\n    },\n    {\n      \"title\": \"6 Best JavaScript Frameworks for 2026\",\n      \"url\": \"https://strapi.io/blog/best-javascript-frameworks\",\n      \"description\": \"TypeScript surpassed both Python and JavaScript to become the most-used language on GitHub in August 2025. Static typing provides better tooling support ...\",\n      \"position\": 8,\n      \"source\": \"web\",\n      \"metadata\": {\n        \"sourceURL\": \"https://strapi.io/blog/best-javascript-frameworks\",\n        \"finalURL\": \"https://strapi.io/blog/best-javascript-frameworks\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"[SolidJS](https://strapi.io/integrations/solidjs) offers React's mental model with 40% faster rendering in standardized benchmarks through its unique reactivity approach, making it one of the best JavaScript frameworks to consider in 2026. [SolidJS v1.9.10](https://github.com/solidjs/solid/releases) released December 24, 2025, with version 2.0 under active d\",\n          \"charCount\": 360\n        }\n      ]\n    }\n  ],\n  \"searchIds\": [\n    \"019dc369-8160-73d9-a457-c6622e2ddb88\"\n  ],\n  \"usage\": {\n    \"resultCount\": 8,\n    \"charsReturned\": 10000,\n    \"creditsUsed\": 10,\n    \"rawResultCount\": {\n      \"web\": 8,\n      \"news\": 0,\n      \"images\": 0\n    }\n  },\n  \"warnings\": [\n    \"maxCharsTotal hard cap reached at 10000 characters\"\n  ]\n}",
+  "parsed": {
+    "query": "official release notes TypeScript JavaScript library release API changes after August 2025",
+    "executedQuery": "official release notes TypeScript JavaScript library release API changes after August 2025",
+    "content": "chunks",
+    "constraints": {
+      "maxResults": 8,
+      "maxCharsPerResult": 1600,
+      "maxCharsTotal": 10000,
+      "focus": "release date after August 2025, concrete API changes, TypeScript or JavaScript library, examples from changelog or official docs",
+      "freshness": {
+        "startDate": "2025-09-01",
+        "sortByDate": true
+      }
+    },
+    "results": [
+      {
+        "title": "TypeScript in 2026: Why JavaScript Is Finally Being Left Behind",
+        "url": "https://ajianaz.dev/typescript-in-2026-why-javascript-is-finally-being-left-behind/",
+        "description": "TypeScript 5.9 Release Notes - Official documentation covering import defer , expandable hovers, and configuration improvements; TypeScript 5.6 Release Notes ...",
+        "position": 1,
+        "source": "web",
+        "metadata": {
+          "sourceURL": "https://ajianaz.dev/typescript-in-2026-why-javascript-is-finally-being-left-behind/",
+          "finalURL": "https://ajianaz.dev/typescript-in-2026-why-javascript-is-finally-being-left-behind/",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "_TypeScript officially became the most-used programming language on GitHub in August 2025, overtaking both Python and JavaScript. Source: GitHub Octoverse 2025 Report_",
+            "charCount": 167
+          },
+          {
+            "text": "> \"In August 2025, TypeScript became the most-used language on GitHub, overtaking Python and JavaScript for the first time. Over the past year, TypeScript added more than one million contributors, which was the largest absolute growth of any language on GitHub.\" — _GitHub Octoverse 2025 Report_",
+            "charCount": 295
+          },
+          {
+            "text": "1. [**GitHub Octoverse 2025 Report**](https://github.blog/news-insights/octoverse/what-the-fastest-growing-tools-reveal-about-how-software-is-being-built/?ref=ajianaz.dev) \\- TypeScript becomes #1 programming language on GitHub, overtaking Python and JavaScript\n2. [**TypeScript 5.9 Release Notes**](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-5-9.html?ref=ajianaz.dev) \\- Official documentation covering `import defer`, expandable hovers, and configuration improvements\n3. [**TypeScript 5.6 Release Notes**]",
+            "charCount": 534
+          }
+        ]
+      },
+      {
+        "title": "Blog",
+        "url": "https://deno.com/blog?tag=product-update",
+        "description": "Deno 1.26 Release Notes. Deno 1.26 adds Cache Web API; improves permission system, experimental npm support, Node.js compatibility; ships with TypeScript 4.8, ...",
+        "position": 2,
+        "source": "web",
+        "metadata": {
+          "sourceURL": "https://deno.com/blog?tag=product-update",
+          "finalURL": "https://deno.com/blog?tag=product-update",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "[![](https://deno.com/blog/v1.26/ogp.png?__frsh_c=721c82d5cb61a04593b2e3c30be4127413a43136)**Deno 1.26 Release Notes** \\\\\nDeno 1.26 adds Cache Web API; improves permission system, experimental npm support, Node.js compatibility; ships with TypeScript 4.8, and more.](https://deno.com/blog/v1.26)",
+            "charCount": 295
+          },
+          {
+            "text": "[![](https://deno.com/blog/v1.23/header.png?__frsh_c=721c82d5cb61a04593b2e3c30be4127413a43136)**Deno 1.23 Release Notes** \\\\\nDeno 1.23 changes default type-checking behavior, ships with TypeScript 4.7, updates \"deno task\", and more](https://deno.com/blog/v1.23)",
+            "charCount": 261
+          },
+          {
+            "text": "[![](https://deno.com/blog/v1.22/header.png?__frsh_c=721c82d5cb61a04593b2e3c30be4127413a43136)**Deno 1.22 Release Notes** \\\\\nDeno 1.22 changes default type-checking behavior, removes Deno.emit() API, adds Response.json() API, adds Deno namespace to workers by default, and more](https://deno.com/blog/v1.22)",
+            "charCount": 307
+          }
+        ]
+      },
+      {
+        "title": "ECMAScript® 2027 Language Specification",
+        "url": "https://tc39.es/ecma262/",
+        "description": "Introduction. This Ecma Standard defines the ECMAScript 2027 Language. It is the eighteenth edition of the ECMAScript Language Specification.",
+        "position": 3,
+        "source": "web",
+        "metadata": {
+          "sourceURL": "https://tc39.es/ecma262/",
+          "finalURL": "https://tc39.es/ecma262/",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "01. [Introduction](https://tc39.es/ecma262/#sec-intro \"Introduction\")\n02. [1 Scope](https://tc39.es/ecma262/#sec-scope \"Scope\")\n03. + [2 Conformance](https://tc39.es/ecma262/#sec-conformance \"Conformance\")\n    1. [2.1 Example Normative Optional Clause Heading](https://tc39.es/ecma262/#sec-conformance-normative-optional \"Example Normative Optional Clause Heading\")\n    2. [2.2 Example Legacy Clause Heading](https://tc39.es/ecma262/#sec-conformance-legacy \"Example Legacy Clause Heading\")\n    3. [2.3 Example Legacy Normative Optiona",
+            "charCount": 534
+          },
+          {
+            "text": "| Intrinsic Name | Global Name | ECMAScript Language Association |\n| --- | --- | --- |\n| [%AggregateError%](https://tc39.es/ecma262/#sec-aggregate-error-constructor) | `AggregateError` | The `AggregateError`[constructor](https://tc39.es/ecma262/#constructor) ([20.5.7.1](https://tc39.es/ecma262/#sec-aggregate-error-constructor)) |\n| [%Array%](https://tc39.es/ecma262/#sec-array-constructor) | `Array` | The Array [constructor](https://tc39.es/ecma262/#constructor) ([23.1.1](https://tc39.es/ecma262/#sec-array-constructor)) |\n| [%Arr",
+            "charCount": 534
+          },
+          {
+            "text": "[RegularExpressionLiteral](https://tc39.es/ecma262/#prod-RegularExpressionLiteral)::/[RegularExpressionBody](https://tc39.es/ecma262/#prod-RegularExpressionBody)/[RegularExpressionFlags](https://tc39.es/ecma262/#prod-RegularExpressionFlags)[RegularExpressionBody](https://tc39.es/ecma262/#prod-RegularExpressionBody)::[RegularExpressionFirstChar](https://tc39.es/ecma262/#prod-RegularExpressionFirstChar)[RegularExpressionChars](https://tc39.es/ecma262/#prod-RegularExpressionChars)[RegularExpressionChars](https://tc39.es/ecma262/#",
+            "charCount": 532
+          }
+        ]
+      },
+      {
+        "title": "Firebase JavaScript SDK Release Notes - Google",
+        "url": "https://firebase.google.com/support/release-notes/js",
+        "description": "1 - August 28, 2025. AI Logic. Fixed an issue that caused TypeScript compilation errors.",
+        "position": 4,
+        "source": "web",
+        "metadata": {
+          "sourceURL": "https://firebase.google.com/support/release-notes/js",
+          "finalURL": "https://firebase.google.com/support/release-notes/js",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "- On this page\n- [Version 12.12.1 - April 20, 2026](https://firebase.google.com/support/release-notes/js#version_12121_-_april_20_2026)\n  - [AI Logic](https://firebase.google.com/support/release-notes/js#ai-logic)\n- [Version 12.12.0 - April 9, 2026](https://firebase.google.com/support/release-notes/js#version_12120_-_april_9_2026)\n  - [AI Logic](https://firebase.google.com/support/release-notes/js#ai-logic_1)\n  - [Authentication](https://firebase.google.com/support/release-notes/js#authentication)\n  - [SQL Connect](https://fireb",
+            "charCount": 534
+          },
+          {
+            "text": "- This release introduces the new modular API, which enables tree-shaking,\nbundle size reduction, and other benefits. See\n[SDK versions 8 and 9](https://firebase.google.com/docs/web/learn-more#modular-version) for more details.\nUsers of version 8 will need to update their code in order\nfor it to still work with version 9.0.0 and higher. We have provided a compat\npackage to make this migration easier. See the\n[upgrade guide](https://firebase.google.com/docs/web/modular-upgrade) for instructions for upgrading\nfrom version 8 or the",
+            "charCount": 534
+          },
+          {
+            "text": "- Access to offline persistence is no longer limited to a single tab.\nYou can opt into this new experimental mode by invoking `enablePersistence()`\nwith `{experimentalTabSynchronization: true}`. All tabs accessing persistence\nmust use the same setting for this flag.\n- Fixed an issue where the first `get()` call made after being offline\ncould incorrectly return cached data without attempting to reach the backend.\n- Changed `get()` to only make 1 attempt to reach the backend before\nreturning cached data, potentially reducing del",
+            "charCount": 532
+          }
+        ]
+      },
+      {
+        "title": "react/CHANGELOG.md at main · facebook/react",
+        "url": "https://github.com/facebook/react/blob/main/CHANGELOG.md",
+        "description": "Below is a list of all new features, APIs, deprecations, and breaking changes. Read React 19 release post and React 19 upgrade guide for more information. Note: ...",
+        "position": 5,
+        "source": "web",
+        "category": "github",
+        "metadata": {
+          "sourceURL": "https://github.com/facebook/react/blob/main/CHANGELOG.md",
+          "finalURL": "https://github.com/facebook/react/blob/main/CHANGELOG.md",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "- Added `unstable_prerender`, a new experimental API for prerendering React Server Components on the server [#31724](https://github.com/facebook/react/pull/31724)\n- Fixed an issue where streams would hang when receiving new chunks after a global error [#31840](https://github.com/facebook/react/pull/31840), [#31851](https://github.com/facebook/react/pull/31851)\n- Fixed an issue where pending chunks were counted twice. [#31833](https://github.com/facebook/react/pull/31833)\n- Added support for streaming in edge environments [#31852",
+            "charCount": 534
+          },
+          {
+            "text": "- New JSX Transform is now required: We introduced [a new JSX transform](https://legacy.reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html) in 2020 to improve bundle size and use JSX without importing React. In React 19, we’re adding additional improvements like using ref as a prop and JSX speed improvements that require the new transform.\n- Errors in render are not re-thrown: Errors that are not caught by an Error Boundary are now reported to window.reportError. Errors that are caught by an Error Boundary are re",
+            "charCount": 534
+          },
+          {
+            "text": "- Add support for async Actions ( [#26621](https://github.com/facebook/react/pull/26621), [#26726](https://github.com/facebook/react/pull/26726), [#28078](https://github.com/facebook/react/pull/28078), [#28097](https://github.com/facebook/react/pull/28097), [#29226](https://github.com/facebook/react/pull/29226), [#29618](https://github.com/facebook/react/pull/29618), [#29670](https://github.com/facebook/react/pull/29670), [#26716](https://github.com/facebook/react/pull/26716) by [@acdlite](https://github.com/acdlite) and [@seb",
+            "charCount": 532
+          }
+        ]
+      },
+      {
+        "title": "Changelog",
+        "url": "https://typedoc.org/documents/Changelog.html",
+        "description": "v0.28.19 (2026-04-12). Features. Added French translations for the TypeDoc interface and help descriptions. Added support for triple-slash comment style, ...",
+        "position": 6,
+        "source": "web",
+        "metadata": {
+          "sourceURL": "https://typedoc.org/documents/Changelog.html",
+          "finalURL": "https://typedoc.org/documents/Changelog.html",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "- Drop support for Node 16.\n- Moved from `marked` to `markdown-it` for parsing as marked has moved to an async model which supporting would significantly complicate TypeDoc's rendering code.\nThis means that any projects setting `markedOptions` needs to be updated to use `markdownItOptions`.\nUnlike `marked@4`, `markdown-it` pushes lots of functionality to plugins. To use plugins, a JavaScript config file must be used with the `markdownItLoader` option.\n- Updated Shiki from 0.14 to 1.x. This should mostly be a transparent update w",
+            "charCount": 534
+          },
+          {
+            "text": "- The `label` property on `Reflection` has moved to `Comment`.\n- The default value of the `out` option has been changed from `\"\"` to `\"./docs\"`, #2195.\n- Renamed `DeclarationReflection#version` to `DeclarationReflection#projectVersion` to match property on `ProjectReflection`.\n- Removed unused `Reflection#originalName`.\n- Removed `Reflection#kindString`, use `ReflectionKind.singularString(reflection.kind)` or `ReflectionKind.pluralString(reflection.kind)` instead.\n- The `named-tuple-member` and `template-literal` type kind have ",
+            "charCount": 534
+          },
+          {
+            "text": "- Node 12 is no longer officially supported as it has gone end of life as of 2022-04-30. It might still work, but may stop working at any time.\n- Dropped support for TypeScript before 4.6.\n- `{@link}` tags in comments will now be resolved as declaration references similar to TSDoc's declaration references.\nFor most cases, this will just work. See [the documentation](https://github.com/TypeStrong/typedoc-site/blob/da9760bccf30ce96210f6e35b9dcc2a4ddeed234/guides/link-resolution.md) for details on how link resolution works.\n- Typ",
+            "charCount": 532
+          }
+        ]
+      },
+      {
+        "title": "Octoverse: A new developer joins GitHub every second as ...",
+        "url": "https://github.blog/news-insights/octoverse/octoverse-a-new-developer-joins-github-every-second-as-ai-leads-typescript-to-1/",
+        "description": "TypeScript is now the most used language on GitHub. In August 2025, TypeScript overtook both Python and JavaScript. Its rise illustrates how developers are ...",
+        "position": 7,
+        "source": "web",
+        "metadata": {
+          "sourceURL": "https://github.blog/news-insights/octoverse/octoverse-a-new-developer-joins-github-every-second-as-ai-leads-typescript-to-1/",
+          "finalURL": "https://github.blog/news-insights/octoverse/octoverse-a-new-developer-joins-github-every-second-as-ai-leads-typescript-to-1/",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "This surge in activity coincides with a structural milestone: for the first time, TypeScript overtook both Python and JavaScript in August 2025 to become the most used language on GitHub, reflecting how developers are reshaping their toolkits. This marks the most significant language shift in more than a decade.",
+            "charCount": 313
+          },
+          {
+            "text": "- **AI code review** **helps developers.** We [conducted in-depth interviews with developers about their code review process](https://github.blog/ai-and-ml/generative-ai/code-review-in-the-age-of-ai-why-developers-will-always-own-the-merge-button/) and found that 72.6% of developers who use [Copilot code review](https://docs.github.com/en/copilot/concepts/agents/code-review) said it improved their effectiveness **.**\n- **Developers are using AI and agentic tools to build and share their work faster.** Between the total number of",
+            "charCount": 534
+          },
+          {
+            "text": "- **2025**: Refers to September 1, 2024 through August 31, 2025.\n- **Year-over-year language comparisons:** Unless otherwise noted, YoY values reflect same-month comparisons (e.g., Aug 2025 vs Aug 2024) to normalize for month-length and seasonality in developer activity.\n- **Contributions:** Commenting on a commit, issue, pull request, pull request diff, or team discussion; creating a gist, issue, pull request, or team discussion; pushing commits to a project; and reviewing a pull request.\n- **Contributors**: GitHub users who ha",
+            "charCount": 534
+          }
+        ]
+      },
+      {
+        "title": "6 Best JavaScript Frameworks for 2026",
+        "url": "https://strapi.io/blog/best-javascript-frameworks",
+        "description": "TypeScript surpassed both Python and JavaScript to become the most-used language on GitHub in August 2025. Static typing provides better tooling support ...",
+        "position": 8,
+        "source": "web",
+        "metadata": {
+          "sourceURL": "https://strapi.io/blog/best-javascript-frameworks",
+          "finalURL": "https://strapi.io/blog/best-javascript-frameworks",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "[SolidJS](https://strapi.io/integrations/solidjs) offers React's mental model with 40% faster rendering in standardized benchmarks through its unique reactivity approach, making it one of the best JavaScript frameworks to consider in 2026. [SolidJS v1.9.10](https://github.com/solidjs/solid/releases) released December 24, 2025, with version 2.0 under active d",
+            "charCount": 360
+          }
+        ]
+      }
+    ],
+    "searchIds": [
+      "019dc369-8160-73d9-a457-c6622e2ddb88"
+    ],
+    "usage": {
+      "resultCount": 8,
+      "charsReturned": 10000,
+      "creditsUsed": 10,
+      "rawResultCount": {
+        "web": 8,
+        "news": 0,
+        "images": 0
+      }
+    },
+    "warnings": [
+      "maxCharsTotal hard cap reached at 10000 characters"
+    ]
+  },
+  "results": [
+    {
+      "title": "TypeScript in 2026: Why JavaScript Is Finally Being Left Behind",
+      "url": "https://ajianaz.dev/typescript-in-2026-why-javascript-is-finally-being-left-behind/",
+      "domain": "ajianaz.dev",
+      "description": "TypeScript 5.9 Release Notes - Official documentation covering import defer , expandable hovers, and configuration improvements; TypeScript 5.6 Release Notes ...",
+      "chunks": [
+        {
+          "text": "_TypeScript officially became the most-used programming language on GitHub in August 2025, overtaking both Python and JavaScript. Source: GitHub Octoverse 2025 Report_",
+          "charCount": 167
+        },
+        {
+          "text": "> \"In August 2025, TypeScript became the most-used language on GitHub, overtaking Python and JavaScript for the first time. Over the past year, TypeScript added more than one million contributors, which was the largest absolute growth of any language on GitHub.\" — _GitHub Octoverse 2025 Report_",
+          "charCount": 295
+        },
+        {
+          "text": "1. [**GitHub Octoverse 2025 Report**](https://github.blog/news-insights/octoverse/what-the-fastest-growing-tools-reveal-about-how-software-is-being-built/?ref=ajianaz.dev) \\- TypeScript becomes #1 programming language on GitHub, overtaking Python and JavaScript\n2. [**TypeScript 5.9 Release Notes**](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-5-9.html?ref=ajianaz.dev) \\- Official documentation covering `import defer`, expandable hovers, and configuration improvements\n3. [**TypeScript 5.6 Release Notes**]",
+          "charCount": 534
+        }
+      ],
+      "source": "web",
+      "position": 1
+    },
+    {
+      "title": "Blog",
+      "url": "https://deno.com/blog?tag=product-update",
+      "domain": "deno.com",
+      "description": "Deno 1.26 Release Notes. Deno 1.26 adds Cache Web API; improves permission system, experimental npm support, Node.js compatibility; ships with TypeScript 4.8, ...",
+      "chunks": [
+        {
+          "text": "[![](https://deno.com/blog/v1.26/ogp.png?__frsh_c=721c82d5cb61a04593b2e3c30be4127413a43136)**Deno 1.26 Release Notes** \\\\\nDeno 1.26 adds Cache Web API; improves permission system, experimental npm support, Node.js compatibility; ships with TypeScript 4.8, and more.](https://deno.com/blog/v1.26)",
+          "charCount": 295
+        },
+        {
+          "text": "[![](https://deno.com/blog/v1.23/header.png?__frsh_c=721c82d5cb61a04593b2e3c30be4127413a43136)**Deno 1.23 Release Notes** \\\\\nDeno 1.23 changes default type-checking behavior, ships with TypeScript 4.7, updates \"deno task\", and more](https://deno.com/blog/v1.23)",
+          "charCount": 261
+        },
+        {
+          "text": "[![](https://deno.com/blog/v1.22/header.png?__frsh_c=721c82d5cb61a04593b2e3c30be4127413a43136)**Deno 1.22 Release Notes** \\\\\nDeno 1.22 changes default type-checking behavior, removes Deno.emit() API, adds Response.json() API, adds Deno namespace to workers by default, and more](https://deno.com/blog/v1.22)",
+          "charCount": 307
+        }
+      ],
+      "source": "web",
+      "position": 2
+    },
+    {
+      "title": "ECMAScript® 2027 Language Specification",
+      "url": "https://tc39.es/ecma262/",
+      "domain": "tc39.es",
+      "description": "Introduction. This Ecma Standard defines the ECMAScript 2027 Language. It is the eighteenth edition of the ECMAScript Language Specification.",
+      "chunks": [
+        {
+          "text": "01. [Introduction](https://tc39.es/ecma262/#sec-intro \"Introduction\")\n02. [1 Scope](https://tc39.es/ecma262/#sec-scope \"Scope\")\n03. + [2 Conformance](https://tc39.es/ecma262/#sec-conformance \"Conformance\")\n    1. [2.1 Example Normative Optional Clause Heading](https://tc39.es/ecma262/#sec-conformance-normative-optional \"Example Normative Optional Clause Heading\")\n    2. [2.2 Example Legacy Clause Heading](https://tc39.es/ecma262/#sec-conformance-legacy \"Example Legacy Clause Heading\")\n    3. [2.3 Example Legacy Normative Optiona",
+          "charCount": 534
+        },
+        {
+          "text": "| Intrinsic Name | Global Name | ECMAScript Language Association |\n| --- | --- | --- |\n| [%AggregateError%](https://tc39.es/ecma262/#sec-aggregate-error-constructor) | `AggregateError` | The `AggregateError`[constructor](https://tc39.es/ecma262/#constructor) ([20.5.7.1](https://tc39.es/ecma262/#sec-aggregate-error-constructor)) |\n| [%Array%](https://tc39.es/ecma262/#sec-array-constructor) | `Array` | The Array [constructor](https://tc39.es/ecma262/#constructor) ([23.1.1](https://tc39.es/ecma262/#sec-array-constructor)) |\n| [%Arr",
+          "charCount": 534
+        },
+        {
+          "text": "[RegularExpressionLiteral](https://tc39.es/ecma262/#prod-RegularExpressionLiteral)::/[RegularExpressionBody](https://tc39.es/ecma262/#prod-RegularExpressionBody)/[RegularExpressionFlags](https://tc39.es/ecma262/#prod-RegularExpressionFlags)[RegularExpressionBody](https://tc39.es/ecma262/#prod-RegularExpressionBody)::[RegularExpressionFirstChar](https://tc39.es/ecma262/#prod-RegularExpressionFirstChar)[RegularExpressionChars](https://tc39.es/ecma262/#prod-RegularExpressionChars)[RegularExpressionChars](https://tc39.es/ecma262/#",
+          "charCount": 532
+        }
+      ],
+      "source": "web",
+      "position": 3
+    },
+    {
+      "title": "Firebase JavaScript SDK Release Notes - Google",
+      "url": "https://firebase.google.com/support/release-notes/js",
+      "domain": "firebase.google.com",
+      "description": "1 - August 28, 2025. AI Logic. Fixed an issue that caused TypeScript compilation errors.",
+      "chunks": [
+        {
+          "text": "- On this page\n- [Version 12.12.1 - April 20, 2026](https://firebase.google.com/support/release-notes/js#version_12121_-_april_20_2026)\n  - [AI Logic](https://firebase.google.com/support/release-notes/js#ai-logic)\n- [Version 12.12.0 - April 9, 2026](https://firebase.google.com/support/release-notes/js#version_12120_-_april_9_2026)\n  - [AI Logic](https://firebase.google.com/support/release-notes/js#ai-logic_1)\n  - [Authentication](https://firebase.google.com/support/release-notes/js#authentication)\n  - [SQL Connect](https://fireb",
+          "charCount": 534
+        },
+        {
+          "text": "- This release introduces the new modular API, which enables tree-shaking,\nbundle size reduction, and other benefits. See\n[SDK versions 8 and 9](https://firebase.google.com/docs/web/learn-more#modular-version) for more details.\nUsers of version 8 will need to update their code in order\nfor it to still work with version 9.0.0 and higher. We have provided a compat\npackage to make this migration easier. See the\n[upgrade guide](https://firebase.google.com/docs/web/modular-upgrade) for instructions for upgrading\nfrom version 8 or the",
+          "charCount": 534
+        },
+        {
+          "text": "- Access to offline persistence is no longer limited to a single tab.\nYou can opt into this new experimental mode by invoking `enablePersistence()`\nwith `{experimentalTabSynchronization: true}`. All tabs accessing persistence\nmust use the same setting for this flag.\n- Fixed an issue where the first `get()` call made after being offline\ncould incorrectly return cached data without attempting to reach the backend.\n- Changed `get()` to only make 1 attempt to reach the backend before\nreturning cached data, potentially reducing del",
+          "charCount": 532
+        }
+      ],
+      "source": "web",
+      "position": 4
+    },
+    {
+      "title": "react/CHANGELOG.md at main · facebook/react",
+      "url": "https://github.com/facebook/react/blob/main/CHANGELOG.md",
+      "domain": "github.com",
+      "description": "Below is a list of all new features, APIs, deprecations, and breaking changes. Read React 19 release post and React 19 upgrade guide for more information. Note: ...",
+      "chunks": [
+        {
+          "text": "- Added `unstable_prerender`, a new experimental API for prerendering React Server Components on the server [#31724](https://github.com/facebook/react/pull/31724)\n- Fixed an issue where streams would hang when receiving new chunks after a global error [#31840](https://github.com/facebook/react/pull/31840), [#31851](https://github.com/facebook/react/pull/31851)\n- Fixed an issue where pending chunks were counted twice. [#31833](https://github.com/facebook/react/pull/31833)\n- Added support for streaming in edge environments [#31852",
+          "charCount": 534
+        },
+        {
+          "text": "- New JSX Transform is now required: We introduced [a new JSX transform](https://legacy.reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html) in 2020 to improve bundle size and use JSX without importing React. In React 19, we’re adding additional improvements like using ref as a prop and JSX speed improvements that require the new transform.\n- Errors in render are not re-thrown: Errors that are not caught by an Error Boundary are now reported to window.reportError. Errors that are caught by an Error Boundary are re",
+          "charCount": 534
+        },
+        {
+          "text": "- Add support for async Actions ( [#26621](https://github.com/facebook/react/pull/26621), [#26726](https://github.com/facebook/react/pull/26726), [#28078](https://github.com/facebook/react/pull/28078), [#28097](https://github.com/facebook/react/pull/28097), [#29226](https://github.com/facebook/react/pull/29226), [#29618](https://github.com/facebook/react/pull/29618), [#29670](https://github.com/facebook/react/pull/29670), [#26716](https://github.com/facebook/react/pull/26716) by [@acdlite](https://github.com/acdlite) and [@seb",
+          "charCount": 532
+        }
+      ],
+      "source": "web",
+      "category": "github",
+      "position": 5
+    },
+    {
+      "title": "Changelog",
+      "url": "https://typedoc.org/documents/Changelog.html",
+      "domain": "typedoc.org",
+      "description": "v0.28.19 (2026-04-12). Features. Added French translations for the TypeDoc interface and help descriptions. Added support for triple-slash comment style, ...",
+      "chunks": [
+        {
+          "text": "- Drop support for Node 16.\n- Moved from `marked` to `markdown-it` for parsing as marked has moved to an async model which supporting would significantly complicate TypeDoc's rendering code.\nThis means that any projects setting `markedOptions` needs to be updated to use `markdownItOptions`.\nUnlike `marked@4`, `markdown-it` pushes lots of functionality to plugins. To use plugins, a JavaScript config file must be used with the `markdownItLoader` option.\n- Updated Shiki from 0.14 to 1.x. This should mostly be a transparent update w",
+          "charCount": 534
+        },
+        {
+          "text": "- The `label` property on `Reflection` has moved to `Comment`.\n- The default value of the `out` option has been changed from `\"\"` to `\"./docs\"`, #2195.\n- Renamed `DeclarationReflection#version` to `DeclarationReflection#projectVersion` to match property on `ProjectReflection`.\n- Removed unused `Reflection#originalName`.\n- Removed `Reflection#kindString`, use `ReflectionKind.singularString(reflection.kind)` or `ReflectionKind.pluralString(reflection.kind)` instead.\n- The `named-tuple-member` and `template-literal` type kind have ",
+          "charCount": 534
+        },
+        {
+          "text": "- Node 12 is no longer officially supported as it has gone end of life as of 2022-04-30. It might still work, but may stop working at any time.\n- Dropped support for TypeScript before 4.6.\n- `{@link}` tags in comments will now be resolved as declaration references similar to TSDoc's declaration references.\nFor most cases, this will just work. See [the documentation](https://github.com/TypeStrong/typedoc-site/blob/da9760bccf30ce96210f6e35b9dcc2a4ddeed234/guides/link-resolution.md) for details on how link resolution works.\n- Typ",
+          "charCount": 532
+        }
+      ],
+      "source": "web",
+      "position": 6
+    },
+    {
+      "title": "Octoverse: A new developer joins GitHub every second as ...",
+      "url": "https://github.blog/news-insights/octoverse/octoverse-a-new-developer-joins-github-every-second-as-ai-leads-typescript-to-1/",
+      "domain": "github.blog",
+      "description": "TypeScript is now the most used language on GitHub. In August 2025, TypeScript overtook both Python and JavaScript. Its rise illustrates how developers are ...",
+      "chunks": [
+        {
+          "text": "This surge in activity coincides with a structural milestone: for the first time, TypeScript overtook both Python and JavaScript in August 2025 to become the most used language on GitHub, reflecting how developers are reshaping their toolkits. This marks the most significant language shift in more than a decade.",
+          "charCount": 313
+        },
+        {
+          "text": "- **AI code review** **helps developers.** We [conducted in-depth interviews with developers about their code review process](https://github.blog/ai-and-ml/generative-ai/code-review-in-the-age-of-ai-why-developers-will-always-own-the-merge-button/) and found that 72.6% of developers who use [Copilot code review](https://docs.github.com/en/copilot/concepts/agents/code-review) said it improved their effectiveness **.**\n- **Developers are using AI and agentic tools to build and share their work faster.** Between the total number of",
+          "charCount": 534
+        },
+        {
+          "text": "- **2025**: Refers to September 1, 2024 through August 31, 2025.\n- **Year-over-year language comparisons:** Unless otherwise noted, YoY values reflect same-month comparisons (e.g., Aug 2025 vs Aug 2024) to normalize for month-length and seasonality in developer activity.\n- **Contributions:** Commenting on a commit, issue, pull request, pull request diff, or team discussion; creating a gist, issue, pull request, or team discussion; pushing commits to a project; and reviewing a pull request.\n- **Contributors**: GitHub users who ha",
+          "charCount": 534
+        }
+      ],
+      "source": "web",
+      "position": 7
+    },
+    {
+      "title": "6 Best JavaScript Frameworks for 2026",
+      "url": "https://strapi.io/blog/best-javascript-frameworks",
+      "domain": "strapi.io",
+      "description": "TypeScript surpassed both Python and JavaScript to become the most-used language on GitHub in August 2025. Static typing provides better tooling support ...",
+      "chunks": [
+        {
+          "text": "[SolidJS](https://strapi.io/integrations/solidjs) offers React's mental model with 40% faster rendering in standardized benchmarks through its unique reactivity approach, making it one of the best JavaScript frameworks to consider in 2026. [SolidJS v1.9.10](https://github.com/solidjs/solid/releases) released December 24, 2025, with version 2.0 under active d",
+          "charCount": 360
+        }
+      ],
+      "source": "web",
+      "position": 8
+    }
+  ]
+}

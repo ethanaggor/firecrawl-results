@@ -1,0 +1,52 @@
+{
+  "provider": "firecrawl-context",
+  "tool": "firecrawl_search",
+  "isError": false,
+  "rawText": "{\n  \"query\": \"Tavily benchmark methodology search API SimpleQA WISER MSMARCO document relevance\",\n  \"executedQuery\": \"Tavily benchmark methodology search API SimpleQA WISER MSMARCO document relevance (site:tavily.com OR site:docs.tavily.com)\",\n  \"content\": \"chunks\",\n  \"constraints\": {\n    \"maxResults\": 8,\n    \"maxCharsPerResult\": 2200,\n    \"maxCharsTotal\": 14000,\n    \"focus\": \"Tavily public benchmark methodology, search API evaluation, SimpleQA, WISER, MSMARCO, document relevance, metrics\",\n    \"freshness\": \"year\",\n    \"sourcePolicy\": {\n      \"includeDomains\": [\n        \"tavily.com\",\n        \"docs.tavily.com\"\n      ]\n    }\n  },\n  \"results\": [],\n  \"searchIds\": [\n    \"019dc36d-5316-72a8-96c8-23a32b0050fd\"\n  ],\n  \"usage\": {\n    \"resultCount\": 0,\n    \"charsReturned\": 0,\n    \"creditsUsed\": 0,\n    \"rawResultCount\": {\n      \"web\": 0,\n      \"news\": 0,\n      \"images\": 0\n    }\n  },\n  \"warnings\": [\n    \"sourcePolicy includeDomains returned no covered domains; try a more focused query or split unrelated domains into separate searches\"\n  ],\n  \"rawResults\": [\n    {\n      \"success\": true,\n      \"data\": {\n        \"web\": []\n      },\n      \"creditsUsed\": 0,\n      \"id\": \"019dc36d-5316-72a8-96c8-23a32b0050fd\"\n    }\n  ]\n}",
+  "parsed": {
+    "query": "Tavily benchmark methodology search API SimpleQA WISER MSMARCO document relevance",
+    "executedQuery": "Tavily benchmark methodology search API SimpleQA WISER MSMARCO document relevance (site:tavily.com OR site:docs.tavily.com)",
+    "content": "chunks",
+    "constraints": {
+      "maxResults": 8,
+      "maxCharsPerResult": 2200,
+      "maxCharsTotal": 14000,
+      "focus": "Tavily public benchmark methodology, search API evaluation, SimpleQA, WISER, MSMARCO, document relevance, metrics",
+      "freshness": "year",
+      "sourcePolicy": {
+        "includeDomains": [
+          "tavily.com",
+          "docs.tavily.com"
+        ]
+      }
+    },
+    "results": [],
+    "searchIds": [
+      "019dc36d-5316-72a8-96c8-23a32b0050fd"
+    ],
+    "usage": {
+      "resultCount": 0,
+      "charsReturned": 0,
+      "creditsUsed": 0,
+      "rawResultCount": {
+        "web": 0,
+        "news": 0,
+        "images": 0
+      }
+    },
+    "warnings": [
+      "sourcePolicy includeDomains returned no covered domains; try a more focused query or split unrelated domains into separate searches"
+    ],
+    "rawResults": [
+      {
+        "success": true,
+        "data": {
+          "web": []
+        },
+        "creditsUsed": 0,
+        "id": "019dc36d-5316-72a8-96c8-23a32b0050fd"
+      }
+    ]
+  },
+  "results": []
+}

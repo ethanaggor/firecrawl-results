@@ -1,0 +1,19 @@
+{
+  "query": "Tavily official MCP search extract crawl search_depth chunks advanced search agent context benchmarks docs",
+  "content": "chunks",
+  "maxResults": 6,
+  "maxCharsPerResult": 3000,
+  "maxCharsTotal": 14000,
+  "focus": "MCP server tools, search_depth behavior, returned content shape, chunks, extract or crawl flow, benchmarks and retrieval quality claims",
+  "sourcePolicy": {
+    "includeDomains": [
+      "docs.tavily.com",
+      "tavily.com"
+    ]
+  },
+  "sources": [
+    "web"
+  ],
+  "ignoreInvalidURLs": true,
+  "includeRawResults": false
+}

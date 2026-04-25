@@ -1,0 +1,19 @@
+{
+  "query": "Parallel Search MCP web_search web_fetch endpoint docs",
+  "content": "chunks",
+  "maxResults": 8,
+  "maxCharsPerResult": 3000,
+  "maxCharsTotal": 16000,
+  "focus": "Search MCP endpoint URL, web_search and web_fetch tool descriptions, query/result shape, excerpts and limits",
+  "sourcePolicy": {
+    "includeDomains": [
+      "docs.parallel.ai",
+      "parallel.ai"
+    ]
+  },
+  "sources": [
+    "web"
+  ],
+  "ignoreInvalidURLs": true,
+  "includeRawResults": false
+}

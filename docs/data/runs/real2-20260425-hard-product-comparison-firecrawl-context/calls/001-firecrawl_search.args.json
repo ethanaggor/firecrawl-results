@@ -1,0 +1,20 @@
+{
+  "query": "Firecrawl MCP Search API content modes summary chunks markdown sourcePolicy freshness maxCharsTotal agent context official docs",
+  "content": "chunks",
+  "maxResults": 6,
+  "maxCharsPerResult": 3000,
+  "maxCharsTotal": 14000,
+  "focus": "agent-facing search behavior, context modes, source policy, freshness controls, response metadata, and MCP tool flow",
+  "sourcePolicy": {
+    "includeDomains": [
+      "docs.firecrawl.dev",
+      "firecrawl.dev",
+      "github.com"
+    ]
+  },
+  "sources": [
+    "web"
+  ],
+  "ignoreInvalidURLs": true,
+  "includeRawResults": false
+}

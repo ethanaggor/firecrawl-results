@@ -1,0 +1,23 @@
+{
+  "urls": [
+    "https://exa.ai/blog/api-evals",
+    "https://github.com/exa-labs/benchmarks",
+    "https://exa.ai/blog/evals-at-exa",
+    "https://exa.ai/blog/highlights-for-agents",
+    "https://parallel.ai/benchmarks",
+    "https://parallel.ai/blog/search-api-benchmark",
+    "https://github.com/tavily-ai/tavily-search-evals",
+    "https://tavily.com/blog/tavily-evaluation-part-1-tavily-achieves-sota-on-simpleqa-benchmark",
+    "https://www.tavily.com/blog/how-we-built-the-fastest-web-search-in-the-world",
+    "https://tavily.com/"
+  ],
+  "objective": "Extract benchmark methods: tasks, datasets, metrics, judge, context budget, cost/latency, and recommended methodology.",
+  "search_queries": [
+    "SimpleQA WISER MSMARCO",
+    "document relevance benchmark",
+    "agent search methodology"
+  ],
+  "full_content": false,
+  "session_id": "real2-20260425-agent-search-benchmark-methodology-parallel",
+  "model_name": "gpt-5.5 xhigh"
+}

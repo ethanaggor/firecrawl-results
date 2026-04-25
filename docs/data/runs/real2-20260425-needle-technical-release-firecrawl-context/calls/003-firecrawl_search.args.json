@@ -1,0 +1,23 @@
+{
+  "query": "React 19.2 official release notes API changes examples October 2025",
+  "content": "chunks",
+  "maxResults": 6,
+  "maxCharsPerResult": 2500,
+  "maxCharsTotal": 12000,
+  "focus": "React 19.2 release date and concrete API changes with examples such as Activity, useEffectEvent, cacheSignal, renderToReadableStream, or other new APIs",
+  "freshness": {
+    "startDate": "2025-09-01",
+    "sortByDate": true
+  },
+  "sourcePolicy": {
+    "includeDomains": [
+      "react.dev",
+      "github.com"
+    ]
+  },
+  "sources": [
+    "web"
+  ],
+  "ignoreInvalidURLs": true,
+  "includeRawResults": false
+}

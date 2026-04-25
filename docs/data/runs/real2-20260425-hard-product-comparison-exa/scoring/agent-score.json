@@ -1,0 +1,35 @@
+{
+  "agentModel": "gpt-5.5 xhigh",
+  "provider": "exa",
+  "taskId": "hard-product-comparison",
+  "success": true,
+  "answerSupportedByEvidence": true,
+  "retrievalQualityScore": 5,
+  "agentExperienceScore": 4,
+  "sourcePolicyAdherent": true,
+  "freshnessAdherent": true,
+  "callRationale": [
+    "Started with a broad official-docs-and-benchmark search across Firecrawl, Exa, Parallel, and Tavily domains to discover canonical comparison evidence.",
+    "Added a targeted Tavily docs search because the broad call undercovered docs.tavily.com and Tavily needed first-party evidence.",
+    "Added a targeted Exa docs search to capture Exa's own response-shaping, MCP, highlights, freshness, and search-mode controls.",
+    "Added a targeted Parallel docs and benchmark search to capture its dense-excerpt, single-call, WISER benchmark, and API-shape claims.",
+    "Added a targeted Firecrawl docs search to capture search plus scrapeOptions, MCP, scraping, and structured extraction details.",
+    "Fetched the canonical pages in one batch to ground the final comparison in full page evidence rather than only search-result summaries."
+  ],
+  "strengths": [
+    "Retrieved all expected domains: docs.firecrawl.dev, exa.ai, parallel.ai, and docs.tavily.com.",
+    "Evidence covered both docs and benchmark/comparison pages, including provider-specific MCP/search behavior.",
+    "Exa advanced search controls allowed source restriction, fresh retrieval, summaries, highlights, and content budgets.",
+    "The final batched fetch provided canonical page evidence for the answer."
+  ],
+  "weaknesses": [
+    "The initial broad search heavily favored Parallel, Exa, and Firecrawl and missed Tavily first-party docs, requiring a targeted follow-up.",
+    "Some highlight snippets were noisy or truncated, so the final answer relied more on summaries and fetched canonical pages.",
+    "Benchmark evidence for Parallel and Exa-vs-Tavily is vendor-published, so exact leaderboard claims should be treated as directional."
+  ],
+  "notableFailures": [
+    "One pre-provider harness invocation failed because the args file path was relative to the wrong workspace; subsequent calls used absolute evals/work paths.",
+    "No neutral third-party benchmark page covering all four providers was retrieved; official/vendor benchmark pages were used with caveats."
+  ],
+  "confidence": 0.9
+}

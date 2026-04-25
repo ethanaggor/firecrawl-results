@@ -1,0 +1,10 @@
+{
+  "objective": "Find official Tavily documentation for search/extract tools, response shape, chunks, answer modes, and agent-facing retrieval workflow.",
+  "search_queries": [
+    "Tavily search API docs",
+    "Tavily extract API docs",
+    "Tavily MCP server docs"
+  ],
+  "session_id": "9f2e4a8d1c7b4e6390af5d2c8b7611e4",
+  "model_name": "gpt-5.5 xhigh"
+}

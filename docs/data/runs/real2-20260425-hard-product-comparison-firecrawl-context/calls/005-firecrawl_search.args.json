@@ -1,0 +1,19 @@
+{
+  "query": "Parallel official Search MCP web_search web_fetch search results excerpts processor context API benchmark agent search docs",
+  "content": "chunks",
+  "maxResults": 6,
+  "maxCharsPerResult": 3000,
+  "maxCharsTotal": 14000,
+  "focus": "Search MCP endpoint, web_search and web_fetch tool flow, result excerpts, processor modes, limits, benchmarks and claims about retrieval quality",
+  "sourcePolicy": {
+    "includeDomains": [
+      "parallel.ai",
+      "docs.parallel.ai"
+    ]
+  },
+  "sources": [
+    "web"
+  ],
+  "ignoreInvalidURLs": true,
+  "includeRawResults": false
+}

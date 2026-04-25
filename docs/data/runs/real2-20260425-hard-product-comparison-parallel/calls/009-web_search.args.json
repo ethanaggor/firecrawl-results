@@ -1,0 +1,10 @@
+{
+  "objective": "Find official benchmark or evaluation pages comparing agent web search/retrieval providers Firecrawl, Exa, Parallel, and Tavily.",
+  "search_queries": [
+    "agent web search benchmark",
+    "Firecrawl Exa Tavily benchmark",
+    "Parallel AI benchmark search"
+  ],
+  "session_id": "9f2e4a8d1c7b4e6390af5d2c8b7611e4",
+  "model_name": "gpt-5.5 xhigh"
+}

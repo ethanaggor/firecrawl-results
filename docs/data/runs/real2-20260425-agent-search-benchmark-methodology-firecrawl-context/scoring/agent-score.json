@@ -1,0 +1,39 @@
+{
+  "agentModel": "gpt-5.5 xhigh",
+  "provider": "firecrawl-context",
+  "taskId": "agent-search-benchmark-methodology",
+  "success": true,
+  "answerSupportedByEvidence": true,
+  "retrievalQualityScore": 4,
+  "agentExperienceScore": 4,
+  "sourcePolicyAdherent": true,
+  "freshnessAdherent": true,
+  "callRationale": [
+    "Started with broad agent-search methodology searches, which identified useful but overly general benchmark families.",
+    "After the harness exposed the full task wording at finish time, corrected the trajectory with provider-specific calls for Exa, Parallel, and Tavily.",
+    "Scraped Exa's public eval methodology article for open-eval, MS MARCO, SimpleQA, pointwise/pairwise/listwise, top-k, and LLM-grading details.",
+    "Mapped and scraped Parallel's Task API benchmark page for WISER-Atomic, SimpleQA, CPM, evaluator, task distribution, and date/limitation details.",
+    "Scraped Parallel's Search & Extract benchmark page for agentic search/fetch harness methodology, public task suite, MAX_TOOL_CALLS budget, cost, accuracy, precision, recall, and multilingual patterns.",
+    "Mapped Tavily docs when domain search returned no results, then followed a discovered Tavily benchmark link and scraped the Tavily SimpleQA article.",
+    "Scraped Tavily's public GitHub search-evals repository for SimpleQA and document relevance benchmark mechanics, provider configs, and output structure."
+  ],
+  "strengths": [
+    "Covered the expected public sources and domains: exa.ai, parallel.ai, tavily.com/blog, docs.tavily.com via map, and github.com.",
+    "Recovered the expected methodology terms: SimpleQA, WISER, MSMARCO/MS MARCO, and document relevance.",
+    "Extracted both task construction patterns and metrics rather than only headline benchmark scores.",
+    "Used freshness controls on search calls and maxAge 0 on exact scrapes.",
+    "The corrected final answer synthesizes provider methods into an actionable multi-lane benchmark design."
+  ],
+  "weaknesses": [
+    "The first broad searches were not well aligned to the hidden task and produced a broad answer before the full task definition appeared in the finish manifest.",
+    "Two provider-domain searches returned zero results, requiring map and exact scrape recovery.",
+    "Some calls used includeRawResults and produced large raw responses, making the trajectory token-heavy.",
+    "The Tavily domain expected by the harness was docs.tavily.com, while the strongest primary methodology evidence was on tavily.com/blog and GitHub; docs.tavily.com was only useful for discovery."
+  ],
+  "notableFailures": [
+    "Initial answer over-indexed on general agent benchmark methodology; corrected by adding provider-specific Exa, Parallel, and Tavily retrieval and re-finishing with a new answer.",
+    "Broad all-provider search found only a low-signal social result; fixed by switching to provider-by-provider exact retrieval.",
+    "Parallel and Tavily domain-restricted searches returned zero results; fixed with firecrawl_map and exact scrapes from discovered URLs."
+  ],
+  "confidence": 0.9
+}

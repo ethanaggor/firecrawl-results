@@ -1,0 +1,22 @@
+{
+  "urls": [
+    "https://docs.firecrawl.dev/api-reference/endpoint/search",
+    "https://docs.firecrawl.dev/mcp-server",
+    "https://exa.ai/docs/reference/search",
+    "https://exa.ai/docs/reference/contents-retrieval",
+    "https://exa.ai/docs/reference/exa-mcp",
+    "https://docs.parallel.ai/search/best-practices",
+    "https://parallel.ai/products/search",
+    "https://docs.parallel.ai/integrations/mcp/quickstart",
+    "https://docs.tavily.com/documentation/api-reference/endpoint/search",
+    "https://docs.tavily.com/documentation/agent-skills"
+  ],
+  "objective": "Extract context/result shapes, MCP/tool flow, freshness/source controls, and agent search behavior for comparison.",
+  "search_queries": [
+    "agent search tool docs",
+    "MCP search result shape"
+  ],
+  "full_content": false,
+  "session_id": "9f2e4a8d1c7b4e6390af5d2c8b7611e4",
+  "model_name": "gpt-5.5 xhigh"
+}

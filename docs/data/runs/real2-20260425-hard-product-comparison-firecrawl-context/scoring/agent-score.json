@@ -1,0 +1,37 @@
+{
+  "agentModel": "gpt-5.5 xhigh",
+  "provider": "firecrawl-context",
+  "taskId": "hard-product-comparison",
+  "success": true,
+  "answerSupportedByEvidence": true,
+  "retrievalQualityScore": 4,
+  "agentExperienceScore": 4,
+  "sourcePolicyAdherent": true,
+  "freshnessAdherent": null,
+  "callRationale": [
+    "Started with official-domain searches for Firecrawl, Exa, Parallel, and Tavily using chunked context to compare agent-facing search behavior.",
+    "Used focused follow-up searches after broad sourcePolicy queries returned zero results or warnings.",
+    "Searched exact MCP and documentation pages for each vendor to compare context shape and tool-call flow.",
+    "Added benchmark-focused searches for Exa, Parallel, and Tavily to separate retrieval-quality evidence from API ergonomics.",
+    "Kept all evidence to provider-returned results and official/provider domains surfaced through the benchmark harness."
+  ],
+  "strengths": [
+    "Provider schema is rich for agents: content modes, focus, sourcePolicy, freshness, budget controls, and usage metadata.",
+    "Focused searches retrieved strong official evidence across all four expected vendors.",
+    "Warnings were actionable and helped recover from failed broad source-policy searches.",
+    "Parallel and Exa benchmark/evaluation evidence was especially strong."
+  ],
+  "weaknesses": [
+    "Broad multi-domain sourcePolicy searches returned zero results twice, requiring split follow-ups.",
+    "Some chunk outputs were noisy or repetitive, especially llms-full and crawl/example-heavy pages.",
+    "Tavily benchmark evidence was weak in this trajectory beyond a homepage state-of-the-art teaser.",
+    "Firecrawl official retrieval-quality benchmark evidence was not found, so the Firecrawl assessment relies more on context contract and extraction workflow evidence."
+  ],
+  "notableFailures": [
+    "Initial Firecrawl multi-domain official-doc search returned no results.",
+    "Broad all-vendor benchmark search returned no results.",
+    "Tavily benchmark-focused search returned no results and required an alternate research-endpoint query.",
+    "One local harness call failed before execution because temporary args were initially written in the wrong workdir; it was not a provider retrieval failure."
+  ],
+  "confidence": 0.86
+}

@@ -1,0 +1,91 @@
+{
+  "provider": "firecrawl-context",
+  "tool": "firecrawl_search",
+  "isError": false,
+  "rawText": "{\n  \"query\": \"Tavily releases research endpoint achieves state of the art benchmark\",\n  \"executedQuery\": \"Tavily releases research endpoint achieves state of the art benchmark (site:tavily.com OR site:docs.tavily.com)\",\n  \"content\": \"chunks\",\n  \"constraints\": {\n    \"maxResults\": 6,\n    \"maxCharsPerResult\": 3500,\n    \"maxCharsTotal\": 16000,\n    \"focus\": \"official Tavily research endpoint benchmark or state-of-the-art claim, evaluation evidence, citations, and agent research quality\",\n    \"sourcePolicy\": {\n      \"includeDomains\": [\n        \"tavily.com\",\n        \"docs.tavily.com\"\n      ]\n    }\n  },\n  \"results\": [\n    {\n      \"title\": \"Tavily\",\n      \"url\": \"https://tavily.com/\",\n      \"description\": \"This benchmark evaluates factual question answering using OpenAI's ... Tavily releases /research endpoint, achieves state-of-the-art. Tavily raises ...\",\n      \"position\": 1,\n      \"source\": \"web\",\n      \"metadata\": {\n        \"sourceURL\": \"https://tavily.com/\",\n        \"finalURL\": \"https://www.tavily.com/\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"[Get Tavily Certified Today](https://www.tavily.com/certification). Learn, take the quiz, and earn your certificate for API credits.\",\n          \"charCount\": 132\n        },\n        {\n          \"text\": \"[![Databricks Partners with Tavily on MCP Marketplace](https://www.tavily.com/_next/image?url=%2Fspotlight-placeholders%2Fdatabricks-red.png&w=3840&q=75)](https://www.databricks.com/blog/accelerate-ai-development-databricks-discover-govern-and-build-mcp-and-agent-bricks)[![IBM Partners with Tavily on WatsonX Platform](https://www.tavily.com/spotlight-placeholders/ibm.svg)](https://www.ibm.com/new/announcements/driving-smarter-data-enrichment-ibm-and-tavily-partner-for-agentic-ai-solutions)[![JetBrains Integrates Tavily for Real-Time AI Search](https://www.tavily.com/_next/image?url=%2Fspotlight-placeholders%2FJetBrains.png&w=3840&q=75)](https://www.tavily.com/blog/jetbrains-tavily)[![Tavily releases /research endpoint, achieves state-of-the-art](https://www.tavily.com/_next/image?url=%2Fspotlight-placeholders%2Fresearch.png&w=3840&q=75)](https://chat-research.tavily.com/)[![Tavily raises $25M Series A Funding](https://www.tavily.com/_next/image?url=%2Fspotlight-placeholders%2FSeries%20\",\n          \"charCount\": 1000\n        },\n        {\n          \"text\": \"### Tavily releases /research endpoint, achieves state-of-the-art\",\n          \"charCount\": 65\n        }\n      ]\n    }\n  ],\n  \"searchIds\": [\n    \"019dc36c-1754-714d-99a9-076b94dda077\"\n  ],\n  \"usage\": {\n    \"resultCount\": 1,\n    \"charsReturned\": 1197,\n    \"creditsUsed\": 3,\n    \"rawResultCount\": {\n      \"web\": 1,\n      \"news\": 0,\n      \"images\": 0\n    }\n  },\n  \"warnings\": [\n    \"sourcePolicy covered 1 of 2 includeDomains; split unrelated domains into focused follow-up searches if coverage matters\"\n  ]\n}",
+  "parsed": {
+    "query": "Tavily releases research endpoint achieves state of the art benchmark",
+    "executedQuery": "Tavily releases research endpoint achieves state of the art benchmark (site:tavily.com OR site:docs.tavily.com)",
+    "content": "chunks",
+    "constraints": {
+      "maxResults": 6,
+      "maxCharsPerResult": 3500,
+      "maxCharsTotal": 16000,
+      "focus": "official Tavily research endpoint benchmark or state-of-the-art claim, evaluation evidence, citations, and agent research quality",
+      "sourcePolicy": {
+        "includeDomains": [
+          "tavily.com",
+          "docs.tavily.com"
+        ]
+      }
+    },
+    "results": [
+      {
+        "title": "Tavily",
+        "url": "https://tavily.com/",
+        "description": "This benchmark evaluates factual question answering using OpenAI's ... Tavily releases /research endpoint, achieves state-of-the-art. Tavily raises ...",
+        "position": 1,
+        "source": "web",
+        "metadata": {
+          "sourceURL": "https://tavily.com/",
+          "finalURL": "https://www.tavily.com/",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "[Get Tavily Certified Today](https://www.tavily.com/certification). Learn, take the quiz, and earn your certificate for API credits.",
+            "charCount": 132
+          },
+          {
+            "text": "[![Databricks Partners with Tavily on MCP Marketplace](https://www.tavily.com/_next/image?url=%2Fspotlight-placeholders%2Fdatabricks-red.png&w=3840&q=75)](https://www.databricks.com/blog/accelerate-ai-development-databricks-discover-govern-and-build-mcp-and-agent-bricks)[![IBM Partners with Tavily on WatsonX Platform](https://www.tavily.com/spotlight-placeholders/ibm.svg)](https://www.ibm.com/new/announcements/driving-smarter-data-enrichment-ibm-and-tavily-partner-for-agentic-ai-solutions)[![JetBrains Integrates Tavily for Real-Time AI Search](https://www.tavily.com/_next/image?url=%2Fspotlight-placeholders%2FJetBrains.png&w=3840&q=75)](https://www.tavily.com/blog/jetbrains-tavily)[![Tavily releases /research endpoint, achieves state-of-the-art](https://www.tavily.com/_next/image?url=%2Fspotlight-placeholders%2Fresearch.png&w=3840&q=75)](https://chat-research.tavily.com/)[![Tavily raises $25M Series A Funding](https://www.tavily.com/_next/image?url=%2Fspotlight-placeholders%2FSeries%20",
+            "charCount": 1000
+          },
+          {
+            "text": "### Tavily releases /research endpoint, achieves state-of-the-art",
+            "charCount": 65
+          }
+        ]
+      }
+    ],
+    "searchIds": [
+      "019dc36c-1754-714d-99a9-076b94dda077"
+    ],
+    "usage": {
+      "resultCount": 1,
+      "charsReturned": 1197,
+      "creditsUsed": 3,
+      "rawResultCount": {
+        "web": 1,
+        "news": 0,
+        "images": 0
+      }
+    },
+    "warnings": [
+      "sourcePolicy covered 1 of 2 includeDomains; split unrelated domains into focused follow-up searches if coverage matters"
+    ]
+  },
+  "results": [
+    {
+      "title": "Tavily",
+      "url": "https://tavily.com/",
+      "domain": "tavily.com",
+      "description": "This benchmark evaluates factual question answering using OpenAI's ... Tavily releases /research endpoint, achieves state-of-the-art. Tavily raises ...",
+      "chunks": [
+        {
+          "text": "[Get Tavily Certified Today](https://www.tavily.com/certification). Learn, take the quiz, and earn your certificate for API credits.",
+          "charCount": 132
+        },
+        {
+          "text": "[![Databricks Partners with Tavily on MCP Marketplace](https://www.tavily.com/_next/image?url=%2Fspotlight-placeholders%2Fdatabricks-red.png&w=3840&q=75)](https://www.databricks.com/blog/accelerate-ai-development-databricks-discover-govern-and-build-mcp-and-agent-bricks)[![IBM Partners with Tavily on WatsonX Platform](https://www.tavily.com/spotlight-placeholders/ibm.svg)](https://www.ibm.com/new/announcements/driving-smarter-data-enrichment-ibm-and-tavily-partner-for-agentic-ai-solutions)[![JetBrains Integrates Tavily for Real-Time AI Search](https://www.tavily.com/_next/image?url=%2Fspotlight-placeholders%2FJetBrains.png&w=3840&q=75)](https://www.tavily.com/blog/jetbrains-tavily)[![Tavily releases /research endpoint, achieves state-of-the-art](https://www.tavily.com/_next/image?url=%2Fspotlight-placeholders%2Fresearch.png&w=3840&q=75)](https://chat-research.tavily.com/)[![Tavily raises $25M Series A Funding](https://www.tavily.com/_next/image?url=%2Fspotlight-placeholders%2FSeries%20",
+          "charCount": 1000
+        },
+        {
+          "text": "### Tavily releases /research endpoint, achieves state-of-the-art",
+          "charCount": 65
+        }
+      ],
+      "source": "web",
+      "position": 1
+    }
+  ]
+}

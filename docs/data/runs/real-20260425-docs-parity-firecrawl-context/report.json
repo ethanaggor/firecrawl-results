@@ -1,7 +1,7 @@
 {
   "status": "complete",
   "runId": "real-20260425-docs-parity-firecrawl-context",
-  "generatedAt": "2026-04-25T04:58:34.239Z",
+  "generatedAt": "2026-04-25T07:04:49.328Z",
   "manifest": {
     "runId": "real-20260425-docs-parity-firecrawl-context",
     "createdAt": "2026-04-25T04:55:43.480Z",
@@ -64,12 +64,57 @@
     "toolCalls": 4,
     "searchCalls": 3,
     "fetchCalls": 1,
+    "mapCalls": 0,
+    "discoveryCalls": 3,
+    "extractionCalls": 1,
     "failedCalls": 0,
+    "zeroResultCalls": 0,
+    "zeroResultSearchCalls": 0,
+    "expectedTermMissCalls": 0,
+    "expectedDomainMissCalls": 0,
+    "expectedTermMissSearchCalls": 0,
+    "expectedDomainMissSearchCalls": 0,
+    "sourcePolicyViolationCalls": 0,
+    "recoverySignalCalls": 0,
+    "recoverySignalRate": 0,
+    "totalResultCount": 8,
+    "uniqueUrlCount": 7,
+    "uniqueDomainCount": 2,
+    "duplicateUrlRate": 0.125,
+    "expectedDomainsCovered": [
+      "docs.firecrawl.dev",
+      "github.com"
+    ],
+    "firstSearch": {
+      "tool": "firecrawl_search",
+      "resultCount": 1,
+      "expectedTermHit": true,
+      "expectedDomainHit": true,
+      "rawOutputTokens": 1070,
+      "normalizedEvidenceTokens": 535,
+      "domains": [
+        "docs.firecrawl.dev"
+      ],
+      "urls": [
+        "https://docs.firecrawl.dev/api-reference/endpoint/search"
+      ]
+    },
     "totalConnectMs": 1017,
     "totalCallLatencyMs": 7078,
     "argumentTokens": 451,
     "rawOutputTokens": 12699,
-    "normalizedEvidenceTokens": 3359,
+    "normalizedEvidenceTokens": 5673,
+    "evidenceToRawTokenRatio": 0.4467,
+    "avgRawOutputTokensPerCall": 3174.75,
+    "rawOutputOutlierThresholdTokens": 50000,
+    "rawOutputOutlierCalls": 0,
+    "maxRawOutputCall": {
+      "tool": "firecrawl_scrape",
+      "rawOutputTokens": 7389,
+      "normalizedEvidenceTokens": 2331,
+      "resultCount": 1
+    },
+    "avgResultsPerSearchCall": 2.33,
     "totalTrajectoryTokens": 24869,
     "contract": {
       "toolCount": 14,
@@ -78,6 +123,8 @@
       "descriptionTokens": 5356,
       "schemaTokens": 5505,
       "totalMcpFootprintTokens": 11719,
+      "searchOnlyFootprintTokens": 2652,
+      "searchFetchFootprintTokens": 5625,
       "hasFreshnessControl": true,
       "hasSourcePolicyControl": true,
       "hasContentBudgetControl": true,

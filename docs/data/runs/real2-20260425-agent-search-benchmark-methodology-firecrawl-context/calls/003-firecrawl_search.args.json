@@ -1,0 +1,19 @@
+{
+  "query": "BrowseComp benchmark methodology OpenAI browsing agents hard-to-find answers grading confidence score",
+  "content": "chunks",
+  "maxResults": 6,
+  "maxCharsPerResult": 2000,
+  "maxCharsTotal": 10000,
+  "focus": "dataset construction, browsing task design, answer grading, confidence calibration, examples, benchmark limitations",
+  "freshness": "year",
+  "sourcePolicy": {
+    "includeDomains": [
+      "openai.com"
+    ]
+  },
+  "sources": [
+    "web"
+  ],
+  "ignoreInvalidURLs": true,
+  "includeRawResults": true
+}

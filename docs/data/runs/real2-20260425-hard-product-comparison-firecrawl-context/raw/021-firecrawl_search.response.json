@@ -1,0 +1,8 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\n  \"query\": \"Tavily search benchmark agent web search retrieval quality SimpleQA BrowseComp\",\n  \"executedQuery\": \"Tavily search benchmark agent web search retrieval quality SimpleQA BrowseComp (site:tavily.com OR site:docs.tavily.com)\",\n  \"content\": \"chunks\",\n  \"constraints\": {\n    \"maxResults\": 6,\n    \"maxCharsPerResult\": 3500,\n    \"maxCharsTotal\": 16000,\n    \"focus\": \"official Tavily benchmark claims, retrieval quality, agent search performance, answer generation, search depth tradeoffs\",\n    \"sourcePolicy\": {\n      \"includeDomains\": [\n        \"tavily.com\",\n        \"docs.tavily.com\"\n      ]\n    }\n  },\n  \"results\": [],\n  \"searchIds\": [\n    \"019dc36b-a663-767a-ad59-58d9aedee421\"\n  ],\n  \"usage\": {\n    \"resultCount\": 0,\n    \"charsReturned\": 0,\n    \"creditsUsed\": 0,\n    \"rawResultCount\": {\n      \"web\": 0,\n      \"news\": 0,\n      \"images\": 0\n    }\n  },\n  \"warnings\": [\n    \"sourcePolicy includeDomains returned no covered domains; try a more focused query or split unrelated domains into separate searches\"\n  ]\n}"
+    }
+  ]
+}

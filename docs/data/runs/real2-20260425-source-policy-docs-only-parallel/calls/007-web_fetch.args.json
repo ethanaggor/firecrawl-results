@@ -1,0 +1,14 @@
+{
+  "urls": [
+    "https://docs.firecrawl.dev/api-reference/endpoint/search"
+  ],
+  "objective": "POST /search schema field categories and allowed category values",
+  "search_queries": [
+    "Search API categories",
+    "categories github research pdf",
+    "POST search categories"
+  ],
+  "full_content": false,
+  "session_id": "a67b3e1142b84f7099e6c4f55c14d931",
+  "model_name": "gpt-5.5 xhigh"
+}

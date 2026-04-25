@@ -1,0 +1,10 @@
+{
+  "objective": "Find official release notes for a JavaScript or TypeScript framework/library released after August 2025 that list breaking or concrete API changes with code examples.",
+  "search_queries": [
+    "Next.js 16 release API changes",
+    "Vitest 4 release API changes",
+    "React 19.2 release API changes"
+  ],
+  "session_id": "real2-20260425-needle-technical-release-parallel",
+  "model_name": "gpt-5.5 xhigh"
+}

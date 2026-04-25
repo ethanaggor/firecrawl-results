@@ -1,0 +1,8 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\n  \"query\": \"official benchmark agent web search Exa Parallel Tavily Firecrawl retrieval quality SimpleQA BrowseComp HLE FRAMES\",\n  \"executedQuery\": \"official benchmark agent web search Exa Parallel Tavily Firecrawl retrieval quality SimpleQA BrowseComp HLE FRAMES (site:exa.ai OR site:docs.exa.ai OR site:parallel.ai OR site:docs.parallel.ai OR site:tavily.com OR site:docs.tavily.com OR site:firecrawl.dev OR site:docs.firecrawl.dev)\",\n  \"content\": \"chunks\",\n  \"constraints\": {\n    \"maxResults\": 10,\n    \"maxCharsPerResult\": 3500,\n    \"maxCharsTotal\": 24000,\n    \"focus\": \"official benchmark methodology or benchmark claims for AI agent web search retrieval quality, including metrics, datasets, latency tradeoffs, SimpleQA, BrowseComp, HLE, FRAMES, or evaluation guidance\",\n    \"sourcePolicy\": {\n      \"includeDomains\": [\n        \"exa.ai\",\n        \"docs.exa.ai\",\n        \"parallel.ai\",\n        \"docs.parallel.ai\",\n        \"tavily.com\",\n        \"docs.tavily.com\",\n        \"firecrawl.dev\",\n        \"docs.firecrawl.dev\"\n      ]\n    }\n  },\n  \"results\": [],\n  \"searchIds\": [\n    \"019dc36b-0013-70af-8f1c-de75c7163d56\"\n  ],\n  \"usage\": {\n    \"resultCount\": 0,\n    \"charsReturned\": 0,\n    \"creditsUsed\": 0,\n    \"rawResultCount\": {\n      \"web\": 0,\n      \"news\": 0,\n      \"images\": 0\n    }\n  },\n  \"warnings\": [\n    \"sourcePolicy includeDomains returned no covered domains; try a more focused query or split unrelated domains into separate searches\"\n  ]\n}"
+    }
+  ]
+}

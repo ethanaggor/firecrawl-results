@@ -1,0 +1,78 @@
+{
+  "provider": "tavily",
+  "taskId": "agent-search-benchmark-methodology",
+  "toolCalls": 8,
+  "searchCalls": 7,
+  "fetchCalls": 1,
+  "mapCalls": 0,
+  "discoveryCalls": 7,
+  "extractionCalls": 1,
+  "failedCalls": 0,
+  "zeroResultCalls": 0,
+  "zeroResultSearchCalls": 0,
+  "expectedTermMissCalls": 1,
+  "expectedDomainMissCalls": 0,
+  "expectedTermMissSearchCalls": 1,
+  "expectedDomainMissSearchCalls": 0,
+  "sourcePolicyViolationCalls": 0,
+  "recoverySignalCalls": 0,
+  "recoverySignalRate": 0,
+  "totalResultCount": 38,
+  "uniqueUrlCount": 29,
+  "uniqueDomainCount": 5,
+  "duplicateUrlRate": 0.2368,
+  "expectedDomainsCovered": [
+    "exa.ai",
+    "parallel.ai",
+    "github.com",
+    "docs.tavily.com"
+  ],
+  "firstSearch": {
+    "tool": "tavily_search",
+    "resultCount": 4,
+    "expectedTermHit": true,
+    "expectedDomainHit": true,
+    "rawOutputTokens": 2136,
+    "normalizedEvidenceTokens": 1819,
+    "domains": [
+      "exa.ai"
+    ],
+    "urls": [
+      "https://exa.ai/blog/evals-at-exa",
+      "https://exa.ai/blog/webcode",
+      "https://exa.ai/",
+      "https://exa.ai/docs/llms-full.txt"
+    ]
+  },
+  "totalConnectMs": 1259,
+  "totalCallLatencyMs": 31942,
+  "argumentTokens": 639,
+  "rawOutputTokens": 54848,
+  "normalizedEvidenceTokens": 25456,
+  "evidenceToRawTokenRatio": 0.4641,
+  "avgRawOutputTokensPerCall": 6856,
+  "rawOutputOutlierThresholdTokens": 50000,
+  "rawOutputOutlierCalls": 0,
+  "maxRawOutputCall": {
+    "tool": "tavily_search",
+    "rawOutputTokens": 36699,
+    "normalizedEvidenceTokens": 9729,
+    "resultCount": 5
+  },
+  "avgResultsPerSearchCall": 4.57,
+  "totalTrajectoryTokens": 58239,
+  "contract": {
+    "toolCount": 5,
+    "searchToolCount": 2,
+    "fetchToolCount": 1,
+    "descriptionTokens": 143,
+    "schemaTokens": 2277,
+    "totalMcpFootprintTokens": 2752,
+    "searchOnlyFootprintTokens": 1239,
+    "searchFetchFootprintTokens": 1595,
+    "hasFreshnessControl": true,
+    "hasSourcePolicyControl": true,
+    "hasContentBudgetControl": true,
+    "hasUsageMetadata": false
+  }
+}

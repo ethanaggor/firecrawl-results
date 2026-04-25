@@ -1,0 +1,17 @@
+{
+  "query": "official release notes TypeScript JavaScript library release API changes after August 2025",
+  "content": "chunks",
+  "maxResults": 8,
+  "maxCharsPerResult": 1600,
+  "maxCharsTotal": 10000,
+  "focus": "release date after August 2025, concrete API changes, TypeScript or JavaScript library, examples from changelog or official docs",
+  "freshness": {
+    "startDate": "2025-09-01",
+    "sortByDate": true
+  },
+  "sources": [
+    "web"
+  ],
+  "ignoreInvalidURLs": true,
+  "includeRawResults": false
+}

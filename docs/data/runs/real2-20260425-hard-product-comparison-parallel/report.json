@@ -1,0 +1,177 @@
+{
+  "status": "complete",
+  "runId": "real2-20260425-hard-product-comparison-parallel",
+  "generatedAt": "2026-04-25T07:04:53.679Z",
+  "manifest": {
+    "runId": "real2-20260425-hard-product-comparison-parallel",
+    "createdAt": "2026-04-25T06:53:07.214Z",
+    "provider": {
+      "id": "parallel",
+      "name": "Parallel Search remote MCP",
+      "transport": "streamable-http",
+      "url": "https://search.parallel.ai/mcp",
+      "headers": [
+        {
+          "name": "authorization",
+          "required": false,
+          "present": false
+        }
+      ],
+      "searchTools": [
+        "web_search"
+      ],
+      "fetchTools": [
+        "web_fetch"
+      ]
+    },
+    "task": {
+      "id": "hard-product-comparison",
+      "family": "multi-step-research",
+      "question": "For an agent trying to answer hard web questions, how do Firecrawl, Exa, Parallel, and Tavily differ in context shape, tool-call flow, and retrieval quality?",
+      "agentGoal": "Gather evidence from official docs and benchmark pages, then compare agent-facing search behavior. Multiple calls are expected.",
+      "expectedTerms": [
+        "MCP",
+        "search",
+        "agent"
+      ],
+      "expectedDomains": [
+        "docs.firecrawl.dev",
+        "exa.ai",
+        "parallel.ai",
+        "docs.tavily.com"
+      ]
+    }
+  },
+  "metrics": {
+    "provider": "parallel",
+    "taskId": "hard-product-comparison",
+    "toolCalls": 10,
+    "searchCalls": 7,
+    "fetchCalls": 3,
+    "mapCalls": 0,
+    "discoveryCalls": 7,
+    "extractionCalls": 3,
+    "failedCalls": 0,
+    "zeroResultCalls": 0,
+    "zeroResultSearchCalls": 0,
+    "expectedTermMissCalls": 0,
+    "expectedDomainMissCalls": 0,
+    "expectedTermMissSearchCalls": 0,
+    "expectedDomainMissSearchCalls": 0,
+    "sourcePolicyViolationCalls": 0,
+    "recoverySignalCalls": 0,
+    "recoverySignalRate": 0,
+    "totalResultCount": 86,
+    "uniqueUrlCount": 68,
+    "uniqueDomainCount": 20,
+    "duplicateUrlRate": 0.2093,
+    "expectedDomainsCovered": [
+      "docs.firecrawl.dev",
+      "exa.ai",
+      "parallel.ai",
+      "docs.tavily.com"
+    ],
+    "firstSearch": {
+      "tool": "web_search",
+      "resultCount": 10,
+      "expectedTermHit": true,
+      "expectedDomainHit": true,
+      "rawOutputTokens": 7398,
+      "normalizedEvidenceTokens": 6249,
+      "domains": [
+        "docs.firecrawl.dev",
+        "firecrawl.dev",
+        "docs.litellm.ai"
+      ],
+      "urls": [
+        "https://docs.firecrawl.dev/mcp-server",
+        "https://docs.firecrawl.dev/advanced-scraping-guide",
+        "https://docs.firecrawl.dev/developer-guides/mcp-setup-guides/claude-code",
+        "https://docs.firecrawl.dev/api-reference/endpoint/search",
+        "https://www.firecrawl.dev/",
+        "https://docs.firecrawl.dev/introduction",
+        "https://docs.firecrawl.dev/developer-guides/mcp-setup-guides/factory-ai",
+        "https://docs.litellm.ai/docs/search/firecrawl",
+        "https://docs.firecrawl.dev/features/search",
+        "https://docs.firecrawl.dev/developer-guides/mcp-setup-guides/cursor"
+      ]
+    },
+    "totalConnectMs": 1674,
+    "totalCallLatencyMs": 15832,
+    "argumentTokens": 1333,
+    "rawOutputTokens": 65381,
+    "normalizedEvidenceTokens": 54901,
+    "evidenceToRawTokenRatio": 0.8397,
+    "avgRawOutputTokensPerCall": 6538.1,
+    "rawOutputOutlierThresholdTokens": 50000,
+    "rawOutputOutlierCalls": 0,
+    "maxRawOutputCall": {
+      "tool": "web_search",
+      "rawOutputTokens": 8002,
+      "normalizedEvidenceTokens": 6887,
+      "resultCount": 10
+    },
+    "avgResultsPerSearchCall": 10,
+    "totalTrajectoryTokens": 70514,
+    "contract": {
+      "toolCount": 2,
+      "searchToolCount": 1,
+      "fetchToolCount": 1,
+      "descriptionTokens": 63,
+      "schemaTokens": 1034,
+      "totalMcpFootprintTokens": 3800,
+      "searchOnlyFootprintTokens": 1585,
+      "searchFetchFootprintTokens": 3800,
+      "hasFreshnessControl": true,
+      "hasSourcePolicyControl": false,
+      "hasContentBudgetControl": true,
+      "hasUsageMetadata": true
+    }
+  },
+  "semanticScore": {
+    "agentModel": "gpt-5.5 xhigh",
+    "provider": "parallel",
+    "taskId": "hard-product-comparison",
+    "success": true,
+    "answerSupportedByEvidence": true,
+    "retrievalQualityScore": 5,
+    "agentExperienceScore": 4,
+    "sourcePolicyAdherent": true,
+    "freshnessAdherent": true,
+    "callRationale": [
+      "Searched Firecrawl official docs for MCP/search behavior, scrapeOptions, response context, and agent-facing usage.",
+      "Searched Exa official docs for search, contents/highlights, MCP, and agent workflow evidence.",
+      "Searched Parallel official docs/product pages for Search API, MCP flow, objective/query shape, freshness, source controls, and benchmarks.",
+      "Searched Tavily official docs for Search API, Extract, MCP, response shape, answer modes, and agent workflow evidence.",
+      "Searched benchmark/evaluation pages for hard-agent web search comparisons across Parallel, Exa, Tavily, and Firecrawl.",
+      "Ran a Firecrawl-specific quality follow-up because the first Firecrawl search found docs but limited retrieval-quality benchmark evidence.",
+      "Fetched the core official docs pages for all four providers to extract context/result shapes and tool-call flow evidence.",
+      "Fetched benchmark pages from Parallel, Exa, and exa-labs to capture methodology and accuracy/cost figures.",
+      "Ran a Tavily MCP follow-up because the initial Tavily search surfaced integrations and agent skills before the canonical MCP page.",
+      "Fetched Tavily MCP and Search API details to fill in MCP tools, search response fields, include_answer/raw_content controls, depth, and domain filters."
+    ],
+    "strengths": [
+      "Covered all expected official domains: docs.firecrawl.dev, exa.ai, parallel.ai/docs.parallel.ai, and docs.tavily.com.",
+      "Found current benchmark evidence including Parallel April 2026 benchmark methodology and Exa 2026 comparison pages.",
+      "Fetched compact official docs for context shapes and MCP/tool flows instead of relying only on search snippets.",
+      "Follow-up calls corrected initial gaps for Firecrawl quality evidence and Tavily MCP details."
+    ],
+    "weaknesses": [
+      "Firecrawl did not appear in the retrieved hard-QA benchmark tables, so its retrieval-quality comparison is less direct than Exa/Parallel/Tavily.",
+      "Several benchmark pages are provider-affiliated, so the answer explicitly caveats methodology and potential self-comparison bias.",
+      "The Parallel provider schema did not expose a structured source-policy parameter, so official-source targeting was done through objectives and follow-up selection."
+    ],
+    "notableFailures": [
+      "One harness call failed before reaching the provider because the first JSON args path was created under the initial repo instead of /Users/ethanaggor/firecrawl-results; it produced no raw provider response artifact.",
+      "Initial Parallel and Tavily searches included some irrelevant or third-party results; follow-up searches/fetches narrowed the final evidence to official docs, product pages, and benchmark pages.",
+      "Firecrawl benchmark evidence found was mostly extraction/product-positioning evidence rather than the same hard-question retrieval benchmark used for Exa, Parallel, and Tavily."
+    ],
+    "confidence": 0.87
+  },
+  "artifacts": {
+    "answer": "scoring/final-answer.md",
+    "score": "scoring/agent-score.json",
+    "trace": "trace.jsonl",
+    "tools": "schemas/tools.json"
+  }
+}

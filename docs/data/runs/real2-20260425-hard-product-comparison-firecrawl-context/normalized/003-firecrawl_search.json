@@ -1,0 +1,187 @@
+{
+  "provider": "firecrawl-context",
+  "tool": "firecrawl_search",
+  "isError": false,
+  "rawText": "{\n  \"query\": \"Exa official MCP web search API content highlights autoprompt neural keyword search agent context docs benchmark\",\n  \"executedQuery\": \"Exa official MCP web search API content highlights autoprompt neural keyword search agent context docs benchmark (site:docs.exa.ai OR site:exa.ai)\",\n  \"content\": \"chunks\",\n  \"constraints\": {\n    \"maxResults\": 6,\n    \"maxCharsPerResult\": 3000,\n    \"maxCharsTotal\": 14000,\n    \"focus\": \"remote MCP endpoint, default and optional tools, search result context shape, highlights, text contents, neural search, autoprompt, benchmarks for agent search\",\n    \"sourcePolicy\": {\n      \"includeDomains\": [\n        \"docs.exa.ai\",\n        \"exa.ai\"\n      ]\n    }\n  },\n  \"results\": [\n    {\n      \"title\": \"Exa | Web Search API, AI Search Engine, & Website Crawler\",\n      \"url\": \"https://exa.ai/\",\n      \"description\": \"The best search API for AI · Highest performance across every use case · Powerful features built into your search · Deep web research with structured outputs.\",\n      \"position\": 1,\n      \"source\": \"web\",\n      \"metadata\": {\n        \"sourceURL\": \"https://exa.ai/\",\n        \"finalURL\": \"https://exa.ai/\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"[Exa Highlights: Quality, Token-Efficient Search](https://exa.ai/blog/highlights-for-agents) [Exa Highlights: Quality, Token-Efficient Search](https://exa.ai/blog/highlights-for-agents) [Read more](https://exa.ai/blog/highlights-for-agents)\",\n          \"charCount\": 240\n        },\n        {\n          \"text\": \"[Open in API Playground](https://dashboard.exa.ai/playground/search?q=Open+source+vector+databases&filters=%7B%22type%22%3A%22auto%22%2C%22numResults%22%3A10%2C%22text%22%3Atrue%2C%22highlights%22%3A%7B%22maxCharacters%22%3A2000%7D%7D)\",\n          \"charCount\": 235\n        },\n        {\n          \"text\": \"> StackAI and Exa are the dream team…Exa is amazing at web search! We're proud to use Exa on our platform and to show our customers how web search can power AI agent workflows.\",\n          \"charCount\": 176\n        }\n      ]\n    },\n    {\n      \"title\": \"How to Evaluate Exa Search\",\n      \"url\": \"https://exa.ai/docs/reference/evaluating-exa-search\",\n      \"description\": \"Comprehensive guide to benchmarking Exa's search API: methodology, optimal settings, datasets, and quality-latency tradeoffs.\",\n      \"position\": 2,\n      \"source\": \"web\",\n      \"metadata\": {\n        \"sourceURL\": \"https://exa.ai/docs/reference/evaluating-exa-search\",\n        \"finalURL\": \"https://exa.ai/docs/reference/evaluating-exa-search\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"- [Overview](https://exa.ai/docs/reference/evaluating-exa-search#overview)\\n- [Best Practice: Start with Defaults](https://exa.ai/docs/reference/evaluating-exa-search#best-practice-start-with-defaults)\\n- [Compare Within Latency Classes](https://exa.ai/docs/reference/evaluating-exa-search#compare-within-latency-classes)\\n- [Search Types: Understanding the Quality-Latency Spectrum](https://exa.ai/docs/reference/evaluating-exa-search#search-types-understanding-the-quality-latency-spectrum)\\n- [Fast Search](https://exa.ai/docs/reference/evaluating-exa-search#fast-search)\\n- [Auto Search (Default)](https://exa.ai/docs/reference/evaluating-exa-search#auto-search-default)\\n- [Deep Search](https://exa.ai/docs/reference/evaluating-exa-search#deep-search)\\n- [Neural Search](https://exa.ai/docs/reference/evaluating-exa-search#neural-search)\\n- [Evaluating Exa with Tool Calling](https://exa.ai/docs/reference/evaluating-exa-search#evaluating-exa-with-tool-calling)\\n- [Why Tool Calling Matters for Evaluatio\",\n          \"charCount\": 1000\n        },\n        {\n          \"text\": \"```\\n# Option 1: Use text with character limit (recommended for consistent comparisons)\\nexa.search_and_contents(\\n    query,\\n    type=\\\"auto\\\",  # or \\\"fast\\\" (for `Deep`, see Option 2)\\n    num_results=10,\\n    text={\\\"max_characters\\\": 15000}\\n)\",\n          \"charCount\": 236\n        },\n        {\n          \"text\": \"# Option 3 (Deprecated): Use context string for RAG\\n# Note: The `context` parameter is deprecated. Use `text` or `highlights` instead.\\n# exa.search_and_contents(\\n#     query,\\n#     type=\\\"deep\\\",\\n#     additional_queries=[\\\"variation 1\\\", \\\"variation 2\\\"],\\n#     num_results=10,\\n#     context={\\\"max_characters\\\": 20000}  # Deprecated\\n# )\",\n          \"charCount\": 330\n        }\n      ]\n    },\n    {\n      \"title\": \"llms-full.txt - Exa\",\n      \"url\": \"https://exa.ai/docs/llms-full.txt\",\n      \"description\": \"We're launching a big update to Auto search in our API. The new system cannot create useful scores for results. Because of this, we're removing scores from Auto ...\",\n      \"position\": 3,\n      \"source\": \"web\",\n      \"metadata\": {\n        \"sourceURL\": \"https://exa.ai/docs/llms-full.txt\",\n        \"finalURL\": \"https://exa.ai/docs/llms-full.txt\",\n        \"statusCode\": 200\n      },\n      \"chunks\": [\n        {\n          \"text\": \"\\\\`\\\\`\\\\`json theme={null}\\n{\\n \\\"requestId\\\": \\\"975a6ff95c69a0bdc558f01c99ede801\\\",\\n \\\"context\\\": \\\"Title: AI News \\\\| Latest AI News, Analysis & Events\\\\\\\\nPublished Date: 2025-11-19T10:22:05.000Z\\\\\\\\nURL: https://www.artificialintelligence-news.com/\\\\\\\\nSummary: This page is a collection of recent news, analysis, and resources related to Artificial Intelligence (AI). It features various blog posts and articles covering topics such as:\\\\\\\\n\\\\\\\\n\\\\* \\\\*\\\\*Workforce & HR:\\\\*\\\\* Using ChatGPT for team planning and the Royal Navy's use of AI in recruitment.\\\\\\\\n\\\\* \\\\*\\\\*Technology & Infrastructure:\\\\*\\\\* The role of Pure Storage and Azure in AI-ready data, and alliances between Microsoft, NVIDIA, and Anthropic for AI compute.\\\\\\\\n\\\\* \\\\*\\\\*AI Models & Tools:\\\\*\\\\* Google’s Veo 3 video creation tools, Samsung’s small AI model, and lightweight LLMs for enterprise use in Japan.\\\\\\\\n\\\\* \\\\*\\\\*Industry Applications:\\\\*\\\\* AI in asset management (Franklin Templeton & Wand AI), Levi Strauss's DTC model, and accounting firms using AI agents.\\\\\",\n          \"charCount\": 1000\n        },\n        {\n          \"text\": \"Exa's search endpoint previously charged separately for search results and their webpage contents. Now, contents for 10 search results per request are included for free, and as a result API usage is cheaper for the majority of users.\",\n          \"charCount\": 233\n        },\n        {\n          \"text\": \"\\\\`\\\\`\\\\`\\n Workflow executed successfully\\n Final state:\\n Messages:\\n SystemMessage: You are a helpful assistant....\\n HumanMessage: Check this text for hallucinations: The Eiffel Tower, an iconic iron lattice structure located in Pa...\\n AIMessage: Use hallucination\\\\_check tool...\\n AIMessage: {'claims': \\\\[{'claim': 'The Eiffel Tower is an iconic iron lattice structure', 'assessment': 'support...\\\\\\n\\\\\\n Analysis Result:\\\\\\n Claim: The Eiffel Tower is an iconic iron lattice structure\\\\\\n Assessment: supported\\\\\\n Confidence Score: 1\\\\\\n Supporting Sources:\\\\\\n \\\\- https://www.toureiffel.paris/en/news/130-years/what-eiffel-tower-made...\\\\\\n \\\\- https://thechalkface.net/resources/melting\\\\_the\\\\_eiffel\\\\_tower.pdf...\\\\\\n \\\\- https://datagenetics.com/blog/april22016/index.html...\\\\\\n \\\\- https://engineering.purdue.edu/MSE/aboutus/gotmaterials/Buildings/patel.html...\\\\\\n \\\\- https://www.toureiffel.paris/en/news/130-years/how-long-can-tower-last...\\\\\\n Refuting Sources:\\\\\\n\\\\\\n Claim: The Eiffel Tower is located in Paris\\\\\\n Assessmen\",\n          \"charCount\": 1000\n        }\n      ]\n    }\n  ],\n  \"searchIds\": [\n    \"019dc369-936d-7147-b1d7-ce3b86bbb022\"\n  ],\n  \"usage\": {\n    \"resultCount\": 3,\n    \"charsReturned\": 4450,\n    \"creditsUsed\": 5,\n    \"rawResultCount\": {\n      \"web\": 3,\n      \"news\": 0,\n      \"images\": 0\n    }\n  },\n  \"warnings\": [\n    \"sourcePolicy covered 1 of 2 includeDomains; split unrelated domains into focused follow-up searches if coverage matters\"\n  ]\n}",
+  "parsed": {
+    "query": "Exa official MCP web search API content highlights autoprompt neural keyword search agent context docs benchmark",
+    "executedQuery": "Exa official MCP web search API content highlights autoprompt neural keyword search agent context docs benchmark (site:docs.exa.ai OR site:exa.ai)",
+    "content": "chunks",
+    "constraints": {
+      "maxResults": 6,
+      "maxCharsPerResult": 3000,
+      "maxCharsTotal": 14000,
+      "focus": "remote MCP endpoint, default and optional tools, search result context shape, highlights, text contents, neural search, autoprompt, benchmarks for agent search",
+      "sourcePolicy": {
+        "includeDomains": [
+          "docs.exa.ai",
+          "exa.ai"
+        ]
+      }
+    },
+    "results": [
+      {
+        "title": "Exa | Web Search API, AI Search Engine, & Website Crawler",
+        "url": "https://exa.ai/",
+        "description": "The best search API for AI · Highest performance across every use case · Powerful features built into your search · Deep web research with structured outputs.",
+        "position": 1,
+        "source": "web",
+        "metadata": {
+          "sourceURL": "https://exa.ai/",
+          "finalURL": "https://exa.ai/",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "[Exa Highlights: Quality, Token-Efficient Search](https://exa.ai/blog/highlights-for-agents) [Exa Highlights: Quality, Token-Efficient Search](https://exa.ai/blog/highlights-for-agents) [Read more](https://exa.ai/blog/highlights-for-agents)",
+            "charCount": 240
+          },
+          {
+            "text": "[Open in API Playground](https://dashboard.exa.ai/playground/search?q=Open+source+vector+databases&filters=%7B%22type%22%3A%22auto%22%2C%22numResults%22%3A10%2C%22text%22%3Atrue%2C%22highlights%22%3A%7B%22maxCharacters%22%3A2000%7D%7D)",
+            "charCount": 235
+          },
+          {
+            "text": "> StackAI and Exa are the dream team…Exa is amazing at web search! We're proud to use Exa on our platform and to show our customers how web search can power AI agent workflows.",
+            "charCount": 176
+          }
+        ]
+      },
+      {
+        "title": "How to Evaluate Exa Search",
+        "url": "https://exa.ai/docs/reference/evaluating-exa-search",
+        "description": "Comprehensive guide to benchmarking Exa's search API: methodology, optimal settings, datasets, and quality-latency tradeoffs.",
+        "position": 2,
+        "source": "web",
+        "metadata": {
+          "sourceURL": "https://exa.ai/docs/reference/evaluating-exa-search",
+          "finalURL": "https://exa.ai/docs/reference/evaluating-exa-search",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "- [Overview](https://exa.ai/docs/reference/evaluating-exa-search#overview)\n- [Best Practice: Start with Defaults](https://exa.ai/docs/reference/evaluating-exa-search#best-practice-start-with-defaults)\n- [Compare Within Latency Classes](https://exa.ai/docs/reference/evaluating-exa-search#compare-within-latency-classes)\n- [Search Types: Understanding the Quality-Latency Spectrum](https://exa.ai/docs/reference/evaluating-exa-search#search-types-understanding-the-quality-latency-spectrum)\n- [Fast Search](https://exa.ai/docs/reference/evaluating-exa-search#fast-search)\n- [Auto Search (Default)](https://exa.ai/docs/reference/evaluating-exa-search#auto-search-default)\n- [Deep Search](https://exa.ai/docs/reference/evaluating-exa-search#deep-search)\n- [Neural Search](https://exa.ai/docs/reference/evaluating-exa-search#neural-search)\n- [Evaluating Exa with Tool Calling](https://exa.ai/docs/reference/evaluating-exa-search#evaluating-exa-with-tool-calling)\n- [Why Tool Calling Matters for Evaluatio",
+            "charCount": 1000
+          },
+          {
+            "text": "```\n# Option 1: Use text with character limit (recommended for consistent comparisons)\nexa.search_and_contents(\n    query,\n    type=\"auto\",  # or \"fast\" (for `Deep`, see Option 2)\n    num_results=10,\n    text={\"max_characters\": 15000}\n)",
+            "charCount": 236
+          },
+          {
+            "text": "# Option 3 (Deprecated): Use context string for RAG\n# Note: The `context` parameter is deprecated. Use `text` or `highlights` instead.\n# exa.search_and_contents(\n#     query,\n#     type=\"deep\",\n#     additional_queries=[\"variation 1\", \"variation 2\"],\n#     num_results=10,\n#     context={\"max_characters\": 20000}  # Deprecated\n# )",
+            "charCount": 330
+          }
+        ]
+      },
+      {
+        "title": "llms-full.txt - Exa",
+        "url": "https://exa.ai/docs/llms-full.txt",
+        "description": "We're launching a big update to Auto search in our API. The new system cannot create useful scores for results. Because of this, we're removing scores from Auto ...",
+        "position": 3,
+        "source": "web",
+        "metadata": {
+          "sourceURL": "https://exa.ai/docs/llms-full.txt",
+          "finalURL": "https://exa.ai/docs/llms-full.txt",
+          "statusCode": 200
+        },
+        "chunks": [
+          {
+            "text": "\\`\\`\\`json theme={null}\n{\n \"requestId\": \"975a6ff95c69a0bdc558f01c99ede801\",\n \"context\": \"Title: AI News \\| Latest AI News, Analysis & Events\\\\nPublished Date: 2025-11-19T10:22:05.000Z\\\\nURL: https://www.artificialintelligence-news.com/\\\\nSummary: This page is a collection of recent news, analysis, and resources related to Artificial Intelligence (AI). It features various blog posts and articles covering topics such as:\\\\n\\\\n\\* \\*\\*Workforce & HR:\\*\\* Using ChatGPT for team planning and the Royal Navy's use of AI in recruitment.\\\\n\\* \\*\\*Technology & Infrastructure:\\*\\* The role of Pure Storage and Azure in AI-ready data, and alliances between Microsoft, NVIDIA, and Anthropic for AI compute.\\\\n\\* \\*\\*AI Models & Tools:\\*\\* Google’s Veo 3 video creation tools, Samsung’s small AI model, and lightweight LLMs for enterprise use in Japan.\\\\n\\* \\*\\*Industry Applications:\\*\\* AI in asset management (Franklin Templeton & Wand AI), Levi Strauss's DTC model, and accounting firms using AI agents.\\",
+            "charCount": 1000
+          },
+          {
+            "text": "Exa's search endpoint previously charged separately for search results and their webpage contents. Now, contents for 10 search results per request are included for free, and as a result API usage is cheaper for the majority of users.",
+            "charCount": 233
+          },
+          {
+            "text": "\\`\\`\\`\n Workflow executed successfully\n Final state:\n Messages:\n SystemMessage: You are a helpful assistant....\n HumanMessage: Check this text for hallucinations: The Eiffel Tower, an iconic iron lattice structure located in Pa...\n AIMessage: Use hallucination\\_check tool...\n AIMessage: {'claims': \\[{'claim': 'The Eiffel Tower is an iconic iron lattice structure', 'assessment': 'support...\\\n\\\n Analysis Result:\\\n Claim: The Eiffel Tower is an iconic iron lattice structure\\\n Assessment: supported\\\n Confidence Score: 1\\\n Supporting Sources:\\\n \\- https://www.toureiffel.paris/en/news/130-years/what-eiffel-tower-made...\\\n \\- https://thechalkface.net/resources/melting\\_the\\_eiffel\\_tower.pdf...\\\n \\- https://datagenetics.com/blog/april22016/index.html...\\\n \\- https://engineering.purdue.edu/MSE/aboutus/gotmaterials/Buildings/patel.html...\\\n \\- https://www.toureiffel.paris/en/news/130-years/how-long-can-tower-last...\\\n Refuting Sources:\\\n\\\n Claim: The Eiffel Tower is located in Paris\\\n Assessmen",
+            "charCount": 1000
+          }
+        ]
+      }
+    ],
+    "searchIds": [
+      "019dc369-936d-7147-b1d7-ce3b86bbb022"
+    ],
+    "usage": {
+      "resultCount": 3,
+      "charsReturned": 4450,
+      "creditsUsed": 5,
+      "rawResultCount": {
+        "web": 3,
+        "news": 0,
+        "images": 0
+      }
+    },
+    "warnings": [
+      "sourcePolicy covered 1 of 2 includeDomains; split unrelated domains into focused follow-up searches if coverage matters"
+    ]
+  },
+  "results": [
+    {
+      "title": "Exa | Web Search API, AI Search Engine, & Website Crawler",
+      "url": "https://exa.ai/",
+      "domain": "exa.ai",
+      "description": "The best search API for AI · Highest performance across every use case · Powerful features built into your search · Deep web research with structured outputs.",
+      "chunks": [
+        {
+          "text": "[Exa Highlights: Quality, Token-Efficient Search](https://exa.ai/blog/highlights-for-agents) [Exa Highlights: Quality, Token-Efficient Search](https://exa.ai/blog/highlights-for-agents) [Read more](https://exa.ai/blog/highlights-for-agents)",
+          "charCount": 240
+        },
+        {
+          "text": "[Open in API Playground](https://dashboard.exa.ai/playground/search?q=Open+source+vector+databases&filters=%7B%22type%22%3A%22auto%22%2C%22numResults%22%3A10%2C%22text%22%3Atrue%2C%22highlights%22%3A%7B%22maxCharacters%22%3A2000%7D%7D)",
+          "charCount": 235
+        },
+        {
+          "text": "> StackAI and Exa are the dream team…Exa is amazing at web search! We're proud to use Exa on our platform and to show our customers how web search can power AI agent workflows.",
+          "charCount": 176
+        }
+      ],
+      "source": "web",
+      "position": 1
+    },
+    {
+      "title": "How to Evaluate Exa Search",
+      "url": "https://exa.ai/docs/reference/evaluating-exa-search",
+      "domain": "exa.ai",
+      "description": "Comprehensive guide to benchmarking Exa's search API: methodology, optimal settings, datasets, and quality-latency tradeoffs.",
+      "chunks": [
+        {
+          "text": "- [Overview](https://exa.ai/docs/reference/evaluating-exa-search#overview)\n- [Best Practice: Start with Defaults](https://exa.ai/docs/reference/evaluating-exa-search#best-practice-start-with-defaults)\n- [Compare Within Latency Classes](https://exa.ai/docs/reference/evaluating-exa-search#compare-within-latency-classes)\n- [Search Types: Understanding the Quality-Latency Spectrum](https://exa.ai/docs/reference/evaluating-exa-search#search-types-understanding-the-quality-latency-spectrum)\n- [Fast Search](https://exa.ai/docs/reference/evaluating-exa-search#fast-search)\n- [Auto Search (Default)](https://exa.ai/docs/reference/evaluating-exa-search#auto-search-default)\n- [Deep Search](https://exa.ai/docs/reference/evaluating-exa-search#deep-search)\n- [Neural Search](https://exa.ai/docs/reference/evaluating-exa-search#neural-search)\n- [Evaluating Exa with Tool Calling](https://exa.ai/docs/reference/evaluating-exa-search#evaluating-exa-with-tool-calling)\n- [Why Tool Calling Matters for Evaluatio",
+          "charCount": 1000
+        },
+        {
+          "text": "```\n# Option 1: Use text with character limit (recommended for consistent comparisons)\nexa.search_and_contents(\n    query,\n    type=\"auto\",  # or \"fast\" (for `Deep`, see Option 2)\n    num_results=10,\n    text={\"max_characters\": 15000}\n)",
+          "charCount": 236
+        },
+        {
+          "text": "# Option 3 (Deprecated): Use context string for RAG\n# Note: The `context` parameter is deprecated. Use `text` or `highlights` instead.\n# exa.search_and_contents(\n#     query,\n#     type=\"deep\",\n#     additional_queries=[\"variation 1\", \"variation 2\"],\n#     num_results=10,\n#     context={\"max_characters\": 20000}  # Deprecated\n# )",
+          "charCount": 330
+        }
+      ],
+      "source": "web",
+      "position": 2
+    },
+    {
+      "title": "llms-full.txt - Exa",
+      "url": "https://exa.ai/docs/llms-full.txt",
+      "domain": "exa.ai",
+      "description": "We're launching a big update to Auto search in our API. The new system cannot create useful scores for results. Because of this, we're removing scores from Auto ...",
+      "chunks": [
+        {
+          "text": "\\`\\`\\`json theme={null}\n{\n \"requestId\": \"975a6ff95c69a0bdc558f01c99ede801\",\n \"context\": \"Title: AI News \\| Latest AI News, Analysis & Events\\\\nPublished Date: 2025-11-19T10:22:05.000Z\\\\nURL: https://www.artificialintelligence-news.com/\\\\nSummary: This page is a collection of recent news, analysis, and resources related to Artificial Intelligence (AI). It features various blog posts and articles covering topics such as:\\\\n\\\\n\\* \\*\\*Workforce & HR:\\*\\* Using ChatGPT for team planning and the Royal Navy's use of AI in recruitment.\\\\n\\* \\*\\*Technology & Infrastructure:\\*\\* The role of Pure Storage and Azure in AI-ready data, and alliances between Microsoft, NVIDIA, and Anthropic for AI compute.\\\\n\\* \\*\\*AI Models & Tools:\\*\\* Google’s Veo 3 video creation tools, Samsung’s small AI model, and lightweight LLMs for enterprise use in Japan.\\\\n\\* \\*\\*Industry Applications:\\*\\* AI in asset management (Franklin Templeton & Wand AI), Levi Strauss's DTC model, and accounting firms using AI agents.\\",
+          "charCount": 1000
+        },
+        {
+          "text": "Exa's search endpoint previously charged separately for search results and their webpage contents. Now, contents for 10 search results per request are included for free, and as a result API usage is cheaper for the majority of users.",
+          "charCount": 233
+        },
+        {
+          "text": "\\`\\`\\`\n Workflow executed successfully\n Final state:\n Messages:\n SystemMessage: You are a helpful assistant....\n HumanMessage: Check this text for hallucinations: The Eiffel Tower, an iconic iron lattice structure located in Pa...\n AIMessage: Use hallucination\\_check tool...\n AIMessage: {'claims': \\[{'claim': 'The Eiffel Tower is an iconic iron lattice structure', 'assessment': 'support...\\\n\\\n Analysis Result:\\\n Claim: The Eiffel Tower is an iconic iron lattice structure\\\n Assessment: supported\\\n Confidence Score: 1\\\n Supporting Sources:\\\n \\- https://www.toureiffel.paris/en/news/130-years/what-eiffel-tower-made...\\\n \\- https://thechalkface.net/resources/melting\\_the\\_eiffel\\_tower.pdf...\\\n \\- https://datagenetics.com/blog/april22016/index.html...\\\n \\- https://engineering.purdue.edu/MSE/aboutus/gotmaterials/Buildings/patel.html...\\\n \\- https://www.toureiffel.paris/en/news/130-years/how-long-can-tower-last...\\\n Refuting Sources:\\\n\\\n Claim: The Eiffel Tower is located in Paris\\\n Assessmen",
+          "charCount": 1000
+        }
+      ],
+      "source": "web",
+      "position": 3
+    }
+  ]
+}

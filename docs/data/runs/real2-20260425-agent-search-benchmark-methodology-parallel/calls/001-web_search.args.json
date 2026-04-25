@@ -1,0 +1,10 @@
+{
+  "objective": "Find public benchmark methodology pages from Exa, Parallel, and Tavily about evaluating web search tools for agents, including datasets, task construction, metrics, and relevance judgments. Prefer official provider pages and GitHub benchmark repositories.",
+  "search_queries": [
+    "Exa benchmark SimpleQA WISER",
+    "Parallel search benchmark methodology",
+    "Tavily benchmark MSMARCO relevance"
+  ],
+  "session_id": "real2-20260425-agent-search-benchmark-methodology-parallel",
+  "model_name": "gpt-5.5 xhigh"
+}

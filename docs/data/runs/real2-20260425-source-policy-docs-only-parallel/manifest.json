@@ -1,0 +1,43 @@
+{
+  "runId": "real2-20260425-source-policy-docs-only-parallel",
+  "createdAt": "2026-04-25T06:53:35.938Z",
+  "provider": {
+    "id": "parallel",
+    "name": "Parallel Search remote MCP",
+    "transport": "streamable-http",
+    "url": "https://search.parallel.ai/mcp",
+    "headers": [
+      {
+        "name": "authorization",
+        "required": false,
+        "present": false
+      }
+    ],
+    "searchTools": [
+      "web_search"
+    ],
+    "fetchTools": [
+      "web_fetch"
+    ]
+  },
+  "task": {
+    "id": "source-policy-docs-only",
+    "family": "source-policy",
+    "question": "Using only official Firecrawl docs, what does the Search API say about categories, country, timeout, and ignoreInvalidURLs?",
+    "agentGoal": "Constrain to docs.firecrawl.dev and produce evidence only from that domain.",
+    "expectedTerms": [
+      "categories",
+      "country",
+      "timeout",
+      "ignoreInvalidURLs"
+    ],
+    "expectedDomains": [
+      "docs.firecrawl.dev"
+    ],
+    "sourcePolicy": {
+      "includeDomains": [
+        "docs.firecrawl.dev"
+      ]
+    }
+  }
+}

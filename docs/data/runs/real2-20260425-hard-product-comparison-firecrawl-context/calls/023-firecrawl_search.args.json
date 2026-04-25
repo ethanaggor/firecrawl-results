@@ -1,0 +1,19 @@
+{
+  "query": "Tavily MCP server official docs tools tavily_search tavily_extract tavily_crawl",
+  "content": "chunks",
+  "maxResults": 6,
+  "maxCharsPerResult": 3500,
+  "maxCharsTotal": 16000,
+  "focus": "Tavily MCP server setup, tool list, tavily_search, tavily_extract, tavily_crawl, and agent-facing context shape",
+  "sourcePolicy": {
+    "includeDomains": [
+      "docs.tavily.com",
+      "tavily.com"
+    ]
+  },
+  "sources": [
+    "web"
+  ],
+  "ignoreInvalidURLs": true,
+  "includeRawResults": false
+}

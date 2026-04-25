@@ -1,0 +1,19 @@
+{
+  "query": "Tavily releases research endpoint achieves state of the art benchmark",
+  "content": "chunks",
+  "maxResults": 6,
+  "maxCharsPerResult": 3500,
+  "maxCharsTotal": 16000,
+  "focus": "official Tavily research endpoint benchmark or state-of-the-art claim, evaluation evidence, citations, and agent research quality",
+  "sourcePolicy": {
+    "includeDomains": [
+      "tavily.com",
+      "docs.tavily.com"
+    ]
+  },
+  "sources": [
+    "web"
+  ],
+  "ignoreInvalidURLs": true,
+  "includeRawResults": false
+}

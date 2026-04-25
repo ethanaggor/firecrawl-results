@@ -1,0 +1,32 @@
+{
+  "id": "firecrawl-context",
+  "name": "Firecrawl MCP context fork",
+  "transport": "stdio",
+  "cwd": "../firecrawl-mcp-server",
+  "command": "node",
+  "args": [
+    "dist/index.js"
+  ],
+  "env": [
+    {
+      "name": "FIRECRAWL_API_KEY",
+      "required": true,
+      "present": true
+    },
+    {
+      "name": "FIRECRAWL_API_URL",
+      "required": false,
+      "present": false
+    }
+  ],
+  "searchTools": [
+    "firecrawl_search"
+  ],
+  "fetchTools": [
+    "firecrawl_scrape"
+  ],
+  "mapTools": [
+    "firecrawl_map"
+  ],
+  "cwdExists": true
+}

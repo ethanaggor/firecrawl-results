@@ -1,0 +1,18 @@
+{
+  "query": "How to Evaluate Exa Search benchmark methodology search API latency quality tool calling",
+  "content": "chunks",
+  "maxResults": 6,
+  "maxCharsPerResult": 3500,
+  "maxCharsTotal": 16000,
+  "focus": "benchmark methodology, recommended settings, search types, quality-latency tradeoffs, tool-calling evaluation, and agent search evaluation",
+  "sourcePolicy": {
+    "includeDomains": [
+      "exa.ai"
+    ]
+  },
+  "sources": [
+    "web"
+  ],
+  "ignoreInvalidURLs": true,
+  "includeRawResults": false
+}

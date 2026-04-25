@@ -1,0 +1,16 @@
+{
+  "urls": [
+    "https://nextjs.org/docs/app/api-reference/directives/use-cache",
+    "https://nextjs.org/docs/app/api-reference/functions/revalidateTag",
+    "https://nextjs.org/docs/app/api-reference/functions/updateTag",
+    "https://nextjs.org/docs/app/getting-started/proxy"
+  ],
+  "objective": "Extract concrete Next.js 16 API examples for use cache, revalidateTag, updateTag, and proxy.",
+  "search_queries": [
+    "Next.js 16 cache APIs examples",
+    "Next.js 16 proxy API example"
+  ],
+  "full_content": false,
+  "session_id": "real2-20260425-needle-technical-release-parallel",
+  "model_name": "gpt-5.5 xhigh"
+}

@@ -1,0 +1,76 @@
+{
+  "provider": "tavily",
+  "taskId": "source-policy-docs-only",
+  "toolCalls": 1,
+  "searchCalls": 1,
+  "fetchCalls": 0,
+  "mapCalls": 0,
+  "discoveryCalls": 1,
+  "extractionCalls": 0,
+  "failedCalls": 0,
+  "zeroResultCalls": 0,
+  "zeroResultSearchCalls": 0,
+  "expectedTermMissCalls": 0,
+  "expectedDomainMissCalls": 0,
+  "expectedTermMissSearchCalls": 0,
+  "expectedDomainMissSearchCalls": 0,
+  "sourcePolicyViolationCalls": 0,
+  "recoverySignalCalls": 0,
+  "recoverySignalRate": 0,
+  "totalResultCount": 5,
+  "uniqueUrlCount": 5,
+  "uniqueDomainCount": 1,
+  "duplicateUrlRate": 0,
+  "expectedDomainsCovered": [
+    "docs.firecrawl.dev"
+  ],
+  "firstSearch": {
+    "tool": "tavily_search",
+    "resultCount": 5,
+    "expectedTermHit": true,
+    "expectedDomainHit": true,
+    "rawOutputTokens": 35655,
+    "normalizedEvidenceTokens": 12987,
+    "domains": [
+      "docs.firecrawl.dev"
+    ],
+    "urls": [
+      "https://docs.firecrawl.dev/api-reference/endpoint/search",
+      "https://docs.firecrawl.dev/es/sdks/cli",
+      "https://docs.firecrawl.dev/ja/sdks/cli",
+      "https://docs.firecrawl.dev/zh/sdks/cli",
+      "https://docs.firecrawl.dev/pt-BR/sdks/cli"
+    ]
+  },
+  "totalConnectMs": 146,
+  "totalCallLatencyMs": 1407,
+  "argumentTokens": 57,
+  "rawOutputTokens": 35655,
+  "normalizedEvidenceTokens": 12987,
+  "evidenceToRawTokenRatio": 0.3642,
+  "avgRawOutputTokensPerCall": 35655,
+  "rawOutputOutlierThresholdTokens": 50000,
+  "rawOutputOutlierCalls": 0,
+  "maxRawOutputCall": {
+    "tool": "tavily_search",
+    "rawOutputTokens": 35655,
+    "normalizedEvidenceTokens": 12987,
+    "resultCount": 5
+  },
+  "avgResultsPerSearchCall": 5,
+  "totalTrajectoryTokens": 38464,
+  "contract": {
+    "toolCount": 5,
+    "searchToolCount": 2,
+    "fetchToolCount": 1,
+    "descriptionTokens": 143,
+    "schemaTokens": 2277,
+    "totalMcpFootprintTokens": 2752,
+    "searchOnlyFootprintTokens": 1239,
+    "searchFetchFootprintTokens": 1595,
+    "hasFreshnessControl": true,
+    "hasSourcePolicyControl": true,
+    "hasContentBudgetControl": true,
+    "hasUsageMetadata": false
+  }
+}

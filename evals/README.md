@@ -83,11 +83,21 @@ Recorded metrics:
 - `toolCalls`
 - `searchCalls`
 - `fetchCalls`
+- `mapCalls`
+- `discoveryCalls`
+- `extractionCalls`
 - `failedCalls`
 - `recoverableErrors`
+- `zeroResultSearchCalls`
+- `recoverySignalCalls`
+- `firstSearch`
 - `latencyTotalMs`
 - `rawInputTokens`
 - `rawOutputTokens`
+- `normalizedEvidenceTokens`
+- `evidenceToRawTokenRatio`
+- `rawOutputOutlierCalls`
+- `maxRawOutputCall`
 - `totalTrajectoryTokens`
 - `finalEvidenceTokens`
 - `usefulEvidenceRatio`
@@ -156,6 +166,46 @@ The benchmark uses `js-tiktoken` with `o200k_base`. Counts are recorded for:
 - final answer and scoring artifacts
 
 The raw MCP response token count is the key context-cost metric because it reflects what enters the agent's context window.
+
+Raw output outliers are calls whose raw response is above 50,000 tokens. They are not automatically failures, but they require trace review. The second suite exposed one bad MCP affordance this way: `includeRawResults` allowed raw Firecrawl search payloads to enter the agent context even though the harness already records raw artifacts separately.
+
+## Normalization policy
+
+The harness keeps raw MCP responses on disk and also writes a bounded normalized evidence shape for metric calculations and visual comparison.
+
+Normalization is intentionally conservative:
+
+- Search outputs keep title, URL, description/snippet, source, and bounded content fields when present.
+- Fetch/scrape outputs now preserve bounded page evidence from common fields such as `markdown`, `content`, `text`, `raw_content`, `full_content`, `summary`, `highlights`, and `excerpts`.
+- Plain markdown fetch responses are parsed into inspectable evidence instead of being treated as zero-result payloads.
+- Normalized content is clipped for comparability; the raw artifact remains the source of truth.
+- MCP contracts should not expose debug/raw payload flags to the agent by default. The harness owns raw artifact capture.
+
+This matters because the first benchmark initially undercounted evidence from fetch and scrape calls. The corrected reports recompute `normalizedEvidenceTokens`, first-search metrics, recovery burden, and schema footprint from the saved raw artifacts.
+
+## Recovery metrics
+
+The benchmark treats final answer quality as necessary but insufficient. A tool can eventually answer a task while still making the agent work around weak search results.
+
+The current recovery signals are:
+
+- zero-result search calls
+- search calls that miss all expected domains
+- Firecrawl map calls, because map often appears after search fails or under-discovers the target pages
+
+These metrics are not a judge by themselves. They are a triage signal. When recovery is high, read the trajectory before making a product claim.
+
+## Firecrawl ablations
+
+Run controlled Firecrawl-only ablations after building the MCP fork:
+
+```bash
+node evals/firecrawl-ablations.mjs --mcp-root=../firecrawl-mcp-server
+```
+
+The ablation runner calls the search context implementation directly and compares content modes, source-policy strategies, and focus behavior. It writes reports under `evals/reports/`.
+
+The first ablation result rejected `hybrid` source-policy as a default. It also moved the MCP recommendation toward `summary` as first-pass agent context while keeping `results` for narrow known-source lookup.
 
 ## Manual agent workflow
 

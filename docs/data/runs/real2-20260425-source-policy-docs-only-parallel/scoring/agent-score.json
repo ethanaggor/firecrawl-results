@@ -1,0 +1,32 @@
+{
+  "agentModel": "gpt-5.5 xhigh",
+  "provider": "parallel",
+  "taskId": "source-policy-docs-only",
+  "success": true,
+  "answerSupportedByEvidence": true,
+  "retrievalQualityScore": 4,
+  "agentExperienceScore": 4,
+  "sourcePolicyAdherent": false,
+  "freshnessAdherent": null,
+  "callRationale": [
+    "Started with a docs-only search objective for Firecrawl Search API parameters on docs.firecrawl.dev.",
+    "Fetched the official Search feature page and Search API reference after the search returned the canonical docs URL.",
+    "Made a narrower API reference fetch for timeout and ignoreInvalidURLs because the first fetch did not surface ignoreInvalidURLs clearly.",
+    "Made a final targeted fetch for categories so the final answer could cite official docs-only evidence for all requested fields."
+  ],
+  "strengths": [
+    "The provider found the canonical official Search API reference page and official Search feature page.",
+    "Targeted fetches returned concise, directly relevant excerpts for categories, country, timeout, and ignoreInvalidURLs.",
+    "The final answer uses only docs.firecrawl.dev evidence."
+  ],
+  "weaknesses": [
+    "The provider has no explicit source-policy control in the exposed schema.",
+    "The initial docs-only web_search still returned one off-domain result from lobehub.com.",
+    "Fetching the OpenAPI JSON URL produced a fetch_error despite HTTP 200, so the usable evidence came from the rendered API reference page."
+  ],
+  "notableFailures": [
+    "Source policy was not fully adherent at the retrieval level because the first search result set included an off-domain page.",
+    "The first broad full_content fetch was very large and still did not clearly extract ignoreInvalidURLs, requiring a narrower follow-up fetch."
+  ],
+  "confidence": 0.9
+}

@@ -1,0 +1,10 @@
+{
+  "objective": "Find Tavily public benchmark methodology for web search APIs, especially official docs or GitHub describing SimpleQA, MSMARCO, document relevance, relevance scoring, datasets, metrics, and provider comparisons.",
+  "search_queries": [
+    "Tavily MSMARCO benchmark",
+    "Tavily document relevance SimpleQA",
+    "site:docs.tavily.com benchmark"
+  ],
+  "session_id": "real2-20260425-agent-search-benchmark-methodology-parallel",
+  "model_name": "gpt-5.5 xhigh"
+}

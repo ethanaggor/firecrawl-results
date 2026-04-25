@@ -1,0 +1,252 @@
+{
+  "provider": "firecrawl-context",
+  "tool": "firecrawl_map",
+  "isError": false,
+  "rawText": "{\n  \"links\": [\n    {\n      \"url\": \"https://parallel.ai/blog/deep-research-reports\",\n      \"title\": \"Parallel Deep Research Reports | Parallel Web Systems | I...\",\n      \"description\": \"The Parallel Task API now supports comprehensive markdown Deep Research report generation with in-line citations and relevant excerpts.\"\n    },\n    {\n      \"url\": \"https://parallel.ai/blog/parallel-task-api\",\n      \"title\": \"Introducing the Parallel Task API\",\n      \"description\": \"The Parallel Task API sets a new standard on web research benchmarks, both academic and ones we've built inspired by actual customer use cases ...\"\n    },\n    {\n      \"url\": \"https://docs.parallel.ai/task-api/group-api\",\n      \"title\": \"Task Group - Parallel\",\n      \"description\": \"Batch process Tasks at scale with the Parallel Task Group API\"\n    },\n    {\n      \"url\": \"https://docs.parallel.ai/api-reference/tasks/stream-task-run-events\",\n      \"title\": \"Stream Task Run Events - Parallel\",\n      \"description\": \"Streams events for a task run. Returns a stream of events showing progress updates and state changes for the task run. For task runs that did not have enable...\"\n    },\n    {\n      \"url\": \"https://docs.parallel.ai/task-api/webhooks\",\n      \"title\": \"Webhooks - Parallel\",\n      \"description\": \"Webhook events for task run completions\"\n    },\n    {\n      \"url\": \"https://docs.parallel.ai/findall-api/findall-quickstart\",\n      \"title\": \"FindAll API Quickstart - Parallel\",\n      \"description\": \"Discover and enrich entities from the web using natural language queries with the FindAll API\"\n    },\n    {\n      \"url\": \"https://parallel.ai/blog/cookbook-sse-task-manager-with-parallel\",\n      \"title\": \"Building a real-time streaming task manager with Parallel...\",\n      \"description\": \"This cookbook details how to build a task streaming playground that showcases Parallel's Task API with real-time Server-Sent Events (SSE).\"\n    },\n    {\n      \"url\": \"https://parallel.ai/blog/free-CLI-agent\",\n      \"title\": \"Parallel Web Systems | Infrastructure for intelligence on...\",\n      \"description\": \"Parallel develops a suite of agents and tool APIs for building AI with powerful access to the open web. SOC-2 Type II certified. ZDR Available for enterprises.\"\n    },\n    {\n      \"url\": \"https://parallel.ai/articles/how-to-build-ai-powered-market-intelligence-tools-with-apis\",\n      \"title\": \"How to Build AI-Powered Market Intelligence Tools with AP...\",\n      \"description\": \"Learn how to build AI-powered market intelligence tools with APIs for search, extraction, monitoring, and competitive research automation.\"\n    },\n    {\n      \"url\": \"https://parallel.ai/blog/LLMTEXT-for-llmstxt\",\n      \"title\": \"Parallel Web Systems | Infrastructure for intelligence on...\",\n      \"description\": \"Introducing a new set of tools for llms.txt that help you create and check llms.txt, or transform llms.txt files into MCP servers\"\n    },\n    {\n      \"url\": \"https://docs.parallel.ai/api-reference/legacy/tasks/stream-task-run-events\",\n      \"title\": \"Stream Task Run Events - Parallel\",\n      \"description\": \"Streams events for a task run. Returns a stream of events showing progress updates and state changes for the task run. For task runs that did not have enable...\"\n    },\n    {\n      \"url\": \"https://docs.parallel.ai/api-reference/legacy/monitor/delete-monitor\",\n      \"title\": \"Delete Monitor - Parallel\",\n      \"description\": \"Delete a monitor. Deletes a monitor, stopping all future executions. Deleted monitors can no longer be updated or retrieved.\"\n    },\n    {\n      \"url\": \"https://parallel.ai/blog/genpact-parallel-partnership\",\n      \"title\": \"Parallel Web Systems | Infrastructure for intelligence on...\",\n      \"description\": \"Parallel develops a suite of agents and tool APIs for building AI with powerful access to the open web. SOC-2 Type II certified. ZDR Available for enterprises.\"\n    },\n    {\n      \"url\": \"https://docs.parallel.ai/api-reference/legacy/tasks/retrieve-task-group-run\",\n      \"title\": \"Retrieve Task Group Run - Parallel\",\n      \"description\": \"Retrieves run status by run_id. This endpoint is equivalent to fetching run status directly using the retrieve() method or the tasks/runs GET endpoint. The r...\"\n    },\n    {\n      \"url\": \"https://parallel.ai/blog/parallel-cli\",\n      \"title\": \"Parallel Web Systems | Infrastructure for intelligence on...\",\n      \"description\": \"Parallel develops a suite of agents and tool APIs for building AI with powerful access to the open web. SOC-2 Type II certified. ZDR Available for enterprises.\"\n    },\n    {\n      \"url\": \"https://docs.parallel.ai/resources/webhook-setup\",\n      \"title\": \"Webhook Setup - Parallel\",\n      \"description\": \"Guide to configuring and verifying webhooks for Parallel APIs\"\n    },\n    {\n      \"url\": \"https://parallel.ai/blog/vercel\",\n      \"title\": \"Parallel Web Systems | Infrastructure for intelligence on...\",\n      \"description\": \"Parallel develops a suite of agents and tool APIs for building AI with powerful access to the open web. SOC-2 Type II certified. ZDR Available for enterprises.\"\n    },\n    {\n      \"url\": \"https://docs.parallel.ai/api-reference/tasks/fetch-task-group-runs\",\n      \"title\": \"Fetch Task Group Runs - Parallel\",\n      \"description\": \"Retrieves task runs in a TaskGroup and optionally their inputs and outputs. All runs within a TaskGroup are returned as a stream. To get the inputs and/or ou...\"\n    },\n    {\n      \"url\": \"https://docs.parallel.ai/api-reference/tasks/retrieve-task-group-run\",\n      \"title\": \"Retrieve Task Group Run - Parallel\",\n      \"description\": \"Retrieves run status by run_id. This endpoint is equivalent to fetching run status directly using the retrieve() method or the tasks/runs GET endpoint. The r...\"\n    },\n    {\n      \"url\": \"https://parallel.ai/blog/cerebras-fact-checker\",\n      \"title\": \"Build a Real-Time AI Fact Checker with Parallel & Cerebra...\",\n      \"description\": \"Learn how to build a streaming fact checker that extracts claims from text and verifies them against live web sources in real-time using Parallel and Cerebras.\"\n    }\n  ]\n}",
+  "parsed": {
+    "links": [
+      {
+        "url": "https://parallel.ai/blog/deep-research-reports",
+        "title": "Parallel Deep Research Reports | Parallel Web Systems | I...",
+        "description": "The Parallel Task API now supports comprehensive markdown Deep Research report generation with in-line citations and relevant excerpts."
+      },
+      {
+        "url": "https://parallel.ai/blog/parallel-task-api",
+        "title": "Introducing the Parallel Task API",
+        "description": "The Parallel Task API sets a new standard on web research benchmarks, both academic and ones we've built inspired by actual customer use cases ..."
+      },
+      {
+        "url": "https://docs.parallel.ai/task-api/group-api",
+        "title": "Task Group - Parallel",
+        "description": "Batch process Tasks at scale with the Parallel Task Group API"
+      },
+      {
+        "url": "https://docs.parallel.ai/api-reference/tasks/stream-task-run-events",
+        "title": "Stream Task Run Events - Parallel",
+        "description": "Streams events for a task run. Returns a stream of events showing progress updates and state changes for the task run. For task runs that did not have enable..."
+      },
+      {
+        "url": "https://docs.parallel.ai/task-api/webhooks",
+        "title": "Webhooks - Parallel",
+        "description": "Webhook events for task run completions"
+      },
+      {
+        "url": "https://docs.parallel.ai/findall-api/findall-quickstart",
+        "title": "FindAll API Quickstart - Parallel",
+        "description": "Discover and enrich entities from the web using natural language queries with the FindAll API"
+      },
+      {
+        "url": "https://parallel.ai/blog/cookbook-sse-task-manager-with-parallel",
+        "title": "Building a real-time streaming task manager with Parallel...",
+        "description": "This cookbook details how to build a task streaming playground that showcases Parallel's Task API with real-time Server-Sent Events (SSE)."
+      },
+      {
+        "url": "https://parallel.ai/blog/free-CLI-agent",
+        "title": "Parallel Web Systems | Infrastructure for intelligence on...",
+        "description": "Parallel develops a suite of agents and tool APIs for building AI with powerful access to the open web. SOC-2 Type II certified. ZDR Available for enterprises."
+      },
+      {
+        "url": "https://parallel.ai/articles/how-to-build-ai-powered-market-intelligence-tools-with-apis",
+        "title": "How to Build AI-Powered Market Intelligence Tools with AP...",
+        "description": "Learn how to build AI-powered market intelligence tools with APIs for search, extraction, monitoring, and competitive research automation."
+      },
+      {
+        "url": "https://parallel.ai/blog/LLMTEXT-for-llmstxt",
+        "title": "Parallel Web Systems | Infrastructure for intelligence on...",
+        "description": "Introducing a new set of tools for llms.txt that help you create and check llms.txt, or transform llms.txt files into MCP servers"
+      },
+      {
+        "url": "https://docs.parallel.ai/api-reference/legacy/tasks/stream-task-run-events",
+        "title": "Stream Task Run Events - Parallel",
+        "description": "Streams events for a task run. Returns a stream of events showing progress updates and state changes for the task run. For task runs that did not have enable..."
+      },
+      {
+        "url": "https://docs.parallel.ai/api-reference/legacy/monitor/delete-monitor",
+        "title": "Delete Monitor - Parallel",
+        "description": "Delete a monitor. Deletes a monitor, stopping all future executions. Deleted monitors can no longer be updated or retrieved."
+      },
+      {
+        "url": "https://parallel.ai/blog/genpact-parallel-partnership",
+        "title": "Parallel Web Systems | Infrastructure for intelligence on...",
+        "description": "Parallel develops a suite of agents and tool APIs for building AI with powerful access to the open web. SOC-2 Type II certified. ZDR Available for enterprises."
+      },
+      {
+        "url": "https://docs.parallel.ai/api-reference/legacy/tasks/retrieve-task-group-run",
+        "title": "Retrieve Task Group Run - Parallel",
+        "description": "Retrieves run status by run_id. This endpoint is equivalent to fetching run status directly using the retrieve() method or the tasks/runs GET endpoint. The r..."
+      },
+      {
+        "url": "https://parallel.ai/blog/parallel-cli",
+        "title": "Parallel Web Systems | Infrastructure for intelligence on...",
+        "description": "Parallel develops a suite of agents and tool APIs for building AI with powerful access to the open web. SOC-2 Type II certified. ZDR Available for enterprises."
+      },
+      {
+        "url": "https://docs.parallel.ai/resources/webhook-setup",
+        "title": "Webhook Setup - Parallel",
+        "description": "Guide to configuring and verifying webhooks for Parallel APIs"
+      },
+      {
+        "url": "https://parallel.ai/blog/vercel",
+        "title": "Parallel Web Systems | Infrastructure for intelligence on...",
+        "description": "Parallel develops a suite of agents and tool APIs for building AI with powerful access to the open web. SOC-2 Type II certified. ZDR Available for enterprises."
+      },
+      {
+        "url": "https://docs.parallel.ai/api-reference/tasks/fetch-task-group-runs",
+        "title": "Fetch Task Group Runs - Parallel",
+        "description": "Retrieves task runs in a TaskGroup and optionally their inputs and outputs. All runs within a TaskGroup are returned as a stream. To get the inputs and/or ou..."
+      },
+      {
+        "url": "https://docs.parallel.ai/api-reference/tasks/retrieve-task-group-run",
+        "title": "Retrieve Task Group Run - Parallel",
+        "description": "Retrieves run status by run_id. This endpoint is equivalent to fetching run status directly using the retrieve() method or the tasks/runs GET endpoint. The r..."
+      },
+      {
+        "url": "https://parallel.ai/blog/cerebras-fact-checker",
+        "title": "Build a Real-Time AI Fact Checker with Parallel & Cerebra...",
+        "description": "Learn how to build a streaming fact checker that extracts claims from text and verifies them against live web sources in real-time using Parallel and Cerebras."
+      }
+    ]
+  },
+  "results": [
+    {
+      "title": "Parallel Deep Research Reports | Parallel Web Systems | I...",
+      "url": "https://parallel.ai/blog/deep-research-reports",
+      "domain": "parallel.ai",
+      "description": "The Parallel Task API now supports comprehensive markdown Deep Research report generation with in-line citations and relevant excerpts.",
+      "position": 1
+    },
+    {
+      "title": "Introducing the Parallel Task API",
+      "url": "https://parallel.ai/blog/parallel-task-api",
+      "domain": "parallel.ai",
+      "description": "The Parallel Task API sets a new standard on web research benchmarks, both academic and ones we've built inspired by actual customer use cases ...",
+      "position": 2
+    },
+    {
+      "title": "Task Group - Parallel",
+      "url": "https://docs.parallel.ai/task-api/group-api",
+      "domain": "docs.parallel.ai",
+      "description": "Batch process Tasks at scale with the Parallel Task Group API",
+      "position": 3
+    },
+    {
+      "title": "Stream Task Run Events - Parallel",
+      "url": "https://docs.parallel.ai/api-reference/tasks/stream-task-run-events",
+      "domain": "docs.parallel.ai",
+      "description": "Streams events for a task run. Returns a stream of events showing progress updates and state changes for the task run. For task runs that did not have enable...",
+      "position": 4
+    },
+    {
+      "title": "Webhooks - Parallel",
+      "url": "https://docs.parallel.ai/task-api/webhooks",
+      "domain": "docs.parallel.ai",
+      "description": "Webhook events for task run completions",
+      "position": 5
+    },
+    {
+      "title": "FindAll API Quickstart - Parallel",
+      "url": "https://docs.parallel.ai/findall-api/findall-quickstart",
+      "domain": "docs.parallel.ai",
+      "description": "Discover and enrich entities from the web using natural language queries with the FindAll API",
+      "position": 6
+    },
+    {
+      "title": "Building a real-time streaming task manager with Parallel...",
+      "url": "https://parallel.ai/blog/cookbook-sse-task-manager-with-parallel",
+      "domain": "parallel.ai",
+      "description": "This cookbook details how to build a task streaming playground that showcases Parallel's Task API with real-time Server-Sent Events (SSE).",
+      "position": 7
+    },
+    {
+      "title": "Parallel Web Systems | Infrastructure for intelligence on...",
+      "url": "https://parallel.ai/blog/free-CLI-agent",
+      "domain": "parallel.ai",
+      "description": "Parallel develops a suite of agents and tool APIs for building AI with powerful access to the open web. SOC-2 Type II certified. ZDR Available for enterprises.",
+      "position": 8
+    },
+    {
+      "title": "How to Build AI-Powered Market Intelligence Tools with AP...",
+      "url": "https://parallel.ai/articles/how-to-build-ai-powered-market-intelligence-tools-with-apis",
+      "domain": "parallel.ai",
+      "description": "Learn how to build AI-powered market intelligence tools with APIs for search, extraction, monitoring, and competitive research automation.",
+      "position": 9
+    },
+    {
+      "title": "Parallel Web Systems | Infrastructure for intelligence on...",
+      "url": "https://parallel.ai/blog/LLMTEXT-for-llmstxt",
+      "domain": "parallel.ai",
+      "description": "Introducing a new set of tools for llms.txt that help you create and check llms.txt, or transform llms.txt files into MCP servers",
+      "position": 10
+    },
+    {
+      "title": "Stream Task Run Events - Parallel",
+      "url": "https://docs.parallel.ai/api-reference/legacy/tasks/stream-task-run-events",
+      "domain": "docs.parallel.ai",
+      "description": "Streams events for a task run. Returns a stream of events showing progress updates and state changes for the task run. For task runs that did not have enable...",
+      "position": 11
+    },
+    {
+      "title": "Delete Monitor - Parallel",
+      "url": "https://docs.parallel.ai/api-reference/legacy/monitor/delete-monitor",
+      "domain": "docs.parallel.ai",
+      "description": "Delete a monitor. Deletes a monitor, stopping all future executions. Deleted monitors can no longer be updated or retrieved.",
+      "position": 12
+    },
+    {
+      "title": "Parallel Web Systems | Infrastructure for intelligence on...",
+      "url": "https://parallel.ai/blog/genpact-parallel-partnership",
+      "domain": "parallel.ai",
+      "description": "Parallel develops a suite of agents and tool APIs for building AI with powerful access to the open web. SOC-2 Type II certified. ZDR Available for enterprises.",
+      "position": 13
+    },
+    {
+      "title": "Retrieve Task Group Run - Parallel",
+      "url": "https://docs.parallel.ai/api-reference/legacy/tasks/retrieve-task-group-run",
+      "domain": "docs.parallel.ai",
+      "description": "Retrieves run status by run_id. This endpoint is equivalent to fetching run status directly using the retrieve() method or the tasks/runs GET endpoint. The r...",
+      "position": 14
+    },
+    {
+      "title": "Parallel Web Systems | Infrastructure for intelligence on...",
+      "url": "https://parallel.ai/blog/parallel-cli",
+      "domain": "parallel.ai",
+      "description": "Parallel develops a suite of agents and tool APIs for building AI with powerful access to the open web. SOC-2 Type II certified. ZDR Available for enterprises.",
+      "position": 15
+    },
+    {
+      "title": "Webhook Setup - Parallel",
+      "url": "https://docs.parallel.ai/resources/webhook-setup",
+      "domain": "docs.parallel.ai",
+      "description": "Guide to configuring and verifying webhooks for Parallel APIs",
+      "position": 16
+    },
+    {
+      "title": "Parallel Web Systems | Infrastructure for intelligence on...",
+      "url": "https://parallel.ai/blog/vercel",
+      "domain": "parallel.ai",
+      "description": "Parallel develops a suite of agents and tool APIs for building AI with powerful access to the open web. SOC-2 Type II certified. ZDR Available for enterprises.",
+      "position": 17
+    },
+    {
+      "title": "Fetch Task Group Runs - Parallel",
+      "url": "https://docs.parallel.ai/api-reference/tasks/fetch-task-group-runs",
+      "domain": "docs.parallel.ai",
+      "description": "Retrieves task runs in a TaskGroup and optionally their inputs and outputs. All runs within a TaskGroup are returned as a stream. To get the inputs and/or ou...",
+      "position": 18
+    },
+    {
+      "title": "Retrieve Task Group Run - Parallel",
+      "url": "https://docs.parallel.ai/api-reference/tasks/retrieve-task-group-run",
+      "domain": "docs.parallel.ai",
+      "description": "Retrieves run status by run_id. This endpoint is equivalent to fetching run status directly using the retrieve() method or the tasks/runs GET endpoint. The r...",
+      "position": 19
+    },
+    {
+      "title": "Build a Real-Time AI Fact Checker with Parallel & Cerebra...",
+      "url": "https://parallel.ai/blog/cerebras-fact-checker",
+      "domain": "parallel.ai",
+      "description": "Learn how to build a streaming fact checker that extracts claims from text and verifies them against live web sources in real-time using Parallel and Cerebras.",
+      "position": 20
+    }
+  ]
+}

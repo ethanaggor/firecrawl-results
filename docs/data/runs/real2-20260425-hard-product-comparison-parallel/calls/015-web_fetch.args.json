@@ -1,0 +1,16 @@
+{
+  "urls": [
+    "https://parallel.ai/benchmarks",
+    "https://exa.ai/",
+    "https://github.com/exa-labs/benchmarks",
+    "https://exa.ai/versus/tavily"
+  ],
+  "objective": "Extract benchmark figures and methodology for agent web search retrieval quality comparison.",
+  "search_queries": [
+    "agent web search benchmark",
+    "retrieval quality search API"
+  ],
+  "full_content": false,
+  "session_id": "9f2e4a8d1c7b4e6390af5d2c8b7611e4",
+  "model_name": "gpt-5.5 xhigh"
+}

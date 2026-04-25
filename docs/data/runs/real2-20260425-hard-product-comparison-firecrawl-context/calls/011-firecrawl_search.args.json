@@ -1,0 +1,19 @@
+{
+  "query": "Exa MCP server tools web_search_exa crawling_exa docs endpoint",
+  "content": "chunks",
+  "maxResults": 8,
+  "maxCharsPerResult": 3000,
+  "maxCharsTotal": 16000,
+  "focus": "Exa MCP server endpoint, available tools, default tools, optional tools, content returned by search and crawl",
+  "sourcePolicy": {
+    "includeDomains": [
+      "docs.exa.ai",
+      "exa.ai"
+    ]
+  },
+  "sources": [
+    "web"
+  ],
+  "ignoreInvalidURLs": true,
+  "includeRawResults": false
+}

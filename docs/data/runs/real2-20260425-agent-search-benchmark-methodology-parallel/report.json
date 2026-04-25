@@ -1,0 +1,174 @@
+{
+  "status": "complete",
+  "runId": "real2-20260425-agent-search-benchmark-methodology-parallel",
+  "generatedAt": "2026-04-25T07:04:52.947Z",
+  "manifest": {
+    "runId": "real2-20260425-agent-search-benchmark-methodology-parallel",
+    "createdAt": "2026-04-25T06:53:21.139Z",
+    "provider": {
+      "id": "parallel",
+      "name": "Parallel Search remote MCP",
+      "transport": "streamable-http",
+      "url": "https://search.parallel.ai/mcp",
+      "headers": [
+        {
+          "name": "authorization",
+          "required": false,
+          "present": false
+        }
+      ],
+      "searchTools": [
+        "web_search"
+      ],
+      "fetchTools": [
+        "web_fetch"
+      ]
+    },
+    "task": {
+      "id": "agent-search-benchmark-methodology",
+      "family": "benchmark-methodology",
+      "question": "What benchmark methodology should be used for agent web search tools, based on public Exa, Parallel, and Tavily benchmarks?",
+      "agentGoal": "Find and compare public benchmark methodology from Exa, Parallel, and Tavily. Extract metrics and task construction patterns.",
+      "expectedTerms": [
+        "SimpleQA",
+        "WISER",
+        "MSMARCO",
+        "document relevance"
+      ],
+      "expectedDomains": [
+        "exa.ai",
+        "parallel.ai",
+        "github.com",
+        "docs.tavily.com"
+      ]
+    }
+  },
+  "metrics": {
+    "provider": "parallel",
+    "taskId": "agent-search-benchmark-methodology",
+    "toolCalls": 5,
+    "searchCalls": 4,
+    "fetchCalls": 1,
+    "mapCalls": 0,
+    "discoveryCalls": 4,
+    "extractionCalls": 1,
+    "failedCalls": 0,
+    "zeroResultCalls": 0,
+    "zeroResultSearchCalls": 0,
+    "expectedTermMissCalls": 0,
+    "expectedDomainMissCalls": 0,
+    "expectedTermMissSearchCalls": 0,
+    "expectedDomainMissSearchCalls": 0,
+    "sourcePolicyViolationCalls": 0,
+    "recoverySignalCalls": 0,
+    "recoverySignalRate": 0,
+    "totalResultCount": 50,
+    "uniqueUrlCount": 34,
+    "uniqueDomainCount": 15,
+    "duplicateUrlRate": 0.32,
+    "expectedDomainsCovered": [
+      "exa.ai",
+      "github.com",
+      "parallel.ai",
+      "docs.tavily.com"
+    ],
+    "firstSearch": {
+      "tool": "web_search",
+      "resultCount": 10,
+      "expectedTermHit": true,
+      "expectedDomainHit": true,
+      "rawOutputTokens": 7028,
+      "normalizedEvidenceTokens": 6163,
+      "domains": [
+        "github.com",
+        "exa.ai",
+        "newscatcherapi.com",
+        "tavily.com",
+        "arxiv.org"
+      ],
+      "urls": [
+        "https://github.com/assafelovic/gpt-researcher/discussions/253",
+        "https://exa.ai/blog/highlights-for-agents",
+        "https://exa.ai/blog/api-evals",
+        "https://www.newscatcherapi.com/blog-posts/web-search-api-benchmark-q1-2026",
+        "https://github.com/exa-labs/benchmarks",
+        "https://github.com/tavily-ai/tavily-search-evals",
+        "https://github.com/exa-labs/benchmarks/issues",
+        "https://www.tavily.com/blog/how-we-built-the-fastest-web-search-in-the-world",
+        "https://arxiv.org/html/2509.07968v2",
+        "https://exa.ai/versus/tavily"
+      ]
+    },
+    "totalConnectMs": 998,
+    "totalCallLatencyMs": 9528,
+    "argumentTokens": 749,
+    "rawOutputTokens": 33994,
+    "normalizedEvidenceTokens": 29894,
+    "evidenceToRawTokenRatio": 0.8794,
+    "avgRawOutputTokensPerCall": 6798.8,
+    "rawOutputOutlierThresholdTokens": 50000,
+    "rawOutputOutlierCalls": 0,
+    "maxRawOutputCall": {
+      "tool": "web_search",
+      "rawOutputTokens": 7277,
+      "normalizedEvidenceTokens": 6398,
+      "resultCount": 10
+    },
+    "avgResultsPerSearchCall": 10,
+    "totalTrajectoryTokens": 38543,
+    "contract": {
+      "toolCount": 2,
+      "searchToolCount": 1,
+      "fetchToolCount": 1,
+      "descriptionTokens": 63,
+      "schemaTokens": 1034,
+      "totalMcpFootprintTokens": 3800,
+      "searchOnlyFootprintTokens": 1585,
+      "searchFetchFootprintTokens": 3800,
+      "hasFreshnessControl": true,
+      "hasSourcePolicyControl": false,
+      "hasContentBudgetControl": true,
+      "hasUsageMetadata": true
+    }
+  },
+  "semanticScore": {
+    "agentModel": "gpt-5.5 xhigh",
+    "provider": "parallel",
+    "taskId": "agent-search-benchmark-methodology",
+    "success": true,
+    "answerSupportedByEvidence": true,
+    "retrievalQualityScore": 5,
+    "agentExperienceScore": 4,
+    "sourcePolicyAdherent": true,
+    "freshnessAdherent": null,
+    "callRationale": [
+      "Started with a broad provider-methodology search to identify public Exa, Parallel, and Tavily benchmark sources and expected benchmark terms.",
+      "Ran a focused Parallel search because the broad search undercovered Parallel and the task requires WISER and agent-search methodology.",
+      "Ran a focused Tavily search to capture Tavily's SimpleQA and document relevance methodology and official/public eval sources.",
+      "Ran a targeted MSMARCO search because the required term was not clearly covered by the first Tavily search and Exa's methodology critique depends on it.",
+      "Fetched the strongest provider and GitHub sources in one batch with excerpt mode to extract datasets, metrics, judging methods, cost/latency controls, and task construction patterns."
+    ],
+    "strengths": [
+      "Recovered all expected benchmark concepts: SimpleQA, WISER, MSMARCO/MS MARCO, and document relevance.",
+      "Used strong primary sources from Exa, Parallel, Tavily, and public GitHub benchmark repositories.",
+      "Captured both retrieval-level and agent-loop methodologies rather than reducing the task to answer accuracy only.",
+      "Extracted concrete controls and metrics: max tool calls, max documents, context normalization, LLM judging, cost including LLM tokens, latency, and freshness timing."
+    ],
+    "weaknesses": [
+      "Parallel's provider schema does not expose hard domain/source filters, so source targeting had to be expressed in the natural-language objective and search queries.",
+      "The best Tavily benchmark methodology evidence was split across tavily.com blog/homepage and GitHub rather than a dedicated docs.tavily.com benchmark page.",
+      "The fetch call used excerpt mode, which kept the trajectory efficient but meant some details from large benchmark pages were available from search excerpts rather than full-page reads."
+    ],
+    "notableFailures": [
+      "Initial broad search found strong Exa and Tavily sources but weak Parallel coverage; fixed with a targeted Parallel benchmark search.",
+      "Initial Tavily-focused search did not surface MSMARCO clearly; fixed with a targeted MSMARCO search that found Exa's methodology discussion."
+    ],
+    "confidence": 0.9
+  },
+  "artifacts": {
+    "answer": "scoring/final-answer.md",
+    "score": "scoring/agent-score.json",
+    "trace": "trace.jsonl",
+    "tools": "schemas/tools.json"
+  }
+}

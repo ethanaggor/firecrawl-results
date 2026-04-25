@@ -1,0 +1,25 @@
+{
+  "query": "official benchmark agent web search Exa Parallel Tavily Firecrawl retrieval quality SimpleQA BrowseComp HLE FRAMES",
+  "content": "chunks",
+  "maxResults": 10,
+  "maxCharsPerResult": 3500,
+  "maxCharsTotal": 24000,
+  "focus": "official benchmark methodology or benchmark claims for AI agent web search retrieval quality, including metrics, datasets, latency tradeoffs, SimpleQA, BrowseComp, HLE, FRAMES, or evaluation guidance",
+  "sourcePolicy": {
+    "includeDomains": [
+      "exa.ai",
+      "docs.exa.ai",
+      "parallel.ai",
+      "docs.parallel.ai",
+      "tavily.com",
+      "docs.tavily.com",
+      "firecrawl.dev",
+      "docs.firecrawl.dev"
+    ]
+  },
+  "sources": [
+    "web"
+  ],
+  "ignoreInvalidURLs": true,
+  "includeRawResults": false
+}

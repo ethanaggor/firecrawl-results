@@ -505,7 +505,10 @@
               <div class="panel-body">
                 <div class="timeline">
                   <div class="step"><strong>${metrics.searchCalls || 0}</strong> search calls</div>
+                  <div class="step"><strong>${metrics.mapCalls || 0}</strong> map/discovery recovery calls</div>
                   <div class="step"><strong>${metrics.fetchCalls || 0}</strong> fetch/scrape calls</div>
+                  <div class="step"><strong>${metrics.zeroResultSearchCalls || 0}</strong> zero-result search calls</div>
+                  <div class="step"><strong>${metrics.recoverySignalCalls || 0}</strong> recovery signals</div>
                   <div class="step"><strong>${metrics.failedCalls || 0}</strong> failed calls</div>
                   <div class="step"><strong>${fmt.format(metrics.totalConnectMs || 0)}</strong> ms connection overhead</div>
                 </div>
@@ -556,8 +559,12 @@
               <div><dt>retrieval</dt><dd>${score(provider.avgRetrievalQuality)}</dd></div>
               <div><dt>agent experience</dt><dd>${score(provider.avgAgentExperience)}</dd></div>
               <div><dt>avg calls</dt><dd>${score(provider.avgToolCalls)}</dd></div>
+              <div><dt>recovery</dt><dd>${score(provider.avgRecoverySignalCalls)}</dd></div>
+              <div><dt>zero search</dt><dd>${score(provider.avgZeroResultSearchCalls)}</dd></div>
+              <div><dt>raw outliers</dt><dd>${score(provider.avgRawOutputOutlierCalls)}</dd></div>
               <div><dt>avg tokens</dt><dd>${compact(provider.avgTrajectoryTokens)}</dd></div>
               <div><dt>schema</dt><dd>${compact(provider.footprintTokens)}</dd></div>
+              <div><dt>search schema</dt><dd>${compact(provider.searchOnlyFootprintTokens)}</dd></div>
             </dl>
             <div class="pill-row">${flags.map((flag) => `<span class="pill">${escapeHtml(flag)}</span>`).join("")}</div>
           </article>
@@ -571,6 +578,7 @@
             <div class="cell-score">
               <strong>RQ ${score(run.semanticScore?.retrievalQualityScore)} / AX ${score(run.semanticScore?.agentExperienceScore)}</strong>
               <span>${run.metrics?.toolCalls ?? 0} calls · ${compact(run.metrics?.totalTrajectoryTokens || 0)} tokens</span>
+              <span>${run.metrics?.recoverySignalCalls ?? 0} recovery · ${run.metrics?.zeroResultSearchCalls ?? 0} zero-search</span>
               <span>${compact(run.metrics?.totalCallLatencyMs || 0)} ms</span>
             </div>
           </td>
@@ -643,6 +651,9 @@
               <div><span>retrieval quality</span><strong>${score(run.semanticScore?.retrievalQualityScore)}</strong></div>
               <div><span>agent experience</span><strong>${score(run.semanticScore?.agentExperienceScore)}</strong></div>
               <div><span>calls</span><strong>${run.metrics?.toolCalls ?? 0}</strong></div>
+              <div><span>recovery signals</span><strong>${run.metrics?.recoverySignalCalls ?? 0}</strong></div>
+              <div><span>first search results</span><strong>${run.metrics?.firstSearch?.resultCount ?? "-"}</strong></div>
+              <div><span>raw outliers</span><strong>${run.metrics?.rawOutputOutlierCalls ?? 0}</strong></div>
               <div><span>tokens</span><strong>${compact(run.metrics?.totalTrajectoryTokens || 0)}</strong></div>
             </div>
             <p>${escapeHtml(run.answerPreview || "No answer preview saved.")}</p>
@@ -686,7 +697,7 @@
           <div class="section-title">
             <div>
               <h2>Provider leaderboard</h2>
-              <p>Average semantic scores and trajectory costs across the five-task run.</p>
+              <p>Average semantic scores and trajectory costs across the published suite.</p>
             </div>
             <p>${compact(avgCalls)} average calls</p>
           </div>

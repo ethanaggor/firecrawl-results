@@ -1,0 +1,9 @@
+{
+  "url": "https://github.com/tavily-ai/tavily-SimpleQA",
+  "formats": [
+    "markdown"
+  ],
+  "onlyMainContent": true,
+  "removeBase64Images": true,
+  "maxAge": 0
+}
